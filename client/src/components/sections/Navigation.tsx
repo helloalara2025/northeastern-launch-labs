@@ -26,14 +26,14 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 bg-white ${
-        isScrolled ? "shadow-sm border-b border-foreground/5" : ""
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md ${
+        isScrolled ? "shadow-md border-b border-foreground/5" : "border-b border-foreground/0"
       }`}
     >
-      <div className="container flex items-center justify-between py-4">
+      <div className="container flex items-center justify-between h-16">
         <a
           href="/"
-          className="font-sans font-semibold text-xl text-primary hover:text-primary/80 transition-colors cursor-pointer"
+          className="font-sans font-semibold text-lg text-foreground hover:text-primary transition-colors cursor-pointer"
         >
           Launch Labs
         </a>
@@ -44,10 +44,10 @@ export default function Navigation() {
             <a
               key={link.name}
               href={link.href}
-              className={`text-sm font-medium px-3 py-2 rounded-lg transition-all duration-200 ${
+              className={`text-sm font-semibold px-4 py-2 rounded-lg transition-all duration-200 ${
                 location === link.href
                   ? "text-primary bg-primary/8"
-                  : "text-foreground/70 hover:text-foreground hover:bg-foreground/5"
+                  : "text-foreground/65 hover:text-foreground hover:bg-foreground/5"
               }`}
             >
               {link.name}
@@ -57,7 +57,7 @@ export default function Navigation() {
 
         <div className="hidden md:flex items-center gap-3">
           <a href="/forms">
-            <Button className="bg-primary hover:bg-primary/90 text-white font-medium px-6 h-10 rounded-lg text-sm transition-all duration-200">
+            <Button className="bg-primary hover:bg-primary/90 text-white font-semibold px-6 h-10 rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md">
               Apply to Join
             </Button>
           </a>
@@ -65,7 +65,7 @@ export default function Navigation() {
 
         {/* Mobile Menu Toggle */}
         <button 
-          className="md:hidden text-foreground hover:text-primary transition-colors"
+          className="md:hidden p-2 text-foreground hover:bg-foreground/5 rounded-lg transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -80,17 +80,17 @@ export default function Navigation() {
               key={link.name}
               href={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className={`text-sm font-medium px-3 py-2 rounded-lg transition-all duration-200 ${
+              className={`text-sm font-semibold px-3 py-2 rounded-lg transition-all duration-200 ${
                 location === link.href
                   ? "text-primary bg-primary/8"
-                  : "text-foreground/70 hover:text-foreground hover:bg-foreground/5"
+                  : "text-foreground/65 hover:text-foreground hover:bg-foreground/5"
               }`}
             >
               {link.name}
             </a>
           ))}
           <a href="/forms" onClick={() => setIsMobileMenuOpen(false)} className="mt-2">
-            <Button className="w-full bg-primary hover:bg-primary/90 text-white font-medium rounded-lg text-sm transition-all duration-200">
+            <Button className="w-full bg-primary hover:bg-primary/90 text-white font-semibold rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md">
               Apply to Join
             </Button>
           </a>

@@ -1,60 +1,86 @@
-import { Linkedin, Instagram, Mail } from "lucide-react";
-
 export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  const footerLinks = [
+    { label: "About", href: "/about" },
+    { label: "Launch Teams", href: "/launch-teams" },
+    { label: "Innovation Teams", href: "/innovation-teams" },
+    { label: "Partners", href: "/partners" },
+    { label: "Contact", href: "/contact" },
+  ];
+
   return (
-    <footer className="bg-foreground text-white py-16 border-t border-foreground/20">
-      <div className="container">
-        <div className="grid md:grid-cols-4 gap-12 mb-12">
+    <footer className="bg-white border-t border-foreground/5 mt-24">
+      <div className="container py-12 md:py-16">
+        <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
-          <div>
-            <div className="font-sans font-semibold text-lg mb-3">Launch Labs</div>
-            <p className="text-white/70 text-sm leading-relaxed font-regular">
-              Connecting Northeastern students to real-world projects and meaningful impact.
+          <div className="space-y-3">
+            <h3 className="font-sans font-semibold text-lg text-foreground">
+              Launch Labs
+            </h3>
+            <p className="text-foreground/60 text-sm leading-relaxed font-regular max-w-sm">
+              Northeastern Launch Labs connects students across disciplines to work on real-world projects with startups and internal teams.
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="font-semibold text-sm mb-4 uppercase tracking-wider">Quick Links</h3>
-            <div className="space-y-2 text-sm">
-              <a href="/about" className="block text-white/70 hover:text-white transition-colors font-regular">About</a>
-              <a href="/launch-teams" className="block text-white/70 hover:text-white transition-colors font-regular">Launch Teams</a>
-              <a href="/innovation-teams" className="block text-white/70 hover:text-white transition-colors font-regular">Innovation Teams</a>
-              <a href="/forms" className="block text-white/70 hover:text-white transition-colors font-regular">Get Involved</a>
-            </div>
-          </div>
-
-          {/* More Links */}
-          <div>
-            <h3 className="font-semibold text-sm mb-4 uppercase tracking-wider">More</h3>
-            <div className="space-y-2 text-sm">
-              <a href="/partners" className="block text-white/70 hover:text-white transition-colors font-regular">Partners</a>
-              <a href="/contact" className="block text-white/70 hover:text-white transition-colors font-regular">Contact</a>
-            </div>
+          {/* Navigation */}
+          <div className="space-y-3">
+            <h4 className="font-sans font-semibold text-sm text-foreground uppercase tracking-wider">
+              Navigation
+            </h4>
+            <ul className="space-y-2">
+              {footerLinks.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    className="text-foreground/60 hover:text-foreground text-sm font-regular transition-colors duration-200"
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Contact */}
-          <div>
-            <h3 className="font-semibold text-sm mb-4 uppercase tracking-wider">Connect</h3>
-            <div className="space-y-3 text-sm">
-              <a href="mailto:hello@launchlabs.neu.edu" className="flex items-center gap-2 text-white/70 hover:text-white transition-colors font-regular">
-                <Mail size={16} />
-                hello@launchlabs.neu.edu
-              </a>
-              <div className="flex gap-3 pt-2">
-                <a href="#" className="text-white/70 hover:text-white transition-colors">
-                  <Linkedin size={18} />
+          <div className="space-y-3">
+            <h4 className="font-sans font-semibold text-sm text-foreground uppercase tracking-wider">
+              Get in Touch
+            </h4>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="/contact"
+                  className="text-foreground/60 hover:text-foreground text-sm font-regular transition-colors duration-200"
+                >
+                  Contact Us
                 </a>
-                <a href="#" className="text-white/70 hover:text-white transition-colors">
-                  <Instagram size={18} />
+              </li>
+              <li>
+                <a
+                  href="/forms"
+                  className="text-foreground/60 hover:text-foreground text-sm font-regular transition-colors duration-200"
+                >
+                  Apply to Join
                 </a>
-              </div>
-            </div>
+              </li>
+              <li>
+                <a
+                  href="/forms"
+                  className="text-foreground/60 hover:text-foreground text-sm font-regular transition-colors duration-200"
+                >
+                  Partner With Us
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 text-center text-sm text-white/60 font-regular">
-          <p>© 2026 Northeastern Launch Labs. All rights reserved.</p>
+        {/* Divider */}
+        <div className="border-t border-foreground/5 pt-8">
+          <p className="text-foreground/50 text-xs font-regular text-center">
+            © {currentYear} Northeastern Launch Labs. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
