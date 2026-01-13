@@ -7,36 +7,36 @@ export default function GetInvolved() {
       title: "Apply to Join",
       description: "Ready to get started? Apply for Launch Teams or Innovation Teams.",
       emoji: "📝",
-      href: "/forms"
+      href: "#contact"
     },
     {
       title: "Propose a Project",
       description: "Have an idea? Submit a project proposal for an Innovation Team.",
       emoji: "💭",
-      href: "/forms"
+      href: "#contact"
     },
     {
       title: "Partner With Us",
       description: "Founders: connect with talented student teams to build your product.",
       emoji: "🤖",
-      href: "/forms"
+      href: "#contact"
     },
     {
       title: "Leadership",
       description: "Shape the future of Launch Labs. Apply for leadership roles.",
       emoji: "👥",
-      href: "/forms"
+      href: "#contact"
     }
   ];
 
   return (
-    <section id="get-involved" className="py-32 bg-white border-t border-foreground/5">
+    <section id="get-involved" className="py-24 bg-white border-t border-foreground/5">
       <div className="container">
         <div className="max-w-3xl mb-20">
-          <h2 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-6 leading-tight">
+          <h2 className="font-sans font-bold text-5xl lg:text-6xl text-foreground mb-8 leading-tight tracking-tight">
             Get Involved
           </h2>
-          <p className="text-xl text-foreground/60 font-regular">
+          <p className="text-lg text-foreground/65 leading-relaxed font-regular">
             Multiple ways to participate.
           </p>
         </div>
@@ -44,10 +44,10 @@ export default function GetInvolved() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {opportunities.map((item, index) => (
             <a key={index} href={item.href} className="group">
-              <div className="bg-white border-2 border-primary/15 rounded-2xl p-6 shadow-sm hover:shadow-lg hover:border-primary/40 transition-all duration-300 flex flex-col h-full">
+              <div className="bg-white border-2 border-primary/15 rounded-xl p-6 shadow-sm hover:shadow-lg hover:border-primary/40 transition-all duration-300 flex flex-col h-full">
                 <div className="text-3xl mb-4">{item.emoji}</div>
                 
-                <h3 className="font-sans font-bold text-lg mb-2 text-foreground group-hover:text-primary transition-colors">
+                <h3 className="font-sans font-bold text-lg mb-3 text-foreground group-hover:text-primary transition-colors">
                   {item.title}
                 </h3>
                 

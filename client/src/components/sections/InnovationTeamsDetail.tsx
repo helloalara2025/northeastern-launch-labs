@@ -2,8 +2,8 @@ export default function InnovationTeamsDetail() {
   return (
     <section id="innovation-detail" className="py-24 bg-white border-t border-foreground/5">
       <div className="container">
-        <div className="max-w-3xl mx-auto mb-16">
-          <h2 className="font-sans font-bold text-5xl md:text-6xl text-foreground mb-6 leading-tight">
+        <div className="max-w-3xl mb-16">
+          <h2 className="font-sans font-bold text-5xl lg:text-6xl text-foreground mb-8 leading-tight tracking-tight">
             Innovation Teams: Own the Full Product Journey
           </h2>
           <p className="text-lg text-foreground/65 leading-relaxed font-regular">
@@ -11,16 +11,16 @@ export default function InnovationTeamsDetail() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-12">
           {[
             { title: "Product Thinking", desc: "Learn to identify problems worth solving" },
             { title: "Collaboration", desc: "Work across engineering, design, and business" },
             { title: "Ownership", desc: "Take full responsibility from start to finish" }
           ].map((item, idx) => (
             <div key={idx} className="space-y-4">
-              <div className="text-3xl">🚀</div>
+              <div className="text-4xl">🚀</div>
               <h3 className="font-sans font-bold text-xl text-foreground">{item.title}</h3>
-              <p className="text-foreground/60 leading-relaxed font-regular">{item.desc}</p>
+              <p className="text-foreground/60 leading-relaxed font-regular text-base">{item.desc}</p>
             </div>
           ))}
         </div>
