@@ -27,35 +27,38 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${
-        isScrolled ? "shadow-sm border-b border-foreground/10" : ""
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 bg-white/95 backdrop-blur-sm ${
+        isScrolled ? "border-b border-foreground/5 shadow-sm" : ""
       }`}
     >
-      <div className="container flex items-center justify-between py-4">
+      <div className="container flex items-center justify-between py-3">
         <a
           href="/"
-          className="font-sans font-bold text-2xl text-primary hover:text-primary/80 transition-colors cursor-pointer"
+          className="font-sans font-semibold text-xl text-foreground hover:text-primary transition-colors cursor-pointer"
         >
           Launch Labs
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-1">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className={`text-sm font-medium transition-colors ${
+              className={`text-sm font-medium px-3 py-2 rounded transition-colors ${
                 location === link.href
-                  ? "text-primary font-bold"
-                  : "text-foreground hover:text-primary"
+                  ? "text-primary bg-primary/5"
+                  : "text-foreground/70 hover:text-foreground hover:bg-foreground/5"
               }`}
             >
               {link.name}
             </a>
           ))}
+        </div>
+
+        <div className="hidden md:flex items-center gap-3">
           <a href="/forms">
-            <Button className="bg-primary hover:bg-primary/90 text-white font-bold px-6 h-10 rounded">
+            <Button className="bg-primary hover:bg-primary/90 text-white font-medium px-5 h-9 rounded text-sm">
               Apply
             </Button>
           </a>
@@ -72,23 +75,23 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-b border-foreground/10 p-4 flex flex-col gap-3">
+        <div className="md:hidden bg-white border-b border-foreground/5 p-4 flex flex-col gap-2">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className={`text-left text-sm font-medium py-2 transition-colors ${
+              className={`text-sm font-medium px-3 py-2 rounded transition-colors ${
                 location === link.href
-                  ? "text-primary font-bold"
-                  : "text-foreground hover:text-primary"
+                  ? "text-primary bg-primary/5"
+                  : "text-foreground/70 hover:text-foreground hover:bg-foreground/5"
               }`}
             >
               {link.name}
             </a>
           ))}
-          <a href="/forms" onClick={() => setIsMobileMenuOpen(false)}>
-            <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold mt-2 rounded">
+          <a href="/forms" onClick={() => setIsMobileMenuOpen(false)} className="mt-2">
+            <Button className="w-full bg-primary hover:bg-primary/90 text-white font-medium rounded text-sm">
               Apply Now
             </Button>
           </a>

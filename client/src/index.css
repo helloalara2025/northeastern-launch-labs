@@ -44,13 +44,14 @@
 }
 
 /* 
-  Design Philosophy: Bold Student Organization Aesthetic (inspired by Scout)
-  - Primary Color: Northeastern Red (#CC0000) -> OKLCH approx 0.55 0.22 29.2
-  - Secondary: Vibrant Purple (#7B2CBF) for accent sections
-  - Accents: Bright Yellow, Pink, Orange for visual energy
-  - Backgrounds: White with bold colored sections
-  - Typography: Plus Jakarta Sans (Headings), Inter (Body)
-  - Radius: Medium (0.5rem) for more structured look
+  Design Philosophy: Notion-inspired Aesthetic
+  - Primary Color: Northeastern Red (#CC0000) for accents
+  - Backgrounds: Clean white with subtle gray accents
+  - Typography: System fonts (SF Pro, Inter) for clarity
+  - Spacing: Generous, airy layouts
+  - Shadows: Subtle, minimal
+  - Radius: Small (0.375rem) for refined look
+  - Feel: Minimalist, organized, approachable
 */
 
 :root {
@@ -67,7 +68,7 @@
   --chart-4: oklch(0.6 0.18 350);
   --chart-5: oklch(0.5 0.2 25);
   
-  --radius: 0.5rem;
+  --radius: 0.375rem;
   
   /* White Background */
   --background: oklch(1 0 0);
@@ -82,8 +83,8 @@
   --secondary: oklch(0.95 0 0);
   --secondary-foreground: oklch(0.15 0.02 290);
   
-  --muted: oklch(0.92 0 0);
-  --muted-foreground: oklch(0.5 0.02 290);
+  --muted: oklch(0.96 0 0);
+  --muted-foreground: oklch(0.55 0.02 290);
   
   --accent: oklch(0.95 0 0);
   --accent-foreground: oklch(0.15 0.02 290);
@@ -91,8 +92,8 @@
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
   
-  --border: oklch(0.85 0 0);
-  --input: oklch(0.92 0 0);
+  --border: oklch(0.95 0 0);
+  --input: oklch(0.97 0 0);
   --ring: oklch(0.55 0.22 29.2);
   
   --sidebar: oklch(1 0 0);
