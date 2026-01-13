@@ -1,35 +1,27 @@
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const footerLinks = [
-    { label: "About", href: "#about" },
-    { label: "Teams", href: "#teams" },
-    { label: "Get Involved", href: "#get-involved" },
-    { label: "Contact", href: "#contact" },
-  ];
-
   return (
-    <footer className="bg-card border-t border-border/50 py-10">
+    <footer className="bg-card border-t border-border/30 py-8">
       <div className="container">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-4 gap-8 mb-6">
           {/* Brand */}
-          <div className="space-y-2">
-            <div className="flex items-center gap-2">
-              <h3 className="font-sans font-bold text-base text-foreground">Launch Labs</h3>
-              <span className="text-xs font-bold text-foreground/50 uppercase tracking-wider">Northeastern</span>
-            </div>
-            <p className="text-foreground/60 text-xs leading-relaxed font-regular max-w-sm">
-              Student-run organization connecting students to real-world projects.
-            </p>
+          <div>
+            <h3 className="font-sans font-bold text-sm text-foreground mb-1">Launch Labs</h3>
+            <p className="text-foreground/60 text-xs font-regular">Northeastern University</p>
           </div>
 
           {/* Navigation */}
-          <div className="space-y-2">
-            <h4 className="font-sans font-bold text-xs text-foreground uppercase tracking-wider">Navigation</h4>
+          <div>
+            <h4 className="font-sans font-bold text-xs text-foreground uppercase tracking-wide mb-3">Navigation</h4>
             <ul className="space-y-1.5">
-              {footerLinks.map((link) => (
+              {[
+                { label: "About", href: "#about" },
+                { label: "Teams", href: "#teams" },
+                { label: "Get Involved", href: "#get-involved" }
+              ].map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="text-foreground/60 hover:text-primary text-xs font-regular transition-colors duration-200">
+                  <a href={link.href} className="text-foreground/60 hover:text-primary text-xs font-regular transition-colors">
                     {link.label}
                   </a>
                 </li>
@@ -38,16 +30,16 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="space-y-2">
-            <h4 className="font-sans font-bold text-xs text-foreground uppercase tracking-wider">Contact</h4>
+          <div>
+            <h4 className="font-sans font-bold text-xs text-foreground uppercase tracking-wide mb-3">Contact</h4>
             <ul className="space-y-1.5">
               <li>
-                <a href="#contact" className="text-foreground/60 hover:text-primary text-xs font-regular transition-colors duration-200">
+                <a href="#contact" className="text-foreground/60 hover:text-primary text-xs font-regular transition-colors">
                   Get in Touch
                 </a>
               </li>
               <li>
-                <a href="#get-involved" className="text-foreground/60 hover:text-primary text-xs font-regular transition-colors duration-200">
+                <a href="#get-involved" className="text-foreground/60 hover:text-primary text-xs font-regular transition-colors">
                   Apply to Join
                 </a>
               </li>
@@ -55,16 +47,16 @@ export default function Footer() {
           </div>
 
           {/* Social */}
-          <div className="space-y-2">
-            <h4 className="font-sans font-bold text-xs text-foreground uppercase tracking-wider">Follow</h4>
+          <div>
+            <h4 className="font-sans font-bold text-xs text-foreground uppercase tracking-wide mb-3">Follow</h4>
             <ul className="space-y-1.5">
               <li>
-                <a href="#" className="text-foreground/60 hover:text-primary text-xs font-regular transition-colors duration-200">
+                <a href="#" className="text-foreground/60 hover:text-primary text-xs font-regular transition-colors">
                   Instagram
                 </a>
               </li>
               <li>
-                <a href="#" className="text-foreground/60 hover:text-primary text-xs font-regular transition-colors duration-200">
+                <a href="#" className="text-foreground/60 hover:text-primary text-xs font-regular transition-colors">
                   LinkedIn
                 </a>
               </li>
@@ -73,7 +65,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-border/50 pt-6">
+        <div className="border-t border-border/30 pt-6">
           <p className="text-foreground/50 text-xs font-regular text-center">
             © {currentYear} Northeastern Launch Labs. All rights reserved.
           </p>
