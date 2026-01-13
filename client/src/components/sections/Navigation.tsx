@@ -20,7 +20,6 @@ export default function Navigation() {
     { name: "About", href: "/about" },
     { name: "Launch Teams", href: "/launch-teams" },
     { name: "Innovation Teams", href: "/innovation-teams" },
-    { name: "Leadership", href: "/leadership" },
     { name: "Partners", href: "/partners" },
     { name: "Contact", href: "/contact" },
   ];

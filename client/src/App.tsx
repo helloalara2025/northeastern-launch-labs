@@ -5,12 +5,9 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
-import Navigation from "./components/sections/Navigation";
-import Footer from "./components/sections/Footer";
 import About from "./pages/About";
 import LaunchTeams from "./pages/LaunchTeams";
 import InnovationTeams from "./pages/InnovationTeams";
-import Leadership from "./pages/Leadership";
 import Partners from "./pages/Partners";
 import Forms from "./pages/Forms";
 import ContactPage from "./pages/ContactPage";
@@ -22,7 +19,6 @@ function Router() {
       <Route path={"/about"} component={About} />
       <Route path={"/launch-teams"} component={LaunchTeams} />
       <Route path={"/innovation-teams"} component={InnovationTeams} />
-      <Route path={"/leadership"} component={Leadership} />
       <Route path={"/partners"} component={Partners} />
       <Route path={"/forms"} component={Forms} />
       <Route path={"/contact"} component={ContactPage} />
@@ -39,9 +35,7 @@ function App() {
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
-          <Navigation />
           <Router />
-          <Footer />
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>

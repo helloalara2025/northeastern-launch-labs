@@ -28,7 +28,6 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-sm mb-4 uppercase tracking-wider">More</h3>
             <div className="space-y-2 text-sm">
-              <a href="/leadership" className="block text-white/70 hover:text-white transition-colors font-regular">Leadership</a>
               <a href="/partners" className="block text-white/70 hover:text-white transition-colors font-regular">Partners</a>
               <a href="/contact" className="block text-white/70 hover:text-white transition-colors font-regular">Contact</a>
             </div>

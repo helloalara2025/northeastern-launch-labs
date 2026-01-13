@@ -2,7 +2,6 @@ import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Teams from "@/components/sections/Teams";
 import GetInvolved from "@/components/sections/GetInvolved";
-import Leadership from "@/components/sections/Leadership";
 
 export default function Home() {
   return (
@@ -11,7 +10,6 @@ export default function Home() {
       <About />
       <Teams />
       <GetInvolved />
-      <Leadership />
     </div>
   );
 }
