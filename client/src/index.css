@@ -55,14 +55,14 @@
 */
 
 :root {
-  /* Launch Labs Purple - Refined #6D28D9 */
-  --primary: oklch(0.52 0.22 275); 
+  /* Launch Labs Purple - Agency Refined #5B21B6 */
+  --primary: oklch(0.48 0.20 270); 
   --primary-foreground: oklch(1 0 0);
   
-  --sidebar-primary: oklch(0.52 0.22 275);
+  --sidebar-primary: oklch(0.48 0.20 270);
   --sidebar-primary-foreground: oklch(1 0 0);
   
-  --chart-1: oklch(0.52 0.22 275);
+  --chart-1: oklch(0.48 0.20 270);
   --chart-2: oklch(0.65 0.18 180);
   --chart-3: oklch(0.7 0.15 70);
   --chart-4: oklch(0.6 0.18 350);
@@ -94,22 +94,22 @@
   
   --border: oklch(0.95 0 0);
   --input: oklch(0.97 0 0);
-  --ring: oklch(0.52 0.22 275);
+  --ring: oklch(0.48 0.20 270);
   
   --sidebar: oklch(1 0 0);
   --sidebar-foreground: oklch(0.15 0.02 290);
   --sidebar-accent: oklch(0.92 0 0);
   --sidebar-accent-foreground: oklch(0.15 0.02 290);
   --sidebar-border: oklch(0.85 0 0);
-  --sidebar-ring: oklch(0.52 0.22 275);
+  --sidebar-ring: oklch(0.48 0.20 270);
 }
 
 .dark {
   /* Dark Mode Adjustments - Purple as Primary */
-  --primary: oklch(0.52 0.22 275);
+  --primary: oklch(0.48 0.20 270);
   --primary-foreground: oklch(1 0 0);
   
-  --sidebar-primary: oklch(0.52 0.22 275);
+  --sidebar-primary: oklch(0.48 0.20 270);
   --sidebar-primary-foreground: oklch(1 0 0);
   
   --background: oklch(0.15 0.02 290);

@@ -3,90 +3,71 @@ import { ArrowRight } from "lucide-react";
 
 export default function Teams() {
   return (
-    <section id="teams" className="py-24 bg-white border-t border-foreground/5">
+    <section id="teams" className="py-16 bg-white border-t border-foreground/5">
       <div className="container">
-        <div className="max-w-3xl mb-20">
-          <h2 className="font-sans font-bold text-5xl lg:text-6xl text-foreground mb-8 leading-tight tracking-tight">
-            Two Paths
-          </h2>
-          <p className="text-lg text-foreground/65 leading-relaxed font-regular">
-            Pick what excites you.
-          </p>
-        </div>
+        <h2 className="font-sans font-bold text-4xl lg:text-5xl text-foreground mb-12 leading-tight tracking-tight">
+          Two Paths
+        </h2>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-6">
           {/* Launch Teams */}
-          <div className="group bg-gradient-to-br from-primary/8 to-transparent border-2 border-primary/20 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:border-primary/40 transition-all duration-300 p-8">
-            <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-primary/20 text-primary text-xs font-bold uppercase">
-                🚀 Startup Track
+          <div className="bg-gradient-to-br from-primary/8 to-transparent border-2 border-primary/20 rounded-xl p-6 hover:border-primary/40 transition-all duration-300">
+            <div className="flex items-start justify-between mb-4">
+              <div className="space-y-1">
+                <div className="text-2xl">🚀</div>
+                <h3 className="font-sans font-bold text-xl text-foreground">Launch Teams</h3>
               </div>
-              
-              <h3 className="font-sans font-bold text-3xl text-foreground">
-                Launch Teams
-              </h3>
-              
-              <p className="text-foreground/65 leading-relaxed font-regular text-base">
-                Partner with early-stage startups. Build real products. Ship to real users.
-              </p>
-              
-              <div className="space-y-3 pt-2">
-                {[
-                  "Work alongside founders",
-                  "Real product development",
-                  "Professional experience"
-                ].map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-3">
-                    <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0"></div>
-                    <span className="text-foreground/70 font-regular text-base">{item}</span>
-                  </div>
-                ))}
-              </div>
-
-              <a href="#launch-detail" className="block pt-4">
-                <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold h-12 rounded-lg text-base transition-all duration-200 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl">
-                  Explore
-                  <ArrowRight size={18} />
-                </Button>
-              </a>
             </div>
+            
+            <p className="text-foreground/65 leading-relaxed font-regular text-sm mb-4">
+              Partner with startups. Build real products. Ship to real users.
+            </p>
+            
+            <ul className="space-y-2 mb-6">
+              {["Work alongside founders", "Real product development", "Professional experience"].map((item, idx) => (
+                <li key={idx} className="flex items-center gap-2 text-sm text-foreground/70">
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></div>
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <a href="#launch-detail">
+              <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold h-10 rounded-lg text-sm transition-all duration-200 flex items-center justify-center gap-2">
+                Explore
+                <ArrowRight size={14} />
+              </Button>
+            </a>
           </div>
 
           {/* Innovation Teams */}
-          <div className="group bg-gradient-to-br from-primary/5 to-transparent border-2 border-primary/15 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:border-primary/35 transition-all duration-300 p-8">
-            <div className="space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-primary/15 text-primary text-xs font-bold uppercase">
-                💡 Internal Track
+          <div className="bg-gradient-to-br from-primary/5 to-transparent border-2 border-primary/15 rounded-xl p-6 hover:border-primary/35 transition-all duration-300">
+            <div className="flex items-start justify-between mb-4">
+              <div className="space-y-1">
+                <div className="text-2xl">💡</div>
+                <h3 className="font-sans font-bold text-xl text-foreground">Innovation Teams</h3>
               </div>
-              
-              <h3 className="font-sans font-bold text-3xl text-foreground">
-                Innovation Teams
-              </h3>
-              
-              <p className="text-foreground/65 leading-relaxed font-regular text-base">
-                Own the full journey. From problem to solution. Build your portfolio.
-              </p>
-              
-              <div className="space-y-3 pt-2">
-                {[
-                  "End-to-end ownership",
-                  "Cross-functional teams",
-                  "Portfolio-ready work"
-                ].map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-3">
-                    <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0"></div>
-                    <span className="text-foreground/70 font-regular text-base">{item}</span>
-                  </div>
-                ))}
-              </div>
-
-              <a href="#innovation-detail" className="block pt-4">
-                <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold h-12 rounded-lg text-base transition-all duration-200 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl">
-                  Explore
-                  <ArrowRight size={18} />
-                </Button>
-              </a>
             </div>
+            
+            <p className="text-foreground/65 leading-relaxed font-regular text-sm mb-4">
+              Own the full journey. From problem to solution. Build your portfolio.
+            </p>
+            
+            <ul className="space-y-2 mb-6">
+              {["End-to-end ownership", "Cross-functional teams", "Portfolio-ready work"].map((item, idx) => (
+                <li key={idx} className="flex items-center gap-2 text-sm text-foreground/70">
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></div>
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <a href="#innovation-detail">
+              <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold h-10 rounded-lg text-sm transition-all duration-200 flex items-center justify-center gap-2">
+                Explore
+                <ArrowRight size={14} />
+              </Button>
+            </a>
           </div>
         </div>
       </div>
