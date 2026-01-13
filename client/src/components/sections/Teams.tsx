@@ -14,7 +14,9 @@ export default function Teams() {
           <div className="bg-gradient-to-br from-primary/8 to-transparent border-2 border-primary/20 rounded-xl p-6 hover:border-primary/40 transition-all duration-300">
             <div className="flex items-start justify-between mb-4">
               <div className="space-y-1">
-                <div className="text-2xl">🚀</div>
+                <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
+                  <div className="w-5 h-5 border-2 border-primary rounded-full"></div>
+                </div>
                 <h3 className="font-sans font-bold text-xl text-foreground">Launch Teams</h3>
               </div>
             </div>
@@ -44,7 +46,9 @@ export default function Teams() {
           <div className="bg-gradient-to-br from-primary/5 to-transparent border-2 border-primary/15 rounded-xl p-6 hover:border-primary/35 transition-all duration-300">
             <div className="flex items-start justify-between mb-4">
               <div className="space-y-1">
-                <div className="text-2xl">💡</div>
+                <div className="w-10 h-10 rounded-lg bg-primary/15 flex items-center justify-center">
+                  <div className="w-5 h-5 border-2 border-primary rounded-full"></div>
+                </div>
                 <h3 className="font-sans font-bold text-xl text-foreground">Innovation Teams</h3>
               </div>
             </div>

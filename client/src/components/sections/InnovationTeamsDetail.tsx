@@ -17,8 +17,10 @@ export default function InnovationTeamsDetail() {
             { title: "Collaboration", desc: "Work across engineering, design, and business" },
             { title: "Ownership", desc: "Take full responsibility from start to finish" }
           ].map((item, idx) => (
-            <div key={idx} className="space-y-2">
-              <div className="text-2xl">🚀</div>
+            <div key={idx} className="space-y-3">
+              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                <div className="w-5 h-5 rounded-full bg-primary/30"></div>
+              </div>
               <h3 className="font-sans font-bold text-base text-foreground">{item.title}</h3>
               <p className="text-foreground/60 text-sm leading-relaxed font-regular">{item.desc}</p>
             </div>

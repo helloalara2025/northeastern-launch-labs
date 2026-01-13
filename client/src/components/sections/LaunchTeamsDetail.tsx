@@ -17,8 +17,10 @@ export default function LaunchTeamsDetail() {
             { title: "Professional Development", desc: "Build communication and project management skills" },
             { title: "Technical Growth", desc: "Apply skills in real production environments" }
           ].map((item, idx) => (
-            <div key={idx} className="space-y-2">
-              <div className="text-2xl">📊</div>
+            <div key={idx} className="space-y-3">
+              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                <div className="w-5 h-5 rounded-full bg-primary/30"></div>
+              </div>
               <h3 className="font-sans font-bold text-base text-foreground">{item.title}</h3>
               <p className="text-foreground/60 text-sm leading-relaxed font-regular">{item.desc}</p>
             </div>
