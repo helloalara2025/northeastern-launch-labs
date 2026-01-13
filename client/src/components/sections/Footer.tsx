@@ -2,11 +2,10 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const footerLinks = [
-    { label: "About", href: "/about" },
-    { label: "Launch Teams", href: "/launch-teams" },
-    { label: "Innovation Teams", href: "/innovation-teams" },
-    { label: "Partners", href: "/partners" },
-    { label: "Contact", href: "/contact" },
+    { label: "About", href: "#about" },
+    { label: "Teams", href: "#teams" },
+    { label: "Get Involved", href: "#get-involved" },
+    { label: "Contact", href: "#contact" },
   ];
 
   return (
@@ -15,17 +14,20 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-3">
-            <h3 className="font-sans font-semibold text-lg text-foreground">
-              Launch Labs
-            </h3>
+            <div className="flex items-center gap-2">
+              <h3 className="font-sans font-bold text-lg text-foreground">
+                Launch Labs
+              </h3>
+              <span className="text-xs font-semibold text-foreground/50 uppercase tracking-wider">Northeastern</span>
+            </div>
             <p className="text-foreground/60 text-sm leading-relaxed font-regular max-w-sm">
-              Northeastern Launch Labs connects students across disciplines to work on real-world projects with startups and internal teams.
+              A student-run organization connecting students across disciplines to work on real-world projects with startups and internal teams.
             </p>
           </div>
 
           {/* Navigation */}
           <div className="space-y-3">
-            <h4 className="font-sans font-semibold text-sm text-foreground uppercase tracking-wider">
+            <h4 className="font-sans font-bold text-sm text-foreground uppercase tracking-wider">
               Navigation
             </h4>
             <ul className="space-y-2">
@@ -44,13 +46,13 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="space-y-3">
-            <h4 className="font-sans font-semibold text-sm text-foreground uppercase tracking-wider">
+            <h4 className="font-sans font-bold text-sm text-foreground uppercase tracking-wider">
               Get in Touch
             </h4>
             <ul className="space-y-2">
               <li>
                 <a
-                  href="/contact"
+                  href="#contact"
                   className="text-foreground/60 hover:text-foreground text-sm font-regular transition-colors duration-200"
                 >
                   Contact Us
@@ -58,18 +60,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="/forms"
+                  href="#get-involved"
                   className="text-foreground/60 hover:text-foreground text-sm font-regular transition-colors duration-200"
                 >
                   Apply to Join
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/forms"
-                  className="text-foreground/60 hover:text-foreground text-sm font-regular transition-colors duration-200"
-                >
-                  Partner With Us
                 </a>
               </li>
             </ul>

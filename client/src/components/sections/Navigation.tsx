@@ -1,12 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { useLocation } from "wouter";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,11 +15,10 @@ export default function Navigation() {
   }, []);
 
   const navLinks = [
-    { name: "About", href: "/about" },
-    { name: "Launch Teams", href: "/launch-teams" },
-    { name: "Innovation Teams", href: "/innovation-teams" },
-    { name: "Partners", href: "/partners" },
-    { name: "Contact", href: "/contact" },
+    { name: "About", href: "#about" },
+    { name: "Teams", href: "#teams" },
+    { name: "Get Involved", href: "#get-involved" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
@@ -31,24 +28,18 @@ export default function Navigation() {
       }`}
     >
       <div className="container flex items-center justify-between h-16">
-        <a
-          href="/"
-          className="font-sans font-semibold text-lg text-foreground hover:text-primary transition-colors cursor-pointer"
-        >
-          Launch Labs
+        <a href="#" className="flex items-center gap-2">
+          <span className="font-sans font-bold text-lg text-foreground">Launch Labs</span>
+          <span className="text-xs font-semibold text-foreground/50 uppercase tracking-wider">Northeastern</span>
         </a>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-1">
+        <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className={`text-sm font-semibold px-4 py-2 rounded-lg transition-all duration-200 ${
-                location === link.href
-                  ? "text-primary bg-primary/8"
-                  : "text-foreground/65 hover:text-foreground hover:bg-foreground/5"
-              }`}
+              className="text-sm font-semibold text-foreground/65 hover:text-foreground transition-colors duration-200"
             >
               {link.name}
             </a>
@@ -56,8 +47,8 @@ export default function Navigation() {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <a href="/forms">
-            <Button className="bg-primary hover:bg-primary/90 text-white font-semibold px-6 h-10 rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md">
+          <a href="#get-involved">
+            <Button className="bg-primary hover:bg-primary/90 text-white font-bold px-6 h-10 rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md">
               Apply to Join
             </Button>
           </a>
@@ -80,17 +71,13 @@ export default function Navigation() {
               key={link.name}
               href={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className={`text-sm font-semibold px-3 py-2 rounded-lg transition-all duration-200 ${
-                location === link.href
-                  ? "text-primary bg-primary/8"
-                  : "text-foreground/65 hover:text-foreground hover:bg-foreground/5"
-              }`}
+              className="text-sm font-semibold text-foreground/65 hover:text-foreground px-3 py-2 rounded-lg hover:bg-foreground/5 transition-all duration-200"
             >
               {link.name}
             </a>
           ))}
-          <a href="/forms" onClick={() => setIsMobileMenuOpen(false)} className="mt-2">
-            <Button className="w-full bg-primary hover:bg-primary/90 text-white font-semibold rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md">
+          <a href="#get-involved" onClick={() => setIsMobileMenuOpen(false)} className="mt-2">
+            <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md">
               Apply to Join
             </Button>
           </a>
