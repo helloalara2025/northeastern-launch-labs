@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-24 pb-20 bg-white">
+    <section id="home" className="relative min-h-screen flex items-center pt-24 pb-20 bg-white overflow-hidden">
       <div className="container relative z-10 grid lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-8">
           <div className="space-y-4">
@@ -37,57 +37,51 @@ export default function Hero() {
           </div>
         </div>
         
-        {/* Mission-Relevant Digital Visual */}
-        <div className="hidden lg:flex items-center justify-center">
-          <div className="relative w-full h-96">
-            {/* Background gradient */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/8 to-primary/3 rounded-2xl"></div>
-            
-            {/* SVG: Collaboration & Growth Visual */}
-            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-              {/* Team nodes representing collaboration */}
-              <g className="text-primary">
-                {/* Central hub */}
-                <circle cx="200" cy="200" r="40" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.3" />
-                <circle cx="200" cy="200" r="8" fill="currentColor" />
-                
-                {/* Four team members around hub */}
-                <circle cx="100" cy="120" r="24" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.4" />
-                <circle cx="100" cy="120" r="6" fill="currentColor" opacity="0.7" />
-                
-                <circle cx="300" cy="120" r="24" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.4" />
-                <circle cx="300" cy="120" r="6" fill="currentColor" opacity="0.7" />
-                
-                <circle cx="100" cy="280" r="24" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.4" />
-                <circle cx="100" cy="280" r="6" fill="currentColor" opacity="0.7" />
-                
-                <circle cx="300" cy="280" r="24" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.4" />
-                <circle cx="300" cy="280" r="6" fill="currentColor" opacity="0.7" />
-                
-                {/* Connecting lines showing collaboration */}
-                <line x1="200" y1="200" x2="100" y2="120" stroke="currentColor" strokeWidth="1.5" opacity="0.2" />
-                <line x1="200" y1="200" x2="300" y2="120" stroke="currentColor" strokeWidth="1.5" opacity="0.2" />
-                <line x1="200" y1="200" x2="100" y2="280" stroke="currentColor" strokeWidth="1.5" opacity="0.2" />
-                <line x1="200" y1="200" x2="300" y2="280" stroke="currentColor" strokeWidth="1.5" opacity="0.2" />
-              </g>
+        {/* Original Digital Visual - Abstract Project Layers */}
+        <div className="hidden lg:flex items-center justify-center relative h-96">
+          <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+            {/* Background animated layers */}
+            <defs>
+              <linearGradient id="layerGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stopColor="currentColor" stopOpacity="0.1" className="text-primary" />
+                <stop offset="100%" stopColor="currentColor" stopOpacity="0.05" className="text-primary" />
+              </linearGradient>
+            </defs>
+
+            {/* Stacked project layers - representing layered work */}
+            <g>
+              {/* Layer 1 - Bottom */}
+              <rect x="40" y="240" width="320" height="100" rx="8" fill="none" stroke="currentColor" strokeWidth="2" className="text-primary/20" />
+              <text x="60" y="275" fontSize="12" fontWeight="600" className="text-primary/40" fill="currentColor">Research & Discovery</text>
               
-              {/* Growth arrows */}
-              <g className="text-primary" opacity="0.3">
-                <path d="M 150 150 Q 170 130 190 150" fill="none" stroke="currentColor" strokeWidth="1.5" />
-                <path d="M 250 150 Q 230 130 210 150" fill="none" stroke="currentColor" strokeWidth="1.5" />
-                <path d="M 150 250 Q 170 270 190 250" fill="none" stroke="currentColor" strokeWidth="1.5" />
-                <path d="M 250 250 Q 230 270 210 250" fill="none" stroke="currentColor" strokeWidth="1.5" />
-              </g>
+              {/* Layer 2 - Middle */}
+              <rect x="30" y="160" width="340" height="90" rx="8" fill="none" stroke="currentColor" strokeWidth="2" className="text-primary/35" />
+              <text x="50" y="195" fontSize="12" fontWeight="600" className="text-primary/60" fill="currentColor">Design & Build</text>
               
-              {/* Accent grid background */}
-              <defs>
-                <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-                  <path d="M 50 0 L 0 0 0 50" fill="none" stroke="currentColor" strokeWidth="0.5" opacity="0.08" />
-                </pattern>
-              </defs>
-              <rect width="400" height="400" fill="url(#grid)" />
-            </svg>
-          </div>
+              {/* Layer 3 - Top */}
+              <rect x="20" y="80" width="360" height="85" rx="8" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-primary" />
+              <text x="40" y="115" fontSize="12" fontWeight="600" className="text-primary" fill="currentColor">Launch & Iterate</text>
+            </g>
+
+            {/* Connecting flow lines */}
+            <g stroke="currentColor" strokeWidth="1.5" className="text-primary/25" fill="none">
+              <path d="M 200 240 Q 200 200 200 170" />
+              <path d="M 200 160 Q 200 120 200 90" />
+            </g>
+
+            {/* Progress indicators */}
+            <g className="text-primary">
+              <circle cx="200" cy="240" r="5" fill="currentColor" />
+              <circle cx="200" cy="160" r="5" fill="currentColor" opacity="0.6" />
+              <circle cx="200" cy="80" r="5" fill="currentColor" opacity="0.3" />
+            </g>
+
+            {/* Side accent marks */}
+            <g stroke="currentColor" strokeWidth="2" className="text-primary/15">
+              <line x1="15" y1="100" x2="15" y2="280" />
+              <line x1="385" y1="100" x2="385" y2="280" />
+            </g>
+          </svg>
         </div>
       </div>
     </section>

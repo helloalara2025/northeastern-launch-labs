@@ -16,29 +16,28 @@ export default function Teams() {
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Launch Teams */}
           <div className="bg-white border border-foreground/5 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:border-primary/20 transition-all duration-300">
-            {/* Visual Header */}
+            {/* Original Visual - Startup Growth Arc */}
             <div className="h-48 overflow-hidden bg-gradient-to-br from-primary/8 to-primary/3 flex items-center justify-center relative">
-              {/* Rocket visual with motion */}
-              <svg className="w-32 h-32" viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg">
-                <g className="text-primary">
-                  {/* Rocket body */}
-                  <rect x="45" y="20" width="30" height="80" rx="4" fill="currentColor" opacity="0.8" />
-                  {/* Rocket nose */}
-                  <path d="M 45 20 L 60 0 L 75 20 Z" fill="currentColor" opacity="0.9" />
-                  {/* Window */}
-                  <circle cx="60" cy="35" r="6" fill="white" opacity="0.6" />
-                  {/* Left fin */}
-                  <path d="M 45 80 L 30 100 L 45 95 Z" fill="currentColor" opacity="0.7" />
-                  {/* Right fin */}
-                  <path d="M 75 80 L 90 100 L 75 95 Z" fill="currentColor" opacity="0.7" />
-                  {/* Flame */}
-                  <path d="M 50 100 Q 45 120 50 140 Q 60 125 60 140 Q 70 125 70 140 Q 75 120 70 100" fill="currentColor" opacity="0.5" />
-                </g>
-                {/* Motion lines */}
-                <g stroke="currentColor" strokeWidth="1.5" opacity="0.3" className="text-primary">
-                  <line x1="20" y1="50" x2="35" y2="50" />
-                  <line x1="15" y1="70" x2="30" y2="70" />
-                  <line x1="20" y1="90" x2="35" y2="90" />
+              <svg className="w-40 h-32" viewBox="0 0 160 120" xmlns="http://www.w3.org/2000/svg">
+                {/* Growth curve representing startup trajectory */}
+                <path
+                  d="M 20 100 Q 40 80 60 60 T 100 20 T 140 10"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="3"
+                  className="text-primary/60"
+                />
+                
+                {/* Milestone dots on curve */}
+                <circle cx="20" cy="100" r="4" fill="currentColor" className="text-primary/40" />
+                <circle cx="60" cy="60" r="5" fill="currentColor" className="text-primary/70" />
+                <circle cx="100" cy="20" r="4" fill="currentColor" className="text-primary/50" />
+                <circle cx="140" cy="10" r="6" fill="currentColor" className="text-primary" />
+                
+                {/* Supporting grid lines */}
+                <g stroke="currentColor" strokeWidth="0.5" className="text-primary/15">
+                  <line x1="10" y1="110" x2="150" y2="110" />
+                  <line x1="10" y1="10" x2="10" y2="110" />
                 </g>
               </svg>
             </div>
@@ -77,29 +76,37 @@ export default function Teams() {
 
           {/* Innovation Teams */}
           <div className="bg-white border border-foreground/5 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:border-primary/20 transition-all duration-300">
-            {/* Visual Header */}
+            {/* Original Visual - Idea to Execution Cycle */}
             <div className="h-48 overflow-hidden bg-gradient-to-br from-primary/8 to-primary/3 flex items-center justify-center relative">
-              {/* Lightbulb visual with idea concept */}
-              <svg className="w-32 h-32" viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg">
+              <svg className="w-40 h-32" viewBox="0 0 160 120" xmlns="http://www.w3.org/2000/svg">
+                {/* Circular process flow */}
+                <circle cx="80" cy="60" r="45" fill="none" stroke="currentColor" strokeWidth="2" className="text-primary/20" />
+                
+                {/* Process stages around circle */}
                 <g className="text-primary">
-                  {/* Bulb */}
-                  <circle cx="60" cy="50" r="28" fill="currentColor" opacity="0.8" />
-                  {/* Filament */}
-                  <path d="M 50 40 Q 55 35 60 40 Q 65 35 70 40" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.6" />
-                  {/* Base */}
-                  <rect x="50" y="78" width="20" height="12" rx="2" fill="currentColor" opacity="0.7" />
-                  {/* Socket lines */}
-                  <line x1="45" y1="90" x2="75" y2="90" stroke="currentColor" strokeWidth="1.5" opacity="0.5" />
-                  <line x1="45" y1="100" x2="75" y2="100" stroke="currentColor" strokeWidth="1.5" opacity="0.5" />
-                  {/* Glow effect */}
-                  <circle cx="60" cy="50" r="35" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.2" />
+                  {/* Stage 1 - Idea (top) */}
+                  <circle cx="80" cy="20" r="6" fill="currentColor" />
+                  <text x="75" y="38" fontSize="9" fontWeight="600" className="text-primary/70" fill="currentColor">Idea</text>
+                  
+                  {/* Stage 2 - Build (right) */}
+                  <circle cx="125" cy="60" r="6" fill="currentColor" opacity="0.7" />
+                  <text x="118" y="78" fontSize="9" fontWeight="600" className="text-primary/70" fill="currentColor">Build</text>
+                  
+                  {/* Stage 3 - Test (bottom) */}
+                  <circle cx="80" cy="100" r="6" fill="currentColor" opacity="0.5" />
+                  <text x="70" y="115" fontSize="9" fontWeight="600" className="text-primary/70" fill="currentColor">Test</text>
+                  
+                  {/* Stage 4 - Launch (left) */}
+                  <circle cx="35" cy="60" r="6" fill="currentColor" opacity="0.6" />
+                  <text x="20" y="78" fontSize="9" fontWeight="600" className="text-primary/70" fill="currentColor">Launch</text>
                 </g>
-                {/* Spark elements */}
-                <g className="text-primary" opacity="0.4">
-                  <circle cx="95" cy="35" r="3" fill="currentColor" />
-                  <circle cx="25" cy="35" r="3" fill="currentColor" />
-                  <circle cx="80" cy="20" r="2" fill="currentColor" />
-                  <circle cx="40" cy="20" r="2" fill="currentColor" />
+                
+                {/* Flow arrows */}
+                <g stroke="currentColor" strokeWidth="1.5" className="text-primary/30" fill="none">
+                  <path d="M 80 26 L 115 50" />
+                  <path d="M 119 66 L 90 94" />
+                  <path d="M 74 94 L 41 66" />
+                  <path d="M 41 54 L 74 26" />
                 </g>
               </svg>
             </div>
