@@ -1,15 +1,25 @@
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Teams from "@/components/sections/Teams";
+import LaunchTeamsDetail from "@/components/sections/LaunchTeamsDetail";
+import InnovationTeamsDetail from "@/components/sections/InnovationTeamsDetail";
 import GetInvolved from "@/components/sections/GetInvolved";
+import Leadership from "@/components/sections/Leadership";
+import Partners from "@/components/sections/Partners";
+import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div>
       <Hero />
       <About />
       <Teams />
+      <LaunchTeamsDetail />
+      <InnovationTeamsDetail />
       <GetInvolved />
+      <Leadership />
+      <Partners />
+      <Contact />
     </div>
   );
 }

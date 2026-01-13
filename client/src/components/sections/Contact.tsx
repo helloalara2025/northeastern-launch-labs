@@ -1,29 +1,106 @@
+import { Button } from "@/components/ui/button";
+import { Mail, MapPin, Clock } from "lucide-react";
+
 export default function Contact() {
   return (
-    <section id="contact" className="py-20 bg-gray-50 border-t border-foreground/10">
-      <div className="container max-w-2xl">
-        <div className="text-center">
-          <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-4">
-            Questions?
-          </h2>
-          <p className="text-lg text-foreground/70 mb-8">
-            Reach out to us. We'd love to hear from you.
-          </p>
+    <section id="contact" className="py-24 bg-white border-t border-foreground/5">
+      <div className="container">
+        <h2 className="font-sans font-bold text-5xl md:text-6xl text-foreground mb-16 leading-tight">
+          Get In Touch
+        </h2>
 
-          <div className="bg-white border border-foreground/10 rounded-lg p-8 shadow-sm">
-            <div className="space-y-6">
+        <div className="grid lg:grid-cols-2 gap-16">
+          {/* Contact Info */}
+          <div className="space-y-8">
+            <div className="flex items-start gap-4">
+              <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-bold text-foreground mb-2">Email</h3>
-                <a href="mailto:hello@launchlabs.neu.edu" className="text-primary hover:text-primary/80 transition-colors font-medium">
-                  hello@launchlabs.neu.edu
-                </a>
-              </div>
-
-              <div className="border-t border-foreground/10 pt-6">
-                <h3 className="font-bold text-foreground mb-2">Location</h3>
-                <p className="text-foreground/70 text-sm">Northeastern University, Boston, MA</p>
+                <h3 className="font-sans font-bold text-foreground mb-1">General Inquiries</h3>
+                <p className="text-foreground/60 font-regular">Coming soon</p>
               </div>
             </div>
+
+            <div className="flex items-start gap-4">
+              <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-sans font-bold text-foreground mb-1">Student Questions</h3>
+                <p className="text-foreground/60 font-regular">Coming soon</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <Mail className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-sans font-bold text-foreground mb-1">Startup Partnerships</h3>
+                <p className="text-foreground/60 font-regular">Coming soon</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <Clock className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-sans font-bold text-foreground mb-1">Office Hours</h3>
+                <p className="text-foreground/60 font-regular">TBD</p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <MapPin className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+              <div>
+                <h3 className="font-sans font-bold text-foreground mb-1">Location</h3>
+                <p className="text-foreground/60 font-regular">TBD</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Contact Form */}
+          <div>
+            <form className="space-y-5">
+              <div>
+                <label className="block text-sm font-bold text-foreground mb-2">Name</label>
+                <input 
+                  type="text" 
+                  placeholder="Your name" 
+                  className="w-full px-4 py-3 border border-foreground/15 rounded-lg bg-white text-foreground placeholder:text-foreground/40 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/30"
+                  required
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-bold text-foreground mb-2">Email</label>
+                <input 
+                  type="email" 
+                  placeholder="your@email.com" 
+                  className="w-full px-4 py-3 border border-foreground/15 rounded-lg bg-white text-foreground placeholder:text-foreground/40 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/30"
+                  required
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-bold text-foreground mb-2">Subject</label>
+                <select className="w-full px-4 py-3 border border-foreground/15 rounded-lg bg-white text-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/30">
+                  <option>General Inquiry</option>
+                  <option>Student Interest</option>
+                  <option>Startup Partnership</option>
+                  <option>Leadership</option>
+                  <option>Other</option>
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-sm font-bold text-foreground mb-2">Message</label>
+                <textarea 
+                  placeholder="Your message..." 
+                  rows={5}
+                  className="w-full px-4 py-3 border border-foreground/15 rounded-lg bg-white text-foreground placeholder:text-foreground/40 focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/30 resize-none"
+                  required
+                ></textarea>
+              </div>
+
+              <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold h-12 rounded-lg text-base transition-all duration-200 shadow-lg hover:shadow-xl">
+                Send Message
+              </Button>
+            </form>
           </div>
         </div>
       </div>
