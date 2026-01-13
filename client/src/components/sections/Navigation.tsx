@@ -29,7 +29,7 @@ export default function Navigation() {
     >
       <div className="container flex items-center justify-between h-16">
         <a href="#" className="flex items-center gap-2">
-          <span className="font-sans font-bold text-lg text-primary">Launch Labs</span>
+          <span className="font-sans font-bold text-lg text-red-700">Launch Labs</span>
           <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Northeastern</span>
         </a>
 
@@ -39,7 +39,7 @@ export default function Navigation() {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors duration-200"
+              className="text-sm font-medium text-foreground/70 hover:text-red-700 transition-colors duration-200"
             >
               {link.name}
             </a>
@@ -48,7 +48,7 @@ export default function Navigation() {
 
         <div className="hidden md:flex items-center gap-3">
           <a href="#get-involved">
-            <Button className="bg-primary hover:bg-primary/90 text-white font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md">
+            <Button className="bg-red-600 hover:bg-red-700 text-white font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md">
               Apply to Join
             </Button>
           </a>
@@ -71,13 +71,13 @@ export default function Navigation() {
               key={link.name}
               href={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="text-sm font-medium text-foreground/70 hover:text-primary px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200"
+              className="text-sm font-medium text-foreground/70 hover:text-red-700 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200"
             >
               {link.name}
             </a>
           ))}
           <a href="#get-involved" onClick={() => setIsMobileMenuOpen(false)} className="mt-2">
-            <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md">
+            <Button className="w-full bg-red-600 hover:bg-red-700 text-white font-bold rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md">
               Apply to Join
             </Button>
           </a>
