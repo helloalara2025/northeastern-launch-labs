@@ -6,37 +6,43 @@ export default function Leadership() {
       name: "Coming Soon",
       role: "Co-President",
       major: "TBD",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      color: "from-primary/20 to-primary/10",
+      initial: "A"
     },
     {
       name: "Coming Soon",
       role: "Co-President",
       major: "TBD",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+      color: "from-primary/15 to-primary/5",
+      initial: "B"
     },
     {
       name: "Coming Soon",
       role: "Launch Teams Lead",
       major: "TBD",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+      color: "from-primary/25 to-primary/15",
+      initial: "C"
     },
     {
       name: "Coming Soon",
       role: "Innovation Teams Lead",
       major: "TBD",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      color: "from-primary/20 to-primary/10",
+      initial: "D"
     },
     {
       name: "Coming Soon",
       role: "Operations Lead",
       major: "TBD",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+      color: "from-primary/18 to-primary/8",
+      initial: "E"
     },
     {
       name: "Coming Soon",
       role: "Partnerships Lead",
       major: "TBD",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+      color: "from-primary/22 to-primary/12",
+      initial: "F"
     }
   ];
 
@@ -55,12 +61,10 @@ export default function Leadership() {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {leaders.map((leader, index) => (
             <Card key={index} className="border border-foreground/5 overflow-hidden shadow-sm hover:shadow-md hover:border-foreground/10 transition-all bg-white">
-              <div className="h-40 overflow-hidden bg-foreground/5">
-                <img 
-                  src={leader.image} 
-                  alt={leader.name} 
-                  className="w-full h-full object-cover"
-                />
+              <div className={`h-40 overflow-hidden bg-gradient-to-br ${leader.color} flex items-center justify-center`}>
+                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary/40 to-primary/20 flex items-center justify-center">
+                  <span className="text-4xl font-bold text-primary/60">{leader.initial}</span>
+                </div>
               </div>
               <CardContent className="p-4">
                 <h3 className="font-sans font-semibold text-base text-foreground mb-1">{leader.name}</h3>

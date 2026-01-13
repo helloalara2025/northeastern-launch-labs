@@ -38,14 +38,37 @@ export default function Hero() {
           </div>
         </div>
         
-        {/* Hero Image */}
-        <div className="hidden lg:block">
-          <div className="rounded-lg overflow-hidden bg-foreground/5 shadow-sm">
-            <img 
-              src="/images/students-advice.jpg" 
-              alt="Northeastern students collaborating" 
-              className="w-full h-auto object-cover aspect-[4/3]"
-            />
+        {/* Digital Visual */}
+        <div className="hidden lg:flex items-center justify-center">
+          <div className="relative w-full h-96">
+            {/* Background gradient circle */}
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl"></div>
+            
+            {/* Floating shapes */}
+            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+              {/* Grid pattern */}
+              <defs>
+                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-foreground/10" />
+                </pattern>
+              </defs>
+              <rect width="400" height="400" fill="url(#grid)" />
+              
+              {/* Floating circles */}
+              <circle cx="100" cy="80" r="30" fill="none" stroke="currentColor" strokeWidth="2" className="text-primary/30" />
+              <circle cx="300" cy="150" r="50" fill="none" stroke="currentColor" strokeWidth="2" className="text-primary/20" />
+              <circle cx="150" cy="280" r="40" fill="none" stroke="currentColor" strokeWidth="2" className="text-primary/25" />
+              
+              {/* Accent dots */}
+              <circle cx="100" cy="80" r="6" fill="currentColor" className="text-primary" />
+              <circle cx="300" cy="150" r="6" fill="currentColor" className="text-primary/60" />
+              <circle cx="150" cy="280" r="6" fill="currentColor" className="text-primary/40" />
+              
+              {/* Connecting lines */}
+              <line x1="100" y1="80" x2="300" y2="150" stroke="currentColor" strokeWidth="1" className="text-primary/15" />
+              <line x1="300" y1="150" x2="150" y2="280" stroke="currentColor" strokeWidth="1" className="text-primary/15" />
+              <line x1="150" y1="280" x2="100" y2="80" stroke="currentColor" strokeWidth="1" className="text-primary/15" />
+            </svg>
           </div>
         </div>
       </div>
