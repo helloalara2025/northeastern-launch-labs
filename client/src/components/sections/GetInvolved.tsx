@@ -39,10 +39,10 @@ export default function GetInvolved() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {opportunities.map((item, idx) => (
             <a key={idx} href={item.href}>
-              <div className="bg-white border-2 border-red-200 rounded-lg p-8 transition-all duration-300 h-full flex flex-col hover:shadow-lg cursor-pointer hover:border-red-600">
+              <div className="bg-white border-2 border-red-100 rounded-lg p-8 transition-all duration-300 h-full flex flex-col hover:shadow-lg cursor-pointer hover:border-red-800">
                 <h3 className="font-sans font-semibold text-lg text-foreground mb-3">{item.title}</h3>
                 <p className="text-foreground/70 text-sm leading-relaxed mb-6 font-medium flex-grow">{item.desc}</p>
-                <div className="flex items-center gap-1 text-red-600 font-semibold text-sm">
+                <div className="flex items-center gap-1 text-red-800 font-semibold text-sm">
                   {item.buttonText}
                   <ArrowRight size={14} />
                 </div>

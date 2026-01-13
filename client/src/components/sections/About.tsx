@@ -26,8 +26,8 @@ export default function About() {
               desc: "Meaningful commitment, manageable workload."
             }
           ].map((item, idx) => (
-            <div key={idx} className="bg-white border-2 border-red-200 rounded-lg p-8 hover:shadow-lg transition-all duration-300">
-              <h3 className="font-sans font-semibold text-lg text-red-700 mb-3">{item.title}</h3>
+            <div key={idx} className="bg-white border-2 border-red-100 rounded-lg p-8 hover:shadow-lg transition-all duration-300">
+              <h3 className="font-sans font-semibold text-lg text-red-800 mb-3">{item.title}</h3>
               <p className="text-foreground/70 text-base leading-relaxed font-medium">{item.desc}</p>
             </div>
           ))}

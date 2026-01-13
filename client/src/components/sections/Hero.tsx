@@ -6,17 +6,17 @@ export default function Hero() {
     <section id="home" className="relative pt-32 pb-24 bg-white overflow-hidden">
       {/* Subtle line pattern background */}
       <div className="absolute inset-0 opacity-5 pointer-events-none" style={{
-        backgroundImage: 'repeating-linear-gradient(45deg, #CC0000, #CC0000 2px, transparent 2px, transparent 20px)'
+        backgroundImage: 'repeating-linear-gradient(45deg, #A41E34, #A41E34 2px, transparent 2px, transparent 20px)'
       }}></div>
       
       <div className="container relative z-10">
         <div className="max-w-2xl">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 text-red-700 text-xs font-semibold uppercase tracking-widest mb-8 border border-red-200">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 text-red-800 text-xs font-semibold uppercase tracking-widest mb-8 border border-red-100">
             <span className="w-2 h-2 bg-red-600 rounded-full"></span>
             Northeastern Student Org
           </div>
           
-          <h1 className="font-sans font-semibold text-7xl lg:text-8xl text-red-700 leading-none tracking-tight mb-8">
+          <h1 className="font-sans font-semibold text-7xl lg:text-8xl text-red-800 leading-none tracking-tight mb-8">
             From Idea
             <br />
             to Impact.
@@ -28,7 +28,7 @@ export default function Hero() {
           
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="#get-involved">
-              <Button className="bg-red-600 hover:bg-red-700 text-white font-semibold px-8 h-12 rounded-lg text-base flex items-center gap-2 transition-all duration-300">
+              <Button className="bg-red-800 hover:bg-red-900 text-white font-semibold px-8 h-12 rounded-lg text-base flex items-center gap-2 transition-all duration-300">
                 Start Building
                 <ArrowRight size={18} />
               </Button>
