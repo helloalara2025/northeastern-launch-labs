@@ -3,14 +3,14 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative pt-32 pb-20 bg-background">
+    <section id="home" className="relative pt-32 pb-24 bg-white">
       <div className="container">
         <div className="max-w-2xl">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/15 text-primary text-xs font-bold uppercase tracking-wide mb-6">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-primary text-xs font-bold uppercase tracking-wide mb-6">
             Northeastern Student Org
           </div>
           
-          <h1 className="font-sans font-bold text-5xl lg:text-6xl text-foreground leading-tight tracking-tight mb-6">
+          <h1 className="font-sans font-bold text-6xl lg:text-7xl text-foreground leading-tight tracking-tight mb-6">
             From Idea to Impact
           </h1>
           
@@ -20,13 +20,13 @@ export default function Hero() {
           
           <div className="flex flex-col sm:flex-row gap-3">
             <a href="#get-involved">
-              <Button className="bg-primary hover:bg-primary/90 text-background font-bold px-6 h-11 rounded-lg text-base flex items-center gap-2 transition-all duration-200">
+              <Button className="bg-primary hover:bg-primary/90 text-white font-bold px-6 h-11 rounded-lg text-base flex items-center gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
                 Apply Now
                 <ArrowRight size={16} />
               </Button>
             </a>
             <a href="#about">
-              <Button variant="outline" className="border-2 border-primary/40 text-primary font-bold px-6 h-11 rounded-lg text-base hover:bg-primary/10 transition-all duration-200">
+              <Button variant="outline" className="border-2 border-primary text-primary font-bold px-6 h-11 rounded-lg text-base hover:bg-blue-50 transition-all duration-200">
                 Learn More
               </Button>
             </a>
