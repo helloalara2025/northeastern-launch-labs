@@ -27,14 +27,14 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 bg-white/95 backdrop-blur-sm ${
-        isScrolled ? "border-b border-foreground/5 shadow-sm" : ""
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 bg-white ${
+        isScrolled ? "shadow-sm border-b border-foreground/5" : ""
       }`}
     >
-      <div className="container flex items-center justify-between py-3">
+      <div className="container flex items-center justify-between py-4">
         <a
           href="/"
-          className="font-sans font-semibold text-xl text-foreground hover:text-primary transition-colors cursor-pointer"
+          className="font-sans font-semibold text-xl text-primary hover:text-primary/80 transition-colors cursor-pointer"
         >
           Launch Labs
         </a>
@@ -45,9 +45,9 @@ export default function Navigation() {
             <a
               key={link.name}
               href={link.href}
-              className={`text-sm font-medium px-3 py-2 rounded transition-colors ${
+              className={`text-sm font-medium px-3 py-2 rounded-lg transition-all duration-200 ${
                 location === link.href
-                  ? "text-primary bg-primary/5"
+                  ? "text-primary bg-primary/8"
                   : "text-foreground/70 hover:text-foreground hover:bg-foreground/5"
               }`}
             >
@@ -58,8 +58,8 @@ export default function Navigation() {
 
         <div className="hidden md:flex items-center gap-3">
           <a href="/forms">
-            <Button className="bg-primary hover:bg-primary/90 text-white font-medium px-5 h-9 rounded text-sm">
-              Apply
+            <Button className="bg-primary hover:bg-primary/90 text-white font-medium px-6 h-10 rounded-lg text-sm transition-all duration-200">
+              Apply to Join
             </Button>
           </a>
         </div>
@@ -81,9 +81,9 @@ export default function Navigation() {
               key={link.name}
               href={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className={`text-sm font-medium px-3 py-2 rounded transition-colors ${
+              className={`text-sm font-medium px-3 py-2 rounded-lg transition-all duration-200 ${
                 location === link.href
-                  ? "text-primary bg-primary/5"
+                  ? "text-primary bg-primary/8"
                   : "text-foreground/70 hover:text-foreground hover:bg-foreground/5"
               }`}
             >
@@ -91,8 +91,8 @@ export default function Navigation() {
             </a>
           ))}
           <a href="/forms" onClick={() => setIsMobileMenuOpen(false)} className="mt-2">
-            <Button className="w-full bg-primary hover:bg-primary/90 text-white font-medium rounded text-sm">
-              Apply Now
+            <Button className="w-full bg-primary hover:bg-primary/90 text-white font-medium rounded-lg text-sm transition-all duration-200">
+              Apply to Join
             </Button>
           </a>
         </div>

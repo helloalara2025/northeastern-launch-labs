@@ -1,11 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { Rocket, Lightbulb } from "lucide-react";
 
 export default function Teams() {
   return (
     <section id="teams" className="py-20 bg-white border-t border-foreground/5">
       <div className="container">
-        <div className="max-w-3xl mb-12">
+        <div className="max-w-3xl mb-16">
           <h2 className="font-sans font-semibold text-4xl md:text-5xl text-foreground mb-4 leading-tight">
             Two Ways to Get Involved
           </h2>
@@ -16,21 +15,31 @@ export default function Teams() {
 
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Launch Teams */}
-          <div className="bg-white border border-foreground/5 rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:border-foreground/10 transition-all">
-            {/* Digital Visual */}
-            <div className="h-40 overflow-hidden bg-gradient-to-br from-primary/5 to-primary/10 flex items-center justify-center">
-              <svg className="w-24 h-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                {/* Rocket icon visual */}
-                <g className="text-primary/40">
-                  <path d="M50 10 L60 40 L50 35 L40 40 Z" fill="currentColor" />
-                  <rect x="45" y="40" width="10" height="35" fill="currentColor" />
-                  <circle cx="50" cy="80" r="8" fill="currentColor" />
-                  <path d="M40 60 L30 70 L35 65 Z" fill="currentColor" opacity="0.6" />
-                  <path d="M60 60 L70 70 L65 65 Z" fill="currentColor" opacity="0.6" />
+          <div className="bg-white border border-foreground/5 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:border-primary/20 transition-all duration-300">
+            {/* Visual Header */}
+            <div className="h-48 overflow-hidden bg-gradient-to-br from-primary/8 to-primary/3 flex items-center justify-center relative">
+              {/* Rocket visual with motion */}
+              <svg className="w-32 h-32" viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg">
+                <g className="text-primary">
+                  {/* Rocket body */}
+                  <rect x="45" y="20" width="30" height="80" rx="4" fill="currentColor" opacity="0.8" />
+                  {/* Rocket nose */}
+                  <path d="M 45 20 L 60 0 L 75 20 Z" fill="currentColor" opacity="0.9" />
+                  {/* Window */}
+                  <circle cx="60" cy="35" r="6" fill="white" opacity="0.6" />
+                  {/* Left fin */}
+                  <path d="M 45 80 L 30 100 L 45 95 Z" fill="currentColor" opacity="0.7" />
+                  {/* Right fin */}
+                  <path d="M 75 80 L 90 100 L 75 95 Z" fill="currentColor" opacity="0.7" />
+                  {/* Flame */}
+                  <path d="M 50 100 Q 45 120 50 140 Q 60 125 60 140 Q 70 125 70 140 Q 75 120 70 100" fill="currentColor" opacity="0.5" />
                 </g>
-                {/* Accent circles */}
-                <circle cx="50" cy="50" r="35" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-primary/20" />
-                <circle cx="50" cy="50" r="25" fill="none" stroke="currentColor" strokeWidth="1" className="text-primary/15" />
+                {/* Motion lines */}
+                <g stroke="currentColor" strokeWidth="1.5" opacity="0.3" className="text-primary">
+                  <line x1="20" y1="50" x2="35" y2="50" />
+                  <line x1="15" y1="70" x2="30" y2="70" />
+                  <line x1="20" y1="90" x2="35" y2="90" />
+                </g>
               </svg>
             </div>
             
@@ -59,7 +68,7 @@ export default function Teams() {
               </div>
 
               <a href="/launch-teams">
-                <Button className="w-full bg-primary hover:bg-primary/90 text-white font-medium h-10 rounded text-sm">
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white font-medium h-11 rounded-lg text-sm transition-all duration-200">
                   Learn More
                 </Button>
               </a>
@@ -67,21 +76,31 @@ export default function Teams() {
           </div>
 
           {/* Innovation Teams */}
-          <div className="bg-white border border-foreground/5 rounded-lg overflow-hidden shadow-sm hover:shadow-md hover:border-foreground/10 transition-all">
-            {/* Digital Visual */}
-            <div className="h-40 overflow-hidden bg-gradient-to-br from-primary/5 to-primary/10 flex items-center justify-center">
-              <svg className="w-24 h-24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                {/* Lightbulb visual */}
-                <g className="text-primary/40">
-                  <circle cx="50" cy="35" r="15" fill="currentColor" />
-                  <path d="M40 50 Q40 55 45 55 L55 55 Q60 55 60 50" fill="currentColor" />
-                  <rect x="47" y="55" width="6" height="8" fill="currentColor" />
-                  <line x1="45" y1="63" x2="55" y2="63" stroke="currentColor" strokeWidth="2" />
-                  <line x1="45" y1="68" x2="55" y2="68" stroke="currentColor" strokeWidth="2" />
+          <div className="bg-white border border-foreground/5 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:border-primary/20 transition-all duration-300">
+            {/* Visual Header */}
+            <div className="h-48 overflow-hidden bg-gradient-to-br from-primary/8 to-primary/3 flex items-center justify-center relative">
+              {/* Lightbulb visual with idea concept */}
+              <svg className="w-32 h-32" viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg">
+                <g className="text-primary">
+                  {/* Bulb */}
+                  <circle cx="60" cy="50" r="28" fill="currentColor" opacity="0.8" />
+                  {/* Filament */}
+                  <path d="M 50 40 Q 55 35 60 40 Q 65 35 70 40" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.6" />
+                  {/* Base */}
+                  <rect x="50" y="78" width="20" height="12" rx="2" fill="currentColor" opacity="0.7" />
+                  {/* Socket lines */}
+                  <line x1="45" y1="90" x2="75" y2="90" stroke="currentColor" strokeWidth="1.5" opacity="0.5" />
+                  <line x1="45" y1="100" x2="75" y2="100" stroke="currentColor" strokeWidth="1.5" opacity="0.5" />
+                  {/* Glow effect */}
+                  <circle cx="60" cy="50" r="35" fill="none" stroke="currentColor" strokeWidth="1" opacity="0.2" />
                 </g>
-                {/* Accent elements */}
-                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-primary/20" />
-                <path d="M35 35 Q50 20 65 35" fill="none" stroke="currentColor" strokeWidth="1" className="text-primary/15" />
+                {/* Spark elements */}
+                <g className="text-primary" opacity="0.4">
+                  <circle cx="95" cy="35" r="3" fill="currentColor" />
+                  <circle cx="25" cy="35" r="3" fill="currentColor" />
+                  <circle cx="80" cy="20" r="2" fill="currentColor" />
+                  <circle cx="40" cy="20" r="2" fill="currentColor" />
+                </g>
               </svg>
             </div>
             
@@ -110,7 +129,7 @@ export default function Teams() {
               </div>
 
               <a href="/innovation-teams">
-                <Button className="w-full bg-primary hover:bg-primary/90 text-white font-medium h-10 rounded text-sm">
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white font-medium h-11 rounded-lg text-sm transition-all duration-200">
                   Learn More
                 </Button>
               </a>

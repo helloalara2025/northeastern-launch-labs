@@ -1,80 +1,97 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Users, TrendingUp, Zap, Clock } from "lucide-react";
 
 export default function Partners() {
   return (
     <div className="min-h-screen bg-white">
       <div className="pt-24 pb-20">
         <div className="container max-w-4xl">
-          <div className="mb-12">
-            <h1 className="font-sans font-bold text-5xl md:text-6xl text-foreground mb-6">
-              Our Partners
+          <div className="mb-16">
+            <h1 className="font-sans font-semibold text-5xl md:text-6xl text-foreground mb-6 leading-tight">
+              Our Startup Partners
             </h1>
-            <p className="text-xl text-foreground/70 leading-relaxed">
-              We work with innovative startups and organizations to create real-world learning opportunities for our members.
+            <p className="text-xl text-foreground/70 leading-relaxed font-regular">
+              Launch Labs works with forward-thinking startups committed to providing meaningful learning experiences.
             </p>
           </div>
 
-          <div className="space-y-12">
+          <div className="space-y-16">
+            {/* Benefits Section */}
             <section>
-              <h2 className="font-sans font-bold text-3xl text-foreground mb-6">Current Startup Partners</h2>
+              <h2 className="font-sans font-semibold text-3xl text-foreground mb-8 leading-tight">Why Partner With Us?</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
-                  <CardContent className="p-8">
-                    <div className="w-12 h-12 rounded bg-gray-200 mb-4"></div>
-                    <h3 className="font-bold text-lg text-foreground mb-2">Coming Soon</h3>
-                    <p className="text-foreground/70 text-sm">Partner information will be added as we launch collaborations.</p>
+                <Card className="border border-foreground/5 shadow-sm hover:shadow-md hover:border-primary/20 transition-all bg-white rounded-xl">
+                  <CardContent className="p-6">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4">
+                      <Users className="w-5 h-5" />
+                    </div>
+                    <h3 className="font-sans font-semibold text-base mb-2 text-foreground">Skilled Student Teams</h3>
+                    <p className="text-foreground/70 text-sm leading-relaxed font-regular">
+                      Access talented students from all programs—engineering, design, business, and more.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border border-foreground/5 shadow-sm hover:shadow-md hover:border-primary/20 transition-all bg-white rounded-xl">
+                  <CardContent className="p-6">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4">
+                      <TrendingUp className="w-5 h-5" />
+                    </div>
+                    <h3 className="font-sans font-semibold text-base mb-2 text-foreground">Cost-Effective Development</h3>
+                    <p className="text-foreground/70 text-sm leading-relaxed font-regular">
+                      High-quality work for early-stage ventures at a fraction of traditional agency costs.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border border-foreground/5 shadow-sm hover:shadow-md hover:border-primary/20 transition-all bg-white rounded-xl">
+                  <CardContent className="p-6">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4">
+                      <Zap className="w-5 h-5" />
+                    </div>
+                    <h3 className="font-sans font-semibold text-base mb-2 text-foreground">Fresh Perspectives</h3>
+                    <p className="text-foreground/70 text-sm leading-relaxed font-regular">
+                      Students bring emerging technologies and new approaches to your challenges.
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border border-foreground/5 shadow-sm hover:shadow-md hover:border-primary/20 transition-all bg-white rounded-xl">
+                  <CardContent className="p-6">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary mb-4">
+                      <Clock className="w-5 h-5" />
+                    </div>
+                    <h3 className="font-sans font-semibold text-base mb-2 text-foreground">Flexible Commitment</h3>
+                    <p className="text-foreground/70 text-sm leading-relaxed font-regular">
+                      Semester-long engagements with defined scope that fits your timeline.
+                    </p>
                   </CardContent>
                 </Card>
               </div>
             </section>
 
-            <section className="border-t border-foreground/10 pt-12">
-              <h2 className="font-sans font-bold text-3xl text-foreground mb-6">Why Partner With Us?</h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                <Card className="border border-foreground/10 shadow-none">
-                  <CardContent className="p-6">
-                    <h3 className="font-bold text-lg text-foreground mb-3">Talented Students</h3>
-                    <p className="text-foreground/70 text-sm leading-relaxed">
-                      Access to motivated, diverse students across engineering, design, business, and more.
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card className="border border-foreground/10 shadow-none">
-                  <CardContent className="p-6">
-                    <h3 className="font-bold text-lg text-foreground mb-3">Real Impact</h3>
-                    <p className="text-foreground/70 text-sm leading-relaxed">
-                      Get meaningful work done on your product development, strategy, and implementation.
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card className="border border-foreground/10 shadow-none">
-                  <CardContent className="p-6">
-                    <h3 className="font-bold text-lg text-foreground mb-3">Flexible Engagement</h3>
-                    <p className="text-foreground/70 text-sm leading-relaxed">
-                      Work with teams on a timeline and scope that fits your needs and budget.
-                    </p>
-                  </CardContent>
-                </Card>
-                <Card className="border border-foreground/10 shadow-none">
-                  <CardContent className="p-6">
-                    <h3 className="font-bold text-lg text-foreground mb-3">Community Connection</h3>
-                    <p className="text-foreground/70 text-sm leading-relaxed">
-                      Build relationships with Northeastern's entrepreneurship and innovation community.
-                    </p>
-                  </CardContent>
-                </Card>
+            {/* Current Partners */}
+            <section className="border-t border-foreground/5 pt-12">
+              <h2 className="font-sans font-semibold text-3xl text-foreground mb-8 leading-tight">Current Startup Partners</h2>
+              <div className="bg-foreground/5 border border-foreground/5 rounded-xl p-8 text-center">
+                <p className="text-foreground/70 font-regular">
+                  Partner profiles and logos coming soon. Check back for information about our current startup collaborations.
+                </p>
               </div>
             </section>
 
-            <section className="bg-gray-50 border border-foreground/10 rounded-lg p-8">
-              <h2 className="font-sans font-bold text-2xl text-foreground mb-4">Interested in Partnering?</h2>
-              <p className="text-foreground/70 mb-6">
-                If you're a startup or organization interested in collaborating with Launch Labs, we'd love to hear from you.
+            {/* CTA */}
+            <section className="bg-primary/5 border border-primary/20 rounded-xl p-8 text-center">
+              <h3 className="font-sans font-semibold text-2xl text-foreground mb-4">Interested in Partnering?</h3>
+              <p className="text-foreground/70 mb-6 font-regular">
+                Let's talk about how Launch Labs can support your startup's growth.
               </p>
-              <Button className="bg-primary hover:bg-primary/90 text-white font-bold px-8 h-12 rounded">
-                Get in Touch
-              </Button>
+              <a href="/contact">
+                <Button className="bg-primary hover:bg-primary/90 text-white font-medium px-8 h-11 rounded-lg">
+                  Get in Touch
+                </Button>
+              </a>
             </section>
           </div>
         </div>
