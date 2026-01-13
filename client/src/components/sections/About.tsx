@@ -17,16 +17,16 @@ export default function About() {
           {/* Card 1 - Real-World Projects */}
           <Card className="border border-foreground/5 shadow-sm hover:shadow-md hover:border-primary/20 transition-all bg-white rounded-xl overflow-hidden">
             <CardContent className="p-6">
-              {/* Original SVG visual */}
+              {/* Refined SVG visual */}
               <div className="mb-4 h-20 flex items-center justify-center">
                 <svg className="w-20 h-20" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                  {/* Shipping box concept */}
                   <g className="text-primary">
-                    <rect x="15" y="25" width="50" height="40" rx="2" fill="none" stroke="currentColor" strokeWidth="2" />
-                    <line x1="15" y1="35" x2="65" y2="35" stroke="currentColor" strokeWidth="1.5" opacity="0.5" />
-                    <path d="M 40 40 L 50 50 L 30 50 Z" fill="currentColor" opacity="0.6" />
-                    <circle cx="25" cy="55" r="3" fill="currentColor" opacity="0.4" />
-                    <circle cx="55" cy="55" r="3" fill="currentColor" opacity="0.4" />
+                    {/* Layered rectangles - minimalist */}
+                    <rect x="15" y="30" width="50" height="35" rx="3" fill="currentColor" fillOpacity="0.12" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.4" />
+                    <rect x="18" y="27" width="50" height="35" rx="3" fill="currentColor" fillOpacity="0.08" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.3" />
+                    <rect x="21" y="24" width="50" height="35" rx="3" fill="currentColor" fillOpacity="0.04" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.2" />
+                    {/* Accent dot */}
+                    <circle cx="30" cy="40" r="2" fill="currentColor" fillOpacity="0.6" />
                   </g>
                 </svg>
               </div>
@@ -40,23 +40,21 @@ export default function About() {
           {/* Card 2 - Cross-Disciplinary */}
           <Card className="border border-foreground/5 shadow-sm hover:shadow-md hover:border-primary/20 transition-all bg-white rounded-xl overflow-hidden">
             <CardContent className="p-6">
-              {/* Original SVG visual */}
+              {/* Refined SVG visual */}
               <div className="mb-4 h-20 flex items-center justify-center">
                 <svg className="w-20 h-20" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                  {/* Interconnected disciplines */}
                   <g className="text-primary">
-                    {/* Central hub */}
-                    <circle cx="40" cy="40" r="8" fill="currentColor" opacity="0.7" />
-                    {/* Outer nodes */}
-                    <circle cx="20" cy="25" r="5" fill="currentColor" opacity="0.5" />
-                    <circle cx="60" cy="25" r="5" fill="currentColor" opacity="0.5" />
-                    <circle cx="20" cy="55" r="5" fill="currentColor" opacity="0.5" />
-                    <circle cx="60" cy="55" r="5" fill="currentColor" opacity="0.5" />
-                    {/* Connecting lines */}
-                    <line x1="40" y1="40" x2="20" y2="25" stroke="currentColor" strokeWidth="1.5" opacity="0.3" />
-                    <line x1="40" y1="40" x2="60" y2="25" stroke="currentColor" strokeWidth="1.5" opacity="0.3" />
-                    <line x1="40" y1="40" x2="20" y2="55" stroke="currentColor" strokeWidth="1.5" opacity="0.3" />
-                    <line x1="40" y1="40" x2="60" y2="55" stroke="currentColor" strokeWidth="1.5" opacity="0.3" />
+                    {/* Connected nodes - clean */}
+                    <circle cx="40" cy="40" r="6" fill="currentColor" fillOpacity="0.7" />
+                    <circle cx="25" cy="28" r="4" fill="currentColor" fillOpacity="0.5" />
+                    <circle cx="55" cy="28" r="4" fill="currentColor" fillOpacity="0.5" />
+                    <circle cx="25" cy="52" r="4" fill="currentColor" fillOpacity="0.5" />
+                    <circle cx="55" cy="52" r="4" fill="currentColor" fillOpacity="0.5" />
+                    {/* Lines */}
+                    <line x1="40" y1="40" x2="25" y2="28" stroke="currentColor" strokeWidth="1" strokeOpacity="0.2" />
+                    <line x1="40" y1="40" x2="55" y2="28" stroke="currentColor" strokeWidth="1" strokeOpacity="0.2" />
+                    <line x1="40" y1="40" x2="25" y2="52" stroke="currentColor" strokeWidth="1" strokeOpacity="0.2" />
+                    <line x1="40" y1="40" x2="55" y2="52" stroke="currentColor" strokeWidth="1" strokeOpacity="0.2" />
                   </g>
                 </svg>
               </div>
@@ -70,20 +68,22 @@ export default function About() {
           {/* Card 3 - Time Commitment */}
           <Card className="border border-foreground/5 shadow-sm hover:shadow-md hover:border-primary/20 transition-all bg-white rounded-xl overflow-hidden">
             <CardContent className="p-6">
-              {/* Original SVG visual */}
+              {/* Refined SVG visual */}
               <div className="mb-4 h-20 flex items-center justify-center">
                 <svg className="w-20 h-20" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-                  {/* Time blocks */}
                   <g className="text-primary">
-                    <rect x="15" y="20" width="12" height="12" rx="1" fill="currentColor" opacity="0.8" />
-                    <rect x="30" y="20" width="12" height="12" rx="1" fill="currentColor" opacity="0.6" />
-                    <rect x="45" y="20" width="12" height="12" rx="1" fill="currentColor" opacity="0.4" />
-                    <rect x="15" y="38" width="12" height="12" rx="1" fill="currentColor" opacity="0.5" />
-                    <rect x="30" y="38" width="12" height="12" rx="1" fill="currentColor" opacity="0.7" />
-                    <rect x="45" y="38" width="12" height="12" rx="1" fill="currentColor" opacity="0.3" />
-                    <rect x="15" y="56" width="12" height="12" rx="1" fill="currentColor" opacity="0.6" />
-                    <rect x="30" y="56" width="12" height="12" rx="1" fill="currentColor" opacity="0.4" />
-                    <rect x="45" y="56" width="12" height="12" rx="1" fill="currentColor" opacity="0.8" />
+                    {/* Progress bars */}
+                    <rect x="15" y="20" width="50" height="4" rx="2" fill="currentColor" fillOpacity="0.12" />
+                    <rect x="15" y="20" width="35" height="4" rx="2" fill="currentColor" fillOpacity="0.6" />
+                    
+                    <rect x="15" y="35" width="50" height="4" rx="2" fill="currentColor" fillOpacity="0.12" />
+                    <rect x="15" y="35" width="25" height="4" rx="2" fill="currentColor" fillOpacity="0.5" />
+                    
+                    <rect x="15" y="50" width="50" height="4" rx="2" fill="currentColor" fillOpacity="0.12" />
+                    <rect x="15" y="50" width="40" height="4" rx="2" fill="currentColor" fillOpacity="0.7" />
+                    
+                    <rect x="15" y="65" width="50" height="4" rx="2" fill="currentColor" fillOpacity="0.12" />
+                    <rect x="15" y="65" width="30" height="4" rx="2" fill="currentColor" fillOpacity="0.55" />
                   </g>
                 </svg>
               </div>

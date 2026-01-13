@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="container relative z-10 grid lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-8">
           <div className="space-y-4">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/5 text-primary text-xs font-semibold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-primary/8 text-primary text-xs font-semibold uppercase tracking-wider">
               Student Organization
             </div>
             <h1 className="font-sans font-semibold text-5xl md:text-6xl lg:text-7xl tracking-tight text-foreground leading-tight">
@@ -21,7 +21,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-3 pt-4">
             <a href="/forms">
               <Button 
-                className="bg-primary hover:bg-primary/90 text-white font-medium px-6 h-11 rounded text-base"
+                className="bg-primary hover:bg-primary/90 text-white font-medium px-6 h-11 rounded-lg text-base"
               >
                 Apply to Join
               </Button>
@@ -29,7 +29,7 @@ export default function Hero() {
             <a href="/about">
               <Button 
                 variant="outline" 
-                className="border border-foreground/20 text-foreground font-medium px-6 h-11 rounded text-base hover:bg-foreground/5"
+                className="border border-foreground/20 text-foreground font-medium px-6 h-11 rounded-lg text-base hover:bg-foreground/5"
               >
                 Learn More
               </Button>
@@ -37,51 +37,54 @@ export default function Hero() {
           </div>
         </div>
         
-        {/* Original Digital Visual - Abstract Project Layers */}
-        <div className="hidden lg:flex items-center justify-center relative h-96">
-          <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-            {/* Background animated layers */}
-            <defs>
-              <linearGradient id="layerGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stopColor="currentColor" stopOpacity="0.1" className="text-primary" />
-                <stop offset="100%" stopColor="currentColor" stopOpacity="0.05" className="text-primary" />
-              </linearGradient>
-            </defs>
-
-            {/* Stacked project layers - representing layered work */}
-            <g>
-              {/* Layer 1 - Bottom */}
-              <rect x="40" y="240" width="320" height="100" rx="8" fill="none" stroke="currentColor" strokeWidth="2" className="text-primary/20" />
-              <text x="60" y="275" fontSize="12" fontWeight="600" className="text-primary/40" fill="currentColor">Research & Discovery</text>
+        {/* Refined Notion/Figma-inspired Visual */}
+        <div className="hidden lg:flex items-center justify-center">
+          <div className="relative w-full h-96">
+            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+              {/* Subtle background grid */}
+              <defs>
+                <pattern id="subtleGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="currentColor" strokeWidth="0.5" className="text-foreground" />
+                </pattern>
+              </defs>
+              <rect width="400" height="400" fill="url(#subtleGrid)" fillOpacity="0.05" />
               
-              {/* Layer 2 - Middle */}
-              <rect x="30" y="160" width="340" height="90" rx="8" fill="none" stroke="currentColor" strokeWidth="2" className="text-primary/35" />
-              <text x="50" y="195" fontSize="12" fontWeight="600" className="text-primary/60" fill="currentColor">Design & Build</text>
+              {/* Organized blocks representing structured work - Notion/Figma style */}
+              <g className="text-primary">
+                {/* Top left block */}
+                <rect x="30" y="40" width="100" height="80" rx="8" fill="currentColor" fillOpacity="0.08" stroke="currentColor" strokeWidth="1.5" />
+                <circle cx="50" cy="60" r="4" fill="currentColor" fillOpacity="0.6" />
+                <line x1="60" y1="60" x2="110" y2="60" stroke="currentColor" strokeWidth="1" strokeOpacity="0.3" />
+                <line x1="60" y1="70" x2="110" y2="70" stroke="currentColor" strokeWidth="1" strokeOpacity="0.2" />
+                
+                {/* Top right block */}
+                <rect x="270" y="40" width="100" height="80" rx="8" fill="currentColor" fillOpacity="0.06" stroke="currentColor" strokeWidth="1.5" />
+                <circle cx="290" cy="60" r="4" fill="currentColor" fillOpacity="0.5" />
+                <line x1="300" y1="60" x2="350" y2="60" stroke="currentColor" strokeWidth="1" strokeOpacity="0.25" />
+                <line x1="300" y1="70" x2="350" y2="70" stroke="currentColor" strokeWidth="1" strokeOpacity="0.15" />
+                
+                {/* Center large block */}
+                <rect x="80" y="160" width="240" height="120" rx="8" fill="currentColor" fillOpacity="0.04" stroke="currentColor" strokeWidth="2" />
+                <circle cx="110" cy="190" r="5" fill="currentColor" fillOpacity="0.7" />
+                <circle cx="200" cy="190" r="5" fill="currentColor" fillOpacity="0.5" />
+                <circle cx="290" cy="190" r="5" fill="currentColor" fillOpacity="0.6" />
+                <line x1="120" y1="190" x2="190" y2="190" stroke="currentColor" strokeWidth="1" strokeOpacity="0.2" />
+                <line x1="210" y1="190" x2="280" y2="190" stroke="currentColor" strokeWidth="1" strokeOpacity="0.2" />
+                
+                {/* Bottom blocks */}
+                <rect x="30" y="310" width="120" height="60" rx="8" fill="currentColor" fillOpacity="0.07" stroke="currentColor" strokeWidth="1.5" />
+                <rect x="250" y="310" width="120" height="60" rx="8" fill="currentColor" fillOpacity="0.07" stroke="currentColor" strokeWidth="1.5" />
+              </g>
               
-              {/* Layer 3 - Top */}
-              <rect x="20" y="80" width="360" height="85" rx="8" fill="none" stroke="currentColor" strokeWidth="2.5" className="text-primary" />
-              <text x="40" y="115" fontSize="12" fontWeight="600" className="text-primary" fill="currentColor">Launch & Iterate</text>
-            </g>
-
-            {/* Connecting flow lines */}
-            <g stroke="currentColor" strokeWidth="1.5" className="text-primary/25" fill="none">
-              <path d="M 200 240 Q 200 200 200 170" />
-              <path d="M 200 160 Q 200 120 200 90" />
-            </g>
-
-            {/* Progress indicators */}
-            <g className="text-primary">
-              <circle cx="200" cy="240" r="5" fill="currentColor" />
-              <circle cx="200" cy="160" r="5" fill="currentColor" opacity="0.6" />
-              <circle cx="200" cy="80" r="5" fill="currentColor" opacity="0.3" />
-            </g>
-
-            {/* Side accent marks */}
-            <g stroke="currentColor" strokeWidth="2" className="text-primary/15">
-              <line x1="15" y1="100" x2="15" y2="280" />
-              <line x1="385" y1="100" x2="385" y2="280" />
-            </g>
-          </svg>
+              {/* Connecting lines - minimal, refined */}
+              <g stroke="currentColor" strokeWidth="1" strokeOpacity="0.12" fill="none" className="text-primary">
+                <path d="M 130 120 L 130 160" />
+                <path d="M 320 120 L 320 160" />
+                <path d="M 130 280 L 130 310" />
+                <path d="M 320 280 L 320 310" />
+              </g>
+            </svg>
+          </div>
         </div>
       </div>
     </section>

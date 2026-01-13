@@ -7,32 +7,28 @@ export default function GetInvolved() {
       description: "Join either a Launch Team or Innovation Team. Open to all Northeastern students regardless of major or experience level.",
       commitment: "3–5 hours/week",
       buttonText: "Apply to Join",
-      href: "/forms",
-      color: "from-primary/8 to-primary/3"
+      href: "/forms"
     },
     {
       title: "Propose a Project",
       description: "Have an idea? Submit a project proposal for an Innovation Team to bring it to life.",
       commitment: null,
       buttonText: "Propose a Project",
-      href: "/forms",
-      color: "from-primary/6 to-primary/2"
+      href: "/forms"
     },
     {
       title: "Startup Partnership",
       description: "Are you a founder? Partner with talented student teams to build your product.",
       commitment: null,
       buttonText: "Partner With Us",
-      href: "/forms",
-      color: "from-primary/7 to-primary/2"
+      href: "/forms"
     },
     {
       title: "Leadership Opportunities",
       description: "Shape the direction of Launch Labs and mentor peers through leadership roles.",
       commitment: "5–8 hours/week",
       buttonText: "Apply for Leadership",
-      href: "/forms",
-      color: "from-primary/9 to-primary/3"
+      href: "/forms"
     }
   ];
 
@@ -50,9 +46,9 @@ export default function GetInvolved() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {opportunities.map((item, index) => (
-            <div key={index} className={`bg-gradient-to-br ${item.color} border border-foreground/5 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-primary/20 transition-all duration-300 flex flex-col`}>
-              {/* Accent line */}
-              <div className="w-8 h-1 bg-primary rounded-full mb-4"></div>
+            <div key={index} className="bg-white border border-foreground/5 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-primary/20 transition-all duration-300 flex flex-col group">
+              {/* Refined accent line */}
+              <div className="w-6 h-0.5 bg-primary rounded-full mb-4 group-hover:w-8 transition-all duration-300"></div>
               
               <h3 className="font-sans font-semibold text-base mb-3 text-foreground">
                 {item.title}

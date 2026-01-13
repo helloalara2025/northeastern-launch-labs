@@ -15,29 +15,29 @@ export default function Teams() {
 
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Launch Teams */}
-          <div className="bg-white border border-foreground/5 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:border-primary/20 transition-all duration-300">
-            {/* Original Visual - Startup Growth Arc */}
-            <div className="h-48 overflow-hidden bg-gradient-to-br from-primary/8 to-primary/3 flex items-center justify-center relative">
-              <svg className="w-40 h-32" viewBox="0 0 160 120" xmlns="http://www.w3.org/2000/svg">
-                {/* Growth curve representing startup trajectory */}
-                <path
-                  d="M 20 100 Q 40 80 60 60 T 100 20 T 140 10"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="3"
-                  className="text-primary/60"
-                />
-                
-                {/* Milestone dots on curve */}
-                <circle cx="20" cy="100" r="4" fill="currentColor" className="text-primary/40" />
-                <circle cx="60" cy="60" r="5" fill="currentColor" className="text-primary/70" />
-                <circle cx="100" cy="20" r="4" fill="currentColor" className="text-primary/50" />
-                <circle cx="140" cy="10" r="6" fill="currentColor" className="text-primary" />
-                
-                {/* Supporting grid lines */}
-                <g stroke="currentColor" strokeWidth="0.5" className="text-primary/15">
-                  <line x1="10" y1="110" x2="150" y2="110" />
-                  <line x1="10" y1="10" x2="10" y2="110" />
+          <div className="bg-white border border-foreground/5 rounded-xl overflow-hidden shadow-sm hover:shadow-md hover:border-primary/20 transition-all duration-300">
+            {/* Refined Visual - Stacked cards/blocks */}
+            <div className="h-48 overflow-hidden bg-gradient-to-br from-primary/4 to-transparent flex items-center justify-center relative p-8">
+              <svg className="w-full h-full" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                {/* Stacked block design - Notion style */}
+                <g className="text-primary">
+                  {/* Bottom block */}
+                  <rect x="20" y="120" width="260" height="60" rx="6" fill="currentColor" fillOpacity="0.06" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.3" />
+                  <circle cx="45" cy="145" r="3" fill="currentColor" fillOpacity="0.5" />
+                  <line x1="55" y1="145" x2="140" y2="145" stroke="currentColor" strokeWidth="1" strokeOpacity="0.2" />
+                  <line x1="55" y1="160" x2="200" y2="160" stroke="currentColor" strokeWidth="0.8" strokeOpacity="0.15" />
+                  
+                  {/* Middle block */}
+                  <rect x="30" y="70" width="240" height="55" rx="6" fill="currentColor" fillOpacity="0.09" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.4" />
+                  <circle cx="55" cy="92" r="3" fill="currentColor" fillOpacity="0.6" />
+                  <line x1="65" y1="92" x2="150" y2="92" stroke="currentColor" strokeWidth="1" strokeOpacity="0.25" />
+                  <line x1="65" y1="105" x2="210" y2="105" stroke="currentColor" strokeWidth="0.8" strokeOpacity="0.18" />
+                  
+                  {/* Top block */}
+                  <rect x="40" y="20" width="220" height="55" rx="6" fill="currentColor" fillOpacity="0.12" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5" />
+                  <circle cx="65" cy="42" r="3" fill="currentColor" fillOpacity="0.7" />
+                  <line x1="75" y1="42" x2="160" y2="42" stroke="currentColor" strokeWidth="1" strokeOpacity="0.3" />
+                  <line x1="75" y1="55" x2="220" y2="55" stroke="currentColor" strokeWidth="0.8" strokeOpacity="0.2" />
                 </g>
               </svg>
             </div>
@@ -57,7 +57,7 @@ export default function Teams() {
                   { title: "Technical Growth", desc: "Apply skills in real production environments" }
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
-                    <div className="text-primary font-semibold mt-0.5">•</div>
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                     <div>
                       <div className="font-semibold text-foreground text-sm">{item.title}</div>
                       <div className="text-xs text-foreground/60">{item.desc}</div>
@@ -76,37 +76,29 @@ export default function Teams() {
 
           {/* Innovation Teams */}
           <div className="bg-white border border-foreground/5 rounded-xl overflow-hidden shadow-sm hover:shadow-lg hover:border-primary/20 transition-all duration-300">
-            {/* Original Visual - Idea to Execution Cycle */}
-            <div className="h-48 overflow-hidden bg-gradient-to-br from-primary/8 to-primary/3 flex items-center justify-center relative">
-              <svg className="w-40 h-32" viewBox="0 0 160 120" xmlns="http://www.w3.org/2000/svg">
-                {/* Circular process flow */}
-                <circle cx="80" cy="60" r="45" fill="none" stroke="currentColor" strokeWidth="2" className="text-primary/20" />
-                
-                {/* Process stages around circle */}
+            {/* Refined Visual - Grid/Matrix design */}
+            <div className="h-48 overflow-hidden bg-gradient-to-br from-primary/4 to-transparent flex items-center justify-center relative p-8">
+              <svg className="w-full h-full" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+                {/* Grid-based design - Figma style */}
                 <g className="text-primary">
-                  {/* Stage 1 - Idea (top) */}
-                  <circle cx="80" cy="20" r="6" fill="currentColor" />
-                  <text x="75" y="38" fontSize="9" fontWeight="600" className="text-primary/70" fill="currentColor">Idea</text>
+                  {/* 2x3 grid of blocks */}
+                  {/* Row 1 */}
+                  <rect x="20" y="20" width="70" height="50" rx="4" fill="currentColor" fillOpacity="0.12" stroke="currentColor" strokeWidth="1" strokeOpacity="0.4" />
+                  <rect x="115" y="20" width="70" height="50" rx="4" fill="currentColor" fillOpacity="0.09" stroke="currentColor" strokeWidth="1" strokeOpacity="0.35" />
+                  <rect x="210" y="20" width="70" height="50" rx="4" fill="currentColor" fillOpacity="0.06" stroke="currentColor" strokeWidth="1" strokeOpacity="0.3" />
                   
-                  {/* Stage 2 - Build (right) */}
-                  <circle cx="125" cy="60" r="6" fill="currentColor" opacity="0.7" />
-                  <text x="118" y="78" fontSize="9" fontWeight="600" className="text-primary/70" fill="currentColor">Build</text>
+                  {/* Row 2 */}
+                  <rect x="20" y="85" width="70" height="50" rx="4" fill="currentColor" fillOpacity="0.08" stroke="currentColor" strokeWidth="1" strokeOpacity="0.3" />
+                  <rect x="115" y="85" width="70" height="50" rx="4" fill="currentColor" fillOpacity="0.11" stroke="currentColor" strokeWidth="1" strokeOpacity="0.4" />
+                  <rect x="210" y="85" width="70" height="50" rx="4" fill="currentColor" fillOpacity="0.07" stroke="currentColor" strokeWidth="1" strokeOpacity="0.32" />
                   
-                  {/* Stage 3 - Test (bottom) */}
-                  <circle cx="80" cy="100" r="6" fill="currentColor" opacity="0.5" />
-                  <text x="70" y="115" fontSize="9" fontWeight="600" className="text-primary/70" fill="currentColor">Test</text>
-                  
-                  {/* Stage 4 - Launch (left) */}
-                  <circle cx="35" cy="60" r="6" fill="currentColor" opacity="0.6" />
-                  <text x="20" y="78" fontSize="9" fontWeight="600" className="text-primary/70" fill="currentColor">Launch</text>
-                </g>
-                
-                {/* Flow arrows */}
-                <g stroke="currentColor" strokeWidth="1.5" className="text-primary/30" fill="none">
-                  <path d="M 80 26 L 115 50" />
-                  <path d="M 119 66 L 90 94" />
-                  <path d="M 74 94 L 41 66" />
-                  <path d="M 41 54 L 74 26" />
+                  {/* Accent dots */}
+                  <circle cx="35" cy="35" r="2" fill="currentColor" fillOpacity="0.6" />
+                  <circle cx="130" cy="35" r="2" fill="currentColor" fillOpacity="0.5" />
+                  <circle cx="225" cy="35" r="2" fill="currentColor" fillOpacity="0.4" />
+                  <circle cx="35" cy="100" r="2" fill="currentColor" fillOpacity="0.4" />
+                  <circle cx="130" cy="100" r="2" fill="currentColor" fillOpacity="0.6" />
+                  <circle cx="225" cy="100" r="2" fill="currentColor" fillOpacity="0.45" />
                 </g>
               </svg>
             </div>
@@ -126,7 +118,7 @@ export default function Teams() {
                   { title: "Ownership", desc: "Take full responsibility from start to finish" }
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
-                    <div className="text-primary font-semibold mt-0.5">•</div>
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary mt-2 flex-shrink-0"></div>
                     <div>
                       <div className="font-semibold text-foreground text-sm">{item.title}</div>
                       <div className="text-xs text-foreground/60">{item.desc}</div>
