@@ -9,55 +9,49 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-foreground text-white py-16 border-t-4 border-primary">
+    <footer className="bg-foreground text-white py-12 border-t border-foreground/20">
       <div className="container">
-        <div className="grid md:grid-cols-3 gap-12 mb-12">
+        <div className="grid md:grid-cols-3 gap-12 mb-8">
           {/* Brand */}
           <div>
-            <div className="font-sans font-black text-3xl tracking-tight mb-3">Launch Labs</div>
-            <p className="text-white/70 font-medium">
-              Connecting Northeastern students to real-world projects and startup partnerships.
+            <div className="font-sans font-bold text-xl mb-2">Launch Labs</div>
+            <p className="text-white/70 text-sm">
+              Connecting Northeastern students to real-world projects.
             </p>
           </div>
 
           {/* Links */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Quick Links</h3>
-            <div className="space-y-2">
-              <button onClick={() => scrollToSection("#about")} className="block text-white/70 hover:text-white transition-colors font-medium">About</button>
-              <button onClick={() => scrollToSection("#teams")} className="block text-white/70 hover:text-white transition-colors font-medium">Teams</button>
-              <button onClick={() => scrollToSection("#get-involved")} className="block text-white/70 hover:text-white transition-colors font-medium">Get Involved</button>
-              <button onClick={() => scrollToSection("#contact")} className="block text-white/70 hover:text-white transition-colors font-medium">Contact</button>
+            <h3 className="font-bold text-sm mb-3 uppercase tracking-wider">Links</h3>
+            <div className="space-y-2 text-sm">
+              <button onClick={() => scrollToSection("#about")} className="block text-white/70 hover:text-white transition-colors">About</button>
+              <button onClick={() => scrollToSection("#teams")} className="block text-white/70 hover:text-white transition-colors">Teams</button>
+              <button onClick={() => scrollToSection("#get-involved")} className="block text-white/70 hover:text-white transition-colors">Get Involved</button>
             </div>
           </div>
 
           {/* Contact */}
           <div>
-            <h3 className="font-bold text-lg mb-4">Connect</h3>
-            <div className="space-y-3">
-              <a href="mailto:hello@launchlabs.neu.edu" className="flex items-center gap-2 text-white/70 hover:text-white transition-colors font-medium">
-                <Mail size={18} />
+            <h3 className="font-bold text-sm mb-3 uppercase tracking-wider">Connect</h3>
+            <div className="space-y-2 text-sm">
+              <a href="mailto:hello@launchlabs.neu.edu" className="flex items-center gap-2 text-white/70 hover:text-white transition-colors">
+                <Mail size={16} />
                 hello@launchlabs.neu.edu
               </a>
-              <div className="flex gap-4 pt-2">
+              <div className="flex gap-3 pt-2">
                 <a href="#" className="text-white/70 hover:text-white transition-colors">
-                  <Linkedin size={20} />
+                  <Linkedin size={18} />
                 </a>
                 <a href="#" className="text-white/70 hover:text-white transition-colors">
-                  <Instagram size={20} />
+                  <Instagram size={18} />
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-white/60 text-sm font-medium">
-            © 2026 Northeastern Launch Labs. All rights reserved.
-          </p>
-          <p className="text-white/60 text-sm font-medium">
-            Northeastern University, Boston MA
-          </p>
+        <div className="border-t border-white/20 pt-6 text-center text-sm text-white/60">
+          <p>© 2026 Northeastern Launch Labs. All rights reserved.</p>
         </div>
       </div>
     </footer>
