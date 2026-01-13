@@ -1,13 +1,6 @@
 import { Linkedin, Instagram, Mail } from "lucide-react";
 
 export default function Footer() {
-  const scrollToSection = (id: string) => {
-    const element = document.querySelector(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <footer className="bg-foreground text-white py-12 border-t border-foreground/20">
       <div className="container">
@@ -24,9 +17,10 @@ export default function Footer() {
           <div>
             <h3 className="font-bold text-sm mb-3 uppercase tracking-wider">Links</h3>
             <div className="space-y-2 text-sm">
-              <button onClick={() => scrollToSection("#about")} className="block text-white/70 hover:text-white transition-colors">About</button>
-              <button onClick={() => scrollToSection("#teams")} className="block text-white/70 hover:text-white transition-colors">Teams</button>
-              <button onClick={() => scrollToSection("#get-involved")} className="block text-white/70 hover:text-white transition-colors">Get Involved</button>
+              <a href="/about" className="block text-white/70 hover:text-white transition-colors">About</a>
+              <a href="/launch-teams" className="block text-white/70 hover:text-white transition-colors">Launch Teams</a>
+              <a href="/innovation-teams" className="block text-white/70 hover:text-white transition-colors">Innovation Teams</a>
+              <a href="/forms" className="block text-white/70 hover:text-white transition-colors">Get Involved</a>
             </div>
           </div>
 

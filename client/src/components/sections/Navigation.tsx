@@ -1,10 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { useLocation } from "wouter";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,19 +17,13 @@ export default function Navigation() {
   }, []);
 
   const navLinks = [
-    { name: "About", href: "#about" },
-    { name: "Teams", href: "#teams" },
-    { name: "Get Involved", href: "#get-involved" },
-    { name: "Contact", href: "#contact" },
+    { name: "About", href: "/about" },
+    { name: "Launch Teams", href: "/launch-teams" },
+    { name: "Innovation Teams", href: "/innovation-teams" },
+    { name: "Leadership", href: "/leadership" },
+    { name: "Partners", href: "/partners" },
+    { name: "Contact", href: "/contact" },
   ];
-
-  const scrollToSection = (id: string) => {
-    setIsMobileMenuOpen(false);
-    const element = document.querySelector(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <nav
@@ -36,30 +32,33 @@ export default function Navigation() {
       }`}
     >
       <div className="container flex items-center justify-between py-4">
-        <button
-          onClick={() => scrollToSection("#home")}
+        <a
+          href="/"
           className="font-sans font-bold text-2xl text-primary hover:text-primary/80 transition-colors cursor-pointer"
         >
           Launch Labs
-        </button>
+        </a>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <button
+            <a
               key={link.name}
-              onClick={() => scrollToSection(link.href)}
-              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+              href={link.href}
+              className={`text-sm font-medium transition-colors ${
+                location === link.href
+                  ? "text-primary font-bold"
+                  : "text-foreground hover:text-primary"
+              }`}
             >
               {link.name}
-            </button>
+            </a>
           ))}
-          <Button 
-            className="bg-primary hover:bg-primary/90 text-white font-bold px-6 h-10 rounded"
-            onClick={() => scrollToSection("#get-involved")}
-          >
-            Apply
-          </Button>
+          <a href="/forms">
+            <Button className="bg-primary hover:bg-primary/90 text-white font-bold px-6 h-10 rounded">
+              Apply
+            </Button>
+          </a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -75,20 +74,24 @@ export default function Navigation() {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-white border-b border-foreground/10 p-4 flex flex-col gap-3">
           {navLinks.map((link) => (
-            <button
+            <a
               key={link.name}
-              onClick={() => scrollToSection(link.href)}
-              className="text-left text-sm font-medium text-foreground py-2 hover:text-primary transition-colors"
+              href={link.href}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className={`text-left text-sm font-medium py-2 transition-colors ${
+                location === link.href
+                  ? "text-primary font-bold"
+                  : "text-foreground hover:text-primary"
+              }`}
             >
               {link.name}
-            </button>
+            </a>
           ))}
-          <Button 
-            className="w-full bg-primary hover:bg-primary/90 text-white font-bold mt-2 rounded"
-            onClick={() => scrollToSection("#get-involved")}
-          >
-            Apply Now
-          </Button>
+          <a href="/forms" onClick={() => setIsMobileMenuOpen(false)}>
+            <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold mt-2 rounded">
+              Apply Now
+            </Button>
+          </a>
         </div>
       )}
     </nav>
