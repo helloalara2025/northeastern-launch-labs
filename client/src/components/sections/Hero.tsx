@@ -11,17 +11,17 @@ export default function Hero() {
           </div>
           
           <h1 className="font-sans font-bold text-6xl lg:text-7xl text-foreground leading-tight tracking-tight mb-6">
-            From Idea to Impact
+            Build Real Products. Make Real Impact.
           </h1>
           
           <p className="text-lg text-foreground/70 leading-relaxed mb-8 max-w-xl font-regular">
-            Work on real products with startups. Build your own projects. Collaborate with ambitious students.
+            Northeastern Launch Labs connects students across all majors to work on end-to-end projects with startups and internal teams.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3">
             <a href="#get-involved">
               <Button className="bg-primary hover:bg-primary/90 text-white font-bold px-6 h-11 rounded-lg text-base flex items-center gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
-                Apply Now
+                Apply to Join
                 <ArrowRight size={16} />
               </Button>
             </a>

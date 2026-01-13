@@ -2,12 +2,12 @@ export default function InnovationTeamsDetail() {
   return (
     <section id="innovation-detail" className="py-20 bg-white border-t border-border">
       <div className="container">
-        <div className="max-w-2xl mb-12">
+        <div className="max-w-3xl mb-12">
           <h2 className="font-sans font-bold text-4xl lg:text-5xl text-foreground mb-6 leading-tight">
-            Innovation Teams
+            Innovation Teams: Own the Full Product Journey
           </h2>
           <p className="text-lg text-foreground/70 leading-relaxed font-regular">
-            Focus on internally scoped, end-to-end projects designed to mirror real-world professional work. Take projects from problem definition through execution with emphasis on skill-building and ownership.
+            Innovation Teams focus on internally scoped, end-to-end projects designed to mirror real-world professional work. Members take projects from problem definition through execution, including research, planning, implementation, iteration, and final presentation. These projects emphasize skill-building, cross-functional collaboration, and ownership, resulting in portfolio-ready work that reflects practical experience in product development, consulting, and applied problem-solving.
           </p>
         </div>
 

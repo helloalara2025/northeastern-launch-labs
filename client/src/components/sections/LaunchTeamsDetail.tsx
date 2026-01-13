@@ -2,12 +2,12 @@ export default function LaunchTeamsDetail() {
   return (
     <section id="launch-detail" className="py-20 bg-gray-50 border-t border-border">
       <div className="container">
-        <div className="max-w-2xl mb-12">
+        <div className="max-w-3xl mb-12">
           <h2 className="font-sans font-bold text-4xl lg:text-5xl text-foreground mb-6 leading-tight">
-            Launch Teams
+            Launch Teams: Build Products That Ship
           </h2>
           <p className="text-lg text-foreground/70 leading-relaxed font-regular">
-            Partner directly with early-stage startups to design, build, and deliver real-world solutions. Work closely with founders on product development, prototyping, and strategy with defined scopes and timelines.
+            Launch Teams partners directly with early-stage startups to design, build, and deliver real-world solutions. Members work closely with founders and stakeholders on development-focused projects, including product development, software or data implementation, prototyping, and iterative testing, alongside strategy and research. Teams operate with defined scopes, timelines, and deliverables, providing hands-on experience contributing to live products and systems.
           </p>
         </div>
 

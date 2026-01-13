@@ -6,27 +6,48 @@ export default function Contact() {
     <section id="contact" className="py-20 bg-white border-t border-border">
       <div className="container">
         <h2 className="font-sans font-bold text-4xl lg:text-5xl text-foreground mb-12 leading-tight">
-          Get in Touch
+          Get In Touch
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-4xl">
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h3 className="font-sans font-bold text-xl text-foreground mb-3">Questions?</h3>
+              <h3 className="font-sans font-bold text-xl text-foreground mb-3">Contact Information</h3>
               <p className="text-foreground/70 leading-relaxed font-regular text-base">
-                Reach out to us. We'd love to hear from you.
+                Have questions? Reach out to us using the form or contact us directly.
               </p>
             </div>
 
-            <div className="flex items-start gap-4">
-              <Mail className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
-              <div>
-                <p className="text-foreground/60 text-sm font-regular mb-1">General Inquiries</p>
-                <a href="mailto:hello@launchlabs.northeastern.edu" className="text-foreground hover:text-primary transition-colors font-bold text-base">
-                  hello@launchlabs.northeastern.edu
-                </a>
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <Mail className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                <div>
+                  <p className="text-foreground/60 text-sm font-regular mb-1">General Inquiries</p>
+                  <p className="text-foreground text-base font-bold">hello@launchlabs.northeastern.edu</p>
+                </div>
               </div>
+
+              <div className="flex items-start gap-4">
+                <Mail className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                <div>
+                  <p className="text-foreground/60 text-sm font-regular mb-1">Student Questions</p>
+                  <p className="text-foreground text-base font-bold">students@launchlabs.northeastern.edu</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <Mail className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+                <div>
+                  <p className="text-foreground/60 text-sm font-regular mb-1">Startup Partnerships</p>
+                  <p className="text-foreground text-base font-bold">partners@launchlabs.northeastern.edu</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-4 border-t border-border">
+              <p className="text-foreground/60 text-sm font-regular mb-2">Office Hours & Location</p>
+              <p className="text-foreground text-base font-regular">TBD</p>
             </div>
           </div>
 
@@ -55,9 +76,10 @@ export default function Contact() {
                 <label className="block text-sm font-bold text-foreground mb-2">Subject</label>
                 <select className="w-full bg-white border border-border rounded-lg px-4 py-2.5 text-base text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors">
                   <option value="">Select a subject</option>
-                  <option value="apply">I want to apply</option>
-                  <option value="partnership">Partnership inquiry</option>
-                  <option value="project">Project proposal</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="student">Student Interest</option>
+                  <option value="partnership">Startup Partnership</option>
+                  <option value="leadership">Leadership</option>
                   <option value="other">Other</option>
                 </select>
               </div>
