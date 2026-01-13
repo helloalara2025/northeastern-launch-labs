@@ -44,11 +44,13 @@
 }
 
 /* 
-  Design Philosophy: Tech Minimalist / SaaS Aesthetic
+  Design Philosophy: Bold Student Organization Aesthetic (inspired by Scout)
   - Primary Color: Northeastern Red (#CC0000) -> OKLCH approx 0.55 0.22 29.2
-  - Backgrounds: Off-white/Light Gray (#F5F5F5) -> OKLCH approx 0.96 0 0
+  - Secondary: Vibrant Purple (#7B2CBF) for accent sections
+  - Accents: Bright Yellow, Pink, Orange for visual energy
+  - Backgrounds: White with bold colored sections
   - Typography: Plus Jakarta Sans (Headings), Inter (Body)
-  - Radius: Large (0.75rem)
+  - Radius: Medium (0.5rem) for more structured look
 */
 
 :root {
@@ -60,44 +62,44 @@
   --sidebar-primary-foreground: oklch(1 0 0);
   
   --chart-1: oklch(0.55 0.22 29.2);
-  --chart-2: oklch(0.45 0.22 29.2);
-  --chart-3: oklch(0.35 0.22 29.2);
-  --chart-4: oklch(0.25 0.22 29.2);
-  --chart-5: oklch(0.15 0.22 29.2);
+  --chart-2: oklch(0.65 0.2 50);
+  --chart-3: oklch(0.7 0.15 70);
+  --chart-4: oklch(0.6 0.18 350);
+  --chart-5: oklch(0.5 0.2 25);
   
-  --radius: 0.75rem;
+  --radius: 0.5rem;
   
-  /* Light Gray Background #F5F5F5 */
-  --background: oklch(0.98 0 0);
-  --foreground: oklch(0.2 0.02 290);
+  /* White Background */
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.15 0.02 290);
   
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.2 0.02 290);
+  --card-foreground: oklch(0.15 0.02 290);
   
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.2 0.02 290);
+  --popover-foreground: oklch(0.15 0.02 290);
   
   --secondary: oklch(0.95 0 0);
-  --secondary-foreground: oklch(0.2 0.02 290);
+  --secondary-foreground: oklch(0.15 0.02 290);
   
-  --muted: oklch(0.95 0 0);
+  --muted: oklch(0.92 0 0);
   --muted-foreground: oklch(0.5 0.02 290);
   
   --accent: oklch(0.95 0 0);
-  --accent-foreground: oklch(0.2 0.02 290);
+  --accent-foreground: oklch(0.15 0.02 290);
   
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
   
-  --border: oklch(0.9 0 0);
-  --input: oklch(0.9 0 0);
+  --border: oklch(0.85 0 0);
+  --input: oklch(0.92 0 0);
   --ring: oklch(0.55 0.22 29.2);
   
-  --sidebar: oklch(0.98 0 0);
-  --sidebar-foreground: oklch(0.2 0.02 290);
-  --sidebar-accent: oklch(0.95 0 0);
-  --sidebar-accent-foreground: oklch(0.2 0.02 290);
-  --sidebar-border: oklch(0.9 0 0);
+  --sidebar: oklch(1 0 0);
+  --sidebar-foreground: oklch(0.15 0.02 290);
+  --sidebar-accent: oklch(0.92 0 0);
+  --sidebar-accent-foreground: oklch(0.15 0.02 290);
+  --sidebar-border: oklch(0.85 0 0);
   --sidebar-ring: oklch(0.55 0.22 29.2);
 }
 
