@@ -3,89 +3,87 @@ import { ArrowRight } from "lucide-react";
 
 export default function Teams() {
   return (
-    <section id="teams" className="py-24 bg-white border-t border-foreground/5">
+    <section id="teams" className="py-32 bg-white border-t border-foreground/5">
       <div className="container">
         <div className="max-w-3xl mb-20">
-          <h2 className="font-sans font-semibold text-5xl md:text-6xl text-foreground mb-6 leading-tight">
-            Two Ways to Get Involved
+          <h2 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-6 leading-tight">
+            Two Paths
           </h2>
           <p className="text-xl text-foreground/60 font-regular">
-            Choose the path that fits your interests and goals.
+            Pick what excites you.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Launch Teams */}
-          <div className="group bg-white border border-foreground/8 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300">
-            {/* Minimal visual - just gradient background */}
-            <div className="h-40 bg-gradient-to-br from-primary/15 to-primary/5"></div>
-            
-            <div className="p-8">
-              <h3 className="font-sans font-semibold text-2xl mb-4 text-foreground">
+          <div className="group bg-gradient-to-br from-primary/8 to-transparent border-2 border-primary/20 rounded-3xl overflow-hidden shadow-sm hover:shadow-lg hover:border-primary/40 transition-all duration-300 p-8">
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-primary/20 text-primary text-xs font-bold uppercase">
+                🚀 Startup Track
+              </div>
+              
+              <h3 className="font-sans font-bold text-3xl text-foreground">
                 Launch Teams
               </h3>
-              <p className="text-foreground/65 mb-8 leading-relaxed font-regular text-base">
-                Partner directly with early-stage startups to design, build, and deliver real solutions. Work alongside founders on product development, prototyping, and strategy.
+              
+              <p className="text-foreground/65 leading-relaxed font-regular text-lg">
+                Partner with early-stage startups. Build real products. Ship to real users.
               </p>
               
-              <div className="space-y-3.5 mb-8 pb-8 border-b border-foreground/5">
+              <div className="space-y-3 pt-4">
                 {[
-                  { title: "Startup Operations", desc: "Experience how early-stage companies work" },
-                  { title: "Professional Development", desc: "Build communication and project management skills" },
-                  { title: "Technical Growth", desc: "Apply skills in real production environments" }
+                  "Work alongside founders",
+                  "Real product development",
+                  "Professional experience"
                 ].map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-primary mt-2.5 flex-shrink-0"></div>
-                    <div>
-                      <div className="font-semibold text-foreground text-sm">{item.title}</div>
-                      <div className="text-xs text-foreground/55 mt-0.5">{item.desc}</div>
-                    </div>
+                  <div key={idx} className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0"></div>
+                    <span className="text-foreground/70 font-medium">{item}</span>
                   </div>
                 ))}
               </div>
 
-              <a href="/launch-teams">
-                <Button className="w-full bg-primary hover:bg-primary/90 text-foreground font-semibold h-11 rounded-lg text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-sm hover:shadow-md">
-                  Learn More
-                  <ArrowRight size={16} />
+              <a href="/launch-teams" className="block pt-6">
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold h-12 rounded-xl text-base transition-all duration-200 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl">
+                  Explore
+                  <ArrowRight size={18} />
                 </Button>
               </a>
             </div>
           </div>
 
           {/* Innovation Teams */}
-          <div className="group bg-white border border-foreground/8 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300">
-            {/* Minimal visual - just gradient background */}
-            <div className="h-40 bg-gradient-to-br from-primary/12 to-primary/4"></div>
-            
-            <div className="p-8">
-              <h3 className="font-sans font-semibold text-2xl mb-4 text-foreground">
+          <div className="group bg-gradient-to-br from-primary/5 to-transparent border-2 border-primary/15 rounded-3xl overflow-hidden shadow-sm hover:shadow-lg hover:border-primary/35 transition-all duration-300 p-8">
+            <div className="space-y-6">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-primary/15 text-primary text-xs font-bold uppercase">
+                💡 Internal Track
+              </div>
+              
+              <h3 className="font-sans font-bold text-3xl text-foreground">
                 Innovation Teams
               </h3>
-              <p className="text-foreground/65 mb-8 leading-relaxed font-regular text-base">
-                Take internally scoped projects from concept to completion. Own the full product lifecycle from research through execution and presentation.
+              
+              <p className="text-foreground/65 leading-relaxed font-regular text-lg">
+                Own the full journey. From problem to solution. Build your portfolio.
               </p>
               
-              <div className="space-y-3.5 mb-8 pb-8 border-b border-foreground/5">
+              <div className="space-y-3 pt-4">
                 {[
-                  { title: "Product Thinking", desc: "Learn to identify problems worth solving" },
-                  { title: "Collaboration", desc: "Work across engineering, design, and business" },
-                  { title: "Ownership", desc: "Take full responsibility from start to finish" }
+                  "End-to-end ownership",
+                  "Cross-functional teams",
+                  "Portfolio-ready work"
                 ].map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
-                    <div className="w-2 h-2 rounded-full bg-primary mt-2.5 flex-shrink-0"></div>
-                    <div>
-                      <div className="font-semibold text-foreground text-sm">{item.title}</div>
-                      <div className="text-xs text-foreground/55 mt-0.5">{item.desc}</div>
-                    </div>
+                  <div key={idx} className="flex items-center gap-3">
+                    <div className="w-2 h-2 rounded-full bg-primary flex-shrink-0"></div>
+                    <span className="text-foreground/70 font-medium">{item}</span>
                   </div>
                 ))}
               </div>
 
-              <a href="/innovation-teams">
-                <Button className="w-full bg-primary hover:bg-primary/90 text-foreground font-semibold h-11 rounded-lg text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-sm hover:shadow-md">
-                  Learn More
-                  <ArrowRight size={16} />
+              <a href="/innovation-teams" className="block pt-6">
+                <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold h-12 rounded-xl text-base transition-all duration-200 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl">
+                  Explore
+                  <ArrowRight size={18} />
                 </Button>
               </a>
             </div>
