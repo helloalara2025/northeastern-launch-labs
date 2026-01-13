@@ -47,8 +47,8 @@ export default function GetInvolved() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {opportunities.map((item, index) => (
-            <div key={index} className="bg-white border border-foreground/8 rounded-2xl p-7 shadow-sm hover:shadow-lg hover:border-primary/25 transition-all duration-300 flex flex-col group">
-              {/* Refined accent line with animation */}
+            <div key={index} className="bg-white border border-foreground/8 rounded-2xl p-7 shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300 flex flex-col group">
+              {/* Refined accent line with animation - yellow */}
               <div className="w-7 h-1 bg-primary rounded-full mb-5 group-hover:w-10 transition-all duration-300"></div>
               
               <h3 className="font-sans font-semibold text-base mb-3 text-foreground">
@@ -67,7 +67,7 @@ export default function GetInvolved() {
               
               <a href={item.href} className="block">
                 <Button 
-                  className="w-full bg-primary hover:bg-primary/90 text-white font-semibold h-10 rounded-lg text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-sm hover:shadow-md"
+                  className="w-full bg-primary hover:bg-primary/90 text-foreground font-semibold h-10 rounded-lg text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-sm hover:shadow-md"
                 >
                   {item.buttonText}
                   <ArrowRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity duration-200" />

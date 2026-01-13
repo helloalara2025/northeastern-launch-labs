@@ -55,15 +55,15 @@
 */
 
 :root {
-  /* Northeastern Red #CC0000 */
-  --primary: oklch(0.55 0.22 29.2); 
-  --primary-foreground: oklch(1 0 0);
+  /* Launch Labs Yellow #FFC107 */
+  --primary: oklch(0.78 0.19 95.5); 
+  --primary-foreground: oklch(0.15 0.02 290);
   
-  --sidebar-primary: oklch(0.55 0.22 29.2);
-  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-primary: oklch(0.78 0.19 95.5);
+  --sidebar-primary-foreground: oklch(0.15 0.02 290);
   
-  --chart-1: oklch(0.55 0.22 29.2);
-  --chart-2: oklch(0.65 0.2 50);
+  --chart-1: oklch(0.78 0.19 95.5);
+  --chart-2: oklch(0.65 0.18 180);
   --chart-3: oklch(0.7 0.15 70);
   --chart-4: oklch(0.6 0.18 350);
   --chart-5: oklch(0.5 0.2 25);
@@ -94,23 +94,23 @@
   
   --border: oklch(0.95 0 0);
   --input: oklch(0.97 0 0);
-  --ring: oklch(0.55 0.22 29.2);
+  --ring: oklch(0.78 0.19 95.5);
   
   --sidebar: oklch(1 0 0);
   --sidebar-foreground: oklch(0.15 0.02 290);
   --sidebar-accent: oklch(0.92 0 0);
   --sidebar-accent-foreground: oklch(0.15 0.02 290);
   --sidebar-border: oklch(0.85 0 0);
-  --sidebar-ring: oklch(0.55 0.22 29.2);
+  --sidebar-ring: oklch(0.78 0.19 95.5);
 }
 
 .dark {
-  /* Dark Mode Adjustments - Keeping Red as Primary */
-  --primary: oklch(0.6 0.22 29.2);
-  --primary-foreground: oklch(1 0 0);
+  /* Dark Mode Adjustments - Yellow as Primary */
+  --primary: oklch(0.78 0.19 95.5);
+  --primary-foreground: oklch(0.15 0.02 290);
   
-  --sidebar-primary: oklch(0.6 0.22 29.2);
-  --sidebar-primary-foreground: oklch(1 0 0);
+  --sidebar-primary: oklch(0.78 0.19 95.5);
+  --sidebar-primary-foreground: oklch(0.15 0.02 290);
   
   --background: oklch(0.15 0.02 290);
   --foreground: oklch(0.98 0 0);

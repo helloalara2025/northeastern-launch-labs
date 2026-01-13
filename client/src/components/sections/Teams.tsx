@@ -16,26 +16,26 @@ export default function Teams() {
 
         <div className="grid lg:grid-cols-2 gap-8">
           {/* Launch Teams */}
-          <div className="group bg-white border border-foreground/8 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:border-primary/25 transition-all duration-300">
-            {/* Enhanced Visual */}
-            <div className="h-56 overflow-hidden bg-gradient-to-br from-primary/6 to-transparent flex items-center justify-center relative p-8">
+          <div className="group bg-white border border-foreground/8 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300">
+            {/* Enhanced Visual with yellow accents */}
+            <div className="h-56 overflow-hidden bg-gradient-to-br from-primary/8 to-transparent flex items-center justify-center relative p-8">
               <svg className="w-full h-full" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
                 <g className="text-primary">
-                  {/* Stacked cards with refined styling */}
-                  <rect x="20" y="120" width="260" height="60" rx="8" fill="currentColor" fillOpacity="0.08" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.35" />
-                  <circle cx="45" cy="145" r="3.5" fill="currentColor" fillOpacity="0.55" />
-                  <line x1="55" y1="145" x2="140" y2="145" stroke="currentColor" strokeWidth="1.2" strokeOpacity="0.22" />
-                  <line x1="55" y1="160" x2="200" y2="160" stroke="currentColor" strokeWidth="1" strokeOpacity="0.16" />
+                  {/* Stacked cards with yellow accents */}
+                  <rect x="20" y="120" width="260" height="60" rx="8" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.35" />
+                  <circle cx="45" cy="145" r="3.5" fill="currentColor" fillOpacity="0.7" />
+                  <line x1="55" y1="145" x2="140" y2="145" stroke="currentColor" strokeWidth="1.2" strokeOpacity="0.25" />
+                  <line x1="55" y1="160" x2="200" y2="160" stroke="currentColor" strokeWidth="1" strokeOpacity="0.18" />
                   
-                  <rect x="30" y="70" width="240" height="55" rx="8" fill="currentColor" fillOpacity="0.11" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.42" />
-                  <circle cx="55" cy="92" r="3.5" fill="currentColor" fillOpacity="0.65" />
-                  <line x1="65" y1="92" x2="150" y2="92" stroke="currentColor" strokeWidth="1.2" strokeOpacity="0.27" />
-                  <line x1="65" y1="105" x2="210" y2="105" stroke="currentColor" strokeWidth="1" strokeOpacity="0.19" />
+                  <rect x="30" y="70" width="240" height="55" rx="8" fill="currentColor" fillOpacity="0.12" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.42" />
+                  <circle cx="55" cy="92" r="3.5" fill="currentColor" fillOpacity="0.8" />
+                  <line x1="65" y1="92" x2="150" y2="92" stroke="currentColor" strokeWidth="1.2" strokeOpacity="0.3" />
+                  <line x1="65" y1="105" x2="210" y2="105" stroke="currentColor" strokeWidth="1" strokeOpacity="0.2" />
                   
-                  <rect x="40" y="20" width="220" height="55" rx="8" fill="currentColor" fillOpacity="0.14" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5" />
-                  <circle cx="65" cy="42" r="3.5" fill="currentColor" fillOpacity="0.75" />
-                  <line x1="75" y1="42" x2="160" y2="42" stroke="currentColor" strokeWidth="1.2" strokeOpacity="0.32" />
-                  <line x1="75" y1="55" x2="220" y2="55" stroke="currentColor" strokeWidth="1" strokeOpacity="0.22" />
+                  <rect x="40" y="20" width="220" height="55" rx="8" fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.5" strokeOpacity="0.5" />
+                  <circle cx="65" cy="42" r="3.5" fill="currentColor" fillOpacity="0.9" />
+                  <line x1="75" y1="42" x2="160" y2="42" stroke="currentColor" strokeWidth="1.2" strokeOpacity="0.35" />
+                  <line x1="75" y1="55" x2="220" y2="55" stroke="currentColor" strokeWidth="1" strokeOpacity="0.25" />
                 </g>
               </svg>
             </div>
@@ -65,7 +65,7 @@ export default function Teams() {
               </div>
 
               <a href="/launch-teams">
-                <Button className="w-full bg-primary hover:bg-primary/90 text-white font-semibold h-11 rounded-lg text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-sm hover:shadow-md">
+                <Button className="w-full bg-primary hover:bg-primary/90 text-foreground font-semibold h-11 rounded-lg text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-sm hover:shadow-md">
                   Learn More
                   <ArrowRight size={16} />
                 </Button>
@@ -74,27 +74,27 @@ export default function Teams() {
           </div>
 
           {/* Innovation Teams */}
-          <div className="group bg-white border border-foreground/8 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:border-primary/25 transition-all duration-300">
-            {/* Enhanced Visual */}
-            <div className="h-56 overflow-hidden bg-gradient-to-br from-primary/6 to-transparent flex items-center justify-center relative p-8">
+          <div className="group bg-white border border-foreground/8 rounded-2xl overflow-hidden shadow-sm hover:shadow-lg hover:border-primary/30 transition-all duration-300">
+            {/* Enhanced Visual with yellow accents */}
+            <div className="h-56 overflow-hidden bg-gradient-to-br from-primary/8 to-transparent flex items-center justify-center relative p-8">
               <svg className="w-full h-full" viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
                 <g className="text-primary">
                   {/* Grid-based design */}
-                  <rect x="20" y="20" width="70" height="50" rx="6" fill="currentColor" fillOpacity="0.14" stroke="currentColor" strokeWidth="1.2" strokeOpacity="0.42" />
-                  <rect x="115" y="20" width="70" height="50" rx="6" fill="currentColor" fillOpacity="0.11" stroke="currentColor" strokeWidth="1.2" strokeOpacity="0.38" />
-                  <rect x="210" y="20" width="70" height="50" rx="6" fill="currentColor" fillOpacity="0.08" stroke="currentColor" strokeWidth="1.2" strokeOpacity="0.32" />
+                  <rect x="20" y="20" width="70" height="50" rx="6" fill="currentColor" fillOpacity="0.15" stroke="currentColor" strokeWidth="1.2" strokeOpacity="0.42" />
+                  <rect x="115" y="20" width="70" height="50" rx="6" fill="currentColor" fillOpacity="0.12" stroke="currentColor" strokeWidth="1.2" strokeOpacity="0.38" />
+                  <rect x="210" y="20" width="70" height="50" rx="6" fill="currentColor" fillOpacity="0.09" stroke="currentColor" strokeWidth="1.2" strokeOpacity="0.32" />
                   
-                  <rect x="20" y="85" width="70" height="50" rx="6" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeWidth="1.2" strokeOpacity="0.35" />
-                  <rect x="115" y="85" width="70" height="50" rx="6" fill="currentColor" fillOpacity="0.13" stroke="currentColor" strokeWidth="1.2" strokeOpacity="0.42" />
-                  <rect x="210" y="85" width="70" height="50" rx="6" fill="currentColor" fillOpacity="0.09" stroke="currentColor" strokeWidth="1.2" strokeOpacity="0.34" />
+                  <rect x="20" y="85" width="70" height="50" rx="6" fill="currentColor" fillOpacity="0.11" stroke="currentColor" strokeWidth="1.2" strokeOpacity="0.35" />
+                  <rect x="115" y="85" width="70" height="50" rx="6" fill="currentColor" fillOpacity="0.14" stroke="currentColor" strokeWidth="1.2" strokeOpacity="0.42" />
+                  <rect x="210" y="85" width="70" height="50" rx="6" fill="currentColor" fillOpacity="0.1" stroke="currentColor" strokeWidth="1.2" strokeOpacity="0.34" />
                   
                   {/* Accent dots */}
-                  <circle cx="35" cy="35" r="2.5" fill="currentColor" fillOpacity="0.65" />
-                  <circle cx="130" cy="35" r="2.5" fill="currentColor" fillOpacity="0.55" />
-                  <circle cx="225" cy="35" r="2.5" fill="currentColor" fillOpacity="0.45" />
-                  <circle cx="35" cy="100" r="2.5" fill="currentColor" fillOpacity="0.45" />
-                  <circle cx="130" cy="100" r="2.5" fill="currentColor" fillOpacity="0.65" />
-                  <circle cx="225" cy="100" r="2.5" fill="currentColor" fillOpacity="0.5" />
+                  <circle cx="35" cy="35" r="2.5" fill="currentColor" fillOpacity="0.75" />
+                  <circle cx="130" cy="35" r="2.5" fill="currentColor" fillOpacity="0.65" />
+                  <circle cx="225" cy="35" r="2.5" fill="currentColor" fillOpacity="0.55" />
+                  <circle cx="35" cy="100" r="2.5" fill="currentColor" fillOpacity="0.55" />
+                  <circle cx="130" cy="100" r="2.5" fill="currentColor" fillOpacity="0.75" />
+                  <circle cx="225" cy="100" r="2.5" fill="currentColor" fillOpacity="0.6" />
                 </g>
               </svg>
             </div>
@@ -124,7 +124,7 @@ export default function Teams() {
               </div>
 
               <a href="/innovation-teams">
-                <Button className="w-full bg-primary hover:bg-primary/90 text-white font-semibold h-11 rounded-lg text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-sm hover:shadow-md">
+                <Button className="w-full bg-primary hover:bg-primary/90 text-foreground font-semibold h-11 rounded-lg text-sm transition-all duration-200 flex items-center justify-center gap-2 shadow-sm hover:shadow-md">
                   Learn More
                   <ArrowRight size={16} />
                 </Button>
