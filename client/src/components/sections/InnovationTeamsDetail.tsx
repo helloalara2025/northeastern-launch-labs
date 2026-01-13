@@ -1,6 +1,6 @@
 export default function InnovationTeamsDetail() {
   return (
-    <section id="innovation-detail" className="py-16 bg-white border-t border-foreground/5">
+    <section id="innovation-detail" className="py-16 bg-background border-t border-border/50">
       <div className="container">
         <div className="max-w-3xl mb-12">
           <h2 className="font-sans font-bold text-4xl lg:text-5xl text-foreground mb-6 leading-tight tracking-tight">
@@ -18,8 +18,8 @@ export default function InnovationTeamsDetail() {
             { title: "Ownership", desc: "Take full responsibility from start to finish" }
           ].map((item, idx) => (
             <div key={idx} className="space-y-3">
-              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                <div className="w-5 h-5 rounded-full bg-primary/30"></div>
+              <div className="w-10 h-10 rounded-lg bg-accent/20 flex items-center justify-center">
+                <div className="w-5 h-5 rounded-full bg-accent/30"></div>
               </div>
               <h3 className="font-sans font-bold text-base text-foreground">{item.title}</h3>
               <p className="text-foreground/60 text-sm leading-relaxed font-regular">{item.desc}</p>

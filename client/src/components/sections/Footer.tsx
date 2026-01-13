@@ -9,7 +9,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-white border-t border-foreground/5 py-10">
+    <footer className="bg-card border-t border-border/50 py-10">
       <div className="container">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
@@ -73,7 +73,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-foreground/5 pt-6">
+        <div className="border-t border-border/50 pt-6">
           <p className="text-foreground/50 text-xs font-regular text-center">
             © {currentYear} Northeastern Launch Labs. All rights reserved.
           </p>

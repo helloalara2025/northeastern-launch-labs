@@ -23,8 +23,8 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/80 backdrop-blur-md ${
-        isScrolled ? "shadow-md border-b border-foreground/5" : "border-b border-foreground/0"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background/80 backdrop-blur-md ${
+        isScrolled ? "shadow-lg shadow-primary/20 border-b border-border" : "border-b border-border/50"
       }`}
     >
       <div className="container flex items-center justify-between h-16">
@@ -39,7 +39,7 @@ export default function Navigation() {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-foreground/65 hover:text-primary transition-colors duration-200"
+              className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors duration-200"
             >
               {link.name}
             </a>
@@ -48,7 +48,7 @@ export default function Navigation() {
 
         <div className="hidden md:flex items-center gap-3">
           <a href="#get-involved">
-            <Button className="bg-primary hover:bg-primary/90 text-white font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 shadow-lg hover:shadow-xl">
+            <Button className="bg-primary hover:bg-primary/90 text-background font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 shadow-lg hover:shadow-xl hover:shadow-primary/40">
               Apply to Join
             </Button>
           </a>
@@ -56,7 +56,7 @@ export default function Navigation() {
 
         {/* Mobile Menu Toggle */}
         <button 
-          className="md:hidden p-2 text-foreground hover:bg-foreground/5 rounded-lg transition-colors"
+          className="md:hidden p-2 text-foreground hover:bg-foreground/10 rounded-lg transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -65,19 +65,19 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-b border-foreground/5 p-4 flex flex-col gap-2">
+        <div className="md:hidden bg-card border-b border-border p-4 flex flex-col gap-2">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="text-sm font-medium text-foreground/65 hover:text-primary px-3 py-2 rounded-lg hover:bg-foreground/5 transition-all duration-200"
+              className="text-sm font-medium text-foreground/70 hover:text-primary px-3 py-2 rounded-lg hover:bg-foreground/10 transition-all duration-200"
             >
               {link.name}
             </a>
           ))}
           <a href="#get-involved" onClick={() => setIsMobileMenuOpen(false)} className="mt-2">
-            <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold rounded-lg text-sm transition-all duration-200 shadow-lg hover:shadow-xl">
+            <Button className="w-full bg-primary hover:bg-primary/90 text-background font-bold rounded-lg text-sm transition-all duration-200 shadow-lg hover:shadow-xl hover:shadow-primary/40">
               Apply to Join
             </Button>
           </a>
