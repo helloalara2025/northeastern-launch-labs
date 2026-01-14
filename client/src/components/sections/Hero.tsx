@@ -16,11 +16,9 @@ export default function Hero() {
           
           {/* Main headline with visual hierarchy */}
           <div className="mb-12">
-            <h1 className="font-sans font-semibold text-7xl lg:text-8xl text-red-800 leading-tight tracking-tight mb-6">
+            <h1 className="font-sans font-semibold text-7xl lg:text-8xl leading-tight tracking-tight mb-6">
               From Idea to<br />
-              <span className="text-red-800/60">Impact.</span><br />
-              Build Real<br />
-              <span className="text-red-800/60">Skills.</span>
+              <span className="text-black">Impact.</span>
             </h1>
           </div>
           
