@@ -1,44 +1,44 @@
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
-
 export default function Hero() {
   return (
-    <section id="home" className="relative pt-32 pb-24 bg-white overflow-hidden">
-      {/* Subtle line pattern background */}
-      <div className="absolute inset-0 opacity-5 pointer-events-none" style={{
-        backgroundImage: 'repeating-linear-gradient(45deg, #A41E34, #A41E34 2px, transparent 2px, transparent 20px)'
+    <section id="home" className="relative pt-40 pb-32 bg-white overflow-hidden">
+      {/* Subtle animated background pattern */}
+      <div className="absolute inset-0 opacity-3 pointer-events-none" style={{
+        backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(164, 30, 52, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(164, 30, 52, 0.05) 0%, transparent 50%)'
       }}></div>
       
       <div className="container relative z-10">
-        <div className="max-w-2xl">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-red-50 text-red-800 text-xs font-semibold uppercase tracking-widest mb-8 border border-red-100">
-            <span className="w-2 h-2 bg-red-600 rounded-full"></span>
+        <div className="max-w-4xl">
+          {/* Status badge */}
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-50 text-red-800 text-xs font-semibold uppercase tracking-widest mb-12 border border-red-100">
+            <span className="w-1.5 h-1.5 bg-red-800 rounded-full animate-pulse"></span>
             Northeastern Student Org
           </div>
           
-          <h1 className="font-sans font-semibold text-7xl lg:text-8xl text-red-800 leading-none tracking-tight mb-8">
-            Build Real
-            <br />
-            Products.
-            <br />
-            Make Real Impact.
-          </h1>
+          {/* Main headline with visual hierarchy */}
+          <div className="mb-12">
+            <h1 className="font-sans font-semibold text-7xl lg:text-8xl text-red-800 leading-tight tracking-tight mb-6">
+              Build Real<br />
+              <span className="text-red-800/60">Products.</span><br />
+              Make Real<br />
+              <span className="text-red-800/60">Impact.</span>
+            </h1>
+          </div>
           
-           <p className="text-lg text-foreground/70 leading-relaxed mb-8 max-w-xl font-medium">
-            Northeastern Launch Labs connects students across all majors to work on end-to-end projects with startups and internal teams.
+          {/* Subheadline with better spacing */}
+          <p className="text-xl lg:text-2xl text-foreground/70 leading-relaxed mb-12 max-w-2xl font-medium">
+            Connect with ambitious students building real products with startups and launching ventures.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#get-involved">
-              <Button className="bg-red-800 hover:bg-red-900 text-white font-semibold px-8 h-12 rounded-lg text-base flex items-center gap-2 transition-all duration-300">
-                Start Building
-                <ArrowRight size={18} />
-              </Button>
+          {/* CTA buttons with better spacing */}
+          <div className="flex flex-col sm:flex-row gap-6">
+            <a href="#get-involved" className="inline-flex items-center justify-center px-8 py-4 bg-red-800 hover:bg-red-900 text-white font-semibold rounded-lg transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105">
+              Start Building
+              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
             </a>
-            <a href="#about">
-              <Button variant="outline" className="border border-foreground/30 text-foreground font-semibold px-8 h-12 rounded-lg text-base hover:bg-gray-50 transition-all duration-300">
-                Learn More
-              </Button>
+            <a href="#teams" className="inline-flex items-center justify-center px-8 py-4 bg-white border-2 border-red-800 text-red-800 font-semibold rounded-lg hover:bg-red-50 transition-all duration-300">
+              Learn More
             </a>
           </div>
         </div>
