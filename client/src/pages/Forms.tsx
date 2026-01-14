@@ -10,36 +10,41 @@ export default function Forms() {
       title: "Launch Team Application",
       description: "Apply to join a Launch Team and work directly with early-stage startups on real-world projects.",
       icon: Briefcase,
-      status: "Coming Soon",
-      link: "#"
+      status: "Open",
+      link: "/apply/launch-team",
+      internal: true
     },
     {
       title: "Innovation Team Application",
       description: "Apply to join an Innovation Team and work on internally scoped, end-to-end projects.",
       icon: Lightbulb,
-      status: "Coming Soon",
-      link: "#"
+      status: "Open",
+      link: "/apply/innovation-team",
+      internal: true
     },
     {
       title: "Leadership Application",
       description: "Interested in leading Launch Labs? Apply for a leadership position on our team.",
       icon: Award,
-      status: "Coming Soon",
-      link: "#"
+      status: "Open",
+      link: "/apply/leadership",
+      internal: true
     },
     {
       title: "Startup Collaboration Form",
       description: "Are you a founder? Tell us about your startup and how we can collaborate.",
       icon: Users,
       status: "Coming Soon",
-      link: "#"
+      link: "#",
+      internal: false
     },
     {
       title: "Project Proposal",
       description: "Have an idea for an Innovation Team project? Submit your proposal here.",
       icon: FileText,
       status: "Coming Soon",
-      link: "#"
+      link: "#",
+      internal: false
     }
   ];
 
@@ -79,12 +84,24 @@ export default function Forms() {
                         {form.description}
                       </p>
                       <div className="flex items-center justify-between">
-                        <span className="inline-block text-xs font-bold text-red-800 uppercase tracking-wider bg-red-50 px-3 py-1 rounded-full border border-red-200">
+                        <span className={`inline-block text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full border ${
+                          form.status === "Open" 
+                            ? "text-green-800 bg-green-50 border-green-200" 
+                            : "text-amber-800 bg-amber-50 border-amber-200"
+                        }`}>
                           {form.status}
                         </span>
-                        <a href={form.link} className="text-red-800 hover:text-red-900 transition-colors">
-                          <ExternalLink size={18} />
-                        </a>
+                        {form.internal ? (
+                          <Link href={form.link}>
+                            <a className="text-red-800 hover:text-red-900 transition-colors">
+                              <ExternalLink size={18} />
+                            </a>
+                          </Link>
+                        ) : (
+                          <a href={form.link} className="text-red-800 hover:text-red-900 transition-colors opacity-50 cursor-not-allowed">
+                            <ExternalLink size={18} />
+                          </a>
+                        )}
                       </div>
                     </CardContent>
                   </Card>
@@ -105,7 +122,7 @@ export default function Forms() {
                 <CardContent className="p-8">
                   <h3 className="font-bold text-lg text-foreground mb-3">When do applications open?</h3>
                   <p className="text-foreground/70">
-                    Applications typically open at the beginning of each semester. Follow our social media and website for announcements.
+                    Applications are currently open! You can apply anytime. We review applications on a rolling basis throughout the semester.
                   </p>
                 </CardContent>
               </Card>

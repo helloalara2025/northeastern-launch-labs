@@ -57,7 +57,7 @@ export default function ContactPage() {
                       <Mail className="w-6 h-6" />
                     </div>
                     <h3 className="font-bold text-lg text-foreground mb-3">General Inquiries</h3>
-                    <a href="mailto:hello@launchlabs.neu.edu" className="text-red-800 hover:text-red-900 transition-colors font-medium">
+                    <a href="mailto:hello@launchlabs.neu.edu" className="text-red-800 hover:text-red-900 transition-colors font-medium break-all">
                       hello@launchlabs.neu.edu
                     </a>
                   </CardContent>
@@ -68,8 +68,8 @@ export default function ContactPage() {
                     <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-4">
                       <Mail className="w-6 h-6" />
                     </div>
-                    <h3 className="font-bold text-lg text-foreground mb-3">Student Inquiries</h3>
-                    <a href="mailto:students@launchlabs.neu.edu" className="text-red-800 hover:text-red-900 transition-colors font-medium">
+                    <h3 className="font-bold text-lg text-foreground mb-3">Student Inquiries & Applications</h3>
+                    <a href="mailto:students@launchlabs.neu.edu" className="text-red-800 hover:text-red-900 transition-colors font-medium break-all">
                       students@launchlabs.neu.edu
                     </a>
                   </CardContent>
@@ -81,7 +81,7 @@ export default function ContactPage() {
                       <Mail className="w-6 h-6" />
                     </div>
                     <h3 className="font-bold text-lg text-foreground mb-3">Startup Partnerships</h3>
-                    <a href="mailto:partnerships@launchlabs.neu.edu" className="text-red-800 hover:text-red-900 transition-colors font-medium">
+                    <a href="mailto:partnerships@launchlabs.neu.edu" className="text-red-800 hover:text-red-900 transition-colors font-medium break-all">
                       partnerships@launchlabs.neu.edu
                     </a>
                   </CardContent>
@@ -95,7 +95,8 @@ export default function ContactPage() {
                     <h3 className="font-bold text-lg text-foreground mb-3">Location</h3>
                     <p className="text-foreground/70 font-medium">
                       Northeastern University<br />
-                      Boston, MA
+                      Boston, MA 02115<br />
+                      USA
                     </p>
                   </CardContent>
                 </Card>
@@ -103,10 +104,10 @@ export default function ContactPage() {
                 <div className="bg-white border border-foreground/10 rounded-lg p-8">
                   <h3 className="font-bold text-lg text-foreground mb-6">Follow Us</h3>
                   <div className="flex gap-4">
-                    <a href="#" className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 hover:bg-red-200 transition-colors">
+                    <a href="#" className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 hover:bg-red-200 transition-colors" title="LinkedIn">
                       <Linkedin size={24} />
                     </a>
-                    <a href="#" className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 hover:bg-red-200 transition-colors">
+                    <a href="#" className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 hover:bg-red-200 transition-colors" title="Instagram">
                       <Instagram size={24} />
                     </a>
                   </div>
@@ -164,6 +165,7 @@ export default function ContactPage() {
                       <option value="Student Interest">Student Interest</option>
                       <option value="Startup Partnership">Startup Partnership</option>
                       <option value="Leadership">Leadership</option>
+                      <option value="Technical Issue">Technical Issue</option>
                       <option value="Other">Other</option>
                     </select>
                   </div>
@@ -192,6 +194,56 @@ export default function ContactPage() {
                   </Button>
                 </form>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Quick Links Section */}
+        <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
+          <div className="container max-w-4xl">
+            <h2 className="font-sans font-bold text-3xl text-foreground mb-10">Quick Links</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
+                <CardContent className="p-8 text-center">
+                  <h3 className="font-bold text-lg text-foreground mb-3">Apply Now</h3>
+                  <p className="text-foreground/70 mb-6">
+                    Ready to join Launch Labs? Check out our applications.
+                  </p>
+                  <Link href="/forms">
+                    <Button className="w-full bg-red-800 hover:bg-red-900 text-white font-bold h-10 rounded-lg">
+                      View Applications
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
+                <CardContent className="p-8 text-center">
+                  <h3 className="font-bold text-lg text-foreground mb-3">Learn More</h3>
+                  <p className="text-foreground/70 mb-6">
+                    Explore our teams and discover what we do.
+                  </p>
+                  <Link href="/about">
+                    <Button className="w-full bg-red-800 hover:bg-red-900 text-white font-bold h-10 rounded-lg">
+                      About Us
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
+                <CardContent className="p-8 text-center">
+                  <h3 className="font-bold text-lg text-foreground mb-3">Partner With Us</h3>
+                  <p className="text-foreground/70 mb-6">
+                    Interested in collaborating with Launch Labs?
+                  </p>
+                  <Link href="/partners">
+                    <Button className="w-full bg-red-800 hover:bg-red-900 text-white font-bold h-10 rounded-lg">
+                      Learn More
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
