@@ -34,11 +34,6 @@ export default function Footer() {
             <h4 className="font-sans font-bold text-xs text-foreground uppercase tracking-wide mb-4">Contact</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#contact" className="text-foreground/60 hover:text-primary text-sm font-regular transition-colors">
-                  Get in Touch
-                </a>
-              </li>
-              <li>
                 <a href="#get-involved" className="text-foreground/60 hover:text-primary text-sm font-regular transition-colors">
                   Apply to Join
                 </a>

@@ -5,7 +5,7 @@ export default function GetInvolved() {
   const opportunities = [
     { 
       title: "Become a Member", 
-      desc: "Join either a Launch Team or Innovation Team. 3–5 hours/week.",
+      desc: "Join either a Launch Team or Innovation Team. Open to all Northeastern students regardless of major or experience level.",
       href: "#contact",
       buttonText: "Apply to Join"
     },
@@ -17,13 +17,13 @@ export default function GetInvolved() {
     },
     { 
       title: "Startup Partnership", 
-      desc: "Are you a founder? Partner with talented student teams.",
+      desc: "Are you a founder? Partner with talented student teams to build your product.",
       href: "#contact",
       buttonText: "Partner With Us"
     },
     { 
-      title: "Leadership", 
-      desc: "Shape the direction of Launch Labs. 5–8 hours/week.",
+      title: "Leadership Opportunities", 
+      desc: "Shape the direction of Launch Labs and mentor peers through leadership roles. 5–8 hours/week.",
       href: "#contact",
       buttonText: "Apply for Leadership"
     }

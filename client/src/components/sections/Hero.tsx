@@ -17,13 +17,15 @@ export default function Hero() {
           </div>
           
           <h1 className="font-sans font-semibold text-7xl lg:text-8xl text-red-800 leading-none tracking-tight mb-8">
-            From Idea
+            Build Real
             <br />
-            to Impact.
+            Products.
+            <br />
+            Make Real Impact.
           </h1>
           
-          <p className="text-xl text-foreground/60 leading-relaxed font-medium mb-10 max-w-xl">
-            Join ambitious students building real products with startups and launching your own ventures.
+           <p className="text-lg text-foreground/70 leading-relaxed mb-8 max-w-xl font-medium">
+            Northeastern Launch Labs connects students across all majors to work on end-to-end projects with startups and internal teams.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">

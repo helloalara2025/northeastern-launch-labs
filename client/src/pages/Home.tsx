@@ -5,9 +5,7 @@ import Teams from "@/components/sections/Teams";
 import LaunchTeamsDetail from "@/components/sections/LaunchTeamsDetail";
 import InnovationTeamsDetail from "@/components/sections/InnovationTeamsDetail";
 import GetInvolved from "@/components/sections/GetInvolved";
-import Leadership from "@/components/sections/Leadership";
-import Partners from "@/components/sections/Partners";
-import Contact from "@/components/sections/Contact";
+
 import Footer from "@/components/sections/Footer";
 
 export default function Home() {
@@ -21,9 +19,7 @@ export default function Home() {
         <LaunchTeamsDetail />
         <InnovationTeamsDetail />
         <GetInvolved />
-        <Leadership />
-        <Partners />
-        <Contact />
+
       </main>
       <Footer />
     </div>
