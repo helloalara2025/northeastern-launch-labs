@@ -8,7 +8,7 @@ export default function About() {
             <span className="text-red-800">Launch Labs?</span>
           </h2>
           <p className="text-xl text-foreground/70 leading-relaxed font-medium">
-            Northeastern Launch Labs brings together students across disciplines to work on real-world, end-to-end projects that bridge classroom learning with practical impact. Through Launch Teams and Innovation Teams, members gain hands-on experience tackling real problems, building portfolio-ready work, and developing professional skills.
+            Northeastern Launch Labs brings together students across disciplines and experience levels to work on real-world, end-to-end projects that bridge classroom learning with practical impact. Through Launch Teams partnering with startups and Innovation Teams developing internal initiatives, members gain practical experience tackling real-world problems. The club emphasizes collaboration, professional skill development, and ownership, enabling students to produce portfolio-ready work, strengthen cross-functional teamwork, and explore pathways to entrepreneurship and innovation.
           </p>
         </div>
 
@@ -17,7 +17,7 @@ export default function About() {
           {[
             { 
               title: "Real-World Projects", 
-              desc: "Work that ships and makes impact.",
+              desc: "Work that ships and makes impact with startups and peers.",
               icon: "🚀"
             },
             { 

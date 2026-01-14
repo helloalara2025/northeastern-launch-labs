@@ -17,28 +17,28 @@ export default function Hero() {
           {/* Main headline with visual hierarchy */}
           <div className="mb-12">
             <h1 className="font-sans font-semibold text-7xl lg:text-8xl text-red-800 leading-tight tracking-tight mb-6">
+              From Idea to<br />
+              <span className="text-red-800/60">Impact.</span><br />
               Build Real<br />
-              <span className="text-red-800/60">Products.</span><br />
-              Make Real<br />
-              <span className="text-red-800/60">Impact.</span>
+              <span className="text-red-800/60">Skills.</span>
             </h1>
           </div>
           
           {/* Subheadline with better spacing */}
           <p className="text-xl lg:text-2xl text-foreground/70 leading-relaxed mb-12 max-w-2xl font-medium">
-            Connect with ambitious students building real products with startups and launching ventures.
+            Work on real-world projects with startups and peers. Gain hands-on experience, build portfolio-ready work, and explore entrepreneurship.
           </p>
           
           {/* CTA buttons with better spacing */}
-          <div className="flex flex-col sm:flex-row gap-6">
-            <a href="#get-involved" className="inline-flex items-center justify-center px-8 py-4 bg-red-800 hover:bg-red-900 text-white font-semibold rounded-lg transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105">
-              Start Building
+          <div className="flex flex-col sm:flex-row gap-4">
+            <a href="#get-involved" className="inline-flex items-center justify-center px-8 py-4 bg-red-800 hover:bg-red-900 text-white font-semibold rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-lg">
+              Apply to Join
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </a>
-            <a href="#teams" className="inline-flex items-center justify-center px-8 py-4 bg-white border-2 border-red-800 text-red-800 font-semibold rounded-lg hover:bg-red-50 transition-all duration-300">
-              Learn More
+            <a href="#teams" className="inline-flex items-center justify-center px-8 py-4 bg-gray-100 border-2 border-gray-300 text-foreground font-semibold rounded-xl hover:bg-gray-200 hover:border-red-800 transition-all duration-300 text-lg">
+              Explore Teams
             </a>
           </div>
         </div>
