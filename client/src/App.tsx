@@ -11,6 +11,7 @@ import InnovationTeams from "./pages/InnovationTeams";
 import Partners from "./pages/Partners";
 import Forms from "./pages/Forms";
 import ContactPage from "./pages/ContactPage";
+import Leadership from "./pages/Leadership";
 
 function Router() {
   return (
@@ -22,6 +23,7 @@ function Router() {
       <Route path={"/partners"} component={Partners} />
       <Route path={"/forms"} component={Forms} />
       <Route path={"/contact"} component={ContactPage} />
+      <Route path={"/leadership"} component={Leadership} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

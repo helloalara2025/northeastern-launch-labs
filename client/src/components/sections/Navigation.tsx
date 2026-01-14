@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -15,9 +16,11 @@ export default function Navigation() {
   }, []);
 
   const navLinks = [
-    { name: "About", href: "#about" },
-    { name: "Teams", href: "#teams" },
-    { name: "Get Involved", href: "#get-involved" }
+    { name: "About", href: "/about" },
+    { name: "Teams", href: "/launch-teams" },
+    { name: "Leadership", href: "/leadership" },
+    { name: "Partners", href: "/partners" },
+    { name: "Contact", href: "/contact" }
   ];
 
   return (
@@ -27,30 +30,30 @@ export default function Navigation() {
       }`}
     >
       <div className="container flex items-center justify-between h-16">
-        <a href="#" className="flex items-center gap-2">
-          <span className="font-sans font-bold text-lg text-red-800">Launch Labs</span>
-          <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Northeastern</span>
-        </a>
+        <Link href="/">
+          <a className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
+            <span className="font-sans font-bold text-lg text-red-800">Launch Labs</span>
+            <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Northeastern</span>
+          </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              className="text-sm font-medium text-foreground/70 hover:text-red-800 transition-colors duration-200"
-            >
-              {link.name}
-            </a>
+            <Link key={link.name} href={link.href}>
+              <a className="text-sm font-medium text-foreground/70 hover:text-red-800 transition-colors duration-200">
+                {link.name}
+              </a>
+            </Link>
           ))}
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <a href="#get-involved">
+          <Link href="/forms">
             <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md">
               Apply to Join
             </Button>
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -66,20 +69,23 @@ export default function Navigation() {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-card border-b border-border p-4 flex flex-col gap-2">
           {navLinks.map((link) => (
-            <a
-              key={link.name}
-              href={link.href}
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="text-sm font-medium text-foreground/70 hover:text-red-800 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200"
-            >
-              {link.name}
-            </a>
+            <Link key={link.name} href={link.href}>
+              <a
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-sm font-medium text-foreground/70 hover:text-red-800 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200"
+              >
+                {link.name}
+              </a>
+            </Link>
           ))}
-          <a href="#get-involved" onClick={() => setIsMobileMenuOpen(false)} className="mt-2">
-            <Button className="w-full bg-red-800 hover:bg-red-900 text-white font-bold rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md">
+          <Link href="/forms">
+            <Button 
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="w-full bg-red-800 hover:bg-red-900 text-white font-bold rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md mt-2"
+            >
               Apply to Join
             </Button>
-          </a>
+          </Link>
         </div>
       )}
     </nav>
