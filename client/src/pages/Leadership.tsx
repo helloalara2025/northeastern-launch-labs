@@ -1,6 +1,8 @@
 import Navigation from "@/components/sections/Navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin, Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 
 export default function Leadership() {
   const teamMembers = [
@@ -39,28 +41,28 @@ export default function Leadership() {
       <Navigation />
       <main className="pt-16">
         {/* Header */}
-        <section className="bg-white py-20 md:py-28">
+        <section className="bg-white py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h1 className="font-sans font-bold text-5xl md:text-6xl text-foreground mb-6">
+            <h1 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-6 leading-tight">
               Our Leadership
             </h1>
-            <p className="text-xl text-foreground/70 leading-relaxed">
+            <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl">
               Meet the students driving Launch Labs forward and making real impact across the Northeastern community.
             </p>
           </div>
         </section>
 
         {/* Team Members */}
-        <section className="bg-foreground/5 border-t border-foreground/10 py-20 md:py-28">
+        <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 mb-16">
               {teamMembers.map((member, index) => (
-                <Card key={index} className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
+                <Card key={index} className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow bg-white">
                   <CardContent className="p-8">
                     <div className="w-16 h-16 bg-red-100 rounded-lg mb-6 flex items-center justify-center">
                       <div className="w-12 h-12 bg-red-800 rounded-md"></div>
                     </div>
-                    <h3 className="font-bold text-xl text-foreground mb-1">{member.name}</h3>
+                    <h3 className="font-bold text-xl text-foreground mb-2">{member.name}</h3>
                     <p className="text-red-800 font-bold text-sm mb-4">{member.title}</p>
                     <p className="text-foreground/70 text-sm leading-relaxed mb-6">
                       {member.bio}
@@ -86,53 +88,53 @@ export default function Leadership() {
               ))}
             </div>
 
-            <div className="mt-16 bg-white border border-foreground/10 rounded-lg p-8 text-center">
+            <div className="bg-white border border-foreground/10 rounded-xl p-10 text-center">
               <h2 className="font-bold text-2xl text-foreground mb-4">Join Our Leadership Team</h2>
-              <p className="text-foreground/70 mb-6">
+              <p className="text-foreground/70 mb-8">
                 Interested in leading Launch Labs? We're always looking for passionate students to help drive our mission.
               </p>
-              <a href="/forms" className="inline-block">
-                <button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200">
+              <Link href="/forms">
+                <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg">
                   Apply for Leadership
-                </button>
-              </a>
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="bg-foreground/5 border-t border-foreground/10 py-12">
+      <footer className="bg-foreground/5 border-t border-foreground/10 py-16">
         <div className="container max-w-4xl">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div>
               <h4 className="font-bold text-foreground mb-4">Launch Labs</h4>
-              <p className="text-sm text-foreground/70">
+              <p className="text-sm text-foreground/70 leading-relaxed">
                 Northeastern University's hub for real-world project work.
               </p>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-4">Explore</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="/" className="text-foreground/70 hover:text-red-800 transition-colors">Home</a></li>
-                <li><a href="/about" className="text-foreground/70 hover:text-red-800 transition-colors">About</a></li>
-                <li><a href="/launch-teams" className="text-foreground/70 hover:text-red-800 transition-colors">Launch Teams</a></li>
+              <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Explore</h4>
+              <ul className="space-y-3 text-sm">
+                <li><Link href="/"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Home</a></Link></li>
+                <li><Link href="/about"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">About</a></Link></li>
+                <li><Link href="/launch-teams"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Launch Teams</a></Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-4">Get Involved</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="/forms" className="text-foreground/70 hover:text-red-800 transition-colors">Apply</a></li>
-                <li><a href="/forms" className="text-foreground/70 hover:text-red-800 transition-colors">Forms</a></li>
-                <li><a href="/partners" className="text-foreground/70 hover:text-red-800 transition-colors">Partners</a></li>
+              <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Get Involved</h4>
+              <ul className="space-y-3 text-sm">
+                <li><Link href="/forms"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Apply</a></Link></li>
+                <li><Link href="/innovation-teams"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Innovation Teams</a></Link></li>
+                <li><Link href="/partners"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Partners</a></Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-4">Connect</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="/contact" className="text-foreground/70 hover:text-red-800 transition-colors">Contact</a></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors">LinkedIn</a></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors">Instagram</a></li>
+              <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Connect</h4>
+              <ul className="space-y-3 text-sm">
+                <li><Link href="/contact"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Contact</a></Link></li>
+                <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">LinkedIn</a></li>
+                <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Instagram</a></li>
               </ul>
             </div>
           </div>

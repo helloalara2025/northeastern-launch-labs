@@ -10,67 +10,67 @@ export default function Partners() {
       <Navigation />
       <main className="pt-16">
         {/* Header */}
-        <section className="bg-white py-20 md:py-28">
+        <section className="bg-white py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h1 className="font-sans font-bold text-5xl md:text-6xl text-foreground mb-6">
+            <h1 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-6 leading-tight">
               Our Startup Partners
             </h1>
-            <p className="text-xl text-foreground/70 leading-relaxed">
+            <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl">
               Launch Labs works with forward-thinking startups committed to providing meaningful learning experiences.
             </p>
           </div>
         </section>
 
         {/* Why Partner Section */}
-        <section className="bg-foreground/5 border-t border-foreground/10 py-20 md:py-28">
+        <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-12">
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
               Why Partner With Us?
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-4">
+                <CardContent className="p-8">
+                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-6">
                     <Users className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Skilled Student Teams</h3>
-                  <p className="text-foreground/70 text-sm leading-relaxed">
+                  <p className="text-foreground/70 leading-relaxed">
                     Access talented students from all programs—engineering, design, business, and more.
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-4">
+                <CardContent className="p-8">
+                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-6">
                     <TrendingUp className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Cost-Effective Development</h3>
-                  <p className="text-foreground/70 text-sm leading-relaxed">
+                  <p className="text-foreground/70 leading-relaxed">
                     High-quality work for early-stage ventures at a fraction of traditional agency costs.
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-4">
+                <CardContent className="p-8">
+                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-6">
                     <Zap className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Fresh Perspectives</h3>
-                  <p className="text-foreground/70 text-sm leading-relaxed">
+                  <p className="text-foreground/70 leading-relaxed">
                     Students bring emerging technologies and new approaches to your challenges.
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-4">
+                <CardContent className="p-8">
+                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-6">
                     <Clock className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Flexible Commitment</h3>
-                  <p className="text-foreground/70 text-sm leading-relaxed">
+                  <p className="text-foreground/70 leading-relaxed">
                     Semester-long engagements with defined scope that fits your timeline.
                   </p>
                 </CardContent>
@@ -80,13 +80,13 @@ export default function Partners() {
         </section>
 
         {/* Current Partners */}
-        <section className="bg-white border-t border-foreground/10 py-20 md:py-28">
+        <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-8">
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">
               Current Startup Partners
             </h2>
-            <div className="bg-foreground/5 border border-foreground/10 rounded-lg p-8 text-center">
-              <p className="text-foreground/70">
+            <div className="bg-foreground/5 border border-foreground/10 rounded-xl p-10 text-center">
+              <p className="text-foreground/70 text-lg">
                 Partner profiles and logos coming soon. Check back for information about our current startup collaborations.
               </p>
             </div>
@@ -94,15 +94,15 @@ export default function Partners() {
         </section>
 
         {/* How It Works */}
-        <section className="bg-foreground/5 border-t border-foreground/10 py-20 md:py-28">
+        <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-12">
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
               How It Works
             </h2>
-            <div className="space-y-6">
+            <div className="space-y-8">
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-10 w-10 rounded-full bg-red-800 text-white font-bold">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-800 text-white font-bold text-lg">
                     1
                   </div>
                 </div>
@@ -115,7 +115,7 @@ export default function Partners() {
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-10 w-10 rounded-full bg-red-800 text-white font-bold">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-800 text-white font-bold text-lg">
                     2
                   </div>
                 </div>
@@ -128,7 +128,7 @@ export default function Partners() {
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-10 w-10 rounded-full bg-red-800 text-white font-bold">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-800 text-white font-bold text-lg">
                     3
                   </div>
                 </div>
@@ -141,7 +141,7 @@ export default function Partners() {
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-10 w-10 rounded-full bg-red-800 text-white font-bold">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-800 text-white font-bold text-lg">
                     4
                   </div>
                 </div>
@@ -157,14 +157,14 @@ export default function Partners() {
         </section>
 
         {/* CTA */}
-        <section className="bg-red-50 border-t border-red-200 py-20 md:py-28">
+        <section className="bg-red-50 border-t border-red-200 py-24 md:py-32">
           <div className="container max-w-4xl text-center">
             <h2 className="font-bold text-3xl text-foreground mb-4">Interested in Partnering?</h2>
-            <p className="text-foreground/70 mb-8">
+            <p className="text-foreground/70 mb-10 text-lg">
               Let's talk about how Launch Labs can support your startup's growth.
             </p>
             <Link href="/contact">
-              <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg">
+              <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg">
                 Get in Touch
               </Button>
             </Link>
@@ -173,37 +173,37 @@ export default function Partners() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-foreground/5 border-t border-foreground/10 py-12">
+      <footer className="bg-foreground/5 border-t border-foreground/10 py-16">
         <div className="container max-w-4xl">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
+          <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div>
               <h4 className="font-bold text-foreground mb-4">Launch Labs</h4>
-              <p className="text-sm text-foreground/70">
+              <p className="text-sm text-foreground/70 leading-relaxed">
                 Northeastern University's hub for real-world project work.
               </p>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-4">Explore</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="/" className="text-foreground/70 hover:text-red-800 transition-colors">Home</a></li>
-                <li><a href="/about" className="text-foreground/70 hover:text-red-800 transition-colors">About</a></li>
-                <li><a href="/launch-teams" className="text-foreground/70 hover:text-red-800 transition-colors">Launch Teams</a></li>
+              <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Explore</h4>
+              <ul className="space-y-3 text-sm">
+                <li><Link href="/"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Home</a></Link></li>
+                <li><Link href="/about"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">About</a></Link></li>
+                <li><Link href="/launch-teams"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Launch Teams</a></Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-4">Get Involved</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="/forms" className="text-foreground/70 hover:text-red-800 transition-colors">Apply</a></li>
-                <li><a href="/leadership" className="text-foreground/70 hover:text-red-800 transition-colors">Leadership</a></li>
-                <li><a href="/innovation-teams" className="text-foreground/70 hover:text-red-800 transition-colors">Innovation Teams</a></li>
+              <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Get Involved</h4>
+              <ul className="space-y-3 text-sm">
+                <li><Link href="/forms"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Apply</a></Link></li>
+                <li><Link href="/leadership"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Leadership</a></Link></li>
+                <li><Link href="/innovation-teams"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Innovation Teams</a></Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-4">Connect</h4>
-              <ul className="space-y-2 text-sm">
-                <li><a href="/contact" className="text-foreground/70 hover:text-red-800 transition-colors">Contact</a></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors">LinkedIn</a></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors">Instagram</a></li>
+              <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Connect</h4>
+              <ul className="space-y-3 text-sm">
+                <li><Link href="/contact"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Contact</a></Link></li>
+                <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">LinkedIn</a></li>
+                <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Instagram</a></li>
               </ul>
             </div>
           </div>
