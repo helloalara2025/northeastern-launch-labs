@@ -1,69 +1,69 @@
 export default function Teams() {
   return (
-    <section id="teams" className="py-32 bg-white border-t border-gray-200">
+    <section id="teams" className="py-24 bg-white border-t border-gray-200">
       <div className="container">
-        <div className="mb-20">
-          <h2 className="font-sans font-semibold text-6xl lg:text-7xl text-foreground leading-tight">
-            Two Ways to<br />
-            <span className="text-red-800">Get Involved</span>
-          </h2>
-        </div>
+        <h2 className="font-sans font-semibold text-4xl lg:text-5xl text-foreground mb-16 leading-tight">
+          Two Ways to<br />
+          <span className="text-red-800">Make an Impact</span>
+        </h2>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-8">
           {/* Launch Teams */}
-          <div className="group relative">
-            <div className="absolute -inset-1 bg-gradient-to-br from-red-100 to-red-50 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-300 blur-xl"></div>
-            <div className="relative bg-white border-2 border-red-800 rounded-3xl p-12 hover:shadow-2xl transition-all duration-300">
-              <h3 className="font-sans font-semibold text-3xl text-red-800 mb-6">Launch Teams</h3>
-              
-              <div className="space-y-3 mb-8">
-                {[
-                  "Work with real startups",
-                  "Build real solutions",
-                  "Develop real skills"
-                ].map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 bg-red-800 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-foreground/70 font-medium">{item}</p>
-                  </div>
-                ))}
-              </div>
-              
-              <a href="#launch-detail" className="inline-flex items-center gap-2 text-red-800 font-semibold hover:gap-3 transition-all duration-300">
-                Learn More
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          <div className="group bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-2xl p-8 hover:border-red-300 hover:shadow-lg transition-all duration-300">
+            <div className="mb-6">
+              <div className="w-12 h-12 bg-red-800 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
-              </a>
+              </div>
+              <h3 className="font-sans font-semibold text-2xl text-foreground mb-2">Launch Teams</h3>
             </div>
+            <p className="text-foreground/70 text-base leading-relaxed font-medium mb-6">
+              Partner with early-stage startups to design, build, and deliver real-world solutions.
+            </p>
+            <ul className="space-y-3">
+              <li className="flex gap-3 text-sm text-foreground/70">
+                <span className="text-red-800 font-bold">•</span>
+                <span>Work with real founders and stakeholders</span>
+              </li>
+              <li className="flex gap-3 text-sm text-foreground/70">
+                <span className="text-red-800 font-bold">•</span>
+                <span>Defined scopes, timelines, deliverables</span>
+              </li>
+              <li className="flex gap-3 text-sm text-foreground/70">
+                <span className="text-red-800 font-bold">•</span>
+                <span>Contribute to live products and systems</span>
+              </li>
+            </ul>
           </div>
 
           {/* Innovation Teams */}
-          <div className="group relative">
-            <div className="absolute -inset-1 bg-gradient-to-br from-amber-100 to-amber-50 rounded-3xl opacity-0 group-hover:opacity-100 transition-all duration-300 blur-xl"></div>
-            <div className="relative bg-white border-2 border-gray-200 rounded-3xl p-12 hover:shadow-2xl transition-all duration-300">
-              <h3 className="font-sans font-semibold text-3xl text-foreground mb-6">Innovation Teams</h3>
-              
-              <div className="space-y-3 mb-8">
-                {[
-                  "Define the problem",
-                  "Build the solution",
-                  "Own the outcome"
-                ].map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
-                    <div className="w-1.5 h-1.5 bg-amber-700 rounded-full mt-2 flex-shrink-0"></div>
-                    <p className="text-foreground/70 font-medium">{item}</p>
-                  </div>
-                ))}
-              </div>
-              
-              <a href="#innovation-detail" className="inline-flex items-center gap-2 text-amber-700 font-semibold hover:gap-3 transition-all duration-300">
-                Learn More
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+          <div className="group bg-gradient-to-br from-amber-50 to-white border border-amber-100 rounded-2xl p-8 hover:border-amber-300 hover:shadow-lg transition-all duration-300">
+            <div className="mb-6">
+              <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5a4 4 0 100-8 4 4 0 000 8z" />
                 </svg>
-              </a>
+              </div>
+              <h3 className="font-sans font-semibold text-2xl text-foreground mb-2">Innovation Teams</h3>
             </div>
+            <p className="text-foreground/70 text-base leading-relaxed font-medium mb-6">
+              Take internally scoped projects from problem definition through execution.
+            </p>
+            <ul className="space-y-3">
+              <li className="flex gap-3 text-sm text-foreground/70">
+                <span className="text-amber-600 font-bold">•</span>
+                <span>Full ownership from research to presentation</span>
+              </li>
+              <li className="flex gap-3 text-sm text-foreground/70">
+                <span className="text-amber-600 font-bold">•</span>
+                <span>Cross-functional collaboration</span>
+              </li>
+              <li className="flex gap-3 text-sm text-foreground/70">
+                <span className="text-amber-600 font-bold">•</span>
+                <span>Portfolio-ready outcomes</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
