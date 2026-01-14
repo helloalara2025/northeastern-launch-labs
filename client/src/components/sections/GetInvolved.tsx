@@ -2,27 +2,23 @@ export default function GetInvolved() {
   const opportunities = [
     { 
       title: "Become a Member", 
-      desc: "Join either a Launch Team or Innovation Team. Open to all Northeastern students regardless of major or experience level.",
-      href: "#",
-      icon: "👥"
+      desc: "Join a Launch Team or Innovation Team. Open to all Northeastern students.",
+      href: "#"
     },
     { 
       title: "Propose a Project", 
-      desc: "Have an idea? Submit a project proposal for an Innovation Team to bring it to life.",
-      href: "#",
-      icon: "💡"
+      desc: "Submit a project proposal for an Innovation Team to bring to life.",
+      href: "#"
     },
     { 
       title: "Startup Partnership", 
-      desc: "Are you a founder? Partner with talented student teams to build your product.",
-      href: "#",
-      icon: "🚀"
+      desc: "Are you a founder? Partner with talented student teams.",
+      href: "#"
     },
     { 
-      title: "Leadership Opportunities", 
-      desc: "Shape the direction of Launch Labs and mentor peers through leadership roles. 5–8 hours/week.",
-      href: "#",
-      icon: "⭐"
+      title: "Leadership", 
+      desc: "Shape Launch Labs and mentor peers. 5–8 hours/week.",
+      href: "#"
     }
   ];
 
@@ -38,8 +34,7 @@ export default function GetInvolved() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {opportunities.map((item, idx) => (
             <a key={idx} href={item.href} className="group">
-              <div className="bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300 h-full flex flex-col hover:shadow-xl hover:border-red-200 hover:-translate-y-1">
-                <div className="text-4xl mb-4">{item.icon}</div>
+              <div className="bg-white border border-gray-200 rounded-2xl p-8 transition-all duration-300 h-full flex flex-col hover:shadow-lg hover:border-red-200 hover:-translate-y-1">
                 <h3 className="font-sans font-semibold text-lg text-foreground mb-3 group-hover:text-red-800 transition-colors">{item.title}</h3>
                 <p className="text-foreground/70 text-sm leading-relaxed mb-6 font-medium flex-grow">{item.desc}</p>
                 <div className="flex items-center gap-1 text-red-800 font-semibold text-sm group-hover:gap-2 transition-all">

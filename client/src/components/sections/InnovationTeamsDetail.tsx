@@ -8,7 +8,7 @@ export default function InnovationTeamsDetail() {
             <span className="text-red-800">Own the Full Journey</span>
           </h2>
           <p className="text-xl text-foreground/70 leading-relaxed font-medium">
-            Innovation Teams focus on internally scoped, end-to-end projects designed to mirror real-world professional work. Members take projects from problem definition through execution, including research, planning, implementation, iteration, and final presentation. These projects emphasize skill-building, cross-functional collaboration, and ownership, resulting in portfolio-ready work that reflects practical experience in product development, consulting, and applied problem-solving.
+            Innovation Teams focus on internally scoped, end-to-end projects designed to mirror real-world professional work. Members take projects from problem definition through execution, including research, planning, implementation, iteration, and final presentation.
           </p>
         </div>
 
@@ -16,25 +16,21 @@ export default function InnovationTeamsDetail() {
           {[
             { 
               title: "Product Thinking", 
-              desc: "Learn to identify problems worth solving and validate solutions.",
-              icon: "💡"
+              desc: "Learn to identify problems worth solving."
             },
             { 
               title: "Cross-Functional Collaboration", 
-              desc: "Work across engineering, design, and business disciplines.",
-              icon: "🤝"
+              desc: "Work across engineering, design, and business."
             },
             { 
               title: "Full Ownership", 
-              desc: "Take responsibility from problem definition through final presentation.",
-              icon: "🎯"
+              desc: "Take responsibility from problem definition through presentation."
             }
           ].map((item, idx) => (
             <div key={idx} className="group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-amber-50 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-all duration-300"></div>
               <div className="relative bg-white border border-gray-200 rounded-2xl p-8 hover:border-amber-200 transition-all duration-300 h-full flex flex-col">
-                <div className="text-4xl mb-4">{item.icon}</div>
-                <h3 className="font-sans font-semibold text-xl text-foreground mb-3">{item.title}</h3>
+                <h3 className="font-sans font-semibold text-lg text-foreground mb-3">{item.title}</h3>
                 <p className="text-foreground/70 text-base leading-relaxed font-medium">{item.desc}</p>
               </div>
             </div>
