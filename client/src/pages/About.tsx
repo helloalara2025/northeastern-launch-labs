@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div>
       <Navigation />
-      <main className="pt-16">
+      <main className="pt-24">
         {/* Header */}
         <section className="bg-white py-24 md:py-32">
           <div className="container max-w-4xl">
@@ -20,52 +20,73 @@ export default function About() {
           </div>
         </section>
 
-        {/* Our Mission */}
+        {/* Our Foundation */}
         <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">Our Mission</h2>
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">Our Foundation</h2>
             <div className="space-y-6">
               <p className="text-lg text-foreground/70 leading-relaxed">
-                Through Launch Teams partnering with startups and Innovation Teams developing internal, end-to-end initiatives, members gain practical experience tackling real-world problems. The club emphasizes collaboration, professional skill development, and ownership, enabling students to produce portfolio-ready work, strengthen cross-functional teamwork, and explore pathways to entrepreneurship and innovation within and beyond the Northeastern community.
+                Northeastern Launch Labs was founded on a simple belief: students learn best by doing. We created a space where Northeastern students can work on real-world projects that matter—whether that's building products for early-stage startups or leading end-to-end initiatives that solve meaningful problems.
+              </p>
+              <p className="text-lg text-foreground/70 leading-relaxed">
+                We bring together students across disciplines—engineers, designers, business students, and more—to collaborate on projects that bridge the gap between classroom learning and professional practice. Our members gain hands-on experience, develop leadership skills, and build portfolios that demonstrate their capabilities to employers and future collaborators.
               </p>
             </div>
           </div>
         </section>
 
-        {/* What We Offer */}
+        {/* Our Story */}
         <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">What We Offer</h2>
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">Our Story</h2>
+            <div className="space-y-6">
+              <p className="text-lg text-foreground/70 leading-relaxed">
+                What started as a vision to create meaningful opportunities for Northeastern students has grown into a thriving community of innovators, builders, and leaders. We've worked with dozens of startups, launched internal projects that have made real impact, and helped hundreds of students develop the skills they need to succeed in their careers.
+              </p>
+              <p className="text-lg text-foreground/70 leading-relaxed">
+                Every project, every team, and every member contributes to our mission: to empower Northeastern students to take ownership of their learning and make real impact on the world.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Our Values */}
+        <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
+          <div className="container max-w-4xl">
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">Our Values</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <h3 className="font-bold text-lg text-foreground mb-3">Real-World Experience</h3>
-                  <p className="text-foreground/70 leading-relaxed">
-                    Work on projects that matter, from startup collaborations to internal initiatives that produce tangible outcomes.
+                  <h3 className="font-bold text-lg text-foreground mb-3">Real Impact</h3>
+                  <p className="text-foreground/70">
+                    We focus on projects that create tangible value for real users and customers. Our work matters.
                   </p>
                 </CardContent>
               </Card>
+
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
                   <h3 className="font-bold text-lg text-foreground mb-3">Cross-Disciplinary Collaboration</h3>
-                  <p className="text-foreground/70 leading-relaxed">
-                    Work alongside engineers, designers, business students, and more to solve complex problems from multiple angles.
+                  <p className="text-foreground/70">
+                    We believe the best solutions come from diverse perspectives. We bring together students from all backgrounds.
                   </p>
                 </CardContent>
               </Card>
+
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <h3 className="font-bold text-lg text-foreground mb-3">Professional Skills</h3>
-                  <p className="text-foreground/70 leading-relaxed">
-                    Develop communication, project management, and technical skills in real collaborative environments.
+                  <h3 className="font-bold text-lg text-foreground mb-3">Ownership & Accountability</h3>
+                  <p className="text-foreground/70">
+                    Our members take ownership of their projects and drive outcomes. We hold ourselves to professional standards.
                   </p>
                 </CardContent>
               </Card>
+
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <h3 className="font-bold text-lg text-foreground mb-3">Portfolio-Ready Work</h3>
-                  <p className="text-foreground/70 leading-relaxed">
-                    Build a portfolio of real projects that demonstrate your capabilities to employers and future collaborators.
+                  <h3 className="font-bold text-lg text-foreground mb-3">Continuous Learning</h3>
+                  <p className="text-foreground/70">
+                    We embrace challenges as opportunities to grow. Every project teaches us something new.
                   </p>
                 </CardContent>
               </Card>
@@ -73,24 +94,16 @@ export default function About() {
           </div>
         </section>
 
-        {/* Time Commitment */}
-        <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">Time Commitment</h2>
-            <p className="text-lg text-foreground/70 leading-relaxed mb-6">
-              Members are expected to actively contribute to their team's work, with an average time commitment of <strong className="text-foreground">3–5 hours per week</strong>. This is designed to fit into your busy student schedule while providing meaningful, hands-on experience.
-            </p>
-          </div>
-        </section>
-
-        {/* CTA */}
+        {/* CTA Section */}
         <section className="bg-red-50 border-t border-red-200 py-24 md:py-32">
           <div className="container max-w-4xl text-center">
-            <h3 className="font-bold text-3xl text-foreground mb-4">Ready to Get Involved?</h3>
-            <p className="text-foreground/70 mb-10 text-lg">Join us in building real products and making real impact.</p>
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6">Ready to Join Us?</h2>
+            <p className="text-lg text-foreground/70 mb-10">
+              Become part of the Launch Labs community and start making real impact.
+            </p>
             <Link href="/forms">
-              <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg">
-                Apply Now
+              <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 mx-auto">
+                Express Interest
               </Button>
             </Link>
           </div>

@@ -2,35 +2,36 @@ import Navigation from "@/components/sections/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Briefcase, Lightbulb, Users, Award, Zap, Rocket } from "lucide-react";
 
 export default function Home() {
   return (
     <div>
       <Navigation />
-      <main className="pt-16">
+      <main className="pt-24">
         {/* Hero Section */}
         <section className="bg-white py-24 md:py-32">
           <div className="container max-w-4xl">
             <div className="mb-8">
-              <span className="inline-block text-xs font-bold text-red-800 uppercase tracking-wider mb-6 bg-red-50 px-4 py-2 rounded-full border border-red-200">
+              <span className="inline-block text-xs font-bold uppercase tracking-widest text-red-800 bg-red-50 px-4 py-2 rounded-full mb-6">
                 Northeastern Student Organization
               </span>
             </div>
             <h1 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-6 leading-tight">
-              From Idea to <span className="text-black">Impact.</span>
+              From Idea to Impact.
             </h1>
-            <p className="text-lg md:text-xl text-foreground/70 leading-relaxed mb-10 max-w-2xl">
+            <p className="text-xl text-foreground/70 leading-relaxed mb-10 max-w-2xl">
               Bring together students across disciplines to work on real-world, end-to-end projects that bridge classroom learning with practical impact.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/forms">
-                <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg text-base transition-all duration-200 shadow-md hover:shadow-lg">
-                  Apply to Join
+                <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                  Express Interest
+                  <ArrowRight size={18} />
                 </Button>
               </Link>
               <Link href="/about">
-                <Button variant="outline" className="border-2 border-foreground/20 text-foreground hover:bg-foreground/5 font-bold px-8 h-12 rounded-lg text-base transition-all">
+                <Button className="border-2 border-foreground/20 hover:border-red-800 text-foreground hover:text-red-800 font-bold px-8 h-12 rounded-lg transition-all duration-200 bg-transparent">
                   Learn More
                 </Button>
               </Link>
@@ -38,100 +39,114 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Purpose Section */}
+        {/* Mission Section */}
         <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">
-              Our Mission
-            </h2>
-            <div className="space-y-6">
-              <p className="text-lg text-foreground/70 leading-relaxed">
-                Northeastern Launch Labs brings together students across disciplines and experience levels to work on real-world, end-to-end projects that bridge classroom learning with practical impact. Through Launch Teams partnering with startups and Innovation Teams developing internal, end-to-end initiatives, members gain practical experience tackling real-world problems.
-              </p>
-              <p className="text-lg text-foreground/70 leading-relaxed">
-                The club emphasizes collaboration, professional skill development, and ownership, enabling students to produce portfolio-ready work, strengthen cross-functional teamwork, and explore pathways to entrepreneurship and innovation within and beyond the Northeastern community.
-              </p>
-            </div>
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-8">Our Mission</h2>
+            <p className="text-lg text-foreground/70 leading-relaxed mb-6">
+              Northeastern Launch Labs brings together students across disciplines and experience levels to work on real-world, end-to-end projects that bridge classroom learning with practical impact. Through Launch Teams partnering with startups and Innovation Teams developing internal, end-to-end initiatives, members gain practical experience tackling real-world problems, cross-functional teamwork, and explore pathways to entrepreneurship and innovation within and beyond the Northeastern community.
+            </p>
           </div>
         </section>
 
-        {/* Teams Overview */}
+        {/* How We Work Section */}
         <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
-              How We Work
-            </h2>
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">How We Work</h2>
             <div className="grid md:grid-cols-2 gap-8">
-              {/* Launch Teams */}
-              <div className="border-2 border-red-200 rounded-xl p-8 hover:shadow-lg transition-shadow bg-white">
-                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-6">
-                  <div className="w-6 h-6 bg-red-800 rounded"></div>
-                </div>
-                <h3 className="font-bold text-2xl text-foreground mb-4">Launch Teams</h3>
-                <p className="text-foreground/70 leading-relaxed mb-8">
-                  Partner directly with early-stage startups to design, build, and deliver real-world solutions. Work on product development, software implementation, prototyping, and iterative testing.
-                </p>
-                <Link href="/launch-teams">
-                  <button className="text-red-800 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all group">
-                    Learn More <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                  </button>
-                </Link>
-              </div>
+              {/* Launch Teams Card */}
+              <Link href="/launch-teams">
+                <a className="block">
+                  <Card className="border-2 border-red-200 shadow-none hover:shadow-lg transition-all group cursor-pointer h-full">
+                    <CardContent className="p-10">
+                      <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-6 group-hover:scale-110 transition-transform">
+                        <Briefcase className="w-6 h-6" />
+                      </div>
+                      <h3 className="font-bold text-2xl text-foreground mb-4">Launch Teams</h3>
+                      <p className="text-foreground/70 leading-relaxed mb-6">
+                        Partner directly with early-stage startups to design, build, and deliver real-world solutions. Work on product development, software implementation, prototyping, and iterative testing.
+                      </p>
+                      <div className="text-red-800 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Learn More
+                        <ArrowRight size={18} />
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
+              </Link>
 
-              {/* Innovation Teams */}
-              <div className="border-2 border-amber-200 rounded-xl p-8 hover:shadow-lg transition-shadow bg-white">
-                <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-6">
-                  <div className="w-6 h-6 bg-amber-600 rounded"></div>
-                </div>
-                <h3 className="font-bold text-2xl text-foreground mb-4">Innovation Teams</h3>
-                <p className="text-foreground/70 leading-relaxed mb-8">
-                  Focus on internally scoped, end-to-end projects designed to mirror real-world professional work. Take projects from problem definition through execution and final presentation.
-                </p>
-                <Link href="/innovation-teams">
-                  <button className="text-amber-700 font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all group">
-                    Learn More <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                  </button>
-                </Link>
-              </div>
+              {/* Innovation Teams Card */}
+              <Link href="/innovation-teams">
+                <a className="block">
+                  <Card className="border-2 border-amber-200 shadow-none hover:shadow-lg transition-all group cursor-pointer h-full">
+                    <CardContent className="p-10">
+                      <div className="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-6 group-hover:scale-110 transition-transform">
+                        <Lightbulb className="w-6 h-6" />
+                      </div>
+                      <h3 className="font-bold text-2xl text-foreground mb-4">Innovation Teams</h3>
+                      <p className="text-foreground/70 leading-relaxed mb-6">
+                        Focus on internally scoped, end-to-end projects designed to mirror real-world professional work. Take projects from problem definition through delivery with full ownership.
+                      </p>
+                      <div className="text-amber-700 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
+                        Learn More
+                        <ArrowRight size={18} />
+                      </div>
+                    </CardContent>
+                  </Card>
+                </a>
+              </Link>
             </div>
           </div>
         </section>
 
-        {/* What You'll Gain */}
+        {/* What You'll Gain Section */}
         <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
-              What You'll Gain
-            </h2>
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">What You'll Gain</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
+                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-4">
+                    <Zap className="w-6 h-6" />
+                  </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Real-World Experience</h3>
-                  <p className="text-foreground/70 leading-relaxed">
+                  <p className="text-foreground/70">
                     Work on projects that matter, from startup collaborations to internal initiatives that produce tangible outcomes.
                   </p>
                 </CardContent>
               </Card>
+
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
+                  <div className="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-4">
+                    <Users className="w-6 h-6" />
+                  </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Cross-Disciplinary Collaboration</h3>
-                  <p className="text-foreground/70 leading-relaxed">
+                  <p className="text-foreground/70">
                     Work alongside engineers, designers, business students, and more to solve complex problems from multiple angles.
                   </p>
                 </CardContent>
               </Card>
+
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
+                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-4">
+                    <Award className="w-6 h-6" />
+                  </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Professional Skills</h3>
-                  <p className="text-foreground/70 leading-relaxed">
-                    Develop communication, project management, and technical skills in real collaborative environments.
+                  <p className="text-foreground/70">
+                    Build communication, project management, leadership, and stakeholder collaboration skills in real contexts.
                   </p>
                 </CardContent>
               </Card>
+
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
+                  <div className="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-4">
+                    <Rocket className="w-6 h-6" />
+                  </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Portfolio-Ready Work</h3>
-                  <p className="text-foreground/70 leading-relaxed">
+                  <p className="text-foreground/70">
                     Build a portfolio of real projects that demonstrate your capabilities to employers and future collaborators.
                   </p>
                 </CardContent>
@@ -140,75 +155,59 @@ export default function Home() {
           </div>
         </section>
 
-        {/* How to Get Involved */}
+        {/* How to Get Involved Section */}
         <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
-              How to Get Involved
-            </h2>
-            <div className="space-y-6 mb-14">
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">How to Get Involved</h2>
+            <div className="space-y-8">
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-800 text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-red-800 text-white font-bold text-lg">
                     1
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg text-foreground mb-2">Apply to Join</h3>
+                  <h3 className="font-bold text-xl text-foreground mb-2">Apply to Join</h3>
                   <p className="text-foreground/70">
-                    Complete the general application form to become a member. Students interested in leadership opportunities should indicate this in their application.
+                    Complete an application form to become a member. Students interested in leadership opportunities should indicate this in their application.
                   </p>
                 </div>
               </div>
+
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-800 text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-red-800 text-white font-bold text-lg">
                     2
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg text-foreground mb-2">Attend an Info Session</h3>
+                  <h3 className="font-bold text-xl text-foreground mb-2">Attend an Info Session</h3>
                   <p className="text-foreground/70">
                     Join an information meeting to learn more about the club structure, teams, and expectations.
                   </p>
                 </div>
               </div>
+
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-800 text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-red-800 text-white font-bold text-lg">
                     3
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-bold text-lg text-foreground mb-2">Propose a Project</h3>
+                  <h3 className="font-bold text-xl text-foreground mb-2">Propose a Project</h3>
                   <p className="text-foreground/70">
-                    Members with an idea for a startup collaboration or internal initiative may submit a project proposal for consideration.
-                  </p>
-                </div>
-              </div>
-              <div className="flex gap-6">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-800 text-white font-bold text-lg">
-                    4
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg text-foreground mb-2">Stay Engaged</h3>
-                  <p className="text-foreground/70">
-                    Members are expected to actively contribute to their team's work, with an average time commitment of 3–5 hours per week.
+                    Members with an idea for a startup collaboration or internal initiative may submit a project proposal for consideration. Choose between Launch Teams or Innovation Teams.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-red-50 border-2 border-red-200 rounded-xl p-10 text-center">
-              <h3 className="font-bold text-2xl text-foreground mb-3">Ready to Make an Impact?</h3>
-              <p className="text-foreground/70 mb-8">
-                Join Northeastern Launch Labs and start building real products with real teams.
-              </p>
+            <div className="mt-12 p-8 bg-red-50 border border-red-200 rounded-lg text-center">
+              <p className="text-foreground/70 mb-6">Ready to get started?</p>
               <Link href="/forms">
-                <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg">
-                  Apply Now
+                <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
+                  Express Interest Now
                 </Button>
               </Link>
             </div>
@@ -223,7 +222,7 @@ export default function Home() {
             <div>
               <h4 className="font-bold text-foreground mb-4">Launch Labs</h4>
               <p className="text-sm text-foreground/70 leading-relaxed">
-                Northeastern University's hub for real-world project work and student innovation.
+                Northeastern University's hub for real-world project work.
               </p>
             </div>
             <div>

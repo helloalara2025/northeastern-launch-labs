@@ -28,7 +28,7 @@ export default function ContactPage() {
   return (
     <div>
       <Navigation />
-      <main className="pt-16">
+      <main className="pt-24">
         {/* Header */}
         <section className="bg-white py-24 md:py-32">
           <div className="container max-w-4xl text-center">
@@ -101,17 +101,19 @@ export default function ContactPage() {
                   </CardContent>
                 </Card>
 
-                <div className="bg-white border border-foreground/10 rounded-lg p-8">
-                  <h3 className="font-bold text-lg text-foreground mb-6">Follow Us</h3>
-                  <div className="flex gap-4">
-                    <a href="#" className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 hover:bg-red-200 transition-colors" title="LinkedIn">
-                      <Linkedin size={24} />
-                    </a>
-                    <a href="#" className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 hover:bg-red-200 transition-colors" title="Instagram">
-                      <Instagram size={24} />
-                    </a>
-                  </div>
-                </div>
+                <Card className="border border-foreground/10 shadow-none">
+                  <CardContent className="p-8">
+                    <h3 className="font-bold text-lg text-foreground mb-6">Follow Us</h3>
+                    <div className="flex gap-4">
+                      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 hover:bg-red-200 transition-colors" title="LinkedIn">
+                        <Linkedin size={24} />
+                      </a>
+                      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 hover:bg-red-200 transition-colors" title="Instagram">
+                        <Instagram size={24} />
+                      </a>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
 
               {/* Contact Form */}

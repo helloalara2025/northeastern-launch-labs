@@ -2,12 +2,13 @@ import Navigation from "@/components/sections/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
+import { ArrowRight, Target, Lightbulb, Users, Zap, CheckCircle } from "lucide-react";
 
 export default function InnovationTeams() {
   return (
     <div>
       <Navigation />
-      <main className="pt-16">
+      <main className="pt-24">
         {/* Header */}
         <section className="bg-white py-24 md:py-32">
           <div className="container max-w-4xl">
@@ -46,33 +47,45 @@ export default function InnovationTeams() {
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
+                  <div className="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-4">
+                    <Target className="w-6 h-6" />
+                  </div>
+                  <h3 className="font-bold text-lg text-foreground mb-3">Problem Definition</h3>
+                  <p className="text-foreground/70 leading-relaxed">
+                    Learn to scope projects, define problems, and establish clear objectives from the ground up.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
+                <CardContent className="p-8">
+                  <div className="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-4">
+                    <Lightbulb className="w-6 h-6" />
+                  </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">End-to-End Ownership</h3>
                   <p className="text-foreground/70 leading-relaxed">
-                    Lead a project from conception through delivery, making key decisions and seeing your work through to completion.
+                    Own your project from conception through delivery, making decisions and driving outcomes.
                   </p>
                 </CardContent>
               </Card>
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <h3 className="font-bold text-lg text-foreground mb-3">Skill Development</h3>
+                  <div className="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-4">
+                    <Users className="w-6 h-6" />
+                  </div>
+                  <h3 className="font-bold text-lg text-foreground mb-3">Team Leadership</h3>
                   <p className="text-foreground/70 leading-relaxed">
-                    Build expertise in research, planning, implementation, and presentation in a supportive team environment.
+                    Lead cross-functional teams and develop leadership skills in a supportive environment.
                   </p>
                 </CardContent>
               </Card>
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <h3 className="font-bold text-lg text-foreground mb-3">Cross-Functional Collaboration</h3>
+                  <div className="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-4">
+                    <Zap className="w-6 h-6" />
+                  </div>
+                  <h3 className="font-bold text-lg text-foreground mb-3">Professional Execution</h3>
                   <p className="text-foreground/70 leading-relaxed">
-                    Work with students from different disciplines to bring diverse perspectives and expertise to your project.
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
-                <CardContent className="p-8">
-                  <h3 className="font-bold text-lg text-foreground mb-3">Portfolio-Ready Work</h3>
-                  <p className="text-foreground/70 leading-relaxed">
-                    Create tangible deliverables and case studies that showcase your capabilities to employers and collaborators.
+                    Execute projects with real timelines, deliverables, and professional standards.
                   </p>
                 </CardContent>
               </Card>
@@ -86,51 +99,63 @@ export default function InnovationTeams() {
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">
               Who Should Apply?
             </h2>
-            <div className="bg-white border border-foreground/10 rounded-xl p-10">
-              <ul className="space-y-5 text-foreground/70">
-                <li className="flex items-start gap-4">
-                  <span className="text-amber-600 font-bold mt-1 flex-shrink-0 text-xl">•</span>
-                  <span className="text-lg">Students interested in leading projects and taking ownership of outcomes</span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="text-amber-600 font-bold mt-1 flex-shrink-0 text-xl">•</span>
-                  <span className="text-lg">Those looking to build a portfolio of professional-quality work</span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="text-amber-600 font-bold mt-1 flex-shrink-0 text-xl">•</span>
-                  <span className="text-lg">Anyone eager to develop consulting, product, or problem-solving skills</span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="text-amber-600 font-bold mt-1 flex-shrink-0 text-xl">•</span>
-                  <span className="text-lg">Students from any discipline—engineers, designers, business students, and more</span>
-                </li>
-              </ul>
-            </div>
+            <Card className="border border-foreground/10 shadow-none">
+              <CardContent className="p-10">
+                <ul className="space-y-4">
+                  <li className="flex gap-4">
+                    <CheckCircle className="w-6 h-6 text-amber-700 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground/70 text-lg">Students eager to lead end-to-end projects from conception to delivery</span>
+                  </li>
+                  <li className="flex gap-4">
+                    <CheckCircle className="w-6 h-6 text-amber-700 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground/70 text-lg">Those interested in developing leadership and project management skills</span>
+                  </li>
+                  <li className="flex gap-4">
+                    <CheckCircle className="w-6 h-6 text-amber-700 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground/70 text-lg">Anyone with an idea for an internal initiative or innovation project</span>
+                  </li>
+                  <li className="flex gap-4">
+                    <CheckCircle className="w-6 h-6 text-amber-700 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground/70 text-lg">Students from any discipline—engineers, designers, business students, and more</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
         {/* Current Projects */}
         <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">
-              Current Innovation Teams
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
+              Current Innovation Projects
             </h2>
-            <p className="text-foreground/70 text-lg">
-              Coming soon. Check back for information about our current Innovation Team projects and team members.
+            <p className="text-foreground/70 text-lg mb-10">
+              We're working on innovative projects that push boundaries and create real impact. Project details and team information coming soon.
             </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              {[1, 2, 3].map((idx) => (
+                <Card key={idx} className="border border-foreground/10 shadow-none h-32 flex items-center justify-center">
+                  <CardContent className="text-center">
+                    <p className="text-foreground/40 font-medium">Project Details</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </section>
 
-        {/* CTA */}
+        {/* CTA Section */}
         <section className="bg-amber-50 border-t border-amber-200 py-24 md:py-32">
           <div className="container max-w-4xl text-center">
-            <h2 className="font-bold text-3xl text-foreground mb-4">Ready to Lead a Project?</h2>
-            <p className="text-foreground/70 mb-10 text-lg">
-              Join an Innovation Team and create portfolio-ready work that demonstrates your capabilities.
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6">Interested in Joining an Innovation Team?</h2>
+            <p className="text-lg text-foreground/70 mb-10">
+              Lead an end-to-end project and develop your leadership skills.
             </p>
             <Link href="/forms">
-              <Button className="bg-amber-600 hover:bg-amber-700 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg">
+              <Button className="bg-amber-700 hover:bg-amber-800 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 mx-auto">
                 Apply Now
+                <ArrowRight size={18} />
               </Button>
             </Link>
           </div>

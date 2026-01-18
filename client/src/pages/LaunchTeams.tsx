@@ -2,12 +2,13 @@ import Navigation from "@/components/sections/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
+import { ArrowRight, Briefcase, TrendingUp, Users, Code, CheckCircle } from "lucide-react";
 
 export default function LaunchTeams() {
   return (
     <div>
       <Navigation />
-      <main className="pt-16">
+      <main className="pt-24">
         {/* Header */}
         <section className="bg-white py-24 md:py-32">
           <div className="container max-w-4xl">
@@ -46,6 +47,9 @@ export default function LaunchTeams() {
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
+                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-4">
+                    <Briefcase className="w-6 h-6" />
+                  </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Startup Operations</h3>
                   <p className="text-foreground/70 leading-relaxed">
                     Experience firsthand how early-stage companies operate, make decisions, and iterate on their products.
@@ -54,6 +58,9 @@ export default function LaunchTeams() {
               </Card>
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
+                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-4">
+                    <TrendingUp className="w-6 h-6" />
+                  </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Real Impact</h3>
                   <p className="text-foreground/70 leading-relaxed">
                     Your work directly contributes to products and systems that serve real users and customers.
@@ -62,6 +69,9 @@ export default function LaunchTeams() {
               </Card>
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
+                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-4">
+                    <Users className="w-6 h-6" />
+                  </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Professional Development</h3>
                   <p className="text-foreground/70 leading-relaxed">
                     Build communication, project management, and stakeholder collaboration skills in real contexts.
@@ -70,6 +80,9 @@ export default function LaunchTeams() {
               </Card>
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
+                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-4">
+                    <Code className="w-6 h-6" />
+                  </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Technical Growth</h3>
                   <p className="text-foreground/70 leading-relaxed">
                     Apply and expand your technical skills in production environments with real constraints.
@@ -86,38 +99,49 @@ export default function LaunchTeams() {
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">
               Who Should Apply?
             </h2>
-            <div className="bg-white border border-foreground/10 rounded-xl p-10">
-              <ul className="space-y-5 text-foreground/70">
-                <li className="flex items-start gap-4">
-                  <span className="text-red-800 font-bold mt-1 flex-shrink-0 text-xl">•</span>
-                  <span className="text-lg">Students interested in working with real startups and founders</span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="text-red-800 font-bold mt-1 flex-shrink-0 text-xl">•</span>
-                  <span className="text-lg">Those looking to gain practical experience in product development</span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="text-red-800 font-bold mt-1 flex-shrink-0 text-xl">•</span>
-                  <span className="text-lg">Anyone eager to explore entrepreneurship and startup culture</span>
-                </li>
-                <li className="flex items-start gap-4">
-                  <span className="text-red-800 font-bold mt-1 flex-shrink-0 text-xl">•</span>
-                  <span className="text-lg">Students from any discipline—engineers, designers, business students, and more</span>
-                </li>
-              </ul>
-            </div>
+            <Card className="border border-foreground/10 shadow-none">
+              <CardContent className="p-10">
+                <ul className="space-y-4">
+                  <li className="flex gap-4">
+                    <CheckCircle className="w-6 h-6 text-red-800 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground/70 text-lg">Students interested in working with real startups and founders</span>
+                  </li>
+                  <li className="flex gap-4">
+                    <CheckCircle className="w-6 h-6 text-red-800 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground/70 text-lg">Those looking to gain practical experience in product development</span>
+                  </li>
+                  <li className="flex gap-4">
+                    <CheckCircle className="w-6 h-6 text-red-800 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground/70 text-lg">Anyone eager to explore entrepreneurship and startup culture</span>
+                  </li>
+                  <li className="flex gap-4">
+                    <CheckCircle className="w-6 h-6 text-red-800 flex-shrink-0 mt-0.5" />
+                    <span className="text-foreground/70 text-lg">Students from any discipline—engineers, designers, business students, and more</span>
+                  </li>
+                </ul>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
-        {/* Current Startups */}
+        {/* Current Startup Partners */}
         <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
               Current Startup Partners
             </h2>
-            <p className="text-foreground/70 text-lg">
-              Coming soon. Check back for information about our current startup partners and active Launch Teams.
+            <p className="text-foreground/70 text-lg mb-10">
+              We work with innovative startups across various industries. Partner logos and details coming soon.
             </p>
+            <div className="grid md:grid-cols-3 gap-6">
+              {[1, 2, 3].map((idx) => (
+                <Card key={idx} className="border border-foreground/10 shadow-none h-32 flex items-center justify-center">
+                  <CardContent className="text-center">
+                    <p className="text-foreground/40 font-medium">Partner Logo</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -129,8 +153,9 @@ export default function LaunchTeams() {
               Work directly with startups and make real impact on products that matter.
             </p>
             <Link href="/forms">
-              <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg">
+              <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 mx-auto">
                 Apply Now
+                <ArrowRight size={18} />
               </Button>
             </Link>
           </div>

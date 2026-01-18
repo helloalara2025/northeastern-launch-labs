@@ -1,112 +1,129 @@
 import Navigation from "@/components/sections/Navigation";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, FileText, Users, Lightbulb, Briefcase, Award } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
+import { ArrowRight, FileText, Heart, Lightbulb } from "lucide-react";
 
 export default function Forms() {
-  const forms = [
-    {
-      title: "Launch Team Application",
-      description: "Apply to join a Launch Team and work directly with early-stage startups on real-world projects.",
-      icon: Briefcase,
-      status: "Open",
-      link: "/apply/launch-team",
-      internal: true
-    },
-    {
-      title: "Innovation Team Application",
-      description: "Apply to join an Innovation Team and work on internally scoped, end-to-end projects.",
-      icon: Lightbulb,
-      status: "Open",
-      link: "/apply/innovation-team",
-      internal: true
-    },
-    {
-      title: "Leadership Application",
-      description: "Interested in leading Launch Labs? Apply for a leadership position on our team.",
-      icon: Award,
-      status: "Open",
-      link: "/apply/leadership",
-      internal: true
-    },
-    {
-      title: "Startup Collaboration Form",
-      description: "Are you a founder? Tell us about your startup and how we can collaborate.",
-      icon: Users,
-      status: "Coming Soon",
-      link: "#",
-      internal: false
-    },
-    {
-      title: "Project Proposal",
-      description: "Have an idea for an Innovation Team project? Submit your proposal here.",
-      icon: FileText,
-      status: "Coming Soon",
-      link: "#",
-      internal: false
-    }
-  ];
-
   return (
     <div>
       <Navigation />
-      <main className="pt-16">
+      <main className="pt-24">
         {/* Header */}
         <section className="bg-white py-24 md:py-32">
           <div className="container max-w-4xl">
             <h1 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-6 leading-tight">
-              Applications & Forms
+              Get Involved
             </h1>
-            <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl">
-              Ready to join Launch Labs or collaborate with us? Find all the forms and applications you need here.
+            <p className="text-xl text-foreground/70 leading-relaxed">
+              Join Northeastern Launch Labs and start working on real-world projects.
             </p>
           </div>
         </section>
 
-        {/* Forms Grid */}
+        {/* Express Interest Section */}
         <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
-              Available Applications
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {forms.map((form, index) => {
-                const IconComponent = form.icon;
-                return (
-                  <Card key={index} className="border border-foreground/10 shadow-none hover:shadow-md transition-all group">
-                    <CardContent className="p-8">
-                      <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-6 group-hover:scale-110 transition-transform">
-                        <IconComponent className="w-6 h-6" />
-                      </div>
-                      <h3 className="font-bold text-lg text-foreground mb-3">{form.title}</h3>
-                      <p className="text-foreground/70 text-sm leading-relaxed mb-6">
-                        {form.description}
-                      </p>
-                      <div className="flex items-center justify-between">
-                        <span className={`inline-block text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full border ${
-                          form.status === "Open" 
-                            ? "text-green-800 bg-green-50 border-green-200" 
-                            : "text-amber-800 bg-amber-50 border-amber-200"
-                        }`}>
-                          {form.status}
-                        </span>
-                        {form.internal ? (
-                          <Link href={form.link}>
-                            <a className="text-red-800 hover:text-red-900 transition-colors">
-                              <ExternalLink size={18} />
-                            </a>
-                          </Link>
-                        ) : (
-                          <a href={form.link} className="text-red-800 hover:text-red-900 transition-colors opacity-50 cursor-not-allowed">
-                            <ExternalLink size={18} />
-                          </a>
-                        )}
-                      </div>
-                    </CardContent>
-                  </Card>
-                );
-              })}
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">Express Interest or Join</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Join Launch Teams */}
+              <Card className="border-2 border-red-200 shadow-none hover:shadow-lg transition-all">
+                <CardContent className="p-10">
+                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-6">
+                    <FileText className="w-6 h-6" />
+                  </div>
+                  <h3 className="font-bold text-2xl text-foreground mb-4">Launch Team Application</h3>
+                  <p className="text-foreground/70 leading-relaxed mb-8">
+                    Apply to work directly with startups on real-world product development, implementation, and iterative testing.
+                  </p>
+                  <a href="#" className="inline-flex items-center gap-2 text-red-800 font-bold hover:gap-3 transition-all">
+                    Apply Now
+                    <ArrowRight size={18} />
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* Join Innovation Teams */}
+              <Card className="border-2 border-amber-200 shadow-none hover:shadow-lg transition-all">
+                <CardContent className="p-10">
+                  <div className="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-6">
+                    <Lightbulb className="w-6 h-6" />
+                  </div>
+                  <h3 className="font-bold text-2xl text-foreground mb-4">Innovation Team Application</h3>
+                  <p className="text-foreground/70 leading-relaxed mb-8">
+                    Apply to lead end-to-end projects designed to mirror real-world professional work and build your leadership skills.
+                  </p>
+                  <a href="#" className="inline-flex items-center gap-2 text-amber-700 font-bold hover:gap-3 transition-all">
+                    Apply Now
+                    <ArrowRight size={18} />
+                  </a>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Leadership Application */}
+        <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
+          <div className="container max-w-4xl">
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">Leadership Opportunities</h2>
+            <Card className="border border-foreground/10 shadow-none">
+              <CardContent className="p-10">
+                <div className="flex gap-6 items-start">
+                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 flex-shrink-0">
+                    <Heart className="w-6 h-6" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-2xl text-foreground mb-4">Leadership Application</h3>
+                    <p className="text-foreground/70 leading-relaxed mb-8">
+                      Are you passionate about building community and driving innovation? Apply to join our leadership team. We're looking for students who want to help shape the future of Northeastern Launch Labs.
+                    </p>
+                    <a href="#" className="inline-flex items-center gap-2 text-red-800 font-bold hover:gap-3 transition-all">
+                      Apply for Leadership
+                      <ArrowRight size={18} />
+                    </a>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+
+        {/* Propose a Project */}
+        <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
+          <div className="container max-w-4xl">
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">Propose a Project</h2>
+            <p className="text-lg text-foreground/70 leading-relaxed mb-10">
+              Have an idea for a startup collaboration or internal initiative? We'd love to hear from you. Submit your project proposal and choose which team structure works best.
+            </p>
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Launch Team Project */}
+              <Card className="border-2 border-red-200 shadow-none hover:shadow-lg transition-all">
+                <CardContent className="p-10">
+                  <h3 className="font-bold text-xl text-foreground mb-4">Startup Collaboration</h3>
+                  <p className="text-foreground/70 leading-relaxed mb-8">
+                    Propose a startup partnership where our Launch Team can contribute to product development and implementation.
+                  </p>
+                  <a href="#" className="inline-flex items-center gap-2 text-red-800 font-bold hover:gap-3 transition-all">
+                    Submit Project
+                    <ArrowRight size={18} />
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* Innovation Team Project */}
+              <Card className="border-2 border-amber-200 shadow-none hover:shadow-lg transition-all">
+                <CardContent className="p-10">
+                  <h3 className="font-bold text-xl text-foreground mb-4">Internal Innovation Project</h3>
+                  <p className="text-foreground/70 leading-relaxed mb-8">
+                    Propose an internal project for our Innovation Team to tackle from problem definition through delivery.
+                  </p>
+                  <a href="#" className="inline-flex items-center gap-2 text-amber-700 font-bold hover:gap-3 transition-all">
+                    Submit Project
+                    <ArrowRight size={18} />
+                  </a>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
@@ -114,47 +131,49 @@ export default function Forms() {
         {/* FAQ Section */}
         <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
-              Frequently Asked Questions
-            </h2>
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">Frequently Asked Questions</h2>
             <div className="space-y-6">
               <Card className="border border-foreground/10 shadow-none">
                 <CardContent className="p-8">
-                  <h3 className="font-bold text-lg text-foreground mb-3">When do applications open?</h3>
-                  <p className="text-foreground/70">
-                    Applications are currently open! You can apply anytime. We review applications on a rolling basis throughout the semester.
+                  <h3 className="font-bold text-lg text-foreground mb-3">What's the difference between Launch Teams and Innovation Teams?</h3>
+                  <p className="text-foreground/70 leading-relaxed">
+                    Launch Teams work directly with external startups on real product development. Innovation Teams focus on internally scoped projects designed to mirror real-world professional work. Both provide hands-on experience and skill development.
                   </p>
                 </CardContent>
               </Card>
+
               <Card className="border border-foreground/10 shadow-none">
                 <CardContent className="p-8">
                   <h3 className="font-bold text-lg text-foreground mb-3">Do I need prior experience to apply?</h3>
-                  <p className="text-foreground/70">
-                    No! We welcome students from all backgrounds and experience levels. We're looking for passion, commitment, and a willingness to learn.
+                  <p className="text-foreground/70 leading-relaxed">
+                    No! We welcome students from all disciplines and experience levels. Whether you're an engineer, designer, business student, or something else entirely, we have opportunities for you.
                   </p>
                 </CardContent>
               </Card>
+
               <Card className="border border-foreground/10 shadow-none">
                 <CardContent className="p-8">
-                  <h3 className="font-bold text-lg text-foreground mb-3">What's the time commitment?</h3>
-                  <p className="text-foreground/70">
-                    Members are expected to commit 3–5 hours per week to their team's work. This is designed to fit into your busy student schedule.
+                  <h3 className="font-bold text-lg text-foreground mb-3">How much time does this require?</h3>
+                  <p className="text-foreground/70 leading-relaxed">
+                    Time commitment varies by project and team. We'll discuss expectations during the application process and matching phase to ensure it works with your schedule.
                   </p>
                 </CardContent>
               </Card>
+
               <Card className="border border-foreground/10 shadow-none">
                 <CardContent className="p-8">
-                  <h3 className="font-bold text-lg text-foreground mb-3">Can I apply for multiple teams?</h3>
-                  <p className="text-foreground/70">
-                    Yes! You can apply for both Launch Teams and Innovation Teams. However, we recommend focusing on one team to ensure you can fully commit.
+                  <h3 className="font-bold text-lg text-foreground mb-3">Can I apply for both Launch and Innovation Teams?</h3>
+                  <p className="text-foreground/70 leading-relaxed">
+                    Yes! You can express interest in both. During the matching process, we'll help you find the best fit based on your interests and availability.
                   </p>
                 </CardContent>
               </Card>
+
               <Card className="border border-foreground/10 shadow-none">
                 <CardContent className="p-8">
-                  <h3 className="font-bold text-lg text-foreground mb-3">How do I get in touch with questions?</h3>
-                  <p className="text-foreground/70">
-                    Have questions? Reach out to us at <a href="mailto:hello@launchlabs.neu.edu" className="text-red-800 hover:text-red-900 font-bold">hello@launchlabs.neu.edu</a> or visit our <Link href="/contact"><a className="text-red-800 hover:text-red-900 font-bold">contact page</a></Link>.
+                  <h3 className="font-bold text-lg text-foreground mb-3">When are applications open?</h3>
+                  <p className="text-foreground/70 leading-relaxed">
+                    We accept applications on a rolling basis throughout the year. Check back regularly for updates on application windows and deadlines.
                   </p>
                 </CardContent>
               </Card>
@@ -162,15 +181,15 @@ export default function Forms() {
           </div>
         </section>
 
-        {/* CTA */}
+        {/* CTA Section */}
         <section className="bg-red-50 border-t border-red-200 py-24 md:py-32">
           <div className="container max-w-4xl text-center">
-            <h2 className="font-bold text-3xl text-foreground mb-4">Ready to Join?</h2>
-            <p className="text-foreground/70 mb-10 text-lg">
-              Fill out an application and become part of the Launch Labs community.
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6">Ready to Get Started?</h2>
+            <p className="text-lg text-foreground/70 mb-10">
+              Apply to join a team or propose your own project. We're excited to work with you!
             </p>
             <Link href="/contact">
-              <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg">
+              <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
                 Have Questions? Contact Us
               </Button>
             </Link>
@@ -199,8 +218,8 @@ export default function Forms() {
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Get Involved</h4>
               <ul className="space-y-3 text-sm">
+                <li><Link href="/forms"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Apply</a></Link></li>
                 <li><Link href="/leadership"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Leadership</a></Link></li>
-                <li><Link href="/innovation-teams"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Innovation Teams</a></Link></li>
                 <li><Link href="/partners"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Partners</a></Link></li>
               </ul>
             </div>
