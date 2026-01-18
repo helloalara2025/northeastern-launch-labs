@@ -5,6 +5,33 @@ import { Link } from "wouter";
 import { ArrowRight, Briefcase, TrendingUp, Users, Code, CheckCircle } from "lucide-react";
 
 export default function LaunchTeams() {
+  const teams = [
+    {
+      id: 1,
+      name: "Team Alpha",
+      description: "Building innovative solutions for early-stage startups",
+      members: 4,
+      status: "Active",
+      focus: "Product Development"
+    },
+    {
+      id: 2,
+      name: "Team Beta",
+      description: "Scaling startup operations and infrastructure",
+      members: 5,
+      status: "Active",
+      focus: "Implementation"
+    },
+    {
+      id: 3,
+      name: "Team Gamma",
+      description: "Data-driven insights and analytics for startups",
+      members: 3,
+      status: "Active",
+      focus: "Data & Analytics"
+    }
+  ];
+
   return (
     <div>
       <Navigation />
@@ -27,9 +54,9 @@ export default function LaunchTeams() {
             <h3 className="font-bold text-sm uppercase tracking-wider text-foreground/60 mb-6">On This Page</h3>
             <div className="grid md:grid-cols-2 gap-4">
               <a href="#what-we-do" className="text-foreground/70 hover:text-red-800 transition-colors font-medium text-sm">What We Do</a>
+              <a href="#our-teams" className="text-foreground/70 hover:text-red-800 transition-colors font-medium text-sm">Our Teams</a>
               <a href="#key-experiences" className="text-foreground/70 hover:text-red-800 transition-colors font-medium text-sm">Key Experiences</a>
               <a href="#who-should-apply" className="text-foreground/70 hover:text-red-800 transition-colors font-medium text-sm">Who Should Apply</a>
-              <a href="#current-partners" className="text-foreground/70 hover:text-red-800 transition-colors font-medium text-sm">Current Partners</a>
             </div>
           </div>
         </section>
@@ -51,8 +78,44 @@ export default function LaunchTeams() {
           </div>
         </section>
 
+        {/* Our Teams */}
+        <section id="our-teams" className="bg-white border-t border-foreground/10 py-24 md:py-32">
+          <div className="container max-w-4xl">
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
+              Our Teams
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              {teams.map((team) => (
+                <Card key={team.id} className="border-2 border-red-200 shadow-none hover:shadow-lg transition-all">
+                  <CardContent className="p-8">
+                    <div className="flex items-start justify-between mb-4">
+                      <h3 className="font-bold text-2xl text-foreground">{team.name}</h3>
+                      <span className="text-xs font-bold px-3 py-1 bg-red-100 text-red-800 rounded-full">{team.status}</span>
+                    </div>
+                    <p className="text-foreground/70 leading-relaxed mb-6">{team.description}</p>
+                    <div className="space-y-3 mb-6">
+                      <div className="flex items-center gap-2">
+                        <Users size={16} className="text-red-800" />
+                        <span className="text-sm text-foreground/70">{team.members} members</span>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <Briefcase size={16} className="text-red-800" />
+                        <span className="text-sm text-foreground/70">{team.focus}</span>
+                      </div>
+                    </div>
+                    <Link href="/forms" className="inline-flex items-center gap-2 text-red-800 font-bold hover:gap-3 transition-all">
+                      Learn More
+                      <ArrowRight size={18} />
+                    </Link>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Key Experiences */}
-        <section id="key-experiences" className="bg-white border-t border-foreground/10 py-24 md:py-32">
+        <section id="key-experiences" className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
               Key Experiences
@@ -98,7 +161,7 @@ export default function LaunchTeams() {
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Technical Growth</h3>
                   <p className="text-foreground/70 leading-relaxed">
-                    Apply and expand your technical skills in production environments with real constraints.
+                    Develop technical skills across design, engineering, data, and product management disciplines.
                   </p>
                 </CardContent>
               </Card>
@@ -107,53 +170,28 @@ export default function LaunchTeams() {
         </section>
 
         {/* Who Should Apply */}
-        <section id="who-should-apply" className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
+        <section id="who-should-apply" className="bg-white border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">
-              Who Should Apply?
+              Who Should Apply
             </h2>
-            <Card className="border border-foreground/10 shadow-none">
-              <CardContent className="p-10">
-                <ul className="space-y-4">
-                  <li className="flex gap-4">
-                    <CheckCircle className="w-6 h-6 text-red-800 flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground/70 text-lg">Students interested in working with real startups and founders</span>
-                  </li>
-                  <li className="flex gap-4">
-                    <CheckCircle className="w-6 h-6 text-red-800 flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground/70 text-lg">Those looking to gain practical experience in product development</span>
-                  </li>
-                  <li className="flex gap-4">
-                    <CheckCircle className="w-6 h-6 text-red-800 flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground/70 text-lg">Anyone eager to explore entrepreneurship and startup culture</span>
-                  </li>
-                  <li className="flex gap-4">
-                    <CheckCircle className="w-6 h-6 text-red-800 flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground/70 text-lg">Students from any discipline—engineers, designers, business students, and more</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
-
-        {/* Current Startup Partners */}
-        <section id="current-partners" className="bg-white border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
-              Current Startup Partners
-            </h2>
-            <p className="text-foreground/70 text-lg mb-10">
-              We work with innovative startups across various industries. Partner logos and details coming soon.
-            </p>
-            <div className="grid md:grid-cols-3 gap-6">
-              {[1, 2, 3].map((idx) => (
-                <Card key={idx} className="border border-foreground/10 shadow-none h-32 flex items-center justify-center">
-                  <CardContent className="text-center">
-                    <p className="text-foreground/40 font-medium">Partner Logo</p>
-                  </CardContent>
-                </Card>
-              ))}
+            <div className="space-y-4">
+              <div className="flex gap-4">
+                <CheckCircle className="w-6 h-6 text-red-800 flex-shrink-0 mt-1" />
+                <p className="text-lg text-foreground/70">Students from any discipline or background interested in startup environments</p>
+              </div>
+              <div className="flex gap-4">
+                <CheckCircle className="w-6 h-6 text-red-800 flex-shrink-0 mt-1" />
+                <p className="text-lg text-foreground/70">Those seeking hands-on experience with real-world product development</p>
+              </div>
+              <div className="flex gap-4">
+                <CheckCircle className="w-6 h-6 text-red-800 flex-shrink-0 mt-1" />
+                <p className="text-lg text-foreground/70">Individuals who want to develop professional skills in a collaborative environment</p>
+              </div>
+              <div className="flex gap-4">
+                <CheckCircle className="w-6 h-6 text-red-800 flex-shrink-0 mt-1" />
+                <p className="text-lg text-foreground/70">Anyone passionate about contributing to innovative solutions</p>
+              </div>
             </div>
           </div>
         </section>
@@ -161,14 +199,13 @@ export default function LaunchTeams() {
         {/* CTA */}
         <section className="bg-red-50 border-t border-red-200 py-24 md:py-32">
           <div className="container max-w-4xl text-center">
-            <h2 className="font-bold text-3xl text-foreground mb-4">Interested in Joining a Launch Team?</h2>
-            <p className="text-foreground/70 mb-10 text-lg">
-              Work directly with startups and make real impact on products that matter.
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6">Ready to Join a Launch Team?</h2>
+            <p className="text-lg text-foreground/70 mb-10">
+              Apply today and start working on real-world projects with early-stage startups.
             </p>
             <Link href="/forms">
-              <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 mx-auto">
-                Apply Now
-                <ArrowRight size={18} />
+              <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
+                Apply to Launch Teams
               </Button>
             </Link>
           </div>
@@ -188,23 +225,23 @@ export default function LaunchTeams() {
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Explore</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Home</a></Link></li>
-                <li><Link href="/about"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">About</a></Link></li>
-                <li><Link href="/innovation-teams"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Innovation Teams</a></Link></li>
+                <li><Link href="/" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Home</Link></li>
+                <li><Link href="/about" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">About</Link></li>
+                <li><Link href="/innovation-teams" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Innovation Teams</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Get Involved</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/forms"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Apply</a></Link></li>
-                <li><Link href="/leadership"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Leadership</a></Link></li>
-                <li><Link href="/partners"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Partners</a></Link></li>
+                <li><Link href="/forms" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Apply</Link></li>
+                <li><Link href="/leadership" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Leadership</Link></li>
+                <li><Link href="/partners" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Partners</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Connect</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/contact"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Contact</a></Link></li>
+                <li><Link href="/contact" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Contact</Link></li>
                 <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">LinkedIn</a></li>
                 <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Instagram</a></li>
               </ul>

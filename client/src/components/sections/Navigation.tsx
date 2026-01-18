@@ -1,12 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [teamsOpen, setTeamsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,21 +32,13 @@ export default function Navigation() {
             About
           </Link>
 
-          {/* Teams Dropdown */}
-          <div className="relative group">
-            <button className="text-sm font-medium text-foreground/70 hover:text-red-800 transition-colors duration-200 flex items-center gap-1">
-              Teams
-              <ChevronDown size={14} className="group-hover:rotate-180 transition-transform" />
-            </button>
-            <div className="absolute left-0 mt-0 w-48 bg-white border border-foreground/10 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-              <Link href="/launch-teams" className="block px-4 py-3 text-sm font-medium text-foreground/70 hover:text-red-800 hover:bg-red-50 transition-colors border-b border-foreground/5">
-                Launch Teams
-              </Link>
-              <Link href="/innovation-teams" className="block px-4 py-3 text-sm font-medium text-foreground/70 hover:text-amber-700 hover:bg-amber-50 transition-colors">
-                Innovation Teams
-              </Link>
-            </div>
-          </div>
+          <Link href="/launch-teams" className="text-sm font-medium text-foreground/70 hover:text-red-800 transition-colors duration-200">
+            Launch Teams
+          </Link>
+
+          <Link href="/innovation-teams" className="text-sm font-medium text-foreground/70 hover:text-amber-700 transition-colors duration-200">
+            Innovation Teams
+          </Link>
 
           <Link href="/leadership" className="text-sm font-medium text-foreground/70 hover:text-red-800 transition-colors duration-200">
             Leadership
@@ -91,26 +82,13 @@ export default function Navigation() {
             About
           </Link>
 
-          {/* Mobile Teams Dropdown */}
-          <div>
-            <button
-              onClick={() => setTeamsOpen(!teamsOpen)}
-              className="w-full text-left text-sm font-medium text-foreground/70 hover:text-red-800 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200 flex items-center justify-between"
-            >
-              Teams
-              <ChevronDown size={14} className={teamsOpen ? "rotate-180" : ""} />
-            </button>
-            {teamsOpen && (
-              <div className="ml-4 mt-2 space-y-2">
-                <Link href="/launch-teams" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm font-medium text-foreground/70 hover:text-red-800 px-3 py-2 rounded-lg hover:bg-red-50 transition-all duration-200">
-                  Launch Teams
-                </Link>
-                <Link href="/innovation-teams" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm font-medium text-foreground/70 hover:text-amber-700 px-3 py-2 rounded-lg hover:bg-amber-50 transition-all duration-200">
-                  Innovation Teams
-                </Link>
-              </div>
-            )}
-          </div>
+          <Link href="/launch-teams" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-800 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
+            Launch Teams
+          </Link>
+
+          <Link href="/innovation-teams" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-amber-700 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
+            Innovation Teams
+          </Link>
 
           <Link href="/leadership" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-800 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
             Leadership
