@@ -23,19 +23,12 @@ export default function Home() {
             <p className="text-xl text-foreground/70 leading-relaxed mb-10 max-w-2xl">
               Work on real-world projects with students from every background. Bridge classroom learning with hands-on impact.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/forms">
-                <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
-                  Express Interest
-                  <ArrowRight size={18} />
-                </Button>
-              </Link>
-              <Link href="/about">
-                <Button className="border-2 border-foreground/20 hover:border-red-800 text-foreground hover:text-red-800 font-bold px-8 h-12 rounded-lg transition-all duration-200 bg-transparent">
-                  Learn More
-                </Button>
-              </Link>
-            </div>
+            <Link href="/forms">
+              <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                Express Interest
+                <ArrowRight size={18} />
+              </Button>
+            </Link>
           </div>
         </section>
 
