@@ -24,9 +24,8 @@ export default function Navigation() {
     >
       <div className="container flex items-center justify-between h-16">
         <Link href="/">
-          <a className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">
+          <a className="cursor-pointer hover:opacity-80 transition-opacity">
             <span className="font-sans font-bold text-lg text-red-800">Launch Labs</span>
-            <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Northeastern</span>
           </a>
         </Link>
 
@@ -70,12 +69,6 @@ export default function Navigation() {
             </a>
           </Link>
 
-          <Link href="/forms">
-            <a className="text-sm font-medium text-foreground/70 hover:text-red-800 transition-colors duration-200">
-              Propose Project
-            </a>
-          </Link>
-
           <Link href="/contact">
             <a className="text-sm font-medium text-foreground/70 hover:text-red-800 transition-colors duration-200">
               Contact
@@ -84,6 +77,11 @@ export default function Navigation() {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
+          <Link href="/forms">
+            <Button className="border-2 border-red-800 text-red-800 hover:bg-red-50 font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 bg-transparent">
+              Propose Project
+            </Button>
+          </Link>
           <Link href="/forms">
             <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md">
               Apply to Join

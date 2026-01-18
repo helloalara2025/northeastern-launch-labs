@@ -12,11 +12,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="bg-white py-24 md:py-32">
           <div className="container max-w-4xl">
-            <div className="mb-8">
-              <span className="inline-block text-xs font-bold uppercase tracking-widest text-red-800 bg-red-50 px-4 py-2 rounded-full mb-6">
-                Northeastern Student Organization
-              </span>
-            </div>
+
             <h1 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-6 leading-tight">
               From Idea to Impact.
             </h1>
