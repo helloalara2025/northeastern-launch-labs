@@ -23,18 +23,14 @@ export default function Navigation() {
       }`}
     >
       <div className="container flex items-center justify-between h-16">
-        <Link href="/">
-          <a className="cursor-pointer hover:opacity-80 transition-opacity">
-            <span className="font-sans font-bold text-lg text-red-800">Launch Labs</span>
-          </a>
+        <Link href="/" className="cursor-pointer hover:opacity-80 transition-opacity">
+          <span className="font-sans font-bold text-lg text-red-800">Launch Labs</span>
         </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
-          <Link href="/about">
-            <a className="text-sm font-medium text-foreground/70 hover:text-red-800 transition-colors duration-200">
-              About
-            </a>
+          <Link href="/about" className="text-sm font-medium text-foreground/70 hover:text-red-800 transition-colors duration-200">
+            About
           </Link>
 
           {/* Teams Dropdown */}
@@ -44,35 +40,25 @@ export default function Navigation() {
               <ChevronDown size={14} className="group-hover:rotate-180 transition-transform" />
             </button>
             <div className="absolute left-0 mt-0 w-48 bg-white border border-foreground/10 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-              <Link href="/launch-teams">
-                <a className="block px-4 py-3 text-sm font-medium text-foreground/70 hover:text-red-800 hover:bg-red-50 transition-colors border-b border-foreground/5">
-                  Launch Teams
-                </a>
+              <Link href="/launch-teams" className="block px-4 py-3 text-sm font-medium text-foreground/70 hover:text-red-800 hover:bg-red-50 transition-colors border-b border-foreground/5">
+                Launch Teams
               </Link>
-              <Link href="/innovation-teams">
-                <a className="block px-4 py-3 text-sm font-medium text-foreground/70 hover:text-amber-700 hover:bg-amber-50 transition-colors">
-                  Innovation Teams
-                </a>
+              <Link href="/innovation-teams" className="block px-4 py-3 text-sm font-medium text-foreground/70 hover:text-amber-700 hover:bg-amber-50 transition-colors">
+                Innovation Teams
               </Link>
             </div>
           </div>
 
-          <Link href="/leadership">
-            <a className="text-sm font-medium text-foreground/70 hover:text-red-800 transition-colors duration-200">
-              Leadership
-            </a>
+          <Link href="/leadership" className="text-sm font-medium text-foreground/70 hover:text-red-800 transition-colors duration-200">
+            Leadership
           </Link>
 
-          <Link href="/partners">
-            <a className="text-sm font-medium text-foreground/70 hover:text-red-800 transition-colors duration-200">
-              Partners
-            </a>
+          <Link href="/partners" className="text-sm font-medium text-foreground/70 hover:text-red-800 transition-colors duration-200">
+            Partners
           </Link>
 
-          <Link href="/contact">
-            <a className="text-sm font-medium text-foreground/70 hover:text-red-800 transition-colors duration-200">
-              Contact
-            </a>
+          <Link href="/contact" className="text-sm font-medium text-foreground/70 hover:text-red-800 transition-colors duration-200">
+            Contact
           </Link>
         </div>
 
@@ -101,13 +87,8 @@ export default function Navigation() {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-card border-b border-border p-4 flex flex-col gap-2">
-          <Link href="/about">
-            <a
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="text-sm font-medium text-foreground/70 hover:text-red-800 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200"
-            >
-              About
-            </a>
+          <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-800 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
+            About
           </Link>
 
           {/* Mobile Teams Dropdown */}
@@ -121,60 +102,30 @@ export default function Navigation() {
             </button>
             {teamsOpen && (
               <div className="ml-4 mt-2 space-y-2">
-                <Link href="/launch-teams">
-                  <a
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="block text-sm font-medium text-foreground/70 hover:text-red-800 px-3 py-2 rounded-lg hover:bg-red-50 transition-all duration-200"
-                  >
-                    Launch Teams
-                  </a>
+                <Link href="/launch-teams" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm font-medium text-foreground/70 hover:text-red-800 px-3 py-2 rounded-lg hover:bg-red-50 transition-all duration-200">
+                  Launch Teams
                 </Link>
-                <Link href="/innovation-teams">
-                  <a
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="block text-sm font-medium text-foreground/70 hover:text-amber-700 px-3 py-2 rounded-lg hover:bg-amber-50 transition-all duration-200"
-                  >
-                    Innovation Teams
-                  </a>
+                <Link href="/innovation-teams" onClick={() => setIsMobileMenuOpen(false)} className="block text-sm font-medium text-foreground/70 hover:text-amber-700 px-3 py-2 rounded-lg hover:bg-amber-50 transition-all duration-200">
+                  Innovation Teams
                 </Link>
               </div>
             )}
           </div>
 
-          <Link href="/leadership">
-            <a
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="text-sm font-medium text-foreground/70 hover:text-red-800 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200"
-            >
-              Leadership
-            </a>
+          <Link href="/leadership" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-800 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
+            Leadership
           </Link>
 
-          <Link href="/partners">
-            <a
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="text-sm font-medium text-foreground/70 hover:text-red-800 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200"
-            >
-              Partners
-            </a>
+          <Link href="/partners" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-800 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
+            Partners
           </Link>
 
-          <Link href="/forms">
-            <a
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="text-sm font-medium text-foreground/70 hover:text-red-800 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200"
-            >
-              Propose Project
-            </a>
+          <Link href="/forms" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-800 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
+            Propose Project
           </Link>
 
-          <Link href="/contact">
-            <a
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="text-sm font-medium text-foreground/70 hover:text-red-800 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200"
-            >
-              Contact
-            </a>
+          <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-800 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
+            Contact
           </Link>
 
           <Link href="/forms">
