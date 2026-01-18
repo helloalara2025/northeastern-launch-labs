@@ -20,32 +20,56 @@ export default function About() {
           </div>
         </section>
 
-        {/* Our Foundation */}
+        {/* Our Mission */}
         <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">Our Foundation</h2>
-            <div className="space-y-6">
-              <p className="text-lg text-foreground/70 leading-relaxed">
-                Northeastern Launch Labs was founded on a simple belief: students learn best by doing. We created a space where Northeastern students can work on real-world projects that matter—whether that's building products for early-stage startups or leading end-to-end initiatives that solve meaningful problems.
-              </p>
-              <p className="text-lg text-foreground/70 leading-relaxed">
-                We bring together students across disciplines—engineers, designers, business students, and more—to collaborate on projects that bridge the gap between classroom learning and professional practice. Our members gain hands-on experience, develop leadership skills, and build portfolios that demonstrate their capabilities to employers and future collaborators.
-              </p>
-            </div>
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">Our Mission</h2>
+            <p className="text-lg text-foreground/70 leading-relaxed">
+              Our goal is to bring together students across disciplines and experience levels to work on real-world, end-to-end projects that bridge classroom learning with practical impact. Through Launch Teams partnering with startups and Innovation Teams developing internal, end-to-end projects, members gain practical experience tackling real-world problems. The club emphasizes collaboration, professional skill development, and ownership, enabling students to produce portfolio-ready work, strengthen cross-functional teamwork, and explore pathways to entrepreneurship and innovation within and beyond the Northeastern community.
+            </p>
           </div>
         </section>
 
-        {/* Our Story */}
+        {/* How to Get Involved */}
         <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">Our Story</h2>
-            <div className="space-y-6">
-              <p className="text-lg text-foreground/70 leading-relaxed">
-                What started as a vision to create meaningful opportunities for Northeastern students has grown into a thriving community of innovators, builders, and leaders. We've worked with dozens of startups, launched internal projects that have made real impact, and helped hundreds of students develop the skills they need to succeed in their careers.
-              </p>
-              <p className="text-lg text-foreground/70 leading-relaxed">
-                Every project, every team, and every member contributes to our mission: to empower Northeastern students to take ownership of their learning and make real impact on the world.
-              </p>
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">How to Get Involved</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
+                <CardContent className="p-8">
+                  <h3 className="font-bold text-lg text-foreground mb-3">Apply to Join</h3>
+                  <p className="text-foreground/70 leading-relaxed">
+                    Complete the general application form to become a member. Students interested in leadership opportunities should indicate this in their application.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
+                <CardContent className="p-8">
+                  <h3 className="font-bold text-lg text-foreground mb-3">Propose a Project</h3>
+                  <p className="text-foreground/70 leading-relaxed">
+                    Members with an idea for a startup collaboration or internal initiative may submit a project proposal for consideration.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
+                <CardContent className="p-8">
+                  <h3 className="font-bold text-lg text-foreground mb-3">Attend an Info Session</h3>
+                  <p className="text-foreground/70 leading-relaxed">
+                    Join an information meeting to learn more about the club structure, teams, and expectations.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
+                <CardContent className="p-8">
+                  <h3 className="font-bold text-lg text-foreground mb-3">Stay Engaged</h3>
+                  <p className="text-foreground/70 leading-relaxed">
+                    Members are expected to actively contribute to their team's work, with an average time commitment of 3-5 hours per week.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
@@ -66,7 +90,7 @@ export default function About() {
 
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <h3 className="font-bold text-lg text-foreground mb-3">Cross-Disciplinary Collaboration</h3>
+                  <h3 className="font-bold text-lg text-foreground mb-3">Collaboration</h3>
                   <p className="text-foreground/70">
                     We believe the best solutions come from diverse perspectives. We bring together students from all backgrounds.
                   </p>
