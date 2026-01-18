@@ -21,7 +21,7 @@ export default function Home() {
               From Idea to Impact.
             </h1>
             <p className="text-xl text-foreground/70 leading-relaxed mb-10 max-w-2xl">
-              Bring together students across disciplines to work on real-world, end-to-end projects that bridge classroom learning with practical impact.
+              Work on real-world projects with students from every background. Bridge classroom learning with hands-on impact.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/forms">
@@ -44,7 +44,7 @@ export default function Home() {
           <div className="container max-w-4xl">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-8">Our Mission</h2>
             <p className="text-lg text-foreground/70 leading-relaxed mb-6">
-              Northeastern Launch Labs brings together students across disciplines and experience levels to work on real-world, end-to-end projects that bridge classroom learning with practical impact. Through Launch Teams partnering with startups and Innovation Teams developing internal, end-to-end initiatives, members gain practical experience tackling real-world problems, cross-functional teamwork, and explore pathways to entrepreneurship and innovation within and beyond the Northeastern community.
+              We bring together students from all backgrounds to work on real-world projects that matter. Through Launch Teams partnering with startups and Innovation Teams developing internal initiatives, members gain practical experience, develop professional skills, and explore pathways to entrepreneurship and innovation.
             </p>
           </div>
         </section>

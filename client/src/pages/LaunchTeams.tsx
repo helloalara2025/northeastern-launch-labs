@@ -21,8 +21,21 @@ export default function LaunchTeams() {
           </div>
         </section>
 
+        {/* Table of Contents */}
+        <section className="bg-foreground/5 border-t border-foreground/10 py-12 md:py-16">
+          <div className="container max-w-4xl">
+            <h3 className="font-bold text-sm uppercase tracking-wider text-foreground/60 mb-6">On This Page</h3>
+            <div className="grid md:grid-cols-2 gap-4">
+              <a href="#what-we-do" className="text-foreground/70 hover:text-red-800 transition-colors font-medium text-sm">What We Do</a>
+              <a href="#key-experiences" className="text-foreground/70 hover:text-red-800 transition-colors font-medium text-sm">Key Experiences</a>
+              <a href="#who-should-apply" className="text-foreground/70 hover:text-red-800 transition-colors font-medium text-sm">Who Should Apply</a>
+              <a href="#current-partners" className="text-foreground/70 hover:text-red-800 transition-colors font-medium text-sm">Current Partners</a>
+            </div>
+          </div>
+        </section>
+
         {/* What We Do */}
-        <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
+        <section id="what-we-do" className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">
               What We Do
@@ -39,7 +52,7 @@ export default function LaunchTeams() {
         </section>
 
         {/* Key Experiences */}
-        <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
+        <section id="key-experiences" className="bg-white border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
               Key Experiences
@@ -94,7 +107,7 @@ export default function LaunchTeams() {
         </section>
 
         {/* Who Should Apply */}
-        <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
+        <section id="who-should-apply" className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">
               Who Should Apply?
@@ -125,7 +138,7 @@ export default function LaunchTeams() {
         </section>
 
         {/* Current Startup Partners */}
-        <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
+        <section id="current-partners" className="bg-white border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
               Current Startup Partners
