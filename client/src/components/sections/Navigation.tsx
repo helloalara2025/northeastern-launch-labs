@@ -23,7 +23,7 @@ export default function Navigation() {
     >
       <div className="container flex items-center justify-between h-16">
         <Link href="/" className="cursor-pointer hover:opacity-80 transition-opacity flex items-center gap-2">
-          <span className="font-serif font-bold text-sm text-black">NU</span>
+          <span className="font-serif font-bold text-sm text-red-900">NU</span>
           <img src="/images/logo.png" alt="Launch Labs Logo" className="h-6 w-6" />
           <span className="font-sans font-bold text-base text-red-900">Launch Labs</span>
         </Link>

@@ -10,10 +10,12 @@ import ContactPage from "./pages/ContactPage";
 import ApplyLaunchTeam from "./pages/ApplyLaunchTeam";
 import ApplyInnovationTeam from "./pages/ApplyInnovationTeam";
 import ApplyLeadership from "./pages/ApplyLeadership";
+import FloatingContact from "./components/FloatingContact";
 
 export default function App() {
   return (
     <Router>
+      <FloatingContact />
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/launch-teams" component={LaunchTeams} />

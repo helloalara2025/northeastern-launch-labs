@@ -192,11 +192,12 @@ export default function Home() {
 
             <div className="mt-16 p-10 bg-red-50 border border-red-100 rounded-lg text-center">
               <p className="text-foreground font-semibold mb-6 text-lg">Ready to get started?</p>
-              <Link href="/forms">
-                <Button className="bg-red-900 hover:bg-red-950 text-white font-bold px-10 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
+              <Button asChild>
+                <Link href="/forms" className="bg-red-900 hover:bg-red-950 text-white font-bold px-10 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2">
                   Join
-                </Button>
-              </Link>
+                  <ArrowRight size={18} />
+                </Link>
+              </Button>
             </div>
           </div>
         </section>
