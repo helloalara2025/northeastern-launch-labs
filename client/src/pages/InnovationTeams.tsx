@@ -104,7 +104,7 @@ export default function InnovationTeams() {
                       </div>
                     </div>
                     <Link href="/forms" className="inline-flex items-center gap-2 text-amber-700 font-bold hover:gap-3 transition-all">
-                      Learn More
+                      Join
                       <ArrowRight size={18} />
                     </Link>
                   </CardContent>

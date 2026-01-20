@@ -21,7 +21,7 @@ export default function Home() {
             </p>
             <Link href="/forms">
               <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
-                Express Interest
+                Join
                 <ArrowRight size={18} />
               </Button>
             </Link>
@@ -196,7 +196,7 @@ export default function Home() {
               <p className="text-foreground/70 mb-6">Ready to get started?</p>
               <Link href="/forms">
                 <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
-                  Express Interest Now
+                  Join
                 </Button>
               </Link>
             </div>

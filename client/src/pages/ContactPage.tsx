@@ -105,11 +105,17 @@ export default function ContactPage() {
                   <CardContent className="p-8">
                     <h3 className="font-bold text-lg text-foreground mb-6">Follow Us</h3>
                     <div className="flex gap-4">
-                      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 hover:bg-red-200 transition-colors" title="LinkedIn">
+                      <a href="https://www.linkedin.com/company/nulaunchlabs" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-lg bg-red-200 flex items-center justify-center text-red-900 hover:bg-red-300 transition-colors" title="LinkedIn">
                         <Linkedin size={24} />
                       </a>
-                      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 hover:bg-red-200 transition-colors" title="Instagram">
+                      <a href="https://instagram.com/nulaunchlabs" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-lg bg-red-200 flex items-center justify-center text-red-900 hover:bg-red-300 transition-colors" title="Instagram">
                         <Instagram size={24} />
+                      </a>
+                      <a href="https://discord.gg/EVSEDPDv" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-lg bg-red-200 flex items-center justify-center text-red-900 hover:bg-red-300 transition-colors" title="Discord">
+                        <Mail size={24} />
+                      </a>
+                      <a href="mailto:NU-launchlabs@northeastern.edu" className="w-12 h-12 rounded-lg bg-red-200 flex items-center justify-center text-red-900 hover:bg-red-300 transition-colors" title="Email">
+                        <Mail size={24} />
                       </a>
                     </div>
                   </CardContent>
