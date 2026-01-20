@@ -45,7 +45,7 @@ export default function FloatingContact() {
               <div className="flex-1 min-w-0">
                 <p className="text-xs text-gray-600">LinkedIn</p>
                 <p className="text-sm font-bold text-foreground truncate group-hover:text-blue-600">
-                  @nulaunchlabs
+                  www.linkedin.com/company/nulaunchlabs
                 </p>
               </div>
             </a>
@@ -61,7 +61,7 @@ export default function FloatingContact() {
               <div className="flex-1 min-w-0">
                 <p className="text-xs text-gray-600">Instagram</p>
                 <p className="text-sm font-bold text-foreground truncate group-hover:text-pink-600">
-                  @nulaunchlabs
+                  @ nulaunchlabs
                 </p>
               </div>
             </a>
@@ -77,7 +77,7 @@ export default function FloatingContact() {
               <div className="flex-1 min-w-0">
                 <p className="text-xs text-gray-600">Discord</p>
                 <p className="text-sm font-bold text-foreground truncate group-hover:text-indigo-600">
-                  Join Server
+                  https://discord.gg/EVSEDPDv
                 </p>
               </div>
             </a>
