@@ -61,7 +61,7 @@ export default function Navigation() {
 
         <div className="hidden md:flex items-center gap-3">
           <Link href="/forms">
-            <Button className="border border-gray-300 text-red-900 hover:bg-red-50 font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 bg-white shadow-sm hover:shadow-md inline-flex items-center gap-2">
+            <Button className="border-2 border-black text-black hover:bg-gray-100 font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 bg-white shadow-sm hover:shadow-md inline-flex items-center gap-2">
               Propose Project
               <ArrowRight size={14} />
             </Button>

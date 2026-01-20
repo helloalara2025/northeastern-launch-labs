@@ -1,7 +1,7 @@
 import Navigation from "@/components/sections/Navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, MapPin, Linkedin, Instagram } from "lucide-react";
+import { Mail, MapPin, Linkedin, Instagram, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { Link } from "wouter";
 
@@ -196,9 +196,10 @@ export default function ContactPage() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-red-800 hover:bg-red-900 text-white font-bold h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
+                    className="w-full bg-red-900 hover:bg-red-950 text-white font-bold h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2"
                   >
                     Send Message
+                    <ArrowRight size={18} />
                   </Button>
                 </form>
               </div>
@@ -218,8 +219,9 @@ export default function ContactPage() {
                     Ready to join Launch Labs? Check out our applications.
                   </p>
                   <Link href="/forms">
-                    <Button className="w-full bg-red-800 hover:bg-red-900 text-white font-bold h-10 rounded-lg">
+                    <Button className="w-full bg-red-900 hover:bg-red-950 text-white font-bold h-10 rounded-lg inline-flex items-center justify-center gap-2">
                       View Applications
+                      <ArrowRight size={16} />
                     </Button>
                   </Link>
                 </CardContent>
@@ -232,8 +234,9 @@ export default function ContactPage() {
                     Explore our teams and discover what we do.
                   </p>
                   <Link href="/about">
-                    <Button className="w-full bg-red-800 hover:bg-red-900 text-white font-bold h-10 rounded-lg">
+                    <Button className="w-full bg-red-900 hover:bg-red-950 text-white font-bold h-10 rounded-lg inline-flex items-center justify-center gap-2">
                       About Us
+                      <ArrowRight size={16} />
                     </Button>
                   </Link>
                 </CardContent>
@@ -246,8 +249,9 @@ export default function ContactPage() {
                     Interested in collaborating with Launch Labs?
                   </p>
                   <Link href="/partners">
-                    <Button className="w-full bg-red-800 hover:bg-red-900 text-white font-bold h-10 rounded-lg">
+                    <Button className="w-full bg-red-900 hover:bg-red-950 text-white font-bold h-10 rounded-lg inline-flex items-center justify-center gap-2">
                       Learn More
+                      <ArrowRight size={16} />
                     </Button>
                   </Link>
                 </CardContent>

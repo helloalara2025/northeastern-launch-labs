@@ -149,7 +149,7 @@ export default function Home() {
             <div className="space-y-8">
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-red-800 text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-red-900 text-white font-bold text-lg">
                     1
                   </div>
                 </div>
@@ -163,7 +163,7 @@ export default function Home() {
 
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-red-800 text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-red-900 text-white font-bold text-lg">
                     2
                   </div>
                 </div>
@@ -177,7 +177,7 @@ export default function Home() {
 
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-red-800 text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-red-900 text-white font-bold text-lg">
                     3
                   </div>
                 </div>

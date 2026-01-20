@@ -204,8 +204,9 @@ export default function LaunchTeams() {
               Apply today and start working on real-world projects with early-stage startups.
             </p>
             <Link href="/forms">
-              <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
+              <Button className="bg-red-900 hover:bg-red-950 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center gap-2">
                 Join
+                <ArrowRight size={18} />
               </Button>
             </Link>
           </div>

@@ -1,7 +1,7 @@
 import Navigation from "@/components/sections/Navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Users, TrendingUp, Zap, Clock } from "lucide-react";
+import { Users, TrendingUp, Zap, Clock, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Partners() {
@@ -102,7 +102,7 @@ export default function Partners() {
             <div className="space-y-8">
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-800 text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-900 text-white font-bold text-lg">
                     1
                   </div>
                 </div>
@@ -115,7 +115,7 @@ export default function Partners() {
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-800 text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-900 text-white font-bold text-lg">
                     2
                   </div>
                 </div>
@@ -128,7 +128,7 @@ export default function Partners() {
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-800 text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-900 text-white font-bold text-lg">
                     3
                   </div>
                 </div>
@@ -141,7 +141,7 @@ export default function Partners() {
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-800 text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-900 text-white font-bold text-lg">
                     4
                   </div>
                 </div>
@@ -164,8 +164,9 @@ export default function Partners() {
               Let's talk about how Launch Labs can support your startup's growth.
             </p>
             <Link href="/contact">
-              <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg">
+              <Button className="bg-red-900 hover:bg-red-950 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg inline-flex items-center gap-2">
                 Get in Touch
+                <ArrowRight size={18} />
               </Button>
             </Link>
           </div>

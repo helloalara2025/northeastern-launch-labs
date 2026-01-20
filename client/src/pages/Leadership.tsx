@@ -1,6 +1,6 @@
 import Navigation from "@/components/sections/Navigation";
 import { Card, CardContent } from "@/components/ui/card";
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
@@ -60,7 +60,7 @@ export default function Leadership() {
                 <Card key={index} className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow bg-white">
                   <CardContent className="p-8">
                     <div className="w-16 h-16 bg-gray-100 rounded-lg mb-6 flex items-center justify-center">
-                      <div className="w-12 h-12 bg-red-800 rounded-md"></div>
+                      <div className="w-12 h-12 bg-red-900 rounded-md"></div>
                     </div>
                     <h3 className="font-bold text-xl text-foreground mb-2">{member.name}</h3>
                     <p className="text-red-800 font-bold text-sm mb-4">{member.title}</p>
@@ -94,8 +94,9 @@ export default function Leadership() {
                 Interested in leading Launch Labs? We're always looking for passionate students to help drive our mission.
               </p>
               <Link href="/forms">
-                <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg">
+                <Button className="bg-red-900 hover:bg-red-950 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg inline-flex items-center gap-2">
                   Apply for Leadership
+                  <ArrowRight size={18} />
                 </Button>
               </Link>
             </div>

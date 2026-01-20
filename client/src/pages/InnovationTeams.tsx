@@ -204,8 +204,9 @@ export default function InnovationTeams() {
               Apply today and take ownership of a project that matters.
             </p>
             <Button asChild>
-              <Link href="/forms" className="bg-red-900 hover:bg-red-950 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center">
+              <Link href="/forms" className="bg-red-900 hover:bg-red-950 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2">
                 Join
+                <ArrowRight size={18} />
               </Link>
             </Button>
           </div>
