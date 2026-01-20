@@ -26,7 +26,7 @@ export default function GetInvolved() {
               desc: "Members contribute actively to their team's work with a 3–5 hours per week commitment."
             }
           ].map((item, idx) => (
-            <div key={idx} className="bg-white border border-gray-200 rounded-xl p-6 hover:border-red-200 hover:shadow-md transition-all duration-300">
+            <div key={idx} className="bg-white border border-gray-200 rounded-xl p-6 hover:border-gray-300 hover:shadow-md transition-all duration-300">
               <h3 className="font-sans font-semibold text-lg text-foreground mb-3">{item.title}</h3>
               <p className="text-foreground/70 text-sm leading-relaxed font-medium">{item.desc}</p>
             </div>

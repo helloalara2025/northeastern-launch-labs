@@ -27,9 +27,9 @@ export default function Forms() {
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">Join</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Join Launch Teams */}
-              <Card className="border-2 border-red-200 shadow-none hover:shadow-lg transition-all">
+              <Card className="border-2 border-gray-300 shadow-none hover:shadow-lg transition-all">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-6">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 mb-6">
                     <FileText className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-2xl text-foreground mb-4">Launch Team Application</h3>
@@ -44,16 +44,16 @@ export default function Forms() {
               </Card>
 
               {/* Join Innovation Teams */}
-              <Card className="border-2 border-amber-200 shadow-none hover:shadow-lg transition-all">
+              <Card className="border-2 border-gray-300 shadow-none hover:shadow-lg transition-all">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-6">
+                  <div className="w-12 h-12 rounded-lg bg-gray-200 flex items-center justify-center text-gray-700 mb-6">
                     <Lightbulb className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-2xl text-foreground mb-4">Innovation Team Application</h3>
                   <p className="text-foreground/70 leading-relaxed mb-8">
                     Apply to lead end-to-end projects designed to mirror real-world professional work and build your leadership skills.
                   </p>
-                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-amber-700 font-bold hover:gap-3 transition-all">
+                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gray-700 font-bold hover:gap-3 transition-all">
                     Join
                     <ArrowRight size={18} />
                   </a>
@@ -70,7 +70,7 @@ export default function Forms() {
             <Card className="border border-foreground/10 shadow-none">
               <CardContent className="p-10">
                 <div className="flex gap-6 items-start">
-                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 flex-shrink-0">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 flex-shrink-0">
                     <Heart className="w-6 h-6" />
                   </div>
                   <div className="flex-1">
@@ -98,7 +98,7 @@ export default function Forms() {
             </p>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Launch Team Project */}
-              <Card className="border-2 border-red-200 shadow-none hover:shadow-lg transition-all">
+              <Card className="border-2 border-gray-300 shadow-none hover:shadow-lg transition-all">
                 <CardContent className="p-10">
                   <h3 className="font-bold text-xl text-foreground mb-4">Startup Collaboration</h3>
                   <p className="text-foreground/70 leading-relaxed mb-8">
@@ -112,13 +112,13 @@ export default function Forms() {
               </Card>
 
               {/* Innovation Team Project */}
-              <Card className="border-2 border-amber-200 shadow-none hover:shadow-lg transition-all">
+              <Card className="border-2 border-gray-300 shadow-none hover:shadow-lg transition-all">
                 <CardContent className="p-10">
                   <h3 className="font-bold text-xl text-foreground mb-4">Internal Innovation Project</h3>
                   <p className="text-foreground/70 leading-relaxed mb-8">
                     Propose an internal project for our Innovation Team to tackle from problem definition through delivery.
                   </p>
-                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-amber-700 font-bold hover:gap-3 transition-all">
+                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gray-700 font-bold hover:gap-3 transition-all">
                     Submit Project
                     <ArrowRight size={18} />
                   </a>
@@ -182,7 +182,7 @@ export default function Forms() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-red-50 border-t border-red-200 py-24 md:py-32">
+        <section className="bg-gray-100 border-t border-gray-300 py-24 md:py-32">
           <div className="container max-w-4xl text-center">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6">Ready to Get Started?</h2>
             <p className="text-lg text-foreground/70 mb-10">

@@ -30,7 +30,7 @@ export default function Partners() {
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-6">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 mb-6">
                     <Users className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Skilled Student Teams</h3>
@@ -42,7 +42,7 @@ export default function Partners() {
 
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-6">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 mb-6">
                     <TrendingUp className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Cost-Effective Development</h3>
@@ -54,7 +54,7 @@ export default function Partners() {
 
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-6">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 mb-6">
                     <Zap className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Fresh Perspectives</h3>
@@ -66,7 +66,7 @@ export default function Partners() {
 
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-6">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 mb-6">
                     <Clock className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Flexible Commitment</h3>
@@ -157,7 +157,7 @@ export default function Partners() {
         </section>
 
         {/* CTA */}
-        <section className="bg-red-50 border-t border-red-200 py-24 md:py-32">
+        <section className="bg-gray-100 border-t border-gray-300 py-24 md:py-32">
           <div className="container max-w-4xl text-center">
             <h2 className="font-bold text-3xl text-foreground mb-4">Interested in Partnering?</h2>
             <p className="text-foreground/70 mb-10 text-lg">

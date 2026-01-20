@@ -86,11 +86,11 @@ export default function LaunchTeams() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {teams.map((team) => (
-                <Card key={team.id} className="border-2 border-red-200 shadow-none hover:shadow-lg transition-all">
+                <Card key={team.id} className="border-2 border-gray-300 shadow-none hover:shadow-lg transition-all">
                   <CardContent className="p-8">
                     <div className="flex items-start justify-between mb-4">
                       <h3 className="font-bold text-2xl text-foreground">{team.name}</h3>
-                      <span className="text-xs font-bold px-3 py-1 bg-red-100 text-red-800 rounded-full">{team.status}</span>
+                      <span className="text-xs font-bold px-3 py-1 bg-gray-100 text-red-800 rounded-full">{team.status}</span>
                     </div>
                     <p className="text-foreground/70 leading-relaxed mb-6">{team.description}</p>
                     <div className="space-y-3 mb-6">
@@ -123,7 +123,7 @@ export default function LaunchTeams() {
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 mb-4">
                     <Briefcase className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Startup Operations</h3>
@@ -134,7 +134,7 @@ export default function LaunchTeams() {
               </Card>
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 mb-4">
                     <TrendingUp className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Real Impact</h3>
@@ -145,7 +145,7 @@ export default function LaunchTeams() {
               </Card>
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 mb-4">
                     <Users className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Professional Development</h3>
@@ -156,7 +156,7 @@ export default function LaunchTeams() {
               </Card>
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 mb-4">
                     <Code className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Technical Growth</h3>
@@ -197,7 +197,7 @@ export default function LaunchTeams() {
         </section>
 
         {/* CTA */}
-        <section className="bg-red-50 border-t border-red-200 py-24 md:py-32">
+        <section className="bg-gray-100 border-t border-gray-300 py-24 md:py-32">
           <div className="container max-w-4xl text-center">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6">Ready to Join a Launch Team?</h2>
             <p className="text-lg text-foreground/70 mb-10">

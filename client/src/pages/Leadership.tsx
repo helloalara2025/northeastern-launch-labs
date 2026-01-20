@@ -59,7 +59,7 @@ export default function Leadership() {
               {teamMembers.map((member, index) => (
                 <Card key={index} className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow bg-white">
                   <CardContent className="p-8">
-                    <div className="w-16 h-16 bg-red-100 rounded-lg mb-6 flex items-center justify-center">
+                    <div className="w-16 h-16 bg-gray-100 rounded-lg mb-6 flex items-center justify-center">
                       <div className="w-12 h-12 bg-red-800 rounded-md"></div>
                     </div>
                     <h3 className="font-bold text-xl text-foreground mb-2">{member.name}</h3>
@@ -70,14 +70,14 @@ export default function Leadership() {
                     <div className="flex gap-3">
                       <a 
                         href={`mailto:${member.email}`}
-                        className="w-10 h-10 rounded-lg bg-red-50 flex items-center justify-center text-red-800 hover:bg-red-100 transition-colors"
+                        className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 hover:bg-gray-100 transition-colors"
                         title="Email"
                       >
                         <Mail size={18} />
                       </a>
                       <a 
                         href={member.linkedin}
-                        className="w-10 h-10 rounded-lg bg-red-50 flex items-center justify-center text-red-800 hover:bg-red-100 transition-colors"
+                        className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 hover:bg-gray-100 transition-colors"
                         title="LinkedIn"
                       >
                         <Linkedin size={18} />

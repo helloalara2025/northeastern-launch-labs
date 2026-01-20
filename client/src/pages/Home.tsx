@@ -47,16 +47,16 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8">
               {/* Launch Teams Card */}
               <Link href="/launch-teams" className="block">
-                <Card className="border-2 border-red-200 shadow-none hover:shadow-lg transition-all group cursor-pointer h-full">
+                <Card className="border-2 border-gray-300 shadow-none hover:shadow-lg transition-all group cursor-pointer h-full">
                   <CardContent className="p-10">
-                    <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-6 group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 mb-6 group-hover:scale-110 transition-transform">
                       <Briefcase className="w-6 h-6" />
                     </div>
                     <h3 className="font-bold text-2xl text-foreground mb-4">Launch Teams</h3>
                     <p className="text-foreground/70 leading-relaxed mb-6">
                       Partner directly with early-stage startups to design, build, and deliver real-world solutions. Work on product development, software implementation, prototyping, and iterative testing.
                     </p>
-                    <div className="text-red-800 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
+                    <div className="text-red-900 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
                       Learn More
                       <ArrowRight size={18} />
                     </div>
@@ -66,16 +66,16 @@ export default function Home() {
 
               {/* Innovation Teams Card */}
               <Link href="/innovation-teams" className="block">
-                <Card className="border-2 border-amber-200 shadow-none hover:shadow-lg transition-all group cursor-pointer h-full">
+                <Card className="border-2 border-gray-300 shadow-none hover:shadow-lg transition-all group cursor-pointer h-full">
                   <CardContent className="p-10">
-                    <div className="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-6 group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 rounded-lg bg-gray-200 flex items-center justify-center text-gray-700 mb-6 group-hover:scale-110 transition-transform">
                       <Lightbulb className="w-6 h-6" />
                     </div>
                     <h3 className="font-bold text-2xl text-foreground mb-4">Innovation Teams</h3>
                     <p className="text-foreground/70 leading-relaxed mb-6">
                       Focus on internally scoped, end-to-end projects designed to mirror real-world professional work. Take projects from problem definition through delivery with full ownership.
                     </p>
-                    <div className="text-amber-700 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
+                    <div className="text-gray-700 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
                       Learn More
                       <ArrowRight size={18} />
                     </div>
@@ -93,7 +93,7 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 mb-4">
                     <Zap className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Real-World Experience</h3>
@@ -105,7 +105,7 @@ export default function Home() {
 
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gray-200 flex items-center justify-center text-gray-700 mb-4">
                     <Users className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Cross-Disciplinary Collaboration</h3>
@@ -117,7 +117,7 @@ export default function Home() {
 
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 mb-4">
                     <Award className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Professional Skills</h3>
@@ -129,7 +129,7 @@ export default function Home() {
 
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-gray-200 flex items-center justify-center text-gray-700 mb-4">
                     <Rocket className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Portfolio-Ready Work</h3>
@@ -190,7 +190,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-12 p-8 bg-red-50 border border-red-200 rounded-lg text-center">
+            <div className="mt-12 p-8 bg-gray-100 border border-gray-300 rounded-lg text-center">
               <p className="text-foreground/70 mb-6">Ready to get started?</p>
               <Link href="/forms">
                 <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
@@ -215,25 +215,25 @@ export default function Home() {
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Explore</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Home</a></Link></li>
-                <li><Link href="/about"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">About</a></Link></li>
-                <li><Link href="/launch-teams"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Launch Teams</a></Link></li>
+                <li><Link href="/"><a className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Home</a></Link></li>
+                <li><Link href="/about"><a className="text-foreground/70 hover:text-red-900 transition-colors font-medium">About</a></Link></li>
+                <li><Link href="/launch-teams"><a className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Launch Teams</a></Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Get Involved</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/forms"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Apply</a></Link></li>
-                <li><Link href="/leadership"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Leadership</a></Link></li>
-                <li><Link href="/partners"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Partners</a></Link></li>
+                <li><Link href="/forms"><a className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Apply</a></Link></li>
+                <li><Link href="/leadership"><a className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Leadership</a></Link></li>
+                <li><Link href="/partners"><a className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Partners</a></Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Connect</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/contact"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Contact</a></Link></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">LinkedIn</a></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Instagram</a></li>
+                <li><Link href="/contact"><a className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Contact</a></Link></li>
+                <li><a href="#" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">LinkedIn</a></li>
+                <li><a href="#" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Instagram</a></li>
               </ul>
             </div>
           </div>

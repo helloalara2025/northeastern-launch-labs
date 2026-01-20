@@ -119,7 +119,7 @@ export default function About() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-red-50 border-t border-red-200 py-24 md:py-32">
+        <section className="bg-gray-100 border-t border-gray-300 py-24 md:py-32">
           <div className="container max-w-4xl text-center">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6">Ready to Join Us?</h2>
             <p className="text-lg text-foreground/70 mb-10">

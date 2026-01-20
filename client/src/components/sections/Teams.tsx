@@ -9,7 +9,7 @@ export default function Teams() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Launch Teams */}
-          <div className="group bg-gradient-to-br from-red-50 to-white border border-red-100 rounded-2xl p-8 hover:border-red-300 hover:shadow-lg transition-all duration-300">
+          <div className="group bg-gradient-to-br from-#F5F5F5 to-white border border-gray-300 rounded-2xl p-8 hover:border-gray-300 hover:shadow-lg transition-all duration-300">
             <div className="mb-6">
               <div className="w-12 h-12 bg-red-800 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -38,9 +38,9 @@ export default function Teams() {
           </div>
 
           {/* Innovation Teams */}
-          <div className="group bg-gradient-to-br from-amber-50 to-white border border-amber-100 rounded-2xl p-8 hover:border-amber-300 hover:shadow-lg transition-all duration-300">
+          <div className="group bg-gradient-to-br from-amber-50 to-white border border-gray-300 rounded-2xl p-8 hover:border-gray-300 hover:shadow-lg transition-all duration-300">
             <div className="mb-6">
-              <div className="w-12 h-12 bg-amber-600 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5a4 4 0 100-8 4 4 0 000 8z" />
                 </svg>
@@ -52,15 +52,15 @@ export default function Teams() {
             </p>
             <ul className="space-y-3">
               <li className="flex gap-3 text-sm text-foreground/70">
-                <span className="text-amber-600 font-bold">•</span>
+                <span className="text-gray-700 font-bold">•</span>
                 <span>Full ownership from research to presentation</span>
               </li>
               <li className="flex gap-3 text-sm text-foreground/70">
-                <span className="text-amber-600 font-bold">•</span>
+                <span className="text-gray-700 font-bold">•</span>
                 <span>Cross-functional collaboration</span>
               </li>
               <li className="flex gap-3 text-sm text-foreground/70">
-                <span className="text-amber-600 font-bold">•</span>
+                <span className="text-gray-700 font-bold">•</span>
                 <span>Portfolio-ready outcomes</span>
               </li>
             </ul>

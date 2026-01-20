@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="container relative z-10">
         <div className="max-w-3xl">
           {/* Status badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-50 text-red-800 text-xs font-semibold uppercase tracking-widest mb-8 border border-red-100">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gray-100 text-red-800 text-xs font-semibold uppercase tracking-widest mb-8 border border-gray-300">
             <span className="w-1.5 h-1.5 bg-red-800 rounded-full animate-pulse"></span>
             Northeastern Student Org
           </div>

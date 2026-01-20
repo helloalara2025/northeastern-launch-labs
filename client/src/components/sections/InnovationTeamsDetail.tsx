@@ -5,7 +5,7 @@ export default function InnovationTeamsDetail() {
         <div className="max-w-3xl mb-16">
           <h2 className="font-sans font-semibold text-4xl lg:text-5xl text-foreground mb-6 leading-tight">
             Innovation Teams<br />
-            <span className="text-amber-600">Own the Full Journey</span>
+            <span className="text-gray-700">Own the Full Journey</span>
           </h2>
           <p className="text-lg text-foreground/70 leading-relaxed font-medium">
             Innovation Teams focus on internally scoped, end-to-end projects designed to mirror real-world professional work. Members take projects from problem definition through execution, resulting in portfolio-ready work.
@@ -27,7 +27,7 @@ export default function InnovationTeamsDetail() {
               desc: "Build work that demonstrates real-world skills."
             }
           ].map((item, idx) => (
-            <div key={idx} className="bg-amber-50 border border-amber-100 rounded-xl p-6 hover:border-amber-300 hover:shadow-md transition-all duration-300">
+            <div key={idx} className="bg-gray-200 border border-gray-300 rounded-xl p-6 hover:border-gray-300 hover:shadow-md transition-all duration-300">
               <h3 className="font-sans font-semibold text-base text-foreground mb-2">{item.title}</h3>
               <p className="text-foreground/70 text-sm leading-relaxed font-medium">{item.desc}</p>
             </div>
