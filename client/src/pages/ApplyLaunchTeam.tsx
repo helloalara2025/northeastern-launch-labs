@@ -56,7 +56,7 @@ export default function ApplyLaunchTeam() {
         <section className="bg-white py-24 md:py-32">
           <div className="container max-w-3xl">
             <Link href="/forms">
-              <a className="text-red-800 hover:text-red-900 font-bold text-sm mb-6 inline-block">← Back to Forms</a>
+              <a className="text-red-900 hover:text-red-900 font-bold text-sm mb-6 inline-block">← Back to Forms</a>
             </Link>
             <h1 className="font-sans font-bold text-5xl md:text-6xl text-foreground mb-6 leading-tight">
               Launch Team Application
@@ -90,7 +90,7 @@ export default function ApplyLaunchTeam() {
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label htmlFor="fullName" className="block text-sm font-bold text-foreground mb-2">
-                      Full Name <span className="text-red-800">*</span>
+                      Full Name <span className="text-red-900">*</span>
                     </label>
                     <input
                       type="text"
@@ -99,14 +99,14 @@ export default function ApplyLaunchTeam() {
                       value={formData.fullName}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-800/20 focus:border-red-800 transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
                       placeholder="Your full name"
                     />
                   </div>
 
                   <div>
                     <label htmlFor="email" className="block text-sm font-bold text-foreground mb-2">
-                      Email <span className="text-red-800">*</span>
+                      Email <span className="text-red-900">*</span>
                     </label>
                     <input
                       type="email"
@@ -115,7 +115,7 @@ export default function ApplyLaunchTeam() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-800/20 focus:border-red-800 transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -130,14 +130,14 @@ export default function ApplyLaunchTeam() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-800/20 focus:border-red-800 transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
                       placeholder="(123) 456-7890"
                     />
                   </div>
 
                   <div>
                     <label htmlFor="major" className="block text-sm font-bold text-foreground mb-2">
-                      Major/Field of Study <span className="text-red-800">*</span>
+                      Major/Field of Study <span className="text-red-900">*</span>
                     </label>
                     <input
                       type="text"
@@ -146,21 +146,21 @@ export default function ApplyLaunchTeam() {
                       value={formData.major}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-800/20 focus:border-red-800 transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
                       placeholder="e.g., Computer Science, Business"
                     />
                   </div>
 
                   <div>
                     <label htmlFor="year" className="block text-sm font-bold text-foreground mb-2">
-                      Year <span className="text-red-800">*</span>
+                      Year <span className="text-red-900">*</span>
                     </label>
                     <select
                       id="year"
                       name="year"
                       value={formData.year}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-red-800/20 focus:border-red-800 transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
                     >
                       <option value="Freshman">Freshman</option>
                       <option value="Sophomore">Sophomore</option>
@@ -172,14 +172,14 @@ export default function ApplyLaunchTeam() {
 
                   <div>
                     <label htmlFor="availability" className="block text-sm font-bold text-foreground mb-2">
-                      Weekly Availability <span className="text-red-800">*</span>
+                      Weekly Availability <span className="text-red-900">*</span>
                     </label>
                     <select
                       id="availability"
                       name="availability"
                       value={formData.availability}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-red-800/20 focus:border-red-800 transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
                     >
                       <option value="3-5 hours per week">3-5 hours per week</option>
                       <option value="5-8 hours per week">5-8 hours per week</option>
@@ -190,7 +190,7 @@ export default function ApplyLaunchTeam() {
 
                 <div className="mb-6">
                   <label htmlFor="experience" className="block text-sm font-bold text-foreground mb-2">
-                    Relevant Experience <span className="text-red-800">*</span>
+                    Relevant Experience <span className="text-red-900">*</span>
                   </label>
                   <textarea
                     id="experience"
@@ -199,14 +199,14 @@ export default function ApplyLaunchTeam() {
                     onChange={handleChange}
                     required
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-800/20 focus:border-red-800 transition-all resize-none"
+                    className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all resize-none"
                     placeholder="Tell us about your relevant skills, projects, or experience..."
                   ></textarea>
                 </div>
 
                 <div className="mb-6">
                   <label htmlFor="motivation" className="block text-sm font-bold text-foreground mb-2">
-                    Why do you want to join a Launch Team? <span className="text-red-800">*</span>
+                    Why do you want to join a Launch Team? <span className="text-red-900">*</span>
                   </label>
                   <textarea
                     id="motivation"
@@ -215,7 +215,7 @@ export default function ApplyLaunchTeam() {
                     onChange={handleChange}
                     required
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-800/20 focus:border-red-800 transition-all resize-none"
+                    className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all resize-none"
                     placeholder="Share your motivation and what you hope to gain from this experience..."
                   ></textarea>
                 </div>
@@ -228,16 +228,16 @@ export default function ApplyLaunchTeam() {
                     checked={formData.agreeToTerms}
                     onChange={handleChange}
                     required
-                    className="w-5 h-5 rounded border-foreground/20 text-red-800 focus:ring-red-800 mt-1"
+                    className="w-5 h-5 rounded border-foreground/20 text-red-900 focus:ring-red-900 mt-1"
                   />
                   <label htmlFor="agreeToTerms" className="text-sm text-foreground/70">
-                    I understand that this is a semester-long commitment and I'm prepared to dedicate the required time to my team's project. <span className="text-red-800">*</span>
+                    I understand that this is a semester-long commitment and I'm prepared to dedicate the required time to my team's project. <span className="text-red-900">*</span>
                   </label>
                 </div>
 
                 <Button
                   type="submit"
-                  className="w-full bg-red-800 hover:bg-red-900 text-white font-bold h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
+                  className="w-full bg-red-900 hover:bg-red-900 text-white font-bold h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
                 >
                   Submit Application
                 </Button>
@@ -293,25 +293,25 @@ export default function ApplyLaunchTeam() {
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Explore</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Home</a></Link></li>
-                <li><Link href="/about"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">About</a></Link></li>
-                <li><Link href="/launch-teams"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Launch Teams</a></Link></li>
+                <li><Link href="/" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Home</Link></li>
+                <li><Link href="/about" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">About</Link></li>
+                <li><Link href="/launch-teams" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Launch Teams</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Get Involved</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/forms"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Apply</a></Link></li>
-                <li><Link href="/leadership"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Leadership</a></Link></li>
-                <li><Link href="/partners"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Partners</a></Link></li>
+                <li><Link href="/forms" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Apply</Link></li>
+                <li><Link href="/leadership" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Leadership</Link></li>
+                <li><Link href="/partners" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Partners</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Connect</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/contact"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Contact</a></Link></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">LinkedIn</a></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Instagram</a></li>
+                <li><Link href="/contact" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Contact</Link></li>
+                <li><a href="#" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">LinkedIn</a></li>
+                <li><a href="#" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Instagram</a></li>
               </ul>
             </div>
           </div>

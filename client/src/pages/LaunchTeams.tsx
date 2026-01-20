@@ -53,10 +53,10 @@ export default function LaunchTeams() {
           <div className="container max-w-4xl">
             <h3 className="font-bold text-sm uppercase tracking-wider text-foreground/60 mb-6">On This Page</h3>
             <div className="grid md:grid-cols-2 gap-4">
-              <a href="#what-we-do" className="text-foreground/70 hover:text-red-800 transition-colors font-medium text-sm">What We Do</a>
-              <a href="#our-teams" className="text-foreground/70 hover:text-red-800 transition-colors font-medium text-sm">Our Teams</a>
-              <a href="#key-experiences" className="text-foreground/70 hover:text-red-800 transition-colors font-medium text-sm">Key Experiences</a>
-              <a href="#who-should-apply" className="text-foreground/70 hover:text-red-800 transition-colors font-medium text-sm">Who Should Apply</a>
+              <a href="#what-we-do" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">What We Do</a>
+              <a href="#our-teams" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">Our Teams</a>
+              <a href="#key-experiences" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">Key Experiences</a>
+              <a href="#who-should-apply" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">Who Should Apply</a>
             </div>
           </div>
         </section>
@@ -177,19 +177,19 @@ export default function LaunchTeams() {
             </h2>
             <div className="space-y-4">
               <div className="flex gap-4">
-                <CheckCircle className="w-6 h-6 text-red-800 flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-1" />
                 <p className="text-lg text-foreground/70">Students from any discipline or background interested in startup environments</p>
               </div>
               <div className="flex gap-4">
-                <CheckCircle className="w-6 h-6 text-red-800 flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-1" />
                 <p className="text-lg text-foreground/70">Those seeking hands-on experience with real-world product development</p>
               </div>
               <div className="flex gap-4">
-                <CheckCircle className="w-6 h-6 text-red-800 flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-1" />
                 <p className="text-lg text-foreground/70">Individuals who want to develop professional skills in a collaborative environment</p>
               </div>
               <div className="flex gap-4">
-                <CheckCircle className="w-6 h-6 text-red-800 flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-1" />
                 <p className="text-lg text-foreground/70">Anyone passionate about contributing to innovative solutions</p>
               </div>
             </div>
@@ -226,25 +226,25 @@ export default function LaunchTeams() {
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Explore</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Home</Link></li>
-                <li><Link href="/about" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">About</Link></li>
-                <li><Link href="/innovation-teams" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Innovation Teams</Link></li>
+                <li><Link href="/" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Home</Link></li>
+                <li><Link href="/about" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">About</Link></li>
+                <li><Link href="/innovation-teams" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Innovation Teams</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Get Involved</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/forms" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Apply</Link></li>
-                <li><Link href="/leadership" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Leadership</Link></li>
-                <li><Link href="/partners" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Partners</Link></li>
+                <li><Link href="/forms" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Apply</Link></li>
+                <li><Link href="/leadership" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Leadership</Link></li>
+                <li><Link href="/partners" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Partners</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Connect</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/contact" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Contact</Link></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">LinkedIn</a></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Instagram</a></li>
+                <li><Link href="/contact" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Contact</Link></li>
+                <li><a href="#" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">LinkedIn</a></li>
+                <li><a href="#" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Instagram</a></li>
               </ul>
             </div>
           </div>

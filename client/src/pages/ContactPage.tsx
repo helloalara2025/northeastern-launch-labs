@@ -53,11 +53,11 @@ export default function ContactPage() {
 
                 <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                   <CardContent className="p-8">
-                    <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 mb-4">
+                    <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 mb-4">
                       <Mail className="w-6 h-6" />
                     </div>
                     <h3 className="font-bold text-lg text-foreground mb-3">General Inquiries</h3>
-                    <a href="mailto:hello@launchlabs.neu.edu" className="text-red-800 hover:text-red-900 transition-colors font-medium break-all">
+                    <a href="mailto:hello@launchlabs.neu.edu" className="text-red-900 hover:text-red-900 transition-colors font-medium break-all">
                       hello@launchlabs.neu.edu
                     </a>
                   </CardContent>
@@ -65,11 +65,11 @@ export default function ContactPage() {
 
                 <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                   <CardContent className="p-8">
-                    <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 mb-4">
+                    <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 mb-4">
                       <Mail className="w-6 h-6" />
                     </div>
                     <h3 className="font-bold text-lg text-foreground mb-3">Student Inquiries & Applications</h3>
-                    <a href="mailto:students@launchlabs.neu.edu" className="text-red-800 hover:text-red-900 transition-colors font-medium break-all">
+                    <a href="mailto:students@launchlabs.neu.edu" className="text-red-900 hover:text-red-900 transition-colors font-medium break-all">
                       students@launchlabs.neu.edu
                     </a>
                   </CardContent>
@@ -77,11 +77,11 @@ export default function ContactPage() {
 
                 <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                   <CardContent className="p-8">
-                    <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 mb-4">
+                    <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 mb-4">
                       <Mail className="w-6 h-6" />
                     </div>
                     <h3 className="font-bold text-lg text-foreground mb-3">Startup Partnerships</h3>
-                    <a href="mailto:partnerships@launchlabs.neu.edu" className="text-red-800 hover:text-red-900 transition-colors font-medium break-all">
+                    <a href="mailto:partnerships@launchlabs.neu.edu" className="text-red-900 hover:text-red-900 transition-colors font-medium break-all">
                       partnerships@launchlabs.neu.edu
                     </a>
                   </CardContent>
@@ -89,7 +89,7 @@ export default function ContactPage() {
 
                 <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                   <CardContent className="p-8">
-                    <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 mb-4">
+                    <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 mb-4">
                       <MapPin className="w-6 h-6" />
                     </div>
                     <h3 className="font-bold text-lg text-foreground mb-3">Location</h3>
@@ -128,7 +128,7 @@ export default function ContactPage() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-bold text-foreground mb-2">
-                      Name <span className="text-red-800">*</span>
+                      Name <span className="text-red-900">*</span>
                     </label>
                     <input
                       type="text"
@@ -137,14 +137,14 @@ export default function ContactPage() {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-800/20 focus:border-red-800 transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
                       placeholder="Your name"
                     />
                   </div>
 
                   <div>
                     <label htmlFor="email" className="block text-sm font-bold text-foreground mb-2">
-                      Email <span className="text-red-800">*</span>
+                      Email <span className="text-red-900">*</span>
                     </label>
                     <input
                       type="email"
@@ -153,21 +153,21 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-800/20 focus:border-red-800 transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
                       placeholder="your@email.com"
                     />
                   </div>
 
                   <div>
                     <label htmlFor="subject" className="block text-sm font-bold text-foreground mb-2">
-                      Subject <span className="text-red-800">*</span>
+                      Subject <span className="text-red-900">*</span>
                     </label>
                     <select
                       id="subject"
                       name="subject"
                       value={formData.subject}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-red-800/20 focus:border-red-800 transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
                     >
                       <option value="General Inquiry">General Inquiry</option>
                       <option value="Student Interest">Student Interest</option>
@@ -180,7 +180,7 @@ export default function ContactPage() {
 
                   <div>
                     <label htmlFor="message" className="block text-sm font-bold text-foreground mb-2">
-                      Message <span className="text-red-800">*</span>
+                      Message <span className="text-red-900">*</span>
                     </label>
                     <textarea
                       id="message"
@@ -189,7 +189,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       required
                       rows={5}
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-800/20 focus:border-red-800 transition-all resize-none"
+                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all resize-none"
                       placeholder="Your message..."
                     ></textarea>
                   </div>
@@ -274,25 +274,25 @@ export default function ContactPage() {
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Explore</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Home</a></Link></li>
-                <li><Link href="/about"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">About</a></Link></li>
-                <li><Link href="/launch-teams"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Launch Teams</a></Link></li>
+                <li><Link href="/" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Home</Link></li>
+                <li><Link href="/about" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">About</Link></li>
+                <li><Link href="/launch-teams" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Launch Teams</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Get Involved</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/forms"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Apply</a></Link></li>
-                <li><Link href="/leadership"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Leadership</a></Link></li>
-                <li><Link href="/partners"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Partners</a></Link></li>
+                <li><Link href="/forms" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Apply</Link></li>
+                <li><Link href="/leadership" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Leadership</Link></li>
+                <li><Link href="/partners" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Partners</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Connect</h4>
               <ul className="space-y-3 text-sm">
-                <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">LinkedIn</a></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Instagram</a></li>
-                <li><Link href="/contact"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Contact</a></Link></li>
+                <li><a href="#" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">LinkedIn</a></li>
+                <li><a href="#" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Instagram</a></li>
+                <li><Link href="/contact" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Contact</Link></li>
               </ul>
             </div>
           </div>

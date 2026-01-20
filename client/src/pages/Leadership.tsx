@@ -63,21 +63,21 @@ export default function Leadership() {
                       <div className="w-12 h-12 bg-red-900 rounded-md"></div>
                     </div>
                     <h3 className="font-bold text-xl text-foreground mb-2">{member.name}</h3>
-                    <p className="text-red-800 font-bold text-sm mb-4">{member.title}</p>
+                    <p className="text-red-900 font-bold text-sm mb-4">{member.title}</p>
                     <p className="text-foreground/70 text-sm leading-relaxed mb-6">
                       {member.bio}
                     </p>
                     <div className="flex gap-3">
                       <a 
                         href={`mailto:${member.email}`}
-                        className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 hover:bg-gray-100 transition-colors"
+                        className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 hover:bg-gray-100 transition-colors"
                         title="Email"
                       >
                         <Mail size={18} />
                       </a>
                       <a 
                         href={member.linkedin}
-                        className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 hover:bg-gray-100 transition-colors"
+                        className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 hover:bg-gray-100 transition-colors"
                         title="LinkedIn"
                       >
                         <Linkedin size={18} />
@@ -117,25 +117,25 @@ export default function Leadership() {
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Explore</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Home</a></Link></li>
-                <li><Link href="/about"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">About</a></Link></li>
-                <li><Link href="/launch-teams"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Launch Teams</a></Link></li>
+                <li><Link href="/" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Home</Link></li>
+                <li><Link href="/about" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">About</Link></li>
+                <li><Link href="/launch-teams" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Launch Teams</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Get Involved</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/forms"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Apply</a></Link></li>
-                <li><Link href="/innovation-teams"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Innovation Teams</a></Link></li>
-                <li><Link href="/partners"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Partners</a></Link></li>
+                <li><Link href="/forms" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Apply</Link></li>
+                <li><Link href="/innovation-teams" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Innovation Teams</Link></li>
+                <li><Link href="/partners" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Partners</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Connect</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/contact"><a className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Contact</a></Link></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">LinkedIn</a></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-800 transition-colors font-medium">Instagram</a></li>
+                <li><Link href="/contact" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Contact</Link></li>
+                <li><a href="#" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">LinkedIn</a></li>
+                <li><a href="#" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Instagram</a></li>
               </ul>
             </div>
           </div>
