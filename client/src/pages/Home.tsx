@@ -12,7 +12,9 @@ export default function Home() {
         {/* Hero Section */}
         <section className="bg-white py-24 md:py-32">
           <div className="container max-w-4xl">
-
+            <div className="mb-6 inline-block">
+              <span className="inline-block bg-red-900 text-white text-xs font-bold px-3 py-1 rounded-full">Student club at Northeastern University</span>
+            </div>
             <h1 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-6 leading-tight">
               From Idea to Impact.
             </h1>
