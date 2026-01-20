@@ -197,17 +197,17 @@ export default function InnovationTeams() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gray-200 border-t border-gray-300 py-24 md:py-32">
+        <section className="bg-gray-100 border-t border-gray-200 py-24 md:py-32">
           <div className="container max-w-4xl text-center">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6">Ready to Lead an Innovation Team?</h2>
             <p className="text-lg text-foreground/70 mb-10">
               Apply today and take ownership of a project that matters.
             </p>
-            <Link href="/forms">
-              <Button className="bg-gray-200 hover:bg-gray-200 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
+            <Button asChild>
+              <Link href="/forms" className="bg-red-900 hover:bg-red-950 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center">
                 Join
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </section>
       </main>
