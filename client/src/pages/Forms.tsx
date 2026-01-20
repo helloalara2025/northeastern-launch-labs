@@ -27,16 +27,16 @@ export default function Forms() {
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">Join</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Join Launch Teams */}
-              <Card className="border-2 border-gray-300 shadow-none hover:shadow-lg transition-all">
+              <Card className="border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 bg-white">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 mb-6">
+                  <div className="w-12 h-12 rounded-lg bg-red-50 flex items-center justify-center text-red-900 mb-6 font-bold">
                     <FileText className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-2xl text-foreground mb-4">Launch Team Application</h3>
                   <p className="text-foreground/70 leading-relaxed mb-8">
                     Apply to work directly with startups on real-world product development, implementation, and iterative testing.
                   </p>
-                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUOVlLR1RJSllIQUFSWFBLSDdBNjg2Wk5IOS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-red-800 font-bold hover:gap-3 transition-all">
+                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUOVlLR1RJSllIQUFSWFBLSDdBNjg2Wk5IOS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-red-900 font-bold hover:gap-3 transition-all duration-200">
                     Join
                     <ArrowRight size={18} />
                   </a>
@@ -44,16 +44,16 @@ export default function Forms() {
               </Card>
 
               {/* Join Innovation Teams */}
-              <Card className="border-2 border-gray-300 shadow-none hover:shadow-lg transition-all">
+              <Card className="border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 bg-white">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-gray-200 flex items-center justify-center text-gray-700 mb-6">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-800 mb-6 font-bold">
                     <Lightbulb className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-2xl text-foreground mb-4">Innovation Team Application</h3>
                   <p className="text-foreground/70 leading-relaxed mb-8">
                     Apply to lead end-to-end projects designed to mirror real-world professional work and build your leadership skills.
                   </p>
-                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gray-700 font-bold hover:gap-3 transition-all">
+                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gray-800 font-bold hover:gap-3 transition-all duration-200">
                     Join
                     <ArrowRight size={18} />
                   </a>
@@ -67,10 +67,10 @@ export default function Forms() {
         <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">Leadership Opportunities</h2>
-            <Card className="border border-foreground/10 shadow-none">
+            <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
               <CardContent className="p-10">
                 <div className="flex gap-6 items-start">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 flex-shrink-0">
+                  <div className="w-12 h-12 rounded-lg bg-red-50 flex items-center justify-center text-red-900 flex-shrink-0 font-bold">
                     <Heart className="w-6 h-6" />
                   </div>
                   <div className="flex-1">
@@ -78,7 +78,7 @@ export default function Forms() {
                     <p className="text-foreground/70 leading-relaxed mb-8">
                       Are you passionate about building community and driving innovation? Apply to join our leadership team. We're looking for students who want to help shape the future of Northeastern Launch Labs.
                     </p>
-                    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUNVU1NFZPWkNMSlU3NFlQRlpGNVhWR1lQVS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-red-800 font-bold hover:gap-3 transition-all">
+                    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUNVU1NFZPWkNMSlU3NFlQRlpGNVhWR1lQVS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-red-900 font-bold hover:gap-3 transition-all duration-200">
                       Join
                       <ArrowRight size={18} />
                     </a>
@@ -98,13 +98,13 @@ export default function Forms() {
             </p>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Launch Team Project */}
-              <Card className="border-2 border-gray-300 shadow-none hover:shadow-lg transition-all">
+              <Card className="border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 bg-white">
                 <CardContent className="p-10">
                   <h3 className="font-bold text-xl text-foreground mb-4">Startup Collaboration</h3>
                   <p className="text-foreground/70 leading-relaxed mb-8">
                     Propose a startup partnership where our Launch Team can contribute to product development and implementation.
                   </p>
-                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-red-800 font-bold hover:gap-3 transition-all">
+                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-red-900 font-bold hover:gap-3 transition-all duration-200">
                     Submit Project
                     <ArrowRight size={18} />
                   </a>
@@ -112,13 +112,13 @@ export default function Forms() {
               </Card>
 
               {/* Innovation Team Project */}
-              <Card className="border-2 border-gray-300 shadow-none hover:shadow-lg transition-all">
+              <Card className="border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 bg-white">
                 <CardContent className="p-10">
                   <h3 className="font-bold text-xl text-foreground mb-4">Internal Innovation Project</h3>
                   <p className="text-foreground/70 leading-relaxed mb-8">
                     Propose an internal project for our Innovation Team to tackle from problem definition through delivery.
                   </p>
-                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gray-700 font-bold hover:gap-3 transition-all">
+                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gray-800 font-bold hover:gap-3 transition-all duration-200">
                     Submit Project
                     <ArrowRight size={18} />
                   </a>
@@ -133,7 +133,7 @@ export default function Forms() {
           <div className="container max-w-4xl">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">Frequently Asked Questions</h2>
             <div className="space-y-6">
-              <Card className="border border-foreground/10 shadow-none">
+              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
                   <h3 className="font-bold text-lg text-foreground mb-3">What's the difference between Launch Teams and Innovation Teams?</h3>
                   <p className="text-foreground/70 leading-relaxed">
@@ -142,7 +142,7 @@ export default function Forms() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-foreground/10 shadow-none">
+              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
                   <h3 className="font-bold text-lg text-foreground mb-3">Do I need prior experience to apply?</h3>
                   <p className="text-foreground/70 leading-relaxed">
@@ -151,7 +151,7 @@ export default function Forms() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-foreground/10 shadow-none">
+              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
                   <h3 className="font-bold text-lg text-foreground mb-3">How much time does this require?</h3>
                   <p className="text-foreground/70 leading-relaxed">
@@ -160,7 +160,7 @@ export default function Forms() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-foreground/10 shadow-none">
+              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
                   <h3 className="font-bold text-lg text-foreground mb-3">Can I apply for both Launch and Innovation Teams?</h3>
                   <p className="text-foreground/70 leading-relaxed">
@@ -169,7 +169,7 @@ export default function Forms() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-foreground/10 shadow-none">
+              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
                   <h3 className="font-bold text-lg text-foreground mb-3">When are applications open?</h3>
                   <p className="text-foreground/70 leading-relaxed">
@@ -182,14 +182,14 @@ export default function Forms() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-gray-100 border-t border-gray-300 py-24 md:py-32">
+        <section className="bg-red-50 border-t border-red-100 py-24 md:py-32">
           <div className="container max-w-4xl text-center">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6">Ready to Get Started?</h2>
             <p className="text-lg text-foreground/70 mb-10">
               Apply to join a team or propose your own project. We're excited to work with you!
             </p>
             <Link href="/contact" className="inline-block">
-              <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
+              <Button className="bg-red-900 hover:bg-red-950 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
                 Have Questions? Contact Us
               </Button>
             </Link>

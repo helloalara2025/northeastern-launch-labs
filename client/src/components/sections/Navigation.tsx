@@ -57,12 +57,12 @@ export default function Navigation() {
 
         <div className="hidden md:flex items-center gap-3">
           <Link href="/forms">
-            <Button className="border-2 border-gray-300 text-red-900 hover:bg-gray-100 font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 bg-transparent">
+            <Button className="border border-gray-300 text-red-900 hover:bg-red-50 font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 bg-white shadow-sm hover:shadow-md">
               Propose Project
             </Button>
           </Link>
           <Link href="/forms">
-            <Button className="bg-red-900 hover:bg-red-900 text-white font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md">
+            <Button className="bg-red-900 hover:bg-red-950 text-white font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 shadow-md hover:shadow-lg">
               Join
             </Button>
           </Link>

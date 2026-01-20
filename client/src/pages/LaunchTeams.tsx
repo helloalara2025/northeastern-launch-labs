@@ -86,24 +86,24 @@ export default function LaunchTeams() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {teams.map((team) => (
-                <Card key={team.id} className="border-2 border-gray-300 shadow-none hover:shadow-lg transition-all">
+                <Card key={team.id} className="border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 bg-white">
                   <CardContent className="p-8">
                     <div className="flex items-start justify-between mb-4">
                       <h3 className="font-bold text-2xl text-foreground">{team.name}</h3>
-                      <span className="text-xs font-bold px-3 py-1 bg-gray-100 text-red-800 rounded-full">{team.status}</span>
+                      <span className="text-xs font-bold px-3 py-1 bg-red-50 text-red-900 rounded-full">{team.status}</span>
                     </div>
                     <p className="text-foreground/70 leading-relaxed mb-6">{team.description}</p>
                     <div className="space-y-3 mb-6">
                       <div className="flex items-center gap-2">
-                        <Users size={16} className="text-red-800" />
+                        <Users size={16} className="text-red-900" />
                         <span className="text-sm text-foreground/70">{team.members} members</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Briefcase size={16} className="text-red-800" />
+                        <Briefcase size={16} className="text-red-900" />
                         <span className="text-sm text-foreground/70">{team.focus}</span>
                       </div>
                     </div>
-                    <Link href="/forms" className="inline-flex items-center gap-2 text-red-800 font-bold hover:gap-3 transition-all">
+                    <Link href="/forms" className="inline-flex items-center gap-2 text-red-900 font-bold hover:gap-3 transition-all duration-200">
                       Join
                       <ArrowRight size={18} />
                     </Link>
@@ -121,9 +121,9 @@ export default function LaunchTeams() {
               Key Experiences
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
+              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-red-50 flex items-center justify-center text-red-900 mb-4 font-bold">
                     <Briefcase className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Startup Operations</h3>
@@ -132,9 +132,9 @@ export default function LaunchTeams() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
+              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-red-50 flex items-center justify-center text-red-900 mb-4 font-bold">
                     <TrendingUp className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Real Impact</h3>
@@ -143,9 +143,9 @@ export default function LaunchTeams() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
+              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-red-50 flex items-center justify-center text-red-900 mb-4 font-bold">
                     <Users className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Professional Development</h3>
@@ -154,9 +154,9 @@ export default function LaunchTeams() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
+              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-800 mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-red-50 flex items-center justify-center text-red-900 mb-4 font-bold">
                     <Code className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Technical Growth</h3>
