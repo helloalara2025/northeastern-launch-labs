@@ -103,7 +103,7 @@ export default function LaunchTeams() {
                         <span className="text-sm text-foreground/70">{team.focus}</span>
                       </div>
                     </div>
-                    <Link href="/forms" className="inline-flex items-center gap-2 text-red-900 font-bold hover:gap-3 transition-all duration-200">
+                    <Link href="/apply/launch-team" className="inline-flex items-center gap-2 text-red-900 font-bold hover:gap-3 transition-all duration-200">
                       Join
                       <ArrowRight size={18} />
                     </Link>

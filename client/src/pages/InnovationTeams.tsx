@@ -103,7 +103,7 @@ export default function InnovationTeams() {
                         <span className="text-sm text-foreground/70">{team.focus}</span>
                       </div>
                     </div>
-                    <Link href="/forms" className="inline-flex items-center gap-2 text-gray-800 font-bold hover:gap-3 transition-all duration-200">
+                    <Link href="/apply/innovation-team" className="inline-flex items-center gap-2 text-gray-800 font-bold hover:gap-3 transition-all duration-200">
                       Join
                       <ArrowRight size={18} />
                     </Link>
