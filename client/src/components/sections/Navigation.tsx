@@ -62,7 +62,7 @@ export default function Navigation() {
           </Link>
           <Link href="/forms">
             <Button className="bg-red-900 hover:bg-red-900 text-white font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md">
-              Apply to Join
+              Join
             </Button>
           </Link>
         </div>
@@ -110,9 +110,9 @@ export default function Navigation() {
           <Link href="/forms">
             <Button 
               onClick={() => setIsMobileMenuOpen(false)}
-              className="w-full bg-red-200 hover:bg-red-900 text-white font-bold rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md mt-2"
+              className="w-full bg-red-900 hover:bg-red-900 text-white font-bold rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md mt-2"
             >
-              Apply to Join
+              Join
             </Button>
           </Link>
         </div>
