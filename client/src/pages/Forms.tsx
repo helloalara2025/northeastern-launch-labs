@@ -36,7 +36,7 @@ export default function Forms() {
                   <p className="text-foreground/70 leading-relaxed mb-8">
                     Apply to work directly with startups on real-world product development, implementation, and iterative testing.
                   </p>
-                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUOVlLR1RJSllIQUFSWFBLSDdBNjg2Wk5IOS4u" target="_blank" className="inline-flex items-center gap-2 text-red-800 font-bold hover:gap-3 transition-all">
+                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUOVlLR1RJSllIQUFSWFBLSDdBNjg2Wk5IOS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-red-800 font-bold hover:gap-3 transition-all">
                     Join
                     <ArrowRight size={18} />
                   </a>
@@ -53,7 +53,7 @@ export default function Forms() {
                   <p className="text-foreground/70 leading-relaxed mb-8">
                     Apply to lead end-to-end projects designed to mirror real-world professional work and build your leadership skills.
                   </p>
-                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" className="inline-flex items-center gap-2 text-amber-700 font-bold hover:gap-3 transition-all">
+                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-amber-700 font-bold hover:gap-3 transition-all">
                     Join
                     <ArrowRight size={18} />
                   </a>
@@ -78,7 +78,7 @@ export default function Forms() {
                     <p className="text-foreground/70 leading-relaxed mb-8">
                       Are you passionate about building community and driving innovation? Apply to join our leadership team. We're looking for students who want to help shape the future of Northeastern Launch Labs.
                     </p>
-                    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUNVU1NFZPWkNMSlU3NFlQRlpGNVhWR1lQVS4u" target="_blank" className="inline-flex items-center gap-2 text-red-800 font-bold hover:gap-3 transition-all">
+                    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUNVU1NFZPWkNMSlU3NFlQRlpGNVhWR1lQVS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-red-800 font-bold hover:gap-3 transition-all">
                       Join
                       <ArrowRight size={18} />
                     </a>
@@ -104,7 +104,7 @@ export default function Forms() {
                   <p className="text-foreground/70 leading-relaxed mb-8">
                     Propose a startup partnership where our Launch Team can contribute to product development and implementation.
                   </p>
-                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" className="inline-flex items-center gap-2 text-red-800 font-bold hover:gap-3 transition-all">
+                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-red-800 font-bold hover:gap-3 transition-all">
                     Submit Project
                     <ArrowRight size={18} />
                   </a>
@@ -118,7 +118,7 @@ export default function Forms() {
                   <p className="text-foreground/70 leading-relaxed mb-8">
                     Propose an internal project for our Innovation Team to tackle from problem definition through delivery.
                   </p>
-                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" className="inline-flex items-center gap-2 text-amber-700 font-bold hover:gap-3 transition-all">
+                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-amber-700 font-bold hover:gap-3 transition-all">
                     Submit Project
                     <ArrowRight size={18} />
                   </a>
