@@ -125,11 +125,11 @@ export default function About() {
             <p className="text-lg text-foreground/70 mb-10">
               Become part of the Launch Labs community and start making real impact.
             </p>
-            <Link href="/forms">
-              <Button className="bg-red-900 hover:bg-red-950 text-white font-bold px-10 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 mx-auto">
+            <Button asChild>
+              <Link href="/forms" className="bg-red-900 hover:bg-red-950 text-white font-bold px-10 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 mx-auto">
                 Join
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </section>
       </main>

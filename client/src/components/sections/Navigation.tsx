@@ -53,6 +53,10 @@ export default function Navigation() {
           <Link href="/contact" className="text-sm font-medium text-foreground/70 hover:text-red-900 transition-colors duration-200">
             Contact
           </Link>
+
+          <Link href="/forms" className="text-sm font-medium text-foreground/70 hover:text-red-900 transition-colors duration-200">
+            Forms
+          </Link>
         </div>
 
         <div className="hidden md:flex items-center gap-3">
@@ -106,6 +110,10 @@ export default function Navigation() {
 
           <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-900 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
             Contact
+          </Link>
+
+          <Link href="/forms" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-900 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
+            Forms
           </Link>
 
           <Link href="/forms">
