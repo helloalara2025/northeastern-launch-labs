@@ -22,9 +22,13 @@ export default function Navigation() {
       }`}
     >
       <div className="container flex items-center justify-between h-16">
-        <Link href="/" className="cursor-pointer hover:opacity-80 transition-opacity flex items-center gap-2">
+        <Link href="/" className="cursor-pointer hover:opacity-80 transition-opacity flex items-center gap-3">
+          <span className="font-serif font-bold text-xl text-black">NU</span>
           <img src="/images/logo.png" alt="Launch Labs Logo" className="h-8 w-8" />
-          <span className="font-sans font-bold text-lg text-red-900">Launch Labs</span>
+          <div className="flex flex-col">
+            <span className="font-sans font-bold text-lg text-red-900 leading-none">Launch Labs</span>
+            <span className="text-xs text-foreground/60 font-medium">student club at northeastern uni</span>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
