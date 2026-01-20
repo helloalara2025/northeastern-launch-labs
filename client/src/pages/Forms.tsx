@@ -21,6 +21,31 @@ export default function Forms() {
           </div>
         </section>
 
+        {/* Quick Links Section */}
+        <section className="bg-white border-t border-foreground/10 py-12 md:py-16">
+          <div className="container max-w-4xl">
+            <h3 className="font-sans font-bold text-lg text-foreground/60 mb-6 uppercase tracking-wider">Quick Links</h3>
+            <div className="grid md:grid-cols-4 gap-4">
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUOVlLR1RJSllIQUFSWFBLSDdBNjg2Wk5IOS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 bg-red-900 hover:bg-red-950 text-white font-bold rounded-lg transition-all duration-200 shadow-sm hover:shadow-md gap-2">
+                Interest Form
+                <ArrowRight size={16} />
+              </a>
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUNVU1NFZPWkNMSlU3NFlQRlpGNVhWR1lQVS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 bg-red-900 hover:bg-red-950 text-white font-bold rounded-lg transition-all duration-200 shadow-sm hover:shadow-md gap-2">
+                Launch Team App
+                <ArrowRight size={16} />
+              </a>
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 bg-gray-700 hover:bg-gray-800 text-white font-bold rounded-lg transition-all duration-200 shadow-sm hover:shadow-md gap-2">
+                Innovation App
+                <ArrowRight size={16} />
+              </a>
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 bg-red-900 hover:bg-red-950 text-white font-bold rounded-lg transition-all duration-200 shadow-sm hover:shadow-md gap-2">
+                Leadership App
+                <ArrowRight size={16} />
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Express Interest Section */}
         <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
@@ -36,8 +61,8 @@ export default function Forms() {
                   <p className="text-foreground/70 leading-relaxed mb-8">
                     Apply to work directly with startups on real-world product development, implementation, and iterative testing.
                   </p>
-                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUOVlLR1RJSllIQUFSWFBLSDdBNjg2Wk5IOS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-red-900 font-bold hover:gap-3 transition-all duration-200">
-                    Join
+                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUNVU1NFZPWkNMSlU3NFlQRlpGNVhWR1lQVS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-red-900 font-bold hover:gap-3 transition-all duration-200">
+                    Apply Now
                     <ArrowRight size={18} />
                   </a>
                 </CardContent>
@@ -54,7 +79,7 @@ export default function Forms() {
                     Apply to lead end-to-end projects designed to mirror real-world professional work and build your leadership skills.
                   </p>
                   <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gray-800 font-bold hover:gap-3 transition-all duration-200">
-                    Join
+                    Apply Now
                     <ArrowRight size={18} />
                   </a>
                 </CardContent>
@@ -78,8 +103,8 @@ export default function Forms() {
                     <p className="text-foreground/70 leading-relaxed mb-8">
                       Are you passionate about building community and driving innovation? Apply to join our leadership team. We're looking for students who want to help shape the future of Northeastern Launch Labs.
                     </p>
-                    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUNVU1NFZPWkNMSlU3NFlQRlpGNVhWR1lQVS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-red-900 font-bold hover:gap-3 transition-all duration-200">
-                      Join
+                    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-red-900 font-bold hover:gap-3 transition-all duration-200">
+                      Apply Now
                       <ArrowRight size={18} />
                     </a>
                   </div>
@@ -105,7 +130,7 @@ export default function Forms() {
                     Propose a startup partnership where our Launch Team can contribute to product development and implementation.
                   </p>
                   <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-red-900 font-bold hover:gap-3 transition-all duration-200">
-                    Submit Project
+                    Submit Proposal
                     <ArrowRight size={18} />
                   </a>
                 </CardContent>
@@ -118,8 +143,8 @@ export default function Forms() {
                   <p className="text-foreground/70 leading-relaxed mb-8">
                     Propose an internal project for our Innovation Team to tackle from problem definition through delivery.
                   </p>
-                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gray-800 font-bold hover:gap-3 transition-all duration-200">
-                    Submit Project
+                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-gray-800 font-bold hover:gap-3 transition-all duration-200">
+                    Submit Proposal
                     <ArrowRight size={18} />
                   </a>
                 </CardContent>

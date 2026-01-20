@@ -21,12 +21,12 @@ export default function Home() {
             <p className="text-xl text-foreground/70 leading-relaxed mb-10 max-w-2xl">
               Work on real-world projects with students from every background. Bridge classroom learning with hands-on impact.
             </p>
-            <Link href="/forms">
-              <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+            <Button asChild>
+              <Link href="/forms" className="bg-red-900 hover:bg-red-950 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2">
                 Join
                 <ArrowRight size={18} />
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </section>
 
@@ -46,8 +46,8 @@ export default function Home() {
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">How We Work</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Launch Teams Card */}
-              <Link href="/launch-teams" className="block">
-                <Card className="border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer h-full bg-white">
+              <Card className="border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer h-full bg-white">
+                <Link href="/launch-teams" className="block h-full">
                   <CardContent className="p-10">
                     <div className="w-14 h-14 rounded-lg bg-red-50 flex items-center justify-center text-red-900 mb-6 group-hover:scale-110 transition-transform duration-300 font-bold text-xl">
                       <Briefcase className="w-7 h-7" />
@@ -61,12 +61,12 @@ export default function Home() {
                       <ArrowRight size={18} />
                     </div>
                   </CardContent>
-                </Card>
-              </Link>
+                </Link>
+              </Card>
 
               {/* Innovation Teams Card */}
-              <Link href="/innovation-teams" className="block">
-                <Card className="border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer h-full bg-white">
+              <Card className="border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer h-full bg-white">
+                <Link href="/innovation-teams" className="block h-full">
                   <CardContent className="p-10">
                     <div className="w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center text-gray-800 mb-6 group-hover:scale-110 transition-transform duration-300 font-bold text-xl">
                       <Lightbulb className="w-7 h-7" />
@@ -80,8 +80,8 @@ export default function Home() {
                       <ArrowRight size={18} />
                     </div>
                   </CardContent>
-                </Card>
-              </Link>
+                </Link>
+              </Card>
             </div>
           </div>
         </section>

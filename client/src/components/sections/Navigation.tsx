@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Navigation() {
@@ -61,13 +61,15 @@ export default function Navigation() {
 
         <div className="hidden md:flex items-center gap-3">
           <Link href="/forms">
-            <Button className="border border-gray-300 text-red-900 hover:bg-red-50 font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 bg-white shadow-sm hover:shadow-md">
+            <Button className="border border-gray-300 text-red-900 hover:bg-red-50 font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 bg-white shadow-sm hover:shadow-md inline-flex items-center gap-2">
               Propose Project
+              <ArrowRight size={14} />
             </Button>
           </Link>
           <Link href="/forms">
-            <Button className="bg-red-900 hover:bg-red-950 text-white font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 shadow-md hover:shadow-lg">
+            <Button className="bg-red-900 hover:bg-red-950 text-white font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center gap-2">
               Join
+              <ArrowRight size={14} />
             </Button>
           </Link>
         </div>
