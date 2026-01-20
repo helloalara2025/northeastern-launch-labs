@@ -44,45 +44,41 @@ export default function Home() {
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">How We Work</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Launch Teams Card */}
-              <Link href="/launch-teams">
-                <a className="block">
-                  <Card className="border-2 border-red-200 shadow-none hover:shadow-lg transition-all group cursor-pointer h-full">
-                    <CardContent className="p-10">
-                      <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-6 group-hover:scale-110 transition-transform">
-                        <Briefcase className="w-6 h-6" />
-                      </div>
-                      <h3 className="font-bold text-2xl text-foreground mb-4">Launch Teams</h3>
-                      <p className="text-foreground/70 leading-relaxed mb-6">
-                        Partner directly with early-stage startups to design, build, and deliver real-world solutions. Work on product development, software implementation, prototyping, and iterative testing.
-                      </p>
-                      <div className="text-red-800 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
-                        Learn More
-                        <ArrowRight size={18} />
-                      </div>
-                    </CardContent>
-                  </Card>
-                </a>
+              <Link href="/launch-teams" className="block">
+                <Card className="border-2 border-red-200 shadow-none hover:shadow-lg transition-all group cursor-pointer h-full">
+                  <CardContent className="p-10">
+                    <div className="w-12 h-12 rounded-lg bg-red-100 flex items-center justify-center text-red-800 mb-6 group-hover:scale-110 transition-transform">
+                      <Briefcase className="w-6 h-6" />
+                    </div>
+                    <h3 className="font-bold text-2xl text-foreground mb-4">Launch Teams</h3>
+                    <p className="text-foreground/70 leading-relaxed mb-6">
+                      Partner directly with early-stage startups to design, build, and deliver real-world solutions. Work on product development, software implementation, prototyping, and iterative testing.
+                    </p>
+                    <div className="text-red-800 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
+                      Learn More
+                      <ArrowRight size={18} />
+                    </div>
+                  </CardContent>
+                </Card>
               </Link>
 
               {/* Innovation Teams Card */}
-              <Link href="/innovation-teams">
-                <a className="block">
-                  <Card className="border-2 border-amber-200 shadow-none hover:shadow-lg transition-all group cursor-pointer h-full">
-                    <CardContent className="p-10">
-                      <div className="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-6 group-hover:scale-110 transition-transform">
-                        <Lightbulb className="w-6 h-6" />
-                      </div>
-                      <h3 className="font-bold text-2xl text-foreground mb-4">Innovation Teams</h3>
-                      <p className="text-foreground/70 leading-relaxed mb-6">
-                        Focus on internally scoped, end-to-end projects designed to mirror real-world professional work. Take projects from problem definition through delivery with full ownership.
-                      </p>
-                      <div className="text-amber-700 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
-                        Learn More
-                        <ArrowRight size={18} />
-                      </div>
-                    </CardContent>
-                  </Card>
-                </a>
+              <Link href="/innovation-teams" className="block">
+                <Card className="border-2 border-amber-200 shadow-none hover:shadow-lg transition-all group cursor-pointer h-full">
+                  <CardContent className="p-10">
+                    <div className="w-12 h-12 rounded-lg bg-amber-100 flex items-center justify-center text-amber-700 mb-6 group-hover:scale-110 transition-transform">
+                      <Lightbulb className="w-6 h-6" />
+                    </div>
+                    <h3 className="font-bold text-2xl text-foreground mb-4">Innovation Teams</h3>
+                    <p className="text-foreground/70 leading-relaxed mb-6">
+                      Focus on internally scoped, end-to-end projects designed to mirror real-world professional work. Take projects from problem definition through delivery with full ownership.
+                    </p>
+                    <div className="text-amber-700 font-bold flex items-center gap-2 group-hover:gap-3 transition-all">
+                      Learn More
+                      <ArrowRight size={18} />
+                    </div>
+                  </CardContent>
+                </Card>
               </Link>
             </div>
           </div>
