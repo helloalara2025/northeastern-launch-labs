@@ -205,7 +205,7 @@ export default function LaunchTeams() {
             </p>
             <Link href="/forms">
               <Button className="bg-red-800 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
-                Apply to Launch Teams
+                Join
               </Button>
             </Link>
           </div>

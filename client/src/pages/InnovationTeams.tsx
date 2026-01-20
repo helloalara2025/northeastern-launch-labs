@@ -205,7 +205,7 @@ export default function InnovationTeams() {
             </p>
             <Link href="/forms">
               <Button className="bg-amber-700 hover:bg-amber-800 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg">
-                Apply to Innovation Teams
+                Join
               </Button>
             </Link>
           </div>
