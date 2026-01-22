@@ -17,65 +17,73 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm ${
-        isScrolled ? "shadow-sm border-b border-border" : "border-b border-border/50"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white backdrop-blur-md ${
+        isScrolled ? "shadow-md border-b border-gray-100" : "border-b border-gray-100"
       }`}
     >
-      <div className="container flex items-center justify-between h-16">
-        <Link href="/" className="cursor-pointer hover:opacity-80 transition-opacity flex items-center gap-2">
+      <div className="container flex items-center justify-between h-16 px-4 md:px-6">
+        <Link href="/" className="cursor-pointer hover:opacity-90 transition-all duration-200 flex items-center gap-2 flex-shrink-0">
           <img src="/images/nu-launch-labs-logo.png" alt="NU Launch Labs Logo" className="h-10 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
-          <Link href="/about" className="text-sm font-medium text-foreground/70 hover:text-red-900 transition-colors duration-200">
+        <div className="hidden md:flex items-center gap-10 flex-1 justify-center">
+          <Link href="/about" className="text-sm font-medium text-foreground/70 hover:text-red-900 transition-colors duration-200 relative group">
             About
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-900 group-hover:w-full transition-all duration-300"></span>
           </Link>
 
-          <Link href="/launch-teams" className="text-sm font-medium text-foreground/70 hover:text-red-900 transition-colors duration-200">
+          <Link href="/launch-teams" className="text-sm font-medium text-foreground/70 hover:text-red-900 transition-colors duration-200 relative group">
             Launch Teams
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-900 group-hover:w-full transition-all duration-300"></span>
           </Link>
 
-          <Link href="/innovation-teams" className="text-sm font-medium text-foreground/70 hover:text-gray-100 transition-colors duration-200">
+          <Link href="/innovation-teams" className="text-sm font-medium text-foreground/70 hover:text-red-900 transition-colors duration-200 relative group">
             Innovation Teams
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-900 group-hover:w-full transition-all duration-300"></span>
           </Link>
 
-          <Link href="/leadership" className="text-sm font-medium text-foreground/70 hover:text-red-900 transition-colors duration-200">
+          <Link href="/leadership" className="text-sm font-medium text-foreground/70 hover:text-red-900 transition-colors duration-200 relative group">
             Leadership
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-900 group-hover:w-full transition-all duration-300"></span>
           </Link>
 
-          <Link href="/partners" className="text-sm font-medium text-foreground/70 hover:text-red-900 transition-colors duration-200">
+          <Link href="/partners" className="text-sm font-medium text-foreground/70 hover:text-red-900 transition-colors duration-200 relative group">
             Partners
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-900 group-hover:w-full transition-all duration-300"></span>
           </Link>
 
-          <Link href="/contact" className="text-sm font-medium text-foreground/70 hover:text-red-900 transition-colors duration-200">
+          <Link href="/contact" className="text-sm font-medium text-foreground/70 hover:text-red-900 transition-colors duration-200 relative group">
             Contact
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-900 group-hover:w-full transition-all duration-300"></span>
           </Link>
 
-          <Link href="/forms" className="text-sm font-medium text-foreground/70 hover:text-red-900 transition-colors duration-200">
+          <Link href="/forms" className="text-sm font-medium text-foreground/70 hover:text-red-900 transition-colors duration-200 relative group">
             Forms
+            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-900 group-hover:w-full transition-all duration-300"></span>
           </Link>
         </div>
 
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-3 flex-shrink-0">
           <Link href="/forms">
-            <Button className="border-2 border-red-900 text-red-900 hover:bg-gray-100 font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 bg-white shadow-sm hover:shadow-md inline-flex items-center gap-2">
+            <Button className="border-2 border-red-900 text-red-900 hover:bg-red-50 font-bold px-6 h-10 rounded-lg text-sm transition-all duration-200 bg-white shadow-sm hover:shadow-md inline-flex items-center gap-2">
               Propose Project
-              <ArrowRight size={14} />
+              <ArrowRight size={16} />
             </Button>
           </Link>
           <Link href="/forms">
-            <Button className="bg-red-900 hover:bg-red-900 text-white font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center gap-2">
+            <Button className="bg-red-900 hover:bg-red-900 text-white font-bold px-6 h-10 rounded-lg text-sm transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center gap-2">
               Join
-              <ArrowRight size={14} />
+              <ArrowRight size={16} />
             </Button>
           </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
         <button 
-          className="md:hidden p-2 text-foreground hover:bg-muted rounded-lg transition-colors"
+          className="md:hidden p-2 text-foreground hover:bg-gray-100 rounded-lg transition-all duration-200"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          aria-label="Toggle menu"
         >
           {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
@@ -83,45 +91,46 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-card border-b border-border p-4 flex flex-col gap-2">
-          <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-900 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
+        <div className="md:hidden bg-white border-b border-gray-100 p-4 flex flex-col gap-1 shadow-md">
+          <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-900 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">
             About
           </Link>
 
-          <Link href="/launch-teams" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-900 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
+          <Link href="/launch-teams" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-900 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">
             Launch Teams
           </Link>
 
-          <Link href="/innovation-teams" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-gray-100 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
+          <Link href="/innovation-teams" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-900 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">
             Innovation Teams
           </Link>
 
-          <Link href="/leadership" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-900 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
+          <Link href="/leadership" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-900 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">
             Leadership
           </Link>
 
-          <Link href="/partners" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-900 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
+          <Link href="/partners" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-900 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">
             Partners
           </Link>
 
-          <Link href="/forms" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-900 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
+          <Link href="/forms" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-900 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">
             Propose Project
           </Link>
 
-          <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-900 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
+          <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-900 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">
             Contact
           </Link>
 
-          <Link href="/forms" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-900 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
+          <Link href="/forms" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-red-900 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">
             Forms
           </Link>
 
           <Link href="/forms">
             <Button 
               onClick={() => setIsMobileMenuOpen(false)}
-              className="w-full bg-red-900 hover:bg-red-900 text-white font-bold rounded-lg text-sm transition-all duration-200 shadow-sm hover:shadow-md mt-2"
+              className="w-full bg-red-900 hover:bg-red-900 text-white font-bold rounded-lg text-sm transition-all duration-200 shadow-md hover:shadow-lg mt-4 h-10 inline-flex items-center justify-center gap-2"
             >
               Join
+              <ArrowRight size={16} />
             </Button>
           </Link>
         </div>
