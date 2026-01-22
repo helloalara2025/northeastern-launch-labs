@@ -1,11 +1,11 @@
 export default function LaunchTeamsDetail() {
   return (
-    <section id="launch-detail" className="py-24 bg-white border-t border-gray-200">
+    <section id="launch-detail" className="py-24 bg-white border-t border-gray-100">
       <div className="container">
         <div className="max-w-3xl mb-16">
           <h2 className="font-sans font-semibold text-4xl lg:text-5xl text-foreground mb-6 leading-tight">
             Launch Teams<br />
-            <span className="text-red-800">Build with Startups</span>
+            <span className="text-red-900">Build with Startups</span>
           </h2>
           <p className="text-lg text-foreground/70 leading-relaxed font-medium">
             Launch Teams partner directly with early-stage startups to design, build, and deliver real-world solutions. Members work closely with founders on product development, software implementation, prototyping, and iterative testing.
@@ -27,7 +27,7 @@ export default function LaunchTeamsDetail() {
               desc: "Clear scopes, timelines, and deliverables."
             }
           ].map((item, idx) => (
-            <div key={idx} className="bg-gray-100 border border-gray-300 rounded-xl p-6 hover:border-gray-300 hover:shadow-md transition-all duration-300">
+            <div key={idx} className="bg-gray-100 border border-gray-100 rounded-xl p-6 hover:border-gray-100 hover:shadow-md transition-all duration-300">
               <h3 className="font-sans font-semibold text-base text-foreground mb-2">{item.title}</h3>
               <p className="text-foreground/70 text-sm leading-relaxed font-medium">{item.desc}</p>
             </div>

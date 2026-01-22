@@ -53,10 +53,10 @@ export default function InnovationTeams() {
           <div className="container max-w-4xl">
             <h3 className="font-bold text-sm uppercase tracking-wider text-foreground/60 mb-6">On This Page</h3>
             <div className="grid md:grid-cols-2 gap-4">
-              <a href="#what-we-do" className="text-foreground/70 hover:text-gray-700 transition-colors font-medium text-sm">What We Do</a>
-              <a href="#our-teams" className="text-foreground/70 hover:text-gray-700 transition-colors font-medium text-sm">Our Teams</a>
-              <a href="#key-experiences" className="text-foreground/70 hover:text-gray-700 transition-colors font-medium text-sm">Key Experiences</a>
-              <a href="#who-should-apply" className="text-foreground/70 hover:text-gray-700 transition-colors font-medium text-sm">Who Should Apply</a>
+              <a href="#what-we-do" className="text-foreground/70 hover:text-gray-100 transition-colors font-medium text-sm">What We Do</a>
+              <a href="#our-teams" className="text-foreground/70 hover:text-gray-100 transition-colors font-medium text-sm">Our Teams</a>
+              <a href="#key-experiences" className="text-foreground/70 hover:text-gray-100 transition-colors font-medium text-sm">Key Experiences</a>
+              <a href="#who-should-apply" className="text-foreground/70 hover:text-gray-100 transition-colors font-medium text-sm">Who Should Apply</a>
             </div>
           </div>
         </section>
@@ -86,24 +86,24 @@ export default function InnovationTeams() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {teams.map((team) => (
-                <Card key={team.id} className="border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 bg-white">
+                <Card key={team.id} className="border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 bg-white">
                   <CardContent className="p-8">
                     <div className="flex items-start justify-between mb-4">
                       <h3 className="font-bold text-2xl text-foreground">{team.name}</h3>
-                      <span className="text-xs font-bold px-3 py-1 bg-gray-100 text-gray-800 rounded-full">{team.status}</span>
+                      <span className="text-xs font-bold px-3 py-1 bg-gray-100 text-gray-100 rounded-full">{team.status}</span>
                     </div>
                     <p className="text-foreground/70 leading-relaxed mb-6">{team.description}</p>
                     <div className="space-y-3 mb-6">
                       <div className="flex items-center gap-2">
-                        <Users size={16} className="text-gray-800" />
+                        <Users size={16} className="text-gray-100" />
                         <span className="text-sm text-foreground/70">{team.members} members</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Lightbulb size={16} className="text-gray-800" />
+                        <Lightbulb size={16} className="text-gray-100" />
                         <span className="text-sm text-foreground/70">{team.focus}</span>
                       </div>
                     </div>
-                    <Link href="/apply/innovation-team" className="inline-flex items-center gap-2 text-gray-800 font-bold hover:gap-3 transition-all duration-200">
+                    <Link href="/apply/innovation-team" className="inline-flex items-center gap-2 text-gray-100 font-bold hover:gap-3 transition-all duration-200">
                       Join
                       <ArrowRight size={18} />
                     </Link>
@@ -121,9 +121,9 @@ export default function InnovationTeams() {
               Key Experiences
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-800 mb-4 font-bold">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-100 mb-4 font-bold">
                     <Target className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">End-to-End Leadership</h3>
@@ -132,9 +132,9 @@ export default function InnovationTeams() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-800 mb-4 font-bold">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-100 mb-4 font-bold">
                     <Zap className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Strategic Thinking</h3>
@@ -143,9 +143,9 @@ export default function InnovationTeams() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-800 mb-4 font-bold">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-100 mb-4 font-bold">
                     <Users className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Team Collaboration</h3>
@@ -154,9 +154,9 @@ export default function InnovationTeams() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-800 mb-4 font-bold">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-100 mb-4 font-bold">
                     <Lightbulb className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Innovation & Creativity</h3>
@@ -177,19 +177,19 @@ export default function InnovationTeams() {
             </h2>
             <div className="space-y-4">
               <div className="flex gap-4">
-                <CheckCircle className="w-6 h-6 text-gray-700 flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-gray-100 flex-shrink-0 mt-1" />
                 <p className="text-lg text-foreground/70">Students interested in leadership and project ownership</p>
               </div>
               <div className="flex gap-4">
-                <CheckCircle className="w-6 h-6 text-gray-700 flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-gray-100 flex-shrink-0 mt-1" />
                 <p className="text-lg text-foreground/70">Those seeking to develop strategic thinking and execution skills</p>
               </div>
               <div className="flex gap-4">
-                <CheckCircle className="w-6 h-6 text-gray-700 flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-gray-100 flex-shrink-0 mt-1" />
                 <p className="text-lg text-foreground/70">Individuals passionate about innovation and problem-solving</p>
               </div>
               <div className="flex gap-4">
-                <CheckCircle className="w-6 h-6 text-gray-700 flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-gray-100 flex-shrink-0 mt-1" />
                 <p className="text-lg text-foreground/70">Anyone from any background ready to lead and make an impact</p>
               </div>
             </div>
@@ -197,14 +197,14 @@ export default function InnovationTeams() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gray-100 border-t border-gray-200 py-24 md:py-32">
+        <section className="bg-gray-100 border-t border-gray-100 py-24 md:py-32">
           <div className="container max-w-4xl text-center">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6">Ready to Lead an Innovation Team?</h2>
             <p className="text-lg text-foreground/70 mb-10">
               Apply today and take ownership of a project that matters.
             </p>
             <Button asChild>
-              <Link href="/forms" className="bg-red-900 hover:bg-red-950 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2">
+              <Link href="/forms" className="bg-red-900 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2">
                 Join
                 <ArrowRight size={18} />
               </Link>

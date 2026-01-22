@@ -1,6 +1,6 @@
 export default function Partners() {
   return (
-    <section id="partners" className="py-20 bg-gray-50 border-t border-border">
+    <section id="partners" className="py-20 bg-white border-t border-border">
       <div className="container">
         <div className="max-w-3xl mb-12">
           <h2 className="font-sans font-bold text-4xl lg:text-5xl text-foreground mb-4 leading-tight">

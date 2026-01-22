@@ -73,15 +73,15 @@ export default function ApplyLeadership() {
         <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-3xl">
             {submitted ? (
-              <Card className="border border-gray-300 bg-gray-200 shadow-none">
+              <Card className="border border-gray-100 bg-gray-100 shadow-none">
                 <CardContent className="p-12 text-center">
-                  <CheckCircle className="w-16 h-16 text-gray-700 mx-auto mb-6" />
-                  <h2 className="font-bold text-2xl text-gray-700 mb-3">Application Submitted!</h2>
-                  <p className="text-gray-700 mb-6">
+                  <CheckCircle className="w-16 h-16 text-gray-100 mx-auto mb-6" />
+                  <h2 className="font-bold text-2xl text-gray-100 mb-3">Application Submitted!</h2>
+                  <p className="text-gray-100 mb-6">
                     Thank you for applying to join our leadership team. We'll review your application and get back to you soon at the email address you provided.
                   </p>
                   <Link href="/">
-                    <Button className="bg-gray-200 hover:bg-gray-200 text-white font-bold px-8 h-12 rounded-lg">
+                    <Button className="bg-gray-100 hover:bg-gray-100 text-white font-bold px-8 h-12 rounded-lg">
                       Return to Home
                     </Button>
                   </Link>

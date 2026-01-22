@@ -38,7 +38,7 @@ export default function Navigation() {
             Launch Teams
           </Link>
 
-          <Link href="/innovation-teams" className="text-sm font-medium text-foreground/70 hover:text-gray-700 transition-colors duration-200">
+          <Link href="/innovation-teams" className="text-sm font-medium text-foreground/70 hover:text-gray-100 transition-colors duration-200">
             Innovation Teams
           </Link>
 
@@ -61,13 +61,13 @@ export default function Navigation() {
 
         <div className="hidden md:flex items-center gap-3">
           <Link href="/forms">
-            <Button className="border-2 border-black text-black hover:bg-gray-100 font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 bg-white shadow-sm hover:shadow-md inline-flex items-center gap-2">
+            <Button className="border-2 border-red-900 text-red-900 hover:bg-gray-100 font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 bg-white shadow-sm hover:shadow-md inline-flex items-center gap-2">
               Propose Project
               <ArrowRight size={14} />
             </Button>
           </Link>
           <Link href="/forms">
-            <Button className="bg-red-900 hover:bg-red-950 text-white font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center gap-2">
+            <Button className="bg-red-900 hover:bg-red-900 text-white font-bold px-5 h-10 rounded-lg text-sm transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center gap-2">
               Join
               <ArrowRight size={14} />
             </Button>
@@ -94,7 +94,7 @@ export default function Navigation() {
             Launch Teams
           </Link>
 
-          <Link href="/innovation-teams" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-gray-700 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
+          <Link href="/innovation-teams" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-foreground/70 hover:text-gray-100 px-3 py-2 rounded-lg hover:bg-muted transition-all duration-200">
             Innovation Teams
           </Link>
 

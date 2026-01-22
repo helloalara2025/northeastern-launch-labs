@@ -1,10 +1,10 @@
 export default function GetInvolved() {
   return (
-    <section id="get-involved" className="py-24 bg-gray-50 border-t border-gray-200">
+    <section id="get-involved" className="py-24 bg-white border-t border-gray-100">
       <div className="container">
         <h2 className="font-sans font-semibold text-4xl lg:text-5xl text-foreground mb-16 leading-tight">
           How to<br />
-          <span className="text-red-800">Get Involved</span>
+          <span className="text-red-900">Get Involved</span>
         </h2>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -26,7 +26,7 @@ export default function GetInvolved() {
               desc: "Members contribute actively to their team's work with a 3–5 hours per week commitment."
             }
           ].map((item, idx) => (
-            <div key={idx} className="bg-white border border-gray-200 rounded-xl p-6 hover:border-gray-300 hover:shadow-md transition-all duration-300">
+            <div key={idx} className="bg-white border border-gray-100 rounded-xl p-6 hover:border-gray-100 hover:shadow-md transition-all duration-300">
               <h3 className="font-sans font-semibold text-lg text-foreground mb-3">{item.title}</h3>
               <p className="text-foreground/70 text-sm leading-relaxed font-medium">{item.desc}</p>
             </div>

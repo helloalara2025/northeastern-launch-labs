@@ -22,7 +22,7 @@ export default function Home() {
               Work on real-world projects with students from every background. Bridge classroom learning with hands-on impact.
             </p>
             <Button asChild>
-              <Link href="/forms" className="bg-red-900 hover:bg-red-950 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2">
+              <Link href="/forms" className="bg-red-900 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2">
                 Join
                 <ArrowRight size={18} />
               </Link>
@@ -46,10 +46,10 @@ export default function Home() {
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">How We Work</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Launch Teams Card */}
-              <Card className="border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer h-full bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer h-full bg-white">
                 <Link href="/launch-teams" className="block h-full">
                   <CardContent className="p-10">
-                    <div className="w-14 h-14 rounded-lg bg-red-50 flex items-center justify-center text-red-900 mb-6 group-hover:scale-110 transition-transform duration-300 font-bold text-xl">
+                    <div className="w-14 h-14 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6 group-hover:scale-110 transition-transform duration-300 font-bold text-xl">
                       <Briefcase className="w-7 h-7" />
                     </div>
                     <h3 className="font-bold text-2xl text-foreground mb-3">Launch Teams</h3>
@@ -65,17 +65,17 @@ export default function Home() {
               </Card>
 
               {/* Innovation Teams Card */}
-              <Card className="border border-gray-200 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer h-full bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer h-full bg-white">
                 <Link href="/innovation-teams" className="block h-full">
                   <CardContent className="p-10">
-                    <div className="w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center text-gray-800 mb-6 group-hover:scale-110 transition-transform duration-300 font-bold text-xl">
+                    <div className="w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 mb-6 group-hover:scale-110 transition-transform duration-300 font-bold text-xl">
                       <Lightbulb className="w-7 h-7" />
                     </div>
                     <h3 className="font-bold text-2xl text-foreground mb-3">Innovation Teams</h3>
                     <p className="text-foreground/70 leading-relaxed mb-8 text-base">
                       Focus on internally scoped, end-to-end projects designed to mirror real-world professional work. Take projects from problem definition through delivery with full ownership.
                     </p>
-                    <div className="text-gray-800 font-bold flex items-center gap-2 group-hover:gap-3 transition-all duration-200">
+                    <div className="text-red-900 font-bold flex items-center gap-2 group-hover:gap-3 transition-all duration-200">
                       Learn More
                       <ArrowRight size={18} />
                     </div>
@@ -91,9 +91,9 @@ export default function Home() {
           <div className="container max-w-4xl">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">What You'll Gain</h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-red-50 flex items-center justify-center text-red-900 mb-4 font-bold">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-4 font-bold">
                     <Zap className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Real-World Experience</h3>
@@ -103,9 +103,9 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-800 mb-4 font-bold">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-100 mb-4 font-bold">
                     <Users className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Cross-Disciplinary Collaboration</h3>
@@ -115,9 +115,9 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-red-50 flex items-center justify-center text-red-900 mb-4 font-bold">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-4 font-bold">
                     <Award className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Professional Skills</h3>
@@ -127,9 +127,9 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-800 mb-4 font-bold">
+                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-100 mb-4 font-bold">
                     <Rocket className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Portfolio-Ready Work</h3>
@@ -190,10 +190,10 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mt-16 p-10 bg-red-50 border border-red-100 rounded-lg text-center">
+            <div className="mt-16 p-10 bg-white border border-white rounded-lg text-center">
               <p className="text-foreground font-semibold mb-6 text-lg">Ready to get started?</p>
               <Button asChild>
-                <Link href="/forms" className="bg-red-900 hover:bg-red-950 text-white font-bold px-10 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2">
+                <Link href="/forms" className="bg-red-900 hover:bg-red-900 text-white font-bold px-10 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2">
                   Join
                   <ArrowRight size={18} />
                 </Link>

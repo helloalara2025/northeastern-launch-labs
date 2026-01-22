@@ -196,7 +196,7 @@ export default function ContactPage() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-red-900 hover:bg-red-950 text-white font-bold h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2"
+                    className="w-full bg-red-900 hover:bg-red-900 text-white font-bold h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2"
                   >
                     Send Message
                     <ArrowRight size={18} />
@@ -219,7 +219,7 @@ export default function ContactPage() {
                     Ready to join Launch Labs? Check out our applications.
                   </p>
                   <Link href="/forms">
-                    <Button className="w-full bg-red-900 hover:bg-red-950 text-white font-bold h-10 rounded-lg inline-flex items-center justify-center gap-2">
+                    <Button className="w-full bg-red-900 hover:bg-red-900 text-white font-bold h-10 rounded-lg inline-flex items-center justify-center gap-2">
                       View Applications
                       <ArrowRight size={16} />
                     </Button>
@@ -234,7 +234,7 @@ export default function ContactPage() {
                     Explore our teams and discover what we do.
                   </p>
                   <Link href="/about">
-                    <Button className="w-full bg-red-900 hover:bg-red-950 text-white font-bold h-10 rounded-lg inline-flex items-center justify-center gap-2">
+                    <Button className="w-full bg-red-900 hover:bg-red-900 text-white font-bold h-10 rounded-lg inline-flex items-center justify-center gap-2">
                       About Us
                       <ArrowRight size={16} />
                     </Button>
@@ -249,7 +249,7 @@ export default function ContactPage() {
                     Interested in collaborating with Launch Labs?
                   </p>
                   <Link href="/partners">
-                    <Button className="w-full bg-red-900 hover:bg-red-950 text-white font-bold h-10 rounded-lg inline-flex items-center justify-center gap-2">
+                    <Button className="w-full bg-red-900 hover:bg-red-900 text-white font-bold h-10 rounded-lg inline-flex items-center justify-center gap-2">
                       Learn More
                       <ArrowRight size={16} />
                     </Button>

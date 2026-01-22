@@ -52,7 +52,7 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-gray-50 border border-border rounded-lg p-8">
+          <div className="bg-white border border-border rounded-lg p-8">
             <form className="space-y-5">
               <div>
                 <label className="block text-sm font-bold text-foreground mb-2">Name</label>

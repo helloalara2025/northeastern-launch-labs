@@ -17,7 +17,7 @@ export default function NotFound() {
           <div className="flex justify-center mb-6">
             <div className="relative">
               <div className="absolute inset-0 bg-gray-100 rounded-full animate-pulse" />
-              <AlertCircle className="relative h-16 w-16 text-gray-700" />
+              <AlertCircle className="relative h-16 w-16 text-gray-100" />
             </div>
           </div>
 
@@ -36,7 +36,7 @@ export default function NotFound() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Button
               onClick={handleGoHome}
-              className="bg-gray-300 hover:bg-gray-400 text-white px-6 py-2.5 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
+              className="bg-gray-100 hover:bg-gray-100 text-white px-6 py-2.5 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
             >
               <Home className="w-4 h-4 mr-2" />
               Go Home

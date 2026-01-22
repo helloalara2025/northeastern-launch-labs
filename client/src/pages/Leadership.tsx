@@ -94,7 +94,7 @@ export default function Leadership() {
                 Interested in leading Launch Labs? We're always looking for passionate students to help drive our mission.
               </p>
               <Link href="/apply/leadership">
-                <Button className="bg-red-900 hover:bg-red-950 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg inline-flex items-center gap-2">
+                <Button className="bg-red-900 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg inline-flex items-center gap-2">
                   Apply for Leadership
                   <ArrowRight size={18} />
                 </Button>

@@ -86,11 +86,11 @@ export default function LaunchTeams() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {teams.map((team) => (
-                <Card key={team.id} className="border border-gray-200 shadow-sm hover:shadow-lg transition-all duration-300 bg-white">
+                <Card key={team.id} className="border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 bg-white">
                   <CardContent className="p-8">
                     <div className="flex items-start justify-between mb-4">
                       <h3 className="font-bold text-2xl text-foreground">{team.name}</h3>
-                      <span className="text-xs font-bold px-3 py-1 bg-red-50 text-red-900 rounded-full">{team.status}</span>
+                      <span className="text-xs font-bold px-3 py-1 bg-white text-red-900 rounded-full">{team.status}</span>
                     </div>
                     <p className="text-foreground/70 leading-relaxed mb-6">{team.description}</p>
                     <div className="space-y-3 mb-6">
@@ -121,9 +121,9 @@ export default function LaunchTeams() {
               Key Experiences
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-red-50 flex items-center justify-center text-red-900 mb-4 font-bold">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-4 font-bold">
                     <Briefcase className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Startup Operations</h3>
@@ -132,9 +132,9 @@ export default function LaunchTeams() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-red-50 flex items-center justify-center text-red-900 mb-4 font-bold">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-4 font-bold">
                     <TrendingUp className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Real Impact</h3>
@@ -143,9 +143,9 @@ export default function LaunchTeams() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-red-50 flex items-center justify-center text-red-900 mb-4 font-bold">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-4 font-bold">
                     <Users className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Professional Development</h3>
@@ -154,9 +154,9 @@ export default function LaunchTeams() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-red-50 flex items-center justify-center text-red-900 mb-4 font-bold">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-4 font-bold">
                     <Code className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Technical Growth</h3>
@@ -197,14 +197,14 @@ export default function LaunchTeams() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gray-100 border-t border-gray-300 py-24 md:py-32">
+        <section className="bg-gray-100 border-t border-gray-100 py-24 md:py-32">
           <div className="container max-w-4xl text-center">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6">Ready to Join a Launch Team?</h2>
             <p className="text-lg text-foreground/70 mb-10">
               Apply today and start working on real-world projects with early-stage startups.
             </p>
             <Link href="/forms">
-              <Button className="bg-red-900 hover:bg-red-950 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center gap-2">
+              <Button className="bg-red-900 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center gap-2">
                 Join
                 <ArrowRight size={18} />
               </Button>

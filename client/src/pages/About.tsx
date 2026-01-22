@@ -35,7 +35,7 @@ export default function About() {
           <div className="container max-w-4xl">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">How to Get Involved</h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
                   <h3 className="font-bold text-lg text-foreground mb-3">Apply to Join</h3>
                   <p className="text-foreground/70 leading-relaxed">
@@ -44,7 +44,7 @@ export default function About() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
                   <h3 className="font-bold text-lg text-foreground mb-3">Propose a Project</h3>
                   <p className="text-foreground/70 leading-relaxed">
@@ -53,7 +53,7 @@ export default function About() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
                   <h3 className="font-bold text-lg text-foreground mb-3">Attend an Info Session</h3>
                   <p className="text-foreground/70 leading-relaxed">
@@ -62,7 +62,7 @@ export default function About() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
                   <h3 className="font-bold text-lg text-foreground mb-3">Stay Engaged</h3>
                   <p className="text-foreground/70 leading-relaxed">
@@ -79,7 +79,7 @@ export default function About() {
           <div className="container max-w-4xl">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">Our Values</h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
                   <h3 className="font-bold text-lg text-foreground mb-3">Real Impact</h3>
                   <p className="text-foreground/70 leading-relaxed">
@@ -88,7 +88,7 @@ export default function About() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
                   <h3 className="font-bold text-lg text-foreground mb-3">Collaboration</h3>
                   <p className="text-foreground/70 leading-relaxed">
@@ -97,7 +97,7 @@ export default function About() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
                   <h3 className="font-bold text-lg text-foreground mb-3">Ownership & Accountability</h3>
                   <p className="text-foreground/70">
@@ -106,7 +106,7 @@ export default function About() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                 <CardContent className="p-8">
                   <h3 className="font-bold text-lg text-foreground mb-3">Continuous Learning</h3>
                   <p className="text-foreground/70 leading-relaxed">
@@ -119,14 +119,14 @@ export default function About() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-red-50 border-t border-red-100 py-24 md:py-32">
+        <section className="bg-white border-t border-white py-24 md:py-32">
           <div className="container max-w-4xl text-center">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6">Ready to Join Us?</h2>
             <p className="text-lg text-foreground/70 mb-10">
               Become part of the Launch Labs community and start making real impact.
             </p>
             <Button asChild>
-              <Link href="/forms" className="bg-red-900 hover:bg-red-950 text-white font-bold px-10 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 mx-auto">
+              <Link href="/forms" className="bg-red-900 hover:bg-red-900 text-white font-bold px-10 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 mx-auto">
                 Join
               </Link>
             </Button>

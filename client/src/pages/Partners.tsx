@@ -157,14 +157,14 @@ export default function Partners() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gray-100 border-t border-gray-300 py-24 md:py-32">
+        <section className="bg-gray-100 border-t border-gray-100 py-24 md:py-32">
           <div className="container max-w-4xl text-center">
             <h2 className="font-bold text-3xl text-foreground mb-4">Interested in Partnering?</h2>
             <p className="text-foreground/70 mb-10 text-lg">
               Let's talk about how Launch Labs can support your startup's growth.
             </p>
             <Link href="/contact">
-              <Button className="bg-red-900 hover:bg-red-950 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg inline-flex items-center gap-2">
+              <Button className="bg-red-900 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg inline-flex items-center gap-2">
                 Get in Touch
                 <ArrowRight size={18} />
               </Button>
