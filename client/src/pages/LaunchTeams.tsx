@@ -8,7 +8,7 @@ export default function LaunchTeams() {
   const teams = [
     {
       id: 1,
-      name: "Team Alpha",
+      name: "Team Python",
       description: "Building innovative solutions for early-stage startups",
       members: 4,
       status: "Active",
@@ -16,7 +16,7 @@ export default function LaunchTeams() {
     },
     {
       id: 2,
-      name: "Team Beta",
+      name: "Team Java",
       description: "Scaling startup operations and infrastructure",
       members: 5,
       status: "Active",
@@ -24,7 +24,7 @@ export default function LaunchTeams() {
     },
     {
       id: 3,
-      name: "Team Gamma",
+      name: "Team React",
       description: "Data-driven insights and analytics for startups",
       members: 3,
       status: "Active",

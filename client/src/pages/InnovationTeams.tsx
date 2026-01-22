@@ -8,7 +8,7 @@ export default function InnovationTeams() {
   const teams = [
     {
       id: 1,
-      name: "Team Innovate",
+      name: "Team Kubernetes",
       description: "Exploring emerging technologies and innovative solutions",
       members: 4,
       status: "Active",
@@ -16,7 +16,7 @@ export default function InnovationTeams() {
     },
     {
       id: 2,
-      name: "Team Catalyst",
+      name: "Team Node.js",
       description: "Driving organizational and process improvements",
       members: 5,
       status: "Active",
@@ -24,7 +24,7 @@ export default function InnovationTeams() {
     },
     {
       id: 3,
-      name: "Team Horizon",
+      name: "Team TypeScript",
       description: "Exploring future opportunities and strategic initiatives",
       members: 3,
       status: "Active",
