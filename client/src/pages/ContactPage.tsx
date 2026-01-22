@@ -1,30 +1,10 @@
 import Navigation from "@/components/sections/Navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, MapPin, Linkedin, Instagram, ArrowRight } from "lucide-react";
-import { useState } from "react";
+import { Mail, Linkedin, Instagram, MessageCircle, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "General Inquiry",
-    message: ""
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-  };
-
   return (
     <div>
       <Navigation />
@@ -36,271 +16,96 @@ export default function ContactPage() {
               Get In Touch
             </h1>
             <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl mx-auto">
-              Have questions about Launch Labs? Want to collaborate? We'd love to hear from you.
+              Have questions? Want to collaborate? Reach out to us directly.
             </p>
           </div>
         </section>
 
         {/* Contact Section */}
         <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-5xl">
-            <div className="grid lg:grid-cols-2 gap-12">
+          <div className="container max-w-4xl">
+            <div className="grid md:grid-cols-2 gap-12">
               {/* Contact Info */}
               <div className="space-y-6">
-                <div>
-                  <h2 className="font-sans font-bold text-3xl text-foreground mb-8">Contact Information</h2>
-                </div>
+                <h2 className="font-sans font-bold text-3xl text-foreground mb-8">Contact Us</h2>
 
-                <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
+                {/* Email */}
+                <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
                   <CardContent className="p-8">
-                    <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 mb-4">
-                      <Mail className="w-6 h-6" />
+                    <div className="flex items-start gap-4">
+                      <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 flex-shrink-0">
+                        <Mail className="w-6 h-6" />
+                      </div>
+                      <div>
+                        <h3 className="font-bold text-lg text-foreground mb-2">Email</h3>
+                        <a href="mailto:NU-launchlabs@northeastern.edu" className="text-red-900 hover:text-red-900 transition-colors font-medium break-all">
+                          NU-launchlabs@northeastern.edu
+                        </a>
+                      </div>
                     </div>
-                    <h3 className="font-bold text-lg text-foreground mb-3">General Inquiries</h3>
-                    <a href="mailto:hello@launchlabs.neu.edu" className="text-red-900 hover:text-red-900 transition-colors font-medium break-all">
-                      hello@launchlabs.neu.edu
-                    </a>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
-                  <CardContent className="p-8">
-                    <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 mb-4">
-                      <Mail className="w-6 h-6" />
-                    </div>
-                    <h3 className="font-bold text-lg text-foreground mb-3">Student Inquiries & Applications</h3>
-                    <a href="mailto:students@launchlabs.neu.edu" className="text-red-900 hover:text-red-900 transition-colors font-medium break-all">
-                      students@launchlabs.neu.edu
-                    </a>
-                  </CardContent>
-                </Card>
-
-                <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
-                  <CardContent className="p-8">
-                    <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 mb-4">
-                      <Mail className="w-6 h-6" />
-                    </div>
-                    <h3 className="font-bold text-lg text-foreground mb-3">Startup Partnerships</h3>
-                    <a href="mailto:partnerships@launchlabs.neu.edu" className="text-red-900 hover:text-red-900 transition-colors font-medium break-all">
-                      partnerships@launchlabs.neu.edu
-                    </a>
-                  </CardContent>
-                </Card>
-
-                <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
-                  <CardContent className="p-8">
-                    <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 mb-4">
-                      <MapPin className="w-6 h-6" />
-                    </div>
-                    <h3 className="font-bold text-lg text-foreground mb-3">Location</h3>
-                    <p className="text-foreground/70 font-medium">
-                      Northeastern University<br />
-                      Boston, MA 02115<br />
-                      USA
-                    </p>
-                  </CardContent>
-                </Card>
-
-                <Card className="border border-foreground/10 shadow-none">
+                {/* Social Links */}
+                <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
                   <CardContent className="p-8">
                     <h3 className="font-bold text-lg text-foreground mb-6">Follow Us</h3>
-                    <div className="flex gap-4">
-                      <a href="https://www.linkedin.com/company/nulaunchlabs" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 hover:bg-gray-100 transition-colors" title="LinkedIn">
-                        <Linkedin size={24} />
+                    <div className="space-y-3">
+                      <a href="https://www.linkedin.com/company/nulaunchlabs" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-foreground/70 hover:text-red-900 transition-colors font-medium">
+                        <Linkedin size={20} className="text-red-900" />
+                        LinkedIn
                       </a>
-                      <a href="https://instagram.com/nulaunchlabs" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 hover:bg-gray-100 transition-colors" title="Instagram">
-                        <Instagram size={24} />
+                      <a href="https://instagram.com/nulaunchlabs" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-foreground/70 hover:text-red-900 transition-colors font-medium">
+                        <Instagram size={20} className="text-red-900" />
+                        Instagram
                       </a>
-                      <a href="https://discord.gg/EVSEDPDv" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 hover:bg-gray-100 transition-colors" title="Discord">
-                        <Mail size={24} />
-                      </a>
-                      <a href="mailto:NU-launchlabs@northeastern.edu" className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 hover:bg-gray-100 transition-colors" title="Email">
-                        <Mail size={24} />
+                      <a href="https://discord.gg/EVSEDPDv" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-foreground/70 hover:text-red-900 transition-colors font-medium">
+                        <MessageCircle size={20} className="text-red-900" />
+                        Discord
                       </a>
                     </div>
                   </CardContent>
                 </Card>
               </div>
 
-              {/* Contact Form */}
-              <div className="bg-white border border-foreground/10 rounded-lg p-10">
-                <h2 className="font-sans font-bold text-3xl text-foreground mb-8">Send us a Message</h2>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-bold text-foreground mb-2">
-                      Name <span className="text-red-900">*</span>
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
-                      placeholder="Your name"
-                    />
-                  </div>
+              {/* Quick Actions */}
+              <div className="space-y-6">
+                <h2 className="font-sans font-bold text-3xl text-foreground mb-8">Next Steps</h2>
 
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-bold text-foreground mb-2">
-                      Email <span className="text-red-900">*</span>
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
-                      placeholder="your@email.com"
-                    />
-                  </div>
+                <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+                  <CardContent className="p-8">
+                    <h3 className="font-bold text-lg text-foreground mb-3">Ready to Apply?</h3>
+                    <p className="text-foreground/70 mb-6">
+                      Check out our application forms and join Launch Labs.
+                    </p>
+                    <Link href="/forms">
+                      <Button className="w-full bg-red-900 hover:bg-red-900 text-white font-bold h-10 rounded-lg inline-flex items-center justify-center gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
+                        View Forms
+                        <ArrowRight size={16} />
+                      </Button>
+                    </Link>
+                  </CardContent>
+                </Card>
 
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-bold text-foreground mb-2">
-                      Subject <span className="text-red-900">*</span>
-                    </label>
-                    <select
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
-                    >
-                      <option value="General Inquiry">General Inquiry</option>
-                      <option value="Student Interest">Student Interest</option>
-                      <option value="Startup Partnership">Startup Partnership</option>
-                      <option value="Leadership">Leadership</option>
-                      <option value="Technical Issue">Technical Issue</option>
-                      <option value="Other">Other</option>
-                    </select>
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-bold text-foreground mb-2">
-                      Message <span className="text-red-900">*</span>
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                      rows={5}
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all resize-none"
-                      placeholder="Your message..."
-                    ></textarea>
-                  </div>
-
-                  <Button
-                    type="submit"
-                    className="w-full bg-red-900 hover:bg-red-900 text-white font-bold h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2"
-                  >
-                    Send Message
-                    <ArrowRight size={18} />
-                  </Button>
-                </form>
+                <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+                  <CardContent className="p-8">
+                    <h3 className="font-bold text-lg text-foreground mb-3">Explore Teams</h3>
+                    <p className="text-foreground/70 mb-6">
+                      Learn more about our Launch and Innovation teams.
+                    </p>
+                    <Link href="/launch-teams">
+                      <Button className="w-full bg-red-900 hover:bg-red-900 text-white font-bold h-10 rounded-lg inline-flex items-center justify-center gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
+                        View Teams
+                        <ArrowRight size={16} />
+                      </Button>
+                    </Link>
+                  </CardContent>
+                </Card>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Quick Links Section */}
-        <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-3xl text-foreground mb-10">Quick Links</h2>
-            <div className="grid md:grid-cols-3 gap-6">
-              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
-                <CardContent className="p-8 text-center">
-                  <h3 className="font-bold text-lg text-foreground mb-3">Apply Now</h3>
-                  <p className="text-foreground/70 mb-6">
-                    Ready to join Launch Labs? Check out our applications.
-                  </p>
-                  <Link href="/forms">
-                    <Button className="w-full bg-red-900 hover:bg-red-900 text-white font-bold h-10 rounded-lg inline-flex items-center justify-center gap-2">
-                      View Applications
-                      <ArrowRight size={16} />
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
-
-              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
-                <CardContent className="p-8 text-center">
-                  <h3 className="font-bold text-lg text-foreground mb-3">Learn More</h3>
-                  <p className="text-foreground/70 mb-6">
-                    Explore our teams and discover what we do.
-                  </p>
-                  <Link href="/about">
-                    <Button className="w-full bg-red-900 hover:bg-red-900 text-white font-bold h-10 rounded-lg inline-flex items-center justify-center gap-2">
-                      About Us
-                      <ArrowRight size={16} />
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
-
-              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
-                <CardContent className="p-8 text-center">
-                  <h3 className="font-bold text-lg text-foreground mb-3">Partner With Us</h3>
-                  <p className="text-foreground/70 mb-6">
-                    Interested in collaborating with Launch Labs?
-                  </p>
-                  <Link href="/partners">
-                    <Button className="w-full bg-red-900 hover:bg-red-900 text-white font-bold h-10 rounded-lg inline-flex items-center justify-center gap-2">
-                      Learn More
-                      <ArrowRight size={16} />
-                    </Button>
-                  </Link>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </section>
       </main>
-
-      {/* Footer */}
-      <footer className="bg-foreground/5 border-t border-foreground/10 py-16">
-        <div className="container max-w-4xl">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
-            <div>
-              <h4 className="font-bold text-foreground mb-4">Launch Labs</h4>
-              <p className="text-sm text-foreground/70 leading-relaxed">
-                Northeastern University's hub for real-world project work.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Explore</h4>
-              <ul className="space-y-3 text-sm">
-                <li><Link href="/" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Home</Link></li>
-                <li><Link href="/about" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">About</Link></li>
-                <li><Link href="/launch-teams" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Launch Teams</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Get Involved</h4>
-              <ul className="space-y-3 text-sm">
-                <li><Link href="/forms" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Apply</Link></li>
-                <li><Link href="/leadership" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Leadership</Link></li>
-                <li><Link href="/partners" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Partners</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Connect</h4>
-              <ul className="space-y-3 text-sm">
-                <li><a href="#" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">LinkedIn</a></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Instagram</a></li>
-                <li><Link href="/contact" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Contact</Link></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-foreground/10 pt-8 text-center text-sm text-foreground/70">
-            <p>&copy; 2025 Northeastern Launch Labs. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

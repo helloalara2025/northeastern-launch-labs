@@ -43,10 +43,10 @@ export default function Leadership() {
         {/* Header */}
         <section className="bg-white py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h1 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-6 leading-tight">
+            <h1 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-8 leading-tight">
               Our Leadership
             </h1>
-            <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl">
+            <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl font-medium">
               Meet the students driving Launch Labs forward and making real impact across the Northeastern community.
             </p>
           </div>
@@ -55,9 +55,10 @@ export default function Leadership() {
         {/* Team Members */}
         <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
+            <h2 className="font-sans font-bold text-3xl text-foreground mb-14">Leadership Team</h2>
             <div className="grid md:grid-cols-2 gap-8 mb-16">
               {teamMembers.map((member, index) => (
-                <Card key={index} className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow bg-white">
+                <Card key={index} className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
                   <CardContent className="p-8">
                     <div className="w-16 h-16 bg-gray-100 rounded-lg mb-6 flex items-center justify-center">
                       <div className="w-12 h-12 bg-red-900 rounded-md"></div>
@@ -88,18 +89,20 @@ export default function Leadership() {
               ))}
             </div>
 
-            <div className="bg-white border border-foreground/10 rounded-xl p-10 text-center">
-              <h2 className="font-bold text-2xl text-foreground mb-4">Join Our Leadership Team</h2>
-              <p className="text-foreground/70 mb-8">
-                Interested in leading Launch Labs? We're always looking for passionate students to help drive our mission.
-              </p>
-              <Link href="/apply/leadership">
-                <Button className="bg-red-900 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg inline-flex items-center gap-2">
-                  Apply for Leadership
-                  <ArrowRight size={18} />
-                </Button>
-              </Link>
-            </div>
+            <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <CardContent className="p-12 text-center">
+                <h2 className="font-sans font-bold text-3xl text-foreground mb-4">Join Our Leadership Team</h2>
+                <p className="text-foreground/70 mb-10 max-w-2xl mx-auto">
+                  Interested in leading Launch Labs? We are always looking for passionate students to help drive our mission.
+                </p>
+                <Link href="/apply/leadership">
+                  <Button className="bg-red-900 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg inline-flex items-center gap-2 transition-all duration-200">
+                    Apply for Leadership
+                    <ArrowRight size={18} />
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
           </div>
         </section>
       </main>

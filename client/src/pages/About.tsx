@@ -11,10 +11,10 @@ export default function About() {
         {/* Header */}
         <section className="bg-white py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h1 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-6 leading-tight">
+            <h1 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-8 leading-tight">
               About Launch Labs
             </h1>
-            <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl">
+            <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl font-medium">
               Northeastern Launch Labs brings together students across disciplines and experience levels to work on real-world, end-to-end projects that bridge classroom learning with practical impact.
             </p>
           </div>
@@ -23,9 +23,12 @@ export default function About() {
         {/* Our Mission */}
         <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">Our Mission</h2>
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-12">Our Mission</h2>
+            <p className="text-lg text-foreground/70 leading-relaxed mb-6">
+              Our goal is to bring together students across disciplines and experience levels to work on real-world, end-to-end projects that bridge classroom learning with practical impact.
+            </p>
             <p className="text-lg text-foreground/70 leading-relaxed">
-              Our goal is to bring together students across disciplines and experience levels to work on real-world, end-to-end projects that bridge classroom learning with practical impact. Through Launch Teams partnering with startups and Innovation Teams developing internal, end-to-end projects, members gain practical experience tackling real-world problems. The club emphasizes collaboration, professional skill development, and ownership, enabling students to produce portfolio-ready work, strengthen cross-functional teamwork, and explore pathways to entrepreneurship and innovation within and beyond the Northeastern community.
+              Through Launch Teams partnering with startups and Innovation Teams developing internal, end-to-end projects, members gain practical experience tackling real-world problems. The club emphasizes collaboration, professional skill development, and ownership, enabling students to produce portfolio-ready work, strengthen cross-functional teamwork, and explore pathways to entrepreneurship and innovation within and beyond the Northeastern community.
             </p>
           </div>
         </section>
@@ -119,15 +122,16 @@ export default function About() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-white border-t border-white py-24 md:py-32">
+        <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl text-center">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6">Ready to Join Us?</h2>
-            <p className="text-lg text-foreground/70 mb-10">
+            <p className="text-lg text-foreground/70 mb-12">
               Become part of the Launch Labs community and start making real impact.
             </p>
             <Button asChild>
-              <Link href="/forms" className="bg-red-900 hover:bg-red-900 text-white font-bold px-10 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg flex items-center justify-center gap-2 mx-auto">
-                Join
+              <Link href="/forms" className="bg-red-900 hover:bg-red-900 text-white font-bold px-10 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2">
+                Join Us
+                <span>→</span>
               </Link>
             </Button>
           </div>
