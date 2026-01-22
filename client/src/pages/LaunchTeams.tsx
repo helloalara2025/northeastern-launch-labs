@@ -9,26 +9,29 @@ export default function LaunchTeams() {
     {
       id: 1,
       name: "Team Python",
-      description: "Building innovative solutions for early-stage startups",
+      description: "Work on product development and software implementation for early-stage startups",
       members: 4,
       status: "Active",
-      focus: "Product Development"
+      focus: "Product Development",
+      details: "Focus on building and iterating on startup products with hands-on development work"
     },
     {
       id: 2,
       name: "Team Java",
-      description: "Scaling startup operations and infrastructure",
+      description: "Contribute to startup operations, strategy, and business development",
       members: 5,
       status: "Active",
-      focus: "Implementation"
+      focus: "Operations & Strategy",
+      details: "Support founders with go-to-market strategy, operations optimization, and business growth"
     },
     {
       id: 3,
       name: "Team React",
-      description: "Data-driven insights and analytics for startups",
+      description: "Drive data analysis, research, and market insights for startup partners",
       members: 3,
       status: "Active",
-      focus: "Data & Analytics"
+      focus: "Research & Analytics",
+      details: "Conduct market research, analyze data, and provide strategic insights to founders"
     }
   ];
 
@@ -103,8 +106,9 @@ export default function LaunchTeams() {
                         <span className="text-sm text-foreground/70">{team.focus}</span>
                       </div>
                     </div>
-                    <Link href="/apply/launch-team" className="inline-flex items-center gap-2 text-red-900 font-bold hover:gap-3 transition-all duration-200">
-                      Join
+                    <p className="text-sm text-foreground/70 mb-6">{team.details}</p>
+                    <Link href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUNVU1NFZPWkNMSlU3NFlQRlpGNVhWR1lQVS4u" target="_blank" className="inline-flex items-center gap-2 text-red-900 font-bold hover:gap-3 transition-all duration-200">
+                      Apply Now
                       <ArrowRight size={18} />
                     </Link>
                   </CardContent>
@@ -165,6 +169,38 @@ export default function LaunchTeams() {
                   </p>
                 </CardContent>
               </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Application Process */}
+        <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
+          <div className="container max-w-4xl">
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
+              Application Process
+            </h2>
+            <div className="space-y-6">
+              <div className="flex gap-6">
+                <div className="w-12 h-12 rounded-lg bg-red-900 text-white flex items-center justify-center font-bold flex-shrink-0">1</div>
+                <div>
+                  <h3 className="font-bold text-lg text-foreground mb-2">Submit Your Application</h3>
+                  <p className="text-foreground/70">Complete the Launch Team application form with your background, interests, and experience.</p>
+                </div>
+              </div>
+              <div className="flex gap-6">
+                <div className="w-12 h-12 rounded-lg bg-red-900 text-white flex items-center justify-center font-bold flex-shrink-0">2</div>
+                <div>
+                  <h3 className="font-bold text-lg text-foreground mb-2">Team Review</h3>
+                  <p className="text-foreground/70">Our leadership team reviews your application and matches you with the best team based on your skills and interests.</p>
+                </div>
+              </div>
+              <div className="flex gap-6">
+                <div className="w-12 h-12 rounded-lg bg-red-900 text-white flex items-center justify-center font-bold flex-shrink-0">3</div>
+                <div>
+                  <h3 className="font-bold text-lg text-foreground mb-2">Interview & Onboarding</h3>
+                  <p className="text-foreground/70">Meet with your team lead for an interview, then get onboarded to start working on real projects.</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
