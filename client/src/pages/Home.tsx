@@ -10,12 +10,14 @@ export default function Home() {
       <Navigation />
       <main className="pt-24">
         {/* Hero Section */}
-        <section className="bg-white py-24 md:py-32">
-          <div className="container max-w-4xl">
+        <section className="bg-white py-24 md:py-32 relative overflow-hidden">
+          <div className="absolute top-10 right-10 text-red-900/10 text-6xl">✦</div>
+          <div className="absolute bottom-20 left-5 text-red-900/10 text-5xl">◆</div>
+          <div className="container max-w-4xl relative z-10">
             <div className="mb-6 inline-block">
               <span className="inline-block bg-red-900 text-white text-xs font-bold px-3 py-1 rounded-full">Student club at Northeastern University</span>
             </div>
-            <h1 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-6 leading-tight">
+            <h1 className="font-serif font-bold text-6xl md:text-7xl text-foreground mb-6 leading-tight">
               From Idea to Impact.
             </h1>
             <p className="text-xl text-foreground/70 leading-relaxed mb-10 max-w-2xl">
@@ -33,7 +35,7 @@ export default function Home() {
         {/* Mission Section */}
         <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-8">Our Mission</h2>
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-8">Our Mission</h2>
             <p className="text-lg text-foreground/70 leading-relaxed mb-6">
               We bring together students from all backgrounds to work on real-world projects that matter. Through Launch Teams partnering with startups and Innovation Teams developing internal initiatives, members gain practical experience, develop professional skills, and explore pathways to entrepreneurship and innovation.
             </p>
@@ -43,10 +45,13 @@ export default function Home() {
         {/* How We Work Section */}
         <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">How We Work</h2>
+            <div className="flex items-center gap-3 mb-14">
+              <span className="text-red-900/20 text-4xl">✦</span>
+              <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground">How We Work</h2>
+            </div>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Launch Teams Card */}
-              <Card className="border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer h-full bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer h-full bg-white rounded-2xl">
                 <Link href="/launch-teams" className="block h-full">
                   <CardContent className="p-10">
                     <div className="w-14 h-14 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6 group-hover:scale-110 transition-transform duration-300 font-bold text-xl">
@@ -65,7 +70,7 @@ export default function Home() {
               </Card>
 
               {/* Innovation Teams Card */}
-              <Card className="border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer h-full bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 group cursor-pointer h-full bg-white rounded-2xl">
                 <Link href="/innovation-teams" className="block h-full">
                   <CardContent className="p-10">
                     <div className="w-14 h-14 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 mb-6 group-hover:scale-110 transition-transform duration-300 font-bold text-xl">
@@ -89,9 +94,12 @@ export default function Home() {
         {/* What You'll Gain Section */}
         <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
           <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">What You'll Gain</h2>
+            <div className="flex items-center gap-3 mb-14">
+              <span className="text-red-900/20 text-4xl">✦</span>
+              <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground">What You'll Gain</h2>
+            </div>
             <div className="grid md:grid-cols-2 gap-6">
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white rounded-2xl">
                 <CardContent className="p-8">
                   <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-4 font-bold">
                     <Zap className="w-6 h-6" />
@@ -103,7 +111,7 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white rounded-2xl">
                 <CardContent className="p-8">
                   <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-100 mb-4 font-bold">
                     <Users className="w-6 h-6" />
@@ -115,7 +123,7 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white rounded-2xl">
                 <CardContent className="p-8">
                   <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-4 font-bold">
                     <Award className="w-6 h-6" />
@@ -127,7 +135,7 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white rounded-2xl">
                 <CardContent className="p-8">
                   <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-100 mb-4 font-bold">
                     <Rocket className="w-6 h-6" />
@@ -197,7 +205,7 @@ export default function Home() {
           <div className="container max-w-4xl">
             <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">Upcoming Events</h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white rounded-2xl">
                 <CardContent className="p-8">
                   <div className="text-sm font-bold text-red-900 mb-2">Info Session</div>
                   <h3 className="font-bold text-lg text-foreground mb-2">Launch Labs Overview</h3>
@@ -206,7 +214,7 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white rounded-2xl">
                 <CardContent className="p-8">
                   <div className="text-sm font-bold text-red-900 mb-2">Application Deadline</div>
                   <h3 className="font-bold text-lg text-foreground mb-2">Spring 2026 Cohort</h3>

@@ -1,9 +1,12 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Sora:wght@400;500;600;700&display=swap');
+
 @layer base {
   :root {
     --font-sans: "Sora", system-ui, -apple-system, sans-serif;
+    --font-serif: "Playfair Display", serif;
     --font-mono: "Geist Mono", monospace;
   }
 }
