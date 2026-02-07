@@ -22,22 +22,22 @@ export default function LaunchTeams() {
       <Navigation />
       <main className="pt-24">
         {/* Header */}
-        <section className="bg-white py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h1 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-6 leading-tight">
+        <section className="bg-white py-32 md:py-40">
+          <div className="container">
+            <h1 className="font-serif font-bold text-6xl md:text-7xl text-foreground mb-8 leading-tight">
               Launch Teams
             </h1>
-            <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl">
+            <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl">
               Partner directly with early-stage startups to design, build, and deliver real-world solutions.
             </p>
           </div>
         </section>
 
         {/* Table of Contents */}
-        <section className="bg-foreground/5 border-t border-foreground/10 py-12 md:py-16">
-          <div className="container max-w-4xl">
-            <h3 className="font-bold text-sm uppercase tracking-wider text-foreground/60 mb-6">On This Page</h3>
-            <div className="grid md:grid-cols-2 gap-4">
+        <section className="bg-white border-t border-border py-16 md:py-20">
+          <div className="container">
+            <h3 className="font-bold text-sm uppercase tracking-wider text-foreground/60 mb-8">On This Page</h3>
+            <div className="grid md:grid-cols-2 gap-6">
               <a href="#what-we-do" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">What We Do</a>
               <a href="#our-teams" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">Our Teams</a>
               <a href="#key-experiences" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">Key Experiences</a>
@@ -47,16 +47,16 @@ export default function LaunchTeams() {
         </section>
 
         {/* What We Do */}
-        <section id="what-we-do" className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">
+        <section id="what-we-do" className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-12">
               What We Do
             </h2>
-            <div className="space-y-6">
-              <p className="text-lg text-foreground/70 leading-relaxed">
+            <div className="space-y-8">
+              <p className="text-base text-foreground/70 leading-relaxed">
                 Launch Teams work closely with founders and stakeholders on development-focused projects. Members contribute to product development, software or data implementation, prototyping, and iterative testing, alongside strategy and research.
               </p>
-              <p className="text-lg text-foreground/70 leading-relaxed">
+              <p className="text-base text-foreground/70 leading-relaxed">
                 Teams operate with defined scopes, timelines, and deliverables, providing hands-on experience contributing to live products and systems that directly impact real companies.
               </p>
             </div>
@@ -64,34 +64,34 @@ export default function LaunchTeams() {
         </section>
 
         {/* Our Teams */}
-        <section id="our-teams" className="bg-white border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
+        <section id="our-teams" className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-16">
               Our Teams
             </h2>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-10">
               {teams.map((team) => (
-                <Card key={team.id} className="border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 bg-white">
-                  <CardContent className="p-8">
-                    <div className="flex items-start justify-between mb-4">
-                      <h3 className="font-bold text-2xl text-foreground">{team.name}</h3>
-                      <span className="text-xs font-bold px-3 py-1 bg-white text-red-900 rounded-full">{team.status}</span>
+                <Card key={team.id} className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+                  <CardContent className="p-12">
+                    <div className="flex items-start justify-between mb-6">
+                      <h3 className="font-bold text-xl text-foreground">{team.name}</h3>
+                      <span className="text-xs font-bold px-3 py-1 bg-white text-red-900 border border-red-900 rounded-full">{team.status}</span>
                     </div>
-                    <p className="text-foreground/70 leading-relaxed mb-6">{team.description}</p>
-                    <div className="space-y-3 mb-6">
-                      <div className="flex items-center gap-2">
+                    <p className="text-foreground/70 leading-relaxed mb-8 text-sm">{team.description}</p>
+                    <div className="space-y-4 mb-8">
+                      <div className="flex items-center gap-3">
                         <Users size={16} className="text-red-900" />
                         <span className="text-sm text-foreground/70">{team.members} members</span>
                       </div>
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-3">
                         <Briefcase size={16} className="text-red-900" />
                         <span className="text-sm text-foreground/70">{team.focus}</span>
                       </div>
                     </div>
-                    <p className="text-sm text-foreground/70 mb-6">{team.details}</p>
-                    <Link href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUNVU1NFZPWkNMSlU3NFlQRlpGNVhWR1lQVS4u" target="_blank" className="inline-flex items-center gap-2 text-red-900 font-bold hover:gap-3 transition-all duration-200">
+                    <p className="text-sm text-foreground/70 mb-8">{team.details}</p>
+                    <Link href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUNVU1NFZPWkNMSlU3NFlQRlpGNVhWR1lQVS4u" target="_blank" className="inline-flex items-center gap-2 text-red-900 font-semibold hover:gap-3 transition-all duration-200 text-sm">
                       Apply Now
-                      <ArrowRight size={18} />
+                      <ArrowRight size={16} />
                     </Link>
                   </CardContent>
                 </Card>
@@ -101,52 +101,52 @@ export default function LaunchTeams() {
         </section>
 
         {/* Key Experiences */}
-        <section id="key-experiences" className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
+        <section id="key-experiences" className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-16">
               Key Experiences
             </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
-                <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-4 font-bold">
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+                <CardContent className="p-10">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6 font-bold">
                     <Briefcase className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Startup Operations</h3>
-                  <p className="text-foreground/70 leading-relaxed">
+                  <p className="text-foreground/70 leading-relaxed text-sm">
                     Experience firsthand how early-stage companies operate, make decisions, and iterate on their products.
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
-                <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-4 font-bold">
+              <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+                <CardContent className="p-10">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6 font-bold">
                     <TrendingUp className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Real Impact</h3>
-                  <p className="text-foreground/70 leading-relaxed">
+                  <p className="text-foreground/70 leading-relaxed text-sm">
                     Your work directly contributes to products and systems that serve real users and customers.
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
-                <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-4 font-bold">
+              <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+                <CardContent className="p-10">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6 font-bold">
                     <Users className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Professional Development</h3>
-                  <p className="text-foreground/70 leading-relaxed">
+                  <p className="text-foreground/70 leading-relaxed text-sm">
                     Build communication, project management, and stakeholder collaboration skills in real contexts.
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
-                <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-4 font-bold">
+              <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+                <CardContent className="p-10">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6 font-bold">
                     <Code className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Technical Growth</h3>
-                  <p className="text-foreground/70 leading-relaxed">
+                  <p className="text-foreground/70 leading-relaxed text-sm">
                     Develop technical skills across design, engineering, data, and product management disciplines.
                   </p>
                 </CardContent>
@@ -156,31 +156,31 @@ export default function LaunchTeams() {
         </section>
 
         {/* Application Process */}
-        <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
+        <section className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-16">
               Application Process
             </h2>
-            <div className="space-y-6">
+            <div className="space-y-10">
               <div className="flex gap-6">
                 <div className="w-12 h-12 rounded-lg bg-red-900 text-white flex items-center justify-center font-bold flex-shrink-0">1</div>
                 <div>
                   <h3 className="font-bold text-lg text-foreground mb-2">Submit Your Application</h3>
-                  <p className="text-foreground/70">Complete the Launch Team application form with your background, interests, and experience.</p>
+                  <p className="text-foreground/70 text-sm leading-relaxed">Complete the Launch Team application form with your background, interests, and experience.</p>
                 </div>
               </div>
               <div className="flex gap-6">
                 <div className="w-12 h-12 rounded-lg bg-red-900 text-white flex items-center justify-center font-bold flex-shrink-0">2</div>
                 <div>
                   <h3 className="font-bold text-lg text-foreground mb-2">Team Review</h3>
-                  <p className="text-foreground/70">Our leadership team reviews your application and matches you with the best team based on your skills and interests.</p>
+                  <p className="text-foreground/70 text-sm leading-relaxed">Our leadership team reviews your application and matches you with the best team based on your skills and interests.</p>
                 </div>
               </div>
               <div className="flex gap-6">
                 <div className="w-12 h-12 rounded-lg bg-red-900 text-white flex items-center justify-center font-bold flex-shrink-0">3</div>
                 <div>
                   <h3 className="font-bold text-lg text-foreground mb-2">Interview & Onboarding</h3>
-                  <p className="text-foreground/70">Meet with your team lead for an interview, then get onboarded to start working on real projects.</p>
+                  <p className="text-foreground/70 text-sm leading-relaxed">Meet with your team lead for an interview, then get onboarded to start working on real projects.</p>
                 </div>
               </div>
             </div>
@@ -188,37 +188,37 @@ export default function LaunchTeams() {
         </section>
 
         {/* Who Should Apply */}
-        <section id="who-should-apply" className="bg-white border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">
+        <section id="who-should-apply" className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-12">
               Who Should Apply
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-6">
               <div className="flex gap-4">
-                <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-1" />
-                <p className="text-lg text-foreground/70">Students from any discipline or background interested in startup environments</p>
+                <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-0.5" />
+                <p className="text-base text-foreground/70 leading-relaxed">Students from any discipline or background interested in startup environments</p>
               </div>
               <div className="flex gap-4">
-                <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-1" />
-                <p className="text-lg text-foreground/70">Those seeking hands-on experience with real-world product development</p>
+                <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-0.5" />
+                <p className="text-base text-foreground/70 leading-relaxed">Those seeking hands-on experience with real-world product development</p>
               </div>
               <div className="flex gap-4">
-                <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-1" />
-                <p className="text-lg text-foreground/70">Individuals who want to develop professional skills in a collaborative environment</p>
+                <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-0.5" />
+                <p className="text-base text-foreground/70 leading-relaxed">Individuals who want to develop professional skills in a collaborative environment</p>
               </div>
               <div className="flex gap-4">
-                <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-1" />
-                <p className="text-lg text-foreground/70">Anyone passionate about contributing to innovative solutions</p>
+                <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-0.5" />
+                <p className="text-base text-foreground/70 leading-relaxed">Anyone passionate about contributing to innovative solutions</p>
               </div>
             </div>
           </div>
         </section>
 
         {/* CTA */}
-        <section className="bg-gray-100 border-t border-gray-100 py-24 md:py-32">
-          <div className="container max-w-4xl text-center">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6">Ready to Join a Launch Team?</h2>
-            <p className="text-lg text-foreground/70 mb-10">
+        <section className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container text-center">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-8">Ready to Join a Launch Team?</h2>
+            <p className="text-lg text-foreground/70 mb-12 max-w-2xl mx-auto">
               Apply today and start working on real-world projects with early-stage startups.
             </p>
             <Link href="/forms">
@@ -232,42 +232,42 @@ export default function LaunchTeams() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-foreground/5 border-t border-foreground/10 py-16">
-        <div className="container max-w-4xl">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
+      <footer className="bg-white border-t border-border py-20">
+        <div className="container">
+          <div className="grid md:grid-cols-4 gap-16 mb-16">
             <div>
-              <h4 className="font-bold text-foreground mb-4">Launch Labs</h4>
+              <h4 className="font-serif font-bold text-foreground mb-6">Launch Labs</h4>
               <p className="text-sm text-foreground/70 leading-relaxed">
                 Northeastern University's hub for real-world project work.
               </p>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Explore</h4>
+              <h4 className="font-serif font-bold text-foreground mb-6">Explore</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Home</Link></li>
-                <li><Link href="/about" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">About</Link></li>
-                <li><Link href="/innovation-teams" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Innovation Teams</Link></li>
+                <li><Link href="/" className="text-foreground/70 hover:text-red-900 transition-colors">Home</Link></li>
+                <li><Link href="/about" className="text-foreground/70 hover:text-red-900 transition-colors">About</Link></li>
+                <li><Link href="/innovation-teams" className="text-foreground/70 hover:text-red-900 transition-colors">Innovation Teams</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Get Involved</h4>
+              <h4 className="font-serif font-bold text-foreground mb-6">Get Involved</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/forms" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Apply</Link></li>
-                <li><Link href="/leadership" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Leadership</Link></li>
-                <li><Link href="/partners" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Partners</Link></li>
+                <li><Link href="/forms" className="text-foreground/70 hover:text-red-900 transition-colors">Apply</Link></li>
+                <li><Link href="/leadership" className="text-foreground/70 hover:text-red-900 transition-colors">Leadership</Link></li>
+                <li><Link href="/partners" className="text-foreground/70 hover:text-red-900 transition-colors">Partners</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Connect</h4>
+              <h4 className="font-serif font-bold text-foreground mb-6">Connect</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/contact" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Contact</Link></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">LinkedIn</a></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Instagram</a></li>
+                <li><Link href="/contact" className="text-foreground/70 hover:text-red-900 transition-colors">Contact</Link></li>
+                <li><a href="https://www.linkedin.com/company/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-red-900 transition-colors">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-red-900 transition-colors">Instagram</a></li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-foreground/10 pt-8 text-center text-sm text-foreground/70">
-            <p>&copy; 2025 Northeastern Launch Labs. All rights reserved.</p>
+          <div className="border-t border-border pt-8 text-center text-sm text-foreground/70">
+            <p>&copy; 2026 Northeastern Launch Labs. All rights reserved.</p>
           </div>
         </div>
       </footer>

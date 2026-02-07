@@ -22,34 +22,34 @@ export default function InnovationTeams() {
       <Navigation />
       <main className="pt-24">
         {/* Header */}
-        <section className="bg-white py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h1 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-6 leading-tight">
+        <section className="bg-white py-32 md:py-40">
+          <div className="container">
+            <h1 className="font-serif font-bold text-6xl md:text-7xl text-foreground mb-8 leading-tight">
               Innovation Teams
             </h1>
-            <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl">
+            <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl">
               Lead end-to-end projects designed to mirror real-world professional work and develop your leadership skills.
             </p>
           </div>
         </section>
 
         {/* Table of Contents */}
-        <section className="bg-foreground/5 border-t border-foreground/10 py-12 md:py-16">
-          <div className="container max-w-4xl">
+        <section className="bg-white border-t border-border py-12 md:py-16">
+          <div className="container">
             <h3 className="font-bold text-sm uppercase tracking-wider text-foreground/60 mb-6">On This Page</h3>
             <div className="grid md:grid-cols-2 gap-4">
-              <a href="#what-we-do" className="text-foreground/70 hover:text-gray-100 transition-colors font-medium text-sm">What We Do</a>
-              <a href="#our-teams" className="text-foreground/70 hover:text-gray-100 transition-colors font-medium text-sm">Our Teams</a>
-              <a href="#key-experiences" className="text-foreground/70 hover:text-gray-100 transition-colors font-medium text-sm">Key Experiences</a>
-              <a href="#who-should-apply" className="text-foreground/70 hover:text-gray-100 transition-colors font-medium text-sm">Who Should Apply</a>
+              <a href="#what-we-do" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">What We Do</a>
+              <a href="#our-teams" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">Our Teams</a>
+              <a href="#key-experiences" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">Key Experiences</a>
+              <a href="#who-should-apply" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">Who Should Apply</a>
             </div>
           </div>
         </section>
 
         {/* What We Do */}
-        <section id="what-we-do" className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">
+        <section id="what-we-do" className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-10">
               What We Do
             </h2>
             <div className="space-y-6">
@@ -64,27 +64,27 @@ export default function InnovationTeams() {
         </section>
 
         {/* Our Teams */}
-        <section id="our-teams" className="bg-white border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
+        <section id="our-teams" className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-16">
               Our Teams
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {teams.map((team) => (
-                <Card key={team.id} className="border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 bg-white">
-                  <CardContent className="p-8">
+                <Card key={team.id} className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
+                  <CardContent className="p-10">
                     <div className="flex items-start justify-between mb-4">
                       <h3 className="font-bold text-2xl text-foreground">{team.name}</h3>
-                      <span className="text-xs font-bold px-3 py-1 bg-gray-100 text-gray-100 rounded-full">{team.status}</span>
+                      <span className="text-xs font-bold px-3 py-1 bg-gray-100 text-red-900 rounded-full">{team.status}</span>
                     </div>
                     <p className="text-foreground/70 leading-relaxed mb-6">{team.description}</p>
                     <div className="space-y-3 mb-6">
                       <div className="flex items-center gap-2">
-                        <Users size={16} className="text-gray-100" />
+                        <Users size={16} className="text-red-900" />
                         <span className="text-sm text-foreground/70">{team.members} members</span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <Lightbulb size={16} className="text-gray-100" />
+                        <Lightbulb size={16} className="text-red-900" />
                         <span className="text-sm text-foreground/70">{team.focus}</span>
                       </div>
                     </div>
@@ -101,15 +101,15 @@ export default function InnovationTeams() {
         </section>
 
         {/* Key Experiences */}
-        <section id="key-experiences" className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
+        <section id="key-experiences" className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-16">
               Key Experiences
             </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
-                <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-100 mb-4 font-bold">
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
+                <CardContent className="p-10">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-4 font-bold">
                     <Target className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">End-to-End Leadership</h3>
@@ -118,9 +118,9 @@ export default function InnovationTeams() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
-                <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-100 mb-4 font-bold">
+              <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
+                <CardContent className="p-10">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-4 font-bold">
                     <Zap className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Strategic Thinking</h3>
@@ -129,9 +129,9 @@ export default function InnovationTeams() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
-                <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-100 mb-4 font-bold">
+              <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
+                <CardContent className="p-10">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-4 font-bold">
                     <Users className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Team Collaboration</h3>
@@ -140,9 +140,9 @@ export default function InnovationTeams() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
-                <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-gray-100 mb-4 font-bold">
+              <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
+                <CardContent className="p-10">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-4 font-bold">
                     <Lightbulb className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Innovation & Creativity</h3>
@@ -156,9 +156,9 @@ export default function InnovationTeams() {
         </section>
 
         {/* Application Process */}
-        <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
+        <section className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-16">
               Application Process
             </h2>
             <div className="space-y-6">
@@ -188,26 +188,26 @@ export default function InnovationTeams() {
         </section>
 
         {/* Who Should Apply */}
-        <section id="who-should-apply" className="bg-white border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">
+        <section id="who-should-apply" className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-10">
               Who Should Apply
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-6">
               <div className="flex gap-4">
-                <CheckCircle className="w-6 h-6 text-gray-100 flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-1" />
                 <p className="text-lg text-foreground/70">Students interested in leadership and project ownership</p>
               </div>
               <div className="flex gap-4">
-                <CheckCircle className="w-6 h-6 text-gray-100 flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-1" />
                 <p className="text-lg text-foreground/70">Those seeking to develop strategic thinking and execution skills</p>
               </div>
               <div className="flex gap-4">
-                <CheckCircle className="w-6 h-6 text-gray-100 flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-1" />
                 <p className="text-lg text-foreground/70">Individuals passionate about innovation and problem-solving</p>
               </div>
               <div className="flex gap-4">
-                <CheckCircle className="w-6 h-6 text-gray-100 flex-shrink-0 mt-1" />
+                <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-1" />
                 <p className="text-lg text-foreground/70">Anyone from any background ready to lead and make an impact</p>
               </div>
             </div>
@@ -215,9 +215,9 @@ export default function InnovationTeams() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gray-100 border-t border-gray-100 py-24 md:py-32">
-          <div className="container max-w-4xl text-center">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6">Ready to Lead an Innovation Team?</h2>
+        <section className="bg-gray-100 border-t border-border py-32 md:py-40">
+          <div className="container text-center">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-6">Ready to Lead an Innovation Team?</h2>
             <p className="text-lg text-foreground/70 mb-10">
               Apply today and take ownership of a project that matters.
             </p>
@@ -232,9 +232,9 @@ export default function InnovationTeams() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-foreground/5 border-t border-foreground/10 py-16">
-        <div className="container max-w-4xl">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
+      <footer className="bg-white border-t border-border py-16">
+        <div className="container">
+          <div className="grid md:grid-cols-4 gap-16 mb-12">
             <div>
               <h4 className="font-bold text-foreground mb-4">Launch Labs</h4>
               <p className="text-sm text-foreground/70 leading-relaxed">
@@ -266,7 +266,7 @@ export default function InnovationTeams() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-foreground/10 pt-8 text-center text-sm text-foreground/70">
+          <div className="border-t border-border pt-8 text-center text-sm text-foreground/70">
             <p>&copy; 2025 Northeastern Launch Labs. All rights reserved.</p>
           </div>
         </div>

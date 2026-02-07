@@ -10,35 +10,35 @@ export default function Forms() {
       <Navigation />
       <main className="pt-24">
         {/* Header */}
-        <section className="bg-white py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h1 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-6 leading-tight">
+        <section className="bg-white py-32 md:py-40">
+          <div className="container">
+            <h1 className="font-serif font-bold text-6xl md:text-7xl text-foreground mb-8 leading-tight">
               Get Involved
             </h1>
-            <p className="text-xl text-foreground/70 leading-relaxed">
+            <p className="text-lg text-foreground/70 leading-relaxed">
               Join Northeastern Launch Labs and start working on real-world projects.
             </p>
           </div>
         </section>
 
         {/* Quick Links Section */}
-        <section className="bg-white border-t border-foreground/10 py-12 md:py-16">
-          <div className="container max-w-4xl">
+        <section className="bg-white border-t border-border py-12 md:py-16">
+          <div className="container">
             <h3 className="font-sans font-bold text-lg text-foreground/60 mb-6 uppercase tracking-wider">Quick Links</h3>
             <div className="grid md:grid-cols-4 gap-4">
-              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUOVlLR1RJSllIQUFSWFBLSDdBNjg2Wk5IOS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 border-2 border-red-900 bg-white hover:bg-white text-red-900 font-bold rounded-lg transition-all duration-200 shadow-sm hover:shadow-md gap-2">
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUOVlLR1RJSllIQUFSWFBLSDdBNjg2Wk5IOS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 border-2 border-red-900 bg-white hover:bg-white text-red-900 font-bold rounded-lg transition-all duration-200 border-border hover:border-border gap-2">
                 Interest Form
                 <ArrowRight size={16} />
               </a>
-              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUNVU1NFZPWkNMSlU3NFlQRlpGNVhWR1lQVS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 border-2 border-red-900 bg-white hover:bg-white text-red-900 font-bold rounded-lg transition-all duration-200 shadow-sm hover:shadow-md gap-2">
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUNVU1NFZPWkNMSlU3NFlQRlpGNVhWR1lQVS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 border-2 border-red-900 bg-white hover:bg-white text-red-900 font-bold rounded-lg transition-all duration-200 border-border hover:border-border gap-2">
                 Launch Team App
                 <ArrowRight size={16} />
               </a>
-              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 border-2 border-red-900 bg-white hover:bg-white text-red-900 font-bold rounded-lg transition-all duration-200 shadow-sm hover:shadow-md gap-2">
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 border-2 border-red-900 bg-white hover:bg-white text-red-900 font-bold rounded-lg transition-all duration-200 border-border hover:border-border gap-2">
                 Innovation App
                 <ArrowRight size={16} />
               </a>
-              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 border-2 border-red-900 bg-white hover:bg-white text-red-900 font-bold rounded-lg transition-all duration-200 shadow-sm hover:shadow-md gap-2">
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 border-2 border-red-900 bg-white hover:bg-white text-red-900 font-bold rounded-lg transition-all duration-200 border-border hover:border-border gap-2">
                 Leadership App
                 <ArrowRight size={16} />
               </a>
@@ -47,12 +47,12 @@ export default function Forms() {
         </section>
 
         {/* Express Interest Section */}
-        <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">Join</h2>
+        <section className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-10">Join</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Join Launch Teams */}
-              <Card className="border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 bg-white">
+              <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
                 <CardContent className="p-10">
                   <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6 font-bold">
                     <FileText className="w-6 h-6" />
@@ -69,9 +69,9 @@ export default function Forms() {
               </Card>
 
               {/* Join Innovation Teams */}
-              <Card className="border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 bg-white">
+              <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 mb-6 font-bold">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6 font-bold">
                     <Lightbulb className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-2xl text-foreground mb-4">Innovation Team Application</h3>
@@ -89,10 +89,10 @@ export default function Forms() {
         </section>
 
         {/* Leadership Application */}
-        <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">Leadership Opportunities</h2>
-            <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+        <section className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-10">Leadership Opportunities</h2>
+            <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
               <CardContent className="p-10">
                 <div className="flex gap-6 items-start">
                   <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 flex-shrink-0 font-bold">
@@ -115,15 +115,15 @@ export default function Forms() {
         </section>
 
         {/* Propose a Project */}
-        <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">Propose a Project</h2>
+        <section className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-10">Propose a Project</h2>
             <p className="text-lg text-foreground/70 leading-relaxed mb-10">
               Have an idea for a startup collaboration or internal initiative? We'd love to hear from you. Submit your project proposal and choose which team structure works best.
             </p>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Launch Team Project */}
-              <Card className="border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 bg-white">
+              <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
                 <CardContent className="p-10">
                   <h3 className="font-bold text-xl text-foreground mb-4">Startup Collaboration</h3>
                   <p className="text-foreground/70 leading-relaxed mb-8">
@@ -137,7 +137,7 @@ export default function Forms() {
               </Card>
 
               {/* Innovation Team Project */}
-              <Card className="border border-gray-100 shadow-sm hover:shadow-lg transition-all duration-300 bg-white">
+              <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
                 <CardContent className="p-10">
                   <h3 className="font-bold text-xl text-foreground mb-4">Internal Innovation Project</h3>
                   <p className="text-foreground/70 leading-relaxed mb-8">
@@ -154,12 +154,12 @@ export default function Forms() {
         </section>
 
         {/* FAQ Section */}
-        <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">Frequently Asked Questions</h2>
+        <section className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-16">Frequently Asked Questions</h2>
             <div className="space-y-6">
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
-                <CardContent className="p-8">
+              <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
+                <CardContent className="p-10">
                   <h3 className="font-bold text-lg text-foreground mb-3">What's the difference between Launch Teams and Innovation Teams?</h3>
                   <p className="text-foreground/70 leading-relaxed">
                     Launch Teams work directly with external startups on real product development. Innovation Teams focus on internally scoped projects designed to mirror real-world professional work. Both provide hands-on experience and skill development.
@@ -167,8 +167,8 @@ export default function Forms() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
-                <CardContent className="p-8">
+              <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
+                <CardContent className="p-10">
                   <h3 className="font-bold text-lg text-foreground mb-3">Do I need prior experience to apply?</h3>
                   <p className="text-foreground/70 leading-relaxed">
                     No! We welcome students from all disciplines and experience levels. Whether you're an engineer, designer, business student, or something else entirely, we have opportunities for you.
@@ -176,8 +176,8 @@ export default function Forms() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
-                <CardContent className="p-8">
+              <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
+                <CardContent className="p-10">
                   <h3 className="font-bold text-lg text-foreground mb-3">How much time does this require?</h3>
                   <p className="text-foreground/70 leading-relaxed">
                     Time commitment varies by project and team. We'll discuss expectations during the application process and matching phase to ensure it works with your schedule.
@@ -185,8 +185,8 @@ export default function Forms() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
-                <CardContent className="p-8">
+              <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
+                <CardContent className="p-10">
                   <h3 className="font-bold text-lg text-foreground mb-3">Can I apply for both Launch and Innovation Teams?</h3>
                   <p className="text-foreground/70 leading-relaxed">
                     Yes! You can express interest in both. During the matching process, we'll help you find the best fit based on your interests and availability.
@@ -194,8 +194,8 @@ export default function Forms() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
-                <CardContent className="p-8">
+              <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
+                <CardContent className="p-10">
                   <h3 className="font-bold text-lg text-foreground mb-3">When are applications open?</h3>
                   <p className="text-foreground/70 leading-relaxed">
                     We accept applications on a rolling basis throughout the year. Check back regularly for updates on application windows and deadlines.
@@ -207,9 +207,9 @@ export default function Forms() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-white border-t border-white py-24 md:py-32">
-          <div className="container max-w-4xl text-center">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-6">Ready to Get Started?</h2>
+        <section className="bg-white border-t border-white py-32 md:py-40">
+          <div className="container text-center">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-6">Ready to Get Started?</h2>
             <p className="text-lg text-foreground/70 mb-10">
               Apply to join a team or propose your own project. We're excited to work with you!
             </p>
@@ -224,9 +224,9 @@ export default function Forms() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-foreground/5 border-t border-foreground/10 py-16">
-        <div className="container max-w-4xl">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
+      <footer className="bg-white border-t border-border py-16">
+        <div className="container">
+          <div className="grid md:grid-cols-4 gap-16 mb-12">
             <div>
               <h4 className="font-bold text-foreground mb-4">Launch Labs</h4>
               <p className="text-sm text-foreground/70 leading-relaxed">
@@ -258,7 +258,7 @@ export default function Forms() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-foreground/10 pt-8 text-center text-sm text-foreground/70">
+          <div className="border-t border-border pt-8 text-center text-sm text-foreground/70">
             <p>&copy; 2025 Northeastern Launch Labs. All rights reserved.</p>
           </div>
         </div>

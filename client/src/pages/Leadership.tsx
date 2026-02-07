@@ -41,25 +41,25 @@ export default function Leadership() {
       <Navigation />
       <main className="pt-16">
         {/* Header */}
-        <section className="bg-white py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h1 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-8 leading-tight">
+        <section className="bg-white py-32 md:py-40">
+          <div className="container">
+            <h1 className="font-serif font-bold text-6xl md:text-7xl text-foreground mb-8 leading-tight">
               Our Leadership
             </h1>
-            <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl font-medium">
+            <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl font-medium">
               Meet the students driving Launch Labs forward and making real impact across the Northeastern community.
             </p>
           </div>
         </section>
 
         {/* Team Members */}
-        <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-3xl text-foreground mb-14">Leadership Team</h2>
+        <section className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-sans font-bold text-3xl text-foreground mb-16">Leadership Team</h2>
             <div className="grid md:grid-cols-2 gap-8 mb-16">
               {teamMembers.map((member, index) => (
-                <Card key={index} className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
-                  <CardContent className="p-8">
+                <Card key={index} className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
+                  <CardContent className="p-10">
                     <div className="w-16 h-16 bg-gray-100 rounded-lg mb-6 flex items-center justify-center">
                       <div className="w-12 h-12 bg-red-900 rounded-md"></div>
                     </div>
@@ -71,14 +71,14 @@ export default function Leadership() {
                     <div className="flex gap-3">
                       <a 
                         href={`mailto:${member.email}`}
-                        className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 hover:bg-gray-100 transition-colors"
+                        className="w-10 h-10 rounded-lg bg-white flex items-center justify-center text-red-900 hover:bg-gray-100 transition-colors"
                         title="Email"
                       >
                         <Mail size={18} />
                       </a>
                       <a 
                         href={member.linkedin}
-                        className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 hover:bg-gray-100 transition-colors"
+                        className="w-10 h-10 rounded-lg bg-white flex items-center justify-center text-red-900 hover:bg-gray-100 transition-colors"
                         title="LinkedIn"
                       >
                         <Linkedin size={18} />
@@ -89,7 +89,7 @@ export default function Leadership() {
               ))}
             </div>
 
-            <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+            <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
               <CardContent className="p-12 text-center">
                 <h2 className="font-sans font-bold text-3xl text-foreground mb-4">Join Our Leadership Team</h2>
                 <p className="text-foreground/70 mb-10 max-w-2xl mx-auto">
@@ -108,9 +108,9 @@ export default function Leadership() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-foreground/5 border-t border-foreground/10 py-16">
-        <div className="container max-w-4xl">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
+      <footer className="bg-white border-t border-border py-16">
+        <div className="container">
+          <div className="grid md:grid-cols-4 gap-16 mb-12">
             <div>
               <h4 className="font-bold text-foreground mb-4">Launch Labs</h4>
               <p className="text-sm text-foreground/70 leading-relaxed">
@@ -142,7 +142,7 @@ export default function Leadership() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-foreground/10 pt-8 text-center text-sm text-foreground/70">
+          <div className="border-t border-border pt-8 text-center text-sm text-foreground/70">
             <p>&copy; 2025 Northeastern Launch Labs. All rights reserved.</p>
           </div>
         </div>

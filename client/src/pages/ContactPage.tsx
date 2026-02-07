@@ -10,30 +10,30 @@ export default function ContactPage() {
       <Navigation />
       <main className="pt-24">
         {/* Header */}
-        <section className="bg-white py-24 md:py-32">
-          <div className="container max-w-4xl text-center">
-            <h1 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-6 leading-tight">
+        <section className="bg-white py-32 md:py-40">
+          <div className="container text-center">
+            <h1 className="font-serif font-bold text-6xl md:text-7xl text-foreground mb-8 leading-tight">
               Get In Touch
             </h1>
-            <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl mx-auto">
               Have questions? Want to collaborate? Reach out to us directly.
             </p>
           </div>
         </section>
 
         {/* Contact Section */}
-        <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <div className="grid md:grid-cols-2 gap-12">
+        <section className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <div className="grid md:grid-cols-2 gap-16">
               {/* Contact Info */}
               <div className="space-y-6">
                 <h2 className="font-sans font-bold text-3xl text-foreground mb-8">Contact Us</h2>
 
                 {/* Email */}
-                <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
-                  <CardContent className="p-8">
+                <Card className="border border-border border-border hover:border-border transition-all duration-300">
+                  <CardContent className="p-10">
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 flex-shrink-0">
+                      <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 flex-shrink-0">
                         <Mail className="w-6 h-6" />
                       </div>
                       <div>
@@ -47,8 +47,8 @@ export default function ContactPage() {
                 </Card>
 
                 {/* Social Links */}
-                <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
-                  <CardContent className="p-8">
+                <Card className="border border-border border-border hover:border-border transition-all duration-300">
+                  <CardContent className="p-10">
                     <h3 className="font-bold text-lg text-foreground mb-6">Follow Us</h3>
                     <div className="space-y-3">
                       <a href="https://www.linkedin.com/company/nulaunchlabs" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-foreground/70 hover:text-red-900 transition-colors font-medium">
@@ -72,8 +72,8 @@ export default function ContactPage() {
               <div className="space-y-6">
                 <h2 className="font-sans font-bold text-3xl text-foreground mb-8">Next Steps</h2>
 
-                <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
-                  <CardContent className="p-8">
+                <Card className="border border-border border-border hover:border-border transition-all duration-300">
+                  <CardContent className="p-10">
                     <h3 className="font-bold text-lg text-foreground mb-3">Ready to Apply?</h3>
                     <p className="text-foreground/70 mb-6">
                       Check out our application forms and join Launch Labs.
@@ -87,8 +87,8 @@ export default function ContactPage() {
                   </CardContent>
                 </Card>
 
-                <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
-                  <CardContent className="p-8">
+                <Card className="border border-border border-border hover:border-border transition-all duration-300">
+                  <CardContent className="p-10">
                     <h3 className="font-bold text-lg text-foreground mb-3">Explore Teams</h3>
                     <p className="text-foreground/70 mb-6">
                       Learn more about our Launch and Innovation teams.

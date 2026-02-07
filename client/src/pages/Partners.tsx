@@ -10,27 +10,27 @@ export default function Partners() {
       <Navigation />
       <main className="pt-16">
         {/* Header */}
-        <section className="bg-white py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h1 className="font-sans font-bold text-6xl md:text-7xl text-foreground mb-6 leading-tight">
+        <section className="bg-white py-32 md:py-40">
+          <div className="container">
+            <h1 className="font-serif font-bold text-6xl md:text-7xl text-foreground mb-8 leading-tight">
               Our Startup Partners
             </h1>
-            <p className="text-xl text-foreground/70 leading-relaxed max-w-2xl">
+            <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl">
               Launch Labs works with forward-thinking startups committed to providing meaningful learning experiences.
             </p>
           </div>
         </section>
 
         {/* Why Partner Section */}
-        <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
+        <section className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-16">
               Why Partner With Us?
             </h2>
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-8">
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
-                <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 mb-6">
+                <CardContent className="p-10">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6">
                     <Users className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Skilled Student Teams</h3>
@@ -41,8 +41,8 @@ export default function Partners() {
               </Card>
 
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
-                <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 mb-6">
+                <CardContent className="p-10">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6">
                     <TrendingUp className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Cost-Effective Development</h3>
@@ -53,8 +53,8 @@ export default function Partners() {
               </Card>
 
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
-                <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 mb-6">
+                <CardContent className="p-10">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6">
                     <Zap className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Fresh Perspectives</h3>
@@ -65,8 +65,8 @@ export default function Partners() {
               </Card>
 
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
-                <CardContent className="p-8">
-                  <div className="w-12 h-12 rounded-lg bg-gray-100 flex items-center justify-center text-red-900 mb-6">
+                <CardContent className="p-10">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6">
                     <Clock className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Flexible Commitment</h3>
@@ -80,9 +80,9 @@ export default function Partners() {
         </section>
 
         {/* Current Partners */}
-        <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-10">
+        <section className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-10">
               Current Startup Partners
             </h2>
             <div className="bg-foreground/5 border border-foreground/10 rounded-xl p-10 text-center">
@@ -94,9 +94,9 @@ export default function Partners() {
         </section>
 
         {/* How It Works */}
-        <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
-          <div className="container max-w-4xl">
-            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">
+        <section className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-16">
               How It Works
             </h2>
             <div className="space-y-8">
@@ -157,8 +157,8 @@ export default function Partners() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gray-100 border-t border-gray-100 py-24 md:py-32">
-          <div className="container max-w-4xl text-center">
+        <section className="bg-gray-100 border-t border-border py-32 md:py-40">
+          <div className="container text-center">
             <h2 className="font-bold text-3xl text-foreground mb-4">Interested in Partnering?</h2>
             <p className="text-foreground/70 mb-10 text-lg">
               Let's talk about how Launch Labs can support your startup's growth.
@@ -174,9 +174,9 @@ export default function Partners() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-foreground/5 border-t border-foreground/10 py-16">
-        <div className="container max-w-4xl">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
+      <footer className="bg-white border-t border-border py-16">
+        <div className="container">
+          <div className="grid md:grid-cols-4 gap-16 mb-12">
             <div>
               <h4 className="font-bold text-foreground mb-4">Launch Labs</h4>
               <p className="text-sm text-foreground/70 leading-relaxed">
@@ -208,7 +208,7 @@ export default function Partners() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-foreground/10 pt-8 text-center text-sm text-foreground/70">
+          <div className="border-t border-border pt-8 text-center text-sm text-foreground/70">
             <p>&copy; 2025 Northeastern Launch Labs. All rights reserved.</p>
           </div>
         </div>

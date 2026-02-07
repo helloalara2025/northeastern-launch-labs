@@ -1,11 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Sora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    --font-sans: "Sora", system-ui, -apple-system, sans-serif;
+    --font-sans: "Inter", system-ui, -apple-system, sans-serif;
     --font-serif: "Playfair Display", serif;
     --font-mono: "Geist Mono", monospace;
   }
@@ -50,17 +50,21 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  --font-sans: "Sora", system-ui, -apple-system, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
 }
 
 /* 
-  Design Philosophy: Professional Northeastern Launch Labs Branding
-  - Primary: Deep Red (#980000) - NU Brand Identity
-  - Secondary: Pure Black (#000000) - Strong Contrast
-  - Tertiary: Clean White (#FFFFFF) - Clean Backgrounds
-  - Text: Dark Charcoal (#1F2937) - High Readability
-  - Accent: Light Gray (#F3F4F6) - Subtle Backgrounds
-  - All colors meet WCAG AAA accessibility standards
+  Design Philosophy: Notion + Figma Precision
+  - Serif Headers: Playfair Display for strong, elegant primary headings
+  - Sans-serif Body: Inter for high-legibility, professional body text
+  - Letter-spacing: Tighter on large headings, normal on body
+  - Line-height: 1.6-1.7 for body paragraphs, 1.2 for headings
+  - Borders: 1px solid #E5E7EB (minimalist, light gray)
+  - Shadows: Micro-shadows on hover only
+  - Border Radius: 8-12px soft-square range
+  - Background: Off-white #F9FAFB for canvas, white for cards
+  - Red-900: High-signal accent only (buttons, active states)
+  - Spacing: Generous white space for airy workspace feel
 */
 
 :root {
@@ -75,7 +79,7 @@
   --chart-4: #1F2937;
   --chart-5: #980000;
   
-  --radius: 0.5rem;
+  --radius: 0.75rem;
   
   /* Light Mode */
   --background: #FFFFFF;
@@ -102,6 +106,12 @@
   --border: #E5E7EB;
   --input: #F3F4F6;
   --ring: #980000;
+  
+  /* Notion + Figma refinements */
+  --shadow-micro: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
   
   --sidebar: #F9FAFB;
   --sidebar-foreground: #1F2937;
@@ -142,6 +152,12 @@
   --input: #F3F4F6;
   --ring: #980000;
   
+  /* Notion + Figma refinements */
+  --shadow-micro: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  
   --chart-1: #980000;
   --chart-2: #000000;
   --chart-3: #FFFFFF;
@@ -161,7 +177,37 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+  
+  /* Serif headers: tight letter-spacing, strong hierarchy */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-bold;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    @apply text-6xl md:text-7xl;
+  }
+  
+  h2 {
+    @apply text-4xl md:text-5xl;
+  }
+  
+  h3 {
+    @apply text-2xl;
+  }
+  
+  /* Body text: generous line-height for readability */
+  p, li, span {
+    line-height: 1.6;
+    letter-spacing: 0;
+  }
+  
+  /* Links and interactive elements */
+  a, button {
+    @apply transition-all duration-200;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -177,6 +223,34 @@
 }
 
 @layer components {
+  /* Card styling: minimalist borders, micro-shadows on hover */
+  .card {
+    @apply border border-border bg-card text-card-foreground rounded-lg;
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .card:hover {
+    box-shadow: var(--shadow-md);
+  }
+  
+  /* Button styling: red-900 primary, minimalist secondary */
+  button {
+    @apply rounded-lg transition-all duration-200;
+  }
+  
+  button:hover:not(:disabled) {
+    box-shadow: var(--shadow-md);
+  }
+  
+  /* Spacing utilities for airy layout */
+  .section-spacing {
+    @apply py-24 md:py-32;
+  }
+  
+  .section-spacing-lg {
+    @apply py-32 md:py-40;
+  }
+  
   .container {
     width: 100%;
     margin-left: auto;
@@ -201,7 +275,7 @@
     .container {
       padding-left: 2rem;
       padding-right: 2rem;
-      max-width: 1280px;
+      max-width: 896px;
     }
   }
 }
