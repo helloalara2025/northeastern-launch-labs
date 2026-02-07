@@ -189,8 +189,39 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
 
-            <div className="mt-16 p-10 bg-white border border-white rounded-lg text-center">
+        {/* Upcoming Events Section */}
+        <section className="bg-foreground/5 border-t border-foreground/10 py-24 md:py-32">
+          <div className="container max-w-4xl">
+            <h2 className="font-sans font-bold text-4xl md:text-5xl text-foreground mb-14">Upcoming Events</h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+                <CardContent className="p-8">
+                  <div className="text-sm font-bold text-red-900 mb-2">Info Session</div>
+                  <h3 className="font-bold text-lg text-foreground mb-2">Launch Labs Overview</h3>
+                  <p className="text-foreground/70 text-sm mb-4">Learn about our Launch Teams and Innovation Teams, meet the leadership, and ask questions about the application process.</p>
+                  <p className="text-xs text-foreground/50">Date and time coming soon</p>
+                </CardContent>
+              </Card>
+
+              <Card className="border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 bg-white">
+                <CardContent className="p-8">
+                  <div className="text-sm font-bold text-red-900 mb-2">Application Deadline</div>
+                  <h3 className="font-bold text-lg text-foreground mb-2">Spring 2026 Cohort</h3>
+                  <p className="text-foreground/70 text-sm mb-4">Submit your application to join our next cohort of Launch Teams and Innovation Teams.</p>
+                  <p className="text-xs text-foreground/50">Date coming soon</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="bg-white border-t border-foreground/10 py-24 md:py-32">
+          <div className="container max-w-4xl">
+            <div className="p-10 bg-white border border-white rounded-lg text-center">
               <p className="text-foreground font-semibold mb-6 text-lg">Ready to get started?</p>
               <Button asChild>
                 <Link href="/forms" className="bg-red-900 hover:bg-red-900 text-white font-bold px-10 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2">

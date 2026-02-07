@@ -14,24 +14,6 @@ export default function LaunchTeams() {
       status: "Active",
       focus: "Product Development",
       details: "Focus on building and iterating on startup products with hands-on development work"
-    },
-    {
-      id: 2,
-      name: "Team Java",
-      description: "Contribute to startup operations, strategy, and business development",
-      members: 5,
-      status: "Active",
-      focus: "Operations & Strategy",
-      details: "Support founders with go-to-market strategy, operations optimization, and business growth"
-    },
-    {
-      id: 3,
-      name: "Team React",
-      description: "Drive data analysis, research, and market insights for startup partners",
-      members: 3,
-      status: "Active",
-      focus: "Research & Analytics",
-      details: "Conduct market research, analyze data, and provide strategic insights to founders"
     }
   ];
 

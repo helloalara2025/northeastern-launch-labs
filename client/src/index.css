@@ -51,14 +51,13 @@
 }
 
 /* 
-  Design Philosophy: Light Mode with Colorful, Accessible Palette
-  Inspired by Notion and Figma
-  - Primary: Vibrant Blue (#3B82F6)
-  - Secondary: Vibrant Purple (#8B5CF6)
-  - Accent: Vibrant Green (#10B981)
-  - Background: Clean White (#FFFFFF)
-  - Text: Dark Charcoal (#1F2937)
-  - All colors meet WCAG AA accessibility standards
+  Design Philosophy: Professional Northeastern Launch Labs Branding
+  - Primary: Deep Red (#980000) - NU Brand Identity
+  - Secondary: Pure Black (#000000) - Strong Contrast
+  - Tertiary: Clean White (#FFFFFF) - Clean Backgrounds
+  - Text: Dark Charcoal (#1F2937) - High Readability
+  - Accent: Light Gray (#F3F4F6) - Subtle Backgrounds
+  - All colors meet WCAG AAA accessibility standards
 */
 
 :root {

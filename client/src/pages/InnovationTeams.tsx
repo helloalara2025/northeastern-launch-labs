@@ -14,24 +14,6 @@ export default function InnovationTeams() {
       status: "Active",
       focus: "Technology Innovation",
       details: "Lead a team exploring cutting-edge technologies and building prototypes for new solutions"
-    },
-    {
-      id: 2,
-      name: "Team Node.js",
-      description: "Drive organizational initiatives and process improvements for Launch Labs",
-      members: 5,
-      status: "Active",
-      focus: "Operations & Strategy",
-      details: "Lead strategic projects that improve our organization and create lasting impact"
-    },
-    {
-      id: 3,
-      name: "Team TypeScript",
-      description: "Research and develop strategic initiatives for future growth",
-      members: 3,
-      status: "Active",
-      focus: "Research & Strategy",
-      details: "Conduct research and develop strategic initiatives that shape our future direction"
     }
   ];
 
