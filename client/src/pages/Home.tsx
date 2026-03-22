@@ -280,13 +280,15 @@ export default function Home() {
           <div className="container">
             <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-16">Upcoming Events</h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
-                <CardContent className="p-10">
-                  <div className="text-sm font-bold text-red-900 mb-2">Info Session</div>
-                  <h3 className="font-bold text-lg text-foreground mb-2">Launch Labs Overview</h3>
-                  <p className="text-xs text-foreground/50">Date and time coming soon</p>
-                </CardContent>
-              </Card>
+              <a href="https://www.instagram.com/p/DVMmqHYjkrT/" target="_blank" rel="noopener noreferrer" className="block">
+                <Card className="border border-border hover:border-red-900/30 transition-all duration-300 bg-white rounded-xl h-full hover:shadow-lg cursor-pointer">
+                  <CardContent className="p-10">
+                    <div className="text-sm font-bold text-red-900 mb-2">Info Session</div>
+                    <h3 className="font-bold text-lg text-foreground mb-2">Launch Labs Overview</h3>
+                    <p className="text-base md:text-lg text-foreground/70 leading-relaxed font-light">View details on Instagram</p>
+                  </CardContent>
+                </Card>
+              </a>
 
               <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
                 <CardContent className="p-10">
