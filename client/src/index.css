@@ -300,4 +300,52 @@
   .placeholder-card {
     @apply border-dashed border-2 border-gray-300 bg-gray-50/50;
   }
+  
+  /* Scroll progress bar */
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(to right, #7f1d1d, #991b1b);
+    width: 0%;
+    z-index: 9999;
+    transition: width 0.1s ease-out;
+  }
+  
+  /* Fade-in-up animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+    opacity: 0;
+  }
+  
+  /* Floating animation for tech stack */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  .float-animation {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* Gain card hover lift */
+  .gain-card {
+    @apply transition-all duration-300 hover:-translate-y-2;
+  }
 }
