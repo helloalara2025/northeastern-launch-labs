@@ -186,26 +186,57 @@
   /* Serif headers: tight letter-spacing, strong hierarchy */
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif font-bold;
-    letter-spacing: -0.02em;
-    line-height: 1.2;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
   }
   
   h1 {
-    @apply text-6xl md:text-7xl;
+    @apply text-7xl md:text-8xl;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
   }
   
   h2 {
-    @apply text-4xl md:text-5xl;
+    @apply text-5xl md:text-6xl;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
   }
   
   h3 {
-    @apply text-2xl;
+    @apply text-3xl md:text-4xl;
+    font-weight: 700;
+    margin-bottom: 1rem;
   }
   
-  /* Body text: generous line-height for readability */
-  p, li, span {
+  h4 {
+    @apply text-2xl;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Body text: generous line-height for premium readability */
+  p {
+    @apply text-lg md:text-xl;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+    color: var(--foreground);
+  }
+  
+  li {
+    @apply text-base md:text-lg;
+    line-height: 1.8;
+    letter-spacing: 0.2px;
+  }
+  
+  /* Subheadings and secondary text */
+  .text-sm {
+    @apply text-base md:text-lg;
     line-height: 1.6;
-    letter-spacing: 0;
+  }
+  
+  .text-xs {
+    @apply text-sm md:text-base;
+    line-height: 1.5;
   }
   
   /* Links and interactive elements */

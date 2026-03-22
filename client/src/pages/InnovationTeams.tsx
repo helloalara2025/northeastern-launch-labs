@@ -90,7 +90,7 @@ export default function InnovationTeams() {
         {/* Venture Lab */}
         <section id="venture-lab" className="bg-white border-t border-border py-32 md:py-40">
           <div className="container">
-            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-16">
+            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-16">
               Venture Lab
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
@@ -105,10 +105,10 @@ export default function InnovationTeams() {
                   <div className="mb-6">
                     <span className="inline-block text-xs font-bold px-3 py-1 bg-red-900 text-white rounded-full">{project.status}</span>
                   </div>
-                  <p className="text-sm text-foreground/70 font-medium mb-4">{project.focus}</p>
+                  <p className="text-base md:text-lg text-foreground/70 font-light font-medium mb-4">{project.focus}</p>
                   <ul className="space-y-3 mb-6">
                     {project.bullets.map((bullet, idx) => (
-                      <li key={idx} className="text-sm text-foreground/70 flex gap-2">
+                      <li key={idx} className="text-base md:text-lg text-foreground/70 font-light flex gap-2">
                         <span className="text-red-900 font-bold">•</span>
                         <span>{bullet}</span>
                       </li>
@@ -129,14 +129,14 @@ export default function InnovationTeams() {
         {/* What We Do */}
         <section id="what-we-do" className="bg-white border-t border-border py-32 md:py-40">
           <div className="container">
-            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-12">
+            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-12">
               What We Do
             </h2>
             <div className="space-y-8">
-              <p className="text-base text-foreground/70 leading-relaxed">
+              <p className="text-lg md:text-xl text-foreground/70 font-light leading-relaxed">
                 Innovation Teams tackle internally scoped projects designed to mirror real-world professional work. From problem definition through delivery, team members lead projects end-to-end, developing leadership, strategic thinking, and execution skills.
               </p>
-              <p className="text-base text-foreground/70 leading-relaxed">
+              <p className="text-lg md:text-xl text-foreground/70 font-light leading-relaxed">
                 These projects span product development, organizational initiatives, research, and strategic exploration. Teams operate with autonomy and accountability, making decisions and driving results in a supportive learning environment.
               </p>
             </div>
@@ -146,7 +146,7 @@ export default function InnovationTeams() {
         {/* Our Teams */}
         <section className="bg-white border-t border-border py-32 md:py-40">
           <div className="container">
-            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-16">
+            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-16">
               Our Teams
             </h2>
             <div className="grid md:grid-cols-2 gap-10">
@@ -161,14 +161,14 @@ export default function InnovationTeams() {
                     <div className="space-y-4 mb-8">
                       <div className="flex items-center gap-3">
                         <Users size={16} className="text-red-900" />
-                        <span className="text-sm text-foreground/70">{team.members} members</span>
+                        <span className="text-base md:text-lg text-foreground/70 font-light">{team.members} members</span>
                       </div>
                       <div className="flex items-center gap-3">
                         <Lightbulb size={16} className="text-red-900" />
-                        <span className="text-sm text-foreground/70">{team.focus}</span>
+                        <span className="text-base md:text-lg text-foreground/70 font-light">{team.focus}</span>
                       </div>
                     </div>
-                    <p className="text-sm text-foreground/70 mb-8">{team.details}</p>
+                    <p className="text-base md:text-lg text-foreground/70 font-light mb-8">{team.details}</p>
                     <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" className="inline-flex items-center gap-2 text-red-900 font-semibold hover:gap-3 transition-all duration-200 text-sm">
                       Apply Now
                       <ArrowRight size={16} />
@@ -183,7 +183,7 @@ export default function InnovationTeams() {
         {/* Key Experiences */}
         <section id="key-experiences" className="bg-white border-t border-border py-32 md:py-40">
           <div className="container">
-            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-16">
+            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-16">
               Key Experiences
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
@@ -238,7 +238,7 @@ export default function InnovationTeams() {
         {/* Application Process */}
         <section className="bg-white border-t border-border py-32 md:py-40">
           <div className="container">
-            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-16">
+            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-16">
               Application Process
             </h2>
             <div className="space-y-10">
@@ -270,25 +270,25 @@ export default function InnovationTeams() {
         {/* Who Should Apply */}
         <section id="who-should-apply" className="bg-white border-t border-border py-32 md:py-40">
           <div className="container">
-            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-12">
+            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-12">
               Who Should Apply
             </h2>
             <div className="space-y-6">
               <div className="flex gap-4">
                 <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-0.5" />
-                <p className="text-base text-foreground/70 leading-relaxed">Students interested in leadership and project ownership</p>
+                <p className="text-lg md:text-xl text-foreground/70 font-light leading-relaxed">Students interested in leadership and project ownership</p>
               </div>
               <div className="flex gap-4">
                 <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-0.5" />
-                <p className="text-base text-foreground/70 leading-relaxed">Those seeking to develop strategic thinking and execution skills</p>
+                <p className="text-lg md:text-xl text-foreground/70 font-light leading-relaxed">Those seeking to develop strategic thinking and execution skills</p>
               </div>
               <div className="flex gap-4">
                 <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-0.5" />
-                <p className="text-base text-foreground/70 leading-relaxed">Individuals passionate about innovation and problem-solving</p>
+                <p className="text-lg md:text-xl text-foreground/70 font-light leading-relaxed">Individuals passionate about innovation and problem-solving</p>
               </div>
               <div className="flex gap-4">
                 <CheckCircle className="w-6 h-6 text-red-900 flex-shrink-0 mt-0.5" />
-                <p className="text-base text-foreground/70 leading-relaxed">Anyone from any background ready to lead and make an impact</p>
+                <p className="text-lg md:text-xl text-foreground/70 font-light leading-relaxed">Anyone from any background ready to lead and make an impact</p>
               </div>
             </div>
           </div>
@@ -297,7 +297,7 @@ export default function InnovationTeams() {
         {/* CTA */}
         <section className="bg-white border-t border-border py-32 md:py-40">
           <div className="container text-center">
-            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-8">Ready to Lead an Innovation Team?</h2>
+            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-8">Ready to Lead an Innovation Team?</h2>
             <p className="text-lg text-foreground/70 mb-12 max-w-2xl mx-auto">
               Apply today and take ownership of a project that matters.
             </p>
@@ -317,7 +317,7 @@ export default function InnovationTeams() {
           <div className="grid md:grid-cols-4 gap-16 mb-16">
             <div>
               <h4 className="font-serif font-bold text-foreground mb-6">Launch Labs</h4>
-              <p className="text-sm text-foreground/70 leading-relaxed">
+              <p className="text-base md:text-lg text-foreground/70 font-light leading-relaxed">
                 Northeastern University's hub for real-world project work.
               </p>
             </div>
@@ -346,7 +346,7 @@ export default function InnovationTeams() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-border pt-8 text-center text-sm text-foreground/70">
+          <div className="border-t border-border pt-8 text-center text-base md:text-lg text-foreground/70 font-light">
             <p>&copy; 2026 Northeastern Launch Labs. All rights reserved.</p>
           </div>
         </div>

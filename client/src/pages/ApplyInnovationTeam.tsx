@@ -74,7 +74,7 @@ export default function ApplyInnovationTeam() {
               <Card className="border border-gray-100 bg-gray-100 shadow-none">
                 <CardContent className="p-12 text-center">
                   <CheckCircle className="w-16 h-16 text-gray-100 mx-auto mb-6" />
-                  <h2 className="font-bold text-2xl text-gray-100 mb-3">Application Submitted!</h2>
+                  <h2 className="font-bold text-3xl md:text-4xl text-gray-100 mb-3">Application Submitted!</h2>
                   <p className="text-gray-100 mb-6">
                     Thank you for applying to Launch Labs. We'll review your application and get back to you soon at the email address you provided.
                   </p>
@@ -230,7 +230,7 @@ export default function ApplyInnovationTeam() {
                     required
                     className="w-5 h-5 rounded border-foreground/20 text-gray-100 focus:ring-amber-600 mt-1"
                   />
-                  <label htmlFor="agreeToTerms" className="text-sm text-foreground/70">
+                  <label htmlFor="agreeToTerms" className="text-base md:text-lg text-foreground/70 font-light">
                     I understand that this is a semester-long commitment and I'm prepared to lead my team through a complete project cycle from conception to delivery. <span className="text-gray-100">*</span>
                   </label>
                 </div>
@@ -286,7 +286,7 @@ export default function ApplyInnovationTeam() {
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div>
               <h4 className="font-bold text-foreground mb-4">Launch Labs</h4>
-              <p className="text-sm text-foreground/70 leading-relaxed">
+              <p className="text-base md:text-lg text-foreground/70 font-light leading-relaxed">
                 Northeastern University's hub for real-world project work.
               </p>
             </div>
@@ -315,7 +315,7 @@ export default function ApplyInnovationTeam() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-foreground/10 pt-8 text-center text-sm text-foreground/70">
+          <div className="border-t border-foreground/10 pt-8 text-center text-base md:text-lg text-foreground/70 font-light">
             <p>&copy; 2025 Northeastern Launch Labs. All rights reserved.</p>
           </div>
         </div>

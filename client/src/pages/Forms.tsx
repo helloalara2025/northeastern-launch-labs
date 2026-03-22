@@ -49,7 +49,7 @@ export default function Forms() {
         {/* Express Interest Section */}
         <section className="bg-white border-t border-border py-32 md:py-40">
           <div className="container">
-            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-10">Join</h2>
+            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-10">Join</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Join Launch Teams */}
               <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
@@ -57,7 +57,7 @@ export default function Forms() {
                   <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6 font-bold">
                     <FileText className="w-6 h-6" />
                   </div>
-                  <h3 className="font-bold text-2xl text-foreground mb-4">Launch Team Application</h3>
+                  <h3 className="font-bold text-3xl md:text-4xl text-foreground mb-4">Launch Team Application</h3>
                   <p className="text-foreground/70 leading-relaxed mb-8">
                     Apply to work directly with startups on real-world product development, implementation, and iterative testing.
                   </p>
@@ -74,7 +74,7 @@ export default function Forms() {
                   <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6 font-bold">
                     <Lightbulb className="w-6 h-6" />
                   </div>
-                  <h3 className="font-bold text-2xl text-foreground mb-4">Innovation Team Application</h3>
+                  <h3 className="font-bold text-3xl md:text-4xl text-foreground mb-4">Innovation Team Application</h3>
                   <p className="text-foreground/70 leading-relaxed mb-8">
                     Apply to lead end-to-end projects designed to mirror real-world professional work and build your leadership skills.
                   </p>
@@ -91,7 +91,7 @@ export default function Forms() {
         {/* Leadership Application */}
         <section className="bg-white border-t border-border py-32 md:py-40">
           <div className="container">
-            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-10">Leadership Opportunities</h2>
+            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-10">Leadership Opportunities</h2>
             <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
               <CardContent className="p-10">
                 <div className="flex gap-6 items-start">
@@ -99,7 +99,7 @@ export default function Forms() {
                     <Heart className="w-6 h-6" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-bold text-2xl text-foreground mb-4">Leadership Application</h3>
+                    <h3 className="font-bold text-3xl md:text-4xl text-foreground mb-4">Leadership Application</h3>
                     <p className="text-foreground/70 leading-relaxed mb-8">
                       Are you passionate about building community and driving innovation? Apply to join our leadership team. We're looking for students who want to help shape the future of Northeastern Launch Labs.
                     </p>
@@ -117,7 +117,7 @@ export default function Forms() {
         {/* Propose a Project */}
         <section className="bg-white border-t border-border py-32 md:py-40">
           <div className="container">
-            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-10">Propose a Project</h2>
+            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-10">Propose a Project</h2>
             <p className="text-lg text-foreground/70 leading-relaxed mb-10">
               Have an idea for a startup collaboration or internal initiative? We'd love to hear from you. Submit your project proposal and choose which team structure works best.
             </p>
@@ -156,7 +156,7 @@ export default function Forms() {
         {/* FAQ Section */}
         <section className="bg-white border-t border-border py-32 md:py-40">
           <div className="container">
-            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-16">Frequently Asked Questions</h2>
+            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-16">Frequently Asked Questions</h2>
             <div className="space-y-6">
               <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
                 <CardContent className="p-10">
@@ -209,7 +209,7 @@ export default function Forms() {
         {/* CTA Section */}
         <section className="bg-white border-t border-white py-32 md:py-40">
           <div className="container text-center">
-            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-6">Ready to Get Started?</h2>
+            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-6">Ready to Get Started?</h2>
             <p className="text-lg text-foreground/70 mb-10">
               Apply to join a team or propose your own project. We're excited to work with you!
             </p>
@@ -229,7 +229,7 @@ export default function Forms() {
           <div className="grid md:grid-cols-4 gap-16 mb-12">
             <div>
               <h4 className="font-bold text-foreground mb-4">Launch Labs</h4>
-              <p className="text-sm text-foreground/70 leading-relaxed">
+              <p className="text-base md:text-lg text-foreground/70 font-light leading-relaxed">
                 Northeastern University's hub for real-world project work.
               </p>
             </div>
@@ -258,7 +258,7 @@ export default function Forms() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-border pt-8 text-center text-sm text-foreground/70">
+          <div className="border-t border-border pt-8 text-center text-base md:text-lg text-foreground/70 font-light">
             <p>&copy; 2025 Northeastern Launch Labs. All rights reserved.</p>
           </div>
         </div>

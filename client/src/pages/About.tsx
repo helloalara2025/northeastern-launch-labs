@@ -23,12 +23,12 @@ export default function About() {
         {/* Our Mission */}
         <section className="bg-white border-t border-border py-32 md:py-40">
           <div className="container">
-            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-14">Our Mission</h2>
+            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-14">Our Mission</h2>
             <div className="space-y-8">
-              <p className="text-base text-foreground/70 leading-relaxed">
+              <p className="text-lg md:text-xl text-foreground/70 font-light leading-relaxed">
                 Our goal is to bring together students across disciplines and experience levels to work on real-world, end-to-end projects that bridge classroom learning with practical impact.
               </p>
-              <p className="text-base text-foreground/70 leading-relaxed">
+              <p className="text-lg md:text-xl text-foreground/70 font-light leading-relaxed">
                 Through Launch Teams partnering with startups and Innovation Teams developing internal, end-to-end projects, members gain practical experience tackling real-world problems. The club emphasizes collaboration, professional skill development, and ownership, enabling students to produce portfolio-ready work, strengthen cross-functional teamwork, and explore pathways to entrepreneurship and innovation within and beyond the Northeastern community.
               </p>
             </div>
@@ -38,7 +38,7 @@ export default function About() {
         {/* How to Get Involved */}
         <section className="bg-white border-t border-border py-32 md:py-40">
           <div className="container">
-            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-16">How to Get Involved</h2>
+            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-16">How to Get Involved</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
                 <CardContent className="p-10">
@@ -82,7 +82,7 @@ export default function About() {
         {/* Our Values */}
         <section className="bg-white border-t border-border py-32 md:py-40">
           <div className="container">
-            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-16">Our Values</h2>
+            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-16">Our Values</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
                 <CardContent className="p-10">
@@ -126,7 +126,7 @@ export default function About() {
         {/* CTA Section */}
         <section className="bg-white border-t border-border py-32 md:py-40">
           <div className="container text-center">
-            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-8">Ready to Join Us?</h2>
+            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-8">Ready to Join Us?</h2>
             <p className="text-lg text-foreground/70 mb-12 max-w-2xl mx-auto">
               Become part of the Launch Labs community and start making real impact.
             </p>
@@ -146,7 +146,7 @@ export default function About() {
           <div className="grid md:grid-cols-4 gap-16 mb-16">
             <div>
               <h4 className="font-serif font-bold text-foreground mb-6">Launch Labs</h4>
-              <p className="text-sm text-foreground/70 leading-relaxed">
+              <p className="text-base md:text-lg text-foreground/70 font-light leading-relaxed">
                 Northeastern University's hub for real-world project work.
               </p>
             </div>
@@ -175,7 +175,7 @@ export default function About() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-border pt-8 text-center text-sm text-foreground/70">
+          <div className="border-t border-border pt-8 text-center text-base md:text-lg text-foreground/70 font-light">
             <p>&copy; 2026 Northeastern Launch Labs. All rights reserved.</p>
           </div>
         </div>
