@@ -214,7 +214,7 @@ export default function Forms() {
               Apply to join a team or propose your own project. We're excited to work with you!
             </p>
             <Link href="/contact" className="inline-block">
-              <Button className="bg-red-900 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center gap-2">
+              <Button className="bg-red-900 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-full transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center gap-2">
                 Have Questions? Contact Us
                 <ArrowRight size={18} />
               </Button>

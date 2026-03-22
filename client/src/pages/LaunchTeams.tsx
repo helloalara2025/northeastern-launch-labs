@@ -17,6 +17,47 @@ export default function LaunchTeams() {
     }
   ];
 
+  const currentPartners = [
+    {
+      id: 1,
+      title: "FinTech Market Dynamics",
+      theme: "Finance",
+      status: "Discovery",
+      focus: "Competitor mapping & API research",
+      bullets: [
+        "Mapping competitive landscape in payment processing",
+        "Researching third-party API integrations",
+        "Analyzing market trends and opportunities"
+      ]
+    },
+    {
+      id: 2,
+      title: "Healthcare Systems",
+      theme: "Healthcare",
+      status: "Coming Soon",
+      focus: "Patient data management",
+      bullets: [
+        "Building secure data infrastructure",
+        "Designing user-centric interfaces",
+        "Implementing compliance frameworks"
+      ],
+      isPlaceholder: true
+    },
+    {
+      id: 3,
+      title: "E-commerce Optimization",
+      theme: "Retail",
+      status: "Coming Soon",
+      focus: "Conversion rate optimization",
+      bullets: [
+        "Analyzing user behavior patterns",
+        "A/B testing checkout flows",
+        "Implementing personalization engines"
+      ],
+      isPlaceholder: true
+    }
+  ];
+
   return (
     <div>
       <Navigation />
@@ -38,10 +79,49 @@ export default function LaunchTeams() {
           <div className="container">
             <h3 className="font-bold text-sm uppercase tracking-wider text-foreground/60 mb-8">On This Page</h3>
             <div className="grid md:grid-cols-2 gap-6">
+              <a href="#current-partners" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">Current Partners</a>
               <a href="#what-we-do" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">What We Do</a>
-              <a href="#our-teams" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">Our Teams</a>
               <a href="#key-experiences" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">Key Experiences</a>
               <a href="#who-should-apply" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">Who Should Apply</a>
+            </div>
+          </div>
+        </section>
+
+        {/* Current Partners */}
+        <section id="current-partners" className="bg-white border-t border-border py-32 md:py-40">
+          <div className="container">
+            <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-16">
+              Current Partners
+            </h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {currentPartners.map((partner) => (
+                <div key={partner.id} className={`project-card ${partner.isPlaceholder ? 'placeholder-card' : 'glass-card'} rounded-xl p-8 border`}>
+                  <div className="flex items-start justify-between mb-4">
+                    <div>
+                      <h3 className="font-serif font-bold text-lg text-foreground mb-2">{partner.title}</h3>
+                      <span className="text-xs font-semibold uppercase tracking-widest text-red-900">{partner.theme}</span>
+                    </div>
+                  </div>
+                  <div className="mb-6">
+                    <span className="inline-block text-xs font-bold px-3 py-1 bg-red-900 text-white rounded-full">{partner.status}</span>
+                  </div>
+                  <p className="text-sm text-foreground/70 font-medium mb-4">{partner.focus}</p>
+                  <ul className="space-y-3 mb-6">
+                    {partner.bullets.map((bullet, idx) => (
+                      <li key={idx} className="text-sm text-foreground/70 flex gap-2">
+                        <span className="text-red-900 font-bold">•</span>
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  {!partner.isPlaceholder && (
+                    <Link href="/forms" className="inline-flex items-center gap-2 text-red-900 font-semibold hover:gap-3 transition-all duration-200 text-sm">
+                      Learn More
+                      <ArrowRight size={16} />
+                    </Link>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -64,14 +144,14 @@ export default function LaunchTeams() {
         </section>
 
         {/* Our Teams */}
-        <section id="our-teams" className="bg-white border-t border-border py-32 md:py-40">
+        <section className="bg-white border-t border-border py-32 md:py-40">
           <div className="container">
             <h2 className="font-serif font-bold text-4xl md:text-5xl text-foreground mb-16">
               Our Teams
             </h2>
             <div className="grid md:grid-cols-2 gap-10">
               {teams.map((team) => (
-                <Card key={team.id} className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+                <Card key={team.id} className="project-card border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
                   <CardContent className="p-12">
                     <div className="flex items-start justify-between mb-6">
                       <h3 className="font-bold text-xl text-foreground">{team.name}</h3>
@@ -107,7 +187,7 @@ export default function LaunchTeams() {
               Key Experiences
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+              <Card className="project-card border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
                 <CardContent className="p-10">
                   <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6 font-bold">
                     <Briefcase className="w-6 h-6" />
@@ -118,7 +198,7 @@ export default function LaunchTeams() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+              <Card className="project-card border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
                 <CardContent className="p-10">
                   <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6 font-bold">
                     <TrendingUp className="w-6 h-6" />
@@ -129,7 +209,7 @@ export default function LaunchTeams() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+              <Card className="project-card border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
                 <CardContent className="p-10">
                   <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6 font-bold">
                     <Users className="w-6 h-6" />
@@ -140,7 +220,7 @@ export default function LaunchTeams() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+              <Card className="project-card border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
                 <CardContent className="p-10">
                   <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6 font-bold">
                     <Code className="w-6 h-6" />
@@ -222,7 +302,7 @@ export default function LaunchTeams() {
               Apply today and start working on real-world projects with early-stage startups.
             </p>
             <Link href="/forms">
-              <Button className="bg-red-900 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center gap-2">
+              <Button className="bg-red-900 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-full transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center gap-2">
                 Join
                 <ArrowRight size={18} />
               </Button>

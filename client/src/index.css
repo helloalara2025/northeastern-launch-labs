@@ -178,6 +178,9 @@
   }
   body {
     @apply bg-background text-foreground font-sans;
+    background-image: radial-gradient(circle, #E5E7EB 0.5px, transparent 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
   }
   
   /* Serif headers: tight letter-spacing, strong hierarchy */
@@ -235,7 +238,7 @@
   
   /* Button styling: red-900 primary, minimalist secondary */
   button {
-    @apply rounded-lg transition-all duration-200;
+    @apply rounded-full transition-all duration-200;
   }
   
   button:hover:not(:disabled) {
@@ -277,5 +280,24 @@
       padding-right: 2rem;
       max-width: 896px;
     }
+  }
+  
+  /* Glassmorphism effects */
+  .glass-nav {
+    @apply backdrop-blur-md bg-white/70 border border-white/20;
+  }
+  
+  .glass-card {
+    @apply backdrop-blur-sm bg-white/80 border border-white/30;
+  }
+  
+  /* Project card hover effect */
+  .project-card {
+    @apply transition-all duration-300 hover:-translate-y-1;
+  }
+  
+  /* Placeholder card styling */
+  .placeholder-card {
+    @apply border-dashed border-2 border-gray-300 bg-gray-50/50;
   }
 }
