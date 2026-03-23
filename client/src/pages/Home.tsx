@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 import { ArrowRight, Briefcase, Lightbulb, Users, Award, Zap, Rocket, TrendingUp } from "lucide-react";
 import { useState, useEffect } from "react";
+import InstagramFeed from "@/components/InstagramFeed";
 
 export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -299,6 +300,14 @@ export default function Home() {
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </section>
+
+        {/* Instagram Feed Section */}
+        <section className="bg-white border-t border-border py-32 md:py-40" data-section="instagram">
+          <div className="container">
+            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-16">Latest from Instagram</h2>
+            <InstagramFeed />
           </div>
         </section>
 
