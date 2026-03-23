@@ -54,38 +54,43 @@
 }
 
 /* 
-  Design Philosophy: Notion + Figma Precision
-  - Serif Headers: Playfair Display for strong, elegant primary headings
-  - Sans-serif Body: Inter for high-legibility, professional body text
-  - Letter-spacing: Tighter on large headings, normal on body
-  - Line-height: 1.6-1.7 for body paragraphs, 1.2 for headings
-  - Borders: 1px solid #E5E7EB (minimalist, light gray)
-  - Shadows: Micro-shadows on hover only
-  - Border Radius: 8-12px soft-square range
-  - Background: Off-white #F9FAFB for canvas, white for cards
-  - Red-900: High-signal accent only (buttons, active states)
-  - Spacing: Generous white space for airy workspace feel
+  Design Philosophy: Premium Notion + Figma Workspace
+  - Serif Headers: Playfair Display (600-800) for elegant, commanding presence
+  - Sans-serif Body: Inter (300-600) for refined, professional readability
+  - Letter-spacing: -0.03em on headers (tight), +0.3px on body (breathing room)
+  - Line-height: 1.15 headers (compact), 1.8 body (generous premium feel)
+  - Borders: 1px #E5E7EB (minimalist), dashed for placeholders
+  - Shadows: Micro-shadows (0 2px 4px) on hover only, no drop-shadow clutter
+  - Border Radius: 8-12px soft-square (0.75rem base)
+  - Background: Dot-grid pattern (20px spacing) for canvas texture
+  - Red Accent: #980000 (deep, sophisticated) for high-signal CTAs & badges
+  - Spacing: Generous py-32 md:py-40 sections, max-width 896px container
+  - Glassmorphism: Subtle backdrop-blur on nav/cards for depth
+  - Micro-interactions: Hover lift (-translate-y-1), scale (1.05), smooth 200ms transitions
 */
 
 :root {
-  --primary: #980000;
+  /* Red Accent System - Deep, Sophisticated */
+  --primary: #7f1d1d;           /* Red-900: Deep burgundy */
   --primary-foreground: #FFFFFF;
-  --sidebar-primary: #980000;
+  --primary-light: #dc2626;     /* Red-600: Brighter for hover states */
+  --primary-lighter: #fee2e2;   /* Red-100: Subtle backgrounds */
+  --sidebar-primary: #7f1d1d;
   --sidebar-primary-foreground: #FFFFFF;
   
-  --chart-1: #980000;
+  --chart-1: #7f1d1d;
   --chart-2: #000000;
   --chart-3: #FFFFFF;
   --chart-4: #1F2937;
-  --chart-5: #980000;
+  --chart-5: #7f1d1d;
   
   --radius: 0.75rem;
   
-  /* Light Mode */
-  --background: #FFFFFF;
-  --foreground: #1F2937;
+  /* Light Mode - Premium Workspace */
+  --background: #FFFFFF;        /* Clean white canvas */
+  --foreground: #1F2937;        /* Dark gray text (high contrast) */
   
-  --card: #F9FAFB;
+  --card: #F9FAFB;              /* Off-white for card backgrounds */
   --card-foreground: #1F2937;
   
   --popover: #FFFFFF;
@@ -94,37 +99,41 @@
   --secondary: #000000;
   --secondary-foreground: #FFFFFF;
   
-  --muted: #E5E7EB;
-  --muted-foreground: #6B7280;
+  --muted: #E5E7EB;             /* Light gray for borders */
+  --muted-foreground: #6B7280;  /* Medium gray for secondary text */
   
-  --accent: #980000;
+  --accent: #7f1d1d;
   --accent-foreground: #FFFFFF;
   
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
   
-  --border: #E5E7EB;
+  --border: #E5E7EB;            /* Minimalist 1px borders */
   --input: #F3F4F6;
-  --ring: #980000;
+  --ring: #7f1d1d;
   
-  /* Notion + Figma refinements */
+  /* Shadow System - Micro-interactions only */
   --shadow-micro: 0 2px 4px rgba(0, 0, 0, 0.05);
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
   
   --sidebar: #F9FAFB;
   --sidebar-foreground: #1F2937;
-  --sidebar-accent: #980000;
+  --sidebar-accent: #7f1d1d;
   --sidebar-accent-foreground: #FFFFFF;
   --sidebar-border: #E5E7EB;
-  --sidebar-ring: #980000;
+  --sidebar-ring: #7f1d1d;
 }
 
 .dark {
-  --primary: #980000;
+  /* Same as light mode for now - premium workspace aesthetic */
+  --primary: #7f1d1d;
   --primary-foreground: #FFFFFF;
-  --sidebar-primary: #980000;
+  --primary-light: #dc2626;
+  --primary-lighter: #fee2e2;
+  --sidebar-primary: #7f1d1d;
   --sidebar-primary-foreground: #FFFFFF;
   
   --background: #FFFFFF;
@@ -142,7 +151,7 @@
   --muted: #E5E7EB;
   --muted-foreground: #6B7280;
   
-  --accent: #980000;
+  --accent: #7f1d1d;
   --accent-foreground: #FFFFFF;
   
   --destructive: #EF4444;
@@ -150,26 +159,26 @@
   
   --border: #E5E7EB;
   --input: #F3F4F6;
-  --ring: #980000;
+  --ring: #7f1d1d;
   
-  /* Notion + Figma refinements */
   --shadow-micro: 0 2px 4px rgba(0, 0, 0, 0.05);
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
   
-  --chart-1: #980000;
+  --chart-1: #7f1d1d;
   --chart-2: #000000;
   --chart-3: #FFFFFF;
   --chart-4: #1F2937;
-  --chart-5: #980000;
+  --chart-5: #7f1d1d;
   
   --sidebar: #F9FAFB;
   --sidebar-foreground: #1F2937;
-  --sidebar-accent: #980000;
+  --sidebar-accent: #7f1d1d;
   --sidebar-accent-foreground: #FFFFFF;
   --sidebar-border: #E5E7EB;
-  --sidebar-ring: #980000;
+  --sidebar-ring: #7f1d1d;
 }
 
 @layer base {
@@ -332,16 +341,17 @@
     @apply border-dashed border-2 border-gray-300 bg-gray-50/50;
   }
   
-  /* Scroll progress bar */
+  /* Scroll progress bar - Deep red gradient */
   .scroll-progress {
     position: fixed;
     top: 0;
     left: 0;
-    height: 2px;
-    background: linear-gradient(to right, #7f1d1d, #991b1b);
+    height: 3px;
+    background: linear-gradient(to right, #7f1d1d, #dc2626);
     width: 0%;
     z-index: 9999;
     transition: width 0.1s ease-out;
+    box-shadow: 0 0 8px rgba(127, 29, 29, 0.3);
   }
   
   /* Fade-in-up animation */
