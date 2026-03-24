@@ -131,7 +131,7 @@ export default function About() {
               Become part of the Launch Labs community and start making real impact.
             </p>
             <Button asChild>
-              <Link href="/forms" className="bg-cyan-600 hover:bg-cyan-600 text-white font-bold px-10 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2">
+              <Link href="/forms" className="bg-red-700 hover:bg-red-700 text-white font-bold px-10 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2">
                 Join Us
                 <span>→</span>
               </Link>
@@ -153,25 +153,25 @@ export default function About() {
             <div>
               <h4 className="font-serif font-bold text-foreground mb-6">Explore</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/" className="text-foreground/70 hover:text-cyan-600 transition-colors">Home</Link></li>
-                <li><Link href="/launch-teams" className="text-foreground/70 hover:text-cyan-600 transition-colors">Launch Teams</Link></li>
-                <li><Link href="/innovation-teams" className="text-foreground/70 hover:text-cyan-600 transition-colors">Innovation Teams</Link></li>
+                <li><Link href="/" className="text-foreground/70 hover:text-red-700 transition-colors">Home</Link></li>
+                <li><Link href="/launch-teams" className="text-foreground/70 hover:text-red-700 transition-colors">Launch Teams</Link></li>
+                <li><Link href="/innovation-teams" className="text-foreground/70 hover:text-red-700 transition-colors">Innovation Teams</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-serif font-bold text-foreground mb-6">Get Involved</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/forms" className="text-foreground/70 hover:text-cyan-600 transition-colors">Apply</Link></li>
-                <li><Link href="/leadership" className="text-foreground/70 hover:text-cyan-600 transition-colors">Leadership</Link></li>
-                <li><Link href="/partners" className="text-foreground/70 hover:text-cyan-600 transition-colors">Partners</Link></li>
+                <li><Link href="/forms" className="text-foreground/70 hover:text-red-700 transition-colors">Apply</Link></li>
+                <li><Link href="/leadership" className="text-foreground/70 hover:text-red-700 transition-colors">Leadership</Link></li>
+                <li><Link href="/partners" className="text-foreground/70 hover:text-red-700 transition-colors">Partners</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-serif font-bold text-foreground mb-6">Connect</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/contact" className="text-foreground/70 hover:text-cyan-600 transition-colors">Contact</Link></li>
-                <li><a href="https://www.linkedin.com/company/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-cyan-600 transition-colors">LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-cyan-600 transition-colors">Instagram</a></li>
+                <li><Link href="/contact" className="text-foreground/70 hover:text-red-700 transition-colors">Contact</Link></li>
+                <li><a href="https://www.linkedin.com/company/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-red-700 transition-colors">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-red-700 transition-colors">Instagram</a></li>
               </ul>
             </div>
           </div>

@@ -54,130 +54,131 @@
 }
 
 /* 
-  Design Philosophy: Modern, Bold & Dynamic
+  Design Philosophy: Modern, Bold & Northeastern
   - Headers: Strong, commanding presence with generous sizing
   - Body: Clean, spacious, highly readable sans-serif
-  - Color System: Navy (#0F172A) + Cyan (#06B6D4) for modern energy
+  - Color System: Northeastern Red (#C8102E) + Pure White + Deep Black
   - Borders: Minimal, refined with subtle depth
   - Shadows: Layered depth with smooth gradients
   - Border Radius: 12-16px for modern, friendly feel
   - Background: Clean white with subtle gradient accents
-  - Accent: Vibrant cyan for CTAs, highlights, and interactive elements
+  - Accent: Northeastern Red for CTAs, highlights, and interactive elements
   - Spacing: Generous, breathing room throughout
   - Micro-interactions: Smooth transitions, hover animations, scale effects
+  - Red Thread: Vertical decorative line through long-form sections
   - Layout: Asymmetric, modern grid with dynamic positioning
 */
 
 :root {
-  /* Modern Color System - Navy + Cyan */
-  --primary: #0F172A;           /* Deep Navy: Professional, sophisticated */
+  /* Northeastern University Brand Colors */
+  --primary: #000000;           /* Deep Black: Primary text */
   --primary-foreground: #FFFFFF;
-  --primary-light: #1E293B;     /* Slate: Darker navy for depth */
-  --primary-lighter: #F0F9FF;   /* Sky: Subtle backgrounds */
-  --sidebar-primary: #0F172A;
-  --sidebar-primary-foreground: #FFFFFF;
+  --primary-light: #333333;     /* Dark gray for depth */
+  --primary-lighter: #F5F5F5;   /* Light gray backgrounds */
+  --sidebar-primary: #FFFFFF;
+  --sidebar-primary-foreground: #000000;
   
-  --chart-1: #06B6D4;           /* Cyan: Vibrant accent */
-  --chart-2: #0F172A;           /* Navy: Primary */
+  --chart-1: #C8102E;           /* Northeastern Red: Vibrant accent */
+  --chart-2: #000000;           /* Black: Primary */
   --chart-3: #FFFFFF;           /* White */
-  --chart-4: #1E293B;           /* Slate */
-  --chart-5: #06B6D4;           /* Cyan */
+  --chart-4: #333333;           /* Dark gray */
+  --chart-5: #C8102E;           /* Red */
   
   --radius: 1rem;               /* 16px for modern feel */
   
-  /* Light Mode - Modern Clean */
-  --background: #FFFFFF;        /* Clean white */
-  --foreground: #0F172A;        /* Deep navy text */
+  /* Light Mode - Northeastern Brand */
+  --background: #FFFFFF;        /* Pure white */
+  --foreground: #000000;        /* Deep black text */
   
-  --card: #F8FAFC;              /* Off-white for cards */
-  --card-foreground: #0F172A;
+  --card: #FFFFFF;              /* White for cards */
+  --card-foreground: #000000;
   
   --popover: #FFFFFF;
-  --popover-foreground: #0F172A;
+  --popover-foreground: #000000;
   
-  --secondary: #1E293B;         /* Slate */
+  --secondary: #333333;         /* Dark gray */
   --secondary-foreground: #FFFFFF;
   
-  --muted: #CBD5E1;             /* Light slate for borders */
-  --muted-foreground: #64748B;  /* Medium slate for secondary text */
+  --muted: #E0E0E0;             /* Light gray for borders */
+  --muted-foreground: #666666;  /* Medium gray for secondary text */
   
-  --accent: #06B6D4;            /* Vibrant Cyan */
+  --accent: #C8102E;            /* Northeastern Red */
   --accent-foreground: #FFFFFF;
   
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
   
-  --border: #E2E8F0;            /* Refined borders */
-  --input: #F1F5F9;
-  --ring: #06B6D4;
+  --border: #E0E0E0;            /* Refined borders */
+  --input: #F5F5F5;
+  --ring: #C8102E;
   
   /* Shadow System - Layered depth */
-  --shadow-micro: 0 1px 3px rgba(15, 23, 42, 0.08);
-  --shadow-sm: 0 2px 4px rgba(15, 23, 42, 0.1);
-  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.12);
-  --shadow-lg: 0 12px 24px rgba(15, 23, 42, 0.15);
-  --shadow-xl: 0 20px 40px rgba(15, 23, 42, 0.2);
+  --shadow-micro: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.2);
   
-  --sidebar: #F8FAFC;
-  --sidebar-foreground: #0F172A;
-  --sidebar-accent: #06B6D4;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #000000;
+  --sidebar-accent: #C8102E;
   --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: #E2E8F0;
-  --sidebar-ring: #06B6D4;
+  --sidebar-border: #E0E0E0;
+  --sidebar-ring: #C8102E;
 }
 
 .dark {
-  /* Same as light mode - modern clean aesthetic */
-  --primary: #0F172A;
+  /* Same as light mode - Northeastern brand */
+  --primary: #000000;
   --primary-foreground: #FFFFFF;
-  --primary-light: #1E293B;
-  --primary-lighter: #F0F9FF;
-  --sidebar-primary: #0F172A;
-  --sidebar-primary-foreground: #FFFFFF;
+  --primary-light: #333333;
+  --primary-lighter: #F5F5F5;
+  --sidebar-primary: #FFFFFF;
+  --sidebar-primary-foreground: #000000;
   
   --background: #FFFFFF;
-  --foreground: #0F172A;
+  --foreground: #000000;
   
-  --card: #F8FAFC;
-  --card-foreground: #0F172A;
+  --card: #FFFFFF;
+  --card-foreground: #000000;
   
   --popover: #FFFFFF;
-  --popover-foreground: #0F172A;
+  --popover-foreground: #000000;
   
-  --secondary: #1E293B;
+  --secondary: #333333;
   --secondary-foreground: #FFFFFF;
   
-  --muted: #CBD5E1;
-  --muted-foreground: #64748B;
+  --muted: #E0E0E0;
+  --muted-foreground: #666666;
   
-  --accent: #06B6D4;
+  --accent: #C8102E;
   --accent-foreground: #FFFFFF;
   
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
   
-  --border: #E2E8F0;
-  --input: #F1F5F9;
-  --ring: #06B6D4;
+  --border: #E0E0E0;
+  --input: #F5F5F5;
+  --ring: #C8102E;
   
-  --shadow-micro: 0 1px 3px rgba(15, 23, 42, 0.08);
-  --shadow-sm: 0 2px 4px rgba(15, 23, 42, 0.1);
-  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.12);
-  --shadow-lg: 0 12px 24px rgba(15, 23, 42, 0.15);
-  --shadow-xl: 0 20px 40px rgba(15, 23, 42, 0.2);
+  --shadow-micro: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.15);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.2);
   
-  --chart-1: #06B6D4;
-  --chart-2: #0F172A;
+  --chart-1: #C8102E;
+  --chart-2: #000000;
   --chart-3: #FFFFFF;
-  --chart-4: #1E293B;
-  --chart-5: #06B6D4;
+  --chart-4: #333333;
+  --chart-5: #C8102E;
   
-  --sidebar: #F8FAFC;
-  --sidebar-foreground: #0F172A;
-  --sidebar-accent: #06B6D4;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #000000;
+  --sidebar-accent: #C8102E;
   --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: #E2E8F0;
-  --sidebar-ring: #06B6D4;
+  --sidebar-border: #E0E0E0;
+  --sidebar-ring: #C8102E;
 }
 
 @layer base {
@@ -341,17 +342,17 @@
     @apply border-dashed border-2 border-gray-300 bg-gray-50/50;
   }
   
-  /* Scroll progress bar - Modern cyan gradient */
+  /* Scroll progress bar - Northeastern Red */
   .scroll-progress {
     position: fixed;
     top: 0;
     left: 0;
     height: 3px;
-    background: linear-gradient(to right, #06B6D4, #0EA5E9);
+    background: linear-gradient(to right, #C8102E, #E63946);
     width: 0%;
     z-index: 9999;
     transition: width 0.1s ease-out;
-    box-shadow: 0 0 12px rgba(6, 182, 212, 0.4);
+    box-shadow: 0 0 12px rgba(200, 16, 46, 0.5);
   }
   
   /* Fade-in-up animation */

@@ -45,10 +45,10 @@ export default function Home() {
       <main className="pt-24">
         {/* Hero Section - Modern Bold */}
         <section className="relative overflow-hidden py-32 md:py-48">
-          <div className="absolute inset-0 bg-gradient-to-br from-cyan-50/30 to-transparent pointer-events-none"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-red-50/30 to-transparent pointer-events-none"></div>
           <div className="container relative z-10">
             <div className="mb-8 inline-block">
-              <span className="inline-block bg-cyan-600 text-white text-sm font-bold px-4 py-2 rounded-full">Student Club at Northeastern</span>
+              <span className="inline-block bg-red-700 text-white text-sm font-bold px-4 py-2 rounded-full">Student Club at Northeastern</span>
             </div>
             <div className="grid md:grid-cols-2 gap-16 items-center">
               <div>
@@ -60,13 +60,13 @@ export default function Home() {
                 </p>
                 <div className="flex gap-4">
                   <Button asChild>
-                    <Link href="/forms" className="bg-cyan-600 hover:bg-cyan-700 text-white font-bold px-10 h-12 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 inline-flex items-center justify-center gap-2">
+                    <Link href="/forms" className="bg-red-700 hover:bg-red-800 text-white font-bold px-10 h-12 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 inline-flex items-center justify-center gap-2">
                       Start Your Journey
                       <ArrowRight size={18} />
                     </Link>
                   </Button>
                   <Button asChild variant="outline">
-                    <Link href="/about" className="border-2 border-foreground/20 text-foreground font-bold px-10 h-12 rounded-full transition-all duration-300 hover:border-cyan-600 hover:text-cyan-600">
+                    <Link href="/about" className="border-2 border-foreground/20 text-foreground font-bold px-10 h-12 rounded-full transition-all duration-300 hover:border-red-700 hover:text-red-700">
                       Learn More
                     </Link>
                   </Button>
@@ -77,7 +77,7 @@ export default function Home() {
               <div className="hidden md:flex items-center justify-center relative h-96">
                 <div className="relative w-full h-full flex items-center justify-center">
                   {/* Central circle */}
-                  <div className="absolute w-28 h-28 bg-gradient-to-br from-cyan-100 to-blue-100 rounded-full flex items-center justify-center float-animation shadow-lg">
+                  <div className="absolute w-28 h-28 bg-gradient-to-br from-red-100 to-red-100 rounded-full flex items-center justify-center float-animation shadow-lg">
                     <div className="w-20 h-20 bg-gradient-to-br from-cyan-600 to-blue-600 rounded-full flex items-center justify-center text-white font-bold text-2xl">
                       NU
                     </div>
@@ -85,19 +85,19 @@ export default function Home() {
                   
                   {/* Floating elements */}
                   <div className="absolute top-0 left-1/4 w-20 h-20 bg-white border-2 border-cyan-200 rounded-2xl flex items-center justify-center float-animation shadow-md hover:shadow-lg transition-all" style={{ animationDelay: "0.2s" }}>
-                    <Code className="w-10 h-10 text-cyan-600" />
+                    <Code className="w-10 h-10 text-red-700" />
                   </div>
                   
                   <div className="absolute top-1/4 right-0 w-20 h-20 bg-white border-2 border-cyan-200 rounded-2xl flex items-center justify-center float-animation shadow-md hover:shadow-lg transition-all" style={{ animationDelay: "0.4s" }}>
-                    <Lightbulb className="w-10 h-10 text-cyan-600" />
+                    <Lightbulb className="w-10 h-10 text-red-700" />
                   </div>
                   
                   <div className="absolute bottom-1/4 right-1/4 w-20 h-20 bg-white border-2 border-cyan-200 rounded-2xl flex items-center justify-center float-animation shadow-md hover:shadow-lg transition-all" style={{ animationDelay: "0.6s" }}>
-                    <Users className="w-10 h-10 text-cyan-600" />
+                    <Users className="w-10 h-10 text-red-700" />
                   </div>
                   
                   <div className="absolute bottom-0 left-1/3 w-20 h-20 bg-white border-2 border-cyan-200 rounded-2xl flex items-center justify-center float-animation shadow-md hover:shadow-lg transition-all" style={{ animationDelay: "0.8s" }}>
-                    <Rocket className="w-10 h-10 text-cyan-600" />
+                    <Rocket className="w-10 h-10 text-red-700" />
                   </div>
                 </div>
               </div>
@@ -111,10 +111,10 @@ export default function Home() {
             <h2 className="font-serif font-black text-6xl md:text-7xl text-foreground mb-16">How We Work</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Launch Teams Card */}
-              <div className="group relative p-8 bg-white border-2 border-foreground/10 rounded-2xl hover:border-cyan-600 transition-all duration-300 hover:shadow-lg">
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300 pointer-events-none"></div>
+              <div className="group relative p-8 bg-white border-2 border-foreground/10 rounded-2xl hover:border-red-700 transition-all duration-300 hover:shadow-lg">
+                <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300 pointer-events-none"></div>
                 <div className="relative z-10">
-                  <div className="w-12 h-12 bg-cyan-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 bg-red-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <Briefcase className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="font-serif font-bold text-3xl text-foreground mb-4">Launch Teams</h3>
@@ -128,10 +128,10 @@ export default function Home() {
               </div>
 
               {/* Innovation Teams Card */}
-              <div className="group relative p-8 bg-white border-2 border-foreground/10 rounded-2xl hover:border-cyan-600 transition-all duration-300 hover:shadow-lg">
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-50 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300 pointer-events-none"></div>
+              <div className="group relative p-8 bg-white border-2 border-foreground/10 rounded-2xl hover:border-red-700 transition-all duration-300 hover:shadow-lg">
+                <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-300 pointer-events-none"></div>
                 <div className="relative z-10">
-                  <div className="w-12 h-12 bg-cyan-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 bg-red-700 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <Sparkles className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="font-serif font-bold text-3xl text-foreground mb-4">Innovation Teams</h3>
@@ -158,9 +158,9 @@ export default function Home() {
                 { icon: TrendingUp, title: "Career Growth", desc: "Portfolio-ready projects and mentorship" },
                 { icon: Compass, title: "Network", desc: "Connect with founders, investors, and peers" }
               ].map((item, idx) => (
-                <div key={idx} className="group p-8 bg-white border border-foreground/10 rounded-2xl hover:border-cyan-600 hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-                  <div className="w-14 h-14 bg-gradient-to-br from-cyan-100 to-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <item.icon className="w-7 h-7 text-cyan-600" />
+                <div key={idx} className="group p-8 bg-white border border-foreground/10 rounded-2xl hover:border-red-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
+                  <div className="w-14 h-14 bg-gradient-to-br from-red-100 to-red-100 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <item.icon className="w-7 h-7 text-red-700" />
                   </div>
                   <h3 className="font-bold text-xl text-foreground mb-3">{item.title}</h3>
                   <p className="text-foreground/70 font-light">{item.desc}</p>
@@ -179,7 +179,7 @@ export default function Home() {
                 To empower students to bridge the gap between classroom learning and real-world impact by working on meaningful projects that solve actual problems.
               </p>
               <Button asChild>
-                <Link href="/about" className="bg-white text-cyan-600 hover:bg-cyan-50 font-bold px-10 h-12 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2">
+                <Link href="/about" className="bg-white text-red-700 hover:bg-cyan-50 font-bold px-10 h-12 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2">
                   Explore Our Story
                   <ArrowRight size={18} />
                 </Link>
@@ -205,7 +205,7 @@ export default function Home() {
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <Button asChild>
-                <Link href="/forms" className="bg-cyan-600 hover:bg-cyan-700 text-white font-bold px-10 h-12 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 inline-flex items-center justify-center gap-2">
+                <Link href="/forms" className="bg-red-700 hover:bg-red-800 text-white font-bold px-10 h-12 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 inline-flex items-center justify-center gap-2">
                   Apply Now
                   <ArrowRight size={18} />
                 </Link>
