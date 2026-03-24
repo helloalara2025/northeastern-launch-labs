@@ -1,8 +1,7 @@
 import Navigation from "@/components/sections/Navigation";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
-import { ArrowRight, Lightbulb, Zap, Target, Users, CheckCircle } from "lucide-react";
+import { ArrowRight, Code, Zap, Target, Users, CheckCircle, Star } from "lucide-react";
 
 export default function InnovationTeams() {
   const ventureLab = [
@@ -112,200 +111,176 @@ export default function InnovationTeams() {
     }
   ];
 
+  const themeColors: { [key: string]: { bg: string; text: string; border: string } } = {
+    Security: { bg: "bg-red-50", text: "text-red-700", border: "border-red-200" },
+    EdTech: { bg: "bg-blue-50", text: "text-blue-700", border: "border-blue-200" },
+    "Computer Vision": { bg: "bg-purple-50", text: "text-purple-700", border: "border-purple-200" },
+    FinTech: { bg: "bg-green-50", text: "text-green-700", border: "border-green-200" },
+    Social: { bg: "bg-pink-50", text: "text-pink-700", border: "border-pink-200" },
+    Impact: { bg: "bg-emerald-50", text: "text-emerald-700", border: "border-emerald-200" },
+    HealthTech: { bg: "bg-orange-50", text: "text-orange-700", border: "border-orange-200" }
+  };
+
   return (
     <div>
       <Navigation />
       <main className="pt-24">
         {/* Header */}
-        <section className="bg-white py-32 md:py-40">
-          <div className="container">
-            <h1 className="font-serif font-bold text-6xl md:text-7xl text-foreground mb-8 leading-tight">
+        <section className="relative py-32 md:py-48">
+          <div className="absolute inset-0 bg-gradient-to-br from-cyan-50/30 to-transparent pointer-events-none"></div>
+          <div className="container relative z-10">
+            <div className="mb-8 inline-block">
+              <span className="inline-block bg-cyan-600 text-white text-sm font-bold px-4 py-2 rounded-full">Venture Lab</span>
+            </div>
+            <h1 className="font-serif font-black text-8xl md:text-9xl text-foreground mb-8 leading-tight">
               Innovation Teams
             </h1>
-            <p className="text-lg md:text-xl text-foreground/70 leading-relaxed max-w-2xl font-light">
+            <p className="text-xl md:text-2xl text-foreground/70 leading-relaxed max-w-2xl font-light">
               Lead end-to-end projects designed to mirror real-world professional work and develop your leadership skills across diverse domains.
             </p>
           </div>
         </section>
 
-        {/* Table of Contents */}
-        <section className="bg-white border-t border-border py-16 md:py-20">
+        {/* Venture Lab Grid - 8 Teams */}
+        <section className="relative py-32 md:py-48 bg-gradient-to-b from-transparent via-cyan-50/10 to-transparent">
           <div className="container">
-            <h3 className="font-bold text-sm uppercase tracking-wider text-foreground/60 mb-8">On This Page</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              <a href="#venture-lab" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">Venture Lab</a>
-              <a href="#what-we-do" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">What We Do</a>
-              <a href="#key-experiences" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">Key Experiences</a>
-              <a href="#who-should-apply" className="text-foreground/70 hover:text-red-900 transition-colors font-medium text-sm">Who Should Apply</a>
+            <h2 className="font-serif font-black text-6xl md:text-7xl text-foreground mb-16">Our 8 Active Teams</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+              {ventureLab.map((project, idx) => {
+                const colors = themeColors[project.theme] || themeColors.Impact;
+                return (
+                  <div key={project.id} className={`group relative p-8 bg-white border-2 border-foreground/10 rounded-2xl hover:border-cyan-600 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 ${colors.bg}`}>
+                    <div className="relative z-10">
+                      {/* Header */}
+                      <div className="flex items-start justify-between mb-6">
+                        <div className="flex-1">
+                          <div className="flex items-center gap-3 mb-3">
+                            <Star className="w-5 h-5 text-cyan-600" />
+                            <span className={`text-xs font-bold uppercase tracking-widest ${colors.text}`}>{project.theme}</span>
+                          </div>
+                          <h3 className="font-serif font-bold text-3xl text-foreground mb-2">{project.title}</h3>
+                          <p className="text-sm md:text-base text-foreground/60 font-light italic">{project.subtitle}</p>
+                        </div>
+                      </div>
+
+                      {/* Status Badge */}
+                      <div className="mb-6">
+                        <span className="inline-block text-xs font-bold px-4 py-2 bg-cyan-600 text-white rounded-full">{project.status}</span>
+                      </div>
+
+                      {/* Focus */}
+                      <p className="text-base md:text-lg text-foreground/70 font-light font-medium mb-6 pb-6 border-b border-foreground/10">{project.focus}</p>
+
+                      {/* Bullets */}
+                      <ul className="space-y-4 mb-8">
+                        {project.bullets.map((bullet, idx) => (
+                          <li key={idx} className="text-base md:text-lg text-foreground/70 font-light flex gap-3">
+                            <span className="text-cyan-600 font-bold flex-shrink-0">✓</span>
+                            <span>{bullet}</span>
+                          </li>
+                        ))}
+                      </ul>
+
+                      {/* CTA */}
+                      <Link href="/forms" className="inline-flex items-center gap-2 text-cyan-600 font-bold hover:gap-3 transition-all duration-200 text-sm group/link">
+                        Learn More
+                        <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
+                      </Link>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
 
-        {/* Venture Lab - 8 Active Teams */}
-        <section id="venture-lab" className="bg-white border-t border-border py-32 md:py-40">
+        {/* What We Do */}
+        <section className="relative py-32 md:py-48">
           <div className="container">
-            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-16">
-              Venture Lab
-            </h2>
+            <h2 className="font-serif font-black text-6xl md:text-7xl text-foreground mb-12">What We Do</h2>
+            <div className="grid md:grid-cols-2 gap-12">
+              <div>
+                <p className="text-xl md:text-2xl text-foreground/70 leading-relaxed mb-8 font-light">
+                  Innovation Teams tackle internally scoped projects designed to mirror real-world professional work. From problem definition through delivery, team members lead projects end-to-end, developing leadership, strategic thinking, and execution skills.
+                </p>
+              </div>
+              <div>
+                <p className="text-xl md:text-2xl text-foreground/70 leading-relaxed font-light">
+                  These projects span product development, organizational initiatives, research, and strategic exploration. Teams operate with autonomy and accountability, making decisions and driving results in a supportive learning environment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Key Experiences */}
+        <section className="relative py-32 md:py-48 bg-gradient-to-r from-cyan-600 to-blue-600">
+          <div className="container">
+            <h2 className="font-serif font-black text-5xl md:text-6xl text-white mb-16">Key Experiences</h2>
             <div className="grid md:grid-cols-2 gap-8">
-              {ventureLab.map((project) => (
-                <div key={project.id} className="project-card glass-card rounded-xl p-8 border border-border hover:border-red-900/30 transition-all duration-300">
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex-1">
-                      <h3 className="font-serif font-bold text-2xl md:text-3xl text-foreground mb-2">{project.title}</h3>
-                      <p className="text-sm md:text-base text-foreground/60 font-light mb-3 italic">{project.subtitle}</p>
-                      <span className="text-xs font-semibold uppercase tracking-widest text-red-900">{project.theme}</span>
+              {[
+                { icon: Target, title: "End-to-End Leadership", desc: "Own projects from conception through execution, making strategic decisions and driving results with full accountability." },
+                { icon: Users, title: "Cross-Functional Teams", desc: "Work with diverse teams across engineering, design, and business to deliver integrated solutions." },
+                { icon: Zap, title: "Rapid Prototyping", desc: "Build MVPs quickly, validate assumptions with real users, and iterate based on feedback." },
+                { icon: Code, title: "Strategic Problem-Solving", desc: "Tackle complex, ambiguous problems by breaking them down, researching solutions, and implementing scalable approaches." }
+              ].map((item, idx) => (
+                <div key={idx} className="flex gap-6">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-16 w-16 rounded-xl bg-white/20 text-white">
+                      <item.icon size={28} />
                     </div>
                   </div>
-                  <div className="mb-6">
-                    <span className="inline-block text-xs font-bold px-3 py-1 bg-red-900 text-white rounded-full">{project.status}</span>
+                  <div>
+                    <h3 className="font-bold text-2xl text-white mb-3">{item.title}</h3>
+                    <p className="text-white/90 font-light">{item.desc}</p>
                   </div>
-                  <p className="text-base md:text-lg text-foreground/70 font-light font-medium mb-6">{project.focus}</p>
-                  <ul className="space-y-3 mb-8">
-                    {project.bullets.map((bullet, idx) => (
-                      <li key={idx} className="text-base md:text-lg text-foreground/70 font-light flex gap-3">
-                        <span className="text-red-900 font-bold flex-shrink-0">•</span>
-                        <span>{bullet}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Link href="/forms" className="inline-flex items-center gap-2 text-red-900 font-semibold hover:gap-3 transition-all duration-200 text-sm">
-                    Learn More
-                    <ArrowRight size={16} />
-                  </Link>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* What We Do */}
-        <section id="what-we-do" className="bg-white border-t border-border py-32 md:py-40">
-          <div className="container">
-            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-12">
-              What We Do
-            </h2>
-            <div className="space-y-8">
-              <p className="text-lg md:text-xl text-foreground/70 font-light leading-relaxed">
-                Innovation Teams tackle internally scoped projects designed to mirror real-world professional work. From problem definition through delivery, team members lead projects end-to-end, developing leadership, strategic thinking, and execution skills.
-              </p>
-              <p className="text-lg md:text-xl text-foreground/70 font-light leading-relaxed">
-                These projects span product development, organizational initiatives, research, and strategic exploration. Teams operate with autonomy and accountability, making decisions and driving results in a supportive learning environment.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Key Experiences */}
-        <section id="key-experiences" className="bg-white border-t border-border py-32 md:py-40">
-          <div className="container">
-            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-16">
-              Key Experiences
-            </h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="flex gap-6">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-14 w-14 rounded-lg bg-red-900 text-white font-bold text-xl">
-                    <Target size={24} />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-bold text-2xl md:text-3xl text-foreground mb-3">End-to-End Project Leadership</h3>
-                  <p className="text-base md:text-lg text-foreground/70 leading-relaxed font-light">
-                    Own projects from conception through execution, making strategic decisions and driving results with full accountability.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-6">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-14 w-14 rounded-lg bg-red-900 text-white font-bold text-xl">
-                    <Users size={24} />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-bold text-2xl md:text-3xl text-foreground mb-3">Cross-Functional Collaboration</h3>
-                  <p className="text-base md:text-lg text-foreground/70 leading-relaxed font-light">
-                    Work with diverse teams across engineering, design, and business to deliver integrated solutions.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-6">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-14 w-14 rounded-lg bg-red-900 text-white font-bold text-xl">
-                    <Zap size={24} />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-bold text-2xl md:text-3xl text-foreground mb-3">Rapid Prototyping & Iteration</h3>
-                  <p className="text-base md:text-lg text-foreground/70 leading-relaxed font-light">
-                    Build MVPs quickly, validate assumptions with real users, and iterate based on feedback.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-6">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-14 w-14 rounded-lg bg-red-900 text-white font-bold text-xl">
-                    <Lightbulb size={24} />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-bold text-2xl md:text-3xl text-foreground mb-3">Strategic Problem-Solving</h3>
-                  <p className="text-base md:text-lg text-foreground/70 leading-relaxed font-light">
-                    Tackle complex, ambiguous problems by breaking them down, researching solutions, and implementing scalable approaches.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* Who Should Apply */}
-        <section id="who-should-apply" className="bg-white border-t border-border py-32 md:py-40">
+        <section className="relative py-32 md:py-48">
           <div className="container">
-            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-12">
-              Who Should Apply
-            </h2>
-            <div className="space-y-6">
-              <p className="text-lg md:text-xl text-foreground/70 font-light leading-relaxed">
+            <h2 className="font-serif font-black text-6xl md:text-7xl text-foreground mb-12">Who Should Apply</h2>
+            <div className="max-w-3xl">
+              <p className="text-xl md:text-2xl text-foreground/70 leading-relaxed mb-12 font-light">
                 Innovation Teams are ideal for students who want to take on significant leadership roles and drive meaningful impact. You should be:
               </p>
-              <ul className="space-y-4">
-                <li className="flex gap-4 text-base md:text-lg text-foreground/70 font-light">
-                  <CheckCircle className="text-red-900 flex-shrink-0" size={24} />
-                  <span><strong>Self-directed:</strong> Comfortable owning projects with minimal supervision and driving your own learning.</span>
-                </li>
-                <li className="flex gap-4 text-base md:text-lg text-foreground/70 font-light">
-                  <CheckCircle className="text-red-900 flex-shrink-0" size={24} />
-                  <span><strong>Collaborative:</strong> Excited to work across disciplines and leverage diverse perspectives to solve problems.</span>
-                </li>
-                <li className="flex gap-4 text-base md:text-lg text-foreground/70 font-light">
-                  <CheckCircle className="text-red-900 flex-shrink-0" size={24} />
-                  <span><strong>Ambitious:</strong> Ready to tackle complex, real-world challenges and deliver tangible results.</span>
-                </li>
-                <li className="flex gap-4 text-base md:text-lg text-foreground/70 font-light">
-                  <CheckCircle className="text-red-900 flex-shrink-0" size={24} />
-                  <span><strong>Growth-minded:</strong> Committed to developing leadership skills and learning from both successes and failures.</span>
-                </li>
-              </ul>
+              <div className="grid md:grid-cols-2 gap-8">
+                {[
+                  { icon: CheckCircle, title: "Self-directed", desc: "Comfortable owning projects with minimal supervision and driving your own learning." },
+                  { icon: CheckCircle, title: "Collaborative", desc: "Excited to work across disciplines and leverage diverse perspectives to solve problems." },
+                  { icon: CheckCircle, title: "Ambitious", desc: "Ready to tackle complex, real-world challenges and deliver tangible results." },
+                  { icon: CheckCircle, title: "Growth-minded", desc: "Committed to developing leadership skills and learning from both successes and failures." }
+                ].map((item, idx) => (
+                  <div key={idx} className="flex gap-4">
+                    <item.icon className="text-cyan-600 flex-shrink-0" size={28} />
+                    <div>
+                      <h3 className="font-bold text-lg text-foreground mb-2">{item.title}</h3>
+                      <p className="text-foreground/70 font-light">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="bg-white border-t border-border py-32 md:py-40">
-          <div className="container">
-            <div className="p-12 bg-gradient-to-br from-red-50 to-white border border-red-900/10 rounded-xl text-center">
-              <p className="text-foreground font-semibold mb-6 text-lg">Ready to lead an Innovation Team?</p>
-              <Button asChild>
-                <Link href="/forms" className="bg-red-900 hover:bg-red-900 text-white font-bold px-10 h-12 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105 inline-flex items-center justify-center gap-2">
-                  Apply Now
-                  <ArrowRight size={18} />
-                </Link>
-              </Button>
-            </div>
+        <section className="relative py-32 md:py-48 bg-gradient-to-br from-foreground to-slate-800">
+          <div className="container text-center">
+            <h2 className="font-serif font-black text-5xl md:text-6xl text-white mb-8">Ready to Lead?</h2>
+            <p className="text-xl md:text-2xl text-white/80 leading-relaxed mb-12 max-w-2xl mx-auto font-light">
+              Join one of our 8 active Innovation Teams and drive real impact.
+            </p>
+            <Button asChild>
+              <Link href="/forms" className="bg-cyan-600 hover:bg-cyan-700 text-white font-bold px-10 h-12 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 inline-flex items-center justify-center gap-2">
+                Apply Now
+                <ArrowRight size={18} />
+              </Link>
+            </Button>
           </div>
         </section>
       </main>

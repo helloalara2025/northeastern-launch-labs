@@ -54,131 +54,130 @@
 }
 
 /* 
-  Design Philosophy: Premium Notion + Figma Workspace
-  - Serif Headers: Playfair Display (600-800) for elegant, commanding presence
-  - Sans-serif Body: Inter (300-600) for refined, professional readability
-  - Letter-spacing: -0.03em on headers (tight), +0.3px on body (breathing room)
-  - Line-height: 1.15 headers (compact), 1.8 body (generous premium feel)
-  - Borders: 1px #E5E7EB (minimalist), dashed for placeholders
-  - Shadows: Micro-shadows (0 2px 4px) on hover only, no drop-shadow clutter
-  - Border Radius: 8-12px soft-square (0.75rem base)
-  - Background: Dot-grid pattern (20px spacing) for canvas texture
-  - Red Accent: #980000 (deep, sophisticated) for high-signal CTAs & badges
-  - Spacing: Generous py-32 md:py-40 sections, max-width 896px container
-  - Glassmorphism: Subtle backdrop-blur on nav/cards for depth
-  - Micro-interactions: Hover lift (-translate-y-1), scale (1.05), smooth 200ms transitions
+  Design Philosophy: Modern, Bold & Dynamic
+  - Headers: Strong, commanding presence with generous sizing
+  - Body: Clean, spacious, highly readable sans-serif
+  - Color System: Navy (#0F172A) + Cyan (#06B6D4) for modern energy
+  - Borders: Minimal, refined with subtle depth
+  - Shadows: Layered depth with smooth gradients
+  - Border Radius: 12-16px for modern, friendly feel
+  - Background: Clean white with subtle gradient accents
+  - Accent: Vibrant cyan for CTAs, highlights, and interactive elements
+  - Spacing: Generous, breathing room throughout
+  - Micro-interactions: Smooth transitions, hover animations, scale effects
+  - Layout: Asymmetric, modern grid with dynamic positioning
 */
 
 :root {
-  /* Red Accent System - Deep, Sophisticated */
-  --primary: #7f1d1d;           /* Red-900: Deep burgundy */
+  /* Modern Color System - Navy + Cyan */
+  --primary: #0F172A;           /* Deep Navy: Professional, sophisticated */
   --primary-foreground: #FFFFFF;
-  --primary-light: #dc2626;     /* Red-600: Brighter for hover states */
-  --primary-lighter: #fee2e2;   /* Red-100: Subtle backgrounds */
-  --sidebar-primary: #7f1d1d;
+  --primary-light: #1E293B;     /* Slate: Darker navy for depth */
+  --primary-lighter: #F0F9FF;   /* Sky: Subtle backgrounds */
+  --sidebar-primary: #0F172A;
   --sidebar-primary-foreground: #FFFFFF;
   
-  --chart-1: #7f1d1d;
-  --chart-2: #000000;
-  --chart-3: #FFFFFF;
-  --chart-4: #1F2937;
-  --chart-5: #7f1d1d;
+  --chart-1: #06B6D4;           /* Cyan: Vibrant accent */
+  --chart-2: #0F172A;           /* Navy: Primary */
+  --chart-3: #FFFFFF;           /* White */
+  --chart-4: #1E293B;           /* Slate */
+  --chart-5: #06B6D4;           /* Cyan */
   
-  --radius: 0.75rem;
+  --radius: 1rem;               /* 16px for modern feel */
   
-  /* Light Mode - Premium Workspace */
-  --background: #FFFFFF;        /* Clean white canvas */
-  --foreground: #1F2937;        /* Dark gray text (high contrast) */
+  /* Light Mode - Modern Clean */
+  --background: #FFFFFF;        /* Clean white */
+  --foreground: #0F172A;        /* Deep navy text */
   
-  --card: #F9FAFB;              /* Off-white for card backgrounds */
-  --card-foreground: #1F2937;
+  --card: #F8FAFC;              /* Off-white for cards */
+  --card-foreground: #0F172A;
   
   --popover: #FFFFFF;
-  --popover-foreground: #1F2937;
+  --popover-foreground: #0F172A;
   
-  --secondary: #000000;
+  --secondary: #1E293B;         /* Slate */
   --secondary-foreground: #FFFFFF;
   
-  --muted: #E5E7EB;             /* Light gray for borders */
-  --muted-foreground: #6B7280;  /* Medium gray for secondary text */
+  --muted: #CBD5E1;             /* Light slate for borders */
+  --muted-foreground: #64748B;  /* Medium slate for secondary text */
   
-  --accent: #7f1d1d;
+  --accent: #06B6D4;            /* Vibrant Cyan */
   --accent-foreground: #FFFFFF;
   
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
   
-  --border: #E5E7EB;            /* Minimalist 1px borders */
-  --input: #F3F4F6;
-  --ring: #7f1d1d;
+  --border: #E2E8F0;            /* Refined borders */
+  --input: #F1F5F9;
+  --ring: #06B6D4;
   
-  /* Shadow System - Micro-interactions only */
-  --shadow-micro: 0 2px 4px rgba(0, 0, 0, 0.05);
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+  /* Shadow System - Layered depth */
+  --shadow-micro: 0 1px 3px rgba(15, 23, 42, 0.08);
+  --shadow-sm: 0 2px 4px rgba(15, 23, 42, 0.1);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.12);
+  --shadow-lg: 0 12px 24px rgba(15, 23, 42, 0.15);
+  --shadow-xl: 0 20px 40px rgba(15, 23, 42, 0.2);
   
-  --sidebar: #F9FAFB;
-  --sidebar-foreground: #1F2937;
-  --sidebar-accent: #7f1d1d;
+  --sidebar: #F8FAFC;
+  --sidebar-foreground: #0F172A;
+  --sidebar-accent: #06B6D4;
   --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: #E5E7EB;
-  --sidebar-ring: #7f1d1d;
+  --sidebar-border: #E2E8F0;
+  --sidebar-ring: #06B6D4;
 }
 
 .dark {
-  /* Same as light mode for now - premium workspace aesthetic */
-  --primary: #7f1d1d;
+  /* Same as light mode - modern clean aesthetic */
+  --primary: #0F172A;
   --primary-foreground: #FFFFFF;
-  --primary-light: #dc2626;
-  --primary-lighter: #fee2e2;
-  --sidebar-primary: #7f1d1d;
+  --primary-light: #1E293B;
+  --primary-lighter: #F0F9FF;
+  --sidebar-primary: #0F172A;
   --sidebar-primary-foreground: #FFFFFF;
   
   --background: #FFFFFF;
-  --foreground: #1F2937;
+  --foreground: #0F172A;
   
-  --card: #F9FAFB;
-  --card-foreground: #1F2937;
+  --card: #F8FAFC;
+  --card-foreground: #0F172A;
   
   --popover: #FFFFFF;
-  --popover-foreground: #1F2937;
+  --popover-foreground: #0F172A;
   
-  --secondary: #000000;
+  --secondary: #1E293B;
   --secondary-foreground: #FFFFFF;
   
-  --muted: #E5E7EB;
-  --muted-foreground: #6B7280;
+  --muted: #CBD5E1;
+  --muted-foreground: #64748B;
   
-  --accent: #7f1d1d;
+  --accent: #06B6D4;
   --accent-foreground: #FFFFFF;
   
   --destructive: #EF4444;
   --destructive-foreground: #FFFFFF;
   
-  --border: #E5E7EB;
-  --input: #F3F4F6;
-  --ring: #7f1d1d;
+  --border: #E2E8F0;
+  --input: #F1F5F9;
+  --ring: #06B6D4;
   
-  --shadow-micro: 0 2px 4px rgba(0, 0, 0, 0.05);
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
-  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+  --shadow-micro: 0 1px 3px rgba(15, 23, 42, 0.08);
+  --shadow-sm: 0 2px 4px rgba(15, 23, 42, 0.1);
+  --shadow-md: 0 4px 12px rgba(15, 23, 42, 0.12);
+  --shadow-lg: 0 12px 24px rgba(15, 23, 42, 0.15);
+  --shadow-xl: 0 20px 40px rgba(15, 23, 42, 0.2);
   
-  --chart-1: #7f1d1d;
-  --chart-2: #000000;
+  --chart-1: #06B6D4;
+  --chart-2: #0F172A;
   --chart-3: #FFFFFF;
-  --chart-4: #1F2937;
-  --chart-5: #7f1d1d;
+  --chart-4: #1E293B;
+  --chart-5: #06B6D4;
   
-  --sidebar: #F9FAFB;
-  --sidebar-foreground: #1F2937;
-  --sidebar-accent: #7f1d1d;
+  --sidebar: #F8FAFC;
+  --sidebar-foreground: #0F172A;
+  --sidebar-accent: #06B6D4;
   --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: #E5E7EB;
-  --sidebar-ring: #7f1d1d;
+  --sidebar-border: #E2E8F0;
+  --sidebar-ring: #06B6D4;
 }
 
 @layer base {
@@ -187,9 +186,7 @@
   }
   body {
     @apply bg-background text-foreground font-sans;
-    background-image: radial-gradient(circle, #E5E7EB 0.5px, transparent 0.5px);
-    background-size: 20px 20px;
-    background-position: 0 0, 10px 10px;
+    background: linear-gradient(135deg, #FFFFFF 0%, #F0F9FF 100%);
   }
   
   /* Serif headers: tight letter-spacing, strong hierarchy */
@@ -200,27 +197,30 @@
   }
   
   h1 {
-    @apply text-7xl md:text-8xl;
-    font-weight: 800;
+    @apply text-8xl md:text-9xl;
+    font-weight: 900;
     margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
   }
   
   h2 {
-    @apply text-5xl md:text-6xl;
-    font-weight: 700;
-    margin-bottom: 1.25rem;
+    @apply text-6xl md:text-7xl;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
   }
   
   h3 {
-    @apply text-3xl md:text-4xl;
+    @apply text-4xl md:text-5xl;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.01em;
   }
   
   h4 {
-    @apply text-2xl;
+    @apply text-2xl md:text-3xl;
     font-weight: 600;
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
   }
   
   /* Body text: generous line-height for premium readability */
@@ -341,17 +341,17 @@
     @apply border-dashed border-2 border-gray-300 bg-gray-50/50;
   }
   
-  /* Scroll progress bar - Deep red gradient */
+  /* Scroll progress bar - Modern cyan gradient */
   .scroll-progress {
     position: fixed;
     top: 0;
     left: 0;
     height: 3px;
-    background: linear-gradient(to right, #7f1d1d, #dc2626);
+    background: linear-gradient(to right, #06B6D4, #0EA5E9);
     width: 0%;
     z-index: 9999;
     transition: width 0.1s ease-out;
-    box-shadow: 0 0 8px rgba(127, 29, 29, 0.3);
+    box-shadow: 0 0 12px rgba(6, 182, 212, 0.4);
   }
   
   /* Fade-in-up animation */

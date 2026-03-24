@@ -30,7 +30,7 @@ export default function Partners() {
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-cyan-600 mb-6">
                     <Users className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Skilled Student Teams</h3>
@@ -42,7 +42,7 @@ export default function Partners() {
 
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-cyan-600 mb-6">
                     <TrendingUp className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Cost-Effective Development</h3>
@@ -54,7 +54,7 @@ export default function Partners() {
 
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-cyan-600 mb-6">
                     <Zap className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Fresh Perspectives</h3>
@@ -66,7 +66,7 @@ export default function Partners() {
 
               <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6">
+                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-cyan-600 mb-6">
                     <Clock className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Flexible Commitment</h3>
@@ -102,7 +102,7 @@ export default function Partners() {
             <div className="space-y-8">
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-900 text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-cyan-600 text-white font-bold text-lg">
                     1
                   </div>
                 </div>
@@ -115,7 +115,7 @@ export default function Partners() {
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-900 text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-cyan-600 text-white font-bold text-lg">
                     2
                   </div>
                 </div>
@@ -128,7 +128,7 @@ export default function Partners() {
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-900 text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-cyan-600 text-white font-bold text-lg">
                     3
                   </div>
                 </div>
@@ -141,7 +141,7 @@ export default function Partners() {
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-900 text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-cyan-600 text-white font-bold text-lg">
                     4
                   </div>
                 </div>
@@ -164,7 +164,7 @@ export default function Partners() {
               Let's talk about how Launch Labs can support your startup's growth.
             </p>
             <Link href="/contact">
-              <Button className="bg-red-900 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg inline-flex items-center gap-2">
+              <Button className="bg-cyan-600 hover:bg-cyan-600 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg inline-flex items-center gap-2">
                 Get in Touch
                 <ArrowRight size={18} />
               </Button>
@@ -186,25 +186,25 @@ export default function Partners() {
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Explore</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Home</Link></li>
-                <li><Link href="/about" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">About</Link></li>
-                <li><Link href="/launch-teams" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Launch Teams</Link></li>
+                <li><Link href="/" className="text-foreground/70 hover:text-cyan-600 transition-colors font-medium">Home</Link></li>
+                <li><Link href="/about" className="text-foreground/70 hover:text-cyan-600 transition-colors font-medium">About</Link></li>
+                <li><Link href="/launch-teams" className="text-foreground/70 hover:text-cyan-600 transition-colors font-medium">Launch Teams</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Get Involved</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/forms" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Apply</Link></li>
-                <li><Link href="/leadership" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Leadership</Link></li>
-                <li><Link href="/innovation-teams" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Innovation Teams</Link></li>
+                <li><Link href="/forms" className="text-foreground/70 hover:text-cyan-600 transition-colors font-medium">Apply</Link></li>
+                <li><Link href="/leadership" className="text-foreground/70 hover:text-cyan-600 transition-colors font-medium">Leadership</Link></li>
+                <li><Link href="/innovation-teams" className="text-foreground/70 hover:text-cyan-600 transition-colors font-medium">Innovation Teams</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Connect</h4>
               <ul className="space-y-3 text-sm">
-                <li><Link href="/contact" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Contact</Link></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">LinkedIn</a></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Instagram</a></li>
+                <li><Link href="/contact" className="text-foreground/70 hover:text-cyan-600 transition-colors font-medium">Contact</Link></li>
+                <li><a href="#" className="text-foreground/70 hover:text-cyan-600 transition-colors font-medium">LinkedIn</a></li>
+                <li><a href="#" className="text-foreground/70 hover:text-cyan-600 transition-colors font-medium">Instagram</a></li>
               </ul>
             </div>
           </div>
