@@ -228,7 +228,7 @@ export default function ApplyInnovationTeam() {
                     checked={formData.agreeToTerms}
                     onChange={handleChange}
                     required
-                    className="w-5 h-5 rounded border-foreground/20 text-gray-100 focus:ring-amber-600 mt-1"
+                    className="w-5 h-5 border-foreground/20 text-gray-100 focus:ring-amber-600 mt-1"
                   />
                   <label htmlFor="agreeToTerms" className="text-base md:text-lg text-foreground/70 font-light">
                     I understand that this is a semester-long commitment and I'm prepared to lead my team through a complete project cycle from conception to delivery. <span className="text-gray-100">*</span>

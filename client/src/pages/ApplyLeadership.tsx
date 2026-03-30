@@ -247,7 +247,7 @@ export default function ApplyLeadership() {
                     checked={formData.agreeToTerms}
                     onChange={handleChange}
                     required
-                    className="w-5 h-5 rounded border-foreground/20 text-red-900 focus:ring-red-900 mt-1"
+                    className="w-5 h-5 border-foreground/20 text-red-900 focus:ring-red-900 mt-1"
                   />
                   <label htmlFor="agreeToTerms" className="text-base md:text-lg text-foreground/70 font-light">
                     I understand the responsibilities of a leadership role and am committed to supporting Launch Labs' mission and members. <span className="text-red-900">*</span>

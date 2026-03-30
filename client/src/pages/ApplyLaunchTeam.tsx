@@ -228,7 +228,7 @@ export default function ApplyLaunchTeam() {
                     checked={formData.agreeToTerms}
                     onChange={handleChange}
                     required
-                    className="w-5 h-5 rounded border-foreground/20 text-red-900 focus:ring-red-900 mt-1"
+                    className="w-5 h-5 border-foreground/20 text-red-900 focus:ring-red-900 mt-1"
                   />
                   <label htmlFor="agreeToTerms" className="text-base md:text-lg text-foreground/70 font-light">
                     I understand that this is a semester-long commitment and I'm prepared to dedicate the required time to my team's project. <span className="text-red-900">*</span>

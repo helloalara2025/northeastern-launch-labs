@@ -151,7 +151,7 @@ export default function InstagramFeed({
       </div>
 
       {/* Additional Info */}
-      <div className="mt-12 p-8 bg-red-50 border border-red-900/10  text-center">
+      <div className="mt-12 p-8 bg-rgba(200, 16, 46, 0.05) border border-red-900/10  text-center">
         <p className="text-foreground/70 text-sm md:text-base">
           📸 Visit our Instagram to see more photos, behind-the-scenes content, and updates from our Launch Teams and Innovation Teams.
         </p>

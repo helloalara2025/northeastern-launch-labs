@@ -279,7 +279,8 @@
   
   /* Button styling: red-900 primary, minimalist secondary */
   button {
-    @apply rounded-full transition-all duration-200;
+    @apply transition-all duration-200;
+    border-radius: 0 !important;
   }
   
   button:hover:not(:disabled) {
