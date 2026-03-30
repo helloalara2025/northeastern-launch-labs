@@ -120,7 +120,7 @@ export default function InnovationTeams() {
           <div className="absolute inset-0 bg-gradient-to-br from-rgba(200, 16, 46, 0.05)/30 to-transparent pointer-events-none"></div>
           <div className="container relative z-10">
             <div className="mb-8 inline-block">
-              <span className="inline-block bg-#C8102E text-white text-sm font-bold px-4 py-2 ">Venture Lab</span>
+              <span className="inline-block bg-[#C8102E] text-white text-sm font-bold px-4 py-2 ">Venture Lab</span>
             </div>
             <h1 className="font-serif font-black text-8xl md:text-9xl text-black mb-8 leading-tight">
               Innovation Teams
@@ -160,8 +160,8 @@ export default function InnovationTeams() {
                       {/* Header */}
                       <div className="flex-1">
                         <div className="flex items-center gap-3 mb-3">
-                          <Star className="w-5 h-5 text-#C8102E" />
-                          <span className="text-xs font-bold uppercase tracking-widest text-#C8102E">{project.theme}</span>
+                          <Star className="w-5 h-5 text-[#C8102E]" />
+                          <span className="text-xs font-bold uppercase tracking-widest text-[#C8102E]">{project.theme}</span>
                         </div>
                         <h3 className="font-serif font-bold text-2xl md:text-3xl text-black mb-2">{project.title}</h3>
                         <p className="text-sm md:text-base text-black/60 font-light italic mb-4">{project.subtitle}</p>
@@ -169,7 +169,7 @@ export default function InnovationTeams() {
 
                       {/* Status Badge */}
                       <div className="mb-6">
-                        <span className="inline-block text-xs font-bold px-4 py-2 bg-rgba(200, 16, 46, 0.1) text-#C8102E ">{project.status}</span>
+                        <span className="inline-block text-xs font-bold px-4 py-2 bg-rgba(200, 16, 46, 0.1) text-[#C8102E] ">{project.status}</span>
                       </div>
 
                       {/* Focus */}
@@ -179,14 +179,14 @@ export default function InnovationTeams() {
                       <ul className="space-y-3 mb-8 flex-1">
                         {project.bullets.map((bullet, idx) => (
                           <li key={idx} className="text-sm md:text-base text-black/70 font-light flex gap-3">
-                            <span className="text-#C8102E font-bold flex-shrink-0">✓</span>
+                            <span className="text-[#C8102E] font-bold flex-shrink-0">✓</span>
                             <span>{bullet}</span>
                           </li>
                         ))}
                       </ul>
 
                       {/* CTA */}
-                      <Link href="/forms" className="inline-flex items-center gap-2 text-#C8102E font-bold hover:gap-3 transition-all duration-200 text-sm group/link">
+                      <Link href="/forms" className="inline-flex items-center gap-2 text-[#C8102E] font-bold hover:gap-3 transition-all duration-200 text-sm group/link">
                         Learn More
                         <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
                       </Link>
@@ -230,7 +230,7 @@ export default function InnovationTeams() {
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-6">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-16 w-16  bg-#C8102E/20 text-#C8102E">
+                    <div className="flex items-center justify-center h-16 w-16  bg-[#C8102E]/20 text-[#C8102E]">
                       <item.icon size={28} />
                     </div>
                   </div>
@@ -260,7 +260,7 @@ export default function InnovationTeams() {
                   { icon: CheckCircle, title: "Growth-minded", desc: "Committed to developing leadership skills and learning from both successes and failures." }
                 ].map((item, idx) => (
                   <div key={idx} className="flex gap-4">
-                    <item.icon className="text-#C8102E flex-shrink-0" size={28} />
+                    <item.icon className="text-[#C8102E] flex-shrink-0" size={28} />
                     <div>
                       <h3 className="font-bold text-lg text-black mb-2">{item.title}</h3>
                       <p className="text-black/70 font-light">{item.desc}</p>
@@ -280,7 +280,7 @@ export default function InnovationTeams() {
               Join one of our 8 active Innovation Teams and drive real impact.
             </p>
             <Button asChild>
-              <Link href="/forms" className="bg-#C8102E hover:bg-#A60826 text-white font-bold px-10 h-12  transition-all duration-300 shadow-lg hover:shadow-#C8102E/30 hover:scale-105 inline-flex items-center justify-center gap-2">
+              <Link href="/forms" className="bg-[#C8102E] hover:bg-[#A60826] text-white font-bold px-10 h-12  transition-all duration-300 shadow-lg hover:shadow-#C8102E/30 hover:scale-105 inline-flex items-center justify-center gap-2">
                 Apply Now
                 <ArrowRight size={18} />
               </Link>

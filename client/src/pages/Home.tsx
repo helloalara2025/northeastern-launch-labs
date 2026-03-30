@@ -44,61 +44,55 @@ export default function Home() {
 
       <Navigation />
       <main className="pt-24">
-        {/* Hero Section - Modern Bold */}
-        <section className="relative overflow-hidden py-32 md:py-48">
-          <div className="absolute inset-0 bg-gradient-to-br from-rgba(200, 16, 46, 0.05)/30 to-transparent pointer-events-none"></div>
+        {/* Hero Section - IMThrive Inspired Bold Asymmetric */}
+        <section className="relative overflow-hidden py-32 md:py-56 bg-white">
+          <div className="absolute inset-0 pointer-events-none">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-[#CCFF00] opacity-10 blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#C8102E] opacity-5 blur-3xl"></div>
+          </div>
+          
           <div className="container relative z-10">
-            <div className="mb-8 inline-block">
-              <span className="inline-block bg-#C8102E text-white text-sm font-bold px-4 py-2 ">Student Club at Northeastern</span>
-            </div>
-            <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h1 className="font-serif font-black text-8xl md:text-9xl text-foreground mb-8 leading-tight">
-                  From Idea to Impact.
+                <div className="mb-6 inline-block">
+                  <span className="inline-block bg-[#C8102E] text-white text-xs font-black px-4 py-2 tracking-widest">LAUNCH LABS</span>
+                </div>
+                <h1 className="font-serif font-black text-7xl md:text-8xl text-foreground mb-6 leading-tight">
+                  From Idea<br />to<br /><span className="text-[#C8102E]">Impact</span>.
                 </h1>
-                <p className="text-xl md:text-2xl text-foreground/70 leading-relaxed mb-12 max-w-2xl font-light">
+                <p className="text-lg md:text-xl text-foreground/70 leading-relaxed mb-10 max-w-xl font-light">
                   Work on real-world projects with students from every background. Bridge classroom learning with hands-on impact.
                 </p>
-                <div className="flex gap-4">
+                <div className="flex gap-4 flex-wrap">
                   <Button asChild>
-                    <Link href="/forms" className="bg-#C8102E hover:bg-#A60826 text-white font-bold px-10 h-12  transition-all duration-300 shadow-lg hover:shadow-lg hover:scale-100 hover:shadow-lg inline-flex items-center justify-center gap-2">
-                      Start Your Journey
+                    <Link href="/forms" className="bg-[#C8102E] hover:bg-[#A60826] text-white font-black px-8 py-3 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 inline-flex items-center justify-center gap-2">
+                      START YOUR JOURNEY
                       <ArrowRight size={18} />
                     </Link>
                   </Button>
                   <Button asChild variant="outline">
-                    <Link href="/about" className="border-4 border-foreground/20 text-foreground font-bold px-10 h-12  transition-all duration-300 hover:border-#C8102E hover:text-#C8102E">
-                      Learn More
+                    <Link href="/about" className="border-3 border-[#C8102E] text-[#C8102E] font-black px-8 py-3 transition-all duration-300 hover:bg-[#C8102E] hover:text-white hover:shadow-lg">
+                      LEARN MORE
                     </Link>
                   </Button>
                 </div>
               </div>
               
-              {/* Floating Tech Stack - Modern */}
+              {/* Right side - Bold graphic element */}
               <div className="hidden md:flex items-center justify-center relative h-96">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#C8102E] to-[#A60826] opacity-10 blur-2xl"></div>
                 <div className="relative w-full h-full flex items-center justify-center">
-                  {/* Central circle */}
-                  <div className="absolute w-28 h-28 bg-gradient-to-br from-rgba(200, 16, 46, 0.1) to-rgba(200, 16, 46, 0.1)  flex items-center justify-center float-animation shadow-lg">
-                    <div className="w-20 h-20 bg-gradient-to-br from-#C8102E to-#A60826  flex items-center justify-center text-white font-bold text-2xl">
-                      NU
+                  <div className="w-64 h-64 bg-[#C8102E] flex items-center justify-center shadow-2xl">
+                    <div className="text-center text-white">
+                      <div className="text-6xl font-black mb-2">50+</div>
+                      <div className="text-lg font-bold tracking-widest">MEMBERS</div>
                     </div>
                   </div>
-                  
-                  {/* Floating elements */}
-                  <div className="absolute top-0 left-1/4 w-20 h-20 bg-white border-4 border-#C8102E  flex items-center justify-center float-animation shadow-sm hover:shadow-lg transition-all" style={{ animationDelay: "0.2s" }}>
-                    <Code className="w-10 h-10 text-#C8102E" />
-                  </div>
-                  
-                  <div className="absolute top-1/4 right-0 w-20 h-20 bg-white border-4 border-#C8102E  flex items-center justify-center float-animation shadow-sm hover:shadow-lg transition-all" style={{ animationDelay: "0.4s" }}>
-                    <Lightbulb className="w-10 h-10 text-#C8102E" />
-                  </div>
-                  
-                  <div className="absolute bottom-1/4 right-1/4 w-20 h-20 bg-white border-4 border-#C8102E  flex items-center justify-center float-animation shadow-sm hover:shadow-lg transition-all" style={{ animationDelay: "0.6s" }}>
-                    <Users className="w-10 h-10 text-#C8102E" />
-                  </div>
-                  
-                  <div className="absolute bottom-0 left-1/3 w-20 h-20 bg-white border-4 border-#C8102E  flex items-center justify-center float-animation shadow-sm hover:shadow-lg transition-all" style={{ animationDelay: "0.8s" }}>
-                    <Rocket className="w-10 h-10 text-#C8102E" />
+                  <div className="absolute -bottom-8 -right-8 w-32 h-32 bg-[#CCFF00] flex items-center justify-center shadow-lg">
+                    <div className="text-center text-black font-black">
+                      <div className="text-4xl">10+</div>
+                      <div className="text-xs font-bold tracking-widest">PROJECTS</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -106,42 +100,36 @@ export default function Home() {
           </div>
         </section>
 
-        {/* How We Work - Feature Cards */}
-        <section data-section="how-we-work" className="relative py-32 md:py-48 bg-gradient-to-b from-transparent via-cyan-50/20 to-transparent">
+        {/* How We Work - Feature Cards with Dark Background */}
+        <section data-section="how-we-work" className="relative py-32 md:py-48 bg-[#0F172A]">
           <div className="container">
-            <h2 className="font-serif font-black text-6xl md:text-7xl text-foreground mb-16">How We Work</h2>
+            <h2 className="font-serif font-black text-5xl md:text-6xl text-white mb-16">How We Work</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {/* Launch Teams Card */}
-              <div className="group relative p-8 bg-white border-4 border-foreground/10  hover:border-#C8102E transition-all duration-300 hover:shadow-lg">
-                <div className="absolute inset-0 bg-gradient-to-br from-rgba(200, 16, 46, 0.05) to-transparent opacity-0 group-hover:opacity-100  transition-opacity duration-300 pointer-events-none"></div>
+              <div className="group relative p-8 bg-white border-l-8 border-[#C8102E] hover:shadow-2xl transition-all duration-300">
                 <div className="relative z-10">
-                  <div className="w-12 h-12 bg-#C8102E  flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 bg-[#C8102E] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                     <Briefcase className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="font-serif font-bold text-3xl text-foreground mb-4">Launch Teams</h3>
-                  <p className="text-foreground/70 leading-relaxed mb-6 font-light">
-                    Partner with early-stage startups on real projects. Design, build, and deliver solutions that matter.
+                  <h3 className="font-serif font-black text-2xl text-foreground mb-4">Launch Teams</h3>
+                  <p className="text-foreground/70 leading-relaxed mb-4">
+                    Partners directly with early-stage startups to design, build, and deliver real-world solutions.
                   </p>
-                  <div className="inline-block px-4 py-2 bg-cyan-100 text-cyan-700  text-sm font-bold">
-                    5+ Active Partners
-                  </div>
+                  <div className="text-sm font-bold text-[#C8102E] tracking-widest">5+ ACTIVE PARTNERS</div>
                 </div>
               </div>
-
+              
               {/* Innovation Teams Card */}
-              <div className="group relative p-8 bg-white border-4 border-foreground/10  hover:border-#C8102E transition-all duration-300 hover:shadow-lg">
-                <div className="absolute inset-0 bg-gradient-to-br from-rgba(200, 16, 46, 0.05) to-transparent opacity-0 group-hover:opacity-100  transition-opacity duration-300 pointer-events-none"></div>
+              <div className="group relative p-8 bg-white border-l-8 border-[#CCFF00] hover:shadow-2xl transition-all duration-300">
                 <div className="relative z-10">
-                  <div className="w-12 h-12 bg-#C8102E  flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <Sparkles className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 bg-[#CCFF00] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <Lightbulb className="w-6 h-6 text-black" />
                   </div>
-                  <h3 className="font-serif font-bold text-3xl text-foreground mb-4">Innovation Teams</h3>
-                  <p className="text-foreground/70 leading-relaxed mb-6 font-light">
-                    Lead end-to-end projects from problem definition to delivery. Develop leadership and execution skills.
+                  <h3 className="font-serif font-black text-2xl text-foreground mb-4">Innovation Teams</h3>
+                  <p className="text-foreground/70 leading-relaxed mb-4">
+                    Focus on internally scoped, end-to-end projects designed to mirror real-world professional work.
                   </p>
-                  <div className="inline-block px-4 py-2 bg-cyan-100 text-cyan-700  text-sm font-bold">
-                    8 Internal Ventures
-                  </div>
+                  <div className="text-sm font-bold text-[#CCFF00] tracking-widest">8 INTERNAL VENTURES</div>
                 </div>
               </div>
             </div>
@@ -149,74 +137,57 @@ export default function Home() {
         </section>
 
         {/* What You'll Gain - Icon Grid */}
-        <section data-section="what-you-gain" className="relative py-32 md:py-48">
+        <section data-section="what-you-gain" className="relative py-32 md:py-48 bg-white">
           <div className="container">
-            <h2 className="font-serif font-black text-6xl md:text-7xl text-foreground mb-16">What You'll Gain</h2>
+            <h2 className="font-serif font-black text-5xl md:text-6xl text-foreground mb-16">What You'll Gain</h2>
             <div className="grid md:grid-cols-4 gap-6">
               {[
-                { icon: Code, title: "Technical Mastery", desc: "Build real products with modern tech stacks" },
-                { icon: Users, title: "Leadership", desc: "Lead teams and drive strategic decisions" },
-                { icon: TrendingUp, title: "Career Growth", desc: "Portfolio-ready projects and mentorship" },
-                { icon: Compass, title: "Network", desc: "Connect with founders, investors, and peers" }
+                { icon: Briefcase, title: "Real Experience", desc: "Work on projects that matter" },
+                { icon: Users, title: "Community", desc: "Connect with ambitious peers" },
+                { icon: Zap, title: "Skills", desc: "Learn industry best practices" },
+                { icon: Award, title: "Portfolio", desc: "Build your professional story" },
               ].map((item, idx) => (
-                <div key={idx} className="group p-8 bg-white border border-foreground/10  hover:border-#C8102E hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
-                  <div className="w-14 h-14 bg-gradient-to-br from-rgba(200, 16, 46, 0.1) to-rgba(200, 16, 46, 0.1)  flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <item.icon className="w-7 h-7 text-#C8102E" />
-                  </div>
-                  <h3 className="font-bold text-xl text-foreground mb-3">{item.title}</h3>
-                  <p className="text-foreground/70 font-light">{item.desc}</p>
+                <div key={idx} className="group p-6 bg-white border-2 border-foreground/10 hover:border-[#C8102E] hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                  <item.icon className="w-10 h-10 text-[#C8102E] mb-4 group-hover:scale-110 transition-transform" />
+                  <h3 className="font-serif font-black text-lg text-foreground mb-2">{item.title}</h3>
+                  <p className="text-sm text-foreground/60">{item.desc}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Mission Statement */}
-        <section data-section="mission" className="relative py-32 md:py-48 bg-gradient-to-r from-#C8102E to-#A60826">
-          <div className="container">
-            <div className="max-w-3xl">
-              <h2 className="font-serif font-black text-5xl md:text-6xl text-white mb-8">Our Mission</h2>
-              <p className="text-xl md:text-2xl text-white/90 leading-relaxed font-light mb-12">
-                To empower students to bridge the gap between classroom learning and real-world impact by working on meaningful projects that solve actual problems.
-              </p>
-              <Button asChild>
-                <Link href="/about" className="bg-white text-#C8102E hover:bg-cyan-50 font-bold px-10 h-12  transition-all duration-300 shadow-lg hover:shadow-lg inline-flex items-center justify-center gap-2">
-                  Explore Our Story
-                  <ArrowRight size={18} />
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </section>
+        {/* Project Carousel */}
+        <ProjectCarousel />
 
         {/* Instagram Feed */}
-        <section data-section="instagram" className="relative py-32 md:py-48">
+        <section className="relative py-32 md:py-48 bg-white">
           <div className="container">
-            <h2 className="font-serif font-black text-6xl md:text-7xl text-foreground mb-16">Latest from Instagram</h2>
+            <h2 className="font-serif font-black text-5xl md:text-6xl text-foreground mb-16">Latest from Instagram</h2>
             <InstagramFeed />
           </div>
         </section>
 
-        {/* CTA Section */}
-        {/* Project Carousel */}
-        <ProjectCarousel />
-
-        <section className="relative py-32 md:py-48 bg-gradient-to-br from-foreground to-slate-800">
-          <div className="container text-center">
+        {/* CTA Section - Dark with Lime Accent */}
+        <section className="relative py-32 md:py-48 bg-[#0F172A] overflow-hidden">
+          <div className="absolute inset-0 pointer-events-none">
+            <div className="absolute top-0 right-0 w-96 h-96 bg-[#CCFF00] opacity-10 blur-3xl"></div>
+          </div>
+          <div className="container text-center relative z-10">
             <h2 className="font-serif font-black text-5xl md:text-6xl text-white mb-8">Ready to Make an Impact?</h2>
             <p className="text-xl md:text-2xl text-white/80 leading-relaxed mb-12 max-w-2xl mx-auto font-light">
               Join a community of ambitious students working on projects that matter.
             </p>
             <div className="flex gap-4 justify-center flex-wrap">
               <Button asChild>
-                <Link href="/forms" className="bg-#C8102E hover:bg-#A60826 text-white font-bold px-10 h-12  transition-all duration-300 shadow-lg hover:shadow-lg hover:scale-100 hover:shadow-lg inline-flex items-center justify-center gap-2">
-                  Apply Now
+                <Link href="/forms" className="bg-[#C8102E] hover:bg-[#A60826] text-white font-black px-10 py-3 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 inline-flex items-center justify-center gap-2">
+                  APPLY NOW
                   <ArrowRight size={18} />
                 </Link>
               </Button>
               <Button asChild variant="outline">
-                <Link href="/contact" className="border-4 border-white text-white hover:bg-white/10 font-bold px-10 h-12  transition-all duration-300">
-                  Get in Touch
+                <Link href="/contact" className="border-3 border-[#CCFF00] text-[#CCFF00] hover:bg-[#CCFF00]/10 font-black px-10 py-3 transition-all duration-300">
+                  GET IN TOUCH
                 </Link>
               </Button>
             </div>
