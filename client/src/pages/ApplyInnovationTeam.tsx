@@ -79,14 +79,14 @@ export default function ApplyInnovationTeam() {
                     Thank you for applying to Launch Labs. We'll review your application and get back to you soon at the email address you provided.
                   </p>
                   <Link href="/">
-                    <Button className="bg-gray-100 hover:bg-gray-100 text-white font-bold px-8 h-12 rounded-lg">
+                    <Button className="bg-gray-100 hover:bg-gray-100 text-white font-bold px-8 h-12 ">
                       Return to Home
                     </Button>
                   </Link>
                 </CardContent>
               </Card>
             ) : (
-              <form onSubmit={handleSubmit} className="bg-white border border-foreground/10 rounded-lg p-10">
+              <form onSubmit={handleSubmit} className="bg-white border border-foreground/10  p-10">
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label htmlFor="fullName" className="block text-sm font-bold text-foreground mb-2">
@@ -99,7 +99,7 @@ export default function ApplyInnovationTeam() {
                       value={formData.fullName}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-amber-600/20 focus:border-gray-100 transition-all"
+                      className="w-full px-4 py-3  border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-amber-600/20 focus:border-gray-100 transition-all"
                       placeholder="Your full name"
                     />
                   </div>
@@ -115,7 +115,7 @@ export default function ApplyInnovationTeam() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-amber-600/20 focus:border-gray-100 transition-all"
+                      className="w-full px-4 py-3  border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-amber-600/20 focus:border-gray-100 transition-all"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -130,7 +130,7 @@ export default function ApplyInnovationTeam() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-amber-600/20 focus:border-gray-100 transition-all"
+                      className="w-full px-4 py-3  border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-amber-600/20 focus:border-gray-100 transition-all"
                       placeholder="(123) 456-7890"
                     />
                   </div>
@@ -146,7 +146,7 @@ export default function ApplyInnovationTeam() {
                       value={formData.major}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-amber-600/20 focus:border-gray-100 transition-all"
+                      className="w-full px-4 py-3  border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-amber-600/20 focus:border-gray-100 transition-all"
                       placeholder="e.g., Computer Science, Business"
                     />
                   </div>
@@ -160,7 +160,7 @@ export default function ApplyInnovationTeam() {
                       name="year"
                       value={formData.year}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-amber-600/20 focus:border-gray-100 transition-all"
+                      className="w-full px-4 py-3  border border-foreground/10 bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-amber-600/20 focus:border-gray-100 transition-all"
                     >
                       <option value="Freshman">Freshman</option>
                       <option value="Sophomore">Sophomore</option>
@@ -179,7 +179,7 @@ export default function ApplyInnovationTeam() {
                       name="availability"
                       value={formData.availability}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-amber-600/20 focus:border-gray-100 transition-all"
+                      className="w-full px-4 py-3  border border-foreground/10 bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-amber-600/20 focus:border-gray-100 transition-all"
                     >
                       <option value="3-5 hours per week">3-5 hours per week</option>
                       <option value="5-8 hours per week">5-8 hours per week</option>
@@ -199,7 +199,7 @@ export default function ApplyInnovationTeam() {
                     onChange={handleChange}
                     required
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-amber-600/20 focus:border-gray-100 transition-all resize-none"
+                    className="w-full px-4 py-3  border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-amber-600/20 focus:border-gray-100 transition-all resize-none"
                     placeholder="Tell us about your key skills, technical expertise, and areas of strength..."
                   ></textarea>
                 </div>
@@ -215,7 +215,7 @@ export default function ApplyInnovationTeam() {
                     onChange={handleChange}
                     required
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-amber-600/20 focus:border-gray-100 transition-all resize-none"
+                    className="w-full px-4 py-3  border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-amber-600/20 focus:border-gray-100 transition-all resize-none"
                     placeholder="Share your motivation and what you hope to accomplish through this experience..."
                   ></textarea>
                 </div>
@@ -237,7 +237,7 @@ export default function ApplyInnovationTeam() {
 
                 <Button
                   type="submit"
-                  className="w-full bg-gray-100 hover:bg-gray-100 text-white font-bold h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
+                  className="w-full bg-gray-100 hover:bg-gray-100 text-white font-bold h-12  transition-all duration-200 shadow-sm hover:shadow-lg"
                 >
                   Submit Application
                 </Button>

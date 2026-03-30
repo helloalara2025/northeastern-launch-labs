@@ -18,7 +18,7 @@ export default function Partners() {
             { title: "Fresh Perspectives", desc: "Students bring emerging technologies and new approaches" },
             { title: "Flexible Commitment", desc: "Semester-long engagements with defined scope" }
           ].map((item, idx) => (
-            <div key={idx} className="bg-white border border-border rounded-lg p-6">
+            <div key={idx} className="bg-white border border-border  p-6">
               <h3 className="font-sans font-bold text-lg text-foreground mb-2">{item.title}</h3>
               <p className="text-foreground/70 text-base font-regular">{item.desc}</p>
             </div>

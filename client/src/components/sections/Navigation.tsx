@@ -17,62 +17,62 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white ${
-        isScrolled ? "shadow-md border-b border-gray-100" : ""
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white border-b-2 border-black/5 ${
+        isScrolled ? "shadow-lg" : ""
       }`}
     >
       <div className="container flex items-center justify-between h-16 px-4 md:px-6">
-        <Link href="/" className="cursor-pointer hover:opacity-90 transition-all duration-200 flex items-center gap-2 flex-shrink-0">
+        <Link href="/" className="cursor-pointer hover:opacity-80 transition-all duration-200 flex items-center gap-2 flex-shrink-0">
           <img src="/images/nu-launch-labs-logo.png" alt="NU Launch Labs Logo" className="h-10 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-10 flex-1 justify-center">
-          <Link href="/about" className="text-sm font-medium text-black/70 hover:text-red-700 transition-colors duration-200 relative group">
+        <div className="hidden md:flex items-center gap-12 flex-1 justify-center">
+          <Link href="/about" className="text-sm font-bold text-black/70 hover:text-red-700 transition-colors duration-200 relative group uppercase tracking-wider">
             About
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-700 group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-1 bg-red-700 group-hover:w-full transition-all duration-300"></span>
           </Link>
 
-          <Link href="/launch-teams" className="text-sm font-medium text-black/70 hover:text-red-700 transition-colors duration-200 relative group">
+          <Link href="/launch-teams" className="text-sm font-bold text-black/70 hover:text-red-700 transition-colors duration-200 relative group uppercase tracking-wider">
             Launch Teams
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-700 group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-1 bg-red-700 group-hover:w-full transition-all duration-300"></span>
           </Link>
 
-          <Link href="/innovation-teams" className="text-sm font-medium text-black/70 hover:text-red-700 transition-colors duration-200 relative group">
+          <Link href="/innovation-teams" className="text-sm font-bold text-black/70 hover:text-red-700 transition-colors duration-200 relative group uppercase tracking-wider">
             Innovation Teams
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-700 group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-1 bg-red-700 group-hover:w-full transition-all duration-300"></span>
           </Link>
 
-          <Link href="/leadership" className="text-sm font-medium text-black/70 hover:text-red-700 transition-colors duration-200 relative group">
+          <Link href="/leadership" className="text-sm font-bold text-black/70 hover:text-red-700 transition-colors duration-200 relative group uppercase tracking-wider">
             Leadership
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-700 group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-1 bg-red-700 group-hover:w-full transition-all duration-300"></span>
           </Link>
 
-          <Link href="/partners" className="text-sm font-medium text-black/70 hover:text-red-700 transition-colors duration-200 relative group">
+          <Link href="/partners" className="text-sm font-bold text-black/70 hover:text-red-700 transition-colors duration-200 relative group uppercase tracking-wider">
             Partners
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-700 group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-1 bg-red-700 group-hover:w-full transition-all duration-300"></span>
           </Link>
 
-          <Link href="/contact" className="text-sm font-medium text-black/70 hover:text-red-700 transition-colors duration-200 relative group">
+          <Link href="/contact" className="text-sm font-bold text-black/70 hover:text-red-700 transition-colors duration-200 relative group uppercase tracking-wider">
             Contact
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-700 group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-1 bg-red-700 group-hover:w-full transition-all duration-300"></span>
           </Link>
 
-          <Link href="/forms" className="text-sm font-medium text-black/70 hover:text-red-700 transition-colors duration-200 relative group">
+          <Link href="/forms" className="text-sm font-bold text-black/70 hover:text-red-700 transition-colors duration-200 relative group uppercase tracking-wider">
             Forms
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-red-700 group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute bottom-0 left-0 w-0 h-1 bg-red-700 group-hover:w-full transition-all duration-300"></span>
           </Link>
         </div>
 
         <div className="hidden md:flex items-center gap-3 flex-shrink-0">
           <Link href="/forms">
-            <Button className="border-2 border-black/20 text-black hover:border-red-700 hover:text-red-700 font-bold px-6 h-10 rounded-full text-sm transition-all duration-200 bg-white shadow-sm hover:shadow-md inline-flex items-center gap-2">
-              Propose Project
+            <Button className="border-2 border-black/20 text-black hover:border-red-700 hover:text-red-700 font-bold px-6 h-10 text-sm transition-all duration-200 bg-white shadow-sm hover:shadow-md hover:bg-red-50 inline-flex items-center gap-2 uppercase tracking-wider">
+              Propose
               <ArrowRight size={16} />
             </Button>
           </Link>
           <Link href="/forms">
-            <Button className="bg-red-700 hover:bg-red-800 text-white font-bold px-6 h-10 rounded-full text-sm transition-all duration-200 shadow-md hover:shadow-lg hover:shadow-red-700/30 inline-flex items-center gap-2">
+            <Button className="bg-red-700 hover:bg-red-800 text-white font-bold px-6 h-10 text-sm transition-all duration-200 shadow-md hover:shadow-lg hover:shadow-red-700/40 inline-flex items-center gap-2 uppercase tracking-wider">
               Apply
               <ArrowRight size={16} />
             </Button>
@@ -81,7 +81,7 @@ export default function Navigation() {
 
         {/* Mobile Menu Toggle */}
         <button 
-          className="md:hidden p-2 text-black hover:bg-gray-100 rounded-lg transition-all duration-200"
+          className="md:hidden p-2 text-black hover:bg-gray-100 transition-all duration-200"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -91,43 +91,43 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-b border-gray-100 p-4 flex flex-col gap-1 shadow-md">
-          <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-black/70 hover:text-red-700 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">
+        <div className="md:hidden bg-white border-b-2 border-black/5 p-4 flex flex-col gap-1 shadow-lg">
+          <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold text-black/70 hover:text-red-700 px-4 py-3 hover:bg-red-50 transition-all duration-200 uppercase tracking-wider">
             About
           </Link>
 
-          <Link href="/launch-teams" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-black/70 hover:text-red-700 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">
+          <Link href="/launch-teams" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold text-black/70 hover:text-red-700 px-4 py-3 hover:bg-red-50 transition-all duration-200 uppercase tracking-wider">
             Launch Teams
           </Link>
 
-          <Link href="/innovation-teams" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-black/70 hover:text-red-700 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">
+          <Link href="/innovation-teams" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold text-black/70 hover:text-red-700 px-4 py-3 hover:bg-red-50 transition-all duration-200 uppercase tracking-wider">
             Innovation Teams
           </Link>
 
-          <Link href="/leadership" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-black/70 hover:text-red-700 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">
+          <Link href="/leadership" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold text-black/70 hover:text-red-700 px-4 py-3 hover:bg-red-50 transition-all duration-200 uppercase tracking-wider">
             Leadership
           </Link>
 
-          <Link href="/partners" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-black/70 hover:text-red-700 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">
+          <Link href="/partners" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold text-black/70 hover:text-red-700 px-4 py-3 hover:bg-red-50 transition-all duration-200 uppercase tracking-wider">
             Partners
           </Link>
 
-          <Link href="/forms" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-black/70 hover:text-red-700 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">
+          <Link href="/forms" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold text-black/70 hover:text-red-700 px-4 py-3 hover:bg-red-50 transition-all duration-200 uppercase tracking-wider">
             Propose Project
           </Link>
 
-          <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-black/70 hover:text-red-700 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">
+          <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold text-black/70 hover:text-red-700 px-4 py-3 hover:bg-red-50 transition-all duration-200 uppercase tracking-wider">
             Contact
           </Link>
 
-          <Link href="/forms" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-medium text-black/70 hover:text-red-700 px-4 py-3 rounded-lg hover:bg-gray-100 transition-all duration-200">
+          <Link href="/forms" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold text-black/70 hover:text-red-700 px-4 py-3 hover:bg-red-50 transition-all duration-200 uppercase tracking-wider">
             Forms
           </Link>
 
           <Link href="/forms">
             <Button 
               onClick={() => setIsMobileMenuOpen(false)}
-              className="w-full bg-red-700 hover:bg-red-800 text-white font-bold rounded-full text-sm transition-all duration-200 shadow-md hover:shadow-lg mt-4 h-10 inline-flex items-center justify-center gap-2"
+              className="w-full bg-red-700 hover:bg-red-800 text-white font-bold text-sm transition-all duration-200 shadow-md hover:shadow-lg mt-4 h-10 inline-flex items-center justify-center gap-2 uppercase tracking-wider"
             >
               Apply
               <ArrowRight size={16} />

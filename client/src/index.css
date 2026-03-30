@@ -84,7 +84,7 @@
   --chart-4: #333333;           /* Dark gray */
   --chart-5: #C8102E;           /* Red */
   
-  --radius: 1rem;               /* 16px for modern feel */
+  --radius: 0;                  /* Sharp corners - angular design */
   
   /* Light Mode - Northeastern Brand */
   --background: #FFFFFF;        /* Pure white */

@@ -40,7 +40,7 @@ export default function About() {
           <div className="container">
             <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-16">How to Get Involved</h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+              <Card className="border border-border hover:border-border transition-all duration-300 bg-white ">
                 <CardContent className="p-10">
                   <h3 className="font-bold text-lg text-foreground mb-4">Apply to Join</h3>
                   <p className="text-foreground/70 leading-relaxed text-sm">
@@ -49,7 +49,7 @@ export default function About() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+              <Card className="border border-border hover:border-border transition-all duration-300 bg-white ">
                 <CardContent className="p-10">
                   <h3 className="font-bold text-lg text-foreground mb-4">Propose a Project</h3>
                   <p className="text-foreground/70 leading-relaxed text-sm">
@@ -58,7 +58,7 @@ export default function About() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+              <Card className="border border-border hover:border-border transition-all duration-300 bg-white ">
                 <CardContent className="p-10">
                   <h3 className="font-bold text-lg text-foreground mb-4">Attend an Info Session</h3>
                   <p className="text-foreground/70 leading-relaxed text-sm">
@@ -67,7 +67,7 @@ export default function About() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+              <Card className="border border-border hover:border-border transition-all duration-300 bg-white ">
                 <CardContent className="p-10">
                   <h3 className="font-bold text-lg text-foreground mb-4">Stay Engaged</h3>
                   <p className="text-foreground/70 leading-relaxed text-sm">
@@ -84,7 +84,7 @@ export default function About() {
           <div className="container">
             <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-16">Our Values</h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+              <Card className="border border-border hover:border-border transition-all duration-300 bg-white ">
                 <CardContent className="p-10">
                   <h3 className="font-bold text-lg text-foreground mb-4">Real Impact</h3>
                   <p className="text-foreground/70 leading-relaxed text-sm">
@@ -93,7 +93,7 @@ export default function About() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+              <Card className="border border-border hover:border-border transition-all duration-300 bg-white ">
                 <CardContent className="p-10">
                   <h3 className="font-bold text-lg text-foreground mb-4">Collaboration</h3>
                   <p className="text-foreground/70 leading-relaxed text-sm">
@@ -102,7 +102,7 @@ export default function About() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+              <Card className="border border-border hover:border-border transition-all duration-300 bg-white ">
                 <CardContent className="p-10">
                   <h3 className="font-bold text-lg text-foreground mb-4">Ownership & Accountability</h3>
                   <p className="text-foreground/70 leading-relaxed text-sm">
@@ -111,7 +111,7 @@ export default function About() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+              <Card className="border border-border hover:border-border transition-all duration-300 bg-white ">
                 <CardContent className="p-10">
                   <h3 className="font-bold text-lg text-foreground mb-4">Continuous Learning</h3>
                   <p className="text-foreground/70 leading-relaxed text-sm">
@@ -131,7 +131,7 @@ export default function About() {
               Become part of the Launch Labs community and start making real impact.
             </p>
             <Button asChild>
-              <Link href="/forms" className="bg-red-700 hover:bg-red-700 text-white font-bold px-10 h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center justify-center gap-2">
+              <Link href="/forms" className="bg-red-700 hover:bg-red-700 text-white font-bold px-10 h-12  transition-all duration-200 shadow-sm hover:shadow-lg inline-flex items-center justify-center gap-2">
                 Join Us
                 <span>→</span>
               </Link>

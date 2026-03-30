@@ -9,9 +9,9 @@ export default function Teams() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Launch Teams */}
-          <div className="group bg-gradient-to-br from-#F5F5F5 to-white border border-gray-100 rounded-2xl p-8 hover:border-gray-100 hover:shadow-lg transition-all duration-300">
+          <div className="group bg-gradient-to-br from-#F5F5F5 to-white border border-gray-100  p-8 hover:border-gray-100 hover:shadow-lg transition-all duration-300">
             <div className="mb-6">
-              <div className="w-12 h-12 bg-red-900 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-red-900  flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
@@ -38,9 +38,9 @@ export default function Teams() {
           </div>
 
           {/* Innovation Teams */}
-          <div className="group bg-gradient-to-br from-amber-50 to-white border border-gray-100 rounded-2xl p-8 hover:border-gray-100 hover:shadow-lg transition-all duration-300">
+          <div className="group bg-gradient-to-br from-amber-50 to-white border border-gray-100  p-8 hover:border-gray-100 hover:shadow-lg transition-all duration-300">
             <div className="mb-6">
-              <div className="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-gray-100  flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5a4 4 0 100-8 4 4 0 000 8z" />
                 </svg>

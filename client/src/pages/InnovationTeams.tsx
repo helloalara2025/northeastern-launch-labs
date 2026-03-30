@@ -120,7 +120,7 @@ export default function InnovationTeams() {
           <div className="absolute inset-0 bg-gradient-to-br from-red-50/30 to-transparent pointer-events-none"></div>
           <div className="container relative z-10">
             <div className="mb-8 inline-block">
-              <span className="inline-block bg-red-700 text-white text-sm font-bold px-4 py-2 rounded-full">Venture Lab</span>
+              <span className="inline-block bg-red-700 text-white text-sm font-bold px-4 py-2 ">Venture Lab</span>
             </div>
             <h1 className="font-serif font-black text-8xl md:text-9xl text-black mb-8 leading-tight">
               Innovation Teams
@@ -154,7 +154,7 @@ export default function InnovationTeams() {
                 return (
                   <div 
                     key={project.id} 
-                    className={`group relative p-8 bg-white border-l-0 border border-gray-200 rounded-lg hover:border-l-4 hover:border-l-red-700 hover:shadow-lg transition-all duration-300 ${gridClasses}`}
+                    className={`group relative p-8 bg-white border-l-0 border-2 border-black/10  hover:border-l-8 hover:border-l-red-700 hover:shadow-lg transition-all duration-300 ${gridClasses}`}
                   >
                     <div className="relative z-10 h-full flex flex-col">
                       {/* Header */}
@@ -169,7 +169,7 @@ export default function InnovationTeams() {
 
                       {/* Status Badge */}
                       <div className="mb-6">
-                        <span className="inline-block text-xs font-bold px-4 py-2 bg-red-100 text-red-700 rounded-full">{project.status}</span>
+                        <span className="inline-block text-xs font-bold px-4 py-2 bg-red-100 text-red-700 ">{project.status}</span>
                       </div>
 
                       {/* Focus */}
@@ -199,7 +199,7 @@ export default function InnovationTeams() {
         </section>
 
         {/* What We Do */}
-        <section className="relative py-32 md:py-48 border-l-4 border-l-red-700">
+        <section className="relative py-32 md:py-48 border-l-8 border-l-red-700">
           <div className="container">
             <h2 className="font-serif font-black text-6xl md:text-7xl text-black mb-12">What We Do</h2>
             <div className="grid md:grid-cols-2 gap-12">
@@ -230,7 +230,7 @@ export default function InnovationTeams() {
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-6">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-16 w-16 rounded-lg bg-red-700/20 text-red-700">
+                    <div className="flex items-center justify-center h-16 w-16  bg-red-700/20 text-red-700">
                       <item.icon size={28} />
                     </div>
                   </div>
@@ -245,7 +245,7 @@ export default function InnovationTeams() {
         </section>
 
         {/* Who Should Apply */}
-        <section className="relative py-32 md:py-48 border-l-4 border-l-red-700">
+        <section className="relative py-32 md:py-48 border-l-8 border-l-red-700">
           <div className="container">
             <h2 className="font-serif font-black text-6xl md:text-7xl text-black mb-12">Who Should Apply</h2>
             <div className="max-w-3xl">
@@ -280,7 +280,7 @@ export default function InnovationTeams() {
               Join one of our 8 active Innovation Teams and drive real impact.
             </p>
             <Button asChild>
-              <Link href="/forms" className="bg-red-700 hover:bg-red-800 text-white font-bold px-10 h-12 rounded-full transition-all duration-300 shadow-lg hover:shadow-red-700/30 hover:scale-105 inline-flex items-center justify-center gap-2">
+              <Link href="/forms" className="bg-red-700 hover:bg-red-800 text-white font-bold px-10 h-12  transition-all duration-300 shadow-lg hover:shadow-red-700/30 hover:scale-105 inline-flex items-center justify-center gap-2">
                 Apply Now
                 <ArrowRight size={18} />
               </Link>

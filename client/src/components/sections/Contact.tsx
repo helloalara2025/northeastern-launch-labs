@@ -52,14 +52,14 @@ export default function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white border border-border rounded-lg p-8">
+          <div className="bg-white border border-border  p-8">
             <form className="space-y-5">
               <div>
                 <label className="block text-sm font-bold text-foreground mb-2">Name</label>
                 <input
                   type="text"
                   placeholder="Your name"
-                  className="w-full bg-white border border-border rounded-lg px-4 py-2.5 text-base text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                  className="w-full bg-white border border-border  px-4 py-2.5 text-base text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                 />
               </div>
 
@@ -68,13 +68,13 @@ export default function Contact() {
                 <input
                   type="email"
                   placeholder="your@email.com"
-                  className="w-full bg-white border border-border rounded-lg px-4 py-2.5 text-base text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
+                  className="w-full bg-white border border-border  px-4 py-2.5 text-base text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
                 />
               </div>
 
               <div>
                 <label className="block text-sm font-bold text-foreground mb-2">Subject</label>
-                <select className="w-full bg-white border border-border rounded-lg px-4 py-2.5 text-base text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors">
+                <select className="w-full bg-white border border-border  px-4 py-2.5 text-base text-foreground focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors">
                   <option value="">Select a subject</option>
                   <option value="general">General Inquiry</option>
                   <option value="student">Student Interest</option>
@@ -89,11 +89,11 @@ export default function Contact() {
                 <textarea
                   placeholder="Tell us more..."
                   rows={4}
-                  className="w-full bg-white border border-border rounded-lg px-4 py-2.5 text-base text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors resize-none"
+                  className="w-full bg-white border border-border  px-4 py-2.5 text-base text-foreground placeholder:text-foreground/40 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors resize-none"
                 ></textarea>
               </div>
 
-              <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold h-11 rounded-lg text-base transition-all duration-200 shadow-md hover:shadow-lg">
+              <Button className="w-full bg-primary hover:bg-primary/90 text-white font-bold h-11  text-base transition-all duration-200 shadow-sm hover:shadow-lg">
                 Send Message
               </Button>
             </form>

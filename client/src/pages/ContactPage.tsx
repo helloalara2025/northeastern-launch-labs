@@ -33,7 +33,7 @@ export default function ContactPage() {
                 <Card className="border border-border border-border hover:border-border transition-all duration-300">
                   <CardContent className="p-10">
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-700 flex-shrink-0">
+                      <div className="w-12 h-12  bg-white flex items-center justify-center text-red-700 flex-shrink-0">
                         <Mail className="w-6 h-6" />
                       </div>
                       <div>
@@ -79,7 +79,7 @@ export default function ContactPage() {
                       Check out our application forms and join Launch Labs.
                     </p>
                     <Link href="/forms">
-                      <Button className="w-full bg-red-700 hover:bg-red-700 text-white font-bold h-10 rounded-lg inline-flex items-center justify-center gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
+                      <Button className="w-full bg-red-700 hover:bg-red-700 text-white font-bold h-10  inline-flex items-center justify-center gap-2 transition-all duration-200 shadow-sm hover:shadow-lg">
                         View Forms
                         <ArrowRight size={16} />
                       </Button>
@@ -94,7 +94,7 @@ export default function ContactPage() {
                       Learn more about our Launch and Innovation teams.
                     </p>
                     <Link href="/launch-teams">
-                      <Button className="w-full bg-red-700 hover:bg-red-700 text-white font-bold h-10 rounded-lg inline-flex items-center justify-center gap-2 transition-all duration-200 shadow-md hover:shadow-lg">
+                      <Button className="w-full bg-red-700 hover:bg-red-700 text-white font-bold h-10  inline-flex items-center justify-center gap-2 transition-all duration-200 shadow-sm hover:shadow-lg">
                         View Teams
                         <ArrowRight size={16} />
                       </Button>

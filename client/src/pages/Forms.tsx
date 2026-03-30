@@ -26,19 +26,19 @@ export default function Forms() {
           <div className="container">
             <h3 className="font-sans font-bold text-lg text-foreground/60 mb-6 uppercase tracking-wider">Quick Links</h3>
             <div className="grid md:grid-cols-4 gap-4">
-              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUOVlLR1RJSllIQUFSWFBLSDdBNjg2Wk5IOS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 border-2 border-red-900 bg-white hover:bg-white text-red-900 font-bold rounded-lg transition-all duration-200 border-border hover:border-border gap-2">
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUOVlLR1RJSllIQUFSWFBLSDdBNjg2Wk5IOS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 border-2 border-red-900 bg-white hover:bg-white text-red-900 font-bold  transition-all duration-200 border-border hover:border-border gap-2">
                 Interest Form
                 <ArrowRight size={16} />
               </a>
-              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUNVU1NFZPWkNMSlU3NFlQRlpGNVhWR1lQVS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 border-2 border-red-900 bg-white hover:bg-white text-red-900 font-bold rounded-lg transition-all duration-200 border-border hover:border-border gap-2">
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUNVU1NFZPWkNMSlU3NFlQRlpGNVhWR1lQVS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 border-2 border-red-900 bg-white hover:bg-white text-red-900 font-bold  transition-all duration-200 border-border hover:border-border gap-2">
                 Launch Team App
                 <ArrowRight size={16} />
               </a>
-              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 border-2 border-red-900 bg-white hover:bg-white text-red-900 font-bold rounded-lg transition-all duration-200 border-border hover:border-border gap-2">
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 border-2 border-red-900 bg-white hover:bg-white text-red-900 font-bold  transition-all duration-200 border-border hover:border-border gap-2">
                 Innovation App
                 <ArrowRight size={16} />
               </a>
-              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 border-2 border-red-900 bg-white hover:bg-white text-red-900 font-bold rounded-lg transition-all duration-200 border-border hover:border-border gap-2">
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-4 py-3 border-2 border-red-900 bg-white hover:bg-white text-red-900 font-bold  transition-all duration-200 border-border hover:border-border gap-2">
                 Leadership App
                 <ArrowRight size={16} />
               </a>
@@ -54,7 +54,7 @@ export default function Forms() {
               {/* Join Launch Teams */}
               <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6 font-bold">
+                  <div className="w-12 h-12  bg-white flex items-center justify-center text-red-900 mb-6 font-bold">
                     <FileText className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-3xl md:text-4xl text-foreground mb-4">Launch Team Application</h3>
@@ -71,7 +71,7 @@ export default function Forms() {
               {/* Join Innovation Teams */}
               <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 mb-6 font-bold">
+                  <div className="w-12 h-12  bg-white flex items-center justify-center text-red-900 mb-6 font-bold">
                     <Lightbulb className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-3xl md:text-4xl text-foreground mb-4">Innovation Team Application</h3>
@@ -95,7 +95,7 @@ export default function Forms() {
             <Card className="border border-border border-border hover:border-border transition-all duration-300 bg-white">
               <CardContent className="p-10">
                 <div className="flex gap-6 items-start">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-900 flex-shrink-0 font-bold">
+                  <div className="w-12 h-12  bg-white flex items-center justify-center text-red-900 flex-shrink-0 font-bold">
                     <Heart className="w-6 h-6" />
                   </div>
                   <div className="flex-1">
@@ -214,7 +214,7 @@ export default function Forms() {
               Apply to join a team or propose your own project. We're excited to work with you!
             </p>
             <Link href="/contact" className="inline-block">
-              <Button className="bg-red-900 hover:bg-red-900 text-white font-bold px-8 h-12 rounded-full transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center gap-2">
+              <Button className="bg-red-900 hover:bg-red-900 text-white font-bold px-8 h-12  transition-all duration-200 shadow-sm hover:shadow-lg inline-flex items-center gap-2">
                 Have Questions? Contact Us
                 <ArrowRight size={18} />
               </Button>

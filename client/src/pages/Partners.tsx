@@ -28,9 +28,9 @@ export default function Partners() {
               Why Partner With Us?
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
+              <Card className="border border-foreground/10 shadow-none hover:shadow-sm transition-shadow">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-700 mb-6">
+                  <div className="w-12 h-12  bg-white flex items-center justify-center text-red-700 mb-6">
                     <Users className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Skilled Student Teams</h3>
@@ -40,9 +40,9 @@ export default function Partners() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
+              <Card className="border border-foreground/10 shadow-none hover:shadow-sm transition-shadow">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-700 mb-6">
+                  <div className="w-12 h-12  bg-white flex items-center justify-center text-red-700 mb-6">
                     <TrendingUp className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Cost-Effective Development</h3>
@@ -52,9 +52,9 @@ export default function Partners() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
+              <Card className="border border-foreground/10 shadow-none hover:shadow-sm transition-shadow">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-700 mb-6">
+                  <div className="w-12 h-12  bg-white flex items-center justify-center text-red-700 mb-6">
                     <Zap className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Fresh Perspectives</h3>
@@ -64,9 +64,9 @@ export default function Partners() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-foreground/10 shadow-none hover:shadow-md transition-shadow">
+              <Card className="border border-foreground/10 shadow-none hover:shadow-sm transition-shadow">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-700 mb-6">
+                  <div className="w-12 h-12  bg-white flex items-center justify-center text-red-700 mb-6">
                     <Clock className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Flexible Commitment</h3>
@@ -85,7 +85,7 @@ export default function Partners() {
             <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-10">
               Current Startup Partners
             </h2>
-            <div className="bg-foreground/5 border border-foreground/10 rounded-xl p-10 text-center">
+            <div className="bg-foreground/5 border border-foreground/10  p-10 text-center">
               <p className="text-foreground/70 text-lg">
                 Partner profiles and logos coming soon. Check back for information about our current startup collaborations.
               </p>
@@ -102,7 +102,7 @@ export default function Partners() {
             <div className="space-y-8">
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-700 text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12  bg-red-700 text-white font-bold text-lg">
                     1
                   </div>
                 </div>
@@ -115,7 +115,7 @@ export default function Partners() {
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-700 text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12  bg-red-700 text-white font-bold text-lg">
                     2
                   </div>
                 </div>
@@ -128,7 +128,7 @@ export default function Partners() {
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-700 text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12  bg-red-700 text-white font-bold text-lg">
                     3
                   </div>
                 </div>
@@ -141,7 +141,7 @@ export default function Partners() {
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-700 text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12  bg-red-700 text-white font-bold text-lg">
                     4
                   </div>
                 </div>
@@ -164,7 +164,7 @@ export default function Partners() {
               Let's talk about how Launch Labs can support your startup's growth.
             </p>
             <Link href="/contact">
-              <Button className="bg-red-700 hover:bg-red-700 text-white font-bold px-8 h-12 rounded-lg shadow-md hover:shadow-lg inline-flex items-center gap-2">
+              <Button className="bg-red-700 hover:bg-red-700 text-white font-bold px-8 h-12  shadow-sm hover:shadow-lg inline-flex items-center gap-2">
                 Get in Touch
                 <ArrowRight size={18} />
               </Button>

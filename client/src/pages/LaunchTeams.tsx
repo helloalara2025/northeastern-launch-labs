@@ -95,7 +95,7 @@ export default function LaunchTeams() {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               {currentPartners.map((partner) => (
-                <div key={partner.id} className={`project-card ${partner.isPlaceholder ? 'placeholder-card' : 'glass-card'} rounded-xl p-8 border`}>
+                <div key={partner.id} className={`project-card ${partner.isPlaceholder ? 'placeholder-card' : 'glass-card'}  p-8 border`}>
                   <div className="flex items-start justify-between mb-4">
                     <div>
                       <h3 className="font-serif font-bold text-lg text-foreground mb-2">{partner.title}</h3>
@@ -103,7 +103,7 @@ export default function LaunchTeams() {
                     </div>
                   </div>
                   <div className="mb-6">
-                    <span className="inline-block text-xs font-bold px-3 py-1 bg-red-700 text-white rounded-full">{partner.status}</span>
+                    <span className="inline-block text-xs font-bold px-3 py-1 bg-red-700 text-white ">{partner.status}</span>
                   </div>
                   <p className="text-base md:text-lg text-foreground/70 font-light font-medium mb-4">{partner.focus}</p>
                   <ul className="space-y-3 mb-6">
@@ -151,11 +151,11 @@ export default function LaunchTeams() {
             </h2>
             <div className="grid md:grid-cols-2 gap-10">
               {teams.map((team) => (
-                <Card key={team.id} className="project-card border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+                <Card key={team.id} className="project-card border border-border hover:border-border transition-all duration-300 bg-white ">
                   <CardContent className="p-12">
                     <div className="flex items-start justify-between mb-6">
                       <h3 className="font-bold text-xl text-foreground">{team.name}</h3>
-                      <span className="text-xs font-bold px-3 py-1 bg-white text-red-700 border border-red-700 rounded-full">{team.status}</span>
+                      <span className="text-xs font-bold px-3 py-1 bg-white text-red-700 border border-red-700 ">{team.status}</span>
                     </div>
                     <p className="text-foreground/70 leading-relaxed mb-8 text-sm">{team.description}</p>
                     <div className="space-y-4 mb-8">
@@ -187,9 +187,9 @@ export default function LaunchTeams() {
               Key Experiences
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="project-card border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+              <Card className="project-card border border-border hover:border-border transition-all duration-300 bg-white ">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-700 mb-6 font-bold">
+                  <div className="w-12 h-12  bg-white flex items-center justify-center text-red-700 mb-6 font-bold">
                     <Briefcase className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Startup Operations</h3>
@@ -198,9 +198,9 @@ export default function LaunchTeams() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="project-card border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+              <Card className="project-card border border-border hover:border-border transition-all duration-300 bg-white ">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-700 mb-6 font-bold">
+                  <div className="w-12 h-12  bg-white flex items-center justify-center text-red-700 mb-6 font-bold">
                     <TrendingUp className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Real Impact</h3>
@@ -209,9 +209,9 @@ export default function LaunchTeams() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="project-card border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+              <Card className="project-card border border-border hover:border-border transition-all duration-300 bg-white ">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-700 mb-6 font-bold">
+                  <div className="w-12 h-12  bg-white flex items-center justify-center text-red-700 mb-6 font-bold">
                     <Users className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Professional Development</h3>
@@ -220,9 +220,9 @@ export default function LaunchTeams() {
                   </p>
                 </CardContent>
               </Card>
-              <Card className="project-card border border-border hover:border-border transition-all duration-300 bg-white rounded-xl">
+              <Card className="project-card border border-border hover:border-border transition-all duration-300 bg-white ">
                 <CardContent className="p-10">
-                  <div className="w-12 h-12 rounded-lg bg-white flex items-center justify-center text-red-700 mb-6 font-bold">
+                  <div className="w-12 h-12  bg-white flex items-center justify-center text-red-700 mb-6 font-bold">
                     <Code className="w-6 h-6" />
                   </div>
                   <h3 className="font-bold text-lg text-foreground mb-3">Technical Growth</h3>
@@ -243,21 +243,21 @@ export default function LaunchTeams() {
             </h2>
             <div className="space-y-10">
               <div className="flex gap-6">
-                <div className="w-12 h-12 rounded-lg bg-red-700 text-white flex items-center justify-center font-bold flex-shrink-0">1</div>
+                <div className="w-12 h-12  bg-red-700 text-white flex items-center justify-center font-bold flex-shrink-0">1</div>
                 <div>
                   <h3 className="font-bold text-lg text-foreground mb-2">Submit Your Application</h3>
                   <p className="text-foreground/70 text-sm leading-relaxed">Complete the Launch Team application form with your background, interests, and experience.</p>
                 </div>
               </div>
               <div className="flex gap-6">
-                <div className="w-12 h-12 rounded-lg bg-red-700 text-white flex items-center justify-center font-bold flex-shrink-0">2</div>
+                <div className="w-12 h-12  bg-red-700 text-white flex items-center justify-center font-bold flex-shrink-0">2</div>
                 <div>
                   <h3 className="font-bold text-lg text-foreground mb-2">Team Review</h3>
                   <p className="text-foreground/70 text-sm leading-relaxed">Our leadership team reviews your application and matches you with the best team based on your skills and interests.</p>
                 </div>
               </div>
               <div className="flex gap-6">
-                <div className="w-12 h-12 rounded-lg bg-red-700 text-white flex items-center justify-center font-bold flex-shrink-0">3</div>
+                <div className="w-12 h-12  bg-red-700 text-white flex items-center justify-center font-bold flex-shrink-0">3</div>
                 <div>
                   <h3 className="font-bold text-lg text-foreground mb-2">Interview & Onboarding</h3>
                   <p className="text-foreground/70 text-sm leading-relaxed">Meet with your team lead for an interview, then get onboarded to start working on real projects.</p>
@@ -302,7 +302,7 @@ export default function LaunchTeams() {
               Apply today and start working on real-world projects with early-stage startups.
             </p>
             <Link href="/forms">
-              <Button className="bg-red-700 hover:bg-red-700 text-white font-bold px-8 h-12 rounded-full transition-all duration-200 shadow-md hover:shadow-lg inline-flex items-center gap-2">
+              <Button className="bg-red-700 hover:bg-red-700 text-white font-bold px-8 h-12  transition-all duration-200 shadow-sm hover:shadow-lg inline-flex items-center gap-2">
                 Join
                 <ArrowRight size={18} />
               </Button>

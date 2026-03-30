@@ -9,8 +9,8 @@ export default function Hero() {
       <div className="container relative z-10">
         <div className="max-w-3xl">
           {/* Status badge */}
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gray-100 text-red-900 text-xs font-semibold uppercase tracking-widest mb-8 border border-gray-100">
-            <span className="w-1.5 h-1.5 bg-red-900 rounded-full animate-pulse"></span>
+          <div className="inline-flex items-center gap-2 px-3 py-1.5  bg-gray-100 text-red-900 text-xs font-semibold uppercase tracking-widest mb-8 border border-gray-100">
+            <span className="w-1.5 h-1.5 bg-red-900  animate-pulse"></span>
             Northeastern Student Org
           </div>
           
@@ -27,13 +27,13 @@ export default function Hero() {
           
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-3">
-            <a href="#get-involved" className="inline-flex items-center justify-center px-6 py-3 bg-red-900 hover:bg-red-900 text-white font-semibold rounded-lg transition-all duration-300 shadow-md hover:shadow-lg">
+            <a href="#get-involved" className="inline-flex items-center justify-center px-6 py-3 bg-red-900 hover:bg-red-900 text-white font-semibold  transition-all duration-300 shadow-sm hover:shadow-lg">
               Apply to Join
               <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
             </a>
-            <a href="#teams" className="inline-flex items-center justify-center px-6 py-3 bg-white border-2 border-gray-100 text-foreground font-semibold rounded-lg hover:bg-white hover:border-red-900 transition-all duration-300">
+            <a href="#teams" className="inline-flex items-center justify-center px-6 py-3 bg-white border-2 border-gray-100 text-foreground font-semibold  hover:bg-white hover:border-red-900 transition-all duration-300">
               Explore Teams
             </a>
           </div>

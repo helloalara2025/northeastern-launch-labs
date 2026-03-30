@@ -81,14 +81,14 @@ export default function ApplyLeadership() {
                     Thank you for applying to join our leadership team. We'll review your application and get back to you soon at the email address you provided.
                   </p>
                   <Link href="/">
-                    <Button className="bg-gray-100 hover:bg-gray-100 text-white font-bold px-8 h-12 rounded-lg">
+                    <Button className="bg-gray-100 hover:bg-gray-100 text-white font-bold px-8 h-12 ">
                       Return to Home
                     </Button>
                   </Link>
                 </CardContent>
               </Card>
             ) : (
-              <form onSubmit={handleSubmit} className="bg-white border border-foreground/10 rounded-lg p-10">
+              <form onSubmit={handleSubmit} className="bg-white border border-foreground/10  p-10">
                 <div className="grid md:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label htmlFor="fullName" className="block text-sm font-bold text-foreground mb-2">
@@ -101,7 +101,7 @@ export default function ApplyLeadership() {
                       value={formData.fullName}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
+                      className="w-full px-4 py-3  border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
                       placeholder="Your full name"
                     />
                   </div>
@@ -117,7 +117,7 @@ export default function ApplyLeadership() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
+                      className="w-full px-4 py-3  border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -132,7 +132,7 @@ export default function ApplyLeadership() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
+                      className="w-full px-4 py-3  border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
                       placeholder="(123) 456-7890"
                     />
                   </div>
@@ -148,7 +148,7 @@ export default function ApplyLeadership() {
                       value={formData.major}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
+                      className="w-full px-4 py-3  border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
                       placeholder="e.g., Computer Science, Business"
                     />
                   </div>
@@ -162,7 +162,7 @@ export default function ApplyLeadership() {
                       name="year"
                       value={formData.year}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
+                      className="w-full px-4 py-3  border border-foreground/10 bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
                     >
                       <option value="Sophomore">Sophomore</option>
                       <option value="Junior">Junior</option>
@@ -180,7 +180,7 @@ export default function ApplyLeadership() {
                       name="position"
                       value={formData.position}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
+                      className="w-full px-4 py-3  border border-foreground/10 bg-white text-foreground focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all"
                     >
                       <option value="General">General Leadership</option>
                       <option value="President">President</option>
@@ -202,7 +202,7 @@ export default function ApplyLeadership() {
                     onChange={handleChange}
                     required
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all resize-none"
+                    className="w-full px-4 py-3  border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all resize-none"
                     placeholder="Tell us about your leadership experience, roles you've held, and how you've made an impact..."
                   ></textarea>
                 </div>
@@ -218,7 +218,7 @@ export default function ApplyLeadership() {
                     onChange={handleChange}
                     required
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all resize-none"
+                    className="w-full px-4 py-3  border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all resize-none"
                     placeholder="Share your vision for how Launch Labs can grow and impact the Northeastern community..."
                   ></textarea>
                 </div>
@@ -234,7 +234,7 @@ export default function ApplyLeadership() {
                     onChange={handleChange}
                     required
                     rows={3}
-                    className="w-full px-4 py-3 rounded-lg border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all resize-none"
+                    className="w-full px-4 py-3  border border-foreground/10 bg-white text-foreground placeholder-foreground/40 focus:outline-none focus:ring-2 focus:ring-red-900/20 focus:border-red-900 transition-all resize-none"
                     placeholder="Tell us about your availability and commitment level for this leadership role..."
                   ></textarea>
                 </div>
@@ -256,7 +256,7 @@ export default function ApplyLeadership() {
 
                 <Button
                   type="submit"
-                  className="w-full bg-red-900 hover:bg-red-900 text-white font-bold h-12 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
+                  className="w-full bg-red-900 hover:bg-red-900 text-white font-bold h-12  transition-all duration-200 shadow-sm hover:shadow-lg"
                 >
                   Submit Application
                 </Button>
