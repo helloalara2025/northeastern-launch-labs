@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import { ArrowRight, Briefcase, Lightbulb, Users, Award, Zap, Rocket, TrendingUp, Code, Compass, Sparkles } from "lucide-react";
 import { useState, useEffect } from "react";
 import InstagramFeed from "@/components/InstagramFeed";
+import ProjectCarousel from "@/components/ProjectCarousel";
 
 export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -197,6 +198,9 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
+        {/* Project Carousel */}
+        <ProjectCarousel />
+
         <section className="relative py-32 md:py-48 bg-gradient-to-br from-foreground to-slate-800">
           <div className="container text-center">
             <h2 className="font-serif font-black text-5xl md:text-6xl text-white mb-8">Ready to Make an Impact?</h2>
