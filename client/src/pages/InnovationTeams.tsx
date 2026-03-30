@@ -120,9 +120,9 @@ export default function InnovationTeams() {
           <div className="absolute inset-0 bg-gradient-to-br from-rgba(200, 16, 46, 0.05)/30 to-transparent pointer-events-none"></div>
           <div className="container relative z-10">
             <div className="mb-8 inline-block">
-              <span className="inline-block bg-[#C8102E] text-white text-sm font-bold px-4 py-2 ">Venture Lab</span>
+              <span className="inline-block bg-[#C8102E] text-black text-sm font-bold px-4 py-2 ">Venture Lab</span>
             </div>
-            <h1 className="font-serif font-black text-8xl md:text-9xl text-black mb-8 leading-tight">
+            <h1 className="font-serif font-black text-8xl md:text-5xl text-black mb-8 leading-tight">
               Innovation Teams
             </h1>
             <p className="text-xl md:text-2xl text-black/70 leading-relaxed max-w-2xl font-light">
@@ -134,7 +134,7 @@ export default function InnovationTeams() {
         {/* Bento Grid - 8 Teams */}
         <section className="relative py-32 md:py-48">
           <div className="container">
-            <h2 className="font-serif font-black text-6xl md:text-7xl text-black mb-16">Our 8 Active Teams</h2>
+            <h2 className="font-serif font-black text-6xl md:text-5xl text-black mb-16">Our 8 Active Teams</h2>
             
             {/* Bento Grid Layout */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-max">
@@ -201,7 +201,7 @@ export default function InnovationTeams() {
         {/* What We Do */}
         <section className="relative py-32 md:py-48 border-l-8 border-l-#C8102E">
           <div className="container">
-            <h2 className="font-serif font-black text-6xl md:text-7xl text-black mb-12">What We Do</h2>
+            <h2 className="font-serif font-black text-6xl md:text-5xl text-black mb-12">What We Do</h2>
             <div className="grid md:grid-cols-2 gap-12">
               <div>
                 <p className="text-xl md:text-2xl text-black/70 leading-relaxed mb-8 font-light">
@@ -218,9 +218,9 @@ export default function InnovationTeams() {
         </section>
 
         {/* Key Experiences */}
-        <section className="relative py-32 md:py-48 bg-black text-white">
+        <section className="relative py-32 md:py-48 bg-black text-black">
           <div className="container">
-            <h2 className="font-serif font-black text-5xl md:text-6xl text-white mb-16">Key Experiences</h2>
+            <h2 className="font-serif font-black text-5xl md:text-6xl text-black mb-16">Key Experiences</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {[
                 { icon: Target, title: "End-to-End Leadership", desc: "Own projects from conception through execution, making strategic decisions and driving results with full accountability." },
@@ -235,8 +235,8 @@ export default function InnovationTeams() {
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-bold text-2xl text-white mb-3">{item.title}</h3>
-                    <p className="text-white/80 font-light">{item.desc}</p>
+                    <h3 className="font-bold text-2xl text-black mb-3">{item.title}</h3>
+                    <p className="text-black/80 font-light">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -247,7 +247,7 @@ export default function InnovationTeams() {
         {/* Who Should Apply */}
         <section className="relative py-32 md:py-48 border-l-8 border-l-#C8102E">
           <div className="container">
-            <h2 className="font-serif font-black text-6xl md:text-7xl text-black mb-12">Who Should Apply</h2>
+            <h2 className="font-serif font-black text-6xl md:text-5xl text-black mb-12">Who Should Apply</h2>
             <div className="max-w-3xl">
               <p className="text-xl md:text-2xl text-black/70 leading-relaxed mb-12 font-light">
                 Innovation Teams are ideal for students who want to take on significant leadership roles and drive meaningful impact. You should be:
@@ -273,14 +273,14 @@ export default function InnovationTeams() {
         </section>
 
         {/* CTA Section */}
-        <section className="relative py-32 md:py-48 bg-black text-white">
+        <section className="relative py-32 md:py-48 bg-black text-black">
           <div className="container text-center">
-            <h2 className="font-serif font-black text-5xl md:text-6xl text-white mb-8">Ready to Lead?</h2>
-            <p className="text-xl md:text-2xl text-white/80 leading-relaxed mb-12 max-w-2xl mx-auto font-light">
+            <h2 className="font-serif font-black text-5xl md:text-6xl text-black mb-8">Ready to Lead?</h2>
+            <p className="text-xl md:text-2xl text-black/80 leading-relaxed mb-12 max-w-2xl mx-auto font-light">
               Join one of our 8 active Innovation Teams and drive real impact.
             </p>
             <Button asChild>
-              <Link href="/forms" className="bg-[#C8102E] hover:bg-[#A60826] text-white font-bold px-10 h-12  transition-all duration-300 shadow-lg hover:shadow-#C8102E/30 hover:scale-105 inline-flex items-center justify-center gap-2">
+              <Link href="/forms" className="bg-[#C8102E] hover:bg-[#A60826] text-black font-bold px-10 h-12  transition-all duration-300 shadow-lg hover:shadow-#C8102E/30 hover:scale-100 inline-flex items-center justify-center gap-2">
                 Apply Now
                 <ArrowRight size={18} />
               </Link>

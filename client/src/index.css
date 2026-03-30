@@ -1,406 +1,234 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   DESIGN SYSTEM: Professional Clean
+   Primary: Northeastern Red (#C8102E)
+   Background: White (#FFFFFF)
+   Text: Black (#000000)
+   ============================================ */
 
 @layer base {
   :root {
-    --font-sans: "Inter", system-ui, -apple-system, sans-serif;
-    --font-serif: "Playfair Display", serif;
-    --font-mono: "Geist Mono", monospace;
+    /* Primary Colors */
+    --primary: #C8102E;           /* Northeastern Red */
+    --primary-foreground: #FFFFFF;
+    --primary-dark: #A60826;      /* Darker red for hover */
+    --primary-light: #E8394C;     /* Lighter red for backgrounds */
+    
+    /* Backgrounds */
+    --background: #FFFFFF;
+    --foreground: #000000;
+    
+    /* Cards & Surfaces */
+    --card: #FFFFFF;
+    --card-foreground: #000000;
+    
+    /* Secondary */
+    --secondary: #F5F5F5;         /* Light gray for sections */
+    --secondary-foreground: #000000;
+    
+    /* Muted */
+    --muted: #E0E0E0;
+    --muted-foreground: #666666;
+    
+    /* Accent */
+    --accent: #C8102E;
+    --accent-foreground: #FFFFFF;
+    
+    /* Borders & Inputs */
+    --border: #D0D0D0;
+    --input: #FFFFFF;
+    --ring: #C8102E;
+    
+    /* Shadows */
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.12);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
   }
-}
 
-@custom-variant dark (&:is(.dark *));
-
-@theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
-}
-
-/* 
-  Design Philosophy: Modern, Bold & Northeastern
-  - Headers: Strong, commanding presence with generous sizing
-  - Body: Clean, spacious, highly readable sans-serif
-  - Color System: Northeastern Red (#C8102E) + Pure White + Deep Black
-  - Borders: Minimal, refined with subtle depth
-  - Shadows: Layered depth with smooth gradients
-  - Border Radius: 12-16px for modern, friendly feel
-  - Background: Clean white with subtle gradient accents
-  - Accent: Northeastern Red for CTAs, highlights, and interactive elements
-  - Spacing: Generous, breathing room throughout
-  - Micro-interactions: Smooth transitions, hover animations, scale effects
-  - Red Thread: Vertical decorative line through long-form sections
-  - Layout: Asymmetric, modern grid with dynamic positioning
-*/
-
-:root {
-  /* Northeastern University Brand Colors */
-  --primary: #000000;           /* Deep Black: Primary text */
-  --primary-foreground: #FFFFFF;
-  --primary-light: #333333;     /* Dark gray for depth */
-  --primary-lighter: #F5F5F5;   /* Light gray backgrounds */
-  --sidebar-primary: #FFFFFF;
-  --sidebar-primary-foreground: #000000;
-  
-  --chart-1: #C8102E;           /* Northeastern Red: Vibrant accent */
-  --chart-2: #000000;           /* Black: Primary */
-  --chart-3: #FFFFFF;           /* White */
-  --chart-4: #333333;           /* Dark gray */
-  --chart-5: #C8102E;           /* Red */
-  
-  --radius: 0;                  /* Sharp corners - angular design */
-  
-  /* Light Mode - Northeastern Brand */
-  --background: #FFFFFF;        /* Pure white */
-  --foreground: #000000;        /* Deep black text */
-  
-  --card: #FFFFFF;              /* White for cards */
-  --card-foreground: #000000;
-  
-  --popover: #FFFFFF;
-  --popover-foreground: #000000;
-  
-  --secondary: #333333;         /* Dark gray */
-  --secondary-foreground: #FFFFFF;
-  
-  --muted: #E0E0E0;             /* Light gray for borders */
-  --muted-foreground: #666666;  /* Medium gray for secondary text */
-  
-  --accent: #C8102E;            /* Northeastern Red */
-  --accent-foreground: #FFFFFF;
-  
-  /* IMThrive-inspired complementary colors */
-  --accent-lime: #CCFF00;       /* Neon lime green for highlights */
-  --accent-blue: #1E40AF;       /* Deep blue for sections */
-  --accent-dark: #0F172A;       /* Dark navy for contrast */
-  
-  --destructive: #EF4444;
-  --destructive-foreground: #FFFFFF;
-  
-  --border: #E0E0E0;            /* Refined borders */
-  --input: #F5F5F5;
-  --ring: #C8102E;
-  
-  /* Shadow System - Layered depth */
-  --shadow-micro: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.12);
-  --shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.15);
-  --shadow-red-glow: 0 0 20px rgba(200, 16, 46, 0.2);
-  
-  --sidebar: #FFFFFF;
-  --sidebar-foreground: #000000;
-  --sidebar-accent: #C8102E;
-  --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: #E0E0E0;
-  --sidebar-ring: #C8102E;
-}
-
-.dark {
-  /* Same as light mode - Northeastern brand */
-  --primary: #000000;
-  --primary-foreground: #FFFFFF;
-  --primary-light: #333333;
-  --primary-lighter: #F5F5F5;
-  --sidebar-primary: #FFFFFF;
-  --sidebar-primary-foreground: #000000;
-  
-  --background: #FFFFFF;
-  --foreground: #000000;
-  
-  --card: #FFFFFF;
-  --card-foreground: #000000;
-  
-  --popover: #FFFFFF;
-  --popover-foreground: #000000;
-  
-  --secondary: #333333;
-  --secondary-foreground: #FFFFFF;
-  
-  --muted: #E0E0E0;
-  --muted-foreground: #666666;
-  
-  --accent: #C8102E;
-  --accent-foreground: #FFFFFF;
-  
-  /* IMThrive-inspired complementary colors */
-  --accent-lime: #CCFF00;       /* Neon lime green for highlights */
-  --accent-blue: #1E40AF;       /* Deep blue for sections */
-  --accent-dark: #0F172A;       /* Dark navy for contrast */
-  
-  --destructive: #EF4444;
-  --destructive-foreground: #FFFFFF;
-  
-  --border: #E0E0E0;
-  --input: #F5F5F5;
-  --ring: #C8102E;
-  
-  --shadow-micro: 0 1px 2px rgba(0, 0, 0, 0.05);
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.12);
-  --shadow-xl: 0 20px 48px rgba(0, 0, 0, 0.15);
-  --shadow-red-glow: 0 0 20px rgba(200, 16, 46, 0.2);
-  
-  --chart-1: #C8102E;
-  --chart-2: #000000;
-  --chart-3: #FFFFFF;
-  --chart-4: #333333;
-  --chart-5: #C8102E;
-  
-  --sidebar: #FFFFFF;
-  --sidebar-foreground: #000000;
-  --sidebar-accent: #C8102E;
-  --sidebar-accent-foreground: #FFFFFF;
-  --sidebar-border: #E0E0E0;
-  --sidebar-ring: #C8102E;
-}
-
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
   body {
-    @apply bg-background text-foreground font-sans;
-    background: linear-gradient(135deg, #FFFFFF 0%, #F0F9FF 100%);
+    @apply bg-white text-black font-sans;
+    font-family: 'Inter', sans-serif;
   }
-  
-  /* Serif headers: tight letter-spacing, strong hierarchy */
+
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif font-bold;
-    letter-spacing: -0.03em;
-    line-height: 1.15;
+    font-family: 'Playfair Display', serif;
+    @apply font-bold;
   }
-  
-  h1 {
-    @apply text-8xl md:text-9xl;
-    font-weight: 900;
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.02em;
-  }
-  
-  h2 {
-    @apply text-6xl md:text-7xl;
-    font-weight: 800;
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.02em;
-  }
-  
-  h3 {
-    @apply text-4xl md:text-5xl;
-    font-weight: 700;
-    margin-bottom: 1.25rem;
-    letter-spacing: -0.01em;
-  }
-  
-  h4 {
-    @apply text-2xl md:text-3xl;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-  
-  /* Body text: generous line-height for premium readability */
-  p {
-    @apply text-lg md:text-xl;
-    line-height: 1.8;
-    letter-spacing: 0.3px;
-    color: var(--foreground);
-  }
-  
-  li {
-    @apply text-base md:text-lg;
-    line-height: 1.8;
-    letter-spacing: 0.2px;
-  }
-  
-  /* Subheadings and secondary text */
-  .text-sm {
-    @apply text-base md:text-lg;
-    line-height: 1.6;
-  }
-  
-  .text-xs {
-    @apply text-sm md:text-base;
-    line-height: 1.5;
-  }
-  
-  /* Links and interactive elements */
-  a, button {
-    @apply transition-all duration-200;
-  }
-  button:not(:disabled),
-  [role="button"]:not([aria-disabled="true"]),
-  [type="button"]:not(:disabled),
-  [type="submit"]:not(:disabled),
-  [type="reset"]:not(:disabled),
-  a[href],
-  select:not(:disabled),
-  input[type="checkbox"]:not(:disabled),
-  input[type="radio"]:not(:disabled) {
-    @apply cursor-pointer;
-  }
+
+  h1 { @apply text-5xl md:text-7xl leading-tight; }
+  h2 { @apply text-4xl md:text-5xl leading-tight; }
+  h3 { @apply text-2xl md:text-3xl leading-tight; }
+  h4 { @apply text-xl md:text-2xl; }
+  h5 { @apply text-lg md:text-xl; }
+  h6 { @apply text-base md:text-lg; }
 }
+
+/* ============================================
+   UTILITIES & COMPONENTS
+   ============================================ */
 
 @layer components {
-  /* Card styling: minimalist borders, micro-shadows on hover */
-  .card {
-    @apply border border-border bg-card text-card-foreground rounded-lg;
-    box-shadow: var(--shadow-sm);
-  }
-  
-  .card:hover {
-    box-shadow: var(--shadow-md);
-  }
-  
-  /* Button styling: red-900 primary, minimalist secondary */
-  button {
-    @apply transition-all duration-200;
-    border-radius: 0 !important;
-  }
-  
-  button:hover:not(:disabled) {
-    box-shadow: var(--shadow-md);
-  }
-  
-  /* Spacing utilities for airy layout */
-  .section-spacing {
-    @apply py-24 md:py-32;
-  }
-  
-  .section-spacing-lg {
-    @apply py-32 md:py-40;
-  }
-  
   .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    @apply max-w-6xl mx-auto px-4 md:px-6;
   }
 
-  .flex {
-    min-height: 0;
-    min-width: 0;
+  /* Buttons */
+  button, [role="button"] {
+    @apply transition-all duration-200;
   }
 
-  @media (min-width: 640px) {
-    .container {
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-    }
+  .btn-primary {
+    @apply bg-[#C8102E] text-white font-semibold px-6 py-3 hover:bg-[#A60826] active:scale-95 transition-all duration-200;
   }
 
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 2rem;
-      padding-right: 2rem;
-      max-width: 896px;
-    }
+  .btn-secondary {
+    @apply bg-white text-[#C8102E] border-2 border-[#C8102E] font-semibold px-6 py-3 hover:bg-[#C8102E]/5 transition-all duration-200;
   }
-  
-  /* Glassmorphism effects */
-  .glass-nav {
-    @apply backdrop-blur-md bg-white/70 border border-white/20;
+
+  .btn-outline {
+    @apply border-2 border-black text-black font-semibold px-6 py-3 hover:bg-black hover:text-white transition-all duration-200;
   }
-  
-  .glass-card {
-    @apply backdrop-blur-sm bg-white/80 border border-white/30;
+
+  /* Cards */
+  .card {
+    @apply bg-white border border-[#D0D0D0] p-6 hover:shadow-lg transition-all duration-300;
   }
-  
-  /* Project card hover effect */
-  .project-card {
-    @apply transition-all duration-300 hover:-translate-y-1;
+
+  .card-hover {
+    @apply bg-white border border-[#D0D0D0] p-6 hover:border-[#C8102E] hover:shadow-lg transition-all duration-300;
   }
-  
-  /* Placeholder card styling */
-  .placeholder-card {
-    @apply border-dashed border-2 border-gray-300 bg-gray-50/50;
+
+  /* Section Divider */
+  .section-divider {
+    @apply h-1 bg-[#C8102E] my-8;
   }
-  
-  /* Scroll progress bar - Northeastern Red */
+
+  /* Text Utilities */
+  .text-accent {
+    @apply text-[#C8102E];
+  }
+
+  .text-muted {
+    @apply text-gray-600;
+  }
+
+  /* Badge */
+  .badge {
+    @apply inline-block bg-[#C8102E] text-white text-xs font-bold px-3 py-1;
+  }
+
+  .badge-outline {
+    @apply inline-block border-2 border-[#C8102E] text-[#C8102E] text-xs font-bold px-3 py-1;
+  }
+
+  /* Grid */
+  .grid-auto {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+
+  /* Scroll Progress Bar */
   .scroll-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 3px;
-    background: linear-gradient(to right, #C8102E, #E63946);
-    width: 0%;
-    z-index: 9999;
-    transition: width 0.1s ease-out;
-    box-shadow: 0 0 12px rgba(200, 16, 46, 0.5);
+    @apply fixed top-0 left-0 h-1 bg-[#C8102E] z-50 transition-all duration-300;
   }
-  
-  /* Fade-in-up animation */
+
+  /* Animation */
   @keyframes fadeInUp {
     from {
       opacity: 0;
-      transform: translateY(30px);
+      transform: translateY(20px);
     }
     to {
       opacity: 1;
       transform: translateY(0);
     }
   }
-  
-  .fade-in-up {
-    animation: fadeInUp 0.6s ease-out forwards;
-    opacity: 0;
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
   }
-  
-  /* Floating animation for tech stack */
-  @keyframes float {
-    0%, 100% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
+}
+
+/* ============================================
+   RESPONSIVE UTILITIES
+   ============================================ */
+
+@layer utilities {
+  .max-w-container {
+    @apply max-w-6xl;
   }
-  
-  .float-animation {
-    animation: float 3s ease-in-out infinite;
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
   }
-  
-  /* Gain card hover lift */
-  .gain-card {
-    @apply transition-all duration-300 hover:-translate-y-2;
+
+  .section-padding-sm {
+    @apply py-8 md:py-12;
+  }
+
+  .gap-section {
+    @apply gap-8 md:gap-12 lg:gap-16;
+  }
+}
+
+/* ============================================
+   COMPONENT OVERRIDES
+   ============================================ */
+
+/* Override shadcn button defaults */
+[role="button"],
+button {
+  border-radius: 0 !important;
+}
+
+/* Links */
+a {
+  @apply text-[#C8102E] hover:underline transition-colors;
+}
+
+a.no-underline {
+  @apply no-underline;
+}
+
+/* Form Elements */
+input, textarea, select {
+  @apply border border-[#D0D0D0] px-4 py-2 focus:outline-none focus:border-[#C8102E] focus:ring-1 focus:ring-[#C8102E];
+}
+
+/* Tables */
+table {
+  @apply w-full border-collapse;
+}
+
+th {
+  @apply bg-[#F5F5F5] border border-[#D0D0D0] px-4 py-2 text-left font-semibold;
+}
+
+td {
+  @apply border border-[#D0D0D0] px-4 py-2;
+}
+
+/* Code */
+code {
+  @apply bg-[#F5F5F5] px-2 py-1 font-mono text-sm;
+}
+
+pre {
+  @apply bg-[#F5F5F5] p-4 overflow-x-auto;
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+  .no-print {
+    display: none;
   }
 }

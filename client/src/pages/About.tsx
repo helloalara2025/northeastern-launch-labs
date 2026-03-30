@@ -11,7 +11,7 @@ export default function About() {
         {/* Header */}
         <section className="bg-white py-32 md:py-40">
           <div className="container">
-            <h1 className="font-serif font-bold text-6xl md:text-7xl text-foreground mb-8 leading-tight">
+            <h1 className="font-serif font-bold text-6xl md:text-5xl text-foreground mb-8 leading-tight">
               About Launch Labs
             </h1>
             <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl">
@@ -131,7 +131,7 @@ export default function About() {
               Become part of the Launch Labs community and start making real impact.
             </p>
             <Button asChild>
-              <Link href="/forms" className="bg-[#C8102E] hover:bg-[#C8102E] text-white font-bold px-10 h-12  transition-all duration-200 shadow-sm hover:shadow-lg inline-flex items-center justify-center gap-2">
+              <Link href="/forms" className="bg-[#C8102E] hover:bg-[#C8102E] text-black font-bold px-10 h-12  transition-all duration-200 shadow-sm hover:shadow-lg inline-flex items-center justify-center gap-2">
                 Join Us
                 <span>→</span>
               </Link>

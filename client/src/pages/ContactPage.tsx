@@ -12,7 +12,7 @@ export default function ContactPage() {
         {/* Header */}
         <section className="bg-white py-32 md:py-40">
           <div className="container text-center">
-            <h1 className="font-serif font-bold text-6xl md:text-7xl text-foreground mb-8 leading-tight">
+            <h1 className="font-serif font-bold text-6xl md:text-5xl text-foreground mb-8 leading-tight">
               Get In Touch
             </h1>
             <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl mx-auto">
@@ -79,7 +79,7 @@ export default function ContactPage() {
                       Check out our application forms and join Launch Labs.
                     </p>
                     <Link href="/forms">
-                      <Button className="w-full bg-[#C8102E] hover:bg-[#C8102E] text-white font-bold h-10  inline-flex items-center justify-center gap-2 transition-all duration-200 shadow-sm hover:shadow-lg">
+                      <Button className="w-full bg-[#C8102E] hover:bg-[#C8102E] text-black font-bold h-10  inline-flex items-center justify-center gap-2 transition-all duration-200 shadow-sm hover:shadow-lg">
                         View Forms
                         <ArrowRight size={16} />
                       </Button>
@@ -94,7 +94,7 @@ export default function ContactPage() {
                       Learn more about our Launch and Innovation teams.
                     </p>
                     <Link href="/launch-teams">
-                      <Button className="w-full bg-[#C8102E] hover:bg-[#C8102E] text-white font-bold h-10  inline-flex items-center justify-center gap-2 transition-all duration-200 shadow-sm hover:shadow-lg">
+                      <Button className="w-full bg-[#C8102E] hover:bg-[#C8102E] text-black font-bold h-10  inline-flex items-center justify-center gap-2 transition-all duration-200 shadow-sm hover:shadow-lg">
                         View Teams
                         <ArrowRight size={16} />
                       </Button>

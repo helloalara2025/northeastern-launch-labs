@@ -65,7 +65,7 @@ export default function LaunchTeams() {
         {/* Header */}
         <section className="bg-white py-32 md:py-40">
           <div className="container">
-            <h1 className="font-serif font-bold text-6xl md:text-7xl text-foreground mb-8 leading-tight">
+            <h1 className="font-serif font-bold text-6xl md:text-5xl text-foreground mb-8 leading-tight">
               Launch Teams
             </h1>
             <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl">
@@ -103,7 +103,7 @@ export default function LaunchTeams() {
                     </div>
                   </div>
                   <div className="mb-6">
-                    <span className="inline-block text-xs font-bold px-3 py-1 bg-[#C8102E] text-white ">{partner.status}</span>
+                    <span className="inline-block text-xs font-bold px-3 py-1 bg-[#C8102E] text-black ">{partner.status}</span>
                   </div>
                   <p className="text-base md:text-lg text-foreground/70 font-light font-medium mb-4">{partner.focus}</p>
                   <ul className="space-y-3 mb-6">
@@ -243,21 +243,21 @@ export default function LaunchTeams() {
             </h2>
             <div className="space-y-10">
               <div className="flex gap-6">
-                <div className="w-12 h-12  bg-[#C8102E] text-white flex items-center justify-center font-bold flex-shrink-0">1</div>
+                <div className="w-12 h-12  bg-[#C8102E] text-black flex items-center justify-center font-bold flex-shrink-0">1</div>
                 <div>
                   <h3 className="font-bold text-lg text-foreground mb-2">Submit Your Application</h3>
                   <p className="text-foreground/70 text-sm leading-relaxed">Complete the Launch Team application form with your background, interests, and experience.</p>
                 </div>
               </div>
               <div className="flex gap-6">
-                <div className="w-12 h-12  bg-[#C8102E] text-white flex items-center justify-center font-bold flex-shrink-0">2</div>
+                <div className="w-12 h-12  bg-[#C8102E] text-black flex items-center justify-center font-bold flex-shrink-0">2</div>
                 <div>
                   <h3 className="font-bold text-lg text-foreground mb-2">Team Review</h3>
                   <p className="text-foreground/70 text-sm leading-relaxed">Our leadership team reviews your application and matches you with the best team based on your skills and interests.</p>
                 </div>
               </div>
               <div className="flex gap-6">
-                <div className="w-12 h-12  bg-[#C8102E] text-white flex items-center justify-center font-bold flex-shrink-0">3</div>
+                <div className="w-12 h-12  bg-[#C8102E] text-black flex items-center justify-center font-bold flex-shrink-0">3</div>
                 <div>
                   <h3 className="font-bold text-lg text-foreground mb-2">Interview & Onboarding</h3>
                   <p className="text-foreground/70 text-sm leading-relaxed">Meet with your team lead for an interview, then get onboarded to start working on real projects.</p>
@@ -302,7 +302,7 @@ export default function LaunchTeams() {
               Apply today and start working on real-world projects with early-stage startups.
             </p>
             <Link href="/forms">
-              <Button className="bg-[#C8102E] hover:bg-[#C8102E] text-white font-bold px-8 h-12  transition-all duration-200 shadow-sm hover:shadow-lg inline-flex items-center gap-2">
+              <Button className="bg-[#C8102E] hover:bg-[#C8102E] text-black font-bold px-8 h-12  transition-all duration-200 shadow-sm hover:shadow-lg inline-flex items-center gap-2">
                 Join
                 <ArrowRight size={18} />
               </Button>

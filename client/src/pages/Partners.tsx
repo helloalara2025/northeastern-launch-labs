@@ -12,7 +12,7 @@ export default function Partners() {
         {/* Header */}
         <section className="bg-white py-32 md:py-40">
           <div className="container">
-            <h1 className="font-serif font-bold text-6xl md:text-7xl text-foreground mb-8 leading-tight">
+            <h1 className="font-serif font-bold text-6xl md:text-5xl text-foreground mb-8 leading-tight">
               Our Startup Partners
             </h1>
             <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl">
@@ -102,7 +102,7 @@ export default function Partners() {
             <div className="space-y-8">
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12  bg-[#C8102E] text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12  bg-[#C8102E] text-black font-bold text-lg">
                     1
                   </div>
                 </div>
@@ -115,7 +115,7 @@ export default function Partners() {
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12  bg-[#C8102E] text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12  bg-[#C8102E] text-black font-bold text-lg">
                     2
                   </div>
                 </div>
@@ -128,7 +128,7 @@ export default function Partners() {
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12  bg-[#C8102E] text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12  bg-[#C8102E] text-black font-bold text-lg">
                     3
                   </div>
                 </div>
@@ -141,7 +141,7 @@ export default function Partners() {
               </div>
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12  bg-[#C8102E] text-white font-bold text-lg">
+                  <div className="flex items-center justify-center h-12 w-12  bg-[#C8102E] text-black font-bold text-lg">
                     4
                   </div>
                 </div>
@@ -164,7 +164,7 @@ export default function Partners() {
               Let's talk about how Launch Labs can support your startup's growth.
             </p>
             <Link href="/contact">
-              <Button className="bg-[#C8102E] hover:bg-[#C8102E] text-white font-bold px-8 h-12  shadow-sm hover:shadow-lg inline-flex items-center gap-2">
+              <Button className="bg-[#C8102E] hover:bg-[#C8102E] text-black font-bold px-8 h-12  shadow-sm hover:shadow-lg inline-flex items-center gap-2">
                 Get in Touch
                 <ArrowRight size={18} />
               </Button>

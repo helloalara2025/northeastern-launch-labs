@@ -12,7 +12,7 @@ export default function Forms() {
         {/* Header */}
         <section className="bg-white py-32 md:py-40">
           <div className="container">
-            <h1 className="font-serif font-bold text-6xl md:text-7xl text-foreground mb-8 leading-tight">
+            <h1 className="font-serif font-bold text-6xl md:text-5xl text-foreground mb-8 leading-tight">
               Get Involved
             </h1>
             <p className="text-lg text-foreground/70 leading-relaxed">
@@ -214,7 +214,7 @@ export default function Forms() {
               Apply to join a team or propose your own project. We're excited to work with you!
             </p>
             <Link href="/contact" className="inline-block">
-              <Button className="bg-red-900 hover:bg-red-900 text-white font-bold px-8 h-12  transition-all duration-200 shadow-sm hover:shadow-lg inline-flex items-center gap-2">
+              <Button className="bg-red-900 hover:bg-red-900 text-black font-bold px-8 h-12  transition-all duration-200 shadow-sm hover:shadow-lg inline-flex items-center gap-2">
                 Have Questions? Contact Us
                 <ArrowRight size={18} />
               </Button>

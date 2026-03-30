@@ -43,7 +43,7 @@ export default function Leadership() {
         {/* Header */}
         <section className="bg-white py-32 md:py-40">
           <div className="container">
-            <h1 className="font-serif font-bold text-6xl md:text-7xl text-foreground mb-8 leading-tight">
+            <h1 className="font-serif font-bold text-6xl md:text-5xl text-foreground mb-8 leading-tight">
               Our Leadership
             </h1>
             <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl font-medium">
@@ -96,7 +96,7 @@ export default function Leadership() {
                   Interested in leading Launch Labs? We are always looking for passionate students to help drive our mission.
                 </p>
                 <Link href="/apply/leadership">
-                  <Button className="bg-[#C8102E] hover:bg-[#C8102E] text-white font-bold px-8 h-12  shadow-sm hover:shadow-lg inline-flex items-center gap-2 transition-all duration-200">
+                  <Button className="bg-[#C8102E] hover:bg-[#C8102E] text-black font-bold px-8 h-12  shadow-sm hover:shadow-lg inline-flex items-center gap-2 transition-all duration-200">
                     Apply for Leadership
                     <ArrowRight size={18} />
                   </Button>

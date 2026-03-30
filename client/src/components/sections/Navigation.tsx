@@ -72,7 +72,7 @@ export default function Navigation() {
             </Button>
           </Link>
           <Link href="/forms">
-            <Button className="bg-[#C8102E] hover:bg-[#A60826] text-white font-bold px-6 h-10 text-sm transition-all duration-200 shadow-md hover:shadow-lg hover:shadow-#C8102E/40 inline-flex items-center gap-2 uppercase tracking-wider">
+            <Button className="bg-[#C8102E] hover:bg-[#A60826] text-black font-bold px-6 h-10 text-sm transition-all duration-200 shadow-md hover:shadow-lg hover:shadow-#C8102E/40 inline-flex items-center gap-2 uppercase tracking-wider">
               Apply
               <ArrowRight size={16} />
             </Button>
@@ -127,7 +127,7 @@ export default function Navigation() {
           <Link href="/forms">
             <Button 
               onClick={() => setIsMobileMenuOpen(false)}
-              className="w-full bg-[#C8102E] hover:bg-[#A60826] text-white font-bold text-sm transition-all duration-200 shadow-md hover:shadow-lg mt-4 h-10 inline-flex items-center justify-center gap-2 uppercase tracking-wider"
+              className="w-full bg-[#C8102E] hover:bg-[#A60826] text-black font-bold text-sm transition-all duration-200 shadow-md hover:shadow-lg mt-4 h-10 inline-flex items-center justify-center gap-2 uppercase tracking-wider"
             >
               Apply
               <ArrowRight size={16} />
