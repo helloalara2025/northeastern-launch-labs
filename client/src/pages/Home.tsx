@@ -1,7 +1,7 @@
 import Navigation from "@/components/sections/Navigation";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ArrowRight, Briefcase, Lightbulb, Users, Award, Zap, Rocket } from "lucide-react";
+import { ArrowRight, Briefcase, Lightbulb } from "lucide-react";
 import { useState, useEffect } from "react";
 import InstagramFeed from "@/components/InstagramFeed";
 import ProjectCarousel from "@/components/ProjectCarousel";
@@ -62,23 +62,9 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Stats Box - Bold Graphic */}
+              {/* Right side - Empty space for visual balance */}
               <div className="hidden md:flex items-center justify-center relative h-96">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#C8102E] to-[#A60826] opacity-10 blur-3xl"></div>
-                <div className="relative w-full h-full flex items-center justify-center">
-                  <div className="w-72 h-72 bg-[#C8102E] flex items-center justify-center shadow-2xl">
-                    <div className="text-center text-white">
-                      <div className="text-7xl font-black mb-3">50+</div>
-                      <div className="text-2xl font-black tracking-widest">MEMBERS</div>
-                    </div>
-                  </div>
-                  <div className="absolute -bottom-12 -right-12 w-40 h-40 bg-[#CCFF00] flex items-center justify-center shadow-2xl">
-                    <div className="text-center text-black font-black">
-                      <div className="text-5xl">10+</div>
-                      <div className="text-sm font-black tracking-widest">PROJECTS</div>
-                    </div>
-                  </div>
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#C8102E] to-[#A60826] opacity-5 blur-3xl"></div>
               </div>
             </div>
           </div>
@@ -112,29 +98,6 @@ export default function Home() {
                 </p>
                 <div className="text-sm font-black text-[#CCFF00] tracking-widest">8 INTERNAL VENTURES</div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* What You'll Gain - Icon Grid */}
-        <section className="section-padding bg-white">
-          <div className="container">
-            <h2 className="text-6xl md:text-7xl font-black text-black mb-16">What You'll Gain</h2>
-            <div className="grid-4">
-              {[
-                { icon: Briefcase, title: "Real Experience", desc: "Work on projects that matter to real clients" },
-                { icon: Users, title: "Community", desc: "Connect with ambitious, talented peers" },
-                { icon: Zap, title: "Skills", desc: "Learn industry best practices and tools" },
-                { icon: Award, title: "Portfolio", desc: "Build your professional portfolio" },
-                { icon: Rocket, title: "Growth", desc: "Accelerate your career development" },
-                { icon: Lightbulb, title: "Innovation", desc: "Work on cutting-edge projects" },
-              ].map((item, idx) => (
-                <div key={idx} className="group p-8 bg-white border-2 border-black/10 hover:border-[#C8102E] hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
-                  <item.icon className="w-10 h-10 text-[#C8102E] mb-6 group-hover:scale-125 transition-transform" />
-                  <h3 className="text-2xl font-black text-black mb-3">{item.title}</h3>
-                  <p className="text-black/60 text-lg leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
             </div>
           </div>
         </section>
