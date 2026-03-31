@@ -22,7 +22,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg-white">
+    <div className="bg-primary text-white min-h-screen">
       {/* Scroll Progress Bar */}
       <div 
         className="scroll-progress" 
@@ -32,33 +32,30 @@ export default function Home() {
       <Navigation />
       <main>
         {/* Hero Section - Bold & Impactful with Image */}
-        <section className="relative section-padding bg-white border-b-4 border-red overflow-hidden">
-          <div className="container grid md:grid-cols-2 gap-12 items-center">
+        <section className="relative section-padding bg-primary border-b border-[rgba(255,255,255,0.1)] overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:24px_24px]"></div>
+          <div className="container grid md:grid-cols-2 gap-12 items-center relative z-10">
             {/* Left Content */}
             <div className="animate-slide-in-left z-10">
               <div className="mb-8">
-                <span className="badge">NORTHEASTERN LAUNCH LABS</span>
+                <span className="inline-block border border-red text-red px-4 py-1 text-xs font-mono uppercase tracking-widest">NORTHEASTERN LAUNCH LABS</span>
               </div>
-              <h1 className="text-5xl md:text-7xl font-black text-black mb-8 leading-tight">
-                From Idea to<br />
-                <span className="text-red">Impact</span>
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-white mb-8 leading-tight">
+                BUILD REAL<br />
+                <span className="text-red">THINGS</span>
               </h1>
-              <p className="text-xl md:text-2xl text-charcoal mb-10 leading-relaxed max-w-xl font-light">
+              <p className="text-xl md:text-2xl text-muted mb-10 leading-relaxed max-w-xl">
                 Work on real-world projects with students from every background. Bridge classroom learning with hands-on impact.
               </p>
               <div className="flex gap-4 flex-wrap">
-                <Button asChild>
-                  <Link href="/forms" className="btn-primary inline-flex items-center gap-3">
-                    Get Started
-                    <ArrowRight size={20} />
-                  </Link>
-                </Button>
-                <Button asChild>
-                  <Link href="/about" className="btn-secondary inline-flex items-center gap-3">
-                    Learn More
-                    <ArrowRight size={20} />
-                  </Link>
-                </Button>
+                <Link href="/forms" className="btn-primary inline-flex items-center gap-3">
+                  Get Started
+                  <ArrowRight size={20} />
+                </Link>
+                <Link href="/about" className="btn-secondary inline-flex items-center gap-3">
+                  Learn More
+                  <ArrowRight size={20} />
+                </Link>
               </div>
             </div>
 
@@ -106,10 +103,8 @@ export default function Home() {
                 </p>
                 <div className="flex items-center justify-between mt-auto">
                   <span className="text-xs font-mono text-muted uppercase">5+ Active Partners</span>
-                  <Link href="/launch-teams">
-                    <a className="text-red hover:text-white transition-colors flex items-center gap-2 text-sm font-bold uppercase tracking-wider">
-                      Explore <ArrowRight className="w-4 h-4" />
-                    </a>
+                  <Link href="/launch-teams" className="text-red hover:text-white transition-colors flex items-center gap-2 text-sm font-bold uppercase tracking-wider">
+                    Explore <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
               </div>
@@ -124,10 +119,8 @@ export default function Home() {
                 </p>
                 <div className="flex items-center justify-between mt-auto">
                   <span className="text-xs font-mono text-muted uppercase">8 Internal Ventures</span>
-                  <Link href="/innovation-teams">
-                    <a className="text-yellow hover:text-white transition-colors flex items-center gap-2 text-sm font-bold uppercase tracking-wider">
-                      Explore <ArrowRight className="w-4 h-4" />
-                    </a>
+                  <Link href="/innovation-teams" className="text-yellow hover:text-white transition-colors flex items-center gap-2 text-sm font-bold uppercase tracking-wider">
+                    Explore <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
               </div>
@@ -196,12 +189,12 @@ export default function Home() {
               Applications are open for the upcoming cohort. Join the most ambitious builder community at Northeastern.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-black text-white hover:bg-black/80 rounded-none text-lg px-10 py-8 font-bold tracking-widest uppercase border border-black">
-                <Link href="/forms">Apply Now</Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-red rounded-none text-lg px-10 py-8 font-bold tracking-widest uppercase">
-                <Link href="/contact">Get in Touch</Link>
-              </Button>
+              <Link href="/forms" className="inline-flex items-center justify-center bg-black text-white hover:bg-black/80 rounded-none text-lg px-10 py-8 font-bold tracking-widest uppercase border border-black transition-colors">
+                Apply Now
+              </Link>
+              <Link href="/contact" className="inline-flex items-center justify-center bg-transparent border-2 border-white text-white hover:bg-white hover:text-red rounded-none text-lg px-10 py-8 font-bold tracking-widest uppercase transition-colors">
+                Get in Touch
+              </Link>
             </div>
           </div>
         </section>
