@@ -1,7 +1,7 @@
 import Navigation from "@/components/sections/Navigation";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ArrowRight, Briefcase, Lightbulb, Users, Award, Zap, Rocket } from "lucide-react";
+import { ArrowRight, Briefcase, Lightbulb } from "lucide-react";
 import { useState, useEffect } from "react";
 import InstagramFeed from "@/components/InstagramFeed";
 import ProjectCarousel from "@/components/ProjectCarousel";
@@ -109,29 +109,6 @@ export default function Home() {
                 </p>
                 <div className="text-sm font-semibold text-[#C8102E]">8 Internal Ventures</div>
               </div>
-            </div>
-          </div>
-        </section>
-
-        {/* What You'll Gain */}
-        <section className="section-padding bg-[#F5F5F5]">
-          <div className="container">
-            <h2 className="text-4xl md:text-5xl font-bold text-black mb-12">What You'll Gain</h2>
-            <div className="grid-auto">
-              {[
-                { icon: Briefcase, title: "Real Experience", desc: "Work on projects that matter to real clients" },
-                { icon: Users, title: "Community", desc: "Connect with ambitious, talented peers" },
-                { icon: Zap, title: "Skills", desc: "Learn industry best practices and tools" },
-                { icon: Award, title: "Portfolio", desc: "Build your professional portfolio" },
-                { icon: Rocket, title: "Growth", desc: "Accelerate your career development" },
-                { icon: Lightbulb, title: "Innovation", desc: "Work on cutting-edge projects" },
-              ].map((item, idx) => (
-                <div key={idx} className="card">
-                  <item.icon className="w-8 h-8 text-[#C8102E] mb-4" />
-                  <h3 className="text-xl font-bold text-black mb-2">{item.title}</h3>
-                  <p className="text-gray-600">{item.desc}</p>
-                </div>
-              ))}
             </div>
           </div>
         </section>

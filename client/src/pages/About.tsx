@@ -35,56 +35,12 @@ export default function About() {
           </div>
         </section>
 
-        {/* How to Get Involved */}
-        <section className="bg-white border-t border-border py-32 md:py-40">
-          <div className="container">
-            <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-16">How to Get Involved</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white ">
-                <CardContent className="p-10">
-                  <h3 className="font-bold text-lg text-foreground mb-4">Apply to Join</h3>
-                  <p className="text-foreground/70 leading-relaxed text-sm">
-                    Complete the general application form to become a member. Students interested in leadership opportunities should indicate this in their application.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white ">
-                <CardContent className="p-10">
-                  <h3 className="font-bold text-lg text-foreground mb-4">Propose a Project</h3>
-                  <p className="text-foreground/70 leading-relaxed text-sm">
-                    Members with an idea for a startup collaboration or internal initiative may submit a project proposal for consideration.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white ">
-                <CardContent className="p-10">
-                  <h3 className="font-bold text-lg text-foreground mb-4">Attend an Info Session</h3>
-                  <p className="text-foreground/70 leading-relaxed text-sm">
-                    Join an information meeting to learn more about the club structure, teams, and expectations.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white ">
-                <CardContent className="p-10">
-                  <h3 className="font-bold text-lg text-foreground mb-4">Stay Engaged</h3>
-                  <p className="text-foreground/70 leading-relaxed text-sm">
-                    Members are expected to actively contribute to their team's work, with an average time commitment of 3-5 hours per week.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
         {/* Our Values */}
         <section className="bg-white border-t border-border py-32 md:py-40">
           <div className="container">
             <h2 className="font-serif font-bold text-5xl md:text-6xl text-foreground mb-16">Our Values</h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white ">
+              <Card className="border border-border hover:border-border transition-all duration-300 bg-white">
                 <CardContent className="p-10">
                   <h3 className="font-bold text-lg text-foreground mb-4">Real Impact</h3>
                   <p className="text-foreground/70 leading-relaxed text-sm">
@@ -93,29 +49,11 @@ export default function About() {
                 </CardContent>
               </Card>
 
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white ">
+              <Card className="border border-border hover:border-border transition-all duration-300 bg-white">
                 <CardContent className="p-10">
-                  <h3 className="font-bold text-lg text-foreground mb-4">Collaboration</h3>
+                  <h3 className="font-bold text-lg text-foreground mb-4">Collaboration & Ownership</h3>
                   <p className="text-foreground/70 leading-relaxed text-sm">
-                    We believe the best solutions come from diverse perspectives. We bring together students from all backgrounds.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white ">
-                <CardContent className="p-10">
-                  <h3 className="font-bold text-lg text-foreground mb-4">Ownership & Accountability</h3>
-                  <p className="text-foreground/70 leading-relaxed text-sm">
-                    Our members take ownership of their projects and drive outcomes. We hold ourselves to professional standards.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border border-border hover:border-border transition-all duration-300 bg-white ">
-                <CardContent className="p-10">
-                  <h3 className="font-bold text-lg text-foreground mb-4">Continuous Learning</h3>
-                  <p className="text-foreground/70 leading-relaxed text-sm">
-                    We embrace challenges as opportunities to grow. Every project teaches us something new.
+                    We believe the best solutions come from diverse perspectives. Our members take ownership and drive outcomes with professional accountability.
                   </p>
                 </CardContent>
               </Card>
