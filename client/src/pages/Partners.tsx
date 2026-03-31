@@ -1,126 +1,115 @@
 import Navigation from "@/components/sections/Navigation";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Users, TrendingUp, Zap, Clock, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
-import { Users, TrendingUp, Zap, Clock, ArrowRight, Lightbulb } from "lucide-react";
 
 export default function Partners() {
   return (
-    <div className="bg-primary pt-20">
+    <div>
       <Navigation />
-      <main>
+      <main className="pt-24">
         {/* Header */}
-        <section className="section-padding bg-primary relative overflow-hidden">
-          <div className="arc-top-right"></div>
-          <div className="container relative z-10">
-            <div className="label text-yellow mb-8">PARTNERS</div>
-            <h1 className="text-7xl md:text-8xl lg:text-9xl font-black text-white mb-8 leading-tight">
-              Partner With Us
+        <section className="section-padding bg-white border-b-4 border-[#C8102E]">
+          <div className="container">
+            <h1 className="text-7xl md:text-8xl font-black text-black mb-8 leading-tight">
+              Our Startup Partners
             </h1>
-            <p className="text-lg md:text-2xl text-muted leading-relaxed max-w-4xl font-light">
-              Launch Labs works with forward-thinking startups and companies committed to providing meaningful learning experiences while advancing your product.
+            <p className="text-2xl text-black/70 leading-relaxed max-w-3xl font-light">
+              Launch Labs works with forward-thinking startups committed to providing meaningful learning experiences.
             </p>
           </div>
         </section>
 
-        {/* Why Partner */}
-        <section className="section-padding bg-secondary relative overflow-hidden">
-          <div className="arc-bottom-left"></div>
-          <div className="container relative z-10">
-            <div className="label text-yellow mb-12">WHY PARTNER</div>
-            <h2 className="text-6xl md:text-7xl lg:text-8xl font-black text-white mb-20">Why Work With Launch Labs?</h2>
-            <div className="grid md:grid-cols-2 gap-16">
-              {[
-                {
-                  icon: Users,
-                  title: "Skilled Student Teams",
-                  desc: "Access talented students from all programs—engineering, design, business, and more. Diverse perspectives drive innovation."
-                },
-                {
-                  icon: TrendingUp,
-                  title: "Cost-Effective Development",
-                  desc: "High-quality work for early-stage ventures at a fraction of traditional agency costs. Scale your team affordably."
-                },
-                {
-                  icon: Lightbulb,
-                  title: "Fresh Perspectives",
-                  desc: "Student teams bring creativity and unconventional thinking to your challenges. New ideas fuel growth."
-                },
-                {
-                  icon: Clock,
-                  title: "Rapid Execution",
-                  desc: "Motivated teams working on real problems deliver results quickly. From concept to launch in weeks, not months."
-                }
-              ].map((item, idx) => (
-                <div key={idx} className="card-accent group hover:border-yellow transition-colors duration-300">
-                  <div className="icon-box mb-8 group-hover:bg-yellow group-hover:text-black transition-all duration-300">
-                    <item.icon size={28} />
-                  </div>
-                  <h3 className="text-3xl font-black text-white mb-6">{item.title}</h3>
-                  <p className="text-muted text-lg leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* How It Works */}
-        <section className="section-padding bg-primary">
+        {/* Why Partner Section */}
+        <section className="section-padding bg-[#0F172A]">
           <div className="container">
-            <div className="label text-yellow mb-12">PROCESS</div>
-            <h2 className="text-6xl md:text-7xl lg:text-8xl font-black text-white mb-20">How It Works</h2>
-            <div className="max-w-3xl space-y-12">
-              {[
-                {
-                  step: "01",
-                  title: "Define Your Challenge",
-                  desc: "We work with you to scope a project that's meaningful for students while advancing your product. Clear goals, realistic timelines."
-                },
-                {
-                  step: "02",
-                  title: "Assemble Your Team",
-                  desc: "We match your project with the right student team based on skills, interests, and availability. You meet the team and set expectations."
-                },
-                {
-                  step: "03",
-                  title: "Execute & Iterate",
-                  desc: "Teams work on your project with regular check-ins and feedback loops. You're involved throughout the process."
-                },
-                {
-                  step: "04",
-                  title: "Deliver & Learn",
-                  desc: "Students deliver a finished product or validated prototype. Both sides gain real experience and learnings."
-                }
-              ].map((item, idx) => (
-                <div key={idx} className="border-l-4 border-red pl-8">
-                  <div className="text-6xl font-black text-red/20 mb-2">{item.step}</div>
-                  <h3 className="text-2xl font-black text-white mb-4">{item.title}</h3>
-                  <p className="text-muted text-lg leading-relaxed">{item.desc}</p>
-                </div>
-              ))}
+            <h2 className="text-6xl md:text-7xl font-black text-white mb-16">Why Partner With Us?</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              <Card className="border-l-8 border-l-[#C8102E] hover:shadow-2xl transition-all duration-300">
+                <CardContent className="p-10">
+                  <div className="icon-box mb-6">
+                    <Users className="w-7 h-7" />
+                  </div>
+                  <h3 className="text-2xl font-black text-black mb-4">Skilled Student Teams</h3>
+                  <p className="text-black/70 text-lg leading-relaxed">
+                    Access talented students from all programs—engineering, design, business, and more.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-8 border-l-[#CCFF00] hover:shadow-2xl transition-all duration-300">
+                <CardContent className="p-10">
+                  <div className="icon-box-accent mb-6">
+                    <TrendingUp className="w-7 h-7" />
+                  </div>
+                  <h3 className="text-2xl font-black text-black mb-4">Cost-Effective Development</h3>
+                  <p className="text-black/70 text-lg leading-relaxed">
+                    High-quality work for early-stage ventures at a fraction of traditional agency costs.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-8 border-l-[#C8102E] hover:shadow-2xl transition-all duration-300">
+                <CardContent className="p-10">
+                  <div className="icon-box mb-6">
+                    <Zap className="w-7 h-7" />
+                  </div>
+                  <h3 className="text-2xl font-black text-black mb-4">Fresh Perspectives</h3>
+                  <p className="text-black/70 text-lg leading-relaxed">
+                    Students bring emerging technologies and new approaches to your challenges.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-l-8 border-l-[#CCFF00] hover:shadow-2xl transition-all duration-300">
+                <CardContent className="p-10">
+                  <div className="icon-box-accent mb-6">
+                    <Clock className="w-7 h-7" />
+                  </div>
+                  <h3 className="text-2xl font-black text-black mb-4">Flexible Commitment</h3>
+                  <p className="text-black/70 text-lg leading-relaxed">
+                    Semester-long engagements with defined scope that fits your timeline.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
 
         {/* Current Partners */}
-        <section className="section-padding bg-secondary relative overflow-hidden">
-          <div className="arc-top-right"></div>
-          <div className="container relative z-10">
-            <div className="label text-yellow mb-12">CURRENT PARTNERS</div>
-            <h2 className="text-6xl md:text-7xl lg:text-8xl font-black text-white mb-20">Who We Work With</h2>
-            <p className="text-lg md:text-xl text-muted leading-relaxed mb-16 max-w-3xl">
-              We partner with early-stage startups and growth-stage companies across industries. Our current partners include ventures in fintech, healthcare, edtech, and consumer applications.
-            </p>
-            <div className="grid md:grid-cols-2 gap-8">
+        <section className="section-padding bg-white">
+          <div className="container">
+            <h2 className="text-6xl md:text-7xl font-black text-black mb-12">Current Startup Partners</h2>
+            <div className="bg-[#F5F5F5] border-l-8 border-l-[#C8102E] p-12 text-center">
+              <p className="text-black/70 text-2xl font-light leading-relaxed">
+                Partner profiles and logos coming soon. Check back for information about our current startup collaborations.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* How It Works */}
+        <section className="section-padding bg-[#F5F5F5]">
+          <div className="container">
+            <h2 className="text-6xl md:text-7xl font-black text-black mb-16">How It Works</h2>
+            <div className="space-y-8 max-w-4xl">
               {[
-                "Series A fintech platform",
-                "B2B SaaS marketplace",
-                "Healthcare tech startup",
-                "EdTech learning platform",
-                "Consumer mobile app",
-                "AI/ML research venture"
-              ].map((partner, idx) => (
-                <div key={idx} className="border-l-4 border-yellow pl-8 py-4">
-                  <p className="text-white font-medium text-lg">{partner}</p>
+                { step: "1", title: "Initial Consultation", desc: "We discuss your project scope, timeline, and team needs to ensure the right fit." },
+                { step: "2", title: "Team Formation", desc: "We assemble a cross-functional team of students with the skills and interests for your project." },
+                { step: "3", title: "Execution", desc: "Your team works on the project with regular check-ins and support from Launch Labs leadership." },
+                { step: "4", title: "Delivery & Feedback", desc: "Project completion with final presentation and feedback session with your team." }
+              ].map((item, idx) => (
+                <div key={idx} className="flex gap-8">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 bg-[#C8102E] text-white font-black text-2xl flex items-center justify-center">
+                      {item.step}
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-2xl font-black text-black mb-3">{item.title}</h3>
+                    <p className="text-black/70 text-lg leading-relaxed">{item.desc}</p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -128,14 +117,14 @@ export default function Partners() {
         </section>
 
         {/* CTA */}
-        <section className="section-padding bg-red relative overflow-hidden">
-          <div className="container text-center relative z-10">
-            <h2 className="text-6xl md:text-7xl lg:text-8xl font-black text-white mb-8">Ready to Partner?</h2>
-            <p className="text-lg md:text-2xl text-white/90 mb-16 max-w-3xl mx-auto font-light">
-              Let's talk about how Launch Labs can help accelerate your product and provide meaningful experience to our students.
+        <section className="section-padding bg-[#C8102E]">
+          <div className="container text-center">
+            <h2 className="text-6xl md:text-7xl font-black text-white mb-8">Interested in Partnering?</h2>
+            <p className="text-2xl text-white/90 mb-12 max-w-2xl mx-auto font-light">
+              Let's talk about how Launch Labs can support your startup's growth.
             </p>
             <Button asChild>
-              <Link href="/contact" className="bg-white text-red font-black px-8 py-4 hover:bg-yellow transition-all inline-flex items-center gap-3 uppercase tracking-wider text-sm">
+              <Link href="/contact" className="bg-white text-[#C8102E] font-black px-10 py-4 hover:bg-[#F5F5F5] transition-all inline-flex items-center gap-3 uppercase tracking-wider">
                 Get in Touch
                 <ArrowRight size={20} />
               </Link>
@@ -145,42 +134,42 @@ export default function Partners() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-secondary border-t border-white/10 py-24">
+      <footer className="bg-white border-t-4 border-[#C8102E] py-20">
         <div className="container">
-          <div className="grid md:grid-cols-4 gap-16 mb-20">
+          <div className="grid md:grid-cols-4 gap-16 mb-16">
             <div>
-              <div className="label text-yellow mb-8">NU LAUNCH LABS</div>
-              <p className="text-muted leading-relaxed text-lg">
-                Connecting builders at Northeastern. Founded Spring 2026.
+              <h4 className="text-2xl font-black text-black mb-6">Launch Labs</h4>
+              <p className="text-lg text-black/70 font-light leading-relaxed">
+                Northeastern University's hub for real-world project work.
               </p>
             </div>
             <div>
-              <div className="label text-white mb-8">EXPLORE</div>
-              <ul className="space-y-4">
-                <li><Link href="/" className="text-muted hover:text-red transition-colors duration-300 text-lg">Home</Link></li>
-                <li><Link href="/about" className="text-muted hover:text-red transition-colors duration-300 text-lg">About</Link></li>
-                <li><Link href="/launch-teams" className="text-muted hover:text-red transition-colors duration-300 text-lg">Launch Teams</Link></li>
+              <h4 className="text-lg font-black text-black mb-6 uppercase tracking-wider">Explore</h4>
+              <ul className="space-y-3 text-lg">
+                <li><Link href="/" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Home</Link></li>
+                <li><Link href="/about" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">About</Link></li>
+                <li><Link href="/launch-teams" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Launch Teams</Link></li>
               </ul>
             </div>
             <div>
-              <div className="label text-white mb-8">GET INVOLVED</div>
-              <ul className="space-y-4">
-                <li><Link href="/forms" className="text-muted hover:text-red transition-colors duration-300 text-lg">Apply</Link></li>
-                <li><Link href="/leadership" className="text-muted hover:text-red transition-colors duration-300 text-lg">Leadership</Link></li>
-                <li><Link href="/innovation-teams" className="text-muted hover:text-red transition-colors duration-300 text-lg">Innovation Teams</Link></li>
+              <h4 className="text-lg font-black text-black mb-6 uppercase tracking-wider">Get Involved</h4>
+              <ul className="space-y-3 text-lg">
+                <li><Link href="/forms" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Apply</Link></li>
+                <li><Link href="/leadership" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Leadership</Link></li>
+                <li><Link href="/innovation-teams" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Innovation Teams</Link></li>
               </ul>
             </div>
             <div>
-              <div className="label text-white mb-8">CONNECT</div>
-              <ul className="space-y-4">
-                <li><Link href="/contact" className="text-muted hover:text-red transition-colors duration-300 text-lg">Contact</Link></li>
-                <li><a href="https://www.linkedin.com/company/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-red transition-colors duration-300 text-lg">LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-red transition-colors duration-300 text-lg">Instagram</a></li>
+              <h4 className="text-lg font-black text-black mb-6 uppercase tracking-wider">Connect</h4>
+              <ul className="space-y-3 text-lg">
+                <li><Link href="/contact" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Contact</Link></li>
+                <li><a href="https://www.linkedin.com/company/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Instagram</a></li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-white/10 pt-12 text-center text-muted font-light text-lg">
-            <p>&copy; 2026 NU Launch Labs. All rights reserved.</p>
+          <div className="border-t-2 border-[#D0D0D0] pt-8 text-center text-lg text-black/70 font-light">
+            <p>&copy; 2026 Northeastern Launch Labs. All rights reserved.</p>
           </div>
         </div>
       </footer>
