@@ -1,139 +1,126 @@
 import Navigation from "@/components/sections/Navigation";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Users, Target, Zap } from "lucide-react";
 
 export default function About() {
   return (
     <div>
       <Navigation />
-      <main className="pt-24">
+      <main>
         {/* Header */}
-        <section className="section-padding bg-white border-b-4 border-[#C8102E]">
+        <section className="section-padding bg-white border-b-4 border-red">
           <div className="container">
-            <h1 className="text-7xl md:text-8xl font-black text-black mb-8 leading-tight">
-              About Launch Labs
+            <div className="mb-8">
+              <span className="badge">ABOUT US</span>
+            </div>
+            <h1 className="text-5xl md:text-7xl font-black text-black mb-8 leading-tight">
+              Building the Next Generation of Leaders
             </h1>
-            <p className="text-2xl text-black/70 leading-relaxed max-w-3xl font-light">
+            <p className="text-xl md:text-2xl text-charcoal leading-relaxed max-w-3xl font-light">
               Northeastern Launch Labs brings together students across disciplines and experience levels to work on real-world, end-to-end projects that bridge classroom learning with practical impact.
             </p>
           </div>
         </section>
 
-        {/* Our Mission */}
-        <section className="section-padding bg-[#0F172A]">
+        {/* Mission Section */}
+        <section className="section-padding bg-stone">
           <div className="container">
-            <h2 className="text-6xl md:text-7xl font-black text-white mb-16">Our Mission</h2>
-            <div className="space-y-8 max-w-4xl">
-              <p className="text-2xl text-white/90 font-light leading-relaxed">
-                Our goal is to bring together students across disciplines and experience levels to work on real-world, end-to-end projects that bridge classroom learning with practical impact.
+            <h2 className="text-5xl md:text-6xl font-black text-black mb-8">Our Mission</h2>
+            <div className="max-w-3xl">
+              <p className="text-xl text-charcoal leading-relaxed mb-8 font-light">
+                To empower students to develop leadership, strategic thinking, and execution skills through real-world project work with startups and internally scoped ventures.
               </p>
-              <p className="text-2xl text-white/90 font-light leading-relaxed">
-                Through Launch Teams partnering with startups and Innovation Teams developing internal, end-to-end projects, members gain practical experience tackling real-world problems. The club emphasizes collaboration, professional skill development, and ownership, enabling students to produce portfolio-ready work, strengthen cross-functional teamwork, and explore pathways to entrepreneurship and innovation within and beyond the Northeastern community.
+              <p className="text-xl text-charcoal leading-relaxed font-light">
+                We believe the best learning happens when students tackle complex, ambiguous problems alongside peers from different disciplines, guided by experienced mentors and industry leaders.
               </p>
             </div>
           </div>
         </section>
 
-        {/* How to Get Involved */}
+        {/* Core Values */}
+        <section className="section-padding bg-navy">
+          <div className="container">
+            <h2 className="text-5xl md:text-6xl font-black text-white mb-16">Core Values</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              {[
+                {
+                  title: "Real-World Impact",
+                  desc: "We work on projects that matter—with real clients, real constraints, and real outcomes. Students learn by doing, not by studying."
+                },
+                {
+                  title: "Cross-Disciplinary Collaboration",
+                  desc: "The best solutions come from diverse perspectives. We bring together engineers, designers, business students, and domain experts."
+                },
+                {
+                  title: "Leadership Development",
+                  desc: "We believe every student can lead. We create environments where students take ownership, make decisions, and grow as leaders."
+                },
+                {
+                  title: "Continuous Learning",
+                  desc: "We embrace ambiguity and iteration. Failure is a learning opportunity, and feedback drives growth."
+                }
+              ].map((value, idx) => (
+                <div key={idx} className="card-dark">
+                  <h3 className="text-2xl font-black text-black mb-4">{value.title}</h3>
+                  <p className="text-charcoal text-lg leading-relaxed">{value.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Get Involved */}
         <section className="section-padding bg-white">
           <div className="container">
-            <h2 className="text-6xl md:text-7xl font-black text-black mb-16">How to Get Involved</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <Card className="border-l-8 border-l-[#C8102E] hover:shadow-2xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <h3 className="text-3xl font-black text-black mb-4">Apply to Join</h3>
-                  <p className="text-black/70 text-lg leading-relaxed">
-                    Complete the general application form to become a member. Students interested in leadership opportunities should indicate this in their application.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-l-8 border-l-[#CCFF00] hover:shadow-2xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <h3 className="text-3xl font-black text-black mb-4">Propose a Project</h3>
-                  <p className="text-black/70 text-lg leading-relaxed">
-                    Members with an idea for a startup collaboration or internal initiative may submit a project proposal for consideration.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-l-8 border-l-[#C8102E] hover:shadow-2xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <h3 className="text-3xl font-black text-black mb-4">Attend an Info Session</h3>
-                  <p className="text-black/70 text-lg leading-relaxed">
-                    Join an information meeting to learn more about the club structure, teams, and expectations.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-l-8 border-l-[#CCFF00] hover:shadow-2xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <h3 className="text-3xl font-black text-black mb-4">Stay Engaged</h3>
-                  <p className="text-black/70 text-lg leading-relaxed">
-                    Members are expected to actively contribute to their team's work, with an average time commitment of 3-5 hours per week.
-                  </p>
-                </CardContent>
-              </Card>
+            <h2 className="text-5xl md:text-6xl font-black text-black mb-16">Get Involved</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {[
+                {
+                  icon: Users,
+                  title: "Join a Team",
+                  desc: "Apply to Launch Teams or Innovation Teams and start working on real projects.",
+                  link: "/forms"
+                },
+                {
+                  icon: Target,
+                  title: "Lead an Initiative",
+                  desc: "Interested in leadership? Join our operations team and help shape the future of Launch Labs.",
+                  link: "/leadership"
+                },
+                {
+                  icon: Zap,
+                  title: "Partner With Us",
+                  desc: "Are you a startup? Let's talk about how Launch Labs can support your growth.",
+                  link: "/partners"
+                }
+              ].map((item, idx) => (
+                <div key={idx} className="bg-stone p-8 rounded-lg border-l-8 border-l-red hover:shadow-lg transition-all duration-300">
+                  <div className="icon-box mb-6">
+                    <item.icon className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-2xl font-black text-black mb-3">{item.title}</h3>
+                  <p className="text-charcoal text-lg leading-relaxed mb-6">{item.desc}</p>
+                  <Link href={item.link} className="text-red font-black hover:gap-2 inline-flex items-center gap-1 transition-all uppercase tracking-wider">
+                    Learn More
+                    <ArrowRight size={16} />
+                  </Link>
+                </div>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* Our Values */}
-        <section className="section-padding bg-[#F5F5F5]">
-          <div className="container">
-            <h2 className="text-6xl md:text-7xl font-black text-black mb-16">Our Values</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <Card className="border-l-8 border-l-[#C8102E] hover:shadow-2xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <h3 className="text-3xl font-black text-black mb-4">Real Impact</h3>
-                  <p className="text-black/70 text-lg leading-relaxed">
-                    We focus on projects that create tangible value for real users and customers. Our work matters.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-l-8 border-l-[#CCFF00] hover:shadow-2xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <h3 className="text-3xl font-black text-black mb-4">Collaboration</h3>
-                  <p className="text-black/70 text-lg leading-relaxed">
-                    We believe the best solutions come from diverse perspectives. We bring together students from all backgrounds.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-l-8 border-l-[#C8102E] hover:shadow-2xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <h3 className="text-3xl font-black text-black mb-4">Ownership & Accountability</h3>
-                  <p className="text-black/70 text-lg leading-relaxed">
-                    Our members take ownership of their projects and drive outcomes. We hold ourselves to professional standards.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-l-8 border-l-[#CCFF00] hover:shadow-2xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <h3 className="text-3xl font-black text-black mb-4">Continuous Learning</h3>
-                  <p className="text-black/70 text-lg leading-relaxed">
-                    We embrace challenges as opportunities to grow. Every project teaches us something new.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA Section */}
-        <section className="section-padding bg-[#C8102E]">
+        {/* CTA */}
+        <section className="section-padding bg-red">
           <div className="container text-center">
-            <h2 className="text-6xl md:text-7xl font-black text-white mb-8">Ready to Join Us?</h2>
-            <p className="text-2xl text-white/90 mb-12 max-w-2xl mx-auto font-light">
-              Become part of the Launch Labs community and start making real impact.
+            <h2 className="text-5xl md:text-6xl font-black text-white mb-8">Ready to Join?</h2>
+            <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-2xl mx-auto font-light">
+              Whether you're interested in joining a team, leading an initiative, or partnering with us, we'd love to hear from you.
             </p>
             <Button asChild>
-              <Link href="/forms" className="bg-white text-[#C8102E] font-black px-10 py-4 hover:bg-[#F5F5F5] transition-all inline-flex items-center gap-3 uppercase tracking-wider">
-                Join Us
+              <Link href="/forms" className="bg-white text-red font-black px-8 py-3 hover:bg-stone transition-all inline-flex items-center gap-3 uppercase tracking-wider">
+                Get Started
                 <ArrowRight size={20} />
               </Link>
             </Button>
@@ -142,41 +129,41 @@ export default function About() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t-4 border-[#C8102E] py-20">
+      <footer className="bg-white border-t-4 border-red py-20">
         <div className="container">
           <div className="grid md:grid-cols-4 gap-16 mb-16">
             <div>
               <h4 className="text-2xl font-black text-black mb-6">Launch Labs</h4>
-              <p className="text-lg text-black/70 font-light leading-relaxed">
+              <p className="text-lg text-charcoal font-light leading-relaxed">
                 Northeastern University's hub for real-world project work.
               </p>
             </div>
             <div>
               <h4 className="text-lg font-black text-black mb-6 uppercase tracking-wider">Explore</h4>
               <ul className="space-y-3 text-lg">
-                <li><Link href="/" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Home</Link></li>
-                <li><Link href="/launch-teams" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Launch Teams</Link></li>
-                <li><Link href="/innovation-teams" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Innovation Teams</Link></li>
+                <li><Link href="/" className="text-charcoal hover:text-red transition-colors font-medium">Home</Link></li>
+                <li><Link href="/about" className="text-charcoal hover:text-red transition-colors font-medium">About</Link></li>
+                <li><Link href="/launch-teams" className="text-charcoal hover:text-red transition-colors font-medium">Launch Teams</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="text-lg font-black text-black mb-6 uppercase tracking-wider">Get Involved</h4>
               <ul className="space-y-3 text-lg">
-                <li><Link href="/forms" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Apply</Link></li>
-                <li><Link href="/leadership" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Leadership</Link></li>
-                <li><Link href="/partners" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Partners</Link></li>
+                <li><Link href="/forms" className="text-charcoal hover:text-red transition-colors font-medium">Apply</Link></li>
+                <li><Link href="/leadership" className="text-charcoal hover:text-red transition-colors font-medium">Leadership</Link></li>
+                <li><Link href="/innovation-teams" className="text-charcoal hover:text-red transition-colors font-medium">Innovation Teams</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="text-lg font-black text-black mb-6 uppercase tracking-wider">Connect</h4>
               <ul className="space-y-3 text-lg">
-                <li><Link href="/contact" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Contact</Link></li>
-                <li><a href="https://www.linkedin.com/company/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Instagram</a></li>
+                <li><Link href="/contact" className="text-charcoal hover:text-red transition-colors font-medium">Contact</Link></li>
+                <li><a href="https://www.linkedin.com/company/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-charcoal hover:text-red transition-colors font-medium">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-charcoal hover:text-red transition-colors font-medium">Instagram</a></li>
               </ul>
             </div>
           </div>
-          <div className="border-t-2 border-[#D0D0D0] pt-8 text-center text-lg text-black/70 font-light">
+          <div className="border-t-2 border-gray-light pt-8 text-center text-lg text-charcoal font-light">
             <p>&copy; 2026 Northeastern Launch Labs. All rights reserved.</p>
           </div>
         </div>
