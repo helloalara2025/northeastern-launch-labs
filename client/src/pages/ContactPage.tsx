@@ -10,35 +10,35 @@ export default function ContactPage() {
       <Navigation />
       <main className="pt-24">
         {/* Header */}
-        <section className="bg-white py-32 md:py-40">
+        <section className="section-padding bg-white border-b-4 border-[#C8102E]">
           <div className="container text-center">
-            <h1 className="font-serif font-bold text-6xl md:text-5xl text-foreground mb-8 leading-tight">
+            <h1 className="text-7xl md:text-8xl font-black text-black mb-8 leading-tight">
               Get In Touch
             </h1>
-            <p className="text-lg text-foreground/70 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-2xl text-black/70 leading-relaxed max-w-2xl mx-auto font-light">
               Have questions? Want to collaborate? Reach out to us directly.
             </p>
           </div>
         </section>
 
         {/* Contact Section */}
-        <section className="bg-white border-t border-border py-32 md:py-40">
+        <section className="section-padding bg-[#0F172A]">
           <div className="container">
             <div className="grid md:grid-cols-2 gap-16">
               {/* Contact Info */}
-              <div className="space-y-6">
-                <h2 className="font-sans font-bold text-3xl text-foreground mb-8">Contact Us</h2>
+              <div className="space-y-8">
+                <h2 className="text-5xl font-black text-white mb-12">Contact Us</h2>
 
                 {/* Email */}
-                <Card className="border border-border border-border hover:border-border transition-all duration-300">
+                <Card className="border-l-8 border-l-[#C8102E] hover:shadow-2xl transition-all duration-300">
                   <CardContent className="p-10">
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12  bg-white flex items-center justify-center text-[#C8102E] flex-shrink-0">
-                        <Mail className="w-6 h-6" />
+                    <div className="flex items-start gap-6">
+                      <div className="icon-box flex-shrink-0">
+                        <Mail className="w-7 h-7" />
                       </div>
                       <div>
-                        <h3 className="font-bold text-lg text-foreground mb-2">Email</h3>
-                        <a href="mailto:NU-launchlabs@northeastern.edu" className="text-[#C8102E] hover:text-[#C8102E] transition-colors font-medium break-all">
+                        <h3 className="text-2xl font-black text-black mb-3">Email</h3>
+                        <a href="mailto:NU-launchlabs@northeastern.edu" className="text-[#C8102E] hover:text-[#A60826] transition-colors font-bold text-lg break-all">
                           NU-launchlabs@northeastern.edu
                         </a>
                       </div>
@@ -47,20 +47,20 @@ export default function ContactPage() {
                 </Card>
 
                 {/* Social Links */}
-                <Card className="border border-border border-border hover:border-border transition-all duration-300">
+                <Card className="border-l-8 border-l-[#CCFF00] hover:shadow-2xl transition-all duration-300">
                   <CardContent className="p-10">
-                    <h3 className="font-bold text-lg text-foreground mb-6">Follow Us</h3>
-                    <div className="space-y-3">
-                      <a href="https://www.linkedin.com/company/nulaunchlabs" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-foreground/70 hover:text-[#C8102E] transition-colors font-medium">
-                        <Linkedin size={20} className="text-[#C8102E]" />
+                    <h3 className="text-2xl font-black text-black mb-8">Follow Us</h3>
+                    <div className="space-y-4">
+                      <a href="https://www.linkedin.com/company/nulaunchlabs" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-black/70 hover:text-[#C8102E] transition-colors font-bold text-lg">
+                        <Linkedin size={24} className="text-[#C8102E]" />
                         LinkedIn
                       </a>
-                      <a href="https://instagram.com/nulaunchlabs" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-foreground/70 hover:text-[#C8102E] transition-colors font-medium">
-                        <Instagram size={20} className="text-[#C8102E]" />
+                      <a href="https://instagram.com/nulaunchlabs" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-black/70 hover:text-[#C8102E] transition-colors font-bold text-lg">
+                        <Instagram size={24} className="text-[#C8102E]" />
                         Instagram
                       </a>
-                      <a href="https://discord.gg/EVSEDPDv" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-foreground/70 hover:text-[#C8102E] transition-colors font-medium">
-                        <MessageCircle size={20} className="text-[#C8102E]" />
+                      <a href="https://discord.gg/EVSEDPDv" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 text-black/70 hover:text-[#C8102E] transition-colors font-bold text-lg">
+                        <MessageCircle size={24} className="text-[#C8102E]" />
                         Discord
                       </a>
                     </div>
@@ -69,34 +69,34 @@ export default function ContactPage() {
               </div>
 
               {/* Quick Actions */}
-              <div className="space-y-6">
-                <h2 className="font-sans font-bold text-3xl text-foreground mb-8">Next Steps</h2>
+              <div className="space-y-8">
+                <h2 className="text-5xl font-black text-white mb-12">Next Steps</h2>
 
-                <Card className="border border-border border-border hover:border-border transition-all duration-300">
+                <Card className="border-l-8 border-l-[#C8102E] hover:shadow-2xl transition-all duration-300">
                   <CardContent className="p-10">
-                    <h3 className="font-bold text-lg text-foreground mb-3">Ready to Apply?</h3>
-                    <p className="text-foreground/70 mb-6">
+                    <h3 className="text-2xl font-black text-black mb-4">Ready to Apply?</h3>
+                    <p className="text-black/70 text-lg leading-relaxed mb-8">
                       Check out our application forms and join Launch Labs.
                     </p>
                     <Link href="/forms">
-                      <Button className="w-full bg-[#C8102E] hover:bg-[#C8102E] text-black font-bold h-10  inline-flex items-center justify-center gap-2 transition-all duration-200 shadow-sm hover:shadow-lg">
+                      <Button className="btn-primary w-full inline-flex items-center justify-center gap-3">
                         View Forms
-                        <ArrowRight size={16} />
+                        <ArrowRight size={18} />
                       </Button>
                     </Link>
                   </CardContent>
                 </Card>
 
-                <Card className="border border-border border-border hover:border-border transition-all duration-300">
+                <Card className="border-l-8 border-l-[#CCFF00] hover:shadow-2xl transition-all duration-300">
                   <CardContent className="p-10">
-                    <h3 className="font-bold text-lg text-foreground mb-3">Explore Teams</h3>
-                    <p className="text-foreground/70 mb-6">
+                    <h3 className="text-2xl font-black text-black mb-4">Explore Teams</h3>
+                    <p className="text-black/70 text-lg leading-relaxed mb-8">
                       Learn more about our Launch and Innovation teams.
                     </p>
                     <Link href="/launch-teams">
-                      <Button className="w-full bg-[#C8102E] hover:bg-[#C8102E] text-black font-bold h-10  inline-flex items-center justify-center gap-2 transition-all duration-200 shadow-sm hover:shadow-lg">
+                      <Button className="btn-secondary w-full inline-flex items-center justify-center gap-3">
                         View Teams
-                        <ArrowRight size={16} />
+                        <ArrowRight size={18} />
                       </Button>
                     </Link>
                   </CardContent>
@@ -105,7 +105,58 @@ export default function ContactPage() {
             </div>
           </div>
         </section>
+
+        {/* CTA */}
+        <section className="section-padding bg-white">
+          <div className="container text-center">
+            <h2 className="text-6xl md:text-7xl font-black text-black mb-8">Questions?</h2>
+            <p className="text-2xl text-black/70 mb-12 max-w-2xl mx-auto font-light">
+              We're here to help. Reach out anytime and we'll get back to you as soon as possible.
+            </p>
+          </div>
+        </section>
       </main>
+
+      {/* Footer */}
+      <footer className="bg-white border-t-4 border-[#C8102E] py-20">
+        <div className="container">
+          <div className="grid md:grid-cols-4 gap-16 mb-16">
+            <div>
+              <h4 className="text-2xl font-black text-black mb-6">Launch Labs</h4>
+              <p className="text-lg text-black/70 font-light leading-relaxed">
+                Northeastern University's hub for real-world project work.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-lg font-black text-black mb-6 uppercase tracking-wider">Explore</h4>
+              <ul className="space-y-3 text-lg">
+                <li><Link href="/" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Home</Link></li>
+                <li><Link href="/about" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">About</Link></li>
+                <li><Link href="/launch-teams" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Launch Teams</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-lg font-black text-black mb-6 uppercase tracking-wider">Get Involved</h4>
+              <ul className="space-y-3 text-lg">
+                <li><Link href="/forms" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Apply</Link></li>
+                <li><Link href="/leadership" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Leadership</Link></li>
+                <li><Link href="/innovation-teams" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Innovation Teams</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-lg font-black text-black mb-6 uppercase tracking-wider">Connect</h4>
+              <ul className="space-y-3 text-lg">
+                <li><a href="https://www.linkedin.com/company/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Instagram</a></li>
+                <li><a href="https://discord.gg/EVSEDPDv" target="_blank" rel="noopener noreferrer" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Discord</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t-2 border-[#D0D0D0] pt-8 text-center text-lg text-black/70 font-light">
+            <p>&copy; 2026 Northeastern Launch Labs. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

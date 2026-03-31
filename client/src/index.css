@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800;900&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* ============================================
-   DESIGN SYSTEM: Professional Clean
+   DESIGN SYSTEM: Professional, Bold & Branded
    Primary: Northeastern Red (#C8102E)
+   Accent: Neon Lime (#CCFF00)
+   Dark: Navy (#0F172A)
    Background: White (#FFFFFF)
    Text: Black (#000000)
    ============================================ */
@@ -17,7 +16,10 @@
     --primary: #C8102E;           /* Northeastern Red */
     --primary-foreground: #FFFFFF;
     --primary-dark: #A60826;      /* Darker red for hover */
-    --primary-light: #E8394C;     /* Lighter red for backgrounds */
+    
+    /* Accent */
+    --accent: #CCFF00;            /* Neon Lime for visual pop */
+    --accent-dark: #0F172A;       /* Navy for contrast sections */
     
     /* Backgrounds */
     --background: #FFFFFF;
@@ -35,22 +37,17 @@
     --muted: #E0E0E0;
     --muted-foreground: #666666;
     
-    /* Accent */
-    --accent: #C8102E;
-    --accent-foreground: #FFFFFF;
-    
     /* Borders & Inputs */
     --border: #D0D0D0;
     --input: #FFFFFF;
     --ring: #C8102E;
     
-  /* Shadows */
-  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.12);
-  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
-  --shadow-glow: 0 0 20px rgba(200, 16, 46, 0.1);
+    /* Shadows */
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+    --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.2);
   }
 
   body {
@@ -60,13 +57,13 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
-    @apply font-bold;
+    @apply font-black;
   }
 
-  h1 { @apply text-5xl md:text-7xl leading-tight; }
-  h2 { @apply text-4xl md:text-5xl leading-tight; }
-  h3 { @apply text-2xl md:text-3xl leading-tight; }
-  h4 { @apply text-xl md:text-2xl; }
+  h1 { @apply text-6xl md:text-7xl lg:text-8xl leading-tight tracking-tight; }
+  h2 { @apply text-5xl md:text-6xl leading-tight tracking-tight; }
+  h3 { @apply text-3xl md:text-4xl leading-tight; }
+  h4 { @apply text-2xl md:text-3xl; }
   h5 { @apply text-lg md:text-xl; }
   h6 { @apply text-base md:text-lg; }
 }
@@ -77,7 +74,7 @@
 
 @layer components {
   .container {
-    @apply max-w-6xl mx-auto px-4 md:px-6;
+    @apply max-w-7xl mx-auto px-4 md:px-8;
   }
 
   /* Buttons */
@@ -86,24 +83,33 @@
   }
 
   .btn-primary {
-    @apply bg-[#C8102E] text-white font-semibold px-6 py-3 hover:bg-[#A60826] hover:shadow-md active:scale-95 transition-all duration-200;
+    @apply bg-[#C8102E] text-white font-black px-8 py-4 hover:bg-[#A60826] hover:shadow-xl active:scale-95 transition-all duration-200 uppercase tracking-wider;
   }
 
   .btn-secondary {
-    @apply bg-white text-[#C8102E] border-2 border-[#C8102E] font-semibold px-6 py-3 hover:bg-[#C8102E]/5 hover:shadow-sm transition-all duration-200;
+    @apply bg-white text-[#C8102E] border-3 border-[#C8102E] font-black px-8 py-4 hover:bg-[#C8102E] hover:text-white hover:shadow-xl transition-all duration-200 uppercase tracking-wider;
   }
 
-  .btn-outline {
-    @apply border-2 border-black text-black font-semibold px-6 py-3 hover:bg-black hover:text-white hover:shadow-md transition-all duration-200;
+  .btn-accent {
+    @apply bg-[#CCFF00] text-black font-black px-8 py-4 hover:shadow-xl active:scale-95 transition-all duration-200 uppercase tracking-wider;
   }
 
   /* Cards */
   .card {
-    @apply bg-white border border-[#D0D0D0] p-6 hover:shadow-md transition-all duration-300;
+    @apply bg-white border border-[#D0D0D0] p-8 hover:shadow-lg transition-all duration-300;
   }
 
   .card-hover {
-    @apply bg-white border border-[#D0D0D0] p-6 hover:border-[#C8102E] hover:shadow-md hover:shadow-glow transition-all duration-300;
+    @apply bg-white border-l-8 border-l-[#C8102E] p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300;
+  }
+
+  .card-accent {
+    @apply bg-white border-l-8 border-l-[#CCFF00] p-8 hover:shadow-xl hover:-translate-y-1 transition-all duration-300;
+  }
+
+  /* Dark Section Cards */
+  .card-dark {
+    @apply bg-white border-l-8 border-l-[#C8102E] p-8 hover:shadow-2xl transition-all duration-300;
   }
 
   /* Section Divider */
@@ -116,34 +122,64 @@
     @apply text-[#C8102E];
   }
 
+  .text-accent-lime {
+    @apply text-[#CCFF00];
+  }
+
   .text-muted {
     @apply text-gray-600;
   }
 
   /* Badge */
   .badge {
-    @apply inline-block bg-[#C8102E] text-white text-xs font-bold px-3 py-1;
+    @apply inline-block bg-[#C8102E] text-white text-xs font-black px-4 py-2 uppercase tracking-wider;
+  }
+
+  .badge-accent {
+    @apply inline-block bg-[#CCFF00] text-black text-xs font-black px-4 py-2 uppercase tracking-wider;
   }
 
   .badge-outline {
-    @apply inline-block border-2 border-[#C8102E] text-[#C8102E] text-xs font-bold px-3 py-1;
+    @apply inline-block border-2 border-[#C8102E] text-[#C8102E] text-xs font-black px-4 py-2 uppercase tracking-wider;
   }
 
   /* Grid */
   .grid-auto {
-    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+  }
+
+  .grid-4 {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6;
   }
 
   /* Scroll Progress Bar */
   .scroll-progress {
-    @apply fixed top-0 left-0 h-1 bg-[#C8102E] z-50 transition-all duration-300;
+    @apply fixed top-0 left-0 h-1 bg-gradient-to-r from-[#C8102E] to-[#A60826] z-50 transition-all duration-300;
   }
 
-  /* Animation */
+  /* Section Padding */
+  .section-padding {
+    @apply py-20 md:py-32 lg:py-40;
+  }
+
+  .section-padding-sm {
+    @apply py-12 md:py-20;
+  }
+
+  /* Icon Container */
+  .icon-box {
+    @apply w-14 h-14 bg-[#C8102E] flex items-center justify-center text-white group-hover:scale-110 transition-transform;
+  }
+
+  .icon-box-accent {
+    @apply w-14 h-14 bg-[#CCFF00] flex items-center justify-center text-black group-hover:scale-110 transition-transform;
+  }
+
+  /* Animations */
   @keyframes fadeInUp {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(30px);
     }
     to {
       opacity: 1;
@@ -151,8 +187,23 @@
     }
   }
 
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
   .animate-fade-in-up {
     animation: fadeInUp 0.6s ease-out;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out;
   }
 }
 
@@ -162,19 +213,19 @@
 
 @layer utilities {
   .max-w-container {
-    @apply max-w-6xl;
-  }
-
-  .section-padding {
-    @apply py-16 md:py-24 lg:py-32;
-  }
-
-  .section-padding-sm {
-    @apply py-8 md:py-12;
+    @apply max-w-7xl;
   }
 
   .gap-section {
     @apply gap-8 md:gap-12 lg:gap-16;
+  }
+
+  .text-uppercase {
+    @apply uppercase tracking-wider;
+  }
+
+  .font-black-serif {
+    @apply font-serif font-black;
   }
 }
 
@@ -199,37 +250,23 @@ a.no-underline {
 
 /* Form Elements */
 input, textarea, select {
-  @apply border border-[#D0D0D0] px-4 py-2 focus:outline-none focus:border-[#C8102E] focus:ring-1 focus:ring-[#C8102E];
+  @apply border border-[#D0D0D0] rounded-none;
 }
 
-/* Tables */
-table {
-  @apply w-full border-collapse;
+/* Navigation */
+nav {
+  @apply bg-white border-b-2 border-[#D0D0D0];
 }
 
-th {
-  @apply bg-[#F5F5F5] border border-[#D0D0D0] px-4 py-2 text-left font-semibold;
+/* Section backgrounds */
+.section-dark {
+  @apply bg-[#0F172A];
 }
 
-td {
-  @apply border border-[#D0D0D0] px-4 py-2;
+.section-light {
+  @apply bg-white;
 }
 
-/* Code */
-code {
-  @apply bg-[#F5F5F5] px-2 py-1 font-mono text-sm;
-}
-
-pre {
-  @apply bg-[#F5F5F5] p-4 overflow-x-auto;
-}
-
-/* ============================================
-   PRINT STYLES
-   ============================================ */
-
-@media print {
-  .no-print {
-    display: none;
-  }
+.section-gray {
+  @apply bg-[#F5F5F5];
 }

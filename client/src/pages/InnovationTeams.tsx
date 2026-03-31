@@ -1,5 +1,6 @@
 import Navigation from "@/components/sections/Navigation";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 import { ArrowRight, Code, Zap, Target, Users, CheckCircle, Star } from "lucide-react";
 
@@ -116,100 +117,75 @@ export default function InnovationTeams() {
       <Navigation />
       <main className="pt-24">
         {/* Header */}
-        <section className="relative py-32 md:py-48">
-          <div className="absolute inset-0 bg-gradient-to-br from-rgba(200, 16, 46, 0.05)/30 to-transparent pointer-events-none"></div>
-          <div className="container relative z-10">
-            <div className="mb-8 inline-block">
-              <span className="inline-block bg-[#C8102E] text-black text-sm font-bold px-4 py-2 ">Venture Lab</span>
+        <section className="section-padding bg-white border-b-4 border-[#C8102E]">
+          <div className="container">
+            <div className="mb-8">
+              <span className="badge">Venture Lab</span>
             </div>
-            <h1 className="font-serif font-black text-8xl md:text-5xl text-black mb-8 leading-tight">
+            <h1 className="text-7xl md:text-8xl font-black text-black mb-8 leading-tight">
               Innovation Teams
             </h1>
-            <p className="text-xl md:text-2xl text-black/70 leading-relaxed max-w-2xl font-light">
+            <p className="text-2xl text-black/70 leading-relaxed max-w-3xl font-light">
               Lead end-to-end projects designed to mirror real-world professional work and develop your leadership skills across diverse domains.
             </p>
           </div>
         </section>
 
-        {/* Bento Grid - 8 Teams */}
-        <section className="relative py-32 md:py-48">
+        {/* Our 8 Teams */}
+        <section className="section-padding bg-[#0F172A]">
           <div className="container">
-            <h2 className="font-serif font-black text-6xl md:text-5xl text-black mb-16">Our 8 Active Teams</h2>
-            
-            {/* Bento Grid Layout */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-max">
-              {ventureLab.map((project, idx) => {
-                // Bento grid sizing: vary card sizes for visual interest
-                const gridClasses = [
-                  "md:col-span-2 md:row-span-1", // Project 1 - wide
-                  "md:col-span-1 md:row-span-2", // Project 2 - tall
-                  "md:col-span-1 md:row-span-1", // Project 3
-                  "md:col-span-1 md:row-span-1", // Project 4
-                  "md:col-span-2 md:row-span-1", // Project 5 - wide
-                  "md:col-span-1 md:row-span-1", // Project 6
-                  "md:col-span-1 md:row-span-1", // Project 7
-                  "md:col-span-1 md:row-span-1", // Project 8
-                ][idx] || "md:col-span-1";
-
-                return (
-                  <div 
-                    key={project.id} 
-                    className={`group relative p-8 bg-white border-l-0 border-2 border-black/10  hover:border-l-8 hover:border-l-#C8102E hover:shadow-lg transition-all duration-300 ${gridClasses}`}
-                  >
-                    <div className="relative z-10 h-full flex flex-col">
-                      {/* Header */}
-                      <div className="flex-1">
-                        <div className="flex items-center gap-3 mb-3">
-                          <Star className="w-5 h-5 text-[#C8102E]" />
-                          <span className="text-xs font-bold uppercase tracking-widest text-[#C8102E]">{project.theme}</span>
-                        </div>
-                        <h3 className="font-serif font-bold text-2xl md:text-3xl text-black mb-2">{project.title}</h3>
-                        <p className="text-sm md:text-base text-black/60 font-light italic mb-4">{project.subtitle}</p>
-                      </div>
-
-                      {/* Status Badge */}
-                      <div className="mb-6">
-                        <span className="inline-block text-xs font-bold px-4 py-2 bg-rgba(200, 16, 46, 0.1) text-[#C8102E] ">{project.status}</span>
-                      </div>
-
-                      {/* Focus */}
-                      <p className="text-base text-black/70 font-light font-medium mb-6 pb-6 border-b border-gray-200">{project.focus}</p>
-
-                      {/* Bullets */}
-                      <ul className="space-y-3 mb-8 flex-1">
-                        {project.bullets.map((bullet, idx) => (
-                          <li key={idx} className="text-sm md:text-base text-black/70 font-light flex gap-3">
-                            <span className="text-[#C8102E] font-bold flex-shrink-0">✓</span>
-                            <span>{bullet}</span>
-                          </li>
-                        ))}
-                      </ul>
-
-                      {/* CTA */}
-                      <Link href="/forms" className="inline-flex items-center gap-2 text-[#C8102E] font-bold hover:gap-3 transition-all duration-200 text-sm group/link">
-                        Learn More
-                        <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
-                      </Link>
+            <h2 className="text-6xl md:text-7xl font-black text-white mb-16">Our 8 Active Teams</h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              {ventureLab.map((project) => (
+                <Card 
+                  key={project.id}
+                  className="border-l-8 border-l-[#C8102E] hover:shadow-2xl transition-all duration-300"
+                >
+                  <CardContent className="p-10">
+                    <div className="flex items-center gap-3 mb-4">
+                      <Star className="w-5 h-5 text-[#CCFF00]" />
+                      <span className="text-xs font-black uppercase tracking-widest text-[#CCFF00]">{project.theme}</span>
                     </div>
-                  </div>
-                );
-              })}
+                    <h3 className="text-3xl font-black text-black mb-2">{project.title}</h3>
+                    <p className="text-black/60 text-lg font-light italic mb-6">{project.subtitle}</p>
+                    
+                    <div className="mb-6 pb-6 border-b-2 border-[#D0D0D0]">
+                      <span className="badge-accent">{project.status}</span>
+                      <p className="text-black/70 text-lg font-semibold mt-4">{project.focus}</p>
+                    </div>
+
+                    <ul className="space-y-3 mb-8">
+                      {project.bullets.map((bullet, idx) => (
+                        <li key={idx} className="flex gap-3 text-black/70 text-lg">
+                          <span className="text-[#CCFF00] font-black flex-shrink-0">✓</span>
+                          <span>{bullet}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    <Link href="/forms" className="inline-flex items-center gap-3 text-[#C8102E] font-black hover:gap-4 transition-all duration-200 uppercase tracking-wider">
+                      Learn More
+                      <ArrowRight size={18} />
+                    </Link>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
           </div>
         </section>
 
         {/* What We Do */}
-        <section className="relative py-32 md:py-48 border-l-8 border-l-#C8102E">
+        <section className="section-padding bg-white">
           <div className="container">
-            <h2 className="font-serif font-black text-6xl md:text-5xl text-black mb-12">What We Do</h2>
-            <div className="grid md:grid-cols-2 gap-12">
+            <h2 className="text-6xl md:text-7xl font-black text-black mb-16">What We Do</h2>
+            <div className="grid md:grid-cols-2 gap-12 max-w-4xl">
               <div>
-                <p className="text-xl md:text-2xl text-black/70 leading-relaxed mb-8 font-light">
+                <p className="text-2xl text-black/70 leading-relaxed font-light">
                   Innovation Teams tackle internally scoped projects designed to mirror real-world professional work. From problem definition through delivery, team members lead projects end-to-end, developing leadership, strategic thinking, and execution skills.
                 </p>
               </div>
               <div>
-                <p className="text-xl md:text-2xl text-black/70 leading-relaxed font-light">
+                <p className="text-2xl text-black/70 leading-relaxed font-light">
                   These projects span product development, organizational initiatives, research, and strategic exploration. Teams operate with autonomy and accountability, making decisions and driving results in a supportive learning environment.
                 </p>
               </div>
@@ -218,9 +194,9 @@ export default function InnovationTeams() {
         </section>
 
         {/* Key Experiences */}
-        <section className="relative py-32 md:py-48 bg-black text-black">
+        <section className="section-padding bg-[#F5F5F5]">
           <div className="container">
-            <h2 className="font-serif font-black text-5xl md:text-6xl text-black mb-16">Key Experiences</h2>
+            <h2 className="text-6xl md:text-7xl font-black text-black mb-16">Key Experiences</h2>
             <div className="grid md:grid-cols-2 gap-8">
               {[
                 { icon: Target, title: "End-to-End Leadership", desc: "Own projects from conception through execution, making strategic decisions and driving results with full accountability." },
@@ -230,13 +206,13 @@ export default function InnovationTeams() {
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-6">
                   <div className="flex-shrink-0">
-                    <div className="flex items-center justify-center h-16 w-16  bg-[#C8102E]/20 text-[#C8102E]">
+                    <div className="w-16 h-16 bg-[#C8102E] flex items-center justify-center text-white">
                       <item.icon size={28} />
                     </div>
                   </div>
                   <div>
-                    <h3 className="font-bold text-2xl text-black mb-3">{item.title}</h3>
-                    <p className="text-black/80 font-light">{item.desc}</p>
+                    <h3 className="text-2xl font-black text-black mb-3">{item.title}</h3>
+                    <p className="text-black/70 text-lg leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -245,26 +221,25 @@ export default function InnovationTeams() {
         </section>
 
         {/* Who Should Apply */}
-        <section className="relative py-32 md:py-48 border-l-8 border-l-#C8102E">
+        <section className="section-padding bg-white">
           <div className="container">
-            <h2 className="font-serif font-black text-6xl md:text-5xl text-black mb-12">Who Should Apply</h2>
-            <div className="max-w-3xl">
-              <p className="text-xl md:text-2xl text-black/70 leading-relaxed mb-12 font-light">
-                Innovation Teams are ideal for students who want to take on significant leadership roles and drive meaningful impact. You should be:
+            <h2 className="text-6xl md:text-7xl font-black text-black mb-16">Who Should Apply</h2>
+            <div className="max-w-4xl">
+              <p className="text-2xl text-black/70 leading-relaxed font-light mb-12">
+                Innovation Teams are for students who want to lead, build, and learn. You should apply if you:
               </p>
               <div className="grid md:grid-cols-2 gap-8">
                 {[
-                  { icon: CheckCircle, title: "Self-directed", desc: "Comfortable owning projects with minimal supervision and driving your own learning." },
-                  { icon: CheckCircle, title: "Collaborative", desc: "Excited to work across disciplines and leverage diverse perspectives to solve problems." },
-                  { icon: CheckCircle, title: "Ambitious", desc: "Ready to tackle complex, real-world challenges and deliver tangible results." },
-                  { icon: CheckCircle, title: "Growth-minded", desc: "Committed to developing leadership skills and learning from both successes and failures." }
-                ].map((item, idx) => (
+                  "Are passionate about solving real problems with real impact",
+                  "Want to develop leadership and strategic thinking skills",
+                  "Enjoy working in cross-functional, collaborative teams",
+                  "Are comfortable with ambiguity and learning on the job",
+                  "Can commit 3-5 hours per week to your project",
+                  "Are excited about building something from scratch"
+                ].map((criterion, idx) => (
                   <div key={idx} className="flex gap-4">
-                    <item.icon className="text-[#C8102E] flex-shrink-0" size={28} />
-                    <div>
-                      <h3 className="font-bold text-lg text-black mb-2">{item.title}</h3>
-                      <p className="text-black/70 font-light">{item.desc}</p>
-                    </div>
+                    <CheckCircle className="w-6 h-6 text-[#C8102E] flex-shrink-0 mt-1" />
+                    <p className="text-black/70 text-lg">{criterion}</p>
                   </div>
                 ))}
               </div>
@@ -272,22 +247,63 @@ export default function InnovationTeams() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="relative py-32 md:py-48 bg-black text-black">
+        {/* CTA */}
+        <section className="section-padding bg-[#C8102E]">
           <div className="container text-center">
-            <h2 className="font-serif font-black text-5xl md:text-6xl text-black mb-8">Ready to Lead?</h2>
-            <p className="text-xl md:text-2xl text-black/80 leading-relaxed mb-12 max-w-2xl mx-auto font-light">
-              Join one of our 8 active Innovation Teams and drive real impact.
+            <h2 className="text-6xl md:text-7xl font-black text-white mb-8">Ready to Lead?</h2>
+            <p className="text-2xl text-white/90 mb-12 max-w-2xl mx-auto font-light">
+              Join an Innovation Team and take ownership of a project that matters.
             </p>
             <Button asChild>
-              <Link href="/forms" className="bg-[#C8102E] hover:bg-[#A60826] text-black font-bold px-10 h-12  transition-all duration-300 shadow-lg hover:shadow-#C8102E/30 hover:scale-100 inline-flex items-center justify-center gap-2">
+              <Link href="/forms" className="bg-white text-[#C8102E] font-black px-10 py-4 hover:bg-[#F5F5F5] transition-all inline-flex items-center gap-3 uppercase tracking-wider">
                 Apply Now
-                <ArrowRight size={18} />
+                <ArrowRight size={20} />
               </Link>
             </Button>
           </div>
         </section>
       </main>
+
+      {/* Footer */}
+      <footer className="bg-white border-t-4 border-[#C8102E] py-20">
+        <div className="container">
+          <div className="grid md:grid-cols-4 gap-16 mb-16">
+            <div>
+              <h4 className="text-2xl font-black text-black mb-6">Launch Labs</h4>
+              <p className="text-lg text-black/70 font-light leading-relaxed">
+                Northeastern University's hub for real-world project work.
+              </p>
+            </div>
+            <div>
+              <h4 className="text-lg font-black text-black mb-6 uppercase tracking-wider">Explore</h4>
+              <ul className="space-y-3 text-lg">
+                <li><Link href="/" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Home</Link></li>
+                <li><Link href="/about" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">About</Link></li>
+                <li><Link href="/launch-teams" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Launch Teams</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-lg font-black text-black mb-6 uppercase tracking-wider">Get Involved</h4>
+              <ul className="space-y-3 text-lg">
+                <li><Link href="/forms" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Apply</Link></li>
+                <li><Link href="/leadership" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Leadership</Link></li>
+                <li><Link href="/partners" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Partners</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="text-lg font-black text-black mb-6 uppercase tracking-wider">Connect</h4>
+              <ul className="space-y-3 text-lg">
+                <li><Link href="/contact" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Contact</Link></li>
+                <li><a href="https://www.linkedin.com/company/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t-2 border-[#D0D0D0] pt-8 text-center text-lg text-black/70 font-light">
+            <p>&copy; 2026 Northeastern Launch Labs. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
