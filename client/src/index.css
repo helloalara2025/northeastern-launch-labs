@@ -24,7 +24,8 @@
   }
 
   * {
-    @apply border-border;
+    margin: 0;
+    padding: 0;
   }
 
   html {
@@ -37,6 +38,8 @@
     font-weight: 400;
     line-height: 1.6;
     position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   /* Dot grid background pattern */
@@ -47,8 +50,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
-    background-size: 20px 20px;
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 24px 24px;
     pointer-events: none;
     z-index: 0;
   }
@@ -66,29 +69,47 @@
     font-family: "DM Sans", sans-serif;
     font-weight: 800;
     text-transform: uppercase;
-    line-height: 0.9;
-    letter-spacing: -0.02em;
+    line-height: 0.95;
+    letter-spacing: -0.025em;
+    word-spacing: 0.1em;
   }
 
   h2 {
     font-family: "DM Sans", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    line-height: 1;
-    letter-spacing: -0.01em;
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    word-spacing: 0.05em;
   }
 
-  h3, h4, h5, h6 {
+  h3 {
     font-family: "DM Sans", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  h4, h5, h6 {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.3;
   }
 
   /* Body Text - DM Sans Regular */
-  p, span, li {
+  p {
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 1.7;
+    letter-spacing: 0.3px;
+  }
+
+  span, li {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
   }
 
   /* Labels & Metadata - DM Mono */
@@ -96,13 +117,15 @@
     font-family: "DM Mono", monospace;
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.15em;
-    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    font-size: 0.7rem;
+    line-height: 1.4;
   }
 
   /* Links */
   a {
     @apply text-red hover:text-yellow transition-colors duration-300;
+    text-decoration: none;
   }
 
   /* Code */
@@ -116,60 +139,90 @@
 @layer components {
   /* Container */
   .container {
-    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+    @apply mx-auto px-6 sm:px-8 lg:px-12 max-w-7xl;
   }
 
   /* Section Padding */
   .section-padding {
-    @apply py-20 md:py-32 lg:py-40;
+    @apply py-24 md:py-40 lg:py-56;
   }
 
   /* Badge - Red or Yellow */
   .badge {
-    @apply inline-block bg-red text-white px-3 py-1 text-xs font-bold uppercase tracking-widest rounded;
+    @apply inline-block bg-red text-white px-4 py-2 text-xs font-bold uppercase tracking-widest;
+    letter-spacing: 0.15em;
   }
 
   .badge-yellow {
-    @apply inline-block bg-yellow text-black px-3 py-1 text-xs font-bold uppercase tracking-widest rounded;
+    @apply inline-block bg-yellow text-black px-4 py-2 text-xs font-bold uppercase tracking-widest;
+    letter-spacing: 0.15em;
   }
 
   /* Icon Box - Red background */
   .icon-box {
-    @apply w-12 h-12 bg-red text-white flex items-center justify-center rounded;
+    @apply w-14 h-14 bg-red text-white flex items-center justify-center;
+    flex-shrink: 0;
   }
 
   /* Button Styles */
   .btn-primary {
-    @apply bg-red text-white font-bold px-6 py-3 hover:bg-yellow hover:text-black transition-all duration-300 uppercase tracking-wide;
+    @apply bg-red text-white font-bold px-8 py-4 hover:bg-yellow hover:text-black transition-all duration-300 uppercase tracking-wide;
+    letter-spacing: 0.1em;
+    font-size: 0.875rem;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .btn-primary:active {
+    transform: scale(0.98);
   }
 
   .btn-secondary {
-    @apply border-2 border-red text-red font-bold px-6 py-3 hover:bg-red hover:text-white transition-all duration-300 uppercase tracking-wide;
+    @apply border-2 border-red text-red font-bold px-8 py-4 hover:bg-red hover:text-white transition-all duration-300 uppercase tracking-wide;
+    letter-spacing: 0.1em;
+    font-size: 0.875rem;
+    background: transparent;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .btn-secondary:active {
+    transform: scale(0.98);
   }
 
   .btn-outline {
-    @apply border-2 border-white text-white font-bold px-6 py-3 hover:bg-white hover:text-black transition-all duration-300 uppercase tracking-wide;
+    @apply border-2 border-white text-white font-bold px-8 py-4 hover:bg-white hover:text-black transition-all duration-300 uppercase tracking-wide;
+    letter-spacing: 0.1em;
+    font-size: 0.875rem;
+    background: transparent;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .btn-outline:active {
+    transform: scale(0.98);
   }
 
   /* Red Arc Strokes - Signature Element */
   .arc-top-right {
     position: absolute;
-    top: -100px;
-    right: -100px;
-    width: 300px;
-    height: 300px;
-    border: 2px solid rgba(220, 38, 38, 0.3);
+    top: -150px;
+    right: -150px;
+    width: 400px;
+    height: 400px;
+    border: 3px solid rgba(220, 38, 38, 0.25);
     border-radius: 50%;
     pointer-events: none;
   }
 
   .arc-bottom-left {
     position: absolute;
-    bottom: -100px;
-    left: -100px;
-    width: 300px;
-    height: 300px;
-    border: 2px solid rgba(220, 38, 38, 0.3);
+    bottom: -150px;
+    left: -150px;
+    width: 400px;
+    height: 400px;
+    border: 3px solid rgba(220, 38, 38, 0.25);
     border-radius: 50%;
     pointer-events: none;
   }
@@ -177,14 +230,14 @@
   /* Dot Grid Cluster */
   .dot-cluster {
     display: grid;
-    grid-template-columns: repeat(5, 8px);
-    gap: 4px;
-    opacity: 0.6;
+    grid-template-columns: repeat(5, 10px);
+    gap: 6px;
+    opacity: 0.8;
   }
 
   .dot {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
   }
 
@@ -197,14 +250,14 @@
   }
 
   .dot-muted {
-    @apply bg-white/10;
+    @apply bg-white/15;
   }
 
   /* Animations */
   @keyframes fade-up {
     from {
       opacity: 0;
-      transform: translateY(20px);
+      transform: translateY(30px);
     }
     to {
       opacity: 1;
@@ -215,7 +268,18 @@
   @keyframes slide-in-left {
     from {
       opacity: 0;
-      transform: translateX(-30px);
+      transform: translateX(-40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(40px);
     }
     to {
       opacity: 1;
@@ -224,18 +288,22 @@
   }
 
   .animate-fade-up {
-    animation: fade-up 0.6s ease-out;
+    animation: fade-up 0.7s ease-out;
   }
 
   .animate-slide-in-left {
-    animation: slide-in-left 0.6s ease-out;
+    animation: slide-in-left 0.7s ease-out;
+  }
+
+  .animate-slide-in-right {
+    animation: slide-in-right 0.7s ease-out;
   }
 
   /* Scroll animation trigger */
   .scroll-fade-up {
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
   }
 
   .scroll-fade-up.visible {
@@ -271,7 +339,7 @@
   }
 
   .text-muted {
-    @apply text-[rgba(255,255,255,0.5)];
+    @apply text-[rgba(255,255,255,0.55)];
   }
 
   .border-red {
@@ -295,24 +363,26 @@
 @layer components {
   /* Navigation */
   nav {
-    @apply sticky top-0 z-50 bg-[#0d0d0d]/80 backdrop-blur-sm border-b border-white/10;
+    @apply sticky top-0 z-50 bg-[#0d0d0d]/90 backdrop-blur-md border-b border-white/8;
   }
 
   nav a {
     font-family: "DM Mono", monospace;
-    @apply text-white font-medium hover:text-red transition-colors uppercase tracking-widest text-xs;
+    @apply text-white/80 font-medium hover:text-red transition-colors duration-300 uppercase tracking-widest text-xs;
     position: relative;
+    letter-spacing: 0.12em;
+    padding: 0.5rem 0;
   }
 
   nav a::after {
     content: "";
     position: absolute;
-    bottom: -4px;
+    bottom: -2px;
     left: 0;
     width: 0;
     height: 2px;
     background-color: #dc2626;
-    transition: width 0.3s ease-out;
+    transition: width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 
   nav a:hover::after {
@@ -321,51 +391,65 @@
 
   /* Footer */
   footer {
-    @apply bg-[#0f1629] border-t border-white/10;
+    @apply bg-[#0f1629] border-t border-white/8;
   }
 
   footer a {
-    @apply text-white/70 hover:text-red transition-colors;
+    @apply text-white/60 hover:text-red transition-colors duration-300;
   }
 
   /* Form Elements */
   input, textarea, select {
-    @apply bg-[#0f1629] border border-white/20 rounded text-white px-4 py-2 font-sans;
-    @apply focus:outline-none focus:border-red focus:ring-1 focus:ring-red/50;
+    @apply bg-[#0f1629] border border-white/15 text-white px-4 py-3 font-sans;
+    @apply focus:outline-none focus:border-red focus:ring-1 focus:ring-red/30;
+    transition: all 0.3s ease;
   }
 
   input::placeholder, textarea::placeholder {
-    @apply text-white/30;
+    @apply text-white/25;
   }
 
   /* Blockquote */
   blockquote {
-    @apply border-l-4 border-red pl-4 italic text-white/70;
+    @apply border-l-4 border-red pl-6 italic text-white/70;
   }
 
   /* Divider */
   hr {
-    @apply border-t border-white/10 my-8;
+    @apply border-t border-white/10 my-12;
+  }
+
+  /* Cards with border accents */
+  .card-accent {
+    @apply border-l-4 border-red pl-8;
+  }
+
+  .card-accent-yellow {
+    @apply border-l-4 border-yellow pl-8;
   }
 }
 
 /* ===== RESPONSIVE TYPOGRAPHY ===== */
 @layer utilities {
-  @media (max-width: 640px) {
+  @media (max-width: 768px) {
     h1 {
-      @apply text-4xl;
+      @apply text-4xl md:text-5xl;
     }
 
     h2 {
-      @apply text-3xl;
+      @apply text-3xl md:text-4xl;
     }
 
     h3 {
-      @apply text-2xl;
+      @apply text-2xl md:text-3xl;
     }
 
     .section-padding {
-      @apply py-12 md:py-16;
+      @apply py-16 md:py-24;
+    }
+
+    .container {
+      @apply px-4 sm:px-6;
     }
   }
 }
