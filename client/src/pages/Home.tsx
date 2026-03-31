@@ -1,7 +1,7 @@
 import Navigation from "@/components/sections/Navigation";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ArrowRight, Briefcase, Lightbulb, Users, Zap } from "lucide-react";
+import { ArrowRight, Briefcase, Lightbulb, Users, Zap, Rocket } from "lucide-react";
 import { useState, useEffect } from "react";
 import InstagramFeed from "@/components/InstagramFeed";
 import ProjectCarousel from "@/components/ProjectCarousel";
@@ -62,13 +62,25 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right - Hero Image */}
-            <div className="hidden md:block animate-slide-in-right">
-              <img 
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663293706215/2bVaappDG4coBuhzggSTVT/hero-innovation-PLbqY4pRUnpzpMNzgFmJdu.webp"
-                alt="Diverse team collaborating on innovation projects"
-                className="w-full h-auto rounded-lg shadow-2xl"
-              />
+            {/* Right - Hero Graphic */}
+            <div className="hidden md:flex animate-slide-in-right items-center justify-center relative h-[500px]">
+              {/* Abstract Geometric Graphic */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-[400px] h-[400px] border border-[rgba(255,255,255,0.1)] rounded-full relative animate-[spin_60s_linear_infinite]">
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-red rounded-full"></div>
+                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-4 h-4 bg-yellow rounded-full"></div>
+                </div>
+                <div className="absolute w-[300px] h-[300px] border border-[rgba(255,255,255,0.2)] rounded-full animate-[spin_40s_linear_infinite_reverse]">
+                  <div className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-white rounded-full"></div>
+                </div>
+                <div className="absolute w-[200px] h-[200px] border-2 border-red rounded-full opacity-50"></div>
+                <div className="absolute w-[100px] h-[100px] bg-yellow rounded-full blur-3xl opacity-20"></div>
+                
+                {/* Center Logo/Icon */}
+                <div className="absolute w-24 h-24 bg-secondary border border-[rgba(255,255,255,0.1)] flex items-center justify-center z-10 shadow-2xl">
+                  <Rocket className="w-10 h-10 text-white" />
+                </div>
+              </div>
             </div>
           </div>
         </section>
