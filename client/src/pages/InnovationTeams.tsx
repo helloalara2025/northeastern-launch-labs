@@ -12,25 +12,7 @@ export default function InnovationTeams() {
       subtitle: "End-to-End Protection for the Modern AI Lifecycle",
       theme: "Security",
       status: "Active",
-      focus: "Adversarial robustness testing & compliance frameworks",
-      bullets: [
-        "Building adversarial defense and inference monitoring prototype",
-        "Developing compliance reporting against NIST AI RMF standards",
-        "Creating lightweight security dashboard for real-time anomaly detection"
-      ]
-    },
-    {
-      id: 19,
-      title: "Campus Navigation",
-      subtitle: "Interactive Wayfinding for Northeastern",
-      theme: "EdTech",
-      status: "Active",
-      focus: "Mobile wayfinding with interactive floor plans",
-      bullets: [
-        "Building cross-platform React Native application with SVG floor plans",
-        "Implementing searchable room directory with Firebase backend",
-        "Developing single-building MVP with pinch-to-zoom navigation"
-      ]
+      description: "Building a comprehensive security framework that protects AI and machine learning systems across their entire lifecycle—from training data validation to real-time inference monitoring and post-deployment threat detection. The team is developing an adversarial robustness testing suite compatible with TensorFlow, PyTorch, and scikit-learn, paired with cryptographic data integrity verification, role-based model access control with full audit logging, and a real-time monitoring layer capable of detecting model extraction, membership inference, and adversarial input attacks with under 10ms latency overhead. The MVP focuses on a working adversarial defense and inference monitoring prototype targeting a single ML framework, with compliance reporting against one regulatory standard and a lightweight security dashboard demonstrating real-time anomaly detection."
     },
     {
       id: 7,
@@ -38,12 +20,7 @@ export default function InnovationTeams() {
       subtitle: "Visual Intelligence Without Infrastructure",
       theme: "Computer Vision",
       status: "Active",
-      focus: "Landmark-based visual localization & pathfinding",
-      bullets: [
-        "Developing OpenCV-based image matching for landmark recognition",
-        "Implementing A* pathfinding on digitized floor plan graphs",
-        "Creating single-building prototype with turn-by-turn visual directions"
-      ]
+      description: "Developing a mobile indoor navigation solution that guides users to their destination using only their phone's camera—eliminating the need for WiFi, Bluetooth beacons, or any installed infrastructure. The team is building a prototype that combines landmark-based visual localization with digitized floor plan pathfinding to deliver turn-by-turn directions inside buildings. The MVP is a single-building prototype using OpenCV-based image matching against pre-captured landmark checkpoints, paired with A* pathfinding on a manually digitized floor plan graph. The end goal is a working demo where users can select a room, confirm their location via landmark recognition, and receive step-by-step visual directions to their destination."
     },
     {
       id: 11,
@@ -51,12 +28,7 @@ export default function InnovationTeams() {
       subtitle: "Visual Reasoning Beyond OCR",
       theme: "FinTech",
       status: "Active",
-      focus: "Vision-Language Models for document extraction",
-      bullets: [
-        "Building VLM-based field extraction for synthetic pay stubs",
-        "Implementing basic anomaly detection and consistency validation",
-        "Benchmarking accuracy against traditional OCR baselines"
-      ]
+      description: "Developing an autonomous document extraction system using Vision-Language Models to transform how loan documents are processed—moving beyond brittle OCR that fails on non-standard layouts. The team is building a prototype that combines VLM-based field extraction with basic anomaly detection to automate the pre-underwriting verification layer. The MVP focuses on a single document type (synthetic pay stubs) with targeted extraction of 6-8 key fields, basic consistency validation, and accuracy benchmarking against traditional OCR baselines. The end goal is a working demo where users can upload a pay stub, receive structured field extractions with confidence scores, and see flagged anomalies—validating that VLMs can outperform rule-based OCR on unstructured financial documents."
     },
     {
       id: 12,
@@ -64,12 +36,7 @@ export default function InnovationTeams() {
       subtitle: "Data-Driven Compatibility for Student Housing",
       theme: "Social",
       status: "Active",
-      focus: "Intelligent matching algorithm & compatibility scoring",
-      bullets: [
-        "Creating centralized database for user profiles and match criteria",
-        "Developing weighted preference comparison scoring system",
-        "Building browsing interface for viewing and filtering potential matches"
-      ]
+      description: "Developing an intelligent roommate matching platform that helps students find compatible living partners based on preferences, habits, lifestyle, and values—transforming a traditionally fragmented and stressful process into a structured, data-driven experience. The team is building a web-based system featuring user profile creation, preference input, and a matching workflow that compares users across compatibility factors including cleanliness, schedule, budget, and lifestyle. The MVP includes a centralized database for storing user profiles and match criteria, a compatibility scoring system using weighted preference comparison, and a browsing interface for viewing and filtering potential matches. The end goal is a working platform where students can create profiles, input their living preferences, and discover compatible roommates ranked by data-driven compatibility scores."
     },
     {
       id: 16,
@@ -77,12 +44,7 @@ export default function InnovationTeams() {
       subtitle: "Community-Driven Climate Resilience Platform",
       theme: "Impact",
       status: "Active",
-      focus: "Open-source platform for citizen science geospatial analysis",
-      bullets: [
-        "Building pedagogical research environment for community data exploration",
-        "Implementing urban heat mitigation analysis package",
-        "Creating reusable tools for park cooling effects evaluation"
-      ]
+      description: "Building an open-source platform that empowers localized communities of citizen scientists to conduct rigorous geospatial analyses exploring sustainable urban development in response to interconnected social and environmental crises. The team is developing a pedagogical research environment where neighborhoods, schools, and local organizations can load curated datasets from public portals, Google Earth Engine exports, and community-collected sources, maintain transparent public manifests, and run contextualized spatial and statistical analyses—without requiring technical expertise. The initial pilot focuses on replicating a 2023 study evaluating the cooling effects of urban parks on rising urban temperatures, modularizing the methodology into reusable open-source tools. The end goal is a working platform where a participating community can upload local environmental data, run guided geospatial analyses on park cooling effects, and produce honest, contextualized insights to inform priorities for municipal ecology and development."
     },
     {
       id: 17,
@@ -90,12 +52,7 @@ export default function InnovationTeams() {
       subtitle: "Safe Running Through Real-Time Hazard Intelligence",
       theme: "HealthTech",
       status: "Active",
-      focus: "Mobile routing with ice risk & air quality awareness",
-      bullets: [
-        "Developing heuristic ice risk model using weather and building shadow data",
-        "Integrating EPA AirNow air quality overlays and MBTA transit constraints",
-        "Building crowdsourced validation layer for real-time sidewalk condition reports"
-      ]
+      description: "Developing a mobile fitness routing app that generates safe running and walking routes by incorporating real-time environmental awareness—predicting ice and snow hazards, routing around poor air quality zones, and ensuring users stay within reach of transit stops and emergency bailout points. The team is building a Boston-focused prototype that combines a heuristic ice risk model using OpenWeatherMap freeze-thaw cycle data, building shadow approximation from OpenStreetMap footprints and solar geometry, and road-type plowing priority factors, with EPA AirNow air quality overlays and MBTA GTFS transit proximity constraints. A crowdsourced validation layer allows users to drop pins tagging sidewalk conditions as icy, clear, or unplowed, with optional photo uploads. The end goal is a working demo where users can set a start point and desired distance, receive a route that actively avoids high ice-risk segments and poor air quality while staying near transit, and contribute real-time sidewalk condition reports."
     },
     {
       id: 18,
@@ -103,12 +60,15 @@ export default function InnovationTeams() {
       subtitle: "Risk & Governance for Organizations",
       theme: "Security",
       status: "Active",
-      focus: "NIST CSF compliance and AI-powered risk assessment",
-      bullets: [
-        "Building guided questionnaire-based risk assessment engine",
-        "Implementing weighted scoring algorithm across NIST core functions",
-        "Generating AI-driven remediation recommendations and incident response plans"
-      ]
+      description: "Building an AI-powered cybersecurity risk and governance platform that helps organizations identify, assess, and manage cyber risks through structured compliance frameworks and intelligent dashboards. The team is developing a system centered on the NIST Cybersecurity Framework, featuring a guided questionnaire-based risk assessment engine mapped to NIST's five core functions—Identify, Protect, Detect, Respond, and Recover—paired with a weighted scoring algorithm that classifies organizational risk across maturity levels and generates AI-driven remediation recommendations. The MVP targets the top 20–25 NIST subcategories most relevant to SMEs, with rule-based risk scoring as the foundation and a focused set of 2–3 incident response plan templates. The end goal is a working platform where users can complete a risk assessment, view their compliance posture on an executive-ready dashboard with heatmaps and gap analysis, receive tailored AI-generated security recommendations, and generate customized incident response plans."
+    },
+    {
+      id: 19,
+      title: "Campus Navigation",
+      subtitle: "Interactive Wayfinding for Northeastern",
+      theme: "EdTech",
+      status: "Active",
+      description: "Developing a mobile campus map designed to help students and staff easily locate and navigate places within campus buildings. The team is building a cross-platform React Native application featuring interactive SVG-based floor plans with pinch-to-zoom navigation, a searchable room directory with category filtering, and tap-to-view room detail cards—all focused on a single building as a proof of concept. The MVP includes interactive floor plan rendering with floor switching, a searchable directory powered by a Firebase-backed room metadata database, and a static 'You Are Here' entry-point selector that orients users without requiring any installed infrastructure. The end goal is a working demo where a user can open the app, search for any room by name, number, or category, locate it on the correct floor plan, and view relevant details—all within seconds."
     }
   ];
 
@@ -135,33 +95,24 @@ export default function InnovationTeams() {
         <section className="section-padding bg-[#0F172A]">
           <div className="container">
             <h2 className="text-6xl md:text-7xl font-black text-white mb-16">Our 8 Active Teams</h2>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="space-y-8">
               {ventureLab.map((project) => (
                 <Card 
                   key={project.id}
                   className="border-l-8 border-l-[#C8102E] hover:shadow-2xl transition-all duration-300"
                 >
-                  <CardContent className="p-10">
+                  <CardContent className="p-12">
                     <div className="flex items-center gap-3 mb-4">
                       <Star className="w-5 h-5 text-[#CCFF00]" />
                       <span className="text-xs font-black uppercase tracking-widest text-[#CCFF00]">{project.theme}</span>
+                      <span className="badge-accent ml-auto">{project.status}</span>
                     </div>
-                    <h3 className="text-3xl font-black text-black mb-2">{project.title}</h3>
-                    <p className="text-black/60 text-lg font-light italic mb-6">{project.subtitle}</p>
+                    <h3 className="text-4xl font-black text-black mb-2">{project.title}</h3>
+                    <p className="text-black/60 text-xl font-light italic mb-8">{project.subtitle}</p>
                     
-                    <div className="mb-6 pb-6 border-b-2 border-[#D0D0D0]">
-                      <span className="badge-accent">{project.status}</span>
-                      <p className="text-black/70 text-lg font-semibold mt-4">{project.focus}</p>
-                    </div>
-
-                    <ul className="space-y-3 mb-8">
-                      {project.bullets.map((bullet, idx) => (
-                        <li key={idx} className="flex gap-3 text-black/70 text-lg">
-                          <span className="text-[#CCFF00] font-black flex-shrink-0">✓</span>
-                          <span>{bullet}</span>
-                        </li>
-                      ))}
-                    </ul>
+                    <p className="text-black/70 text-lg leading-relaxed mb-8">
+                      {project.description}
+                    </p>
 
                     <Link href="/forms" className="inline-flex items-center gap-3 text-[#C8102E] font-black hover:gap-4 transition-all duration-200 uppercase tracking-wider">
                       Learn More
