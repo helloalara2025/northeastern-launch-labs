@@ -118,42 +118,50 @@ export default function ContactPage() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t-4 border-[#C8102E] py-20">
+      <footer className="bg-secondary border-t border-[rgba(255,255,255,0.1)] py-20">
         <div className="container">
           <div className="grid md:grid-cols-4 gap-16 mb-16">
             <div>
-              <h4 className="text-2xl font-black text-black mb-6">Launch Labs</h4>
-              <p className="text-lg text-black/70 font-light leading-relaxed">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[rgba(255,255,255,0.1)] bg-primary mb-6">
+                <span className="w-2 h-2 rounded-full bg-red"></span>
+                <span className="text-xs font-mono text-muted uppercase tracking-wider">Launch Labs</span>
+              </div>
+              <p className="text-muted leading-relaxed">
                 Northeastern University's hub for real-world project work.
               </p>
             </div>
             <div>
-              <h4 className="text-lg font-black text-black mb-6 uppercase tracking-wider">Explore</h4>
-              <ul className="space-y-3 text-lg">
-                <li><Link href="/" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Home</Link></li>
-                <li><Link href="/about" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">About</Link></li>
-                <li><Link href="/launch-teams" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Launch Teams</Link></li>
+              <h4 className="text-sm font-mono text-white uppercase tracking-widest mb-6">Explore</h4>
+              <ul className="space-y-4">
+                <li><Link href="/"><a className="text-muted hover:text-yellow transition-colors">Home</a></Link></li>
+                <li><Link href="/about"><a className="text-muted hover:text-yellow transition-colors">About</a></Link></li>
+                <li><Link href="/launch-teams"><a className="text-muted hover:text-yellow transition-colors">Launch Teams</a></Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-black text-black mb-6 uppercase tracking-wider">Get Involved</h4>
-              <ul className="space-y-3 text-lg">
-                <li><Link href="/forms" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Apply</Link></li>
-                <li><Link href="/leadership" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Leadership</Link></li>
-                <li><Link href="/innovation-teams" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Innovation Teams</Link></li>
+              <h4 className="text-sm font-mono text-white uppercase tracking-widest mb-6">Get Involved</h4>
+              <ul className="space-y-4">
+                <li><Link href="/forms"><a className="text-muted hover:text-yellow transition-colors">Apply</a></Link></li>
+                <li><Link href="/leadership"><a className="text-muted hover:text-yellow transition-colors">Leadership</a></Link></li>
+                <li><Link href="/innovation-teams"><a className="text-muted hover:text-yellow transition-colors">Innovation Teams</a></Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-black text-black mb-6 uppercase tracking-wider">Connect</h4>
-              <ul className="space-y-3 text-lg">
-                <li><a href="https://www.linkedin.com/company/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Instagram</a></li>
-                <li><a href="https://discord.gg/EVSEDPDv" target="_blank" rel="noopener noreferrer" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Discord</a></li>
+              <h4 className="text-sm font-mono text-white uppercase tracking-widest mb-6">Connect</h4>
+              <ul className="space-y-4">
+                <li><a href="https://www.linkedin.com/company/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-yellow transition-colors">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-yellow transition-colors">Instagram</a></li>
+                <li><a href="https://discord.gg/EVSEDPDv" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-yellow transition-colors">Discord</a></li>
               </ul>
             </div>
           </div>
-          <div className="border-t-2 border-[#D0D0D0] pt-8 text-center text-lg text-black/70 font-light">
-            <p>&copy; 2026 Northeastern Launch Labs. All rights reserved.</p>
+          <div className="border-t border-[rgba(255,255,255,0.1)] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-muted text-sm font-mono">
+              &copy; 2026 NORTHEASTERN LAUNCH LABS.
+            </p>
+            <p className="text-muted text-sm font-mono">
+              BUILD REAL THINGS.
+            </p>
           </div>
         </div>
       </footer>

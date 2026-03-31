@@ -6,48 +6,58 @@ import { Link } from "wouter";
 
 export default function Leadership() {
   return (
-    <div>
+    <div className="bg-primary min-h-screen text-white font-sans">
       <Navigation />
-      <main className="pt-16">
+      <main>
         {/* Header */}
-        <section className="section-padding bg-white border-b-4 border-[#C8102E]">
-          <div className="container">
-            <h1 className="text-7xl md:text-8xl font-black text-black mb-8 leading-tight">
-              Our Leadership
+        <section className="pt-40 pb-24 md:pt-56 md:pb-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.1)_1px,transparent_1px)] [background-size:24px_24px] opacity-50"></div>
+          <div className="container relative z-10">
+            <div className="mb-8">
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[rgba(255,255,255,0.1)] bg-secondary text-xs font-mono text-muted uppercase tracking-wider">
+                <span className="w-2 h-2 rounded-full bg-red"></span>
+                Leadership
+              </span>
+            </div>
+            <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.9]">
+              THE <br />
+              <span className="text-red">OPERATORS.</span>
             </h1>
-            <p className="text-2xl text-black/70 leading-relaxed max-w-3xl font-light">
+            <p className="text-xl md:text-2xl text-muted leading-relaxed max-w-3xl font-medium">
               Meet the students driving Launch Labs forward and making real impact across the Northeastern community.
             </p>
           </div>
         </section>
 
         {/* Leadership CTA */}
-        <section className="section-padding bg-[#0F172A]">
-          <div className="container">
-            <Card className="border-l-8 border-l-[#CCFF00] hover:shadow-2xl transition-all duration-300">
-              <CardContent className="p-16 text-center">
-                <h2 className="text-5xl md:text-6xl font-black text-black mb-6">Join Our Leadership Team</h2>
-                <p className="text-2xl text-black/70 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
-                  Interested in leading Launch Labs? We are always looking for passionate students to help drive our mission forward and shape the future of the organization.
-                </p>
-                <Link href="/forms">
-                  <Button className="btn-primary inline-flex items-center gap-3">
-                    Apply for Leadership
-                    <ArrowRight size={20} />
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
+          <div className="absolute -left-[20%] top-[20%] w-[600px] h-[600px] rounded-full border-[1px] border-yellow opacity-10 pointer-events-none"></div>
+          
+          <div className="container relative z-10">
+            <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-12 md:p-20 text-center relative overflow-hidden group hover:border-yellow transition-colors duration-300">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-yellow opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
+              
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">JOIN THE OPERATIONS TEAM</h2>
+              <p className="text-xl text-muted mb-12 max-w-3xl mx-auto leading-relaxed">
+                Interested in leading Launch Labs? We are always looking for passionate students to help drive our mission forward and shape the future of the organization.
+              </p>
+              <Button asChild size="lg" className="bg-yellow text-black hover:bg-yellow/90 rounded-none text-lg px-10 py-8 font-bold tracking-widest uppercase">
+                <Link href="/forms">Apply for Leadership</Link>
+              </Button>
+            </div>
           </div>
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t-4 border-[#C8102E] py-20">
+      <footer className="bg-secondary border-t border-[rgba(255,255,255,0.1)] py-20">
         <div className="container">
           <div className="grid md:grid-cols-4 gap-16 mb-16">
             <div>
-              <h4 className="text-2xl font-black text-black mb-6">Launch Labs</h4>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[rgba(255,255,255,0.1)] bg-primary mb-6">
+                <span className="w-2 h-2 rounded-full bg-red"></span>
+                <span className="text-xs font-mono text-muted uppercase tracking-wider">Launch Labs</span>
+              </div>
               <p className="text-lg text-black/70 font-light leading-relaxed">
                 Northeastern University's hub for real-world project work.
               </p>

@@ -73,70 +73,87 @@ export default function InnovationTeams() {
   ];
 
   return (
-    <div>
+    <div className="bg-primary min-h-screen text-white font-sans">
       <Navigation />
-      <main className="pt-24">
+      <main>
         {/* Header */}
-        <section className="section-padding bg-white border-b-4 border-[#C8102E]">
-          <div className="container">
+        <section className="pt-40 pb-24 md:pt-56 md:pb-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.1)_1px,transparent_1px)] [background-size:24px_24px] opacity-50"></div>
+          <div className="container relative z-10">
             <div className="mb-8">
-              <span className="badge">Venture Lab</span>
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[rgba(255,255,255,0.1)] bg-secondary text-xs font-mono text-muted uppercase tracking-wider">
+                <span className="w-2 h-2 rounded-full bg-yellow"></span>
+                Venture Lab
+              </span>
             </div>
-            <h1 className="text-7xl md:text-8xl font-black text-black mb-8 leading-tight">
-              Innovation Teams
+            <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.9]">
+              INNOVATION <br />
+              <span className="text-yellow">TEAMS.</span>
             </h1>
-            <p className="text-2xl text-black/70 leading-relaxed max-w-3xl font-light">
+            <p className="text-xl md:text-2xl text-muted leading-relaxed max-w-3xl font-medium">
               Lead end-to-end projects designed to mirror real-world professional work and develop your leadership skills across diverse domains.
             </p>
           </div>
         </section>
 
         {/* Our 8 Teams */}
-        <section className="section-padding bg-[#0F172A]">
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)]">
           <div className="container">
-            <h2 className="text-6xl md:text-7xl font-black text-white mb-16">Our 8 Active Teams</h2>
-            <div className="space-y-8">
+            <h2 className="text-sm font-mono text-yellow uppercase tracking-widest mb-4">The Portfolio</h2>
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">OUR 8 ACTIVE TEAMS</h3>
+            
+            <div className="space-y-6">
               {ventureLab.map((project) => (
-                <Card 
+                <div 
                   key={project.id}
-                  className="border-l-8 border-l-[#C8102E] hover:shadow-2xl transition-all duration-300"
+                  className="group bg-secondary border border-[rgba(255,255,255,0.05)] p-10 md:p-12 hover:border-yellow transition-colors duration-300 relative overflow-hidden"
                 >
-                  <CardContent className="p-12">
-                    <div className="flex items-center gap-3 mb-4">
-                      <Star className="w-5 h-5 text-[#CCFF00]" />
-                      <span className="text-xs font-black uppercase tracking-widest text-[#CCFF00]">{project.theme}</span>
-                      <span className="badge-accent ml-auto">{project.status}</span>
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-yellow opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
+                  
+                  <div className="flex flex-col md:flex-row md:items-center gap-4 mb-6">
+                    <div className="flex items-center gap-3">
+                      <Star className="w-5 h-5 text-yellow" />
+                      <span className="text-xs font-mono uppercase tracking-widest text-yellow">{project.theme}</span>
                     </div>
-                    <h3 className="text-4xl font-black text-black mb-2">{project.title}</h3>
-                    <p className="text-black/60 text-xl font-light italic mb-8">{project.subtitle}</p>
-                    
-                    <p className="text-black/70 text-lg leading-relaxed mb-8">
-                      {project.description}
-                    </p>
+                    <span className="text-xs font-mono uppercase px-2 py-1 border border-[rgba(255,255,255,0.1)] rounded-full text-white md:ml-auto w-fit">
+                      {project.status}
+                    </span>
+                  </div>
+                  
+                  <h4 className="text-3xl md:text-4xl font-bold mb-2">{project.title}</h4>
+                  <p className="text-muted text-xl mb-8">{project.subtitle}</p>
+                  
+                  <p className="text-white/80 leading-relaxed mb-8 max-w-4xl">
+                    {project.description}
+                  </p>
 
-                    <Link href="/forms" className="inline-flex items-center gap-3 text-[#C8102E] font-black hover:gap-4 transition-all duration-200 uppercase tracking-wider">
-                      Learn More
-                      <ArrowRight size={18} />
-                    </Link>
-                  </CardContent>
-                </Card>
+                  <Link href="/forms">
+                    <a className="text-yellow hover:text-white transition-colors flex items-center gap-2 text-sm font-bold uppercase tracking-wider w-fit">
+                      Learn More <ArrowRight className="w-4 h-4" />
+                    </a>
+                  </Link>
+                </div>
               ))}
             </div>
           </div>
         </section>
 
         {/* What We Do */}
-        <section className="section-padding bg-white">
-          <div className="container">
-            <h2 className="text-6xl md:text-7xl font-black text-black mb-16">What We Do</h2>
-            <div className="grid md:grid-cols-2 gap-12 max-w-4xl">
-              <div>
-                <p className="text-2xl text-black/70 leading-relaxed font-light">
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
+          <div className="absolute -left-[20%] top-[20%] w-[600px] h-[600px] rounded-full border-[1px] border-red opacity-10 pointer-events-none"></div>
+          
+          <div className="container relative z-10">
+            <h2 className="text-sm font-mono text-red uppercase tracking-widest mb-4">The Approach</h2>
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">WHAT WE DO</h3>
+            
+            <div className="grid md:grid-cols-2 gap-12 max-w-5xl">
+              <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-10">
+                <p className="text-xl text-muted leading-relaxed">
                   Innovation Teams tackle internally scoped projects designed to mirror real-world professional work. From problem definition through delivery, team members lead projects end-to-end, developing leadership, strategic thinking, and execution skills.
                 </p>
               </div>
-              <div>
-                <p className="text-2xl text-black/70 leading-relaxed font-light">
+              <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-10">
+                <p className="text-xl text-muted leading-relaxed">
                   These projects span product development, organizational initiatives, research, and strategic exploration. Teams operate with autonomy and accountability, making decisions and driving results in a supportive learning environment.
                 </p>
               </div>
@@ -145,25 +162,25 @@ export default function InnovationTeams() {
         </section>
 
         {/* Key Experiences */}
-        <section className="section-padding bg-[#F5F5F5]">
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)]">
           <div className="container">
-            <h2 className="text-6xl md:text-7xl font-black text-black mb-16">Key Experiences</h2>
-            <div className="grid md:grid-cols-2 gap-8">
+            <h2 className="text-sm font-mono text-yellow uppercase tracking-widest mb-4">The Value</h2>
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">KEY EXPERIENCES</h3>
+            
+            <div className="grid md:grid-cols-2 gap-px bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.1)]">
               {[
                 { icon: Target, title: "End-to-End Leadership", desc: "Own projects from conception through execution, making strategic decisions and driving results with full accountability." },
                 { icon: Users, title: "Cross-Functional Teams", desc: "Work with diverse teams across engineering, design, and business to deliver integrated solutions." },
                 { icon: Zap, title: "Rapid Prototyping", desc: "Build MVPs quickly, validate assumptions with real users, and iterate based on feedback." },
                 { icon: Code, title: "Strategic Problem-Solving", desc: "Tackle complex, ambiguous problems by breaking them down, researching solutions, and implementing scalable approaches." }
               ].map((item, idx) => (
-                <div key={idx} className="flex gap-6">
+                <div key={idx} className="bg-primary p-10 group hover:bg-secondary transition-colors duration-300 flex gap-6">
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-[#C8102E] flex items-center justify-center text-white">
-                      <item.icon size={28} />
-                    </div>
+                    <item.icon className="w-8 h-8 text-yellow group-hover:text-white transition-colors" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-black text-black mb-3">{item.title}</h3>
-                    <p className="text-black/70 text-lg leading-relaxed">{item.desc}</p>
+                    <h4 className="text-xl font-bold mb-3">{item.title}</h4>
+                    <p className="text-muted leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -172,14 +189,18 @@ export default function InnovationTeams() {
         </section>
 
         {/* Who Should Apply */}
-        <section className="section-padding bg-white">
-          <div className="container">
-            <h2 className="text-6xl md:text-7xl font-black text-black mb-16">Who Should Apply</h2>
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
+          <div className="absolute -right-[20%] top-[20%] w-[600px] h-[600px] rounded-full border-[1px] border-red opacity-10 pointer-events-none"></div>
+          
+          <div className="container relative z-10">
+            <h2 className="text-sm font-mono text-red uppercase tracking-widest mb-4">The Profile</h2>
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">WHO SHOULD APPLY</h3>
+            
             <div className="max-w-4xl">
-              <p className="text-2xl text-black/70 leading-relaxed font-light mb-12">
+              <p className="text-xl text-muted leading-relaxed mb-12">
                 Innovation Teams are for students who want to lead, build, and learn. You should apply if you:
               </p>
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="grid md:grid-cols-2 gap-6">
                 {[
                   "Are passionate about solving real problems with real impact",
                   "Want to develop leadership and strategic thinking skills",
@@ -188,9 +209,9 @@ export default function InnovationTeams() {
                   "Can commit 3-5 hours per week to your project",
                   "Are excited about building something from scratch"
                 ].map((criterion, idx) => (
-                  <div key={idx} className="flex gap-4">
-                    <CheckCircle className="w-6 h-6 text-[#C8102E] flex-shrink-0 mt-1" />
-                    <p className="text-black/70 text-lg">{criterion}</p>
+                  <div key={idx} className="flex gap-4 bg-secondary border border-[rgba(255,255,255,0.05)] p-6">
+                    <CheckCircle className="w-6 h-6 text-red flex-shrink-0" />
+                    <p className="text-white/90">{criterion}</p>
                   </div>
                 ))}
               </div>
@@ -199,29 +220,34 @@ export default function InnovationTeams() {
         </section>
 
         {/* CTA */}
-        <section className="section-padding bg-[#C8102E]">
-          <div className="container text-center">
-            <h2 className="text-6xl md:text-7xl font-black text-white mb-8">Ready to Lead?</h2>
-            <p className="text-2xl text-white/90 mb-12 max-w-2xl mx-auto font-light">
+        <section className="py-32 relative overflow-hidden">
+          <div className="absolute inset-0 bg-yellow"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(rgba(0,0,0,0.2)_1px,transparent_1px)] [background-size:24px_24px]"></div>
+          
+          <div className="container relative z-10 text-center max-w-4xl">
+            <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-8 text-black">
+              READY TO LEAD?
+            </h2>
+            <p className="text-xl md:text-2xl text-black/80 mb-12 font-medium">
               Join an Innovation Team and take ownership of a project that matters.
             </p>
-            <Button asChild>
-              <Link href="/forms" className="bg-white text-[#C8102E] font-black px-10 py-4 hover:bg-[#F5F5F5] transition-all inline-flex items-center gap-3 uppercase tracking-wider">
-                Apply Now
-                <ArrowRight size={20} />
-              </Link>
+            <Button asChild size="lg" className="bg-black text-white hover:bg-black/80 rounded-none text-lg px-10 py-8 font-bold tracking-widest uppercase border border-black">
+              <Link href="/forms">Apply Now</Link>
             </Button>
           </div>
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t-4 border-[#C8102E] py-20">
+      <footer className="bg-secondary border-t border-[rgba(255,255,255,0.1)] py-20">
         <div className="container">
           <div className="grid md:grid-cols-4 gap-16 mb-16">
             <div>
-              <h4 className="text-2xl font-black text-black mb-6">Launch Labs</h4>
-              <p className="text-lg text-black/70 font-light leading-relaxed">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[rgba(255,255,255,0.1)] bg-primary mb-6">
+                <span className="w-2 h-2 rounded-full bg-red"></span>
+                <span className="text-xs font-mono text-muted uppercase tracking-wider">Launch Labs</span>
+              </div>
+              <p className="text-muted leading-relaxed">
                 Northeastern University's hub for real-world project work.
               </p>
             </div>

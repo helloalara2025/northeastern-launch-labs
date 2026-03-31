@@ -6,221 +6,224 @@ import { ArrowRight, FileText, Heart, Lightbulb } from "lucide-react";
 
 export default function Forms() {
   return (
-    <div>
+    <div className="bg-primary min-h-screen text-white font-sans">
       <Navigation />
-      <main className="pt-24">
+      <main>
         {/* Header */}
-        <section className="section-padding bg-white border-b-4 border-[#C8102E]">
-          <div className="container">
-            <h1 className="text-7xl md:text-8xl font-black text-black mb-8 leading-tight">
-              Get Involved
+        <section className="pt-40 pb-24 md:pt-56 md:pb-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.1)_1px,transparent_1px)] [background-size:24px_24px] opacity-50"></div>
+          <div className="container relative z-10">
+            <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.9]">
+              GET <br />
+              <span className="text-yellow">INVOLVED.</span>
             </h1>
-            <p className="text-2xl text-black/70 leading-relaxed max-w-3xl font-light">
+            <p className="text-xl md:text-2xl text-muted leading-relaxed max-w-3xl font-medium">
               Join Northeastern Launch Labs and start working on real-world projects.
             </p>
           </div>
         </section>
 
         {/* Quick Links */}
-        <section className="section-padding-sm bg-[#F5F5F5] border-b-2 border-[#D0D0D0]">
+        <section className="py-12 border-b border-[rgba(255,255,255,0.1)] bg-secondary">
           <div className="container">
-            <h3 className="text-xl font-black text-black mb-8 uppercase tracking-wider">Quick Links</h3>
+            <h3 className="text-sm font-mono text-muted uppercase tracking-widest mb-6">Quick Links</h3>
             <div className="grid md:grid-cols-4 gap-4">
-              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUOVlLR1RJSllIQUFSWFBLSDdBNjg2Wk5IOS4u" target="_blank" rel="noopener noreferrer" className="btn-secondary inline-flex items-center justify-center gap-2">
-                Interest Form
-                <ArrowRight size={18} />
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUOVlLR1RJSllIQUFSWFBLSDdBNjg2Wk5IOS4u" target="_blank" rel="noopener noreferrer" className="bg-primary border border-[rgba(255,255,255,0.1)] hover:border-yellow text-white px-6 py-4 flex items-center justify-between group transition-colors">
+                <span className="font-bold tracking-wider uppercase text-sm">Interest Form</span>
+                <ArrowRight className="w-4 h-4 text-yellow group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUNVU1NFZPWkNMSlU3NFlQRlpGNVhWR1lQVS4u" target="_blank" rel="noopener noreferrer" className="btn-secondary inline-flex items-center justify-center gap-2">
-                Launch Team App
-                <ArrowRight size={18} />
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUNVU1NFZPWkNMSlU3NFlQRlpGNVhWR1lQVS4u" target="_blank" rel="noopener noreferrer" className="bg-primary border border-[rgba(255,255,255,0.1)] hover:border-yellow text-white px-6 py-4 flex items-center justify-between group transition-colors">
+                <span className="font-bold tracking-wider uppercase text-sm">Launch Team App</span>
+                <ArrowRight className="w-4 h-4 text-yellow group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" rel="noopener noreferrer" className="btn-secondary inline-flex items-center justify-center gap-2">
-                Innovation App
-                <ArrowRight size={18} />
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" rel="noopener noreferrer" className="bg-primary border border-[rgba(255,255,255,0.1)] hover:border-yellow text-white px-6 py-4 flex items-center justify-between group transition-colors">
+                <span className="font-bold tracking-wider uppercase text-sm">Innovation App</span>
+                <ArrowRight className="w-4 h-4 text-yellow group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="btn-secondary inline-flex items-center justify-center gap-2">
-                Leadership App
-                <ArrowRight size={18} />
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="bg-primary border border-[rgba(255,255,255,0.1)] hover:border-yellow text-white px-6 py-4 flex items-center justify-between group transition-colors">
+                <span className="font-bold tracking-wider uppercase text-sm">Leadership App</span>
+                <ArrowRight className="w-4 h-4 text-yellow group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>
         </section>
 
         {/* Join Section */}
-        <section className="section-padding bg-white">
-          <div className="container">
-            <h2 className="text-6xl md:text-7xl font-black text-black mb-16">Join</h2>
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
+          <div className="absolute -left-[20%] top-[20%] w-[600px] h-[600px] rounded-full border-[1px] border-red opacity-10 pointer-events-none"></div>
+          
+          <div className="container relative z-10">
+            <h2 className="text-sm font-mono text-red uppercase tracking-widest mb-4">Applications</h2>
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">JOIN A TEAM</h3>
+            
             <div className="grid md:grid-cols-2 gap-8">
               {/* Launch Teams */}
-              <Card className="border-l-8 border-l-[#C8102E] hover:shadow-2xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <div className="icon-box mb-6">
-                    <FileText className="w-7 h-7" />
-                  </div>
-                  <h3 className="text-4xl font-black text-black mb-6">Launch Team Application</h3>
-                  <p className="text-black/70 text-lg leading-relaxed mb-8">
-                    Apply to work directly with startups on real-world product development, implementation, and iterative testing.
-                  </p>
-                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUNVU1NFZPWkNMSlU3NFlQRlpGNVhWR1lQVS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 text-[#C8102E] font-black hover:gap-4 transition-all duration-200 uppercase tracking-wider">
-                    Apply Now
-                    <ArrowRight size={20} />
-                  </a>
-                </CardContent>
-              </Card>
+              <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-10 md:p-12 hover:border-red transition-colors duration-300 group">
+                <div className="w-12 h-12 bg-primary border border-[rgba(255,255,255,0.1)] flex items-center justify-center mb-8">
+                  <FileText className="w-6 h-6 text-red" />
+                </div>
+                <h4 className="text-3xl font-bold mb-4">Launch Team Application</h4>
+                <p className="text-muted text-lg leading-relaxed mb-8">
+                  Apply to work directly with startups on real-world product development, implementation, and iterative testing.
+                </p>
+                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUNVU1NFZPWkNMSlU3NFlQRlpGNVhWR1lQVS4u" target="_blank" rel="noopener noreferrer" className="text-red hover:text-white transition-colors flex items-center gap-2 text-sm font-bold uppercase tracking-wider w-fit">
+                  Apply Now <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
 
               {/* Innovation Teams */}
-              <Card className="border-l-8 border-l-[#CCFF00] hover:shadow-2xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <div className="icon-box-accent mb-6">
-                    <Lightbulb className="w-7 h-7" />
-                  </div>
-                  <h3 className="text-4xl font-black text-black mb-6">Innovation Team Application</h3>
-                  <p className="text-black/70 text-lg leading-relaxed mb-8">
-                    Apply to lead end-to-end projects designed to mirror real-world professional work and build your leadership skills.
-                  </p>
-                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 text-[#CCFF00] font-black hover:gap-4 transition-all duration-200 uppercase tracking-wider">
-                    Apply Now
-                    <ArrowRight size={20} />
-                  </a>
-                </CardContent>
-              </Card>
+              <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-10 md:p-12 hover:border-yellow transition-colors duration-300 group">
+                <div className="w-12 h-12 bg-primary border border-[rgba(255,255,255,0.1)] flex items-center justify-center mb-8">
+                  <Lightbulb className="w-6 h-6 text-yellow" />
+                </div>
+                <h4 className="text-3xl font-bold mb-4">Innovation Team Application</h4>
+                <p className="text-muted text-lg leading-relaxed mb-8">
+                  Apply to lead end-to-end projects designed to mirror real-world professional work and build your leadership skills.
+                </p>
+                <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" rel="noopener noreferrer" className="text-yellow hover:text-white transition-colors flex items-center gap-2 text-sm font-bold uppercase tracking-wider w-fit">
+                  Apply Now <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Leadership */}
-        <section className="section-padding bg-[#0F172A]">
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)]">
           <div className="container">
-            <h2 className="text-6xl md:text-7xl font-black text-white mb-12">Leadership Opportunities</h2>
-            <Card className="border-l-8 border-l-[#CCFF00]">
-              <CardContent className="p-12">
-                <div className="flex gap-8 items-start">
-                  <div className="icon-box-accent flex-shrink-0">
-                    <Heart className="w-7 h-7" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-4xl font-black text-black mb-6">Leadership Application</h3>
-                    <p className="text-black/70 text-lg leading-relaxed mb-8">
-                      Are you passionate about building community and driving innovation? Apply to join our leadership team. We're looking for students who want to help shape the future of Northeastern Launch Labs.
-                    </p>
-                    <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 text-[#C8102E] font-black hover:gap-4 transition-all duration-200 uppercase tracking-wider">
-                      Apply Now
-                      <ArrowRight size={20} />
-                    </a>
-                  </div>
+            <h2 className="text-sm font-mono text-yellow uppercase tracking-widest mb-4">Operations</h2>
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">LEADERSHIP OPPORTUNITIES</h3>
+            
+            <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-10 md:p-16 hover:border-yellow transition-colors duration-300 group relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-yellow opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
+              
+              <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start relative z-10">
+                <div className="w-16 h-16 bg-primary border border-[rgba(255,255,255,0.1)] flex items-center justify-center flex-shrink-0">
+                  <Heart className="w-8 h-8 text-yellow" />
                 </div>
-              </CardContent>
-            </Card>
+                <div className="flex-1">
+                  <h4 className="text-3xl md:text-4xl font-bold mb-6">Leadership Application</h4>
+                  <p className="text-muted text-xl leading-relaxed mb-8 max-w-3xl">
+                    Are you passionate about building community and driving innovation? Apply to join our leadership team. We're looking for students who want to help shape the future of Northeastern Launch Labs.
+                  </p>
+                  <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV58t6J076SB1BnXzyi1fYH2VUQVA4SFlMRTBXUVVKRk9aSFJKUjdGNVhKWS4u" target="_blank" rel="noopener noreferrer" className="text-yellow hover:text-white transition-colors flex items-center gap-2 text-sm font-bold uppercase tracking-wider w-fit">
+                    Apply Now <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* FAQ */}
-        <section className="section-padding bg-white">
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)]">
           <div className="container">
-            <h2 className="text-6xl md:text-7xl font-black text-black mb-16">Frequently Asked Questions</h2>
-            <div className="space-y-6 max-w-4xl">
-              <Card className="border-l-8 border-l-[#C8102E] hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <h3 className="text-2xl font-black text-black mb-4">What's the difference between Launch Teams and Innovation Teams?</h3>
-                  <p className="text-black/70 text-lg leading-relaxed">
-                    Launch Teams work directly with external startups on real product development. Innovation Teams focus on internally scoped projects designed to mirror real-world professional work. Both provide hands-on experience and skill development.
-                  </p>
-                </CardContent>
-              </Card>
+            <h2 className="text-sm font-mono text-red uppercase tracking-widest mb-4">Questions</h2>
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">FAQ</h3>
+            
+            <div className="space-y-4 max-w-4xl">
+              <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-8 hover:border-red transition-colors duration-300">
+                <h4 className="text-xl font-bold mb-4">What's the difference between Launch Teams and Innovation Teams?</h4>
+                <p className="text-muted leading-relaxed">
+                  Launch Teams work directly with external startups on real product development. Innovation Teams focus on internally scoped projects designed to mirror real-world professional work. Both provide hands-on experience and skill development.
+                </p>
+              </div>
 
-              <Card className="border-l-8 border-l-[#CCFF00] hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <h3 className="text-2xl font-black text-black mb-4">Do I need prior experience to apply?</h3>
-                  <p className="text-black/70 text-lg leading-relaxed">
-                    No! We welcome students from all disciplines and experience levels. Whether you're an engineer, designer, business student, or something else entirely, we have opportunities for you.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-8 hover:border-yellow transition-colors duration-300">
+                <h4 className="text-xl font-bold mb-4">Do I need prior experience to apply?</h4>
+                <p className="text-muted leading-relaxed">
+                  No! We welcome students from all disciplines and experience levels. Whether you're an engineer, designer, business student, or something else entirely, we have opportunities for you.
+                </p>
+              </div>
 
-              <Card className="border-l-8 border-l-[#C8102E] hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <h3 className="text-2xl font-black text-black mb-4">How much time does this require?</h3>
-                  <p className="text-black/70 text-lg leading-relaxed">
-                    Time commitment varies by project and team, typically 3-5 hours per week. We'll discuss expectations during the application process and matching phase to ensure it works with your schedule.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-8 hover:border-red transition-colors duration-300">
+                <h4 className="text-xl font-bold mb-4">How much time does this require?</h4>
+                <p className="text-muted leading-relaxed">
+                  Time commitment varies by project and team, typically 3-5 hours per week. We'll discuss expectations during the application process and matching phase to ensure it works with your schedule.
+                </p>
+              </div>
 
-              <Card className="border-l-8 border-l-[#CCFF00] hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <h3 className="text-2xl font-black text-black mb-4">Can I apply for both Launch and Innovation Teams?</h3>
-                  <p className="text-black/70 text-lg leading-relaxed">
-                    Yes! You can express interest in both. During the matching process, we'll help you find the best fit based on your interests and availability.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-8 hover:border-yellow transition-colors duration-300">
+                <h4 className="text-xl font-bold mb-4">Can I apply for both Launch and Innovation Teams?</h4>
+                <p className="text-muted leading-relaxed">
+                  Yes! You can express interest in both. During the matching process, we'll help you find the best fit based on your interests and availability.
+                </p>
+              </div>
 
-              <Card className="border-l-8 border-l-[#C8102E] hover:shadow-xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <h3 className="text-2xl font-black text-black mb-4">When are applications open?</h3>
-                  <p className="text-black/70 text-lg leading-relaxed">
-                    We accept applications on a rolling basis throughout the year. Check back regularly for updates on application windows and deadlines.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-8 hover:border-red transition-colors duration-300">
+                <h4 className="text-xl font-bold mb-4">When are applications open?</h4>
+                <p className="text-muted leading-relaxed">
+                  We accept applications on a rolling basis throughout the year. Check back regularly for updates on application windows and deadlines.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
         {/* CTA */}
-        <section className="section-padding bg-[#C8102E]">
-          <div className="container text-center">
-            <h2 className="text-6xl md:text-7xl font-black text-white mb-8">Ready to Get Started?</h2>
-            <p className="text-2xl text-white/90 mb-12 max-w-2xl mx-auto font-light">
+        <section className="py-32 relative overflow-hidden">
+          <div className="absolute inset-0 bg-red"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(rgba(0,0,0,0.2)_1px,transparent_1px)] [background-size:24px_24px]"></div>
+          
+          <div className="container relative z-10 text-center max-w-4xl">
+            <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-8 text-white">
+              READY TO GET STARTED?
+            </h2>
+            <p className="text-xl md:text-2xl text-white/90 mb-12 font-medium">
               Apply to join a team or propose your own project. We're excited to work with you!
             </p>
-            <Link href="/contact" className="inline-block">
-              <Button className="bg-white text-[#C8102E] font-black px-10 py-4 hover:bg-[#F5F5F5] transition-all inline-flex items-center gap-3 uppercase tracking-wider">
-                Have Questions? Contact Us
-                <ArrowRight size={20} />
-              </Button>
-            </Link>
+            <Button asChild size="lg" className="bg-white text-black hover:bg-white/90 rounded-none text-lg px-10 py-8 font-bold tracking-widest uppercase border border-white">
+              <Link href="/contact">Have Questions? Contact Us</Link>
+            </Button>
           </div>
         </section>
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t-4 border-[#C8102E] py-20">
+      <footer className="bg-secondary border-t border-[rgba(255,255,255,0.1)] py-20">
         <div className="container">
           <div className="grid md:grid-cols-4 gap-16 mb-16">
             <div>
-              <h4 className="text-2xl font-black text-black mb-6">Launch Labs</h4>
-              <p className="text-lg text-black/70 font-light leading-relaxed">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[rgba(255,255,255,0.1)] bg-primary mb-6">
+                <span className="w-2 h-2 rounded-full bg-red"></span>
+                <span className="text-xs font-mono text-muted uppercase tracking-wider">Launch Labs</span>
+              </div>
+              <p className="text-muted leading-relaxed">
                 Northeastern University's hub for real-world project work.
               </p>
             </div>
             <div>
-              <h4 className="text-lg font-black text-black mb-6 uppercase tracking-wider">Explore</h4>
-              <ul className="space-y-3 text-lg">
-                <li><Link href="/" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Home</Link></li>
-                <li><Link href="/about" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">About</Link></li>
-                <li><Link href="/launch-teams" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Launch Teams</Link></li>
+              <h4 className="text-sm font-mono text-white uppercase tracking-widest mb-6">Explore</h4>
+              <ul className="space-y-4">
+                <li><Link href="/"><a className="text-muted hover:text-yellow transition-colors">Home</a></Link></li>
+                <li><Link href="/about"><a className="text-muted hover:text-yellow transition-colors">About</a></Link></li>
+                <li><Link href="/launch-teams"><a className="text-muted hover:text-yellow transition-colors">Launch Teams</a></Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-black text-black mb-6 uppercase tracking-wider">Get Involved</h4>
-              <ul className="space-y-3 text-lg">
-                <li><Link href="/forms" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Apply</Link></li>
-                <li><Link href="/leadership" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Leadership</Link></li>
-                <li><Link href="/partners" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Partners</Link></li>
+              <h4 className="text-sm font-mono text-white uppercase tracking-widest mb-6">Get Involved</h4>
+              <ul className="space-y-4">
+                <li><Link href="/forms"><a className="text-muted hover:text-yellow transition-colors">Apply</a></Link></li>
+                <li><Link href="/leadership"><a className="text-muted hover:text-yellow transition-colors">Leadership</a></Link></li>
+                <li><Link href="/partners"><a className="text-muted hover:text-yellow transition-colors">Partners</a></Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-lg font-black text-black mb-6 uppercase tracking-wider">Connect</h4>
-              <ul className="space-y-3 text-lg">
-                <li><Link href="/contact" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Contact</Link></li>
-                <li><a href="https://www.linkedin.com/company/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-black/70 hover:text-[#C8102E] transition-colors font-medium">Instagram</a></li>
+              <h4 className="text-sm font-mono text-white uppercase tracking-widest mb-6">Connect</h4>
+              <ul className="space-y-4">
+                <li><Link href="/contact"><a className="text-muted hover:text-yellow transition-colors">Contact</a></Link></li>
+                <li><a href="https://www.linkedin.com/company/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-yellow transition-colors">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-yellow transition-colors">Instagram</a></li>
               </ul>
             </div>
           </div>
-          <div className="border-t-2 border-[#D0D0D0] pt-8 text-center text-lg text-black/70 font-light">
-            <p>&copy; 2026 Northeastern Launch Labs. All rights reserved.</p>
+          <div className="border-t border-[rgba(255,255,255,0.1)] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-muted text-sm font-mono">
+              &copy; 2026 NORTHEASTERN LAUNCH LABS.
+            </p>
+            <p className="text-muted text-sm font-mono">
+              BUILD REAL THINGS.
+            </p>
           </div>
         </div>
       </footer>

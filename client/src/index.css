@@ -1,291 +1,132 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* ===== BRAND COLOR SYSTEM ===== */
-/* Primary: Northeastern Red (#C8102E)
-   Secondary: Black (#000000)
-   Neutral: White (#FFFFFF)
-   Complementary: Navy (#0F172A), Charcoal (#1F2937), Stone (#F3F4F6)
-   Accent: Gold (#D4A574) for subtle highlights */
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+  --font-mono: "DM Mono", monospace;
+  
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-red: #dc2626;
+  --color-yellow: #f5c518;
+  --color-primary: #0d0d0d;
+  --color-secondary: #0f1629;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
 
 @layer base {
   :root {
-    /* Brand Colors */
-    --color-red: #C8102E;
-    --color-red-dark: #A60826;
-    --color-red-light: #E63946;
-    --color-black: #000000;
-    --color-white: #FFFFFF;
-    --color-navy: #0F172A;
-    --color-charcoal: #1F2937;
-    --color-stone: #F3F4F6;
-    --color-gold: #D4A574;
-    --color-gray: #6B7280;
-    --color-gray-light: #E5E7EB;
-    
-    /* Semantic Colors */
-    --foreground: 0 0% 0%;
-    --background: 0 0% 100%;
-    --muted: 0 0% 42%;
-    --muted-foreground: 0 0% 100%;
-    --border: 0 0% 90%;
-    --input: 0 0% 100%;
-    --ring: 196 93% 38%;
+    --background: 0 0% 5%; /* #0d0d0d */
+    --foreground: 0 0% 100%;
+    --card: 225 47% 11%; /* #0f1629 */
+    --card-foreground: 0 0% 100%;
+    --popover: 225 47% 11%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 72% 51%; /* #dc2626 */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 225 47% 11%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 225 47% 15%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 47 90% 53%; /* #f5c518 */
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 225 47% 20%;
+    --input: 225 47% 20%;
+    --ring: 0 72% 51%;
+    --radius: 0rem; /* Sharp corners for builder aesthetic */
   }
+}
 
+@layer base {
   * {
     @apply border-border;
   }
-
   body {
-    @apply bg-white text-black font-sans;
+    @apply bg-background text-foreground font-sans;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
-
   html {
     scroll-behavior: smooth;
   }
 }
 
-/* ===== TYPOGRAPHY SYSTEM ===== */
-@layer base {
-  /* Display Headings - Playfair Display for brand presence */
-  h1 {
-    @apply font-serif font-black text-black;
-    font-family: "Playfair Display", serif;
-  }
-
-  h2 {
-    @apply font-serif font-black text-black;
-    font-family: "Playfair Display", serif;
-  }
-
-  h3 {
-    @apply font-serif font-bold text-black;
-    font-family: "Playfair Display", serif;
-  }
-
-  h4, h5, h6 {
-    @apply font-sans font-bold text-black;
-  }
-
-  /* Body Text - Inter for readability */
-  p, span, a, li {
-    font-family: "Inter", sans-serif;
-  }
-
-  /* Links */
-  a {
-    @apply text-red hover:text-red-dark transition-colors;
-  }
-
-  /* Code */
-  code {
-    @apply font-mono text-sm;
-  }
-
-  /* Lists */
-  ul, ol {
-    @apply space-y-2;
-  }
-
-  li {
-    @apply ml-4;
-  }
-}
-
-/* ===== UTILITY CLASSES ===== */
-@layer components {
-  /* Container - Responsive max-width with padding */
-  .container {
-    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
-  }
-
-  /* Section Padding */
-  .section-padding {
-    @apply py-20 md:py-32 lg:py-40;
-  }
-
-  /* Badge - Small label */
-  .badge {
-    @apply inline-block bg-red text-white px-4 py-2 text-xs font-black uppercase tracking-widest;
-  }
-
-  .badge-accent {
-    @apply inline-block bg-gold text-black px-3 py-1 text-xs font-bold uppercase tracking-wider;
-  }
-
-  /* Icon Box - Red background */
-  .icon-box {
-    @apply w-14 h-14 bg-red text-white flex items-center justify-center;
-  }
-
-  .icon-box-accent {
-    @apply w-14 h-14 bg-gold text-black flex items-center justify-center;
-  }
-
-  /* Card - Dark background with left border */
-  .card-dark {
-    @apply bg-white border-l-8 border-l-red p-8 md:p-10 hover:shadow-xl transition-all duration-300;
-  }
-
-  .card-accent {
-    @apply bg-white border-l-8 border-l-gold p-8 md:p-10 hover:shadow-xl transition-all duration-300;
-  }
-
-  /* Button Styles */
-  .btn-primary {
-    @apply bg-red text-white font-black px-8 py-3 hover:bg-red-dark transition-all duration-200 uppercase tracking-wider;
-  }
-
-  .btn-secondary {
-    @apply border-2 border-red text-red font-black px-8 py-3 hover:bg-red hover:text-white transition-all duration-200 uppercase tracking-wider;
-  }
-
-  .btn-outline {
-    @apply border-2 border-black text-black font-black px-8 py-3 hover:bg-black hover:text-white transition-all duration-200 uppercase tracking-wider;
-  }
-
-  /* Scroll Progress Bar */
-  .scroll-progress {
-    @apply fixed top-0 left-0 h-1 bg-red z-50 transition-all duration-300;
-  }
-
-  /* Flex with min-width reset */
-  .flex {
-    @apply flex min-w-0 min-h-0;
-  }
-
-  /* Animations */
-  @keyframes slide-in-left {
-    from {
-      opacity: 0;
-      transform: translateX(-20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  @keyframes slide-in-right {
-    from {
-      opacity: 0;
-      transform: translateX(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  .animate-slide-in-left {
-    animation: slide-in-left 0.6s ease-out;
-  }
-
-  .animate-slide-in-right {
-    animation: slide-in-right 0.6s ease-out;
-  }
-
-  .animate-fade-in {
-    animation: fade-in 0.6s ease-out;
-  }
-}
-
-/* ===== TAILWIND COLOR OVERRIDES ===== */
 @layer utilities {
-  /* Red color utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .bg-primary {
+    @apply bg-[#0d0d0d];
+  }
+
+  .bg-secondary {
+    @apply bg-[#0f1629];
+  }
+
   .bg-red {
-    @apply bg-[#C8102E];
+    @apply bg-[#dc2626];
   }
 
-  .bg-red-dark {
-    @apply bg-[#A60826];
-  }
-
-  .bg-red-light {
-    @apply bg-[#E63946];
+  .bg-yellow {
+    @apply bg-[#f5c518];
   }
 
   .text-red {
-    @apply text-[#C8102E];
+    @apply text-[#dc2626];
   }
 
-  .text-red-dark {
-    @apply text-[#A60826];
+  .text-yellow {
+    @apply text-[#f5c518];
+  }
+
+  .text-muted {
+    @apply text-[rgba(255,255,255,0.55)];
+  }
+
+  .text-white {
+    @apply text-[#ffffff];
   }
 
   .border-red {
-    @apply border-[#C8102E];
+    @apply border-[#dc2626];
   }
 
-  /* Gold utilities */
-  .bg-gold {
-    @apply bg-[#D4A574];
-  }
-
-  .text-gold {
-    @apply text-[#D4A574];
-  }
-
-  .border-gold {
-    @apply border-[#D4A574];
-  }
-
-  /* Navy utilities */
-  .bg-navy {
-    @apply bg-[#0F172A];
-  }
-
-  .text-navy {
-    @apply text-[#0F172A];
-  }
-
-  /* Charcoal utilities */
-  .bg-charcoal {
-    @apply bg-[#1F2937];
-  }
-
-  .text-charcoal {
-    @apply text-[#1F2937];
-  }
-
-  /* Stone utilities */
-  .bg-stone {
-    @apply bg-[#F3F4F6];
-  }
-
-  .text-stone {
-    @apply text-[#F3F4F6];
-  }
-
-  /* Accessibility - Focus states */
+  /* Focus states */
   .focus-visible {
     @apply outline-2 outline-offset-2 outline-red;
-  }
-
-  /* Hover states for links */
-  a:hover {
-    @apply underline;
-  }
-
-  /* High contrast mode support */
-  @media (prefers-contrast: more) {
-    body {
-      @apply font-semibold;
-    }
   }
 
   /* Reduced motion support */
@@ -293,103 +134,5 @@
     * {
       @apply !transition-none !animate-none;
     }
-  }
-}
-
-/* ===== COMPONENT STYLES ===== */
-@layer components {
-  /* Navigation */
-  nav {
-    @apply sticky top-0 z-40 bg-white border-b-2 border-stone;
-  }
-
-  nav a {
-    @apply text-black font-semibold hover:text-red transition-colors;
-  }
-
-  /* Footer */
-  footer {
-    @apply bg-white border-t-4 border-red;
-  }
-
-  footer a {
-    @apply text-charcoal hover:text-red transition-colors;
-  }
-
-  /* Form Elements */
-  input, textarea, select {
-    @apply border-2 border-gray-light rounded px-4 py-2 font-sans text-base;
-    @apply focus:outline-none focus:border-red focus:ring-2 focus:ring-red/20;
-  }
-
-  input::placeholder, textarea::placeholder {
-    @apply text-gray;
-  }
-
-  /* Tables */
-  table {
-    @apply w-full border-collapse;
-  }
-
-  th {
-    @apply bg-stone border-b-2 border-red px-4 py-3 text-left font-bold;
-  }
-
-  td {
-    @apply border-b border-gray-light px-4 py-3;
-  }
-
-  tr:hover {
-    @apply bg-stone;
-  }
-
-  /* Blockquote */
-  blockquote {
-    @apply border-l-4 border-red pl-4 italic text-charcoal;
-  }
-
-  /* Divider */
-  hr {
-    @apply border-t-2 border-gray-light my-8;
-  }
-}
-
-/* ===== RESPONSIVE TYPOGRAPHY ===== */
-@layer utilities {
-  @media (max-width: 640px) {
-    h1 {
-      @apply text-4xl;
-    }
-
-    h2 {
-      @apply text-3xl;
-    }
-
-    h3 {
-      @apply text-2xl;
-    }
-
-    .section-padding {
-      @apply py-12 md:py-16;
-    }
-  }
-}
-
-/* ===== PRINT STYLES ===== */
-@media print {
-  body {
-    @apply bg-white;
-  }
-
-  a {
-    @apply no-underline;
-  }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
-
-  nav, footer {
-    @apply hidden;
   }
 }

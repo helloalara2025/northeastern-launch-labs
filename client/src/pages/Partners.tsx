@@ -6,83 +6,83 @@ import { Link } from "wouter";
 
 export default function Partners() {
   return (
-    <div>
+    <div className="bg-primary min-h-screen text-white font-sans">
       <Navigation />
-      <main className="pt-24">
+      <main>
         {/* Header */}
-        <section className="section-padding bg-white border-b-4 border-[#C8102E]">
-          <div className="container">
-            <h1 className="text-7xl md:text-8xl font-black text-black mb-8 leading-tight">
-              Our Startup Partners
+        <section className="pt-40 pb-24 md:pt-56 md:pb-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.1)_1px,transparent_1px)] [background-size:24px_24px] opacity-50"></div>
+          <div className="container relative z-10">
+            <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.9]">
+              STARTUP <br />
+              <span className="text-yellow">PARTNERS.</span>
             </h1>
-            <p className="text-2xl text-black/70 leading-relaxed max-w-3xl font-light">
+            <p className="text-xl md:text-2xl text-muted leading-relaxed max-w-3xl font-medium">
               Launch Labs works with forward-thinking startups committed to providing meaningful learning experiences.
             </p>
           </div>
         </section>
 
         {/* Why Partner Section */}
-        <section className="section-padding bg-[#0F172A]">
-          <div className="container">
-            <h2 className="text-6xl md:text-7xl font-black text-white mb-16">Why Partner With Us?</h2>
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
+          <div className="absolute -right-[20%] top-[20%] w-[600px] h-[600px] rounded-full border-[1px] border-yellow opacity-10 pointer-events-none"></div>
+          
+          <div className="container relative z-10">
+            <h2 className="text-sm font-mono text-yellow uppercase tracking-widest mb-4">Benefits</h2>
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">WHY PARTNER WITH US?</h3>
+            
             <div className="grid md:grid-cols-2 gap-8">
-              <Card className="border-l-8 border-l-[#C8102E] hover:shadow-2xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <div className="icon-box mb-6">
-                    <Users className="w-7 h-7" />
-                  </div>
-                  <h3 className="text-2xl font-black text-black mb-4">Skilled Student Teams</h3>
-                  <p className="text-black/70 text-lg leading-relaxed">
-                    Access talented students from all programs—engineering, design, business, and more.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-10 hover:border-red transition-colors duration-300 group">
+                <div className="w-12 h-12 bg-primary border border-[rgba(255,255,255,0.1)] flex items-center justify-center mb-8">
+                  <Users className="w-6 h-6 text-red" />
+                </div>
+                <h4 className="text-2xl font-bold mb-4">Skilled Student Teams</h4>
+                <p className="text-muted leading-relaxed">
+                  Access talented students from all programs—engineering, design, business, and more.
+                </p>
+              </div>
 
-              <Card className="border-l-8 border-l-[#CCFF00] hover:shadow-2xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <div className="icon-box-accent mb-6">
-                    <TrendingUp className="w-7 h-7" />
-                  </div>
-                  <h3 className="text-2xl font-black text-black mb-4">Cost-Effective Development</h3>
-                  <p className="text-black/70 text-lg leading-relaxed">
-                    High-quality work for early-stage ventures at a fraction of traditional agency costs.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-10 hover:border-yellow transition-colors duration-300 group">
+                <div className="w-12 h-12 bg-primary border border-[rgba(255,255,255,0.1)] flex items-center justify-center mb-8">
+                  <TrendingUp className="w-6 h-6 text-yellow" />
+                </div>
+                <h4 className="text-2xl font-bold mb-4">Cost-Effective Development</h4>
+                <p className="text-muted leading-relaxed">
+                  High-quality work for early-stage ventures at a fraction of traditional agency costs.
+                </p>
+              </div>
 
-              <Card className="border-l-8 border-l-[#C8102E] hover:shadow-2xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <div className="icon-box mb-6">
-                    <Zap className="w-7 h-7" />
-                  </div>
-                  <h3 className="text-2xl font-black text-black mb-4">Fresh Perspectives</h3>
-                  <p className="text-black/70 text-lg leading-relaxed">
-                    Students bring emerging technologies and new approaches to your challenges.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-10 hover:border-red transition-colors duration-300 group">
+                <div className="w-12 h-12 bg-primary border border-[rgba(255,255,255,0.1)] flex items-center justify-center mb-8">
+                  <Zap className="w-6 h-6 text-red" />
+                </div>
+                <h4 className="text-2xl font-bold mb-4">Fresh Perspectives</h4>
+                <p className="text-muted leading-relaxed">
+                  Students bring emerging technologies and new approaches to your challenges.
+                </p>
+              </div>
 
-              <Card className="border-l-8 border-l-[#CCFF00] hover:shadow-2xl transition-all duration-300">
-                <CardContent className="p-10">
-                  <div className="icon-box-accent mb-6">
-                    <Clock className="w-7 h-7" />
-                  </div>
-                  <h3 className="text-2xl font-black text-black mb-4">Flexible Commitment</h3>
-                  <p className="text-black/70 text-lg leading-relaxed">
-                    Semester-long engagements with defined scope that fits your timeline.
-                  </p>
-                </CardContent>
-              </Card>
+              <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-10 hover:border-yellow transition-colors duration-300 group">
+                <div className="w-12 h-12 bg-primary border border-[rgba(255,255,255,0.1)] flex items-center justify-center mb-8">
+                  <Clock className="w-6 h-6 text-yellow" />
+                </div>
+                <h4 className="text-2xl font-bold mb-4">Flexible Commitment</h4>
+                <p className="text-muted leading-relaxed">
+                  Semester-long engagements with defined scope that fits your timeline.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
         {/* Current Partners */}
-        <section className="section-padding bg-white">
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)]">
           <div className="container">
-            <h2 className="text-6xl md:text-7xl font-black text-black mb-12">Current Startup Partners</h2>
-            <div className="bg-[#F5F5F5] border-l-8 border-l-[#C8102E] p-12 text-center">
-              <p className="text-black/70 text-2xl font-light leading-relaxed">
+            <h2 className="text-sm font-mono text-red uppercase tracking-widest mb-4">Network</h2>
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-12">CURRENT PARTNERS</h3>
+            
+            <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-12 text-center">
+              <p className="text-muted text-xl font-medium leading-relaxed">
                 Partner profiles and logos coming soon. Check back for information about our current startup collaborations.
               </p>
             </div>
@@ -90,25 +90,27 @@ export default function Partners() {
         </section>
 
         {/* How It Works */}
-        <section className="section-padding bg-[#F5F5F5]">
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)]">
           <div className="container">
-            <h2 className="text-6xl md:text-7xl font-black text-black mb-16">How It Works</h2>
-            <div className="space-y-8 max-w-4xl">
+            <h2 className="text-sm font-mono text-yellow uppercase tracking-widest mb-4">Process</h2>
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">HOW IT WORKS</h3>
+            
+            <div className="space-y-6 max-w-4xl">
               {[
-                { step: "1", title: "Initial Consultation", desc: "We discuss your project scope, timeline, and team needs to ensure the right fit." },
-                { step: "2", title: "Team Formation", desc: "We assemble a cross-functional team of students with the skills and interests for your project." },
-                { step: "3", title: "Execution", desc: "Your team works on the project with regular check-ins and support from Launch Labs leadership." },
-                { step: "4", title: "Delivery & Feedback", desc: "Project completion with final presentation and feedback session with your team." }
+                { step: "01", title: "Initial Consultation", desc: "We discuss your project scope, timeline, and team needs to ensure the right fit." },
+                { step: "02", title: "Team Formation", desc: "We assemble a cross-functional team of students with the skills and interests for your project." },
+                { step: "03", title: "Execution", desc: "Your team works on the project with regular check-ins and support from Launch Labs leadership." },
+                { step: "04", title: "Delivery & Feedback", desc: "Project completion with final presentation and feedback session with your team." }
               ].map((item, idx) => (
-                <div key={idx} className="flex gap-8">
+                <div key={idx} className="bg-secondary border border-[rgba(255,255,255,0.05)] p-8 flex flex-col md:flex-row gap-8 hover:border-red transition-colors duration-300">
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-[#C8102E] text-white font-black text-2xl flex items-center justify-center">
+                    <div className="text-4xl font-bold text-red opacity-50 font-mono">
                       {item.step}
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-black text-black mb-3">{item.title}</h3>
-                    <p className="text-black/70 text-lg leading-relaxed">{item.desc}</p>
+                    <h4 className="text-2xl font-bold mb-3">{item.title}</h4>
+                    <p className="text-muted leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               ))}
@@ -117,17 +119,19 @@ export default function Partners() {
         </section>
 
         {/* CTA */}
-        <section className="section-padding bg-[#C8102E]">
-          <div className="container text-center">
-            <h2 className="text-6xl md:text-7xl font-black text-white mb-8">Interested in Partnering?</h2>
-            <p className="text-2xl text-white/90 mb-12 max-w-2xl mx-auto font-light">
+        <section className="py-32 relative overflow-hidden">
+          <div className="absolute inset-0 bg-red"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(rgba(0,0,0,0.2)_1px,transparent_1px)] [background-size:24px_24px]"></div>
+          
+          <div className="container relative z-10 text-center max-w-4xl">
+            <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-8 text-white">
+              INTERESTED IN PARTNERING?
+            </h2>
+            <p className="text-xl md:text-2xl text-white/90 mb-12 font-medium">
               Let's talk about how Launch Labs can support your startup's growth.
             </p>
-            <Button asChild>
-              <Link href="/contact" className="bg-white text-[#C8102E] font-black px-10 py-4 hover:bg-[#F5F5F5] transition-all inline-flex items-center gap-3 uppercase tracking-wider">
-                Get in Touch
-                <ArrowRight size={20} />
-              </Link>
+            <Button asChild size="lg" className="bg-white text-black hover:bg-white/90 rounded-none text-lg px-10 py-8 font-bold tracking-widest uppercase border border-white">
+              <Link href="/contact">Get in Touch</Link>
             </Button>
           </div>
         </section>
