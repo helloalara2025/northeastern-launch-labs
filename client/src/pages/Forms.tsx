@@ -78,7 +78,7 @@ export default function Forms() {
                 </div>
                 <h4 className="text-3xl font-bold mb-4">Innovation Team Application</h4>
                 <p className="text-muted text-lg leading-relaxed mb-8">
-                  Apply to lead end-to-end projects designed to mirror real-world professional work and build your leadership skills.
+                  Pick a hard problem. Research it. Build something that didn't exist before.
                 </p>
                 <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gcLuqKOqrk2sm5o5i5IV5-Bq-_-Nf69MkfguH-cGnHlUMldMQk9PVVU4Q0xFSlhYUzVGQU1LRTJQNS4u" target="_blank" rel="noopener noreferrer" className="text-yellow hover:text-white transition-colors flex items-center gap-2 text-sm font-bold uppercase tracking-wider w-fit">
                   Apply Now <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -125,7 +125,7 @@ export default function Forms() {
               <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-8 hover:border-red transition-colors duration-300">
                 <h4 className="text-xl font-bold mb-4">What's the difference between Launch Teams and Innovation Teams?</h4>
                 <p className="text-muted leading-relaxed">
-                  Launch Teams work directly with external startups on real product development. Innovation Teams focus on internally scoped projects designed to mirror real-world professional work. Both provide hands-on experience and skill development.
+                  Launch Teams work directly with external startups on real product development. Innovation Teams focus on internally scoped projects. Both provide hands-on experience and skill development.
                 </p>
               </div>
 

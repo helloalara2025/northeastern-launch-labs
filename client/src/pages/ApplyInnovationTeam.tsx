@@ -62,7 +62,7 @@ export default function ApplyInnovationTeam() {
               Innovation Team Application
             </h1>
             <p className="text-lg text-foreground/70 leading-relaxed">
-              Apply to join an Innovation Team and lead an end-to-end project from conception to delivery. We're looking for students ready to take ownership and create portfolio-ready work.
+              Pick a hard problem. Research it. Build something that didn't exist before.
             </p>
           </div>
         </section>

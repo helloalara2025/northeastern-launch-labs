@@ -64,7 +64,7 @@ export default function Home() {
             </h1>
             
             <p className="font-sans font-normal text-[18px] text-white/55 leading-[1.6] max-w-[600px] mb-12 animate-slide-in-up" style={{ animationDelay: '200ms' }}>
-              Bring together students across disciplines to work on real-world, end-to-end projects that bridge classroom learning with practical impact.
+              Students from every major building real projects together. We bridge the gap between classroom theory and shipping actual products.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-in-up" style={{ animationDelay: '300ms' }}>

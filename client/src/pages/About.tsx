@@ -23,7 +23,7 @@ export default function About() {
               <span className="text-yellow">BUILDERS.</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted leading-relaxed max-w-3xl font-medium">
-              Northeastern Launch Labs brings together students across disciplines to work on real-world, end-to-end projects that bridge classroom learning with practical impact.
+              Students from every major building real projects together. We bridge the gap between classroom theory and shipping actual products.
             </p>
           </div>
         </section>
@@ -38,7 +38,7 @@ export default function About() {
               </div>
               <div className="md:col-span-8">
                 <p className="text-2xl md:text-3xl text-white leading-relaxed mb-8 font-medium">
-                  To empower students to develop leadership, strategic thinking, and execution skills through real-world project work with startups and internally scoped ventures.
+                  To give students the space to build real projects, solve hard problems, and ship actual products before they graduate.
                 </p>
                 <p className="text-xl text-muted leading-relaxed">
                   We believe the best learning happens when students tackle complex, ambiguous problems alongside peers from different disciplines, guided by experienced mentors and industry leaders.

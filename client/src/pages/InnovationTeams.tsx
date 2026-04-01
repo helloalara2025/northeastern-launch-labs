@@ -20,7 +20,7 @@ export default function InnovationTeams() {
               INNOVATION TEAMS.
             </h1>
             <p className="font-sans font-normal text-[18px] text-white/55 leading-[1.6] max-w-[720px] animate-slide-in-up" style={{ animationDelay: '200ms' }}>
-              Lead end-to-end projects designed to mirror real-world professional work and develop your leadership skills across diverse domains.
+              Pick a hard problem. Research it. Build something that didn't exist before.
             </p>
           </div>
         </section>
@@ -36,7 +36,7 @@ export default function InnovationTeams() {
                 SEE WHAT WE'VE BUILT
               </h3>
               <p className="font-sans font-normal text-[18px] text-white/70 leading-[1.6] max-w-2xl mx-auto mb-10">
-                Explore the innovative, end-to-end projects our teams have developed from scratch across diverse domains.
+                Explore the projects our teams have developed from scratch.
               </p>
               
               <Link href="/portfolio" className="inline-flex items-center gap-3 bg-yellow text-black font-sans font-bold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-lg hover:bg-yellow/90 transition-all duration-200 hover:-translate-y-[1px]">
@@ -58,7 +58,7 @@ export default function InnovationTeams() {
             <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
               <div className="border-l-[3px] border-red pl-6 py-2 flex flex-col">
                 <p className="font-sans font-normal text-[18px] text-white/70 leading-[1.6]">
-                  Innovation Teams tackle internally scoped projects designed to mirror real-world professional work. From problem definition through delivery, team members lead projects end-to-end, developing leadership, strategic thinking, and execution skills.
+                  Innovation Teams tackle internally scoped projects. From problem definition through delivery, team members lead projects, developing strategic thinking and execution skills.
                 </p>
               </div>
               <div className="border-l-[3px] border-red pl-6 py-2 flex flex-col">

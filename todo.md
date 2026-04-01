@@ -10,5 +10,9 @@
 - [x] Find and replace "Operations" references in `Leadership.tsx`.
 - [x] Find and replace "Operations" references in other pages.
 - [x] Remove individual emails from `Leadership.tsx` and replace them with the general NU Launch Labs email.
-- [ ] Remove the Partners section from Navigation and routing.
-- [ ] Update `Portfolio.tsx` with the provided teams, ensuring the design matches the sharp, dark-mode builder aesthetic.
+- [x] Remove the Partners section from Navigation and routing.
+- [x] Update `Portfolio.tsx` with the provided teams, ensuring the design matches the sharp, dark-mode builder aesthetic.
+- [ ] Implement Content & Copy Cleanup (remove corporate jargon, update announcement banner).
+- [ ] Implement Brand Textures (Dot Grid, Red Arcs) globally.
+- [ ] Implement Scroll Animations and Hover States.
+- [ ] Implement SEO and Meta Tags.
