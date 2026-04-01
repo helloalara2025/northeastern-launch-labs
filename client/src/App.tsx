@@ -5,6 +5,7 @@ import LaunchTeams from "./pages/LaunchTeams";
 import InnovationTeams from "./pages/InnovationTeams";
 import Leadership from "./pages/Leadership";
 import Events from "./pages/Events";
+import Portfolio from "./pages/Portfolio";
 import Forms from "./pages/Forms";
 import Partners from "./pages/Partners";
 import ContactPage from "./pages/ContactPage";
@@ -23,6 +24,7 @@ export default function App() {
       <Route path="/innovation-teams" component={InnovationTeams} />
       <Route path="/leadership" component={Leadership} />
       <Route path="/events" component={Events} />
+      <Route path="/portfolio" component={Portfolio} />
       <Route path="/forms" component={Forms} />
       <Route path="/partners" component={Partners} />
       <Route path="/contact" component={ContactPage} />

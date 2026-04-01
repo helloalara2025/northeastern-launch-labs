@@ -5,47 +5,6 @@ import { Link } from "wouter";
 import { ArrowRight, Briefcase, TrendingUp, CheckCircle } from "lucide-react";
 
 export default function LaunchTeams() {
-  const currentPartners = [
-    {
-      id: 1,
-      title: "FinTech Market Dynamics",
-      theme: "Finance",
-      status: "Discovery",
-      focus: "Competitor mapping & API research",
-      bullets: [
-        "Mapping competitive landscape in payment processing",
-        "Researching third-party API integrations",
-        "Analyzing market trends and opportunities"
-      ]
-    },
-    {
-      id: 2,
-      title: "Healthcare Systems",
-      theme: "Healthcare",
-      status: "Coming Soon",
-      focus: "Patient data management",
-      bullets: [
-        "Building secure data infrastructure",
-        "Designing user-centric interfaces",
-        "Implementing compliance frameworks"
-      ],
-      isPlaceholder: true
-    },
-    {
-      id: 3,
-      title: "E-commerce Optimization",
-      theme: "Retail",
-      status: "Coming Soon",
-      focus: "Conversion rate optimization",
-      bullets: [
-        "Analyzing user behavior patterns",
-        "A/B testing checkout flows",
-        "Implementing personalization engines"
-      ],
-      isPlaceholder: true
-    }
-  ];
-
   return (
     <div className="bg-primary min-h-screen text-white font-sans">
       <Navigation />
@@ -100,39 +59,23 @@ export default function LaunchTeams() {
           </div>
         </section>
 
-        {/* Current Partners */}
-        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)]">
-          <div className="container">
-            <div className="mb-16">
-              <h2 className="font-mono text-[13px] text-red uppercase tracking-[0.1em]">THE PORTFOLIO</h2>
-            </div>
-            
-            <div className="grid md:grid-cols-3 gap-6">
-              {currentPartners.map((partner) => (
-                <div 
-                  key={partner.id}
-                  className="bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.08)] rounded-[12px] p-8 flex flex-col"
-                >
-                  <div className="flex items-start justify-between mb-6">
-                    <h4 className="font-sans font-bold text-[24px] text-white flex-1 uppercase">{partner.title}</h4>
-                    <span className={`font-mono text-[11px] uppercase px-3 py-1 border border-[rgba(255,255,255,0.1)] rounded-full ${partner.isPlaceholder ? 'text-yellow' : 'text-red'}`}>
-                      {partner.status}
-                    </span>
-                  </div>
-                  
-                  <p className={`font-mono text-[13px] text-${partner.isPlaceholder ? 'yellow' : 'red'} uppercase tracking-[0.1em] mb-4`}>{partner.theme}</p>
-                  <p className="font-sans font-semibold text-[16px] text-white mb-6">{partner.focus}</p>
-                  
-                  <ul className="space-y-3 mb-8 flex-grow">
-                    {partner.bullets.map((bullet, idx) => (
-                      <li key={idx} className="flex gap-3 font-sans font-normal text-[14px] text-white/70 leading-[1.6]">
-                        <span className={`text-${partner.isPlaceholder ? 'yellow' : 'red'}`}>▸</span>
-                        <span>{bullet}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+        {/* Portfolio Link Section */}
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
+          <div className="container relative z-10">
+            <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-12 md:p-16 rounded-xl text-center relative group hover:border-red transition-colors duration-300">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-red opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
+              
+              <h2 className="font-mono text-[13px] text-red uppercase tracking-[0.1em] mb-6">OUR WORK</h2>
+              <h3 className="font-sans font-extrabold text-[32px] md:text-[48px] uppercase text-white leading-[1.1] tracking-[-0.02em] mb-8">
+                SEE WHAT WE'VE BUILT
+              </h3>
+              <p className="font-sans font-normal text-[18px] text-white/70 leading-[1.6] max-w-2xl mx-auto mb-10">
+                Explore the real-world solutions our Launch Teams have developed in partnership with early-stage startups.
+              </p>
+              
+              <Link href="/portfolio" className="inline-flex items-center gap-3 bg-red text-white font-sans font-semibold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-lg hover:bg-red-dark transition-all duration-200 hover:-translate-y-[1px]">
+                VIEW PORTFOLIO <ArrowRight size={18} />
+              </Link>
             </div>
           </div>
         </section>

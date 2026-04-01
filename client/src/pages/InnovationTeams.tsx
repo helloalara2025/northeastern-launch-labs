@@ -5,73 +5,6 @@ import { Link } from "wouter";
 import { ArrowRight, Code, Zap, Target, Users, CheckCircle, Star } from "lucide-react";
 
 export default function InnovationTeams() {
-  const ventureLab = [
-    {
-      id: 6,
-      title: "AI/ML Pipeline Security",
-      subtitle: "End-to-End Protection for the Modern AI Lifecycle",
-      theme: "Security",
-      status: "Active",
-      description: "Building a comprehensive security framework that protects AI and machine learning systems across their entire lifecycle—from training data validation to real-time inference monitoring and post-deployment threat detection. The team is developing an adversarial robustness testing suite compatible with TensorFlow, PyTorch, and scikit-learn, paired with cryptographic data integrity verification, role-based model access control with full audit logging, and a real-time monitoring layer capable of detecting model extraction, membership inference, and adversarial input attacks with under 10ms latency overhead. The MVP focuses on a working adversarial defense and inference monitoring prototype targeting a single ML framework, with compliance reporting against one regulatory standard and a lightweight security dashboard demonstrating real-time anomaly detection."
-    },
-    {
-      id: 7,
-      title: "Indoor Navigation",
-      subtitle: "Visual Intelligence Without Infrastructure",
-      theme: "Computer Vision",
-      status: "Active",
-      description: "Developing a mobile indoor navigation solution that guides users to their destination using only their phone's camera—eliminating the need for WiFi, Bluetooth beacons, or any installed infrastructure. The team is building a prototype that combines landmark-based visual localization with digitized floor plan pathfinding to deliver turn-by-turn directions inside buildings. The MVP is a single-building prototype using OpenCV-based image matching against pre-captured landmark checkpoints, paired with A* pathfinding on a manually digitized floor plan graph. The end goal is a working demo where users can select a room, confirm their location via landmark recognition, and receive step-by-step visual directions to their destination."
-    },
-    {
-      id: 11,
-      title: "Document Intelligence",
-      subtitle: "Visual Reasoning Beyond OCR",
-      theme: "FinTech",
-      status: "Active",
-      description: "Developing an autonomous document extraction system using Vision-Language Models to transform how loan documents are processed—moving beyond brittle OCR that fails on non-standard layouts. The team is building a prototype that combines VLM-based field extraction with basic anomaly detection to automate the pre-underwriting verification layer. The MVP focuses on a single document type (synthetic pay stubs) with targeted extraction of 6-8 key fields, basic consistency validation, and accuracy benchmarking against traditional OCR baselines. The end goal is a working demo where users can upload a pay stub, receive structured field extractions with confidence scores, and see flagged anomalies—validating that VLMs can outperform rule-based OCR on unstructured financial documents."
-    },
-    {
-      id: 12,
-      title: "Roommate Matching",
-      subtitle: "Data-Driven Compatibility for Student Housing",
-      theme: "Social",
-      status: "Active",
-      description: "Developing an intelligent roommate matching platform that helps students find compatible living partners based on preferences, habits, lifestyle, and values—transforming a traditionally fragmented and stressful process into a structured, data-driven experience. The team is building a web-based system featuring user profile creation, preference input, and a matching workflow that compares users across compatibility factors including cleanliness, schedule, budget, and lifestyle. The MVP includes a centralized database for storing user profiles and match criteria, a compatibility scoring system using weighted preference comparison, and a browsing interface for viewing and filtering potential matches. The end goal is a working platform where students can create profiles, input their living preferences, and discover compatible roommates ranked by data-driven compatibility scores."
-    },
-    {
-      id: 16,
-      title: "Geospatial Analysis for Climate",
-      subtitle: "Community-Driven Climate Resilience Platform",
-      theme: "Impact",
-      status: "Active",
-      description: "Building an open-source platform that empowers localized communities of citizen scientists to conduct rigorous geospatial analyses exploring sustainable urban development in response to interconnected social and environmental crises. The team is developing a pedagogical research environment where neighborhoods, schools, and local organizations can load curated datasets from public portals, Google Earth Engine exports, and community-collected sources, maintain transparent public manifests, and run contextualized spatial and statistical analyses—without requiring technical expertise. The initial pilot focuses on replicating a 2023 study evaluating the cooling effects of urban parks on rising urban temperatures, modularizing the methodology into reusable open-source tools. The end goal is a working platform where a participating community can upload local environmental data, run guided geospatial analyses on park cooling effects, and produce honest, contextualized insights to inform priorities for municipal ecology and development."
-    },
-    {
-      id: 17,
-      title: "Environment-Aware Fitness Routing",
-      subtitle: "Safe Running Through Real-Time Hazard Intelligence",
-      theme: "HealthTech",
-      status: "Active",
-      description: "Developing a mobile fitness routing app that generates safe running and walking routes by incorporating real-time environmental awareness—predicting ice and snow hazards, routing around poor air quality zones, and ensuring users stay within reach of transit stops and emergency bailout points. The team is building a Boston-focused prototype that combines a heuristic ice risk model using OpenWeatherMap freeze-thaw cycle data, building shadow approximation from OpenStreetMap footprints and solar geometry, and road-type plowing priority factors, with EPA AirNow air quality overlays and MBTA GTFS transit proximity constraints. A crowdsourced validation layer allows users to drop pins tagging sidewalk conditions as icy, clear, or unplowed, with optional photo uploads. The end goal is a working demo where users can set a start point and desired distance, receive a route that actively avoids high ice-risk segments and poor air quality while staying near transit, and contribute real-time sidewalk condition reports."
-    },
-    {
-      id: 18,
-      title: "AI-Driven Cybersecurity Platform",
-      subtitle: "Risk & Governance for Organizations",
-      theme: "Security",
-      status: "Active",
-      description: "Building an AI-powered cybersecurity risk and governance platform that helps organizations identify, assess, and manage cyber risks through structured compliance frameworks and intelligent dashboards. The team is developing a system centered on the NIST Cybersecurity Framework, featuring a guided questionnaire-based risk assessment engine mapped to NIST's five core functions—Identify, Protect, Detect, Respond, and Recover—paired with a weighted scoring algorithm that classifies organizational risk across maturity levels and generates AI-driven remediation recommendations. The MVP targets the top 20–25 NIST subcategories most relevant to SMEs, with rule-based risk scoring as the foundation and a focused set of 2–3 incident response plan templates. The end goal is a working platform where users can complete a risk assessment, view their compliance posture on an executive-ready dashboard with heatmaps and gap analysis, receive tailored AI-generated security recommendations, and generate customized incident response plans."
-    },
-    {
-      id: 19,
-      title: "Campus Navigation",
-      subtitle: "Interactive Wayfinding for Northeastern",
-      theme: "EdTech",
-      status: "Active",
-      description: "Developing a mobile campus map designed to help students and staff easily locate and navigate places within campus buildings. The team is building a cross-platform React Native application featuring interactive SVG-based floor plans with pinch-to-zoom navigation, a searchable room directory with category filtering, and tap-to-view room detail cards—all focused on a single building as a proof of concept. The MVP includes interactive floor plan rendering with floor switching, a searchable directory powered by a Firebase-backed room metadata database, and a static 'You Are Here' entry-point selector that orients users without requiring any installed infrastructure. The end goal is a working demo where a user can open the app, search for any room by name, number, or category, locate it on the correct floor plan, and view relevant details—all within seconds."
-    }
-  ];
-
   return (
     <div className="bg-primary min-h-screen text-white font-sans">
       <Navigation />
@@ -92,40 +25,23 @@ export default function InnovationTeams() {
           </div>
         </section>
 
-        {/* Our 8 Teams */}
-        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)]">
-          <div className="container">
-            <div className="mb-16">
-              <h2 className="font-mono text-[13px] text-yellow uppercase tracking-[0.1em]">THE PORTFOLIO</h2>
-            </div>
-            
-            <div className="space-y-6">
-              {ventureLab.map((project) => (
-                <div 
-                  key={project.id}
-                  className="bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.08)] rounded-[12px] p-8 md:p-12 flex flex-col"
-                >
-                  <div className="flex flex-col md:flex-row md:items-center gap-4 mb-6">
-                    <div className="flex items-center gap-3">
-                      <span className="font-mono text-[13px] text-yellow uppercase tracking-[0.1em]">{project.theme}</span>
-                    </div>
-                    <span className="font-mono text-[11px] uppercase px-3 py-1 border border-[rgba(255,255,255,0.1)] rounded-full text-white md:ml-auto w-fit">
-                      {project.status}
-                    </span>
-                  </div>
-                  
-                  <h4 className="font-sans font-bold text-[32px] md:text-[40px] text-white mb-2 uppercase">{project.title}</h4>
-                  <p className="font-sans font-semibold text-[20px] text-white/80 mb-8">{project.subtitle}</p>
-                  
-                  <p className="font-sans font-normal text-[16px] text-white/70 leading-[1.6] mb-8 max-w-4xl">
-                    {project.description}
-                  </p>
-
-                  <Link href="/forms" className="font-mono text-[13px] text-yellow uppercase tracking-[0.1em] hover:text-white transition-colors flex items-center gap-2 w-fit">
-                    LEARN MORE <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </div>
-              ))}
+        {/* Portfolio Link Section */}
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
+          <div className="container relative z-10">
+            <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-12 md:p-16 rounded-xl text-center relative group hover:border-yellow transition-colors duration-300">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-yellow opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
+              
+              <h2 className="font-mono text-[13px] text-yellow uppercase tracking-[0.1em] mb-6">OUR WORK</h2>
+              <h3 className="font-sans font-extrabold text-[32px] md:text-[48px] uppercase text-white leading-[1.1] tracking-[-0.02em] mb-8">
+                SEE WHAT WE'VE BUILT
+              </h3>
+              <p className="font-sans font-normal text-[18px] text-white/70 leading-[1.6] max-w-2xl mx-auto mb-10">
+                Explore the innovative, end-to-end projects our teams have developed from scratch across diverse domains.
+              </p>
+              
+              <Link href="/portfolio" className="inline-flex items-center gap-3 bg-yellow text-black font-sans font-bold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-lg hover:bg-yellow/90 transition-all duration-200 hover:-translate-y-[1px]">
+                VIEW PORTFOLIO <ArrowRight size={18} />
+              </Link>
             </div>
           </div>
         </section>
