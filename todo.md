@@ -7,5 +7,8 @@
 - [x] Simplify the main headers in `Leadership.tsx`.
 - [x] Check and fix all links across the site.
 - [x] Review and enforce design consistency (colors, typography, spacing).
-- [ ] Find and replace "Operations" references in `Leadership.tsx`.
-- [ ] Find and replace "Operations" references in other pages.
+- [x] Find and replace "Operations" references in `Leadership.tsx`.
+- [x] Find and replace "Operations" references in other pages.
+- [x] Remove individual emails from `Leadership.tsx` and replace them with the general NU Launch Labs email.
+- [ ] Remove the Partners section from Navigation and routing.
+- [ ] Update `Portfolio.tsx` with the provided teams, ensuring the design matches the sharp, dark-mode builder aesthetic.

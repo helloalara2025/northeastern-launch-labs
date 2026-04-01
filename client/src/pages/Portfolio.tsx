@@ -4,24 +4,59 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 export default function Portfolio() {
   const projects = [
     {
-      title: "Project Alpha",
-      description: "A comprehensive platform for managing student organization resources and events.",
-      tags: ["React", "Node.js", "PostgreSQL"],
+      title: "Team 6: AI/ML Pipeline Security",
+      description: "End-to-End Protection for the Modern AI Lifecycle. Building a comprehensive security framework that protects AI and machine learning systems across their entire lifecycle—from training data validation to real-time inference monitoring and post-deployment threat detection.",
+      tags: ["AI/ML", "Security", "TensorFlow", "PyTorch"],
       status: "Active",
       link: "#"
     },
     {
-      title: "Project Beta",
-      description: "An innovative mobile application designed to help students navigate campus facilities.",
-      tags: ["React Native", "Firebase", "Maps API"],
-      status: "In Development",
+      title: "Team 7: Indoor Navigation",
+      description: "Visual Intelligence Without Infrastructure. Developing a mobile indoor navigation solution that guides users to their destination using only their phone's camera—eliminating the need for WiFi, Bluetooth beacons, or any installed infrastructure.",
+      tags: ["Mobile", "Computer Vision", "OpenCV"],
+      status: "Active",
       link: "#"
     },
     {
-      title: "Project Gamma",
-      description: "A data analytics dashboard for tracking sustainability metrics across university buildings.",
-      tags: ["Python", "Django", "D3.js"],
-      status: "Completed",
+      title: "Team 11: Document Intelligence",
+      description: "Visual Reasoning Beyond OCR. Developing an autonomous document extraction system using Vision-Language Models to transform how loan documents are processed—moving beyond brittle OCR that fails on non-standard layouts.",
+      tags: ["VLM", "OCR", "Document Processing"],
+      status: "Active",
+      link: "#"
+    },
+    {
+      title: "Team 12: Roommate Matching",
+      description: "Data-Driven Compatibility for Student Housing. Developing an intelligent roommate matching platform that helps students find compatible living partners based on preferences, habits, lifestyle, and values.",
+      tags: ["Web", "Data Analytics", "Matching Algorithm"],
+      status: "Active",
+      link: "#"
+    },
+    {
+      title: "Team 16: Geospatial Analysis",
+      description: "Community-Driven Geospatial Analysis for Climate Resilience. Building an open-source platform that empowers localized communities of citizen scientists to conduct rigorous geospatial analyses exploring sustainable urban development.",
+      tags: ["Open Source", "Geospatial", "Climate Tech"],
+      status: "Active",
+      link: "#"
+    },
+    {
+      title: "Team 17: Environment-Aware Fitness Routing",
+      description: "Safe Running Through Real-Time Hazard Intelligence. Developing a mobile fitness routing app that generates safe running and walking routes by incorporating real-time environmental awareness.",
+      tags: ["Mobile", "Routing API", "Crowdsourcing"],
+      status: "Active",
+      link: "#"
+    },
+    {
+      title: "Team 18: AI-Driven Cybersecurity",
+      description: "AI-Driven Cybersecurity Risk & Governance Platform. Building an AI-powered cybersecurity risk and governance platform that helps organizations identify, assess, and manage cyber risks through structured compliance frameworks.",
+      tags: ["AI", "Cybersecurity", "Compliance"],
+      status: "Active",
+      link: "#"
+    },
+    {
+      title: "Team 19: Campus Navigation",
+      description: "Interactive Wayfinding for Northeastern. Developing a mobile campus map designed to help students and staff easily locate and navigate places within campus buildings.",
+      tags: ["React Native", "Firebase", "Wayfinding"],
+      status: "Active",
       link: "#"
     }
   ];
