@@ -1,8 +1,8 @@
 # Todo
 
-- [ ] Extract exact copy from `null-manus-kit-v2.jsx`
-- [ ] Rewrite Homepage copy (Hero, What We Do, Stats, CTA)
-- [ ] Rewrite About Page copy (Hero, The Gap, Founders, Org Structure, Partners)
-- [ ] Rewrite Teams Page copy (Launch Teams, Innovation Teams)
-- [ ] Rewrite remaining pages to match the brand voice
-- [ ] Verify all copy against the "Voice & Copy Rules"
+- [ ] Retrieve original copy from previous checkpoint (before the brand system rewrite)
+- [ ] Restore original copy to Home.tsx while keeping the dark-mode design
+- [ ] Restore original copy to About.tsx while keeping the dark-mode design
+- [ ] Restore original copy to LaunchTeams.tsx while keeping the dark-mode design
+- [ ] Restore original copy to InnovationTeams.tsx while keeping the dark-mode design
+- [ ] Verify all pages look polished and are ready for publishing

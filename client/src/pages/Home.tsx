@@ -78,83 +78,120 @@ export default function Home() {
           </div>
         </section>
 
-        {/* What We Do Section */}
-        <section className="py-24 md:py-32 bg-[#0f1629] border-b border-[rgba(255,255,255,0.1)] relative">
+        {/* Two Paths Section */}
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)] relative">
           <div className="container">
-            <div className="mb-16">
-              <h2 className="font-mono text-[13px] text-red uppercase tracking-[0.1em]">WHAT WE DO</h2>
+            <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+              <div>
+                <h2 className="text-sm font-mono text-red uppercase tracking-widest mb-4">The Model</h2>
+                <h3 className="text-4xl md:text-5xl font-bold tracking-tight">TWO PATHS TO IMPACT</h3>
+              </div>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-8">
-              {/* Launch Teams Block */}
-              <div className="border-l-[3px] border-red pl-6 py-2">
-                <h4 className="font-sans font-bold text-[24px] text-white mb-4 uppercase">LAUNCH TEAMS</h4>
-                <p className="font-sans font-normal text-[16px] text-white/70 leading-[1.6]">
-                  Take an idea from zero to shipped product in one semester. Real deadlines, real users, real stakes.
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Launch Teams Card */}
+              <div className="group bg-secondary border border-[rgba(255,255,255,0.05)] p-10 hover:border-red transition-colors duration-300 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-red opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
+                <Briefcase className="w-8 h-8 text-red mb-8" />
+                <h4 className="text-2xl font-bold mb-4">Launch Teams</h4>
+                <p className="text-muted text-lg mb-12 leading-relaxed">
+                  Partner directly with early-stage startups. Build and ship real features for actual users. Work directly with founders.
                 </p>
+                <div className="flex items-center justify-between mt-auto">
+                  <span className="text-xs font-mono text-muted uppercase">5+ Active Partners</span>
+                  <Link href="/launch-teams" className="text-red hover:text-white transition-colors flex items-center gap-2 text-sm font-bold uppercase tracking-wider">
+                    Explore <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
               </div>
 
-              {/* Innovation Teams Block */}
-              <div className="border-l-[3px] border-red pl-6 py-2">
-                <h4 className="font-sans font-bold text-[24px] text-white mb-4 uppercase">INNOVATION TEAMS</h4>
-                <p className="font-sans font-normal text-[16px] text-white/70 leading-[1.6]">
-                  Explore emerging tech, run experiments, and publish what you learn. Research without the red tape.
+              {/* Innovation Teams Card */}
+              <div className="group bg-secondary border border-[rgba(255,255,255,0.05)] p-10 hover:border-yellow transition-colors duration-300 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-yellow opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
+                <Lightbulb className="w-8 h-8 text-yellow mb-8" />
+                <h4 className="text-2xl font-bold mb-4">Innovation Teams</h4>
+                <p className="text-muted text-lg mb-12 leading-relaxed">
+                  Internal ventures built from scratch. Own the entire product lifecycle from problem definition to deployment.
+                </p>
+                <div className="flex items-center justify-between mt-auto">
+                  <span className="text-xs font-mono text-muted uppercase">8 Internal Ventures</span>
+                  <Link href="/innovation-teams" className="text-yellow hover:text-white transition-colors flex items-center gap-2 text-sm font-bold uppercase tracking-wider">
+                    Explore <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* For Builders Section */}
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
+          <div className="absolute -left-[20%] top-[20%] w-[600px] h-[600px] rounded-full border-[1px] border-yellow opacity-10 pointer-events-none"></div>
+          
+          <div className="container relative z-10">
+            <h2 className="text-sm font-mono text-yellow uppercase tracking-widest mb-4">The Value</h2>
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">FOR BUILDERS, BY BUILDERS</h3>
+            
+            <div className="grid md:grid-cols-3 gap-px bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.1)]">
+              <div className="bg-primary p-10 group hover:bg-secondary transition-colors duration-300">
+                <Users className="w-8 h-8 text-white mb-8 group-hover:text-red transition-colors" />
+                <h4 className="text-xl font-bold mb-4">Elite Network</h4>
+                <p className="text-muted leading-relaxed">
+                  Surround yourself with the most ambitious engineers, designers, and operators at Northeastern.
                 </p>
               </div>
-
-              {/* Open To All Block */}
-              <div className="border-l-[3px] border-red pl-6 py-2">
-                <h4 className="font-sans font-bold text-[24px] text-white mb-4 uppercase">OPEN TO ALL</h4>
-                <p className="font-sans font-normal text-[16px] text-white/70 leading-[1.6]">
-                  CS, design, business, engineering — if you're a Northeastern student, you're in. No application.
+              
+              <div className="bg-primary p-10 group hover:bg-secondary transition-colors duration-300">
+                <Zap className="w-8 h-8 text-white mb-8 group-hover:text-yellow transition-colors" />
+                <h4 className="text-xl font-bold mb-4">Real Reps</h4>
+                <p className="text-muted leading-relaxed">
+                  Stop building toy projects. Ship production code, conduct real user interviews, and manage actual stakeholders.
+                </p>
+              </div>
+              
+              <div className="bg-primary p-10 group hover:bg-secondary transition-colors duration-300">
+                <Briefcase className="w-8 h-8 text-white mb-8 group-hover:text-red transition-colors" />
+                <h4 className="text-xl font-bold mb-4">Career Velocity</h4>
+                <p className="text-muted leading-relaxed">
+                  Our alumni go on to top tech companies, prestigious accelerators, and found their own backed startups.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Stats Section */}
-        <section className="py-24 md:py-32 bg-[#0d0d0d] border-b border-[rgba(255,255,255,0.1)]">
+        {/* Project Carousel */}
+        <ProjectCarousel />
+
+        {/* Instagram Feed */}
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)]">
           <div className="container">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-4 text-center">
-              <div>
-                <div className="font-sans font-extrabold text-[40px] md:text-[56px] text-white mb-2">50+</div>
-                <div className="font-mono text-[11px] text-red uppercase tracking-[0.1em]">MEMBERS</div>
-              </div>
-              <div>
-                <div className="font-sans font-extrabold text-[40px] md:text-[56px] text-white mb-2">8</div>
-                <div className="font-mono text-[11px] text-red uppercase tracking-[0.1em]">ACTIVE TEAMS</div>
-              </div>
-              <div>
-                <div className="font-sans font-extrabold text-[40px] md:text-[56px] text-white mb-2">1</div>
-                <div className="font-mono text-[11px] text-red uppercase tracking-[0.1em]">RAYTHEON PARTNERSHIP</div>
-              </div>
-              <div>
-                <div className="font-sans font-extrabold text-[40px] md:text-[56px] text-white mb-2">0</div>
-                <div className="font-mono text-[11px] text-red uppercase tracking-[0.1em]">APPLICATIONS REQUIRED</div>
-              </div>
-            </div>
+            <h2 className="text-sm font-mono text-red uppercase tracking-widest mb-4">Community</h2>
+            <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">LATEST FROM INSTAGRAM</h3>
+            <InstagramFeed />
           </div>
         </section>
 
         {/* CTA Section */}
-        <section className="py-32 relative overflow-hidden bg-red">
-          <div className="absolute inset-0 bg-[radial-gradient(rgba(0,0,0,0.15)_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        <section className="py-32 relative overflow-hidden">
+          <div className="absolute inset-0 bg-red"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(rgba(0,0,0,0.2)_1px,transparent_1px)] [background-size:24px_24px]"></div>
           
-          <div className="container relative z-10 flex flex-col items-center text-center">
-            <span className="font-mono text-[11px] text-white/80 uppercase tracking-[0.25em] mb-6 block">NU LAUNCH LABS • SPRING 2026</span>
-            
-            <h2 className="font-sans font-extrabold text-[32px] md:text-[42px] uppercase text-white leading-[1.1] tracking-[-0.02em] mb-6 max-w-3xl">
-              STOP THINKING ABOUT IT. START BUILDING.
+          <div className="container relative z-10 text-center max-w-4xl">
+            <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-8 text-white">
+              READY TO BUILD?
             </h2>
-            
-            <p className="font-sans font-normal text-[18px] text-white/85 leading-[1.6] mb-10">
-              Join the org. Pick a team. Ship something real.
+            <p className="text-xl md:text-2xl text-white/90 mb-12 font-medium">
+              Applications are open for the upcoming cohort. Join the most ambitious builder community at Northeastern.
             </p>
-            
-            <Link href="/forms" className="bg-white text-red font-sans font-semibold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-200 hover:-translate-y-[1px]">
-              JOIN NULL
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/forms" className="inline-flex items-center justify-center bg-black text-white hover:bg-black/80 rounded-none text-lg px-10 py-8 font-bold tracking-widest uppercase border border-black transition-colors">
+                Apply Now
+              </Link>
+              <Link href="/contact" className="inline-flex items-center justify-center bg-transparent border-2 border-white text-white hover:bg-white hover:text-red rounded-none text-lg px-10 py-8 font-bold tracking-widest uppercase transition-colors">
+                Get in Touch
+              </Link>
+            </div>
           </div>
         </section>
       </main>
