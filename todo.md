@@ -20,5 +20,8 @@
 - [x] Review and tone down similar language across other pages.
 - [x] Remove the Instagram section from `Home.tsx`.
 - [x] Improve the featured projects section (`ProjectCarousel.tsx`).
-- [ ] Fix TypeScript errors in `tooltip.tsx`.
-- [ ] Perform final visual and functional review.
+- [x] Fix TypeScript errors in `tooltip.tsx`.
+- [x] Perform final visual and functional review.
+- [ ] Fix alignment in Navigation and Hero sections.
+- [ ] Fix alignment in Portfolio and Teams pages.
+- [ ] Fix alignment in Forms and Contact pages.

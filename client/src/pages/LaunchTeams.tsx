@@ -34,7 +34,7 @@ export default function LaunchTeams() {
               <h2 className="font-mono text-[13px] text-yellow uppercase tracking-[0.1em]">THE WORK</h2>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
               <div className="border-l-[3px] border-yellow pl-6 py-2 flex flex-col">
                 <h4 className="font-sans font-bold text-[24px] text-white mb-4 uppercase">PRODUCT DEVELOPMENT</h4>
                 <p className="font-sans font-normal text-[16px] text-white/70 leading-[1.6] flex-grow">
@@ -89,7 +89,7 @@ export default function LaunchTeams() {
               <h2 className="font-mono text-[13px] text-red uppercase tracking-[0.1em]">THE PROCESS</h2>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="grid md:grid-cols-3 gap-8 lg:gap-12 mb-16">
               {[
                 { step: "01", title: "EXPRESS INTEREST", desc: "Fill out the interest form to learn more about Launch Teams" },
                 { step: "02", title: "APPLICATION", desc: "Complete the Launch Team application with your background and interests" },

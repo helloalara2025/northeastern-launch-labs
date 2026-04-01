@@ -41,7 +41,7 @@ export default function Navigation() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8 flex-1 justify-center">
+        <div className="hidden lg:flex items-center gap-6 xl:gap-8 flex-1 justify-center">
           <Link href="/about" className="font-mono text-[12px] font-medium text-white/60 hover:text-white transition-colors duration-200 relative group uppercase tracking-[0.15em]">
             About
             <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-red group-hover:w-full transition-all duration-300"></span>
@@ -85,7 +85,7 @@ export default function Navigation() {
           </Link>
         </div>
 
-        <div className="hidden md:flex items-center gap-3 flex-shrink-0">
+        <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
           <Link href="/forms" className="bg-red text-white font-sans font-semibold text-[13px] uppercase tracking-[0.1em] px-8 py-3 rounded-lg hover:bg-red-dark transition-all duration-200 hover:-translate-y-[1px]">
             JOIN NULL
           </Link>
@@ -93,7 +93,7 @@ export default function Navigation() {
 
         {/* Mobile Menu Toggle */}
         <button 
-          className="md:hidden p-2 text-white hover:text-red transition-all duration-200"
+          className="lg:hidden p-2 text-white hover:text-red transition-all duration-200"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -103,7 +103,7 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 top-16 bg-primary z-40 flex flex-col p-6 border-t border-[rgba(255,255,255,0.08)]">
+        <div className="lg:hidden fixed inset-0 top-16 bg-primary z-40 flex flex-col p-6 border-t border-[rgba(255,255,255,0.08)]">
           <div className="flex flex-col gap-6 mt-8">
             <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="font-mono text-[14px] font-medium text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-[0.15em]">
               About

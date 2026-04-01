@@ -55,7 +55,7 @@ export default function InnovationTeams() {
               <h2 className="font-mono text-[13px] text-red uppercase tracking-[0.1em]">THE APPROACH</h2>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
+            <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl">
               <div className="border-l-[3px] border-red pl-6 py-2 flex flex-col">
                 <p className="font-sans font-normal text-[18px] text-white/70 leading-[1.6]">
                   Innovation Teams tackle internally scoped projects. From problem definition through delivery, team members lead projects, developing strategic thinking and execution skills.
@@ -77,7 +77,7 @@ export default function InnovationTeams() {
               <h2 className="font-mono text-[13px] text-yellow uppercase tracking-[0.1em]">THE VALUE</h2>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
               {[
                 { title: "END-TO-END LEADERSHIP", desc: "Own projects from conception through execution, making strategic decisions and driving results with full accountability." },
                 { title: "CROSS-FUNCTIONAL TEAMS", desc: "Work with diverse teams across engineering, design, and business to deliver integrated solutions." },

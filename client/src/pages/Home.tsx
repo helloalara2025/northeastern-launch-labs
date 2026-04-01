@@ -67,7 +67,7 @@ export default function Home() {
               Students from every major building real projects together. We bridge the gap between classroom theory and shipping actual products.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 animate-slide-in-up" style={{ animationDelay: '300ms' }}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-in-up" style={{ animationDelay: '300ms' }}>
               <Link href="/forms" className="bg-red text-white font-sans font-semibold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-lg hover:bg-red-dark transition-all duration-200 hover:-translate-y-[1px]">
                 JOIN NULL
               </Link>

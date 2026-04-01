@@ -56,7 +56,7 @@ export default function Forms() {
             <h2 className="text-sm font-mono text-red uppercase tracking-widest mb-4">Applications</h2>
             <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">JOIN A TEAM</h3>
             
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
               {/* Launch Teams */}
               <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-10 md:p-12 hover:border-red transition-colors duration-300 group">
                 <div className="w-12 h-12 bg-primary border border-[rgba(255,255,255,0.1)] flex items-center justify-center mb-8">
