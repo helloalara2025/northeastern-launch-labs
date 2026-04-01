@@ -195,23 +195,23 @@ export default function Forms() {
             <div>
               <h4 className="text-sm font-mono text-white uppercase tracking-widest mb-6">Explore</h4>
               <ul className="space-y-4">
-                <li><Link href="/"><a className="text-muted hover:text-yellow transition-colors">Home</a></Link></li>
-                <li><Link href="/about"><a className="text-muted hover:text-yellow transition-colors">About</a></Link></li>
-                <li><Link href="/launch-teams"><a className="text-muted hover:text-yellow transition-colors">Launch Teams</a></Link></li>
+                <li><Link href="/" className="text-muted hover:text-yellow transition-colors">Home</Link></li>
+                <li><Link href="/about" className="text-muted hover:text-yellow transition-colors">About</Link></li>
+                <li><Link href="/launch-teams" className="text-muted hover:text-yellow transition-colors">Launch Teams</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="text-sm font-mono text-white uppercase tracking-widest mb-6">Get Involved</h4>
               <ul className="space-y-4">
-                <li><Link href="/forms"><a className="text-muted hover:text-yellow transition-colors">Apply</a></Link></li>
-                <li><Link href="/leadership"><a className="text-muted hover:text-yellow transition-colors">Leadership</a></Link></li>
-                <li><Link href="/partners"><a className="text-muted hover:text-yellow transition-colors">Partners</a></Link></li>
+                <li><Link href="/forms" className="text-muted hover:text-yellow transition-colors">Apply</Link></li>
+                <li><Link href="/leadership" className="text-muted hover:text-yellow transition-colors">Leadership</Link></li>
+                <li><Link href="/partners" className="text-muted hover:text-yellow transition-colors">Partners</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="text-sm font-mono text-white uppercase tracking-widest mb-6">Connect</h4>
               <ul className="space-y-4">
-                <li><Link href="/contact"><a className="text-muted hover:text-yellow transition-colors">Contact</a></Link></li>
+                <li><Link href="/contact" className="text-muted hover:text-yellow transition-colors">Contact</Link></li>
                 <li><a href="https://www.linkedin.com/company/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-yellow transition-colors">LinkedIn</a></li>
                 <li><a href="https://www.instagram.com/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-muted hover:text-yellow transition-colors">Instagram</a></li>
               </ul>

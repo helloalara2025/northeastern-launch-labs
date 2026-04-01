@@ -133,17 +133,17 @@ export default function ContactPage() {
             <div>
               <h4 className="text-sm font-mono text-white uppercase tracking-widest mb-6">Explore</h4>
               <ul className="space-y-4">
-                <li><Link href="/"><a className="text-muted hover:text-yellow transition-colors">Home</a></Link></li>
-                <li><Link href="/about"><a className="text-muted hover:text-yellow transition-colors">About</a></Link></li>
-                <li><Link href="/launch-teams"><a className="text-muted hover:text-yellow transition-colors">Launch Teams</a></Link></li>
+                <li><Link href="/" className="text-muted hover:text-yellow transition-colors">Home</Link></li>
+                <li><Link href="/about" className="text-muted hover:text-yellow transition-colors">About</Link></li>
+                <li><Link href="/launch-teams" className="text-muted hover:text-yellow transition-colors">Launch Teams</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="text-sm font-mono text-white uppercase tracking-widest mb-6">Get Involved</h4>
               <ul className="space-y-4">
-                <li><Link href="/forms"><a className="text-muted hover:text-yellow transition-colors">Apply</a></Link></li>
-                <li><Link href="/leadership"><a className="text-muted hover:text-yellow transition-colors">Leadership</a></Link></li>
-                <li><Link href="/innovation-teams"><a className="text-muted hover:text-yellow transition-colors">Innovation Teams</a></Link></li>
+                <li><Link href="/forms" className="text-muted hover:text-yellow transition-colors">Apply</Link></li>
+                <li><Link href="/leadership" className="text-muted hover:text-yellow transition-colors">Leadership</Link></li>
+                <li><Link href="/innovation-teams" className="text-muted hover:text-yellow transition-colors">Innovation Teams</Link></li>
               </ul>
             </div>
             <div>

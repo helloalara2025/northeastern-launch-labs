@@ -24,7 +24,7 @@ export default function Leadership() {
               <span className="text-red">OPERATORS.</span>
             </h1>
             <p className="text-xl md:text-2xl text-muted leading-relaxed max-w-3xl font-medium">
-              Meet the students driving Launch Labs forward and making real impact across the Northeastern community.
+              Meet the students driving Launch Labs forward.
             </p>
           </div>
         </section>
@@ -118,7 +118,7 @@ export default function Leadership() {
               
               <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">JOIN THE OPERATIONS TEAM</h2>
               <p className="text-xl text-muted mb-12 max-w-3xl mx-auto leading-relaxed">
-                Interested in leading Launch Labs? We are always looking for passionate students to help drive our mission forward and shape the future of the organization.
+                Interested in leading Launch Labs? We are always looking for passionate students to help drive our mission forward.
               </p>
               <Button asChild size="lg" className="bg-yellow text-black hover:bg-yellow/90 rounded-none text-lg px-10 py-8 font-bold tracking-widest uppercase">
                 <Link href="/forms">Apply for Leadership</Link>
