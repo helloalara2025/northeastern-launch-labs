@@ -8,79 +8,118 @@ export default function About() {
     <div className="bg-primary min-h-screen text-white font-sans">
       <Navigation />
       <main>
-        {/* Header */}
+        {/* Hero Section */}
         <section className="pt-40 pb-24 md:pt-56 md:pb-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.1)_1px,transparent_1px)] [background-size:24px_24px] opacity-50"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.04)_1px,transparent_1px)] [background-size:24px_24px]"></div>
           <div className="container relative z-10">
-            <div className="mb-8">
-              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[rgba(255,255,255,0.1)] bg-secondary text-xs font-mono text-muted uppercase tracking-wider">
-                <span className="w-2 h-2 rounded-full bg-yellow"></span>
-                About Us
-              </span>
+            <div className="mb-8 animate-slide-in-up" style={{ animationDelay: '0ms' }}>
+              <span className="font-mono text-[13px] text-red uppercase tracking-[0.1em]">ABOUT</span>
             </div>
-            <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.9]">
-              BUILDING <br />
-              <span className="text-yellow">BUILDERS.</span>
+            <h1 className="font-sans font-extrabold text-[40px] md:text-[56px] uppercase text-white leading-[1.1] tracking-[-0.02em] mb-8 animate-slide-in-up" style={{ animationDelay: '100ms' }}>
+              WHAT IS NULL?
             </h1>
-            <p className="text-xl md:text-2xl text-muted leading-relaxed max-w-3xl font-medium">
-              Northeastern Launch Labs brings together students across disciplines to work on real-world, end-to-end projects that bridge classroom learning with practical impact.
+            <p className="font-sans font-normal text-[18px] text-white/55 leading-[1.6] max-w-[720px] animate-slide-in-up" style={{ animationDelay: '200ms' }}>
+              NU Launch Labs is a student-run org at Northeastern that exists to close the gap between how students collaborate on school projects and how teams actually operate in the real world. We build portfolio-ready projects, develop professional teamwork skills, and explore startup opportunities — all in one semester.
             </p>
           </div>
         </section>
 
-        {/* Mission Section */}
-        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)]">
-          <div className="container">
-            <div className="grid md:grid-cols-12 gap-12">
-              <div className="md:col-span-4">
-                <h2 className="text-sm font-mono text-red uppercase tracking-widest mb-4">The Mission</h2>
-                <h3 className="text-4xl font-bold tracking-tight">WHY WE EXIST</h3>
-              </div>
-              <div className="md:col-span-8">
-                <p className="text-2xl md:text-3xl text-white leading-relaxed mb-8 font-medium">
-                  To empower students to develop leadership, strategic thinking, and execution skills through real-world project work with startups and internally scoped ventures.
+        {/* The Gap Section */}
+        <section className="py-24 md:py-32 bg-red relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(rgba(0,0,0,0.15)_1px,transparent_1px)] [background-size:24px_24px]"></div>
+          <div className="container relative z-10">
+            <h2 className="font-sans font-extrabold text-[40px] md:text-[56px] uppercase text-white leading-[1.1] tracking-[-0.02em] mb-16">
+              THE GAP
+            </h2>
+            
+            <div className="grid md:grid-cols-2 gap-12">
+              <div>
+                <h3 className="font-sans font-bold text-[24px] text-white mb-4 uppercase">SCHOOL PROJECTS</h3>
+                <p className="font-sans font-normal text-[18px] text-white/85 leading-[1.6]">
+                  Random groups. Arbitrary deadlines. The goal is a grade, not a product. Nobody uses what you built. You can't put it on a resume without explaining yourself.
                 </p>
-                <p className="text-xl text-muted leading-relaxed">
-                  We believe the best learning happens when students tackle complex, ambiguous problems alongside peers from different disciplines, guided by experienced mentors and industry leaders.
+              </div>
+              <div>
+                <h3 className="font-sans font-bold text-[24px] text-white mb-4 uppercase">NULL PROJECTS</h3>
+                <p className="font-sans font-normal text-[18px] text-white/85 leading-[1.6]">
+                  You pick your team. You pick the problem. The goal is to ship. If it works, people use it. If it doesn't, you learned more than any class could teach you.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Core Values */}
-        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
-          <div className="absolute -right-[20%] top-[20%] w-[600px] h-[600px] rounded-full border-[1px] border-red opacity-10 pointer-events-none"></div>
-          
-          <div className="container relative z-10">
-            <h2 className="text-sm font-mono text-yellow uppercase tracking-widest mb-4">The Principles</h2>
-            <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">HOW WE OPERATE</h3>
+        {/* Founders Section */}
+        <section className="py-24 md:py-32 bg-[#0f1629] border-b border-[rgba(255,255,255,0.1)]">
+          <div className="container">
+            <div className="mb-16">
+              <h2 className="font-mono text-[13px] text-yellow uppercase tracking-[0.1em]">FOUNDED BY</h2>
+            </div>
             
-            <div className="grid md:grid-cols-2 gap-px bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.1)]">
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Founder 1 */}
+              <div className="bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.08)] rounded-[12px] p-8 flex flex-col md:flex-row gap-6 items-center md:items-start">
+                <div className="w-[120px] h-[120px] rounded-full bg-[rgba(255,255,255,0.1)] flex-shrink-0"></div>
+                <div>
+                  <h3 className="font-sans font-bold text-[24px] text-white mb-1 uppercase">DREW HILL</h3>
+                  <div className="font-mono text-[13px] text-red mb-4">Chairman</div>
+                  <p className="font-sans font-normal text-[16px] text-white/70 leading-[1.6]">
+                    Founder and Chairman of NU Launch Labs. Passionate about building products and empowering students to ship real code.
+                  </p>
+                </div>
+              </div>
+
+              {/* Founder 2 */}
+              <div className="bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.08)] rounded-[12px] p-8 flex flex-col md:flex-row gap-6 items-center md:items-start">
+                <div className="w-[120px] h-[120px] rounded-full bg-[rgba(255,255,255,0.1)] flex-shrink-0"></div>
+                <div>
+                  <h3 className="font-sans font-bold text-[24px] text-white mb-1 uppercase">PRISHA SRIVASTAVA</h3>
+                  <div className="font-mono text-[13px] text-red mb-4">President</div>
+                  <p className="font-sans font-normal text-[16px] text-white/70 leading-[1.6]">
+                    President of NU Launch Labs. Focused on scaling the organization and creating opportunities for students across all disciplines.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Org Structure Section */}
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)]">
+          <div className="container">
+            <div className="mb-16">
+              <h2 className="font-mono text-[13px] text-red uppercase tracking-[0.1em]">HOW WE'RE ORGANIZED</h2>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
-                {
-                  title: "Real-World Impact",
-                  desc: "We work on projects that matter—with real clients, real constraints, and real outcomes. Students learn by doing, not by studying."
-                },
-                {
-                  title: "Cross-Disciplinary Collaboration",
-                  desc: "The best solutions come from diverse perspectives. We bring together engineers, designers, business students, and domain experts."
-                },
-                {
-                  title: "Leadership Development",
-                  desc: "We believe every student can lead. We create environments where students take ownership, make decisions, and grow as leaders."
-                },
-                {
-                  title: "Continuous Learning",
-                  desc: "We embrace ambiguity and iteration. Failure is a learning opportunity, and feedback drives growth."
-                }
-              ].map((value, idx) => (
-                <div key={idx} className="bg-primary p-10 group hover:bg-secondary transition-colors duration-300">
-                  <div className="text-red font-mono text-sm mb-4">0{idx + 1}</div>
-                  <h4 className="text-2xl font-bold mb-4">{value.title}</h4>
-                  <p className="text-muted leading-relaxed">{value.desc}</p>
+                { name: "Exec Board", desc: "Strategic direction and organizational leadership." },
+                { name: "Communications", desc: "Brand, marketing, and internal messaging." },
+                { name: "Events", desc: "Planning and executing showcases and workshops." },
+                { name: "Operations", desc: "Logistics, member experience, and resources." },
+                { name: "Project Leads", desc: "Managing individual Launch and Innovation teams." }
+              ].map((team, idx) => (
+                <div key={idx} className="bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.08)] rounded-[12px] p-6">
+                  <h3 className="font-sans font-semibold text-[18px] text-white mb-2">{team.name}</h3>
+                  <p className="font-sans font-normal text-[14px] text-white/70 leading-[1.6]">{team.desc}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Partners Section */}
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)]">
+          <div className="container">
+            <div className="mb-16">
+              <h2 className="font-mono text-[13px] text-red uppercase tracking-[0.1em]">PARTNERS</h2>
+            </div>
+            
+            <div className="flex flex-col items-center justify-center text-center py-12">
+              <div className="font-mono font-medium text-[24px] text-white/30 mb-6 tracking-widest">RAYTHEON</div>
+              <p className="font-sans font-normal text-[16px] text-white/40 max-w-md">
+                Building partnerships with industry leaders to give student teams real-world context.
+              </p>
             </div>
           </div>
         </section>
@@ -88,42 +127,36 @@ export default function About() {
         {/* Get Involved */}
         <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)]">
           <div className="container">
-            <h2 className="text-sm font-mono text-red uppercase tracking-widest mb-4">Take Action</h2>
-            <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">GET INVOLVED</h3>
+            <div className="mb-16">
+              <h2 className="font-mono text-[13px] text-red uppercase tracking-[0.1em]">TAKE ACTION</h2>
+            </div>
             
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-3 gap-8">
               {[
                 {
-                  icon: Users,
-                  title: "Join a Team",
+                  title: "JOIN A TEAM",
                   desc: "Apply to Launch Teams or Innovation Teams and start working on real projects.",
                   link: "/forms",
                   color: "red"
                 },
                 {
-                  icon: Target,
-                  title: "Lead an Initiative",
+                  title: "LEAD AN INITIATIVE",
                   desc: "Interested in leadership? Join our operations team and help shape the future of Launch Labs.",
                   link: "/leadership",
                   color: "yellow"
                 },
                 {
-                  icon: Zap,
-                  title: "Partner With Us",
+                  title: "PARTNER WITH US",
                   desc: "Are you a startup? Let's talk about how Launch Labs can support your growth.",
                   link: "/partners",
                   color: "red"
                 }
               ].map((item, idx) => (
-                <div key={idx} className={`group bg-secondary border border-[rgba(255,255,255,0.05)] p-10 hover:border-${item.color} transition-colors duration-300 relative overflow-hidden flex flex-col`}>
-                  <div className={`absolute top-0 right-0 w-32 h-32 bg-${item.color} opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500`}></div>
-                  <item.icon className={`w-8 h-8 text-${item.color} mb-8`} />
-                  <h4 className="text-2xl font-bold mb-4">{item.title}</h4>
-                  <p className="text-muted leading-relaxed mb-12 flex-grow">{item.desc}</p>
-                  <Link href={item.link}>
-                    <a className={`text-${item.color} hover:text-white transition-colors flex items-center gap-2 text-sm font-bold uppercase tracking-wider mt-auto`}>
-                      Learn More <ArrowRight className="w-4 h-4" />
-                    </a>
+                <div key={idx} className="border-l-[3px] border-red pl-6 py-2 flex flex-col">
+                  <h4 className="font-sans font-bold text-[24px] text-white mb-4 uppercase">{item.title}</h4>
+                  <p className="font-sans font-normal text-[16px] text-white/70 leading-[1.6] mb-8 flex-grow">{item.desc}</p>
+                  <Link href={item.link} className="font-mono text-[13px] text-red uppercase tracking-[0.1em] hover:text-white transition-colors flex items-center gap-2 mt-auto">
+                    Learn More <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
               ))}
@@ -131,21 +164,24 @@ export default function About() {
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="py-32 relative overflow-hidden">
-          <div className="absolute inset-0 bg-red"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(rgba(0,0,0,0.2)_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        {/* CTA Section */}
+        <section className="py-32 relative overflow-hidden bg-red">
+          <div className="absolute inset-0 bg-[radial-gradient(rgba(0,0,0,0.15)_1px,transparent_1px)] [background-size:24px_24px]"></div>
           
-          <div className="container relative z-10 text-center max-w-4xl">
-            <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-8 text-white">
+          <div className="container relative z-10 flex flex-col items-center text-center">
+            <span className="font-mono text-[11px] text-white/80 uppercase tracking-[0.25em] mb-6 block">NU LAUNCH LABS • SPRING 2026</span>
+            
+            <h2 className="font-sans font-extrabold text-[32px] md:text-[42px] uppercase text-white leading-[1.1] tracking-[-0.02em] mb-6 max-w-3xl">
               READY TO JOIN?
             </h2>
-            <p className="text-xl md:text-2xl text-white/90 mb-12 font-medium">
+            
+            <p className="font-sans font-normal text-[18px] text-white/85 leading-[1.6] mb-10">
               Whether you're interested in joining a team, leading an initiative, or partnering with us, we'd love to hear from you.
             </p>
-            <Button asChild size="lg" className="bg-black text-white hover:bg-black/80 rounded-none text-lg px-10 py-8 font-bold tracking-widest uppercase border border-black">
-              <Link href="/forms">Get Started</Link>
-            </Button>
+            
+            <Link href="/forms" className="bg-white text-red font-sans font-semibold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-lg hover:bg-gray-100 transition-all duration-200 hover:-translate-y-[1px]">
+              GET STARTED
+            </Link>
           </div>
         </section>
       </main>
