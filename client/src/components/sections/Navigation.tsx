@@ -21,6 +21,12 @@ export default function Navigation() {
         isScrolled ? "bg-primary/90 backdrop-blur-md border-b border-[rgba(255,255,255,0.08)]" : "bg-transparent"
       }`}
     >
+      {/* Announcement Banner */}
+      <div className="bg-red w-full py-2 px-4 text-center">
+        <p className="font-mono text-[11px] font-medium tracking-[0.1em] text-white uppercase">
+          Applications are currently closed. We will reopen for Fall 2026!
+        </p>
+      </div>
       <div className="container flex items-center justify-between h-16 px-4 md:px-6">
         <Link href="/" className="cursor-pointer hover:opacity-80 transition-all duration-200 flex items-center gap-3 flex-shrink-0">
           <div className="w-8 h-8 rounded-full bg-red flex items-center justify-center">

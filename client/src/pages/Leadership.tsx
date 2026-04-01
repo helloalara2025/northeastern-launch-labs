@@ -29,6 +29,85 @@ export default function Leadership() {
           </div>
         </section>
 
+        {/* Leadership Team */}
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)] relative">
+          <div className="container">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* Drew Hill */}
+              <div className="group bg-secondary border border-[rgba(255,255,255,0.05)] p-8 hover:border-red transition-colors duration-300 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-red opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
+                <h4 className="text-2xl font-bold mb-2">Drew Hill</h4>
+                <p className="text-red font-mono text-sm uppercase tracking-wider mb-6">Co-Founder / President</p>
+                <a href="mailto:hill.dr@northeastern.edu" className="text-muted hover:text-white transition-colors text-sm">hill.dr@northeastern.edu</a>
+              </div>
+
+              {/* Prisha Srivastava */}
+              <div className="group bg-secondary border border-[rgba(255,255,255,0.05)] p-8 hover:border-red transition-colors duration-300 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-red opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
+                <h4 className="text-2xl font-bold mb-2">Prisha Srivastava</h4>
+                <p className="text-red font-mono text-sm uppercase tracking-wider mb-6">Co-Founder / President</p>
+                <a href="mailto:srivastava.prish@northeastern.edu" className="text-muted hover:text-white transition-colors text-sm">srivastava.prish@northeastern.edu</a>
+              </div>
+
+              {/* Alara Hakki */}
+              <div className="group bg-secondary border border-[rgba(255,255,255,0.05)] p-8 hover:border-red transition-colors duration-300 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-red opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
+                <h4 className="text-2xl font-bold mb-2">Alara Hakki</h4>
+                <p className="text-red font-mono text-sm uppercase tracking-wider mb-6">Communication & Outreach Chair</p>
+                <a href="mailto:hakki.a@northeastern.edu" className="text-muted hover:text-white transition-colors text-sm">hakki.a@northeastern.edu</a>
+              </div>
+
+              {/* Grace Ou */}
+              <div className="group bg-secondary border border-[rgba(255,255,255,0.05)] p-8 hover:border-yellow transition-colors duration-300 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-yellow opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
+                <h4 className="text-2xl font-bold mb-2">Grace Ou</h4>
+                <p className="text-yellow font-mono text-sm uppercase tracking-wider mb-6">Events Coordinator</p>
+                <a href="mailto:ou.lin@northeastern.edu" className="text-muted hover:text-white transition-colors text-sm">ou.lin@northeastern.edu</a>
+              </div>
+
+              {/* Neha Bhende */}
+              <div className="group bg-secondary border border-[rgba(255,255,255,0.05)] p-8 hover:border-red transition-colors duration-300 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-red opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
+                <h4 className="text-2xl font-bold mb-2">Neha Bhende</h4>
+                <p className="text-red font-mono text-sm uppercase tracking-wider mb-6">Cybersecurity</p>
+                <a href="mailto:bhende.n@northeastern.edu" className="text-muted hover:text-white transition-colors text-sm">bhende.n@northeastern.edu</a>
+              </div>
+
+              {/* Vansh Samaiya */}
+              <div className="group bg-secondary border border-[rgba(255,255,255,0.05)] p-8 hover:border-red transition-colors duration-300 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-red opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
+                <h4 className="text-2xl font-bold mb-2">Vansh Samaiya</h4>
+                <p className="text-red font-mono text-sm uppercase tracking-wider mb-6">Secretary</p>
+                <a href="mailto:samaiya.v@northeastern.edu" className="text-muted hover:text-white transition-colors text-sm">samaiya.v@northeastern.edu</a>
+              </div>
+
+              {/* Sanay Kumar */}
+              <div className="group bg-secondary border border-[rgba(255,255,255,0.05)] p-8 hover:border-red transition-colors duration-300 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-red opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
+                <h4 className="text-2xl font-bold mb-2">Sanay Kumar</h4>
+                <p className="text-red font-mono text-sm uppercase tracking-wider mb-6">Treasurer</p>
+                <a href="mailto:appisetty.s@northeastern.edu" className="text-muted hover:text-white transition-colors text-sm">appisetty.s@northeastern.edu</a>
+              </div>
+
+              {/* Shaunak Soni */}
+              <div className="group bg-secondary border border-[rgba(255,255,255,0.05)] p-8 hover:border-red transition-colors duration-300 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-red opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
+                <h4 className="text-2xl font-bold mb-2">Shaunak Soni</h4>
+                <p className="text-red font-mono text-sm uppercase tracking-wider mb-6">Operations</p>
+                <a href="mailto:soni.sha@northeastern.edu" className="text-muted hover:text-white transition-colors text-sm">soni.sha@northeastern.edu</a>
+              </div>
+
+              {/* Ihika Reddy */}
+              <div className="group bg-secondary border border-[rgba(255,255,255,0.05)] p-8 hover:border-red transition-colors duration-300 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-red opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
+                <h4 className="text-2xl font-bold mb-2">Ihika Reddy</h4>
+                <p className="text-red font-mono text-sm uppercase tracking-wider mb-6">Operations</p>
+                <a href="mailto:narayanareddygari.i@northeastern.edu" className="text-muted hover:text-white transition-colors text-sm">narayanareddygari.i@northeastern.edu</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Leadership CTA */}
         <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
           <div className="absolute -left-[20%] top-[20%] w-[600px] h-[600px] rounded-full border-[1px] border-yellow opacity-10 pointer-events-none"></div>

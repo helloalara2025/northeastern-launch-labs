@@ -1,8 +1,8 @@
 # Todo
 
-- [ ] Retrieve original copy from previous checkpoint (before the brand system rewrite)
-- [ ] Restore original copy to Home.tsx while keeping the dark-mode design
-- [ ] Restore original copy to About.tsx while keeping the dark-mode design
-- [ ] Restore original copy to LaunchTeams.tsx while keeping the dark-mode design
-- [ ] Restore original copy to InnovationTeams.tsx while keeping the dark-mode design
-- [ ] Verify all pages look polished and are ready for publishing
+- [ ] Add an announcement banner at the top of the page stating applications are closed but will open for Fall 2026.
+- [ ] Check and fix all navigation links (Launch Teams, Innovation Teams, etc.).
+- [ ] Ensure the email link/popup works correctly.
+- [ ] Update the Leadership page with roles (waiting for Instagram post from user).
+- [ ] Remove any placeholders or made-up content.
+- [ ] Improve overall design.
