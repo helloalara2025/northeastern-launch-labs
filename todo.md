@@ -18,5 +18,7 @@
 - [x] Implement SEO and Meta Tags.
 - [x] Remove the "FOR BUILDERS, BY BUILDERS" section from `Home.tsx`.
 - [x] Review and tone down similar language across other pages.
-- [ ] Remove the Instagram section from `Home.tsx`.
-- [ ] Improve the featured projects section (`ProjectCarousel.tsx`).
+- [x] Remove the Instagram section from `Home.tsx`.
+- [x] Improve the featured projects section (`ProjectCarousel.tsx`).
+- [ ] Fix TypeScript errors in `tooltip.tsx`.
+- [ ] Perform final visual and functional review.
