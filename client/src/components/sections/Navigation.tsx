@@ -17,122 +17,113 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white border-b-2 border-black/5 ${
-        isScrolled ? "shadow-lg" : ""
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-primary/90 backdrop-blur-md border-b border-[rgba(255,255,255,0.08)]" : "bg-transparent"
       }`}
     >
       <div className="container flex items-center justify-between h-16 px-4 md:px-6">
-        <Link href="/" className="cursor-pointer hover:opacity-80 transition-all duration-200 flex items-center gap-2 flex-shrink-0">
-          <img src="/images/nu-launch-labs-logo.png" alt="NU Launch Labs Logo" className="h-10 w-auto" />
+        <Link href="/" className="cursor-pointer hover:opacity-80 transition-all duration-200 flex items-center gap-3 flex-shrink-0">
+          <div className="w-8 h-8 rounded-full bg-red flex items-center justify-center">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
+              <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
+              <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+              <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
+            </svg>
+          </div>
+          <span className="font-mono text-[11px] font-medium tracking-[0.2em] text-white/70 uppercase">NU LAUNCH LABS</span>
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-12 flex-1 justify-center">
-          <Link href="/about" className="text-sm font-bold text-black/70 hover:text-[#C8102E] transition-colors duration-200 relative group uppercase tracking-wider">
+        <div className="hidden md:flex items-center gap-8 flex-1 justify-center">
+          <Link href="/about" className="font-mono text-[12px] font-medium text-white/60 hover:text-white transition-colors duration-200 relative group uppercase tracking-[0.15em]">
             About
-            <span className="absolute bottom-0 left-0 w-0 h-1 bg-[#C8102E] group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-red group-hover:w-full transition-all duration-300"></span>
           </Link>
 
-          <Link href="/launch-teams" className="text-sm font-bold text-black/70 hover:text-[#C8102E] transition-colors duration-200 relative group uppercase tracking-wider">
+          <Link href="/launch-teams" className="font-mono text-[12px] font-medium text-white/60 hover:text-white transition-colors duration-200 relative group uppercase tracking-[0.15em]">
             Launch Teams
-            <span className="absolute bottom-0 left-0 w-0 h-1 bg-[#C8102E] group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-red group-hover:w-full transition-all duration-300"></span>
           </Link>
 
-          <Link href="/innovation-teams" className="text-sm font-bold text-black/70 hover:text-[#C8102E] transition-colors duration-200 relative group uppercase tracking-wider">
+          <Link href="/innovation-teams" className="font-mono text-[12px] font-medium text-white/60 hover:text-white transition-colors duration-200 relative group uppercase tracking-[0.15em]">
             Innovation Teams
-            <span className="absolute bottom-0 left-0 w-0 h-1 bg-[#C8102E] group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-red group-hover:w-full transition-all duration-300"></span>
           </Link>
 
-          <Link href="/leadership" className="text-sm font-bold text-black/70 hover:text-[#C8102E] transition-colors duration-200 relative group uppercase tracking-wider">
+          <Link href="/leadership" className="font-mono text-[12px] font-medium text-white/60 hover:text-white transition-colors duration-200 relative group uppercase tracking-[0.15em]">
             Leadership
-            <span className="absolute bottom-0 left-0 w-0 h-1 bg-[#C8102E] group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-red group-hover:w-full transition-all duration-300"></span>
           </Link>
 
-          <Link href="/partners" className="text-sm font-bold text-black/70 hover:text-[#C8102E] transition-colors duration-200 relative group uppercase tracking-wider">
+          <Link href="/partners" className="font-mono text-[12px] font-medium text-white/60 hover:text-white transition-colors duration-200 relative group uppercase tracking-[0.15em]">
             Partners
-            <span className="absolute bottom-0 left-0 w-0 h-1 bg-[#C8102E] group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-red group-hover:w-full transition-all duration-300"></span>
           </Link>
 
-          <Link href="/contact" className="text-sm font-bold text-black/70 hover:text-[#C8102E] transition-colors duration-200 relative group uppercase tracking-wider">
+          <Link href="/contact" className="font-mono text-[12px] font-medium text-white/60 hover:text-white transition-colors duration-200 relative group uppercase tracking-[0.15em]">
             Contact
-            <span className="absolute bottom-0 left-0 w-0 h-1 bg-[#C8102E] group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-red group-hover:w-full transition-all duration-300"></span>
           </Link>
 
-          <Link href="/forms" className="text-sm font-bold text-black/70 hover:text-[#C8102E] transition-colors duration-200 relative group uppercase tracking-wider">
+          <Link href="/forms" className="font-mono text-[12px] font-medium text-white/60 hover:text-white transition-colors duration-200 relative group uppercase tracking-[0.15em]">
             Forms
-            <span className="absolute bottom-0 left-0 w-0 h-1 bg-[#C8102E] group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-red group-hover:w-full transition-all duration-300"></span>
           </Link>
         </div>
 
         <div className="hidden md:flex items-center gap-3 flex-shrink-0">
-          <Link href="/forms">
-            <Button className="border-2 border-black/20 text-black hover:border-[#C8102E] hover:text-[#C8102E] font-bold px-6 h-10 text-sm transition-all duration-200 bg-white shadow-sm hover:shadow-md hover:bg-rgba(200, 16, 46, 0.05) inline-flex items-center gap-2 uppercase tracking-wider">
-              Propose
-              <ArrowRight size={16} />
-            </Button>
-          </Link>
-          <Link href="/forms">
-            <Button className="bg-[#C8102E] hover:bg-[#A60826] text-black font-bold px-6 h-10 text-sm transition-all duration-200 shadow-md hover:shadow-lg hover:shadow-#C8102E/40 inline-flex items-center gap-2 uppercase tracking-wider">
-              Apply
-              <ArrowRight size={16} />
-            </Button>
+          <Link href="/forms" className="bg-red text-white font-sans font-semibold text-[13px] uppercase tracking-[0.1em] px-8 py-3 rounded-lg hover:bg-red-dark transition-all duration-200 hover:-translate-y-[1px]">
+            JOIN NULL
           </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
         <button 
-          className="md:hidden p-2 text-black hover:bg-gray-100 transition-all duration-200"
+          className="md:hidden p-2 text-white hover:text-red transition-all duration-200"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
-          {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+          {isMobileMenuOpen ? <X size={24} strokeWidth={1.5} /> : <Menu size={24} strokeWidth={1.5} />}
         </button>
       </div>
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white border-b-2 border-black/5 p-4 flex flex-col gap-1 shadow-lg">
-          <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold text-black/70 hover:text-[#C8102E] px-4 py-3 hover:bg-rgba(200, 16, 46, 0.05) transition-all duration-200 uppercase tracking-wider">
-            About
-          </Link>
+        <div className="md:hidden fixed inset-0 top-16 bg-primary z-40 flex flex-col p-6 border-t border-[rgba(255,255,255,0.08)]">
+          <div className="flex flex-col gap-6 mt-8">
+            <Link href="/about" onClick={() => setIsMobileMenuOpen(false)} className="font-mono text-[14px] font-medium text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-[0.15em]">
+              About
+            </Link>
 
-          <Link href="/launch-teams" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold text-black/70 hover:text-[#C8102E] px-4 py-3 hover:bg-rgba(200, 16, 46, 0.05) transition-all duration-200 uppercase tracking-wider">
-            Launch Teams
-          </Link>
+            <Link href="/launch-teams" onClick={() => setIsMobileMenuOpen(false)} className="font-mono text-[14px] font-medium text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-[0.15em]">
+              Launch Teams
+            </Link>
 
-          <Link href="/innovation-teams" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold text-black/70 hover:text-[#C8102E] px-4 py-3 hover:bg-rgba(200, 16, 46, 0.05) transition-all duration-200 uppercase tracking-wider">
-            Innovation Teams
-          </Link>
+            <Link href="/innovation-teams" onClick={() => setIsMobileMenuOpen(false)} className="font-mono text-[14px] font-medium text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-[0.15em]">
+              Innovation Teams
+            </Link>
 
-          <Link href="/leadership" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold text-black/70 hover:text-[#C8102E] px-4 py-3 hover:bg-rgba(200, 16, 46, 0.05) transition-all duration-200 uppercase tracking-wider">
-            Leadership
-          </Link>
+            <Link href="/leadership" onClick={() => setIsMobileMenuOpen(false)} className="font-mono text-[14px] font-medium text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-[0.15em]">
+              Leadership
+            </Link>
 
-          <Link href="/partners" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold text-black/70 hover:text-[#C8102E] px-4 py-3 hover:bg-rgba(200, 16, 46, 0.05) transition-all duration-200 uppercase tracking-wider">
-            Partners
-          </Link>
+            <Link href="/partners" onClick={() => setIsMobileMenuOpen(false)} className="font-mono text-[14px] font-medium text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-[0.15em]">
+              Partners
+            </Link>
 
-          <Link href="/forms" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold text-black/70 hover:text-[#C8102E] px-4 py-3 hover:bg-rgba(200, 16, 46, 0.05) transition-all duration-200 uppercase tracking-wider">
-            Propose Project
-          </Link>
+            <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="font-mono text-[14px] font-medium text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-[0.15em]">
+              Contact
+            </Link>
 
-          <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold text-black/70 hover:text-[#C8102E] px-4 py-3 hover:bg-rgba(200, 16, 46, 0.05) transition-all duration-200 uppercase tracking-wider">
-            Contact
-          </Link>
+            <Link href="/forms" onClick={() => setIsMobileMenuOpen(false)} className="font-mono text-[14px] font-medium text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-[0.15em]">
+              Forms
+            </Link>
 
-          <Link href="/forms" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold text-black/70 hover:text-[#C8102E] px-4 py-3 hover:bg-rgba(200, 16, 46, 0.05) transition-all duration-200 uppercase tracking-wider">
-            Forms
-          </Link>
-
-          <Link href="/forms">
-            <Button 
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="w-full bg-[#C8102E] hover:bg-[#A60826] text-black font-bold text-sm transition-all duration-200 shadow-md hover:shadow-lg mt-4 h-10 inline-flex items-center justify-center gap-2 uppercase tracking-wider"
-            >
-              Apply
-              <ArrowRight size={16} />
-            </Button>
-          </Link>
+            <Link href="/forms" onClick={() => setIsMobileMenuOpen(false)} className="mt-8 bg-red text-white font-sans font-semibold text-[14px] uppercase tracking-[0.1em] px-8 py-4 rounded-lg hover:bg-red-dark transition-all duration-200 text-center">
+              JOIN NULL
+            </Link>
+          </div>
         </div>
       )}
     </nav>

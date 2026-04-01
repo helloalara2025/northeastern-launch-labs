@@ -32,52 +32,48 @@ export default function Home() {
       <Navigation />
       <main>
         {/* Hero Section - Bold & Impactful with Image */}
-        <section className="relative section-padding bg-primary border-b border-[rgba(255,255,255,0.1)] overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:24px_24px]"></div>
-          <div className="container grid md:grid-cols-2 gap-12 items-center relative z-10">
-            {/* Left Content */}
-            <div className="animate-slide-in-left z-10">
-              <div className="mb-8">
-                <span className="inline-block border border-red text-red px-4 py-1 text-xs font-mono uppercase tracking-widest">NORTHEASTERN LAUNCH LABS</span>
-              </div>
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-white mb-8 leading-tight">
-                BUILD REAL<br />
-                <span className="text-red">THINGS</span>
-              </h1>
-              <p className="text-xl md:text-2xl text-muted mb-10 leading-relaxed max-w-xl">
-                Work on real-world projects with students from every background. Bridge classroom learning with hands-on impact.
-              </p>
-              <div className="flex gap-4 flex-wrap">
-                <Link href="/forms" className="btn-primary inline-flex items-center gap-3">
-                  Get Started
-                  <ArrowRight size={20} />
-                </Link>
-                <Link href="/about" className="btn-secondary inline-flex items-center gap-3">
-                  Learn More
-                  <ArrowRight size={20} />
-                </Link>
-              </div>
-            </div>
+        <section className="relative min-h-screen flex items-center justify-center bg-primary overflow-hidden pt-20">
+          {/* Brand Textures */}
+          <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.04)_1px,transparent_1px)] [background-size:24px_24px]"></div>
+          
+          {/* Red Arc SVG Strokes */}
+          <svg className="absolute top-[-100px] right-[-200px] w-[600px] h-[600px] pointer-events-none" viewBox="0 0 600 600" fill="none">
+            <circle cx="600" cy="0" r="400" stroke="#dc2626" strokeWidth="1" opacity="0.3"/>
+            <circle cx="600" cy="0" r="500" stroke="#dc2626" strokeWidth="0.5" opacity="0.15"/>
+          </svg>
+          
+          <svg className="absolute bottom-[-100px] left-[-200px] w-[600px] h-[600px] pointer-events-none" viewBox="0 0 600 600" fill="none">
+            <circle cx="0" cy="600" r="400" stroke="#dc2626" strokeWidth="1" opacity="0.3"/>
+            <circle cx="0" cy="600" r="500" stroke="#dc2626" strokeWidth="0.5" opacity="0.15"/>
+          </svg>
 
-            {/* Right - Hero Graphic */}
-            <div className="hidden md:flex animate-slide-in-right items-center justify-center relative h-[500px]">
-              {/* Abstract Geometric Graphic */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-[400px] h-[400px] border border-[rgba(255,255,255,0.1)] rounded-full relative animate-[spin_60s_linear_infinite]">
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-red rounded-full"></div>
-                  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-4 h-4 bg-yellow rounded-full"></div>
-                </div>
-                <div className="absolute w-[300px] h-[300px] border border-[rgba(255,255,255,0.2)] rounded-full animate-[spin_40s_linear_infinite_reverse]">
-                  <div className="absolute top-1/2 left-0 -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-white rounded-full"></div>
-                </div>
-                <div className="absolute w-[200px] h-[200px] border-2 border-red rounded-full opacity-50"></div>
-                <div className="absolute w-[100px] h-[100px] bg-yellow rounded-full blur-3xl opacity-20"></div>
-                
-                {/* Center Logo/Icon */}
-                <div className="absolute w-24 h-24 bg-secondary border border-[rgba(255,255,255,0.1)] flex items-center justify-center z-10 shadow-2xl">
-                  <Rocket className="w-10 h-10 text-white" />
-                </div>
-              </div>
+          {/* Dot Grid Cluster */}
+          <div className="absolute bottom-20 left-20 hidden md:grid grid-cols-5 gap-2 opacity-60">
+            {[...Array(25)].map((_, i) => (
+              <div key={i} className={`w-[3px] h-[3px] rounded-full ${i % 7 === 0 ? 'bg-red' : i % 11 === 0 ? 'bg-yellow' : 'bg-white/20'}`}></div>
+            ))}
+          </div>
+
+          <div className="container relative z-10 flex flex-col items-center text-center">
+            <div className="animate-slide-in-up" style={{ animationDelay: '0ms' }}>
+              <span className="font-mono text-[11px] text-red uppercase tracking-[0.25em] mb-6 block">FIRST SEMESTER. FIRST PROJECTS. FIRST LAUNCH.</span>
+            </div>
+            
+            <h1 className="font-sans font-extrabold text-[40px] md:text-[72px] uppercase text-white leading-[0.9] tracking-[-0.02em] mb-8 max-w-4xl animate-slide-in-up" style={{ animationDelay: '100ms' }}>
+              BUILD THINGS THAT MATTER
+            </h1>
+            
+            <p className="font-sans font-normal text-[18px] text-white/55 leading-[1.6] max-w-[600px] mb-12 animate-slide-in-up" style={{ animationDelay: '200ms' }}>
+              NU Launch Labs connects students across every discipline to ship real projects, build real teams, and launch real ideas.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-4 animate-slide-in-up" style={{ animationDelay: '300ms' }}>
+              <Link href="/forms" className="bg-red text-white font-sans font-semibold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-lg hover:bg-red-dark transition-all duration-200 hover:-translate-y-[1px]">
+                JOIN NULL
+              </Link>
+              <Link href="/launch-teams" className="bg-transparent border border-white/20 text-white font-sans font-semibold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-lg hover:border-red hover:text-red transition-all duration-200">
+                SEE WHAT WE'RE BUILDING
+              </Link>
             </div>
           </div>
         </section>
