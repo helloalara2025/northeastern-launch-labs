@@ -56,15 +56,15 @@ export default function Home() {
 
           <div className="container relative z-10 flex flex-col items-center text-center">
             <div className="animate-slide-in-up" style={{ animationDelay: '0ms' }}>
-              <span className="font-mono text-[11px] text-red uppercase tracking-[0.25em] mb-6 block">FIRST SEMESTER. FIRST PROJECTS. FIRST LAUNCH.</span>
+              <span className="font-mono text-[11px] text-red uppercase tracking-[0.25em] mb-6 block border border-red/30 bg-red/10 px-4 py-2 rounded-full inline-block">NORTHEASTERN STUDENT ORGANIZATION</span>
             </div>
             
-            <h1 className="font-sans font-extrabold text-[40px] md:text-[72px] uppercase text-white leading-[0.9] tracking-[-0.02em] mb-8 max-w-4xl animate-slide-in-up" style={{ animationDelay: '100ms' }}>
-              BUILD THINGS THAT MATTER
+            <h1 className="font-sans font-extrabold text-[40px] md:text-[72px] text-white leading-[0.9] tracking-[-0.02em] mb-8 max-w-4xl animate-slide-in-up" style={{ animationDelay: '100ms' }}>
+              From Idea to <span className="text-red">Impact.</span>
             </h1>
             
             <p className="font-sans font-normal text-[18px] text-white/55 leading-[1.6] max-w-[600px] mb-12 animate-slide-in-up" style={{ animationDelay: '200ms' }}>
-              NU Launch Labs connects students across every discipline to ship real projects, build real teams, and launch real ideas.
+              Bring together students across disciplines to work on real-world, end-to-end projects that bridge classroom learning with practical impact.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 animate-slide-in-up" style={{ animationDelay: '300ms' }}>
