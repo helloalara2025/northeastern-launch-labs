@@ -62,6 +62,11 @@ export default function Navigation() {
             <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-red group-hover:w-full transition-all duration-300"></span>
           </Link>
 
+          <Link href="/events" className="font-mono text-[12px] font-medium text-white/60 hover:text-white transition-colors duration-200 relative group uppercase tracking-[0.15em]">
+            Events
+            <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-red group-hover:w-full transition-all duration-300"></span>
+          </Link>
+
           <Link href="/partners" className="font-mono text-[12px] font-medium text-white/60 hover:text-white transition-colors duration-200 relative group uppercase tracking-[0.15em]">
             Partners
             <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-red group-hover:w-full transition-all duration-300"></span>
@@ -112,6 +117,10 @@ export default function Navigation() {
 
             <Link href="/leadership" onClick={() => setIsMobileMenuOpen(false)} className="font-mono text-[14px] font-medium text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-[0.15em]">
               Leadership
+            </Link>
+
+            <Link href="/events" onClick={() => setIsMobileMenuOpen(false)} className="font-mono text-[14px] font-medium text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-[0.15em]">
+              Events
             </Link>
 
             <Link href="/partners" onClick={() => setIsMobileMenuOpen(false)} className="font-mono text-[14px] font-medium text-white/80 hover:text-white transition-colors duration-200 uppercase tracking-[0.15em]">

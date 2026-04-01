@@ -1,8 +1,8 @@
 # Todo
 
-- [ ] Add an announcement banner at the top of the page stating applications are closed but will open for Fall 2026.
-- [ ] Check and fix all navigation links (Launch Teams, Innovation Teams, etc.).
-- [ ] Ensure the email link/popup works correctly.
-- [ ] Update the Leadership page with roles (waiting for Instagram post from user).
-- [ ] Remove any placeholders or made-up content.
-- [ ] Improve overall design.
+- [ ] Create an Events page (`/events`) with proper routing in `App.tsx`.
+- [ ] Add "Events" link to the navigation bar.
+- [ ] Build a whimsical, interactive calendar component that fits the dark-mode builder aesthetic.
+- [ ] Implement event recap cards that expand when clicking on past dates in the calendar.
+- [ ] Build a 'Past Events' gallery section below the calendar.
+- [ ] Integrate the user's photos and event details (name, date, description) once uploaded.
