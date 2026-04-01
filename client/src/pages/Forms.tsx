@@ -91,7 +91,7 @@ export default function Forms() {
         {/* Leadership */}
         <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)]">
           <div className="container">
-            <h2 className="text-sm font-mono text-yellow uppercase tracking-widest mb-4">Operations</h2>
+            <h2 className="text-sm font-mono text-yellow uppercase tracking-widest mb-4">Leadership</h2>
             <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">LEADERSHIP OPPORTUNITIES</h3>
             
             <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-10 md:p-16 hover:border-yellow transition-colors duration-300 group relative overflow-hidden">

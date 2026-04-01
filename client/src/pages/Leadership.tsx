@@ -115,7 +115,7 @@ export default function Leadership() {
             <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-12 md:p-20 text-center relative overflow-hidden group hover:border-yellow transition-colors duration-300">
               <div className="absolute top-0 right-0 w-64 h-64 bg-yellow opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
               
-              <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">JOIN THE OPERATIONS TEAM</h2>
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">JOIN THE LEADERSHIP TEAM</h2>
               <p className="text-xl text-muted mb-12 max-w-3xl mx-auto leading-relaxed">
                 Interested in leading Launch Labs? We are always looking for passionate students to help drive our mission forward.
               </p>
