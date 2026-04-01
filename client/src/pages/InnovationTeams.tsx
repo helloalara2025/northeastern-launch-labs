@@ -17,7 +17,7 @@ export default function InnovationTeams() {
               <span className="font-mono text-[13px] text-yellow uppercase tracking-[0.1em]">INNOVATION TEAMS</span>
             </div>
             <h1 className="font-sans font-extrabold text-[40px] md:text-[56px] uppercase text-white leading-[1.1] tracking-[-0.02em] mb-8 animate-slide-in-up" style={{ animationDelay: '100ms' }}>
-              BUILD FROM SCRATCH.
+              INNOVATION TEAMS.
             </h1>
             <p className="font-sans font-normal text-[18px] text-white/55 leading-[1.6] max-w-[720px] animate-slide-in-up" style={{ animationDelay: '200ms' }}>
               Lead end-to-end projects designed to mirror real-world professional work and develop your leadership skills across diverse domains.

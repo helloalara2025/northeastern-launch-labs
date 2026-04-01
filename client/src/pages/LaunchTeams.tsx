@@ -17,7 +17,7 @@ export default function LaunchTeams() {
               <span className="font-mono text-[13px] text-red uppercase tracking-[0.1em]">LAUNCH TEAMS</span>
             </div>
             <h1 className="font-sans font-extrabold text-[40px] md:text-[56px] uppercase text-white leading-[1.1] tracking-[-0.02em] mb-8 animate-slide-in-up" style={{ animationDelay: '100ms' }}>
-              BUILD WITH STARTUPS.
+              LAUNCH TEAMS.
             </h1>
             <p className="font-sans font-normal text-[18px] text-white/55 leading-[1.6] max-w-[720px] animate-slide-in-up" style={{ animationDelay: '200ms' }}>
               Partner directly with early-stage startups to design, build, and deliver real-world solutions. Work closely with founders on development-focused projects.

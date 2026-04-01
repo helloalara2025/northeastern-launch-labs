@@ -20,8 +20,7 @@ export default function Leadership() {
               </span>
             </div>
             <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.9]">
-              THE <br />
-              <span className="text-red">OPERATORS.</span>
+              LEADERSHIP.
             </h1>
             <p className="text-xl md:text-2xl text-muted leading-relaxed max-w-3xl font-medium">
               Meet the students driving Launch Labs forward.
