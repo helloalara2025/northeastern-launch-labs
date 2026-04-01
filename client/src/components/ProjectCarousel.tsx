@@ -135,46 +135,48 @@ export default function ProjectCarousel() {
   const currentProject = projects[currentIndex];
 
   return (
-    <section className="relative py-32 md:py-48 bg-white">
+    <section className="relative py-32 md:py-48 bg-primary border-b border-[rgba(255,255,255,0.1)]">
       <div className="container">
         <div className="mb-16">
-          <h2 className="font-serif font-black text-6xl md:text-7xl text-black mb-4">
-            Featured Projects
-          </h2>
-          <p className="text-xl text-black/60 font-light">
-            Explore our 8 active Innovation Teams driving real-world impact
+          <h2 className="text-sm font-mono text-red uppercase tracking-widest mb-4">Featured Work</h2>
+          <h3 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
+            INNOVATION TEAMS
+          </h3>
+          <p className="text-xl text-muted font-light">
+            Explore our 8 active teams driving real-world impact
           </p>
         </div>
 
         {/* Carousel Container */}
         <div className="relative">
           {/* Main Card */}
-          <div className="bg-white border-4 border-black/10">
-            <div className="grid md:grid-cols-2 gap-12 p-12">
+          <div className="bg-secondary border border-[rgba(255,255,255,0.05)] relative overflow-hidden group">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-red opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
+            <div className="grid md:grid-cols-2 gap-12 p-12 relative z-10">
               {/* Left: Project Info */}
               <div className="flex flex-col justify-between">
                 <div>
                   <div className="flex items-center gap-3 mb-6">
-                    <Star className="w-6 h-6 text-[#C8102E]" />
-                    <span className="text-sm font-bold uppercase tracking-widest text-[#C8102E]">
+                    <Star className="w-6 h-6 text-red" />
+                    <span className="text-sm font-bold uppercase tracking-widest text-red">
                       {currentProject.theme}
                     </span>
                   </div>
 
-                  <h3 className="font-serif font-black text-5xl text-black mb-3">
+                  <h3 className="font-sans font-black text-4xl md:text-5xl text-white mb-3">
                     {currentProject.title}
                   </h3>
 
-                  <p className="text-lg text-black/60 font-light italic mb-8">
+                  <p className="text-lg text-muted font-light italic mb-8">
                     {currentProject.subtitle}
                   </p>
 
-                  <p className="text-lg text-black/70 font-light leading-relaxed mb-8">
+                  <p className="text-lg text-white/70 font-light leading-relaxed mb-8">
                     {currentProject.description}
                   </p>
 
                   <div className="mb-8">
-                    <span className="inline-block text-sm font-bold px-4 py-2 bg-[#C8102E]/10 text-[#C8102E]">
+                    <span className="inline-block text-xs font-mono uppercase tracking-widest px-4 py-2 border border-red/30 bg-red/10 text-red">
                       {currentProject.status}
                     </span>
                   </div>
@@ -184,20 +186,20 @@ export default function ProjectCarousel() {
                 <div className="flex gap-4">
                   <button
                     onClick={goToPrevious}
-                    className="flex items-center justify-center w-12 h-12 border-2 border-black/20 hover:border-[#C8102E] hover:bg-[#C8102E]/5 transition-all duration-300"
+                    className="flex items-center justify-center w-12 h-12 border border-[rgba(255,255,255,0.2)] hover:border-red hover:bg-red/10 transition-all duration-300 text-white"
                     aria-label="Previous project"
                   >
-                    <ChevronLeft size={20} className="text-black" />
+                    <ChevronLeft size={20} />
                   </button>
                   <button
                     onClick={goToNext}
-                    className="flex items-center justify-center w-12 h-12 border-2 border-black/20 hover:border-[#C8102E] hover:bg-[#C8102E]/5 transition-all duration-300"
+                    className="flex items-center justify-center w-12 h-12 border border-[rgba(255,255,255,0.2)] hover:border-red hover:bg-red/10 transition-all duration-300 text-white"
                     aria-label="Next project"
                   >
-                    <ChevronRight size={20} className="text-black" />
+                    <ChevronRight size={20} />
                   </button>
                   <div className="flex-1 flex items-center justify-end">
-                    <span className="text-sm font-bold text-black/60">
+                    <span className="text-sm font-mono text-muted">
                       {currentIndex + 1} / {projects.length}
                     </span>
                   </div>
@@ -205,31 +207,31 @@ export default function ProjectCarousel() {
               </div>
 
               {/* Right: Bullets & Focus */}
-              <div className="border-l-8 border-[#C8102E] pl-12 flex flex-col justify-between">
+              <div className="border-l border-[rgba(255,255,255,0.1)] pl-12 flex flex-col justify-between">
                 <div>
-                  <p className="text-sm font-bold uppercase tracking-widest text-black/60 mb-6">
+                  <p className="text-xs font-mono uppercase tracking-widest text-muted mb-6">
                     Focus Area
                   </p>
-                  <p className="text-2xl font-bold text-black mb-12">
+                  <p className="text-2xl font-bold text-white mb-12">
                     {currentProject.focus}
                   </p>
 
-                  <p className="text-sm font-bold uppercase tracking-widest text-black/60 mb-6">
+                  <p className="text-xs font-mono uppercase tracking-widest text-muted mb-6">
                     Current Work
                   </p>
                   <ul className="space-y-4">
                     {currentProject.bullets.map((bullet, idx) => (
                       <li key={idx} className="flex gap-4">
-                        <span className="text-[#C8102E] font-bold flex-shrink-0">▸</span>
-                        <span className="text-lg text-black/70 font-light">{bullet}</span>
+                        <span className="text-red font-bold flex-shrink-0">▸</span>
+                        <span className="text-lg text-white/70 font-light">{bullet}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <Link href="/innovation-teams" className="inline-flex items-center gap-2 text-[#C8102E] font-bold hover:gap-3 transition-all duration-200 text-lg mt-8">
+                <Link href="/innovation-teams" className="inline-flex items-center gap-2 text-red font-bold hover:text-white transition-colors duration-200 text-sm uppercase tracking-wider mt-8">
                   View All Teams
-                  <ChevronRight size={20} />
+                  <ChevronRight size={16} />
                 </Link>
               </div>
             </div>
@@ -241,10 +243,10 @@ export default function ProjectCarousel() {
               <button
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
-                className={`h-3 transition-all duration-300 ${
+                className={`h-1 transition-all duration-300 ${
                   idx === currentIndex
-                    ? "w-8 bg-[#C8102E]"
-                    : "w-3 bg-black/20 hover:bg-black/40"
+                    ? "w-8 bg-red"
+                    : "w-4 bg-[rgba(255,255,255,0.2)] hover:bg-[rgba(255,255,255,0.4)]"
                 }`}
                 aria-label={`Go to project ${idx + 1}`}
               />

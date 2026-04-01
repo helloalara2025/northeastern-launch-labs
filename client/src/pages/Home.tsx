@@ -124,53 +124,12 @@ export default function Home() {
           </div>
         </section>
 
-        {/* For Builders Section */}
-        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
-          <div className="absolute -left-[20%] top-[20%] w-[600px] h-[600px] rounded-full border-[1px] border-yellow opacity-10 pointer-events-none"></div>
-          
-          <div className="container relative z-10">
-            <h2 className="text-sm font-mono text-yellow uppercase tracking-widest mb-4">The Value</h2>
-            <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">FOR BUILDERS, BY BUILDERS</h3>
-            
-            <div className="grid md:grid-cols-3 gap-px bg-[rgba(255,255,255,0.1)] border border-[rgba(255,255,255,0.1)]">
-              <div className="bg-primary p-10 group hover:bg-secondary transition-colors duration-300">
-                <Users className="w-8 h-8 text-white mb-8 group-hover:text-red transition-colors" />
-                <h4 className="text-xl font-bold mb-4">Elite Network</h4>
-                <p className="text-muted leading-relaxed">
-                  Surround yourself with the most ambitious engineers, designers, and operators at Northeastern.
-                </p>
-              </div>
-              
-              <div className="bg-primary p-10 group hover:bg-secondary transition-colors duration-300">
-                <Zap className="w-8 h-8 text-white mb-8 group-hover:text-yellow transition-colors" />
-                <h4 className="text-xl font-bold mb-4">Real Reps</h4>
-                <p className="text-muted leading-relaxed">
-                  Stop building toy projects. Ship production code, conduct real user interviews, and manage actual stakeholders.
-                </p>
-              </div>
-              
-              <div className="bg-primary p-10 group hover:bg-secondary transition-colors duration-300">
-                <Briefcase className="w-8 h-8 text-white mb-8 group-hover:text-red transition-colors" />
-                <h4 className="text-xl font-bold mb-4">Career Velocity</h4>
-                <p className="text-muted leading-relaxed">
-                  Our alumni go on to top tech companies, prestigious accelerators, and found their own backed startups.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
+
 
         {/* Project Carousel */}
         <ProjectCarousel />
 
-        {/* Instagram Feed */}
-        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)]">
-          <div className="container">
-            <h2 className="text-sm font-mono text-red uppercase tracking-widest mb-4">Community</h2>
-            <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-16">LATEST FROM INSTAGRAM</h3>
-            <InstagramFeed />
-          </div>
-        </section>
+
 
         {/* CTA Section */}
         <section className="py-32 relative overflow-hidden">
@@ -182,7 +141,7 @@ export default function Home() {
               READY TO BUILD?
             </h2>
             <p className="text-xl md:text-2xl text-white/90 mb-12 font-medium">
-              Applications are open for the upcoming cohort. Join the most ambitious builder community at Northeastern.
+              Applications are open for the upcoming cohort. Join a community of students building real projects at Northeastern.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/forms" className="inline-flex items-center justify-center bg-black text-white hover:bg-black/80 rounded-none text-lg px-10 py-8 font-bold tracking-widest uppercase border border-black transition-colors">

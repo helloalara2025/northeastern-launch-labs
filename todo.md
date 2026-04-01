@@ -12,7 +12,11 @@
 - [x] Remove individual emails from `Leadership.tsx` and replace them with the general NU Launch Labs email.
 - [x] Remove the Partners section from Navigation and routing.
 - [x] Update `Portfolio.tsx` with the provided teams, ensuring the design matches the sharp, dark-mode builder aesthetic.
-- [ ] Implement Content & Copy Cleanup (remove corporate jargon, update announcement banner).
-- [ ] Implement Brand Textures (Dot Grid, Red Arcs) globally.
-- [ ] Implement Scroll Animations and Hover States.
-- [ ] Implement SEO and Meta Tags.
+- [x] Implement Content & Copy Cleanup (remove corporate jargon, update announcement banner).
+- [x] Implement Brand Textures (Dot Grid, Red Arcs) globally.
+- [x] Implement Scroll Animations and Hover States.
+- [x] Implement SEO and Meta Tags.
+- [x] Remove the "FOR BUILDERS, BY BUILDERS" section from `Home.tsx`.
+- [x] Review and tone down similar language across other pages.
+- [ ] Remove the Instagram section from `Home.tsx`.
+- [ ] Improve the featured projects section (`ProjectCarousel.tsx`).
