@@ -310,8 +310,8 @@ export default function ApplyLaunchTeam() {
               <h4 className="font-bold text-foreground mb-4 text-sm uppercase tracking-wider">Connect</h4>
               <ul className="space-y-3 text-sm">
                 <li><Link href="/contact" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Contact</Link></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">LinkedIn</a></li>
-                <li><a href="#" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Instagram</a></li>
+                <li><a href="https://www.linkedin.com/company/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/nulaunchlabs/" target="_blank" rel="noopener noreferrer" className="text-foreground/70 hover:text-red-900 transition-colors font-medium">Instagram</a></li>
               </ul>
             </div>
           </div>
