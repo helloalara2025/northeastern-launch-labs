@@ -22,6 +22,7 @@
 - [x] Improve the featured projects section (`ProjectCarousel.tsx`).
 - [x] Fix TypeScript errors in `tooltip.tsx`.
 - [x] Perform final visual and functional review.
-- [ ] Fix alignment in Navigation and Hero sections.
-- [ ] Fix alignment in Portfolio and Teams pages.
-- [ ] Fix alignment in Forms and Contact pages.
+- [x] Fix alignment in Navigation and Hero sections.
+- [x] Fix alignment in Portfolio and Teams pages.
+- [x] Fix alignment in Forms and Contact pages.
+- [ ] Update `Home.tsx` to display a "coming soon" message for May 2026.
