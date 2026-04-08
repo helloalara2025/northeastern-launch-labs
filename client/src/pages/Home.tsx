@@ -60,7 +60,8 @@ export default function Home() {
             </div>
             
             <h1 className="font-sans font-extrabold text-[40px] md:text-[72px] text-white leading-[0.9] tracking-[-0.02em] mb-8 max-w-4xl animate-slide-in-up" style={{ animationDelay: '100ms' }}>
-              We are working on the site and will be up <span className="text-red">May 2026.</span>
+              Site under construction. <br />
+              Launching <span className="text-red">May 2026.</span>
             </h1>
             
             <p className="font-sans font-normal text-[18px] text-white/55 leading-[1.6] max-w-[600px] mb-12 animate-slide-in-up" style={{ animationDelay: '200ms' }}>

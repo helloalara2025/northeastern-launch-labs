@@ -25,4 +25,5 @@
 - [x] Fix alignment in Navigation and Hero sections.
 - [x] Fix alignment in Portfolio and Teams pages.
 - [x] Fix alignment in Forms and Contact pages.
-- [ ] Update `Home.tsx` to display a "coming soon" message for May 2026.
+- [x] Update `Home.tsx` to display a "coming soon" message for May 2026.
+- [ ] Simplify the "coming soon" message on the homepage to make it more professional.
