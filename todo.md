@@ -27,5 +27,8 @@
 - [x] Fix alignment in Forms and Contact pages.
 - [x] Update `Home.tsx` to display a "coming soon" message for May 2026.
 - [x] Simplify the "coming soon" message on the homepage to make it more professional.
-- [ ] Remove navigation links from Navbar and Footer.
-- [ ] Remove or hide content on Home page other than the hero section.
+- [x] Remove navigation links from Navbar and Footer.
+- [x] Remove or hide content on Home page other than the hero section.
+- [x] Analyze the reference design from https://interventions.design/designathon
+- [ ] Analyze the second reference design from https://onepagelove.com/mobiel-4g-internet-in-nederland
+- [ ] Implement the Project Portfolio section layout blending both references
