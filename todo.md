@@ -32,4 +32,6 @@
 - [x] Analyze the reference design from https://interventions.design/designathon
 - [x] Analyze the second reference design from https://onepagelove.com/mobiel-4g-internet-in-nederland
 - [x] Implement the Project Portfolio section layout blending both references
-- [ ] Update About.tsx with the new mission and goals content
+- [x] Update About.tsx with the new mission and goals content
+- [x] Locate the team page in the project files
+- [x] Upgrade project to full-stack with database using webdev_add_feature

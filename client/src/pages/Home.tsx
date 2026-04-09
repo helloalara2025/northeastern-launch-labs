@@ -1,10 +1,5 @@
 import Navigation from "@/components/sections/Navigation";
-import { Button } from "@/components/ui/button";
-import { Link } from "wouter";
-import { ArrowRight, Briefcase, Lightbulb, Users, Zap, Rocket } from "lucide-react";
 import { useState, useEffect } from "react";
-import InstagramFeed from "@/components/InstagramFeed";
-import ProjectCarousel from "@/components/ProjectCarousel";
 
 export default function Home() {
   const [scrollProgress, setScrollProgress] = useState(0);

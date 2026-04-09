@@ -13,8 +13,8 @@ import ApplyLaunchTeam from "./pages/ApplyLaunchTeam";
 import ApplyInnovationTeam from "./pages/ApplyInnovationTeam";
 import ApplyLeadership from "./pages/ApplyLeadership";
 import FloatingContact from "./components/FloatingContact";
-
 export default function App() {
+  // make sure to consider if you need authentication for certain routes
   return (
     <Router>
       <FloatingContact />
