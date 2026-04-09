@@ -35,3 +35,10 @@
 - [x] Update About.tsx with the new mission and goals content
 - [x] Locate the team page in the project files
 - [x] Upgrade project to full-stack with database using webdev_add_feature
+- [x] Create projects table in database schema (drizzle/schema.ts)
+- [x] Push database migration for projects table
+- [x] Create db helpers for projects (server/db.ts)
+- [x] Create tRPC routes for projects (server/routers.ts)
+- [x] Create seed script to populate projects from hardcoded data
+- [x] Update Portfolio.tsx to fetch projects from database via tRPC
+- [x] Write vitest tests for project routes

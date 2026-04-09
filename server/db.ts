@@ -1,6 +1,6 @@
-import { eq } from "drizzle-orm";
+import { eq, asc } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
-import { InsertUser, users } from "../drizzle/schema";
+import { InsertUser, InsertProject, users, projects } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
 let _db: ReturnType<typeof drizzle> | null = null;
@@ -89,4 +89,33 @@ export async function getUserByOpenId(openId: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
-// TODO: add feature queries here as your schema grows.
+// ── Project queries ──
+
+export async function getAllProjects() {
+  const db = await getDb();
+  if (!db) {
+    console.warn("[Database] Cannot get projects: database not available");
+    return [];
+  }
+  return db.select().from(projects).orderBy(asc(projects.sortOrder), asc(projects.id));
+}
+
+export async function getProjectByProjectId(projectId: string) {
+  const db = await getDb();
+  if (!db) return undefined;
+  const result = await db.select().from(projects).where(eq(projects.projectId, projectId)).limit(1);
+  return result.length > 0 ? result[0] : undefined;
+}
+
+export async function insertProject(project: InsertProject) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  await db.insert(projects).values(project);
+}
+
+export async function insertManyProjects(projectList: InsertProject[]) {
+  const db = await getDb();
+  if (!db) throw new Error("Database not available");
+  if (projectList.length === 0) return;
+  await db.insert(projects).values(projectList);
+}
