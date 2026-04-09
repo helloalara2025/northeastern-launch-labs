@@ -30,5 +30,6 @@
 - [x] Remove navigation links from Navbar and Footer.
 - [x] Remove or hide content on Home page other than the hero section.
 - [x] Analyze the reference design from https://interventions.design/designathon
-- [ ] Analyze the second reference design from https://onepagelove.com/mobiel-4g-internet-in-nederland
-- [ ] Implement the Project Portfolio section layout blending both references
+- [x] Analyze the second reference design from https://onepagelove.com/mobiel-4g-internet-in-nederland
+- [x] Implement the Project Portfolio section layout blending both references
+- [ ] Update About.tsx with the new mission and goals content

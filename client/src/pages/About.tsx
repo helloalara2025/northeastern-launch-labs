@@ -38,10 +38,13 @@ export default function About() {
               </div>
               <div className="md:col-span-8">
                 <p className="text-2xl md:text-3xl text-white leading-relaxed mb-8 font-medium">
-                  To give students the space to build real projects, solve hard problems, and ship actual products before they graduate.
+                  Our goal is to bring together students across disciplines and experience levels to work on real-world, end-to-end projects that bridge classroom learning with practical impact.
+                </p>
+                <p className="text-xl text-muted leading-relaxed mb-6">
+                  Through Launch Teams partnering with startups and Innovation Teams developing internal, end-to-end projects, members gain practical experience tackling real-world problems.
                 </p>
                 <p className="text-xl text-muted leading-relaxed">
-                  We believe the best learning happens when students tackle complex, ambiguous problems alongside peers from different disciplines, guided by experienced mentors and industry leaders.
+                  The club emphasizes collaboration, professional skill development, and ownership, enabling students to produce portfolio-ready work, strengthen cross-functional teamwork, and explore pathways to entrepreneurship and innovation within and beyond the Northeastern community.
                 </p>
               </div>
             </div>
