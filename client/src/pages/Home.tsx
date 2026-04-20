@@ -1,4 +1,5 @@
 import Navigation from "@/components/sections/Navigation";
+import Footer from "@/components/sections/Footer";
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -66,6 +67,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 }

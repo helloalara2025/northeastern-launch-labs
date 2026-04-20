@@ -45,3 +45,5 @@
 - [x] Rebuild Navigation.tsx with dark builder aesthetic and full nav links
 - [x] Add mobile hamburger menu with slide-out panel
 - [x] Verify navigation works across all pages
+- [x] Rebuild Footer.tsx with dark builder aesthetic
+- [x] Ensure Footer is included on all main pages
