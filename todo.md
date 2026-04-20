@@ -42,3 +42,6 @@
 - [x] Create seed script to populate projects from hardcoded data
 - [x] Update Portfolio.tsx to fetch projects from database via tRPC
 - [x] Write vitest tests for project routes
+- [x] Rebuild Navigation.tsx with dark builder aesthetic and full nav links
+- [x] Add mobile hamburger menu with slide-out panel
+- [x] Verify navigation works across all pages

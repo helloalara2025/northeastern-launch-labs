@@ -1,11 +1,19 @@
-import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
-import { Menu, X, ArrowRight } from "lucide-react";
-import { Link } from "wouter";
+import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "wouter";
+
+const navLinks = [
+  { label: "About", href: "/about" },
+  { label: "Projects", href: "/portfolio" },
+  { label: "Launch Teams", href: "/launch-teams" },
+  { label: "Innovation Teams", href: "/innovation-teams" },
+  { label: "Leadership", href: "/leadership" },
+];
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,32 +23,219 @@ export default function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-primary/90 backdrop-blur-md border-b border-[rgba(255,255,255,0.08)]" : "bg-transparent"
-      }`}
-    >
-      {/* Announcement Banner */}
-      <div className="bg-red w-full py-2 px-4 text-center">
-        <p className="font-mono text-[11px] font-medium tracking-[0.1em] text-white uppercase">
-          Applications are currently closed. We will reopen for Fall 2026!
-        </p>
-      </div>
-      <div className="container flex items-center justify-between h-16 px-4 md:px-6">
-        <Link href="/" className="cursor-pointer hover:opacity-80 transition-all duration-200 flex items-center gap-3 flex-shrink-0">
-          <div className="w-8 h-8 rounded-full bg-red flex items-center justify-center">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path>
-              <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path>
-              <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
-              <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
-            </svg>
-          </div>
-          <span className="font-mono text-[11px] font-medium tracking-[0.2em] text-white/70 uppercase">NU LAUNCH LABS</span>
-        </Link>
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isMobileMenuOpen]);
 
+  const isActive = (href: string) => location === href;
+
+  return (
+    <>
+      <nav
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          isScrolled
+            ? "bg-[#0d0d0d]/95 backdrop-blur-md border-b border-[rgba(255,255,255,0.08)]"
+            : "bg-transparent"
+        }`}
+      >
+        {/* Announcement Banner */}
+        <div className="bg-red w-full py-2 px-4 text-center">
+          <p className="font-mono text-[10px] md:text-[11px] font-medium tracking-[0.1em] text-white uppercase">
+            Applications are currently closed. We will reopen for Fall 2026!
+          </p>
+        </div>
+
+        <div className="container flex items-center justify-between h-16 md:h-20 px-4 md:px-6">
+          {/* Logo */}
+          <Link
+            href="/"
+            className="cursor-pointer hover:opacity-80 transition-all duration-200 flex items-center gap-3 flex-shrink-0"
+          >
+            <div className="w-8 h-8 rounded-full bg-red flex items-center justify-center">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="white"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+                <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+              </svg>
+            </div>
+            <span className="font-mono text-[11px] font-medium tracking-[0.2em] text-white/70 uppercase">
+              NU Launch Labs
+            </span>
+          </Link>
+
+          {/* Desktop Nav Links */}
+          <div className="hidden lg:flex items-center gap-1">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`relative px-4 py-2 font-mono text-[11px] uppercase tracking-[0.15em] transition-colors duration-200 ${
+                  isActive(link.href)
+                    ? "text-white"
+                    : "text-white/50 hover:text-white"
+                }`}
+              >
+                {link.label}
+                {isActive(link.href) && (
+                  <span className="absolute bottom-0 left-4 right-4 h-[2px] bg-red" />
+                )}
+              </Link>
+            ))}
+          </div>
+
+          {/* Desktop CTA + Mobile Toggle */}
+          <div className="flex items-center gap-4">
+            <Link
+              href="/forms"
+              className="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-red text-white font-mono text-[11px] uppercase tracking-[0.15em] hover:bg-red/90 transition-colors duration-200"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-white/60" />
+              Apply Now
+            </Link>
+
+            {/* Mobile Menu Toggle */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="lg:hidden relative w-10 h-10 flex items-center justify-center text-white/70 hover:text-white transition-colors"
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      {/* Mobile Menu Overlay */}
+      <div
+        className={`fixed inset-0 z-40 lg:hidden transition-all duration-500 ${
+          isMobileMenuOpen
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
+        }`}
+      >
+        {/* Backdrop */}
+        <div
+          className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+
+        {/* Panel */}
+        <div
+          className={`absolute top-0 right-0 w-full max-w-sm h-full bg-[#0d0d0d] border-l border-[rgba(255,255,255,0.08)] transition-transform duration-500 ease-out ${
+            isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        >
+          {/* Panel Header */}
+          <div className="flex items-center justify-between h-20 px-6 border-b border-[rgba(255,255,255,0.08)]">
+            <span className="font-mono text-[11px] text-white/40 uppercase tracking-[0.2em]">
+              Menu
+            </span>
+            <button
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="w-10 h-10 flex items-center justify-center text-white/50 hover:text-white transition-colors"
+              aria-label="Close menu"
+            >
+              <X size={20} />
+            </button>
+          </div>
+
+          {/* Panel Links */}
+          <div className="flex flex-col py-6">
+            {navLinks.map((link, idx) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`group flex items-center gap-4 px-6 py-5 transition-colors duration-200 ${
+                  isActive(link.href)
+                    ? "bg-[rgba(255,255,255,0.03)]"
+                    : "hover:bg-[rgba(255,255,255,0.03)]"
+                }`}
+              >
+                <span
+                  className={`font-mono text-[11px] ${
+                    isActive(link.href) ? "text-red" : "text-white/30"
+                  }`}
+                >
+                  0{idx + 1}
+                </span>
+                <span
+                  className={`font-sans text-lg font-semibold tracking-tight ${
+                    isActive(link.href)
+                      ? "text-white"
+                      : "text-white/60 group-hover:text-white"
+                  }`}
+                >
+                  {link.label}
+                </span>
+                {isActive(link.href) && (
+                  <span className="ml-auto w-2 h-2 rounded-full bg-red" />
+                )}
+              </Link>
+            ))}
+          </div>
+
+          {/* Panel CTA */}
+          <div className="px-6 mt-4">
+            <Link
+              href="/forms"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="flex items-center justify-center gap-2 w-full py-4 bg-red text-white font-mono text-[11px] uppercase tracking-[0.15em] hover:bg-red/90 transition-colors duration-200"
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-white/60" />
+              Apply Now
+            </Link>
+          </div>
+
+          {/* Panel Footer */}
+          <div className="absolute bottom-0 left-0 right-0 px-6 py-6 border-t border-[rgba(255,255,255,0.05)]">
+            <div className="flex items-center gap-6">
+              <a
+                href="https://www.linkedin.com/company/nulaunchlabs/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono text-[10px] text-white/30 uppercase tracking-[0.15em] hover:text-white/60 transition-colors"
+              >
+                LinkedIn
+              </a>
+              <a
+                href="https://www.instagram.com/nulaunchlabs/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono text-[10px] text-white/30 uppercase tracking-[0.15em] hover:text-white/60 transition-colors"
+              >
+                Instagram
+              </a>
+              <a
+                href="https://discord.gg/EVSEDPDv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono text-[10px] text-white/30 uppercase tracking-[0.15em] hover:text-white/60 transition-colors"
+              >
+                Discord
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
+    </>
   );
 }
