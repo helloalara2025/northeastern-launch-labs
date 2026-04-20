@@ -47,3 +47,4 @@
 - [x] Verify navigation works across all pages
 - [x] Rebuild Footer.tsx with dark builder aesthetic
 - [x] Ensure Footer is included on all main pages
+- [x] Simplify Footer to only show Get Involved and Connect columns (remove Explore)

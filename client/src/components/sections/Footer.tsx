@@ -1,12 +1,6 @@
 import { Link } from "wouter";
 
 const footerLinks = {
-  explore: [
-    { label: "About", href: "/about" },
-    { label: "Projects", href: "/portfolio" },
-    { label: "Launch Teams", href: "/launch-teams" },
-    { label: "Innovation Teams", href: "/innovation-teams" },
-  ],
   involved: [
     { label: "Apply", href: "/forms" },
     { label: "Leadership", href: "/leadership" },
@@ -32,7 +26,7 @@ export default function Footer() {
         {/* Main Footer Grid */}
         <div className="py-16 md:py-20 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8">
           {/* Brand Column */}
-          <div className="md:col-span-4">
+          <div className="md:col-span-6">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-8 h-8 rounded-full bg-red flex items-center justify-center flex-shrink-0">
                 <svg
@@ -67,27 +61,8 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Explore Column */}
-          <div className="md:col-span-2 md:col-start-6">
-            <h4 className="font-mono text-[10px] text-white/30 uppercase tracking-[0.2em] mb-6">
-              Explore
-            </h4>
-            <ul className="space-y-3">
-              {footerLinks.explore.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-white/50 hover:text-white text-sm transition-colors duration-200 font-medium"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Get Involved Column */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-3">
             <h4 className="font-mono text-[10px] text-white/30 uppercase tracking-[0.2em] mb-6">
               Get Involved
             </h4>
@@ -106,7 +81,7 @@ export default function Footer() {
           </div>
 
           {/* Connect Column */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-3">
             <h4 className="font-mono text-[10px] text-white/30 uppercase tracking-[0.2em] mb-6">
               Connect
             </h4>
