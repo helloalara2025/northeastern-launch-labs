@@ -48,3 +48,4 @@
 - [x] Rebuild Footer.tsx with dark builder aesthetic
 - [x] Ensure Footer is included on all main pages
 - [x] Simplify Footer to only show Get Involved and Connect columns (remove Explore)
+- [x] Remove Get Involved column from Footer, keep only Connect (LinkedIn, Instagram, Email)

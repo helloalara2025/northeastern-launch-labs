@@ -1,18 +1,8 @@
-import { Link } from "wouter";
-
-const footerLinks = {
-  involved: [
-    { label: "Apply", href: "/forms" },
-    { label: "Leadership", href: "/leadership" },
-    { label: "Contact", href: "/contact" },
-  ],
-  connect: [
-    { label: "LinkedIn", href: "https://www.linkedin.com/company/nulaunchlabs/", external: true },
-    { label: "Instagram", href: "https://www.instagram.com/nulaunchlabs/", external: true },
-    { label: "Discord", href: "https://discord.gg/EVSEDPDv", external: true },
-    { label: "Email", href: "mailto:NU-launchlabs@northeastern.edu", external: true },
-  ],
-};
+const connectLinks = [
+  { label: "LinkedIn", href: "https://www.linkedin.com/company/nulaunchlabs/" },
+  { label: "Instagram", href: "https://www.instagram.com/nulaunchlabs/" },
+  { label: "Email", href: "mailto:NU-launchlabs@northeastern.edu" },
+];
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -26,7 +16,7 @@ export default function Footer() {
         {/* Main Footer Grid */}
         <div className="py-16 md:py-20 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8">
           {/* Brand Column */}
-          <div className="md:col-span-6">
+          <div className="md:col-span-8">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-8 h-8 rounded-full bg-red flex items-center justify-center flex-shrink-0">
                 <svg
@@ -61,32 +51,13 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Get Involved Column */}
-          <div className="md:col-span-3">
-            <h4 className="font-mono text-[10px] text-white/30 uppercase tracking-[0.2em] mb-6">
-              Get Involved
-            </h4>
-            <ul className="space-y-3">
-              {footerLinks.involved.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-white/50 hover:text-white text-sm transition-colors duration-200 font-medium"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Connect Column */}
-          <div className="md:col-span-3">
+          <div className="md:col-span-4">
             <h4 className="font-mono text-[10px] text-white/30 uppercase tracking-[0.2em] mb-6">
               Connect
             </h4>
             <ul className="space-y-3">
-              {footerLinks.connect.map((link) => (
+              {connectLinks.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
