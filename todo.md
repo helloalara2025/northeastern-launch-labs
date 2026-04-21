@@ -75,3 +75,12 @@
 - [x] Create floating popup button for e-board application link
 - [x] Remove made-up project info, keep only original spreadsheet data
 - [x] Remove team reference IDs (T16, etc.) from project data
+- [x] Remove Apply Now button from Navigation
+- [x] Add Events nav item to Navigation
+- [x] Update top banner to say leadership apps are open
+- [x] Restyle Leadership page in dark builder aesthetic
+- [x] Categorize current team as Spring 2026 Team
+- [x] Remove emails from leadership members
+- [x] Add Fall 2026 section with open roles and application link
+- [x] Create Events page shell (waiting for event info)
+- [x] Add Events route to App.tsx

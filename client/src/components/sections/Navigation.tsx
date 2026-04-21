@@ -6,6 +6,7 @@ const navLinks = [
   { label: "About", href: "/about" },
   { label: "Projects", href: "/portfolio" },
   { label: "Leadership", href: "/leadership" },
+  { label: "Events", href: "/events" },
 ];
 
 export default function Navigation() {
@@ -47,7 +48,7 @@ export default function Navigation() {
         {/* Announcement Banner */}
         <div className="bg-red w-full py-2 px-4 text-center">
           <p className="font-mono text-[10px] md:text-[11px] font-medium tracking-[0.1em] text-white uppercase">
-            Applications are currently closed. We will reopen for Fall 2026!
+            Leadership applications are open for Fall 2026!
           </p>
         </div>
 
@@ -99,25 +100,14 @@ export default function Navigation() {
             ))}
           </div>
 
-          {/* Desktop CTA + Mobile Toggle */}
-          <div className="flex items-center gap-4">
-            <Link
-              href="/forms"
-              className="hidden lg:inline-flex items-center gap-2 px-5 py-2.5 bg-red text-white font-mono text-[11px] uppercase tracking-[0.15em] hover:bg-red/90 transition-colors duration-200"
-            >
-              <span className="w-1.5 h-1.5 rounded-full bg-white/60" />
-              Apply Now
-            </Link>
-
-            {/* Mobile Menu Toggle */}
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden relative w-10 h-10 flex items-center justify-center text-white/70 hover:text-white transition-colors"
-              aria-label="Toggle menu"
-            >
-              {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
-            </button>
-          </div>
+          {/* Mobile Menu Toggle */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="lg:hidden relative w-10 h-10 flex items-center justify-center text-white/70 hover:text-white transition-colors"
+            aria-label="Toggle menu"
+          >
+            {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
         </div>
       </nav>
 
@@ -191,18 +181,6 @@ export default function Navigation() {
             ))}
           </div>
 
-          {/* Panel CTA */}
-          <div className="px-6 mt-4">
-            <Link
-              href="/forms"
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="flex items-center justify-center gap-2 w-full py-4 bg-red text-white font-mono text-[11px] uppercase tracking-[0.15em] hover:bg-red/90 transition-colors duration-200"
-            >
-              <span className="w-1.5 h-1.5 rounded-full bg-white/60" />
-              Apply Now
-            </Link>
-          </div>
-
           {/* Panel Footer */}
           <div className="absolute bottom-0 left-0 right-0 px-6 py-6 border-t border-[rgba(255,255,255,0.05)]">
             <div className="flex items-center gap-6">
@@ -221,14 +199,6 @@ export default function Navigation() {
                 className="font-mono text-[10px] text-white/30 uppercase tracking-[0.15em] hover:text-white/60 transition-colors"
               >
                 Instagram
-              </a>
-              <a
-                href="https://discord.gg/EVSEDPDv"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-mono text-[10px] text-white/30 uppercase tracking-[0.15em] hover:text-white/60 transition-colors"
-              >
-                Discord
               </a>
             </div>
           </div>
