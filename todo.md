@@ -71,3 +71,5 @@
 - [x] Simplify copy/tone to be more grounded and honest
 - [x] Remove Innovation Teams and Launch Teams from Navigation (keep only Projects)
 - [x] Remove Innovation Teams and Launch Teams routes from App.tsx
+- [x] Remove "Ready to Join" / CTA sections from Home and About pages
+- [x] Create floating popup button for e-board application link

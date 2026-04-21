@@ -1,84 +1,60 @@
-import { Mail, Linkedin, Instagram, MessageCircle, X } from "lucide-react";
+import { Rocket, X, ArrowUpRight } from "lucide-react";
 import { useState } from "react";
+
+const EBOARD_FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSeRnvxsGPbkl7Nuo4WX77wV6sB8twjy5v5W1SP7oqjrjZ6CAw/viewform";
 
 export default function FloatingContact() {
   const [isOpen, setIsOpen] = useState(false);
+  const [dismissed, setDismissed] = useState(false);
+
+  if (dismissed) return null;
 
   return (
     <div className="fixed bottom-6 right-6 z-40">
-      {/* Contact Box */}
+      {/* Popup Card */}
       {isOpen && (
-        <div className="absolute bottom-20 right-0 bg-secondary border border-[rgba(255,255,255,0.08)] p-6 w-72 mb-4 animate-in fade-in slide-in-from-bottom-2 duration-300">
+        <div className="absolute bottom-20 right-0 bg-secondary border border-[rgba(255,255,255,0.08)] p-6 w-80 mb-4 animate-in fade-in slide-in-from-bottom-2 duration-300">
           <div className="flex items-center justify-between mb-4">
-            <h3 className="font-bold text-lg text-white uppercase tracking-wider">Get in Touch</h3>
+            <h3 className="font-mono text-[11px] text-red uppercase tracking-[0.15em]">
+              Now Open
+            </h3>
             <button
-              onClick={() => setIsOpen(false)}
-              className="text-muted hover:text-white transition-colors"
+              onClick={() => {
+                setIsOpen(false);
+                setDismissed(true);
+              }}
+              className="text-white/30 hover:text-white transition-colors"
             >
-              <X size={20} />
+              <X size={16} />
             </button>
           </div>
 
-          <div className="space-y-4">
-            {/* Email */}
-            <a
-              href="mailto:NU-launchlabs@northeastern.edu"
-              className="flex items-center gap-3 p-3 bg-[rgba(255,255,255,0.03)] hover:bg-[rgba(255,255,255,0.06)] border border-[rgba(255,255,255,0.05)] hover:border-red transition-colors group"
-            >
-              <Mail size={20} className="text-red flex-shrink-0" />
-              <div className="flex-1 min-w-0">
-                <p className="text-xs font-mono text-muted uppercase">Email</p>
-                <p className="text-sm font-bold text-white truncate group-hover:text-red transition-colors">
-                  NU-launchlabs@northeastern.edu
-                </p>
-              </div>
-            </a>
+          <h4 className="text-xl font-bold text-white uppercase tracking-tight mb-3">
+            E-Board Applications
+          </h4>
+          <p className="text-sm text-white/50 leading-relaxed mb-6">
+            Interested in helping lead Launch Labs? Apply for an executive board
+            position.
+          </p>
 
-            {/* LinkedIn */}
-            <a
-              href="https://www.linkedin.com/company/nulaunchlabs"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 p-3 bg-[rgba(255,255,255,0.03)] hover:bg-[rgba(255,255,255,0.06)] border border-[rgba(255,255,255,0.05)] hover:border-red transition-colors group"
-            >
-              <Linkedin size={20} className="text-white group-hover:text-red transition-colors flex-shrink-0" />
-              <div className="flex-1 min-w-0">
-                <p className="text-xs font-mono text-muted uppercase">LinkedIn</p>
-                <p className="text-sm font-bold text-white truncate group-hover:text-red transition-colors">
-                  /company/nulaunchlabs
-                </p>
-              </div>
-            </a>
-
-            {/* Instagram */}
-            <a
-              href="https://instagram.com/nulaunchlabs"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-3 p-3 bg-[rgba(255,255,255,0.03)] hover:bg-[rgba(255,255,255,0.06)] border border-[rgba(255,255,255,0.05)] hover:border-red transition-colors group"
-            >
-              <Instagram size={20} className="text-white group-hover:text-red transition-colors flex-shrink-0" />
-              <div className="flex-1 min-w-0">
-                <p className="text-xs font-mono text-muted uppercase">Instagram</p>
-                <p className="text-sm font-bold text-white truncate group-hover:text-red transition-colors">
-                  @nulaunchlabs
-                </p>
-              </div>
-            </a>
-          </div>
+          <a
+            href={EBOARD_FORM_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 w-full py-3 bg-red text-white font-mono text-[11px] uppercase tracking-[0.15em] hover:bg-red/90 transition-colors duration-200"
+          >
+            Apply Now <ArrowUpRight size={14} />
+          </a>
         </div>
       )}
 
       {/* Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="bg-red hover:bg-red-dark text-white p-4 transition-all duration-200 flex items-center justify-center h-14 w-14 hover:-translate-y-1"
+        className="bg-red hover:bg-red/90 text-white p-4 transition-all duration-200 flex items-center justify-center h-14 w-14 hover:-translate-y-1"
       >
-        {isOpen ? (
-          <X size={24} />
-        ) : (
-          <Mail size={24} />
-        )}
+        {isOpen ? <X size={24} /> : <Rocket size={24} />}
       </button>
     </div>
   );

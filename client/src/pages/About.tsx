@@ -1,6 +1,5 @@
 import Navigation from "@/components/sections/Navigation";
 import Footer from "@/components/sections/Footer";
-import { Link } from "wouter";
 
 export default function About() {
   return (
@@ -119,31 +118,6 @@ export default function About() {
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="py-24 relative overflow-hidden">
-          <div className="container">
-            <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-12 md:p-16 rounded-xl text-center relative group hover:border-red transition-colors duration-300">
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-red opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
-
-              <h2 className="font-mono text-[13px] text-red uppercase tracking-[0.1em] mb-6">
-                TAKE ACTION
-              </h2>
-              <h3 className="font-sans font-extrabold text-[28px] md:text-[40px] uppercase text-white leading-[1.1] tracking-[-0.02em] mb-8">
-                READY TO JOIN?
-              </h3>
-              <p className="font-sans font-normal text-[18px] text-white/60 leading-[1.6] max-w-2xl mx-auto mb-10">
-                Whether you're interested in joining a team or leading an initiative, we'd love to hear from you.
-              </p>
-
-              <Link
-                href="/forms"
-                className="inline-flex items-center gap-3 bg-red text-white font-sans font-semibold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-lg hover:bg-red/90 transition-all duration-200 hover:-translate-y-[1px]"
-              >
-                GET STARTED →
-              </Link>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>

@@ -170,37 +170,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ── CTA ── */}
-        <section className="py-20 md:py-28">
-          <div className="container">
-            <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-12 md:p-16 text-center">
-              <h2 className="font-mono text-[12px] text-red uppercase tracking-[0.1em] mb-5">
-                Get Involved
-              </h2>
-              <h3 className="font-sans font-extrabold text-[26px] md:text-[36px] uppercase text-white leading-[1.1] tracking-[-0.02em] mb-6">
-                INTERESTED?
-              </h3>
-              <p className="font-sans font-normal text-[16px] text-white/45 leading-[1.7] max-w-lg mx-auto mb-10">
-                We're always looking for motivated students who want to build, learn, and collaborate.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/forms"
-                  className="inline-flex items-center gap-3 bg-red text-white font-sans font-semibold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-lg hover:bg-red/90 transition-all duration-200 hover:-translate-y-[1px]"
-                >
-                  APPLY NOW <ArrowRight size={16} />
-                </Link>
-                <Link
-                  href="/about"
-                  className="inline-flex items-center gap-3 border border-[rgba(255,255,255,0.15)] text-white font-sans font-semibold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-lg hover:border-white/40 transition-all duration-200"
-                >
-                  LEARN MORE
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
 
       <Footer />
