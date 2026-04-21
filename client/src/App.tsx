@@ -1,8 +1,6 @@
 import { Router, Route } from "wouter";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import LaunchTeams from "./pages/LaunchTeams";
-import InnovationTeams from "./pages/InnovationTeams";
 import Leadership from "./pages/Leadership";
 import Events from "./pages/Events";
 import Portfolio from "./pages/Portfolio";
@@ -21,8 +19,6 @@ export default function App() {
       <FloatingContact />
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
-      <Route path="/launch-teams" component={LaunchTeams} />
-      <Route path="/innovation-teams" component={InnovationTeams} />
       <Route path="/leadership" component={Leadership} />
       <Route path="/events" component={Events} />
       <Route path="/portfolio" component={Portfolio} />

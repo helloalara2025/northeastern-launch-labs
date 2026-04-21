@@ -69,3 +69,5 @@
 - [x] Tone down space elements on Home page (reduce star field, trajectory, constellations)
 - [x] Remove fake stats section
 - [x] Simplify copy/tone to be more grounded and honest
+- [x] Remove Innovation Teams and Launch Teams from Navigation (keep only Projects)
+- [x] Remove Innovation Teams and Launch Teams routes from App.tsx

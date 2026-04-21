@@ -5,8 +5,6 @@ import { Link, useLocation } from "wouter";
 const navLinks = [
   { label: "About", href: "/about" },
   { label: "Projects", href: "/portfolio" },
-  { label: "Launch Teams", href: "/launch-teams" },
-  { label: "Innovation Teams", href: "/innovation-teams" },
   { label: "Leadership", href: "/leadership" },
 ];
 
