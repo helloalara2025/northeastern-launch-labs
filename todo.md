@@ -66,3 +66,6 @@
 - [x] Add mission teaser section
 - [x] Add featured projects section pulling from database
 - [x] Add CTA section
+- [x] Tone down space elements on Home page (reduce star field, trajectory, constellations)
+- [x] Remove fake stats section
+- [x] Simplify copy/tone to be more grounded and honest
