@@ -30,8 +30,8 @@ export default function Home() {
           </svg>
 
           <div className="container relative z-10 flex flex-col items-center text-center">
-            <span className="font-mono text-[11px] text-red uppercase tracking-[0.25em] mb-8 border border-red/30 bg-red/10 px-4 py-2 rounded-full inline-block">
-              NORTHEASTERN STUDENT ORGANIZATION
+            <span className="font-mono text-[11px] text-red uppercase tracking-[0.25em] mb-8 border border-red/30 bg-red/10 px-4 py-2 inline-block">
+              NORTHEASTERN STUDENT-LED ORGANIZATION
             </span>
 
             <h1 className="font-sans font-extrabold text-[40px] md:text-[64px] lg:text-[76px] text-white leading-[0.95] tracking-[-0.03em] mb-8 max-w-4xl uppercase">
@@ -40,7 +40,7 @@ export default function Home() {
             </h1>
 
             <p className="font-sans font-normal text-[17px] md:text-[18px] text-white/50 leading-[1.7] max-w-[580px] mb-12">
-              A student-run club where teams build end-to-end products — partnering with startups and developing original projects across disciplines.
+              A student-led club where teams build end-to-end products — partnering with startups and developing original projects across disciplines.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -167,6 +167,89 @@ export default function Home() {
                 })}
               </div>
             )}
+          </div>
+        </section>
+
+        {/* ── ANNOUNCEMENTS ── */}
+        <section className="py-20 md:py-28 border-b border-[rgba(255,255,255,0.08)]">
+          <div className="container">
+            <div className="mb-12">
+              <h2 className="text-xs font-mono text-red uppercase tracking-[0.2em] mb-4">
+                Announcements
+              </h2>
+              <h3 className="text-3xl md:text-4xl font-bold tracking-tight uppercase">
+                WHAT'S HAPPENING
+              </h3>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* E-Board Applications */}
+              <div className="bg-secondary border border-red/20 p-8 md:p-10 relative overflow-hidden group hover:border-red/40 transition-colors duration-300">
+                <div className="absolute top-0 right-0 w-48 h-48 bg-red opacity-5 rounded-full blur-3xl" />
+                <div className="relative z-10">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="inline-flex items-center gap-2 px-3 py-1 border border-red/30 bg-red/5">
+                      <span className="w-1.5 h-1.5 bg-red animate-pulse" />
+                      <span className="font-mono text-[10px] text-red/80 uppercase tracking-[0.15em]">
+                        Now Open
+                      </span>
+                    </span>
+                  </div>
+                  <h4 className="text-xl md:text-2xl font-bold text-white uppercase tracking-tight mb-3">
+                    E-Board Applications
+                  </h4>
+                  <p className="text-white/50 leading-relaxed mb-6">
+                    We're recruiting leadership for Fall 2026. Positions include Secretary, Treasurer, Events Chair, Operations Chair, and Graphic Designer. Help shape the future of Launch Labs.
+                  </p>
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeRnvxsGPbkl7Nuo4WX77wV6sB8twjy5v5W1SP7oqjrjZ6CAw/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-red text-white font-mono text-[11px] uppercase tracking-[0.15em] px-6 py-3 hover:bg-red/90 transition-colors duration-200"
+                  >
+                    Apply Now <ArrowRight size={14} />
+                  </a>
+                </div>
+              </div>
+
+              {/* Project Applications */}
+              <div className="bg-secondary border border-[rgba(255,255,255,0.08)] p-8 md:p-10 relative overflow-hidden group hover:border-[rgba(255,255,255,0.15)] transition-colors duration-300">
+                <div className="relative z-10">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="inline-flex items-center gap-2 px-3 py-1 border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.02)]">
+                      <span className="w-1.5 h-1.5 bg-yellow" />
+                      <span className="font-mono text-[10px] text-white/40 uppercase tracking-[0.15em]">
+                        Coming Soon
+                      </span>
+                    </span>
+                  </div>
+                  <h4 className="text-xl md:text-2xl font-bold text-white uppercase tracking-tight mb-3">
+                    Project Team Applications
+                  </h4>
+                  <p className="text-white/50 leading-relaxed mb-6">
+                    Applications for Launch Teams and Innovation Teams will open at the start of Fall 2026. Follow us on Instagram and LinkedIn to get notified when applications go live.
+                  </p>
+                  <div className="flex items-center gap-4">
+                    <a
+                      href="https://www.instagram.com/nulaunchlabs/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 border border-[rgba(255,255,255,0.15)] text-white font-mono text-[11px] uppercase tracking-[0.15em] px-6 py-3 hover:border-white/40 transition-colors duration-200"
+                    >
+                      Instagram
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/nulaunchlabs/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 border border-[rgba(255,255,255,0.15)] text-white font-mono text-[11px] uppercase tracking-[0.15em] px-6 py-3 hover:border-white/40 transition-colors duration-200"
+                    >
+                      LinkedIn
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

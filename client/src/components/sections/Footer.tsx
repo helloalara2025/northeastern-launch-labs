@@ -1,5 +1,5 @@
 const LOGO_URL =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663293706215/2bVaappDG4coBuhzggSTVT/rocket-logo-refined-KekPcTzQgZVxnSAAhUhFvw.webp";
+  "https://d2xsxph8kpxj0f.cloudfront.net/310519663293706215/2bVaappDG4coBuhzggSTVT/rocket-logo-round_c6758031.png";
 
 const connectLinks = [
   { label: "LinkedIn", href: "https://www.linkedin.com/company/nulaunchlabs/" },
@@ -24,7 +24,7 @@ export default function Footer() {
               <img
                 src={LOGO_URL}
                 alt="NU Launch Labs"
-                className="w-8 h-8 object-contain flex-shrink-0"
+                className="w-8 h-8 object-contain flex-shrink-0 rounded-full"
               />
               <span className="font-mono text-[11px] font-medium tracking-[0.2em] text-white/70 uppercase">
                 NU Launch Labs
@@ -70,7 +70,7 @@ export default function Footer() {
             &copy; {currentYear} Northeastern Launch Labs. All rights reserved.
           </p>
           <p className="font-mono text-[10px] text-white/25 uppercase tracking-[0.15em]">
-            A Northeastern University Student Organization
+            A Northeastern University Student-Led Organization
           </p>
         </div>
       </div>

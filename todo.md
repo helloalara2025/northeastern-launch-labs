@@ -91,3 +91,8 @@
 - [x] Refine logo quality (create clean SVG version)
 - [x] Adapt site red color to match logo red (#8B1A13)
 - [x] Update all red references across the site theme
+- [x] Make rocket logo perimeter round (circular) instead of square
+- [x] Change "Student Organization" to "Student-Led Organization" across site
+- [x] Add homepage announcement about E-Board apps being open
+- [x] Add banner about project apps opening in Fall 2026
+- [x] Final polish and review (updated student-led across all pages, verified logo, announcements)

@@ -2,7 +2,7 @@ import { X, ArrowUpRight } from "lucide-react";
 import { useState } from "react";
 
 const LOGO_URL =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663293706215/2bVaappDG4coBuhzggSTVT/rocket-logo-refined-KekPcTzQgZVxnSAAhUhFvw.webp";
+  "https://d2xsxph8kpxj0f.cloudfront.net/310519663293706215/2bVaappDG4coBuhzggSTVT/rocket-logo-round_c6758031.png";
 
 const EBOARD_FORM_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSeRnvxsGPbkl7Nuo4WX77wV6sB8twjy5v5W1SP7oqjrjZ6CAw/viewform";
@@ -57,7 +57,7 @@ export default function FloatingContact() {
         onClick={() => setIsOpen(!isOpen)}
         className="bg-red hover:bg-red/90 text-white p-4 transition-all duration-200 flex items-center justify-center h-14 w-14 hover:-translate-y-1"
       >
-        {isOpen ? <X size={24} /> : <img src={LOGO_URL} alt="" className="w-7 h-7 object-contain" />}
+        {isOpen ? <X size={24} /> : <img src={LOGO_URL} alt="" className="w-7 h-7 object-contain rounded-full" />}
       </button>
     </div>
   );

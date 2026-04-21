@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "wouter";
 
 const LOGO_URL =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663293706215/2bVaappDG4coBuhzggSTVT/rocket-logo-refined-KekPcTzQgZVxnSAAhUhFvw.webp";
+  "https://d2xsxph8kpxj0f.cloudfront.net/310519663293706215/2bVaappDG4coBuhzggSTVT/rocket-logo-round_c6758031.png";
 
 const navLinks = [
   { label: "About", href: "/about" },
@@ -64,7 +64,7 @@ export default function Navigation() {
             <img
               src={LOGO_URL}
               alt="NU Launch Labs"
-              className="w-9 h-9 object-contain"
+              className="w-9 h-9 object-contain rounded-full"
             />
             <span className="font-mono text-[11px] font-medium tracking-[0.2em] text-white/70 uppercase">
               NU Launch Labs
