@@ -73,3 +73,5 @@
 - [x] Remove Innovation Teams and Launch Teams routes from App.tsx
 - [x] Remove "Ready to Join" / CTA sections from Home and About pages
 - [x] Create floating popup button for e-board application link
+- [x] Remove made-up project info, keep only original spreadsheet data
+- [x] Remove team reference IDs (T16, etc.) from project data
