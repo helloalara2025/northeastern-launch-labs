@@ -229,7 +229,7 @@ export default function ProjectCarousel() {
                   </ul>
                 </div>
 
-                <Link href="/innovation-teams" className="inline-flex items-center gap-2 text-red font-bold hover:text-white transition-colors duration-200 text-sm uppercase tracking-wider mt-8">
+                <Link href="/portfolio" className="inline-flex items-center gap-2 text-red font-bold hover:text-white transition-colors duration-200 text-sm uppercase tracking-wider mt-8">
                   View All Teams
                   <ChevronRight size={16} />
                 </Link>

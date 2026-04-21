@@ -98,3 +98,5 @@
 - [x] Final polish and review (updated student-led across all pages, verified logo, announcements)
 - [x] Simplify Events page: remove made-up event details (times, descriptions, titles)
 - [x] Keep real photos with vague accompanying text only
+- [x] Audit all links across the site and fix any broken ones (fixed /launch-teams, /innovation-teams, /partners across 6 files)
+- [x] Move floating button to bottom-left, restyle to not look like a chatbot

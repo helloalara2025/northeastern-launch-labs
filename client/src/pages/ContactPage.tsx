@@ -93,9 +93,9 @@ export default function ContactPage() {
                     <p className="text-black/70 text-lg leading-relaxed mb-8">
                       Learn more about our Launch and Innovation teams.
                     </p>
-                    <Link href="/launch-teams">
+                    <Link href="/portfolio">
                       <Button className="btn-secondary w-full inline-flex items-center justify-center gap-3">
-                        View Teams
+                        View Projects
                         <ArrowRight size={18} />
                       </Button>
                     </Link>
@@ -135,7 +135,7 @@ export default function ContactPage() {
               <ul className="space-y-4">
                 <li><Link href="/" className="text-muted hover:text-yellow transition-colors">Home</Link></li>
                 <li><Link href="/about" className="text-muted hover:text-yellow transition-colors">About</Link></li>
-                <li><Link href="/launch-teams" className="text-muted hover:text-yellow transition-colors">Launch Teams</Link></li>
+                <li><Link href="/portfolio" className="text-muted hover:text-yellow transition-colors">Projects</Link></li>
               </ul>
             </div>
             <div>
@@ -143,7 +143,7 @@ export default function ContactPage() {
               <ul className="space-y-4">
                 <li><Link href="/forms" className="text-muted hover:text-yellow transition-colors">Apply</Link></li>
                 <li><Link href="/leadership" className="text-muted hover:text-yellow transition-colors">Leadership</Link></li>
-                <li><Link href="/innovation-teams" className="text-muted hover:text-yellow transition-colors">Innovation Teams</Link></li>
+                <li><Link href="/events" className="text-muted hover:text-yellow transition-colors">Events</Link></li>
               </ul>
             </div>
             <div>
