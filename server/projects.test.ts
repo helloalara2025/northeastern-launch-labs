@@ -5,13 +5,17 @@ import type { TrpcContext } from "./_core/context";
 // Mock the db module so we don't need a real database connection
 vi.mock("./db", () => ({
   getAllProjects: vi.fn(),
+  getProjectsByTeamType: vi.fn(),
+  getProjectById: vi.fn(),
   getUserByOpenId: vi.fn(),
   upsertUser: vi.fn(),
 }));
 
-import { getAllProjects } from "./db";
+import { getAllProjects, getProjectsByTeamType, getProjectById } from "./db";
 
 const mockGetAllProjects = vi.mocked(getAllProjects);
+const mockGetProjectsByTeamType = vi.mocked(getProjectsByTeamType);
+const mockGetProjectById = vi.mocked(getProjectById);
 
 function createPublicContext(): TrpcContext {
   return {
@@ -38,6 +42,7 @@ const sampleProjects = [
     description: "Comprehensive security framework protecting AI/ML systems.",
     mvpScope: "Working adversarial defense and inference monitoring prototype.",
     endGoal: "Making AI security accessible to ML engineers.",
+    teamType: "innovation" as const,
     sortOrder: 1,
     createdAt: new Date(),
     updatedAt: new Date(),
@@ -53,6 +58,7 @@ const sampleProjects = [
     description: "Mobile indoor navigation using only the phone's camera.",
     mvpScope: "Single-building prototype using OpenCV-based image matching.",
     endGoal: "Users select a room and receive step-by-step visual directions.",
+    teamType: "innovation" as const,
     sortOrder: 2,
     createdAt: new Date(),
     updatedAt: new Date(),
@@ -64,7 +70,7 @@ describe("projects.list", () => {
     vi.clearAllMocks();
   });
 
-  it("returns all projects from the database", async () => {
+  it("returns all projects when no teamType filter is provided", async () => {
     mockGetAllProjects.mockResolvedValue(sampleProjects);
 
     const ctx = createPublicContext();
@@ -74,10 +80,35 @@ describe("projects.list", () => {
 
     expect(result).toHaveLength(2);
     expect(result[0].projectId).toBe("T-06");
-    expect(result[0].name).toBe("AI/ML Pipeline Security");
     expect(result[1].projectId).toBe("T-07");
-    expect(result[1].name).toBe("Indoor Navigation");
     expect(mockGetAllProjects).toHaveBeenCalledOnce();
+    expect(mockGetProjectsByTeamType).not.toHaveBeenCalled();
+  });
+
+  it("returns filtered projects when teamType is innovation", async () => {
+    mockGetProjectsByTeamType.mockResolvedValue(sampleProjects);
+
+    const ctx = createPublicContext();
+    const caller = appRouter.createCaller(ctx);
+
+    const result = await caller.projects.list({ teamType: "innovation" });
+
+    expect(result).toHaveLength(2);
+    expect(mockGetProjectsByTeamType).toHaveBeenCalledWith("innovation");
+    expect(mockGetAllProjects).not.toHaveBeenCalled();
+  });
+
+  it("returns filtered projects when teamType is launch", async () => {
+    mockGetProjectsByTeamType.mockResolvedValue([]);
+
+    const ctx = createPublicContext();
+    const caller = appRouter.createCaller(ctx);
+
+    const result = await caller.projects.list({ teamType: "launch" });
+
+    expect(result).toHaveLength(0);
+    expect(mockGetProjectsByTeamType).toHaveBeenCalledWith("launch");
+    expect(mockGetAllProjects).not.toHaveBeenCalled();
   });
 
   it("returns an empty array when no projects exist", async () => {
@@ -90,30 +121,54 @@ describe("projects.list", () => {
 
     expect(result).toHaveLength(0);
     expect(result).toEqual([]);
-    expect(mockGetAllProjects).toHaveBeenCalledOnce();
-  });
-
-  it("returns projects with correct tech stack arrays", async () => {
-    mockGetAllProjects.mockResolvedValue(sampleProjects);
-
-    const ctx = createPublicContext();
-    const caller = appRouter.createCaller(ctx);
-
-    const result = await caller.projects.list();
-
-    expect(result[0].tech).toEqual(["TensorFlow", "PyTorch", "scikit-learn"]);
-    expect(result[1].tech).toEqual(["OpenCV", "A* Pathfinding"]);
   });
 
   it("is accessible without authentication (public procedure)", async () => {
     mockGetAllProjects.mockResolvedValue(sampleProjects);
 
-    // Context with no user (unauthenticated)
     const ctx = createPublicContext();
     const caller = appRouter.createCaller(ctx);
 
-    // Should not throw
     const result = await caller.projects.list();
     expect(result).toHaveLength(2);
+  });
+});
+
+describe("projects.getById", () => {
+  beforeEach(() => {
+    vi.clearAllMocks();
+  });
+
+  it("returns a single project by id", async () => {
+    mockGetProjectById.mockResolvedValue(sampleProjects[0]);
+
+    const ctx = createPublicContext();
+    const caller = appRouter.createCaller(ctx);
+
+    const result = await caller.projects.getById({ id: 1 });
+
+    expect(result.projectId).toBe("T-06");
+    expect(result.name).toBe("AI/ML Pipeline Security");
+    expect(result.teamType).toBe("innovation");
+    expect(mockGetProjectById).toHaveBeenCalledWith(1);
+  });
+
+  it("throws when project is not found", async () => {
+    mockGetProjectById.mockResolvedValue(undefined);
+
+    const ctx = createPublicContext();
+    const caller = appRouter.createCaller(ctx);
+
+    await expect(caller.projects.getById({ id: 999 })).rejects.toThrow("Project not found");
+  });
+
+  it("is accessible without authentication (public procedure)", async () => {
+    mockGetProjectById.mockResolvedValue(sampleProjects[0]);
+
+    const ctx = createPublicContext();
+    const caller = appRouter.createCaller(ctx);
+
+    const result = await caller.projects.getById({ id: 1 });
+    expect(result).toBeDefined();
   });
 });

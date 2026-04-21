@@ -49,3 +49,12 @@
 - [x] Ensure Footer is included on all main pages
 - [x] Simplify Footer to only show Get Involved and Connect columns (remove Explore)
 - [x] Remove Get Involved column from Footer, keep only Connect (LinkedIn, Instagram, Email)
+- [x] Add teamType field to projects schema (innovation / launch)
+- [x] Seed Innovation Teams data from spreadsheet
+- [x] Update tRPC routes to support filtering by teamType
+- [x] Create shared ProjectCard component used across all project views
+- [x] Update Portfolio page to use shared ProjectCard
+- [x] Update Innovation Teams page to show filtered innovation projects
+- [x] Update Launch Teams page to show filtered launch projects
+- [x] Create individual project detail page (/projects/:id)
+- [x] Write tests for new routes

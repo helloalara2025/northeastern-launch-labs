@@ -42,6 +42,8 @@ export const projects = mysqlTable("projects", {
   description: text("description").notNull(),
   mvpScope: text("mvpScope").notNull(),
   endGoal: text("endGoal").notNull(),
+  /** Team type: innovation or launch */
+  teamType: mysqlEnum("teamType", ["innovation", "launch"]).default("innovation").notNull(),
   /** Display order for sorting */
   sortOrder: int("sortOrder").default(0).notNull(),
   createdAt: timestamp("createdAt").defaultNow().notNull(),

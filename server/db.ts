@@ -100,6 +100,21 @@ export async function getAllProjects() {
   return db.select().from(projects).orderBy(asc(projects.sortOrder), asc(projects.id));
 }
 
+export async function getProjectsByTeamType(teamType: "innovation" | "launch") {
+  const db = await getDb();
+  if (!db) return [];
+  return db.select().from(projects)
+    .where(eq(projects.teamType, teamType))
+    .orderBy(asc(projects.sortOrder), asc(projects.id));
+}
+
+export async function getProjectById(id: number) {
+  const db = await getDb();
+  if (!db) return undefined;
+  const result = await db.select().from(projects).where(eq(projects.id, id)).limit(1);
+  return result.length > 0 ? result[0] : undefined;
+}
+
 export async function getProjectByProjectId(projectId: string) {
   const db = await getDb();
   if (!db) return undefined;

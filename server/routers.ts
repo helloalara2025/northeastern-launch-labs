@@ -2,7 +2,8 @@ import { COOKIE_NAME } from "@shared/const";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
-import { getAllProjects } from "./db";
+import { getAllProjects, getProjectsByTeamType, getProjectById } from "./db";
+import { z } from "zod";
 
 export const appRouter = router({
   system: systemRouter,
@@ -18,10 +19,26 @@ export const appRouter = router({
   }),
 
   projects: router({
-    list: publicProcedure.query(async () => {
-      const projects = await getAllProjects();
-      return projects;
-    }),
+    /** List all projects (optionally filtered by teamType) */
+    list: publicProcedure
+      .input(z.object({ teamType: z.enum(["innovation", "launch"]).optional() }).optional())
+      .query(async ({ input }) => {
+        if (input?.teamType) {
+          return getProjectsByTeamType(input.teamType);
+        }
+        return getAllProjects();
+      }),
+
+    /** Get a single project by its numeric ID */
+    getById: publicProcedure
+      .input(z.object({ id: z.number() }))
+      .query(async ({ input }) => {
+        const project = await getProjectById(input.id);
+        if (!project) {
+          throw new Error("Project not found");
+        }
+        return project;
+      }),
   }),
 });
 

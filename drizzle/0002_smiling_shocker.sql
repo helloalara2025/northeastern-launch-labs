@@ -1,0 +1,1 @@
+ALTER TABLE `projects` ADD `teamType` enum('innovation','launch') DEFAULT 'innovation' NOT NULL;

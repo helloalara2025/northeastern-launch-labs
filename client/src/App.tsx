@@ -12,6 +12,7 @@ import ContactPage from "./pages/ContactPage";
 import ApplyLaunchTeam from "./pages/ApplyLaunchTeam";
 import ApplyInnovationTeam from "./pages/ApplyInnovationTeam";
 import ApplyLeadership from "./pages/ApplyLeadership";
+import ProjectDetail from "./pages/ProjectDetail";
 import FloatingContact from "./components/FloatingContact";
 export default function App() {
   // make sure to consider if you need authentication for certain routes
@@ -25,6 +26,7 @@ export default function App() {
       <Route path="/leadership" component={Leadership} />
       <Route path="/events" component={Events} />
       <Route path="/portfolio" component={Portfolio} />
+      <Route path="/projects/:id" component={ProjectDetail} />
       <Route path="/forms" component={Forms} />
 
       <Route path="/contact" component={ContactPage} />
