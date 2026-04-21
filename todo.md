@@ -61,3 +61,8 @@
 - [x] Simplify and restyle About page to match dark builder aesthetic
 - [x] Remove Get Involved section from About page
 - [x] Replace inline footer with shared Footer component on About page
+- [x] Restyle Home page with subtle launch/space themes in dark builder aesthetic
+- [x] Add hero section with space-themed elements
+- [x] Add mission teaser section
+- [x] Add featured projects section pulling from database
+- [x] Add CTA section
