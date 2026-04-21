@@ -103,3 +103,4 @@
 - [x] Lighten site background for scrappy student-org feel
 - [x] Remove blue as a main color (replace with red/black/white palette)
 - [x] Keep all content, layout, and structure the same
+- [x] Add back color accents to break up gray (more crimson red, warm tones, no navy)

@@ -11,9 +11,12 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-secondary border-t border-foreground/8 relative overflow-hidden">
+    <footer className="bg-[#1a1a1a] text-white relative overflow-hidden">
+      {/* Red accent line at top */}
+      <div className="w-full h-1 bg-[#8B1A13]" />
+
       {/* Subtle dot grid texture */}
-      <div className="absolute inset-0 bg-[radial-gradient(rgba(26,26,26,0.04)_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.03)_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none" />
 
       <div className="container relative z-10">
         {/* Main Footer Grid */}
@@ -26,17 +29,17 @@ export default function Footer() {
                 alt="NU Launch Labs"
                 className="w-8 h-8 object-contain flex-shrink-0 rounded-full"
               />
-              <span className="font-mono text-[11px] font-medium tracking-[0.2em] text-foreground/70 uppercase">
+              <span className="font-mono text-[11px] font-medium tracking-[0.2em] text-white/70 uppercase">
                 NU Launch Labs
               </span>
             </div>
-            <p className="text-foreground/40 text-sm leading-relaxed max-w-xs mb-8">
+            <p className="text-white/40 text-sm leading-relaxed max-w-xs mb-8">
               Northeastern University's hub for real-world, cross-disciplinary project work. Bridging classroom theory with shipping actual products.
             </p>
             {/* Status badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-foreground/8 bg-foreground/3">
-              <span className="w-2 h-2 rounded-full bg-red animate-pulse" />
-              <span className="font-mono text-[10px] text-foreground/40 uppercase tracking-[0.15em]">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 border border-[#8B1A13]/40 bg-[#8B1A13]/10">
+              <span className="w-2 h-2 rounded-full bg-[#8B1A13] animate-pulse" />
+              <span className="font-mono text-[10px] text-[#8B1A13] uppercase tracking-[0.15em]">
                 Recruiting Fall 2026
               </span>
             </div>
@@ -44,7 +47,7 @@ export default function Footer() {
 
           {/* Connect Column */}
           <div className="md:col-span-4">
-            <h4 className="font-mono text-[10px] text-foreground/30 uppercase tracking-[0.2em] mb-6">
+            <h4 className="font-mono text-[10px] text-white/30 uppercase tracking-[0.2em] mb-6">
               Connect
             </h4>
             <ul className="space-y-3">
@@ -54,7 +57,7 @@ export default function Footer() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-foreground/50 hover:text-foreground text-sm transition-colors duration-200 font-medium"
+                    className="text-white/50 hover:text-[#8B1A13] text-sm transition-colors duration-200 font-medium"
                   >
                     {link.label}
                   </a>
@@ -65,11 +68,11 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-foreground/8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="font-mono text-[10px] text-foreground/25 uppercase tracking-[0.15em]">
+        <div className="border-t border-white/10 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="font-mono text-[10px] text-white/25 uppercase tracking-[0.15em]">
             &copy; {currentYear} Northeastern Launch Labs. All rights reserved.
           </p>
-          <p className="font-mono text-[10px] text-foreground/25 uppercase tracking-[0.15em]">
+          <p className="font-mono text-[10px] text-white/25 uppercase tracking-[0.15em]">
             A Northeastern University Student-Led Organization
           </p>
         </div>

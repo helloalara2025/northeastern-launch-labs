@@ -1,16 +1,16 @@
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { Link } from "wouter";
 
-// Domain Color Map
+// Domain Color Map — no blue/navy, using red, amber, green, rose tones
 const domainColors: Record<string, { bg: string; text: string; dot: string }> = {
   "Security": { bg: "#FEE2E2", text: "#991B1B", dot: "#8B1A13" },
-  "Navigation": { bg: "#DBEAFE", text: "#1E3A5F", dot: "#2563EB" },
-  "FinTech / AI": { bg: "#FEF3C7", text: "#78350F", dot: "#D97706" },
+  "Navigation": { bg: "#FEF3C7", text: "#78350F", dot: "#D97706" },
+  "FinTech / AI": { bg: "#FDE68A", text: "#78350F", dot: "#B45309" },
   "Student Life": { bg: "#D1FAE5", text: "#064E3B", dot: "#059669" },
-  "Climate / Civic Tech": { bg: "#E0E7FF", text: "#312E81", dot: "#4F46E5" },
+  "Climate / Civic Tech": { bg: "#D1FAE5", text: "#064E3B", dot: "#047857" },
   "Health / Mobility": { bg: "#FCE7F3", text: "#831843", dot: "#DB2777" },
   "Security / GRC": { bg: "#FEE2E2", text: "#991B1B", dot: "#8B1A13" },
-  "Navigation / Campus": { bg: "#DBEAFE", text: "#1E3A5F", dot: "#2563EB" },
+  "Navigation / Campus": { bg: "#FEF3C7", text: "#78350F", dot: "#D97706" },
 };
 
 export { domainColors };
@@ -36,13 +36,13 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project, isExpanded, onToggle }: ProjectCardProps) {
-  const colors = domainColors[project.domain] || { bg: "#e5e5e5", text: "#333", dot: "#666" };
+  const colors = domainColors[project.domain] || { bg: "#FEE2E2", text: "#991B1B", dot: "#8B1A13" };
   const tech = project.tech as string[];
 
   return (
     <div
-      className={`bg-secondary border transition-all duration-300 overflow-hidden ${
-        isExpanded ? "border-red rounded-xl" : "border-foreground/5 rounded-lg hover:border-foreground/15"
+      className={`bg-white border transition-all duration-300 overflow-hidden ${
+        isExpanded ? "border-[#8B1A13] shadow-lg shadow-[#8B1A13]/5" : "border-[#1a1a1a]/5 hover:border-[#8B1A13]/30"
       }`}
     >
       {/* Card Header (Always Visible) */}
@@ -51,24 +51,24 @@ export default function ProjectCard({ project, isExpanded, onToggle }: ProjectCa
         className="w-full text-left p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 cursor-pointer group"
       >
         <div className="flex items-start gap-6">
-          <div className="font-mono text-xl md:text-2xl font-bold text-foreground/30 group-hover:text-red transition-colors pt-1">
+          <div className="font-mono text-xl md:text-2xl font-bold text-[#8B1A13]/30 group-hover:text-[#8B1A13] transition-colors pt-1">
             {project.projectId}
           </div>
           <div>
-            <h3 className="text-2xl md:text-3xl font-bold mb-2 tracking-tight">{project.name}</h3>
-            <p className="text-foreground/55 text-sm md:text-base font-medium">{project.subtitle}</p>
+            <h3 className="text-2xl md:text-3xl font-bold mb-2 tracking-tight text-[#1a1a1a]">{project.name}</h3>
+            <p className="text-[#1a1a1a]/55 text-sm md:text-base font-medium">{project.subtitle}</p>
           </div>
         </div>
 
         <div className="flex items-center gap-6 self-start md:self-center ml-14 md:ml-0">
           <span
-            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider whitespace-nowrap"
+            className="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-bold uppercase tracking-wider whitespace-nowrap"
             style={{ backgroundColor: colors.bg, color: colors.text }}
           >
-            <span className="w-2 h-2 rounded-full" style={{ backgroundColor: colors.dot }}></span>
+            <span className="w-2 h-2" style={{ backgroundColor: colors.dot }}></span>
             {project.domain}
           </span>
-          <div className="text-foreground/40 group-hover:text-foreground transition-colors">
+          <div className="text-[#1a1a1a]/40 group-hover:text-[#8B1A13] transition-colors">
             {isExpanded ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
           </div>
         </div>
@@ -80,50 +80,50 @@ export default function ProjectCard({ project, isExpanded, onToggle }: ProjectCa
           isExpanded ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="p-6 md:p-8 pt-0 border-t border-foreground/5 mt-2">
+        <div className="p-6 md:p-8 pt-0 border-t border-[#1a1a1a]/5 mt-2">
           <div className="grid md:grid-cols-3 gap-12 pt-8">
             {/* Left Column: Narrative */}
             <div className="md:col-span-2 space-y-10">
               <div>
-                <p className="text-lg text-foreground/80 leading-relaxed">{project.description}</p>
+                <p className="text-lg text-[#1a1a1a]/80 leading-relaxed">{project.description}</p>
               </div>
 
-              <div className="pl-6 border-l-2 border-red relative">
-                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary border-2 border-red"></div>
-                <h4 className="text-xs font-mono text-red uppercase tracking-[0.2em] mb-3">MVP Scope</h4>
-                <p className="text-foreground/55 leading-relaxed">{project.mvpScope}</p>
+              <div className="pl-6 border-l-2 border-[#8B1A13] relative">
+                <div className="absolute -left-[9px] top-0 w-4 h-4 bg-[#F5F0EB] border-2 border-[#8B1A13]"></div>
+                <h4 className="text-xs font-mono text-[#8B1A13] uppercase tracking-[0.2em] mb-3">MVP Scope</h4>
+                <p className="text-[#1a1a1a]/55 leading-relaxed">{project.mvpScope}</p>
               </div>
 
-              <div className="pl-6 border-l-2 border-yellow relative">
-                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary border-2 border-yellow"></div>
-                <h4 className="text-xs font-mono text-yellow uppercase tracking-[0.2em] mb-3">End Goal</h4>
-                <p className="text-foreground/55 leading-relaxed">{project.endGoal}</p>
+              <div className="pl-6 border-l-2 border-[#f5c518] relative">
+                <div className="absolute -left-[9px] top-0 w-4 h-4 bg-[#F5F0EB] border-2 border-[#f5c518]"></div>
+                <h4 className="text-xs font-mono text-[#b8940f] uppercase tracking-[0.2em] mb-3">End Goal</h4>
+                <p className="text-[#1a1a1a]/55 leading-relaxed">{project.endGoal}</p>
               </div>
             </div>
 
             {/* Right Column: Metadata */}
             <div className="space-y-8">
               <div>
-                <h4 className="text-xs font-mono text-foreground/40 uppercase tracking-[0.2em] mb-4">Timeline</h4>
-                <div className="font-mono text-sm text-foreground bg-foreground/3 border border-foreground/5 px-3 py-2 rounded inline-block">
+                <h4 className="text-xs font-mono text-[#1a1a1a]/40 uppercase tracking-[0.2em] mb-4">Timeline</h4>
+                <div className="font-mono text-sm text-[#1a1a1a] bg-[#8B1A13]/5 border border-[#8B1A13]/10 px-3 py-2 inline-block">
                   {project.timeline}
                 </div>
               </div>
 
               <div>
-                <h4 className="text-xs font-mono text-foreground/40 uppercase tracking-[0.2em] mb-4">Team Type</h4>
-                <div className="font-mono text-sm text-foreground bg-foreground/3 border border-foreground/5 px-3 py-2 rounded inline-block capitalize">
+                <h4 className="text-xs font-mono text-[#1a1a1a]/40 uppercase tracking-[0.2em] mb-4">Team Type</h4>
+                <div className="font-mono text-sm text-[#1a1a1a] bg-[#8B1A13]/5 border border-[#8B1A13]/10 px-3 py-2 inline-block capitalize">
                   {project.teamType} Team
                 </div>
               </div>
 
               <div>
-                <h4 className="text-xs font-mono text-foreground/40 uppercase tracking-[0.2em] mb-4">Tech Stack</h4>
+                <h4 className="text-xs font-mono text-[#1a1a1a]/40 uppercase tracking-[0.2em] mb-4">Tech Stack</h4>
                 <div className="flex flex-wrap gap-2">
                   {tech.map((t, i) => (
                     <span
                       key={i}
-                      className="text-xs font-mono text-foreground/70 bg-foreground/5 px-2.5 py-1.5 rounded border border-foreground/10"
+                      className="text-xs font-mono text-[#8B1A13]/70 bg-[#8B1A13]/5 px-2.5 py-1.5 border border-[#8B1A13]/10"
                     >
                       {t}
                     </span>
@@ -134,7 +134,7 @@ export default function ProjectCard({ project, isExpanded, onToggle }: ProjectCa
               <div>
                 <Link
                   href={`/projects/${project.id}`}
-                  className="inline-flex items-center gap-2 text-red hover:text-foreground transition-colors font-mono text-xs uppercase tracking-[0.15em]"
+                  className="inline-flex items-center gap-2 text-[#8B1A13] hover:text-[#1a1a1a] transition-colors font-mono text-xs uppercase tracking-[0.15em]"
                 >
                   View Full Details →
                 </Link>
