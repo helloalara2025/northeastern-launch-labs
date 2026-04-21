@@ -58,3 +58,6 @@
 - [x] Update Launch Teams page to show filtered launch projects
 - [x] Create individual project detail page (/projects/:id)
 - [x] Write tests for new routes
+- [x] Simplify and restyle About page to match dark builder aesthetic
+- [x] Remove Get Involved section from About page
+- [x] Replace inline footer with shared Footer component on About page
