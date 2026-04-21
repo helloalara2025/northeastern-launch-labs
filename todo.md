@@ -100,3 +100,6 @@
 - [x] Keep real photos with vague accompanying text only
 - [x] Audit all links across the site and fix any broken ones (fixed /launch-teams, /innovation-teams, /partners across 6 files)
 - [x] Move floating button to bottom-left, restyle to not look like a chatbot
+- [x] Lighten site background for scrappy student-org feel
+- [x] Remove blue as a main color (replace with red/black/white palette)
+- [x] Keep all content, layout, and structure the same

@@ -15,23 +15,23 @@ const eventPhotos = [
 
 export default function Events() {
   return (
-    <div className="bg-primary min-h-screen text-white font-sans">
+    <div className="bg-primary min-h-screen text-foreground font-sans">
       <Navigation />
       <main>
         {/* Header */}
-        <section className="pt-40 pb-24 md:pt-56 md:pb-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.1)_1px,transparent_1px)] [background-size:24px_24px] opacity-50" />
+        <section className="pt-40 pb-24 md:pt-56 md:pb-32 border-b border-foreground/8 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(rgba(26,26,26,0.04)_1px,transparent_1px)] [background-size:24px_24px] opacity-50" />
           <svg
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] opacity-[0.04] pointer-events-none"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] opacity-[0.03] pointer-events-none"
             viewBox="0 0 800 800"
             fill="none"
           >
-            <circle cx="400" cy="400" r="350" stroke="white" strokeWidth="1" />
-            <circle cx="400" cy="400" r="250" stroke="white" strokeWidth="0.5" />
+            <circle cx="400" cy="400" r="350" stroke="currentColor" strokeWidth="1" />
+            <circle cx="400" cy="400" r="250" stroke="currentColor" strokeWidth="0.5" />
           </svg>
           <div className="container relative z-10">
             <div className="mb-8">
-              <span className="inline-flex items-center gap-2 px-3 py-1 border border-[rgba(255,255,255,0.1)] bg-secondary text-xs font-mono text-muted uppercase tracking-wider">
+              <span className="inline-flex items-center gap-2 px-3 py-1 border border-foreground/10 bg-secondary text-xs font-mono text-foreground/55 uppercase tracking-wider">
                 <span className="w-2 h-2 bg-red" />
                 Events
               </span>
@@ -39,14 +39,14 @@ export default function Events() {
             <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.9]">
               EVENTS.
             </h1>
-            <p className="text-xl md:text-2xl text-muted leading-relaxed max-w-3xl font-medium">
+            <p className="text-xl md:text-2xl text-foreground/55 leading-relaxed max-w-3xl font-medium">
               Where our community comes together.
             </p>
           </div>
         </section>
 
         {/* Photos from Our Events */}
-        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
+        <section className="py-24 md:py-32 border-b border-foreground/8 relative overflow-hidden">
           <div className="absolute -right-[10%] top-[10%] w-[500px] h-[500px] border border-red/10 pointer-events-none" />
 
           <div className="container relative z-10">
@@ -57,7 +57,7 @@ export default function Events() {
               <h3 className="text-3xl md:text-4xl font-bold tracking-tight uppercase mb-4">
                 PHOTOS FROM OUR EVENTS
               </h3>
-              <p className="text-white/50 leading-relaxed max-w-2xl">
+              <p className="text-foreground/50 leading-relaxed max-w-2xl">
                 A few snapshots from our gatherings this year.
               </p>
             </div>
@@ -66,15 +66,15 @@ export default function Events() {
               {eventPhotos.map((src, i) => (
                 <div
                   key={i}
-                  className="aspect-[4/3] bg-secondary border border-[rgba(255,255,255,0.05)] overflow-hidden group hover:border-red/40 transition-colors duration-300 relative"
+                  className="aspect-[4/3] bg-secondary border border-foreground/5 overflow-hidden group hover:border-red/40 transition-colors duration-300 relative"
                 >
                   <img
                     src={src}
                     alt={`Event photo ${i + 1}`}
-                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-all duration-500 group-hover:scale-105 transform"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-500 transform"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
               ))}
             </div>
@@ -82,16 +82,16 @@ export default function Events() {
         </section>
 
         {/* More Events Coming */}
-        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)]">
+        <section className="py-24 md:py-32 border-b border-foreground/8">
           <div className="container">
-            <div className="bg-secondary border border-[rgba(255,255,255,0.05)] p-12 md:p-16 text-center">
-              <span className="font-mono text-[10px] text-white/20 uppercase tracking-[0.2em] block mb-4">
+            <div className="bg-secondary border border-foreground/5 p-12 md:p-16 text-center">
+              <span className="font-mono text-[10px] text-foreground/20 uppercase tracking-[0.2em] block mb-4">
                 Stay Tuned
               </span>
               <h3 className="text-2xl md:text-3xl font-bold tracking-tight mb-4">
                 MORE EVENTS COMING SOON
               </h3>
-              <p className="text-muted max-w-xl mx-auto leading-relaxed">
+              <p className="text-foreground/55 max-w-xl mx-auto leading-relaxed">
                 Follow us on Instagram and LinkedIn to stay in the loop.
               </p>
               <div className="flex items-center justify-center gap-6 mt-8">
@@ -99,7 +99,7 @@ export default function Events() {
                   href="https://www.instagram.com/nulaunchlabs/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-mono text-[11px] text-white/50 uppercase tracking-[0.15em] hover:text-white transition-colors border-b border-white/20 hover:border-white/60 pb-0.5"
+                  className="font-mono text-[11px] text-foreground/50 uppercase tracking-[0.15em] hover:text-foreground transition-colors border-b border-foreground/20 hover:border-foreground/60 pb-0.5"
                 >
                   Instagram
                 </a>
@@ -107,7 +107,7 @@ export default function Events() {
                   href="https://www.linkedin.com/company/nulaunchlabs/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="font-mono text-[11px] text-white/50 uppercase tracking-[0.15em] hover:text-white transition-colors border-b border-white/20 hover:border-white/60 pb-0.5"
+                  className="font-mono text-[11px] text-foreground/50 uppercase tracking-[0.15em] hover:text-foreground transition-colors border-b border-foreground/20 hover:border-foreground/60 pb-0.5"
                 >
                   LinkedIn
                 </a>

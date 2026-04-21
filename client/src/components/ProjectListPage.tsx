@@ -60,12 +60,12 @@ export default function ProjectListPage({
   const titleParts = title.split(titleHighlight);
 
   return (
-    <div className="bg-primary min-h-screen text-white font-sans">
+    <div className="bg-primary min-h-screen text-foreground font-sans">
       <Navigation />
       <main>
         {/* Header Section */}
-        <section className="pt-40 pb-16 md:pt-56 md:pb-24 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.1)_1px,transparent_1px)] [background-size:24px_24px] opacity-50"></div>
+        <section className="pt-40 pb-16 md:pt-56 md:pb-24 border-b border-foreground/8 relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(rgba(26,26,26,0.04)_1px,transparent_1px)] [background-size:24px_24px] opacity-50"></div>
 
           {/* Red Arc SVG Strokes */}
           <svg
@@ -73,13 +73,13 @@ export default function ProjectListPage({
             viewBox="0 0 600 600"
             fill="none"
           >
-            <circle cx="600" cy="0" r="400" stroke="#8B1A13" strokeWidth="1" opacity="0.3" />
-            <circle cx="600" cy="0" r="500" stroke="#8B1A13" strokeWidth="0.5" opacity="0.15" />
+            <circle cx="600" cy="0" r="400" stroke="#8B1A13" strokeWidth="1" opacity="0.12" />
+            <circle cx="600" cy="0" r="500" stroke="#8B1A13" strokeWidth="0.5" opacity="0.06" />
           </svg>
 
           <div className="container relative z-10">
             <div className="mb-6">
-              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[rgba(255,255,255,0.1)] bg-secondary text-xs font-mono text-muted uppercase tracking-wider">
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-foreground/10 bg-secondary text-xs font-mono text-foreground/55 uppercase tracking-wider">
                 <span className="w-2 h-2 rounded-full bg-red"></span>
                 {filteredProjects.length} Projects{badgeLabel ? ` • ${badgeLabel}` : ""}
               </span>
@@ -93,20 +93,20 @@ export default function ProjectListPage({
             {/* Filters */}
             <div className="flex flex-col md:flex-row gap-4 mt-12 max-w-3xl">
               <div className="relative flex-grow">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-white/40 w-5 h-5" />
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-foreground/40 w-5 h-5" />
                 <input
                   type="text"
                   placeholder="Search projects, tech, or teams..."
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full bg-secondary border border-[rgba(255,255,255,0.1)] rounded-lg py-4 pl-12 pr-4 text-white placeholder:text-white/40 focus:outline-none focus:border-red transition-colors font-mono text-sm"
+                  className="w-full bg-secondary border border-foreground/10 rounded-lg py-4 pl-12 pr-4 text-foreground placeholder:text-foreground/40 focus:outline-none focus:border-red transition-colors font-mono text-sm"
                 />
               </div>
               <div className="relative min-w-[200px]">
                 <select
                   value={selectedDomain}
                   onChange={(e) => setSelectedDomain(e.target.value)}
-                  className="w-full bg-secondary border border-[rgba(255,255,255,0.1)] rounded-lg py-4 px-4 text-white appearance-none focus:outline-none focus:border-red transition-colors font-mono text-sm cursor-pointer"
+                  className="w-full bg-secondary border border-foreground/10 rounded-lg py-4 px-4 text-foreground appearance-none focus:outline-none focus:border-red transition-colors font-mono text-sm cursor-pointer"
                 >
                   {domains.map((domain) => (
                     <option key={domain} value={domain}>
@@ -114,7 +114,7 @@ export default function ProjectListPage({
                     </option>
                   ))}
                 </select>
-                <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 text-white/40 w-5 h-5 pointer-events-none" />
+                <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 text-foreground/40 w-5 h-5 pointer-events-none" />
               </div>
             </div>
           </div>
@@ -126,7 +126,7 @@ export default function ProjectListPage({
             {isLoading ? (
               <div className="flex items-center justify-center py-20">
                 <Loader2 className="w-8 h-8 animate-spin text-red" />
-                <span className="ml-4 text-muted font-mono">Loading projects...</span>
+                <span className="ml-4 text-foreground/55 font-mono">Loading projects...</span>
               </div>
             ) : (
               <div className="flex flex-col gap-6">
@@ -140,14 +140,14 @@ export default function ProjectListPage({
                 ))}
 
                 {filteredProjects.length === 0 && (
-                  <div className="text-center py-20 border border-[rgba(255,255,255,0.05)] rounded-xl bg-secondary">
-                    <p className="text-xl text-muted font-mono">No projects found matching your criteria.</p>
+                  <div className="text-center py-20 border border-foreground/5 rounded-xl bg-secondary">
+                    <p className="text-xl text-foreground/55 font-mono">No projects found matching your criteria.</p>
                     <button
                       onClick={() => {
                         setSearchQuery("");
                         setSelectedDomain("All Domains");
                       }}
-                      className="mt-6 text-red hover:text-white transition-colors font-mono text-sm uppercase tracking-wider"
+                      className="mt-6 text-red hover:text-foreground transition-colors font-mono text-sm uppercase tracking-wider"
                     >
                       Clear Filters
                     </button>

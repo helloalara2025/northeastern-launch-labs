@@ -36,13 +36,13 @@ interface ProjectCardProps {
 }
 
 export default function ProjectCard({ project, isExpanded, onToggle }: ProjectCardProps) {
-  const colors = domainColors[project.domain] || { bg: "#333", text: "#fff", dot: "#fff" };
+  const colors = domainColors[project.domain] || { bg: "#e5e5e5", text: "#333", dot: "#666" };
   const tech = project.tech as string[];
 
   return (
     <div
       className={`bg-secondary border transition-all duration-300 overflow-hidden ${
-        isExpanded ? "border-red rounded-xl" : "border-[rgba(255,255,255,0.05)] rounded-lg hover:border-[rgba(255,255,255,0.2)]"
+        isExpanded ? "border-red rounded-xl" : "border-foreground/5 rounded-lg hover:border-foreground/15"
       }`}
     >
       {/* Card Header (Always Visible) */}
@@ -51,12 +51,12 @@ export default function ProjectCard({ project, isExpanded, onToggle }: ProjectCa
         className="w-full text-left p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 cursor-pointer group"
       >
         <div className="flex items-start gap-6">
-          <div className="font-mono text-xl md:text-2xl font-bold text-white/30 group-hover:text-red transition-colors pt-1">
+          <div className="font-mono text-xl md:text-2xl font-bold text-foreground/30 group-hover:text-red transition-colors pt-1">
             {project.projectId}
           </div>
           <div>
             <h3 className="text-2xl md:text-3xl font-bold mb-2 tracking-tight">{project.name}</h3>
-            <p className="text-muted text-sm md:text-base font-medium">{project.subtitle}</p>
+            <p className="text-foreground/55 text-sm md:text-base font-medium">{project.subtitle}</p>
           </div>
         </div>
 
@@ -68,7 +68,7 @@ export default function ProjectCard({ project, isExpanded, onToggle }: ProjectCa
             <span className="w-2 h-2 rounded-full" style={{ backgroundColor: colors.dot }}></span>
             {project.domain}
           </span>
-          <div className="text-white/40 group-hover:text-white transition-colors">
+          <div className="text-foreground/40 group-hover:text-foreground transition-colors">
             {isExpanded ? <ChevronUp size={24} /> : <ChevronDown size={24} />}
           </div>
         </div>
@@ -80,50 +80,50 @@ export default function ProjectCard({ project, isExpanded, onToggle }: ProjectCa
           isExpanded ? "max-h-[2000px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="p-6 md:p-8 pt-0 border-t border-[rgba(255,255,255,0.05)] mt-2">
+        <div className="p-6 md:p-8 pt-0 border-t border-foreground/5 mt-2">
           <div className="grid md:grid-cols-3 gap-12 pt-8">
             {/* Left Column: Narrative */}
             <div className="md:col-span-2 space-y-10">
               <div>
-                <p className="text-lg text-white/80 leading-relaxed">{project.description}</p>
+                <p className="text-lg text-foreground/80 leading-relaxed">{project.description}</p>
               </div>
 
               <div className="pl-6 border-l-2 border-red relative">
                 <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary border-2 border-red"></div>
                 <h4 className="text-xs font-mono text-red uppercase tracking-[0.2em] mb-3">MVP Scope</h4>
-                <p className="text-muted leading-relaxed">{project.mvpScope}</p>
+                <p className="text-foreground/55 leading-relaxed">{project.mvpScope}</p>
               </div>
 
               <div className="pl-6 border-l-2 border-yellow relative">
                 <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary border-2 border-yellow"></div>
                 <h4 className="text-xs font-mono text-yellow uppercase tracking-[0.2em] mb-3">End Goal</h4>
-                <p className="text-muted leading-relaxed">{project.endGoal}</p>
+                <p className="text-foreground/55 leading-relaxed">{project.endGoal}</p>
               </div>
             </div>
 
             {/* Right Column: Metadata */}
             <div className="space-y-8">
               <div>
-                <h4 className="text-xs font-mono text-white/40 uppercase tracking-[0.2em] mb-4">Timeline</h4>
-                <div className="font-mono text-sm text-white bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.05)] px-3 py-2 rounded inline-block">
+                <h4 className="text-xs font-mono text-foreground/40 uppercase tracking-[0.2em] mb-4">Timeline</h4>
+                <div className="font-mono text-sm text-foreground bg-foreground/3 border border-foreground/5 px-3 py-2 rounded inline-block">
                   {project.timeline}
                 </div>
               </div>
 
               <div>
-                <h4 className="text-xs font-mono text-white/40 uppercase tracking-[0.2em] mb-4">Team Type</h4>
-                <div className="font-mono text-sm text-white bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.05)] px-3 py-2 rounded inline-block capitalize">
+                <h4 className="text-xs font-mono text-foreground/40 uppercase tracking-[0.2em] mb-4">Team Type</h4>
+                <div className="font-mono text-sm text-foreground bg-foreground/3 border border-foreground/5 px-3 py-2 rounded inline-block capitalize">
                   {project.teamType} Team
                 </div>
               </div>
 
               <div>
-                <h4 className="text-xs font-mono text-white/40 uppercase tracking-[0.2em] mb-4">Tech Stack</h4>
+                <h4 className="text-xs font-mono text-foreground/40 uppercase tracking-[0.2em] mb-4">Tech Stack</h4>
                 <div className="flex flex-wrap gap-2">
                   {tech.map((t, i) => (
                     <span
                       key={i}
-                      className="text-xs font-mono text-white/70 bg-[rgba(255,255,255,0.05)] px-2.5 py-1.5 rounded border border-[rgba(255,255,255,0.1)]"
+                      className="text-xs font-mono text-foreground/70 bg-foreground/5 px-2.5 py-1.5 rounded border border-foreground/10"
                     >
                       {t}
                     </span>
@@ -134,7 +134,7 @@ export default function ProjectCard({ project, isExpanded, onToggle }: ProjectCa
               <div>
                 <Link
                   href={`/projects/${project.id}`}
-                  className="inline-flex items-center gap-2 text-red hover:text-white transition-colors font-mono text-xs uppercase tracking-[0.15em]"
+                  className="inline-flex items-center gap-2 text-red hover:text-foreground transition-colors font-mono text-xs uppercase tracking-[0.15em]"
                 >
                   View Full Details →
                 </Link>

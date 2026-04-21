@@ -135,14 +135,14 @@ export default function ProjectCarousel() {
   const currentProject = projects[currentIndex];
 
   return (
-    <section className="relative py-32 md:py-48 bg-primary border-b border-[rgba(255,255,255,0.1)]">
+    <section className="relative py-32 md:py-48 bg-primary border-b border-foreground/8">
       <div className="container">
         <div className="mb-16">
           <h2 className="text-sm font-mono text-red uppercase tracking-widest mb-4">Featured Work</h2>
-          <h3 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
+          <h3 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
             INNOVATION TEAMS
           </h3>
-          <p className="text-xl text-muted font-light">
+          <p className="text-xl text-foreground/55 font-light">
             Explore our 8 active teams driving real-world impact
           </p>
         </div>
@@ -150,7 +150,7 @@ export default function ProjectCarousel() {
         {/* Carousel Container */}
         <div className="relative">
           {/* Main Card */}
-          <div className="bg-secondary border border-[rgba(255,255,255,0.05)] relative overflow-hidden group">
+          <div className="bg-secondary border border-foreground/5 relative overflow-hidden group">
             <div className="absolute top-0 right-0 w-64 h-64 bg-red opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500"></div>
             <div className="grid md:grid-cols-2 gap-12 p-12 relative z-10">
               {/* Left: Project Info */}
@@ -163,15 +163,15 @@ export default function ProjectCarousel() {
                     </span>
                   </div>
 
-                  <h3 className="font-sans font-black text-4xl md:text-5xl text-white mb-3">
+                  <h3 className="font-sans font-black text-4xl md:text-5xl text-foreground mb-3">
                     {currentProject.title}
                   </h3>
 
-                  <p className="text-lg text-muted font-light italic mb-8">
+                  <p className="text-lg text-foreground/55 font-light italic mb-8">
                     {currentProject.subtitle}
                   </p>
 
-                  <p className="text-lg text-white/70 font-light leading-relaxed mb-8">
+                  <p className="text-lg text-foreground/70 font-light leading-relaxed mb-8">
                     {currentProject.description}
                   </p>
 
@@ -186,20 +186,20 @@ export default function ProjectCarousel() {
                 <div className="flex gap-4">
                   <button
                     onClick={goToPrevious}
-                    className="flex items-center justify-center w-12 h-12 border border-[rgba(255,255,255,0.2)] hover:border-red hover:bg-red/10 transition-all duration-300 text-white"
+                    className="flex items-center justify-center w-12 h-12 border border-foreground/15 hover:border-red hover:bg-red/10 transition-all duration-300 text-foreground"
                     aria-label="Previous project"
                   >
                     <ChevronLeft size={20} />
                   </button>
                   <button
                     onClick={goToNext}
-                    className="flex items-center justify-center w-12 h-12 border border-[rgba(255,255,255,0.2)] hover:border-red hover:bg-red/10 transition-all duration-300 text-white"
+                    className="flex items-center justify-center w-12 h-12 border border-foreground/15 hover:border-red hover:bg-red/10 transition-all duration-300 text-foreground"
                     aria-label="Next project"
                   >
                     <ChevronRight size={20} />
                   </button>
                   <div className="flex-1 flex items-center justify-end">
-                    <span className="text-sm font-mono text-muted">
+                    <span className="text-sm font-mono text-foreground/55">
                       {currentIndex + 1} / {projects.length}
                     </span>
                   </div>
@@ -207,29 +207,29 @@ export default function ProjectCarousel() {
               </div>
 
               {/* Right: Bullets & Focus */}
-              <div className="border-l border-[rgba(255,255,255,0.1)] pl-12 flex flex-col justify-between">
+              <div className="border-l border-foreground/8 pl-12 flex flex-col justify-between">
                 <div>
-                  <p className="text-xs font-mono uppercase tracking-widest text-muted mb-6">
+                  <p className="text-xs font-mono uppercase tracking-widest text-foreground/55 mb-6">
                     Focus Area
                   </p>
-                  <p className="text-2xl font-bold text-white mb-12">
+                  <p className="text-2xl font-bold text-foreground mb-12">
                     {currentProject.focus}
                   </p>
 
-                  <p className="text-xs font-mono uppercase tracking-widest text-muted mb-6">
+                  <p className="text-xs font-mono uppercase tracking-widest text-foreground/55 mb-6">
                     Current Work
                   </p>
                   <ul className="space-y-4">
                     {currentProject.bullets.map((bullet, idx) => (
                       <li key={idx} className="flex gap-4">
                         <span className="text-red font-bold flex-shrink-0">▸</span>
-                        <span className="text-lg text-white/70 font-light">{bullet}</span>
+                        <span className="text-lg text-foreground/70 font-light">{bullet}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <Link href="/portfolio" className="inline-flex items-center gap-2 text-red font-bold hover:text-white transition-colors duration-200 text-sm uppercase tracking-wider mt-8">
+                <Link href="/portfolio" className="inline-flex items-center gap-2 text-red font-bold hover:text-foreground transition-colors duration-200 text-sm uppercase tracking-wider mt-8">
                   View All Teams
                   <ChevronRight size={16} />
                 </Link>
@@ -246,7 +246,7 @@ export default function ProjectCarousel() {
                 className={`h-1 transition-all duration-300 ${
                   idx === currentIndex
                     ? "w-8 bg-red"
-                    : "w-4 bg-[rgba(255,255,255,0.2)] hover:bg-[rgba(255,255,255,0.4)]"
+                    : "w-4 bg-foreground/15 hover:bg-foreground/30"
                 }`}
                 aria-label={`Go to project ${idx + 1}`}
               />

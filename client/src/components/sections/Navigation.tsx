@@ -44,7 +44,7 @@ export default function Navigation() {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-[#0d0d0d]/95 backdrop-blur-md border-b border-[rgba(255,255,255,0.08)]"
+            ? "bg-[#f5f0eb]/95 backdrop-blur-md border-b border-foreground/8"
             : "bg-transparent"
         }`}
       >
@@ -66,7 +66,7 @@ export default function Navigation() {
               alt="NU Launch Labs"
               className="w-9 h-9 object-contain rounded-full"
             />
-            <span className="font-mono text-[11px] font-medium tracking-[0.2em] text-white/70 uppercase">
+            <span className="font-mono text-[11px] font-medium tracking-[0.2em] text-foreground/70 uppercase">
               NU Launch Labs
             </span>
           </Link>
@@ -79,8 +79,8 @@ export default function Navigation() {
                 href={link.href}
                 className={`relative px-4 py-2 font-mono text-[11px] uppercase tracking-[0.15em] transition-colors duration-200 ${
                   isActive(link.href)
-                    ? "text-white"
-                    : "text-white/50 hover:text-white"
+                    ? "text-foreground"
+                    : "text-foreground/50 hover:text-foreground"
                 }`}
               >
                 {link.label}
@@ -94,7 +94,7 @@ export default function Navigation() {
           {/* Mobile Menu Toggle */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden relative w-10 h-10 flex items-center justify-center text-white/70 hover:text-white transition-colors"
+            className="lg:hidden relative w-10 h-10 flex items-center justify-center text-foreground/70 hover:text-foreground transition-colors"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
@@ -112,24 +112,24 @@ export default function Navigation() {
       >
         {/* Backdrop */}
         <div
-          className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+          className="absolute inset-0 bg-black/30 backdrop-blur-sm"
           onClick={() => setIsMobileMenuOpen(false)}
         />
 
         {/* Panel */}
         <div
-          className={`absolute top-0 right-0 w-full max-w-sm h-full bg-[#0d0d0d] border-l border-[rgba(255,255,255,0.08)] transition-transform duration-500 ease-out ${
+          className={`absolute top-0 right-0 w-full max-w-sm h-full bg-[#f5f0eb] border-l border-foreground/8 transition-transform duration-500 ease-out ${
             isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
           {/* Panel Header */}
-          <div className="flex items-center justify-between h-20 px-6 border-b border-[rgba(255,255,255,0.08)]">
-            <span className="font-mono text-[11px] text-white/40 uppercase tracking-[0.2em]">
+          <div className="flex items-center justify-between h-20 px-6 border-b border-foreground/8">
+            <span className="font-mono text-[11px] text-foreground/40 uppercase tracking-[0.2em]">
               Menu
             </span>
             <button
               onClick={() => setIsMobileMenuOpen(false)}
-              className="w-10 h-10 flex items-center justify-center text-white/50 hover:text-white transition-colors"
+              className="w-10 h-10 flex items-center justify-center text-foreground/50 hover:text-foreground transition-colors"
               aria-label="Close menu"
             >
               <X size={20} />
@@ -145,13 +145,13 @@ export default function Navigation() {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={`group flex items-center gap-4 px-6 py-5 transition-colors duration-200 ${
                   isActive(link.href)
-                    ? "bg-[rgba(255,255,255,0.03)]"
-                    : "hover:bg-[rgba(255,255,255,0.03)]"
+                    ? "bg-foreground/3"
+                    : "hover:bg-foreground/3"
                 }`}
               >
                 <span
                   className={`font-mono text-[11px] ${
-                    isActive(link.href) ? "text-red" : "text-white/30"
+                    isActive(link.href) ? "text-red" : "text-foreground/30"
                   }`}
                 >
                   0{idx + 1}
@@ -159,8 +159,8 @@ export default function Navigation() {
                 <span
                   className={`font-sans text-lg font-semibold tracking-tight ${
                     isActive(link.href)
-                      ? "text-white"
-                      : "text-white/60 group-hover:text-white"
+                      ? "text-foreground"
+                      : "text-foreground/60 group-hover:text-foreground"
                   }`}
                 >
                   {link.label}
@@ -173,13 +173,13 @@ export default function Navigation() {
           </div>
 
           {/* Panel Footer */}
-          <div className="absolute bottom-0 left-0 right-0 px-6 py-6 border-t border-[rgba(255,255,255,0.05)]">
+          <div className="absolute bottom-0 left-0 right-0 px-6 py-6 border-t border-foreground/5">
             <div className="flex items-center gap-6">
               <a
                 href="https://www.linkedin.com/company/nulaunchlabs/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-mono text-[10px] text-white/30 uppercase tracking-[0.15em] hover:text-white/60 transition-colors"
+                className="font-mono text-[10px] text-foreground/30 uppercase tracking-[0.15em] hover:text-foreground/60 transition-colors"
               >
                 LinkedIn
               </a>
@@ -187,7 +187,7 @@ export default function Navigation() {
                 href="https://www.instagram.com/nulaunchlabs/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-mono text-[10px] text-white/30 uppercase tracking-[0.15em] hover:text-white/60 transition-colors"
+                className="font-mono text-[10px] text-foreground/30 uppercase tracking-[0.15em] hover:text-foreground/60 transition-colors"
               >
                 Instagram
               </a>

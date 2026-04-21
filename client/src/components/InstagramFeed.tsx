@@ -139,7 +139,7 @@ export default function InstagramFeed({
               href="https://www.instagram.com/nulaunchlabs/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-red-900 hover:bg-red-900 text-white font-bold px-8 h-12  transition-all duration-200 shadow-lg hover:shadow-lg hover:scale-105"
+              className="inline-flex items-center gap-2 bg-red hover:bg-red/90 text-white font-bold px-8 h-12 transition-all duration-200 shadow-lg hover:shadow-lg hover:scale-105"
             >
               Follow @nulaunchlabs
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -151,7 +151,7 @@ export default function InstagramFeed({
       </div>
 
       {/* Additional Info */}
-      <div className="mt-12 p-8 bg-rgba(200, 16, 46, 0.05) border border-red-900/10  text-center">
+      <div className="mt-12 p-8 bg-red/5 border border-red/10 text-center">
         <p className="text-foreground/70 text-sm md:text-base">
           📸 Visit our Instagram to see more photos, behind-the-scenes content, and updates from our Launch Teams and Innovation Teams.
         </p>

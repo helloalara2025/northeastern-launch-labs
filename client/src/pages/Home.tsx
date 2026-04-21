@@ -10,14 +10,14 @@ export default function Home() {
   const featured = useMemo(() => (projects ?? []).slice(0, 3), [projects]);
 
   return (
-    <div className="bg-primary text-white min-h-screen">
+    <div className="bg-primary text-foreground min-h-screen">
       <Navigation />
 
       <main>
         {/* ── HERO ── */}
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
           {/* Dot grid */}
-          <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.04)_1px,transparent_1px)] [background-size:24px_24px]" />
+          <div className="absolute inset-0 bg-[radial-gradient(rgba(26,26,26,0.04)_1px,transparent_1px)] [background-size:24px_24px]" />
 
           {/* Single subtle arc — top-right */}
           <svg
@@ -25,34 +25,34 @@ export default function Home() {
             viewBox="0 0 600 600"
             fill="none"
           >
-            <circle cx="600" cy="0" r="400" stroke="#8B1A13" strokeWidth="1" opacity="0.15" />
-            <circle cx="600" cy="0" r="500" stroke="#8B1A13" strokeWidth="0.5" opacity="0.08" />
+            <circle cx="600" cy="0" r="400" stroke="#8B1A13" strokeWidth="1" opacity="0.12" />
+            <circle cx="600" cy="0" r="500" stroke="#8B1A13" strokeWidth="0.5" opacity="0.06" />
           </svg>
 
           <div className="container relative z-10 flex flex-col items-center text-center">
-            <span className="font-mono text-[11px] text-red uppercase tracking-[0.25em] mb-8 border border-red/30 bg-red/10 px-4 py-2 inline-block">
+            <span className="font-mono text-[11px] text-red uppercase tracking-[0.25em] mb-8 border border-red/30 bg-red/5 px-4 py-2 inline-block">
               NORTHEASTERN STUDENT-LED ORGANIZATION
             </span>
 
-            <h1 className="font-sans font-extrabold text-[40px] md:text-[64px] lg:text-[76px] text-white leading-[0.95] tracking-[-0.03em] mb-8 max-w-4xl uppercase">
+            <h1 className="font-sans font-extrabold text-[40px] md:text-[64px] lg:text-[76px] text-foreground leading-[0.95] tracking-[-0.03em] mb-8 max-w-4xl uppercase">
               Real Projects. <br />
               <span className="text-red">Real Experience.</span>
             </h1>
 
-            <p className="font-sans font-normal text-[17px] md:text-[18px] text-white/50 leading-[1.7] max-w-[580px] mb-12">
+            <p className="font-sans font-normal text-[17px] md:text-[18px] text-foreground/50 leading-[1.7] max-w-[580px] mb-12">
               A student-led club where teams build end-to-end products — partnering with startups and developing original projects across disciplines.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/portfolio"
-                className="inline-flex items-center gap-3 bg-red text-white font-sans font-semibold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-lg hover:bg-red/90 transition-all duration-200 hover:-translate-y-[1px]"
+                className="inline-flex items-center gap-3 bg-red text-white font-sans font-semibold text-[13px] uppercase tracking-[0.1em] px-8 py-4 hover:bg-red/90 transition-all duration-200 hover:-translate-y-[1px]"
               >
                 VIEW PROJECTS <ArrowRight size={16} />
               </Link>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-3 border border-[rgba(255,255,255,0.15)] text-white font-sans font-semibold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-lg hover:border-white/40 transition-all duration-200"
+                className="inline-flex items-center gap-3 border border-foreground/20 text-foreground font-sans font-semibold text-[13px] uppercase tracking-[0.1em] px-8 py-4 hover:border-foreground/50 transition-all duration-200"
               >
                 LEARN MORE
               </Link>
@@ -61,7 +61,7 @@ export default function Home() {
         </section>
 
         {/* ── WHAT WE DO ── */}
-        <section className="py-20 md:py-28 border-b border-[rgba(255,255,255,0.08)]">
+        <section className="py-20 md:py-28 border-b border-foreground/8">
           <div className="container">
             <div className="grid md:grid-cols-12 gap-12 md:gap-16">
               <div className="md:col-span-4">
@@ -74,7 +74,7 @@ export default function Home() {
               </div>
 
               <div className="md:col-span-8">
-                <p className="text-xl md:text-2xl text-white/80 leading-relaxed mb-10">
+                <p className="text-xl md:text-2xl text-foreground/70 leading-relaxed mb-10">
                   We bring together students across disciplines to work on projects that go beyond the classroom.
                 </p>
 
@@ -83,7 +83,7 @@ export default function Home() {
                     <h4 className="text-red font-mono text-xs uppercase tracking-[0.2em] mb-2">
                       Launch Teams
                     </h4>
-                    <p className="text-white/50 leading-relaxed">
+                    <p className="text-foreground/50 leading-relaxed">
                       Partner with startups to build and ship real products.
                     </p>
                   </div>
@@ -91,7 +91,7 @@ export default function Home() {
                     <h4 className="text-yellow font-mono text-xs uppercase tracking-[0.2em] mb-2">
                       Innovation Teams
                     </h4>
-                    <p className="text-white/50 leading-relaxed">
+                    <p className="text-foreground/50 leading-relaxed">
                       Develop original projects from concept to completion.
                     </p>
                   </div>
@@ -102,7 +102,7 @@ export default function Home() {
         </section>
 
         {/* ── FEATURED PROJECTS ── */}
-        <section className="py-20 md:py-28 border-b border-[rgba(255,255,255,0.08)]">
+        <section className="py-20 md:py-28 border-b border-foreground/8">
           <div className="container">
             <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-14 gap-6">
               <div>
@@ -115,7 +115,7 @@ export default function Home() {
               </div>
               <Link
                 href="/portfolio"
-                className="inline-flex items-center gap-2 text-white/40 hover:text-white transition-colors font-mono text-xs uppercase tracking-[0.15em]"
+                className="inline-flex items-center gap-2 text-foreground/40 hover:text-foreground transition-colors font-mono text-xs uppercase tracking-[0.15em]"
               >
                 View All <ArrowRight size={14} />
               </Link>
@@ -124,7 +124,7 @@ export default function Home() {
             {isLoading ? (
               <div className="flex items-center justify-center py-20">
                 <Loader2 className="w-6 h-6 animate-spin text-red" />
-                <span className="ml-3 text-white/40 font-mono text-sm">Loading...</span>
+                <span className="ml-3 text-foreground/40 font-mono text-sm">Loading...</span>
               </div>
             ) : (
               <div className="grid md:grid-cols-3 gap-6">
@@ -134,13 +134,13 @@ export default function Home() {
                     <Link
                       key={project.id}
                       href={`/projects/${project.id}`}
-                      className="group bg-secondary border border-[rgba(255,255,255,0.05)] p-8 hover:border-red/30 transition-all duration-300 flex flex-col"
+                      className="group bg-secondary border border-foreground/8 p-8 hover:border-red/30 transition-all duration-300 flex flex-col"
                     >
                       <span className="font-mono text-red text-sm font-bold mb-5">
                         0{idx + 1}
                       </span>
 
-                      <span className="font-mono text-[10px] text-white/25 uppercase tracking-[0.15em] mb-2">
+                      <span className="font-mono text-[10px] text-foreground/25 uppercase tracking-[0.15em] mb-2">
                         {project.projectId}
                       </span>
 
@@ -148,7 +148,7 @@ export default function Home() {
                         {project.name}
                       </h4>
 
-                      <p className="text-white/45 leading-relaxed mb-6 flex-grow text-sm">
+                      <p className="text-foreground/45 leading-relaxed mb-6 flex-grow text-sm">
                         {project.subtitle}
                       </p>
 
@@ -156,7 +156,7 @@ export default function Home() {
                         {tech.slice(0, 3).map((t) => (
                           <span
                             key={t}
-                            className="text-[10px] font-mono text-white/35 bg-[rgba(255,255,255,0.04)] px-2 py-1 border border-[rgba(255,255,255,0.06)]"
+                            className="text-[10px] font-mono text-foreground/35 bg-foreground/4 px-2 py-1 border border-foreground/8"
                           >
                             {t}
                           </span>
@@ -171,7 +171,7 @@ export default function Home() {
         </section>
 
         {/* ── ANNOUNCEMENTS ── */}
-        <section className="py-20 md:py-28 border-b border-[rgba(255,255,255,0.08)]">
+        <section className="py-20 md:py-28 border-b border-foreground/8">
           <div className="container">
             <div className="mb-12">
               <h2 className="text-xs font-mono text-red uppercase tracking-[0.2em] mb-4">
@@ -195,10 +195,10 @@ export default function Home() {
                       </span>
                     </span>
                   </div>
-                  <h4 className="text-xl md:text-2xl font-bold text-white uppercase tracking-tight mb-3">
+                  <h4 className="text-xl md:text-2xl font-bold text-foreground uppercase tracking-tight mb-3">
                     E-Board Applications
                   </h4>
-                  <p className="text-white/50 leading-relaxed mb-6">
+                  <p className="text-foreground/50 leading-relaxed mb-6">
                     We're recruiting leadership for Fall 2026. Positions include Secretary, Treasurer, Events Chair, Operations Chair, and Graphic Designer. Help shape the future of Launch Labs.
                   </p>
                   <a
@@ -213,20 +213,20 @@ export default function Home() {
               </div>
 
               {/* Project Applications */}
-              <div className="bg-secondary border border-[rgba(255,255,255,0.08)] p-8 md:p-10 relative overflow-hidden group hover:border-[rgba(255,255,255,0.15)] transition-colors duration-300">
+              <div className="bg-secondary border border-foreground/8 p-8 md:p-10 relative overflow-hidden group hover:border-foreground/15 transition-colors duration-300">
                 <div className="relative z-10">
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="inline-flex items-center gap-2 px-3 py-1 border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.02)]">
+                    <span className="inline-flex items-center gap-2 px-3 py-1 border border-foreground/10 bg-foreground/3">
                       <span className="w-1.5 h-1.5 bg-yellow" />
-                      <span className="font-mono text-[10px] text-white/40 uppercase tracking-[0.15em]">
+                      <span className="font-mono text-[10px] text-foreground/40 uppercase tracking-[0.15em]">
                         Coming Soon
                       </span>
                     </span>
                   </div>
-                  <h4 className="text-xl md:text-2xl font-bold text-white uppercase tracking-tight mb-3">
+                  <h4 className="text-xl md:text-2xl font-bold text-foreground uppercase tracking-tight mb-3">
                     Project Team Applications
                   </h4>
-                  <p className="text-white/50 leading-relaxed mb-6">
+                  <p className="text-foreground/50 leading-relaxed mb-6">
                     Applications for Launch Teams and Innovation Teams will open at the start of Fall 2026. Follow us on Instagram and LinkedIn to get notified when applications go live.
                   </p>
                   <div className="flex items-center gap-4">
@@ -234,7 +234,7 @@ export default function Home() {
                       href="https://www.instagram.com/nulaunchlabs/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 border border-[rgba(255,255,255,0.15)] text-white font-mono text-[11px] uppercase tracking-[0.15em] px-6 py-3 hover:border-white/40 transition-colors duration-200"
+                      className="inline-flex items-center gap-2 border border-foreground/15 text-foreground font-mono text-[11px] uppercase tracking-[0.15em] px-6 py-3 hover:border-foreground/40 transition-colors duration-200"
                     >
                       Instagram
                     </a>
@@ -242,7 +242,7 @@ export default function Home() {
                       href="https://www.linkedin.com/company/nulaunchlabs/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 border border-[rgba(255,255,255,0.15)] text-white font-mono text-[11px] uppercase tracking-[0.15em] px-6 py-3 hover:border-white/40 transition-colors duration-200"
+                      className="inline-flex items-center gap-2 border border-foreground/15 text-foreground font-mono text-[11px] uppercase tracking-[0.15em] px-6 py-3 hover:border-foreground/40 transition-colors duration-200"
                     >
                       LinkedIn
                     </a>

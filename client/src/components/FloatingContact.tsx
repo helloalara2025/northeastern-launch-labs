@@ -11,11 +11,11 @@ export default function FloatingContact() {
 
   return (
     <div className="fixed bottom-6 left-6 z-40 max-w-sm animate-in fade-in slide-in-from-left-4 duration-500">
-      <div className="bg-secondary border border-red/20 p-4 pr-10 relative">
+      <div className="bg-white border border-red/20 shadow-lg p-4 pr-10 relative">
         {/* Dismiss button */}
         <button
           onClick={() => setDismissed(true)}
-          className="absolute top-3 right-3 text-white/30 hover:text-white transition-colors"
+          className="absolute top-3 right-3 text-foreground/30 hover:text-foreground transition-colors"
         >
           <X size={14} />
         </button>
@@ -27,7 +27,7 @@ export default function FloatingContact() {
           </span>
         </div>
 
-        <p className="text-sm text-white/70 leading-relaxed mb-3">
+        <p className="text-sm text-foreground/70 leading-relaxed mb-3">
           E-Board applications are open for Fall 2026.
         </p>
 
@@ -35,7 +35,7 @@ export default function FloatingContact() {
           href={EBOARD_FORM_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-red font-mono text-[11px] uppercase tracking-[0.15em] hover:text-white transition-colors duration-200"
+          className="inline-flex items-center gap-2 text-red font-mono text-[11px] uppercase tracking-[0.15em] hover:text-foreground transition-colors duration-200"
         >
           Apply Now <ArrowUpRight size={12} />
         </a>
