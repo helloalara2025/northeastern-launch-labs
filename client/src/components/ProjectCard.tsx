@@ -3,13 +3,13 @@ import { Link } from "wouter";
 
 // Domain Color Map
 const domainColors: Record<string, { bg: string; text: string; dot: string }> = {
-  "Security": { bg: "#FEE2E2", text: "#991B1B", dot: "#DC2626" },
+  "Security": { bg: "#FEE2E2", text: "#991B1B", dot: "#8B1A13" },
   "Navigation": { bg: "#DBEAFE", text: "#1E3A5F", dot: "#2563EB" },
   "FinTech / AI": { bg: "#FEF3C7", text: "#78350F", dot: "#D97706" },
   "Student Life": { bg: "#D1FAE5", text: "#064E3B", dot: "#059669" },
   "Climate / Civic Tech": { bg: "#E0E7FF", text: "#312E81", dot: "#4F46E5" },
   "Health / Mobility": { bg: "#FCE7F3", text: "#831843", dot: "#DB2777" },
-  "Security / GRC": { bg: "#FEE2E2", text: "#991B1B", dot: "#DC2626" },
+  "Security / GRC": { bg: "#FEE2E2", text: "#991B1B", dot: "#8B1A13" },
   "Navigation / Campus": { bg: "#DBEAFE", text: "#1E3A5F", dot: "#2563EB" },
 };
 

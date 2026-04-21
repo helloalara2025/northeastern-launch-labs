@@ -5,6 +5,51 @@ import { ArrowRight } from "lucide-react";
 const APPLICATION_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSeRnvxsGPbkl7Nuo4WX77wV6sB8twjy5v5W1SP7oqjrjZ6CAw/viewform";
 
+interface OpenRole {
+  title: string;
+  spots: string;
+  commitment: string;
+  summary: string;
+}
+
+const fall2026Roles: OpenRole[] = [
+  {
+    title: "Secretary",
+    spots: "1 position",
+    commitment: "5–10 hrs/week",
+    summary:
+      "Manage communications, scheduling, meeting notes, and internal records to keep the org running smoothly.",
+  },
+  {
+    title: "Treasurer",
+    spots: "1 position",
+    commitment: "5–10 hrs/week",
+    summary:
+      "Oversee the organization's budget, track spending, process reimbursements, and support fundraising efforts.",
+  },
+  {
+    title: "Events Chair",
+    spots: "2 positions",
+    commitment: "5–10 hrs/week",
+    summary:
+      "Plan, organize, and execute events that strengthen community, visibility, and member experience.",
+  },
+  {
+    title: "Operations Chair",
+    spots: "6–7 positions",
+    commitment: "~10 hrs/week",
+    summary:
+      "Oversee project teams, check in on progress and blockers, and help build internal processes for team management.",
+  },
+  {
+    title: "Graphic Designer / Branding Associate",
+    spots: "1 position",
+    commitment: "5–10 hrs/week",
+    summary:
+      "Maintain the visual identity across all platforms, create graphics and templates, and support internal teams with design needs.",
+  },
+];
+
 interface LeadershipMember {
   name: string;
   role: string;
@@ -22,33 +67,6 @@ const spring2026Team: LeadershipMember[] = [
   { name: "Ihika Reddy", role: "Operations" },
 ];
 
-const fall2026Roles = [
-  "President",
-  "Vice President",
-  "Director of Engineering",
-  "Director of Design",
-  "Director of Marketing",
-  "Events Coordinator",
-  "Treasurer",
-  "Secretary",
-];
-
-function MemberCard({ member, index }: { member: LeadershipMember; index: number }) {
-  return (
-    <div className="group bg-secondary border border-[rgba(255,255,255,0.05)] p-8 hover:border-red transition-colors duration-300 relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-32 h-32 bg-red opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500" />
-      {/* Index number */}
-      <span className="font-mono text-[10px] text-white/20 uppercase tracking-[0.2em] mb-4 block">
-        {String(index + 1).padStart(2, "0")}
-      </span>
-      <h4 className="text-xl md:text-2xl font-bold mb-2 text-white">{member.name}</h4>
-      <p className="text-red font-mono text-[11px] uppercase tracking-[0.15em]">
-        {member.role}
-      </p>
-    </div>
-  );
-}
-
 export default function Leadership() {
   return (
     <div className="bg-primary min-h-screen text-white font-sans">
@@ -57,7 +75,6 @@ export default function Leadership() {
         {/* Header */}
         <section className="pt-40 pb-24 md:pt-56 md:pb-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.1)_1px,transparent_1px)] [background-size:24px_24px] opacity-50" />
-          {/* Subtle arc */}
           <svg
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] opacity-[0.04] pointer-events-none"
             viewBox="0 0 800 800"
@@ -77,38 +94,12 @@ export default function Leadership() {
               LEADERSHIP.
             </h1>
             <p className="text-xl md:text-2xl text-muted leading-relaxed max-w-3xl font-medium">
-              Meet the students driving Launch Labs forward.
+              Meet the students driving Launch Labs forward — and join the next team.
             </p>
           </div>
         </section>
 
-        {/* Spring 2026 Team */}
-        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)] relative">
-          <div className="container">
-            {/* Section Label */}
-            <div className="mb-12 flex items-center gap-4">
-              <span className="font-mono text-[10px] text-white/30 uppercase tracking-[0.2em]">
-                Spring 2026 E-Board
-              </span>
-              <div className="flex-1 h-px bg-[rgba(255,255,255,0.08)]" />
-              <span className="inline-flex items-center gap-2 px-3 py-1 border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.02)]">
-                <span className="w-1.5 h-1.5 bg-green-500" />
-                <span className="font-mono text-[10px] text-white/40 uppercase tracking-[0.15em]">
-                  Active
-                </span>
-              </span>
-            </div>
-
-            {/* Member Grid */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {spring2026Team.map((member, idx) => (
-                <MemberCard key={member.name} member={member} index={idx} />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Fall 2026 — Open Roles */}
+        {/* Fall 2026 — Open Positions (TOP) */}
         <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)] relative overflow-hidden">
           {/* Background decoration */}
           <div className="absolute -right-[10%] top-[10%] w-[500px] h-[500px] border border-red/10 pointer-events-none" />
@@ -134,23 +125,44 @@ export default function Leadership() {
                 OPEN POSITIONS
               </h2>
               <p className="text-muted text-lg leading-relaxed">
-                We're looking for motivated students to lead Launch Labs into the Fall 2026 semester. If you're passionate about building, organizing, or growing a community, apply below.
+                We're looking for motivated students to lead Launch Labs into the Fall 2026 semester. Read through the role descriptions and apply to the position that best fits your interests.
               </p>
             </div>
 
-            {/* Roles Grid */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 mb-16">
+            {/* Roles List */}
+            <div className="space-y-4 mb-16">
               {fall2026Roles.map((role, idx) => (
                 <div
-                  key={role}
-                  className="group border border-[rgba(255,255,255,0.08)] bg-secondary p-6 hover:border-red/40 transition-colors duration-300"
+                  key={role.title}
+                  className="group border border-[rgba(255,255,255,0.08)] bg-secondary p-6 md:p-8 hover:border-red/40 transition-colors duration-300"
                 >
-                  <span className="font-mono text-[10px] text-white/20 block mb-3">
-                    {String(idx + 1).padStart(2, "0")}
-                  </span>
-                  <p className="font-sans text-sm font-semibold text-white/80 group-hover:text-white transition-colors">
-                    {role}
-                  </p>
+                  <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-8">
+                    {/* Index */}
+                    <span className="font-mono text-[10px] text-white/20 pt-1 flex-shrink-0">
+                      {String(idx + 1).padStart(2, "0")}
+                    </span>
+
+                    {/* Content */}
+                    <div className="flex-1">
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 mb-2">
+                        <h3 className="text-lg font-bold text-white group-hover:text-white transition-colors">
+                          {role.title}
+                        </h3>
+                        <div className="flex items-center gap-3">
+                          <span className="font-mono text-[10px] text-red/70 uppercase tracking-[0.1em]">
+                            {role.spots}
+                          </span>
+                          <span className="text-white/10">|</span>
+                          <span className="font-mono text-[10px] text-white/30 uppercase tracking-[0.1em]">
+                            {role.commitment}
+                          </span>
+                        </div>
+                      </div>
+                      <p className="text-white/50 text-sm leading-relaxed">
+                        {role.summary}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               ))}
             </div>
@@ -162,7 +174,7 @@ export default function Leadership() {
                 READY TO LEAD?
               </h3>
               <p className="text-muted mb-8 max-w-xl mx-auto leading-relaxed">
-                Applications for Fall 2026 leadership positions are now open. Join the team shaping the next generation of builders at Northeastern.
+                Applications for Fall 2026 leadership positions are now open. You'll need your resume as a Google Drive link with public access.
               </p>
               <a
                 href={APPLICATION_URL}
@@ -173,6 +185,46 @@ export default function Leadership() {
                 Apply for E-Board
                 <ArrowRight size={14} />
               </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Spring 2026 Team (BELOW) */}
+        <section className="py-24 md:py-32 border-b border-[rgba(255,255,255,0.1)] relative">
+          <div className="container">
+            {/* Section Label */}
+            <div className="mb-12 flex items-center gap-4">
+              <span className="font-mono text-[10px] text-white/30 uppercase tracking-[0.2em]">
+                Spring 2026 E-Board
+              </span>
+              <div className="flex-1 h-px bg-[rgba(255,255,255,0.08)]" />
+              <span className="inline-flex items-center gap-2 px-3 py-1 border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.02)]">
+                <span className="w-1.5 h-1.5 bg-green-500" />
+                <span className="font-mono text-[10px] text-white/40 uppercase tracking-[0.15em]">
+                  Current Team
+                </span>
+              </span>
+            </div>
+
+            {/* Member Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {spring2026Team.map((member, idx) => (
+                <div
+                  key={member.name}
+                  className="group bg-secondary border border-[rgba(255,255,255,0.05)] p-8 hover:border-red transition-colors duration-300 relative overflow-hidden"
+                >
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-red opacity-0 group-hover:opacity-5 rounded-full blur-3xl transition-opacity duration-500" />
+                  <span className="font-mono text-[10px] text-white/20 uppercase tracking-[0.2em] mb-4 block">
+                    {String(idx + 1).padStart(2, "0")}
+                  </span>
+                  <h4 className="text-xl md:text-2xl font-bold mb-2 text-white">
+                    {member.name}
+                  </h4>
+                  <p className="text-red font-mono text-[11px] uppercase tracking-[0.15em]">
+                    {member.role}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </section>

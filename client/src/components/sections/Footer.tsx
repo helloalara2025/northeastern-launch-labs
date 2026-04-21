@@ -1,3 +1,6 @@
+const LOGO_URL =
+  "https://d2xsxph8kpxj0f.cloudfront.net/310519663293706215/2bVaappDG4coBuhzggSTVT/rocket-logo-refined-KekPcTzQgZVxnSAAhUhFvw.webp";
+
 const connectLinks = [
   { label: "LinkedIn", href: "https://www.linkedin.com/company/nulaunchlabs/" },
   { label: "Instagram", href: "https://www.instagram.com/nulaunchlabs/" },
@@ -18,23 +21,11 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="md:col-span-8">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-8 rounded-full bg-red flex items-center justify-center flex-shrink-0">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
-                  <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
-                  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
-                  <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
-                </svg>
-              </div>
+              <img
+                src={LOGO_URL}
+                alt="NU Launch Labs"
+                className="w-8 h-8 object-contain flex-shrink-0"
+              />
               <span className="font-mono text-[11px] font-medium tracking-[0.2em] text-white/70 uppercase">
                 NU Launch Labs
               </span>

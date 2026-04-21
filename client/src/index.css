@@ -33,7 +33,7 @@
   --color-card: hsl(var(--card));
   --color-card-foreground: hsl(var(--card-foreground));
 
-  --color-red: #dc2626;
+  --color-red: #8B1A13;
   --color-yellow: #f5c518;
   --color-primary: #0d0d0d;
   --color-secondary: #0f1629;
@@ -53,7 +53,7 @@
     --card-foreground: 0 0% 100%;
     --popover: 225 47% 11%;
     --popover-foreground: 0 0% 100%;
-    --primary: 0 72% 51%; /* #dc2626 */
+    --primary: 4 75% 31%; /* #8B1A13 */
     --primary-foreground: 0 0% 100%;
     --secondary: 225 47% 11%;
     --secondary-foreground: 0 0% 100%;
@@ -61,11 +61,11 @@
     --muted-foreground: 0 0% 70%;
     --accent: 47 90% 53%; /* #f5c518 */
     --accent-foreground: 0 0% 0%;
-    --destructive: 0 72% 51%;
+    --destructive: 4 75% 31%;
     --destructive-foreground: 0 0% 100%;
     --border: 225 47% 20%;
     --input: 225 47% 20%;
-    --ring: 0 72% 51%;
+    --ring: 4 75% 31%;
     --radius: 0rem; /* Sharp corners for builder aesthetic */
   }
 }
@@ -97,7 +97,7 @@
   }
 
   .bg-red {
-    @apply bg-[#dc2626];
+    @apply bg-[#8B1A13];
   }
 
   .bg-yellow {
@@ -105,7 +105,7 @@
   }
 
   .text-red {
-    @apply text-[#dc2626];
+    @apply text-[#8B1A13];
   }
 
   .text-yellow {
@@ -121,7 +121,7 @@
   }
 
   .border-red {
-    @apply border-[#dc2626];
+    @apply border-[#8B1A13];
   }
 
   /* Focus states */
@@ -145,7 +145,7 @@
     width: 600px;
     height: 600px;
     border-radius: 50%;
-    border: 1px solid #dc2626;
+    border: 1px solid #8B1A13;
     opacity: 0.1;
     pointer-events: none;
   }

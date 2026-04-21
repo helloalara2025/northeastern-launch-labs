@@ -25,8 +25,8 @@ export default function Home() {
             viewBox="0 0 600 600"
             fill="none"
           >
-            <circle cx="600" cy="0" r="400" stroke="#dc2626" strokeWidth="1" opacity="0.15" />
-            <circle cx="600" cy="0" r="500" stroke="#dc2626" strokeWidth="0.5" opacity="0.08" />
+            <circle cx="600" cy="0" r="400" stroke="#8B1A13" strokeWidth="1" opacity="0.15" />
+            <circle cx="600" cy="0" r="500" stroke="#8B1A13" strokeWidth="0.5" opacity="0.08" />
           </svg>
 
           <div className="container relative z-10 flex flex-col items-center text-center">

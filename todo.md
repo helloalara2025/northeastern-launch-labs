@@ -84,3 +84,10 @@
 - [x] Add Fall 2026 section with open roles and application link
 - [x] Create Events page shell (waiting for event info)
 - [x] Add Events route to App.tsx
+- [x] Move Fall 2026 open positions section to top of Leadership page
+- [x] Align open position roles with Google Form options (5 roles: Secretary, Treasurer, Events Chair, Operations Chair, Graphic Designer)
+- [x] Finalize all remaining pages
+- [x] Use rocket logo as wordmark in top-left navigation
+- [x] Refine logo quality (create clean SVG version)
+- [x] Adapt site red color to match logo red (#8B1A13)
+- [x] Update all red references across the site theme
