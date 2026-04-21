@@ -96,3 +96,5 @@
 - [x] Add homepage announcement about E-Board apps being open
 - [x] Add banner about project apps opening in Fall 2026
 - [x] Final polish and review (updated student-led across all pages, verified logo, announcements)
+- [x] Simplify Events page: remove made-up event details (times, descriptions, titles)
+- [x] Keep real photos with vague accompanying text only
