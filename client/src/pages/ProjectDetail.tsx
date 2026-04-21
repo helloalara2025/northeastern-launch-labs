@@ -91,10 +91,10 @@ export default function ProjectDetail() {
               </span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-4 leading-[0.95] uppercase">
+            <h1 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4 leading-[0.95] uppercase">
               {project.name}
             </h1>
-            <p className="text-xl md:text-2xl text-[#1a1a1a]/60 font-medium max-w-3xl">
+            <p className="text-lg md:text-xl text-[#1a1a1a]/60 max-w-3xl">
               {project.subtitle}
             </p>
           </div>

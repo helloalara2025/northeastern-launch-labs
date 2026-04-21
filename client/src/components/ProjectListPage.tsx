@@ -78,7 +78,7 @@ export default function ProjectListPage({
                 {filteredProjects.length} Projects{badgeLabel ? ` • ${badgeLabel}` : ""}
               </span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-6 leading-[0.9] uppercase">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-6 leading-[0.9] uppercase">
               {titleParts[0]}
               <span className="text-[#8B1A13]">{titleHighlight}</span>
               {titleParts[1] || ""}

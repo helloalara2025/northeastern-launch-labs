@@ -90,10 +90,10 @@ export default function Leadership() {
                 Leadership
               </span>
             </div>
-            <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.9]">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-6 leading-[0.9]">
               LEADERSHIP.
             </h1>
-            <p className="text-xl md:text-2xl text-[#1a1a1a]/55 leading-relaxed max-w-3xl font-medium">
+            <p className="text-lg md:text-xl text-[#1a1a1a]/55 leading-relaxed max-w-3xl">
               Meet the students driving Launch Labs forward — and join the next team.
             </p>
           </div>
@@ -119,10 +119,10 @@ export default function Leadership() {
             </div>
 
             <div className="mb-12 max-w-2xl">
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+              <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-4">
                 OPEN POSITIONS
               </h2>
-              <p className="text-white/65 text-lg leading-relaxed">
+              <p className="text-white/65 text-base leading-relaxed">
                 We're looking for motivated students to lead Launch Labs into the Fall 2026 semester. Read through the role descriptions and apply to the position that best fits your interests.
               </p>
             </div>
@@ -167,7 +167,7 @@ export default function Leadership() {
 
             {/* Apply CTA */}
             <div className="bg-white/5 border border-white/10 p-10 md:p-16 text-center relative overflow-hidden group hover:border-[#f5c518]/30 transition-colors duration-300">
-              <h3 className="text-2xl md:text-3xl font-bold tracking-tight mb-4 text-white">
+              <h3 className="text-xl md:text-2xl font-bold tracking-tight mb-4 text-white">
                 READY TO LEAD?
               </h3>
               <p className="text-white/55 mb-8 max-w-xl mx-auto leading-relaxed">
@@ -216,7 +216,7 @@ export default function Leadership() {
                   <span className="font-mono text-[10px] text-[#8B1A13]/40 uppercase tracking-[0.2em] mb-4 block">
                     {String(idx + 1).padStart(2, "0")}
                   </span>
-                  <h4 className="text-xl md:text-2xl font-bold mb-2 text-[#1a1a1a]">
+                  <h4 className="text-lg md:text-xl font-bold mb-2 text-[#1a1a1a]">
                     {member.name}
                   </h4>
                   <p className="text-[#8B1A13] font-mono text-[11px] uppercase tracking-[0.15em]">

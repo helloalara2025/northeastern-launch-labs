@@ -26,10 +26,10 @@ export default function About() {
                 About Us
               </span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-6 leading-[0.9] uppercase">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-6 leading-[0.9] uppercase">
               BUILDING <span className="text-[#8B1A13]">BUILDERS.</span>
             </h1>
-            <p className="text-xl md:text-2xl text-[#1a1a1a]/60 leading-relaxed max-w-3xl font-medium">
+            <p className="text-lg md:text-xl text-[#1a1a1a]/60 leading-relaxed max-w-3xl">
               Students from every major building real projects together. We bridge the gap between classroom theory and shipping actual products.
             </p>
           </div>
@@ -42,12 +42,12 @@ export default function About() {
               {/* Left label */}
               <div className="md:col-span-4">
                 <h2 className="text-xs font-mono text-[#8B1A13] uppercase tracking-[0.2em] mb-4">The Mission</h2>
-                <h3 className="text-3xl md:text-4xl font-bold tracking-tight uppercase">WHY WE EXIST</h3>
+                <h3 className="text-2xl md:text-3xl font-bold tracking-tight uppercase">WHY WE EXIST</h3>
               </div>
 
               {/* Right content */}
               <div className="md:col-span-8">
-                <p className="text-2xl md:text-3xl text-[#1a1a1a] leading-relaxed mb-8 font-medium">
+                <p className="text-xl md:text-2xl text-[#1a1a1a] leading-relaxed mb-8 font-medium">
                   Our goal is to bring together students across disciplines and experience levels to work on real-world, end-to-end projects that bridge classroom learning with practical impact.
                 </p>
 
@@ -75,7 +75,7 @@ export default function About() {
           <div className="container relative z-10">
             <div className="mb-16">
               <h2 className="text-xs font-mono text-white/50 uppercase tracking-[0.2em] mb-4">The Principles</h2>
-              <h3 className="text-3xl md:text-4xl font-bold tracking-tight uppercase">HOW WE OPERATE</h3>
+              <h3 className="text-2xl md:text-3xl font-bold tracking-tight uppercase">HOW WE OPERATE</h3>
             </div>
 
             <div className="grid md:grid-cols-2 gap-px bg-white/10 border border-white/10">
@@ -106,7 +106,7 @@ export default function About() {
                       0{idx + 1}
                     </span>
                     <div>
-                      <h4 className="text-xl md:text-2xl font-bold mb-3 uppercase tracking-tight text-white">
+                      <h4 className="text-lg md:text-xl font-bold mb-3 uppercase tracking-tight text-white">
                         {value.title}
                       </h4>
                       <p className="text-white/65 leading-relaxed">{value.desc}</p>

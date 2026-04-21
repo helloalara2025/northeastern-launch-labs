@@ -36,10 +36,10 @@ export default function Events() {
                 Events
               </span>
             </div>
-            <h1 className="text-6xl md:text-8xl font-bold tracking-tighter mb-8 leading-[0.9]">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-6 leading-[0.9]">
               EVENTS.
             </h1>
-            <p className="text-xl md:text-2xl text-[#1a1a1a]/55 leading-relaxed max-w-3xl font-medium">
+            <p className="text-lg md:text-xl text-[#1a1a1a]/55 leading-relaxed max-w-3xl">
               Where our community comes together.
             </p>
           </div>
@@ -52,7 +52,7 @@ export default function Events() {
               <h2 className="text-xs font-mono text-[#8B1A13] uppercase tracking-[0.2em] mb-4">
                 Moments
               </h2>
-              <h3 className="text-3xl md:text-4xl font-bold tracking-tight uppercase mb-4">
+              <h3 className="text-2xl md:text-3xl font-bold tracking-tight uppercase mb-4">
                 PHOTOS FROM OUR EVENTS
               </h3>
               <p className="text-[#1a1a1a]/50 leading-relaxed max-w-2xl">
@@ -87,7 +87,7 @@ export default function Events() {
               <span className="font-mono text-[10px] text-white/40 uppercase tracking-[0.2em] block mb-4">
                 Stay Tuned
               </span>
-              <h3 className="text-2xl md:text-3xl font-bold tracking-tight mb-4 text-white">
+              <h3 className="text-xl md:text-2xl font-bold tracking-tight mb-4 text-white">
                 MORE EVENTS COMING SOON
               </h3>
               <p className="text-white/60 max-w-xl mx-auto leading-relaxed">

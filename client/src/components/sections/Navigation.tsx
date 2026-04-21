@@ -49,8 +49,8 @@ export default function Navigation() {
         }`}
       >
         {/* Announcement Banner */}
-        <div className="bg-red w-full py-2 px-4 text-center">
-          <p className="font-mono text-[10px] md:text-[11px] font-medium tracking-[0.1em] text-white uppercase">
+        <div className="bg-red w-full py-1.5 px-4 text-center">
+          <p className="font-mono text-[9px] md:text-[10px] font-medium tracking-[0.1em] text-white uppercase">
             Leadership applications are open for Fall 2026!
           </p>
         </div>

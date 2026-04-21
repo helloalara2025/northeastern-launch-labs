@@ -105,3 +105,5 @@
 - [x] Keep all content, layout, and structure the same
 - [x] Add back color accents to break up gray (more crimson red, warm tones, no navy)
 - [x] Make navbar fixed/sticky, visible, and readable while scrolling
+- [x] Make banner text and hero slogans smaller across all pages
+- [x] Improve section readability (spacing, typography hierarchy)

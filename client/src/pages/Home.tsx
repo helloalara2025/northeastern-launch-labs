@@ -43,12 +43,12 @@ export default function Home() {
               NORTHEASTERN STUDENT-LED ORGANIZATION
             </span>
 
-            <h1 className="font-sans font-extrabold text-[40px] md:text-[64px] lg:text-[76px] text-[#1a1a1a] leading-[0.95] tracking-[-0.03em] mb-8 max-w-4xl uppercase">
+            <h1 className="font-sans font-extrabold text-[32px] md:text-[48px] lg:text-[56px] text-[#1a1a1a] leading-[0.95] tracking-[-0.03em] mb-6 max-w-3xl uppercase">
               Real Projects. <br />
               <span className="text-[#8B1A13]">Real Experience.</span>
             </h1>
 
-            <p className="font-sans font-normal text-[17px] md:text-[18px] text-[#1a1a1a]/50 leading-[1.7] max-w-[580px] mb-12">
+            <p className="font-sans font-normal text-[15px] md:text-[16px] text-[#1a1a1a]/50 leading-[1.7] max-w-[520px] mb-10">
               A student-led club where teams build end-to-end products — partnering with startups and developing original projects across disciplines.
             </p>
 
@@ -80,13 +80,13 @@ export default function Home() {
                 <h2 className="text-xs font-mono text-white/60 uppercase tracking-[0.2em] mb-4">
                   What We Do
                 </h2>
-                <h3 className="text-3xl md:text-4xl font-bold tracking-tight uppercase">
+                <h3 className="text-2xl md:text-3xl font-bold tracking-tight uppercase">
                   TWO TRACKS
                 </h3>
               </div>
 
               <div className="md:col-span-8">
-                <p className="text-xl md:text-2xl text-white/80 leading-relaxed mb-10">
+                <p className="text-lg md:text-xl text-white/80 leading-relaxed mb-10">
                   We bring together students across disciplines to work on projects that go beyond the classroom.
                 </p>
 
@@ -121,7 +121,7 @@ export default function Home() {
                 <h2 className="text-xs font-mono text-[#8B1A13] uppercase tracking-[0.2em] mb-4">
                   Current Work
                 </h2>
-                <h3 className="text-3xl md:text-4xl font-bold tracking-tight uppercase">
+                <h3 className="text-2xl md:text-3xl font-bold tracking-tight uppercase">
                   FEATURED PROJECTS
                 </h3>
               </div>
@@ -189,7 +189,7 @@ export default function Home() {
               <h2 className="text-xs font-mono text-[#8B1A13] uppercase tracking-[0.2em] mb-4">
                 Announcements
               </h2>
-              <h3 className="text-3xl md:text-4xl font-bold tracking-tight uppercase">
+              <h3 className="text-2xl md:text-3xl font-bold tracking-tight uppercase">
                 WHAT'S HAPPENING
               </h3>
             </div>
@@ -208,7 +208,7 @@ export default function Home() {
                       </span>
                     </span>
                   </div>
-                  <h4 className="text-xl md:text-2xl font-bold text-[#1a1a1a] uppercase tracking-tight mb-3">
+                  <h4 className="text-lg md:text-xl font-bold text-[#1a1a1a] uppercase tracking-tight mb-3">
                     E-Board Applications
                   </h4>
                   <p className="text-[#1a1a1a]/50 leading-relaxed mb-6">
@@ -237,7 +237,7 @@ export default function Home() {
                       </span>
                     </span>
                   </div>
-                  <h4 className="text-xl md:text-2xl font-bold text-[#1a1a1a] uppercase tracking-tight mb-3">
+                  <h4 className="text-lg md:text-xl font-bold text-[#1a1a1a] uppercase tracking-tight mb-3">
                     Project Team Applications
                   </h4>
                   <p className="text-[#1a1a1a]/50 leading-relaxed mb-6">
