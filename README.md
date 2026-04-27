@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="https://manus.storage.googleapis.com/webdev/northeastern-launch-labs/rocket-logo-round.png" alt="NU Launch Labs" width="80" />
-</p>
 
 <h1 align="center">NU Launch Labs</h1>
 
