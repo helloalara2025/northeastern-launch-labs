@@ -1,5 +1,9 @@
-import Navigation from "@/components/sections/Navigation";
-import Footer from "@/components/sections/Footer";
+/**
+ * ContactPage.tsx — Contact information.
+ *
+ * Displays email, LinkedIn, Instagram, and general inquiry info.
+ */
+import { Navigation, Footer } from "@/layouts";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, Instagram, MessageCircle, ArrowRight } from "lucide-react";

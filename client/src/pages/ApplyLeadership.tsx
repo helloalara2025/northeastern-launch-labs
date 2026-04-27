@@ -1,4 +1,7 @@
-import Navigation from "@/components/sections/Navigation";
+/**
+ * ApplyLeadership.tsx — Leadership application page.
+ */
+import { Navigation } from "@/layouts";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useState } from "react";

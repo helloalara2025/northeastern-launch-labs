@@ -1,5 +1,9 @@
-import Navigation from "@/components/sections/Navigation";
-import Footer from "@/components/sections/Footer";
+/**
+ * Leadership.tsx — E-Board members and open positions.
+ *
+ * Sections: Hero → Fall 2026 Open Roles → Spring 2026 Current Team.
+ */
+import { Navigation, Footer } from "@/layouts";
 import { ArrowRight } from "lucide-react";
 
 const APPLICATION_URL =

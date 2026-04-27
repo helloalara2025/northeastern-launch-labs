@@ -1,5 +1,9 @@
-import Navigation from "@/components/sections/Navigation";
-import Footer from "@/components/sections/Footer";
+/**
+ * Forms.tsx — Application forms hub.
+ *
+ * Lists available application forms: Launch Teams, Innovation Teams, Leadership.
+ */
+import { Navigation, Footer } from "@/layouts";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, FileText, Heart, Lightbulb } from "lucide-react";

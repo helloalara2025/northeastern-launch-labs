@@ -107,3 +107,9 @@
 - [x] Make navbar fixed/sticky, visible, and readable while scrolling
 - [x] Make banner text and hero slogans smaller across all pages
 - [x] Improve section readability (spacing, typography hierarchy)
+- [x] Audit current file structure and plan reorganization
+- [x] Reorganize client folders (components/ui, components/common, components/projects, layouts, config)
+- [x] Add UX-focused comments to all files (pages, layouts, components, server)
+- [x] Apply OOD/MVC patterns to server code (schema=Model, db=Model, routers=Controller, pages=View)
+- [x] Update all imports to match new structure (layouts, components/common, components/projects)
+- [x] Verify tests pass and all pages render correctly (fixed ManusDialog export, all 9 tests pass)

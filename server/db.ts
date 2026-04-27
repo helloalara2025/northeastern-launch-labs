@@ -1,11 +1,32 @@
+/**
+ * db.ts — Database Access Layer (Model Layer).
+ *
+ * This file acts as the **Model** in an MVC-style architecture.
+ * All database queries are encapsulated here so that:
+ *   - Controllers (routers.ts) never touch Drizzle directly.
+ *   - Query logic is reusable across multiple procedures.
+ *   - Database connection is lazily initialized and fault-tolerant.
+ *
+ * Entity groups:
+ *   - Users:    upsertUser, getUserByOpenId
+ *   - Projects: getAllProjects, getProjectsByTeamType, getProjectById,
+ *               getProjectByProjectId, insertProject, insertManyProjects
+ */
 import { eq, asc } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
 import { InsertUser, InsertProject, users, projects } from "../drizzle/schema";
 import { ENV } from './_core/env';
 
+// ─────────────────────────────────────────────────────────────
+// Connection
+// ─────────────────────────────────────────────────────────────
+
 let _db: ReturnType<typeof drizzle> | null = null;
 
-// Lazily create the drizzle instance so local tooling can run without a DB.
+/**
+ * Lazily create the Drizzle ORM instance.
+ * Returns null if DATABASE_URL is not set (e.g. local dev without DB).
+ */
 export async function getDb() {
   if (!_db && process.env.DATABASE_URL) {
     try {
@@ -18,6 +39,15 @@ export async function getDb() {
   return _db;
 }
 
+// ─────────────────────────────────────────────────────────────
+// User Queries
+// ─────────────────────────────────────────────────────────────
+
+/**
+ * Create or update a user record.
+ * Uses MySQL ON DUPLICATE KEY UPDATE to handle both cases in one query.
+ * Automatically promotes the site owner to admin role.
+ */
 export async function upsertUser(user: InsertUser): Promise<void> {
   if (!user.openId) {
     throw new Error("User openId is required for upsert");
@@ -30,11 +60,10 @@ export async function upsertUser(user: InsertUser): Promise<void> {
   }
 
   try {
-    const values: InsertUser = {
-      openId: user.openId,
-    };
+    const values: InsertUser = { openId: user.openId };
     const updateSet: Record<string, unknown> = {};
 
+    // Copy nullable text fields if provided
     const textFields = ["name", "email", "loginMethod"] as const;
     type TextField = (typeof textFields)[number];
 
@@ -48,6 +77,7 @@ export async function upsertUser(user: InsertUser): Promise<void> {
 
     textFields.forEach(assignNullable);
 
+    // Timestamp & role handling
     if (user.lastSignedIn !== undefined) {
       values.lastSignedIn = user.lastSignedIn;
       updateSet.lastSignedIn = user.lastSignedIn;
@@ -77,6 +107,7 @@ export async function upsertUser(user: InsertUser): Promise<void> {
   }
 }
 
+/** Fetch a single user by their OAuth open ID. */
 export async function getUserByOpenId(openId: string) {
   const db = await getDb();
   if (!db) {
@@ -85,12 +116,14 @@ export async function getUserByOpenId(openId: string) {
   }
 
   const result = await db.select().from(users).where(eq(users.openId, openId)).limit(1);
-
   return result.length > 0 ? result[0] : undefined;
 }
 
-// ── Project queries ──
+// ─────────────────────────────────────────────────────────────
+// Project Queries
+// ─────────────────────────────────────────────────────────────
 
+/** Fetch all projects, ordered by sortOrder then id. */
 export async function getAllProjects() {
   const db = await getDb();
   if (!db) {
@@ -100,6 +133,7 @@ export async function getAllProjects() {
   return db.select().from(projects).orderBy(asc(projects.sortOrder), asc(projects.id));
 }
 
+/** Fetch projects filtered by team type ("innovation" or "launch"). */
 export async function getProjectsByTeamType(teamType: "innovation" | "launch") {
   const db = await getDb();
   if (!db) return [];
@@ -108,6 +142,7 @@ export async function getProjectsByTeamType(teamType: "innovation" | "launch") {
     .orderBy(asc(projects.sortOrder), asc(projects.id));
 }
 
+/** Fetch a single project by its auto-increment numeric ID. */
 export async function getProjectById(id: number) {
   const db = await getDb();
   if (!db) return undefined;
@@ -115,6 +150,7 @@ export async function getProjectById(id: number) {
   return result.length > 0 ? result[0] : undefined;
 }
 
+/** Fetch a single project by its human-readable project ID (e.g. "LL-001"). */
 export async function getProjectByProjectId(projectId: string) {
   const db = await getDb();
   if (!db) return undefined;
@@ -122,12 +158,14 @@ export async function getProjectByProjectId(projectId: string) {
   return result.length > 0 ? result[0] : undefined;
 }
 
+/** Insert a single project record. */
 export async function insertProject(project: InsertProject) {
   const db = await getDb();
   if (!db) throw new Error("Database not available");
   await db.insert(projects).values(project);
 }
 
+/** Bulk-insert multiple project records in a single query. */
 export async function insertManyProjects(projectList: InsertProject[]) {
   const db = await getDb();
   if (!db) throw new Error("Database not available");

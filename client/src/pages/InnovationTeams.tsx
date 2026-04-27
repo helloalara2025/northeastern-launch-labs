@@ -1,4 +1,7 @@
-import ProjectListPage from "@/components/ProjectListPage";
+/**
+ * InnovationTeams.tsx — Filtered view of Innovation Team projects.
+ */
+import { ProjectListPage } from "@/components/projects";
 
 export default function InnovationTeams() {
   return (

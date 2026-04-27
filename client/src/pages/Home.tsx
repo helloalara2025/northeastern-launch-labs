@@ -1,5 +1,10 @@
-import Navigation from "@/components/sections/Navigation";
-import Footer from "@/components/sections/Footer";
+/**
+ * Home.tsx — Landing page.
+ *
+ * Sections: Hero → What We Do → Featured Projects → Announcements.
+ * Fetches live project data from the backend via tRPC.
+ */
+import { Navigation, Footer } from "@/layouts";
 import { trpc } from "@/lib/trpc";
 import { Link } from "wouter";
 import { ArrowRight, Loader2 } from "lucide-react";

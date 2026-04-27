@@ -1,4 +1,7 @@
-import ProjectListPage from "@/components/ProjectListPage";
+/**
+ * LaunchTeams.tsx — Filtered view of Launch Team projects.
+ */
+import { ProjectListPage } from "@/components/projects";
 
 export default function LaunchTeams() {
   return (

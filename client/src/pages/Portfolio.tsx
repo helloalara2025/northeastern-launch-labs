@@ -1,4 +1,9 @@
-import ProjectListPage from "@/components/ProjectListPage";
+/**
+ * Portfolio.tsx — All projects grid view.
+ *
+ * Thin wrapper around ProjectListPage with portfolio-specific config.
+ */
+import { ProjectListPage } from "@/components/projects";
 
 export default function Portfolio() {
   return (

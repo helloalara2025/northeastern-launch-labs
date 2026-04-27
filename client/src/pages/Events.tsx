@@ -1,5 +1,9 @@
-import Navigation from "@/components/sections/Navigation";
-import Footer from "@/components/sections/Footer";
+/**
+ * Events.tsx — Past and upcoming events.
+ *
+ * Sections: Hero → Photo Gallery → More Events Coming Soon.
+ */
+import { Navigation, Footer } from "@/layouts";
 
 const eventPhotos = [
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663293706215/2bVaappDG4coBuhzggSTVT/IMG_1137_3fb9dc3d.jpg",

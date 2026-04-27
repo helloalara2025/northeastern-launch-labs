@@ -1,5 +1,9 @@
-import Navigation from "@/components/sections/Navigation";
-import Footer from "@/components/sections/Footer";
+/**
+ * About.tsx — About the organization.
+ *
+ * Sections: Hero → Mission → Principles (How We Operate).
+ */
+import { Navigation, Footer } from "@/layouts";
 
 export default function About() {
   return (

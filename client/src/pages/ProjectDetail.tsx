@@ -1,6 +1,11 @@
-import Navigation from "@/components/sections/Navigation";
-import Footer from "@/components/sections/Footer";
-import { domainColors } from "@/components/ProjectCard";
+/**
+ * ProjectDetail.tsx — Individual project detail view.
+ *
+ * Fetches a single project by ID and displays full info:
+ * overview, MVP scope, end goal, tech stack, and team type.
+ */
+import { Navigation, Footer } from "@/layouts";
+import { domainColors } from "@/components/projects";
 import { trpc } from "@/lib/trpc";
 import { useRoute, Link } from "wouter";
 import { ArrowLeft, Loader2 } from "lucide-react";

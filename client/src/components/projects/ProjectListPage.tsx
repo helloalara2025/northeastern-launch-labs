@@ -1,6 +1,11 @@
-import Navigation from "@/components/sections/Navigation";
-import Footer from "@/components/sections/Footer";
-import ProjectCard from "@/components/ProjectCard";
+/**
+ * ProjectListPage.tsx — Reusable project grid with filtering.
+ *
+ * Used by Portfolio, LaunchTeams, and InnovationTeams pages.
+ * Accepts props to customize title, team type filter, and badge.
+ */
+import { Navigation, Footer } from "@/layouts";
+import ProjectCard from "./ProjectCard";
 import { useState, useMemo } from "react";
 import { Search, ChevronDown, Loader2 } from "lucide-react";
 import { trpc } from "@/lib/trpc";
